@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/menu/static_menu_drawer.dart';
+import 'package:lernplatform/menu/my_left_drawer.dart';
 import 'package:lernplatform/user_session.dart';
 import '../datenklassen/folder_types.dart';
 import 'folder_widget.dart';
@@ -92,7 +92,7 @@ class MyTestApp extends StatelessWidget {
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     });
-    session.drawer = StaticMenuDrawer();
+    session.drawer = MyLeftDrawer();
 
     return MaterialApp(
       theme: ThemeData.dark(),

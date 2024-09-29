@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:lernplatform/Quiz/quiz_appbar_widget.dart';
+import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 
 import '../datenklassen/log_lernfeld_u_frage.dart';
 import '../datenklassen/thema.dart';
@@ -46,11 +46,11 @@ class QuizTeilnehmer{
   final random = Random();
 
   QuizTeilnehmer({required this.teilnehmer}){
-    UserSession().pageHeader = QuizAppbarWidget(0);
+    // UserSession().pageHeader = QuizAppbarWidget(0);
   }
 
   LogThema nextThema(){
-    UserSession().pageHeader = QuizAppbarWidget(++alle10RundenwirdGespeichert);
+    // UserSession().pageHeader = QuizAppbarWidget(++alle10RundenwirdGespeichert);
     if(alle10RundenwirdGespeichert == 10){
       teilnehmer.save();
       alle10RundenwirdGespeichert = 0;

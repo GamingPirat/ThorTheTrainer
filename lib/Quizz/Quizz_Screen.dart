@@ -13,7 +13,10 @@ class Quizz_Screen extends StatelessWidget {
   final Quizz_Model viewModel = Quizz_Model();
 
   Quizz_Screen({super.key}) {
-    UserSession().pageHeader = QuizAppbarWidget(key: viewModel.quizfortschritt,);
+    UserSession().pageHeader = Row(
+      children: [
+      FortschrittSpeicherAnzeiger(fortschritt: viewModel.bei10wirdGespeichert)
+    ],);
   }
 
   @override

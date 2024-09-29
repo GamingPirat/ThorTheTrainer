@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/user_session.dart';
 import 'menu/my_appBar.dart';
-import 'menu/static_menu_drawer.dart';
+import 'menu/my_left_drawer.dart';
 
 
 class DemonstrationPage extends StatelessWidget {
@@ -52,7 +52,7 @@ class _DemonstrationAppState extends State<DemonstrationApp> {
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     },);
-    session.drawer = StaticMenuDrawer();
+    session.drawer = MyLeftDrawer();
     super.initState();
   }
 

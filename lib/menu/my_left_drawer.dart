@@ -4,13 +4,13 @@ import '../Quiz/Quiz_Screen.dart';
 import '../datenklassen/folder_types.dart';
 import 'folder_widget.dart';
 
-class StaticMenuDrawer extends StatefulWidget {
+class MyLeftDrawer extends StatefulWidget {
 
   @override
-  State<StaticMenuDrawer> createState() => _StaticMenuDrawerState();
+  State<MyLeftDrawer> createState() => _MyLeftDrawerState();
 }
 
-class _StaticMenuDrawerState extends State<StaticMenuDrawer> {
+class _MyLeftDrawerState extends State<MyLeftDrawer> {
 
   @override
   Widget build(BuildContext context) {

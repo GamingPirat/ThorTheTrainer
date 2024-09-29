@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/menu/my_appBar.dart';
 import 'package:lernplatform/user_session.dart';
 
-import 'menu/static_menu_drawer.dart';
+import 'menu/my_left_drawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     },);
-    session.drawer = StaticMenuDrawer();
+    session.drawer = MyLeftDrawer();
     super.initState();
   }
 

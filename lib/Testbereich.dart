@@ -1,65 +1,50 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(TestApp());
-}
+class ProgressIcons extends StatelessWidget {
+  final int points;
 
-class TestApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("State Change Demo")),
-        body: ParentWidget(),
-      ),
-    );
-  }
-}
-
-class ParentWidget extends StatefulWidget {
-  @override
-  _ParentWidgetState createState() => _ParentWidgetState();
-}
-
-class _ParentWidgetState extends State<ParentWidget> {
-  final GlobalKey<_ChildWidgetState> _childKey = GlobalKey<_ChildWidgetState>();
-
-  void _changeChildState() {
-    _childKey.currentState?.updateText("Text updated from Parent");
-  }
+  ProgressIcons({required this.points});
 
   @override
   Widget build(BuildContext context) {
+    List<IconData> icons = [
+      Icons.star,
+      Icons.favorite,
+      Icons.check_circle,
+      Icons.thumb_up,
+      Icons.emoji_events,
+      Icons.flash_on,
+      Icons.verified,
+      Icons.grade,
+      Icons.trending_up,
+      Icons.military_tech,
+    ];
+
     return Column(
-      children: [
-        ElevatedButton(
-          onPressed: _changeChildState,
-          child: Text("Change Child State"),
-        ),
-        ChildWidget(key: _childKey),
-      ],
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: icons.map((icon) {
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, color: Colors.blue),
+            SizedBox(width: 8),
+            Text(
+              '$points',
+              style: TextStyle(fontSize: 24, color: Colors.blue),
+            ),
+          ],
+        );
+      }).toList(),
     );
   }
 }
 
-class ChildWidget extends StatefulWidget {
-  ChildWidget({Key? key}) : super(key: key);
-
-  @override
-  _ChildWidgetState createState() => _ChildWidgetState();
-}
-
-class _ChildWidgetState extends State<ChildWidget> {
-  String _text = "Initial Text";
-
-  void updateText(String newText) {
-    setState(() {
-      _text = newText;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(_text);
-  }
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      body: Center(
+        child: ProgressIcons(points: 8),
+      ),
+    ),
+  ));
 }
