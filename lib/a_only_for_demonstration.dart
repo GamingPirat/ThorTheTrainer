@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 import 'menu/my_appBar.dart';
 import 'menu/my_left_drawer.dart';
 
@@ -8,13 +8,13 @@ class DemonstrationPage extends StatelessWidget {
   Widget testWidget;
 
 
-  DemonstrationPage({super.key, required this.testWidget}){UserSession().pageHeader=Text("DemonstrationsPage");}
+  DemonstrationPage({super.key, required this.testWidget}){Session().pageHeader=Text("DemonstrationsPage");}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: UserSession().appBar,
-        drawer: UserSession().drawer,
+        appBar: Session().appBar,
+        drawer: Session().drawer,
         body: SizedBox(
             width: double.infinity,
             height: double.infinity,
@@ -40,15 +40,15 @@ class _DemonstrationAppState extends State<DemonstrationApp> {
 
   setThemeMode(ThemeMode value){
     setState(() {
-      UserSession().themeMode = value;
+      Session().themeMode = value;
     });
   }
 
-  late UserSession session;
+  late Session session;
 
   @override
   void initState() {
-    session = UserSession();
+    session = Session();
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     },);
@@ -62,7 +62,7 @@ class _DemonstrationAppState extends State<DemonstrationApp> {
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
         // Zugriff auf den themeMode über den State von MyAppBar:
-        themeMode: UserSession().themeMode, // Dies ist eine vereinfachte Annahme.
+        themeMode: Session().themeMode, // Dies ist eine vereinfachte Annahme.
         home: widget.home
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/Quiz_Screen.dart';
 import 'package:lernplatform/Testbereich.dart';
 import 'package:lernplatform/a_only_for_demonstration.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 import 'Frage_Model.dart';
 import 'Frage_Widget.dart';
@@ -13,7 +13,7 @@ class Quizz_Screen extends StatelessWidget {
   final Quizz_Model viewModel = Quizz_Model();
 
   Quizz_Screen({super.key}) {
-    UserSession().pageHeader = Row(
+    Session().pageHeader = Row(
       children: [
       FortschrittSpeicherAnzeiger(fortschritt: viewModel.bei10wirdGespeichert)
     ],);

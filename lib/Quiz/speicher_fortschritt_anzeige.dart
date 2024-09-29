@@ -19,13 +19,16 @@ class FortschrittSpeicherAnzeigerModel with ChangeNotifier {
 
   void _animateContainers(int newCount) async {
     for (int i = 0; i <= newCount; i++) {
-      await Future.delayed(Duration(milliseconds: 300));
+      await Future.delayed(Duration(milliseconds: 30));
       _filledContainers = i;
       notifyListeners();
     }
     if (newCount == 10) {
       await Future.delayed(Duration(seconds: 1));
       _showSavedText = true;
+      notifyListeners();
+      await Future.delayed(Duration(seconds: 1));
+      _showSavedText = false;
       notifyListeners();
     }
   }
@@ -54,9 +57,15 @@ class FortschrittSpeicherAnzeiger extends StatelessWidget {
       child: Consumer<FortschrittSpeicherAnzeigerModel>(
         builder: (context, vm, child) {
           if (vm.showSavedText) {
-            return Text(
-              'Fortschritt Gespeichert',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            return Row(
+              children: [
+                Spacer(),
+                Text(
+                  'Fortschritt Gespeichert',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
+                Spacer(),
+              ],
             );
           } else {
             return Row(

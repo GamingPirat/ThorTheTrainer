@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/menu/my_appBar.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 
 import 'menu/my_left_drawer.dart';
 
@@ -22,11 +22,11 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  late UserSession session;
+  late Session session;
 
   @override
   void initState() {
-    session = UserSession();
+    session = Session();
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     },);

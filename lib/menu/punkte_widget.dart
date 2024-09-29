@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 class PunkteAnzeige extends StatelessWidget {
   late PunkteModel _model;
 
+  int get punkte => _model.punkte;
   set punkte(int value) {
     _model.animatePunkte(value);
   }

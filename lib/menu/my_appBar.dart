@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/menu/my_left_drawer.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/menu/punkte_widget.dart';
+import 'package:lernplatform/session.dart';
 import '../datenklassen/folder_types.dart';
 import 'folder_widget.dart';
 
@@ -21,7 +22,7 @@ class _MyAppBarState extends State<MyAppBar> {
     return AppBar(
       backgroundColor: Theme.of(context).brightness == Brightness.dark
         ? Color.fromRGBO(22,22,22,1) : Color.fromRGBO(255,255,240,1),
-      title: Center(child: UserSession().pageHeader),
+      title: Center(child: Session().pageHeader),
       leading: Builder(
         builder: (context) => IconButton(
           icon: Icon(Icons.menu),
@@ -31,6 +32,13 @@ class _MyAppBarState extends State<MyAppBar> {
         ),
       ),
       actions: [
+        Row(
+          children: [
+            Icon(Icons.star),
+            Session().punkteAnzeige,
+          ],
+        ),
+        SizedBox(width:12),
         IconButton(
           icon: Icon(Theme.of(context).brightness == Brightness.dark
               ? Icons.dark_mode
@@ -82,13 +90,13 @@ void setThemeMode(ThemeMode value) {
 }
 
 // Nur zu Testzwecken eingebaut
-late UserSession session;
+late Session session;
 
 class MyTestApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Nur zu Testzwecken eingebaut
-    session = UserSession();
+    session = Session();
     session.appBar = MyAppBar(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
     });

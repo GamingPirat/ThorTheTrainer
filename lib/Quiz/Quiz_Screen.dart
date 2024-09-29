@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/quiz_model.dart';
 import 'package:lernplatform/Quiz/quiz_teilnehmer.dart';
 import 'package:lernplatform/Quiz/Frage_Widget.dart';
-import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/a_only_for_demonstration.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 import '../pages/progress_bar.dart';
 
@@ -23,8 +22,8 @@ class Quiz_Screen extends StatelessWidget {
       child: Consumer<QuizModel>(
         builder: (context, vm, child) {
           return Scaffold(
-            appBar: UserSession().appBar,
-            drawer: UserSession().drawer,
+            appBar: Session().appBar,
+            drawer: Session().drawer,
             body: Stack(
               children: [
                 Column(

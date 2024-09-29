@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 import '../Quiz/Quiz_Screen.dart';
 import '../datenklassen/folder_types.dart';
 import 'folder_widget.dart';

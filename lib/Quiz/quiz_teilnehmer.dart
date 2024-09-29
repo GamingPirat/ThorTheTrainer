@@ -3,7 +3,7 @@ import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 
 import '../datenklassen/log_lernfeld_u_frage.dart';
 import '../datenklassen/thema.dart';
-import '../user_session.dart';
+import '../session.dart';
 
 class Teilnehmer {
   late List<LogLernfeld> meineLernfelder;

@@ -5,9 +5,10 @@ import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/Quiz/quiz_teilnehmer.dart';
 import 'package:lernplatform/datenklassen/log_lernfeld_u_frage.dart';
 import 'package:lernplatform/log_and_content-converter.dart';
-import 'package:lernplatform/user_session.dart';
+import 'package:lernplatform/session.dart';
 import '../datenklassen/thema.dart';
 import '../datenklassen/view_builder.dart';
+import '../menu/punkte_widget.dart';
 
 class QuizModel with ChangeNotifier {
 
@@ -19,11 +20,17 @@ class QuizModel with ChangeNotifier {
   late LogThema _aktuellesThema;
   late Frage_Model _currentQuestioin;
   FortschrittSpeicherAnzeiger fortschrittSpeicherAnzeiger = FortschrittSpeicherAnzeiger(fortschritt: 1);
+  PunkteAnzeige erreichtePunkte = PunkteAnzeige(punkte: 15,);
 
   QuizModel({required this.quizTeilnehmer}){
-    UserSession().pageHeader = Row(
+    Session().pageHeader = Row(
       children: [
+        Spacer(),
         fortschrittSpeicherAnzeiger,
+        Spacer(),
+        Icon(Icons.military_tech),
+        erreichtePunkte,
+        Spacer(),
       ],
     );
     nextTapped();
@@ -63,6 +70,8 @@ class QuizModel with ChangeNotifier {
   set bei10wirdGespeichert(int value){
     _bei10wirdGespeichert = value;
     if(_bei10wirdGespeichert == 10){
+      erreichtePunkte.punkte = 0;
+      Session().punkteAnzeige.punkte +=15;
       // quizTeilnehmer.speichern();  todo
     } else if (_bei10wirdGespeichert == 11)
       _bei10wirdGespeichert = 1;
