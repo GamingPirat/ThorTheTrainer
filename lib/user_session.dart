@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/my_appBar.dart';
-import 'package:lernplatform/static_menu_drawer.dart';
+import 'package:lernplatform/menu/my_appBar.dart';
+
+import 'menu/static_menu_drawer.dart';
 
 class UserSession {
   static final UserSession _instance = UserSession._internal();
@@ -13,5 +14,8 @@ class UserSession {
 
   late StaticMenuDrawer drawer;
   late MyAppBar appBar;
-  late String pageHeader = "Wiederholung ist die Mutter des Lernens";
+  late Widget pageHeader = Text("Wiederholung ist die Mutter des Lernens");
+
+  ThemeMode themeMode = ThemeMode.dark;
+
 }

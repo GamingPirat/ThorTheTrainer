@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/menu/static_menu_drawer.dart';
 import 'package:lernplatform/user_session.dart';
-import 'datenklassen/folder_types.dart';
-import 'folderlist_widget.dart';
+import '../datenklassen/folder_types.dart';
+import 'folder_widget.dart';
 
 
 class MyAppBar extends AppBar {
@@ -20,7 +21,7 @@ class _MyAppBarState extends State<MyAppBar> {
     return AppBar(
       backgroundColor: Theme.of(context).brightness == Brightness.dark
         ? Color.fromRGBO(22,22,22,1) : Color.fromRGBO(255,255,240,1),
-      title: Center(child: Text(UserSession().pageHeader)),
+      title: Center(child: UserSession().pageHeader),
       leading: Builder(
         builder: (context) => IconButton(
           icon: Icon(Icons.menu),
@@ -71,4 +72,37 @@ class _MyAppBarState extends State<MyAppBar> {
   }
 }
 
+void main() {
+  runApp(MyTestApp());
+}
 
+// Nur zu Testzwecken eingebaut
+void setThemeMode(ThemeMode value) {
+  // Dummy Funktion für Testzwecke
+}
+
+// Nur zu Testzwecken eingebaut
+late UserSession session;
+
+class MyTestApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Nur zu Testzwecken eingebaut
+    session = UserSession();
+    session.appBar = MyAppBar(setThemeMode: (themeMode) {
+      setThemeMode(themeMode);
+    });
+    session.drawer = StaticMenuDrawer();
+
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: Scaffold(
+        appBar: session.appBar,
+        drawer: session.drawer,
+        body: Center(
+          child: Text('TestApp Content'),
+        ),
+      ),
+    );
+  }
+}

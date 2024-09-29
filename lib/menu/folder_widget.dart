@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/view_builder.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
 
+import '../a_only_for_demonstration.dart';
+
 class FolderWidget extends StatelessWidget {
   final Folder folder;
 
@@ -37,7 +39,14 @@ class LernfeldWidget extends StatelessWidget {
       // leading: Icon(Icons.lightbulb),
       title: Text(lernfeld.name),
       onTap: () {
-        // Aktionen für Lernfeld
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DemonstrationPage(
+              testWidget: Text('Platzhalter für ${lernfeld.name}'),
+            ),
+          ),
+        );
       },
     );
   }

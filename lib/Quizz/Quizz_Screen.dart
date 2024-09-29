@@ -1,32 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/Quiz/Quiz_Screen.dart';
+import 'package:lernplatform/Testbereich.dart';
+import 'package:lernplatform/a_only_for_demonstration.dart';
+import 'package:lernplatform/user_session.dart';
 import 'package:provider/provider.dart';
-
-import '../datenbank/frage_und_antwort.dart';
 import 'Frage_Model.dart';
 import 'Frage_Widget.dart';
 import 'Jett.dart';
 import 'Quizz_Model.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Quizz_Screen(),
-      theme: ThemeData.dark(),
-    );
-  }
-}
-
 class Quizz_Screen extends StatelessWidget {
   final Quizz_Model viewModel = Quizz_Model();
 
-  Quizz_Screen({super.key});
+  Quizz_Screen({super.key}) {
+    UserSession().pageHeader = QuizAppbarWidget(key: viewModel.quizfortschritt,);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,4 +41,11 @@ class Quizz_Screen extends StatelessWidget {
       ),
     );
   }
+}
+
+
+
+
+void main() {
+  runApp(DemonstrationApp(home: Quiz_Screen()));
 }

@@ -44,7 +44,7 @@ class Antworten_Widget extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start, // Füge diese Zeile hinzu
                       children: [
                         Text(
-                          vm.antwort.text,
+                          vm.antwort.titel,
                         ),
                         Visibility(
                           visible: vm.erklaerungVisible,

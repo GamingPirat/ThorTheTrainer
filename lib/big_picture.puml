@@ -1,0 +1,95 @@
+@startuml
+class ContentContainer {
+  - int id
+  - String name
+  + ContentContainer(id: int, name: String)
+}
+
+class Folder extends ContentContainer {
+  - List<Folder> subFolder
+  - List<Lernfeld> lernFelder
+  + Folder(id: int, name: String, subFolder: List<Folder>, lernFelder: List<Lernfeld>)
+}
+
+class Lernfeld extends ContentContainer {
+  - List<Thema> themen
+  + Lernfeld(id: int, name: String, themen: List<Thema>)
+}
+
+
+class Thema extends ContentContainer {
+  - List<int> tags // ids von Lernfeldern
+  - List<Frage> fragen
+  + Thema(id: int, name: String, tags: List<int>, fragen: List<Frage>)
+}
+
+class QuizMaster{
+    // holt sich aus den offenen Fragen der "chosenThemen" eine heraus
+    // je nach deim wie der User geantwortet hat wird das LogThema aktualisiert
+
+    List<Loghtema> chosenThemen
+    - evaluate()
+}
+
+class Frage {
+  - int nummer
+  - int version
+  - int themaID
+  - int punkte
+  - String text
+  - List<Antwort> antworten
+  + get id(): String
+}
+
+class Antwort {
+  - String text
+  - String erklaerung
+  - bool isKorrekt
+  + Antwort(text: String, erklaerung: String, isKorrekt: bool)
+}
+
+Thema --> Frage : fragen
+Frage --> Antwort : antworten
+Folder --> Folder : subFolder
+Folder --> Lernfeld : lernFelder
+Lernfeld --> Thema : themen
+
+
+class Teilnehmer {
+  - List<LogLernfeld> meineLernfelder
+  + Teilnehmer()
+  + load(): void
+  + save(): void
+}
+
+class LogLernfeld {
+  - int id
+  - List<LogThema> meineThemen
+  + LogLernfeld(id: int, meineThemen: List<LogThema>)
+  + fromJson(Map<String, dynamic> json): LogLernfeld
+  + toJson(): Map<String, dynamic>
+}
+
+class LogThema {
+  - int id
+  - List<LogFrage> offeneFragen
+  - List<LogFrage> falschBeantwortete
+  - List<LogFrage> richtigBeantwortete
+  + LogThema(id: int, offeneFragen: List<LogFrage>)
+  + fromJson(Map<String, dynamic> json): LogThema
+  + toJson(): Map<String, dynamic>
+}
+
+class LogFrage {
+  - String id
+  + LogFrage(id: String)
+  + fromJson(Map<String, dynamic> json): LogFrage
+  + toJson(): Map<String, dynamic>
+}
+
+Teilnehmer --> LogLernfeld : meineLernfelder
+LogLernfeld --> LogThema : meineThemen
+LogThema --> LogFrage
+
+
+@enduml

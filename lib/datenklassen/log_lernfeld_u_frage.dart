@@ -1,89 +1,31 @@
 import 'dart:convert'; // Für JSON-Konvertierung
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // Für den Zugriff auf den lokalen Speicher
+import 'package:lernplatform/datenklassen/thema.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class Teilnehmer {
-  late List<LogThema> meineThemen;
+import '../Quiz/quiz_teilnehmer.dart'; // Für den Zugriff auf den lokalen Speicher
 
-  Teilnehmer() {
-    load();
-  }
 
-  Future<void> load() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? gespeicherteDaten = prefs.getString('ThorTheTrainerStudent');
 
-    if (gespeicherteDaten != null) {
-      List<dynamic> jsonList = jsonDecode(gespeicherteDaten);
-      meineThemen = jsonList.map((item) => LogThema.fromJson(item)).toList();
-    } else {
-      meineThemen = [];
-    }
-  }
-
-  Future<void> save() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    List<Map<String, dynamic>> jsonList =
-    meineThemen.map((thema) => thema.toJson()).toList();
-    prefs.setString('ThorTheTrainerStudent', jsonEncode(jsonList));
-  }
-}
-
-class LogThema {
+class LogLernfeld {
   int id;
-  List<LogSubThema> meineSubThemen;
+  List<LogThema> meineThemen;
 
-  LogThema(this.id, this.meineSubThemen);
+  LogLernfeld(this.id, this.meineThemen);
 
-  factory LogThema.fromJson(Map<String, dynamic> json) {
-    var list = json['meineSubThemen'] as List;
-    List<LogSubThema> subThemenList =
-    list.map((i) => LogSubThema.fromJson(i)).toList();
-    return LogThema(json['id'], subThemenList);
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'meineSubThemen': meineSubThemen.map((subThema) => subThema.toJson()).toList(),
-    };
-  }
 }
 
-class LogSubThema {
-  int id;
-  List<LogFrage> offeneFragen;
-
-  LogSubThema(this.id, this.offeneFragen);
-
-  factory LogSubThema.fromJson(Map<String, dynamic> json) {
-    var list = json['offeneFragen'] as List;
-    List<LogFrage> fragenList = list.map((i) => LogFrage.fromJson(i)).toList();
-    return LogSubThema(json['id'], fragenList);
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'offeneFragen': offeneFragen.map((frage) => frage.toJson()).toList(),
-    };
-  }
-}
+List<LogLernfeld> mok_lernfelder = [
+  LogLernfeld(1, [mok_lokThemen[0], mok_lokThemen[1], ]),
+  LogLernfeld(2, [mok_lokThemen[2], mok_lokThemen[3], ]),
+];
 
 class LogFrage {
   String id;
 
   LogFrage(this.id);
 
-  factory LogFrage.fromJson(Map<String, dynamic> json) {
-    return LogFrage(json['id']);
-  }
 
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-    };
-  }
 }
 
 
@@ -130,8 +72,8 @@ class _ThemenVerwaltungState extends State<ThemenVerwaltung> {
   Future<void> addThema() async {
     if (_controller.text.isNotEmpty) {
       setState(() {
-        teilnehmer.meineThemen.add(LogThema(
-          teilnehmer.meineThemen.length + 1,
+        teilnehmer.meineLernfelder.add(LogLernfeld(
+          teilnehmer.meineLernfelder.length + 1,
           [],
         ));
       });
@@ -142,7 +84,7 @@ class _ThemenVerwaltungState extends State<ThemenVerwaltung> {
 
   Future<void> deleteThema(int index) async {
     setState(() {
-      teilnehmer.meineThemen.removeAt(index);
+      teilnehmer.meineLernfelder.removeAt(index);
     });
     await teilnehmer.save();
   }
@@ -172,10 +114,10 @@ class _ThemenVerwaltungState extends State<ThemenVerwaltung> {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: teilnehmer.meineThemen.length,
+              itemCount: teilnehmer.meineLernfelder.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  title: Text('Thema ${teilnehmer.meineThemen[index].id}'),
+                  title: Text('Thema ${teilnehmer.meineLernfelder[index].id}'),
                   trailing: IconButton(
                     icon: Icon(Icons.delete),
                     onPressed: () => deleteThema(index),

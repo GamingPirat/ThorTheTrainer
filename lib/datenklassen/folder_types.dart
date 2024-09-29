@@ -58,8 +58,8 @@ class Lernfeld extends ContentContainer{
 List<Lernfeld> mok_lernfelder = [
   Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: []),
   Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: []),
-  Lernfeld(id: 3, name: "Fachspezifisches Modul I", themen: []),
-  Lernfeld(id: 4, name: "Fachspezifisches Modul II", themen: []),
+  Lernfeld(id: 3, name: "FSM I", themen: []),
+  Lernfeld(id: 4, name: "FSM II", themen: []),
   Lernfeld(id: 5, name: "Mobile", themen: []),
   Lernfeld(id: 6, name: "Web", themen: []),
 ];

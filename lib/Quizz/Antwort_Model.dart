@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import '../datenklassen/view_builder.dart';
-
 class Antwort_Model with ChangeNotifier {
   final Antwort antwort;
   final Function unselectAntworten;
@@ -32,23 +30,25 @@ class Antwort_Model with ChangeNotifier {
   bool get locked => _locked;
   bool get isSelected => _isSelected;
 
-  bool? evaluate(){
+  Map<String, dynamic> evaluate(){
+    Map<String, dynamic> map = {"erreichtePunkte":0, "maxPunkte":antwort.punkte};
     _locked = true;
     if(isSelected){
       if(antwort.isKorrekt){
         _color = Colors.green;
-        return true;
+        map["erreichtePunkte"] = antwort.punkte;
       } else{
         _color = Colors.red;
-        return false;
+        map["erreichtePunkte"] = -antwort.punkte;
       }
     } else{
       if(antwort.isKorrekt){
         _color = Colors.yellow;
-        return null;
+        map["erreichtePunkte"] = -1;
       }
     }
     notifyListeners();
+    return map;
   }
 
   set isSelected(bool value){

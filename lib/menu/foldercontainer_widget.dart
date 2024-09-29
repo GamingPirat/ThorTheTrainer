@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
-import 'datenklassen/view_builder.dart';
+import '../datenklassen/view_builder.dart';
 
-class DrawerMenuWidget extends StatefulWidget {
-  const DrawerMenuWidget({super.key});
+class FolderContainer_Widget extends StatefulWidget {
+  const FolderContainer_Widget({super.key});
 
   @override
-  State<DrawerMenuWidget> createState() => _DrawerMenuWidgetState();
+  State<FolderContainer_Widget> createState() => _FolderContainer_WidgetState();
 }
 
-class _DrawerMenuWidgetState extends State<DrawerMenuWidget> {
+class _FolderContainer_WidgetState extends State<FolderContainer_Widget> {
   late List<ContentContainer> contentcontainers;
 
   @override

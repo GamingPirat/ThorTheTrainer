@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:login/datenbank/frage_und_antwort.dart';
+import '../datenklassen/view_builder.dart';
 import 'Antwort_Model.dart';
 
 class Frage_Model with ChangeNotifier {
@@ -15,9 +15,7 @@ class Frage_Model with ChangeNotifier {
   }) {
     antwortenViewModel = [];
     bool isMultipleChoice = _isMultipleChoice(frage.antworten);
-
     _initializeAntwortenViewModel(frage.antworten, isMultipleChoice);
-
     antwortenViewModel.shuffle(Random());
   }
 
@@ -41,17 +39,17 @@ class Frage_Model with ChangeNotifier {
   String get titel => frage.text;
   bool get locked => _locked;
 
-  Map<String, dynamic> evaluate(){
-    Map<String, dynamic> map = {"erreichtePunkte":0, "maxPunkte":0};
-    _locked = true;
-    for (var antwortVM in antwortenViewModel) {
-      map["erreichtePunkte"] += antwortVM.evaluate()["erreichtePunkte"];
-      map["maxPunkte"] += antwortVM.evaluate()["maxPunkte"];
+  int evaluate() {
+    // iteriere durch deine Antworten
+    int richtige = 0;
+    for (Antwort_Model antwort in antwortenViewModel) {
+      if (antwort.evaluate() != null)
+        if (antwort.evaluate() == true)
+          richtige++;
+        else
+          richtige--;
     }
-    notifyListeners();
-    return {
-      "erreichtePunkte":map["erreichtePunkte"],
-      "answeredCorrect":(map["maxPunkte"] == map["erreichtePunkte"])};
+    return frage.punkte*richtige~/antwortenViewModel.length; // ~/ == intdivisionOperator
   }
 
     List<Antwort_Model> get antworten => antwortenViewModel;

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/my_appBar.dart';
+import 'package:lernplatform/menu/my_appBar.dart';
 import 'package:lernplatform/user_session.dart';
-import 'datenklassen/folder_types.dart';
-import 'folderlist_widget.dart';
-import 'static_menu_drawer.dart';
-import 'quiz_starter_page.dart';
+
+import 'menu/static_menu_drawer.dart';
 
 void main() {
   runApp(MyApp());
