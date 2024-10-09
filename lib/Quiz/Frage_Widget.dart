@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/a_only_for_demonstration.dart';
-import 'package:lernplatform/datenklassen/view_builder.dart';
+import 'package:lernplatform/datenklassen/thema_dbs.dart';
 import 'package:provider/provider.dart';
+import '../datenklassen/frage.dart';
 import 'Antwort_Widget.dart';
 import 'Frage_Model.dart';
 
@@ -24,7 +24,7 @@ class Frage_Widget extends StatelessWidget {
                     vm.titel,
                     style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                   ),
-                  Antworten_Widget(viewModels: vm.antworten),
+                  Antworten_Widget(viewModels: vm.antwortenViewModel),
                   SizedBox(height: 36,),
                 ],
               ),
@@ -35,15 +35,34 @@ class Frage_Widget extends StatelessWidget {
   }
 }
 
-void main(){
-  runApp(
-      DemonstrationApp(
-          home: DemonstrationPage(
-            testWidget: Frage_Widget(
-                viewModel: Frage_Model(
-                    frage: mok_fragen_zuThema1[2])
-            ),
-          )
-      )
-  );
-}
+// void main() {
+//   WidgetsFlutterBinding.ensureInitialized(); // Stelle sicher, dass die Bindings initialisiert sind
+//
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(title: const Text("Frage Demo")),
+//         body: FutureBuilder<List<Frage>>(
+//           future: await Thema_JSONService().load('assets/test_thema.json').fragen, // Lade die Fragen aus der JSON-Datei
+//           builder: (context, snapshot) {
+//             if (snapshot.connectionState == ConnectionState.waiting) {
+//               return const Center(child: CircularProgressIndicator()); // Zeige Ladeindikator
+//             } else if (snapshot.hasError) {
+//               return Center(
+//                   child: Text("Fehler beim Laden der Daten: ${snapshot.error}")); // Fehler behandeln
+//             } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
+//               return const Center(child: Text("Keine Fragen gefunden")); // Keine Daten gefunden
+//             } else {
+//               // Gebe das erste Element der Fragen an das Widget weiter
+//               return Frage_Widget(
+//                 viewModel: Frage_Model(
+//                   frage: snapshot.data!.first, // Das erste Element der geladenen Fragen
+//                 ),
+//               );
+//             }
+//           },
+//         ),
+//       ),
+//     ),
+//   );
+// }

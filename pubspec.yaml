@@ -37,6 +37,11 @@ dependencies:
   cupertino_icons: ^1.0.6
   shared_preferences: ^2.0.6
   provider: ^6.0.5
+  sqflite: ^2.0.0+4  # für SQLite auf mobilen und Desktop-Plattformen
+  path: ^1.8.1       # für den Umgang mit Dateipfaden
+  path_provider: ^2.0.11  # um auf den Datenbankpfad zuzugreifen
+  sembast: ^3.1.1    # für IndexedDB im Web
+  sembast_web: ^2.4.0+2  # sembast Web-Plugin für IndexedDB
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +64,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/test_thema.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

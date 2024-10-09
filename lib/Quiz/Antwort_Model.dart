@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import '../datenklassen/view_builder.dart';
+import '../datenklassen/frage.dart';
 
 class Antwort_Model with ChangeNotifier {
   final Antwort antwort;
@@ -34,20 +33,33 @@ class Antwort_Model with ChangeNotifier {
 
   bool? evaluate(){
     _locked = true;
-    if(isSelected){
-      if(antwort.isKorrekt){
-        _color = Colors.green;
-        return true;
-      } else{
-        _color = Colors.red;
-        return false;
-      }
-    } else{
-      if(antwort.isKorrekt){
-        _color = Colors.yellow;
-        return null;
-      }
+    // flag == true == Pluspunkte,
+    // flag == false == Minuspunkte,
+    // flag == null == neutral
+    bool? flag;
+    if (antwort.isKorrekt && !isSelected && !isMultipleChoice) flag = null;
+    else flag = antwort.isKorrekt && isSelected;
+
+    // farbe ändern
+    if(isSelected && antwort.isKorrekt){
+      _color = Colors.green;
     }
+    else if(isSelected && !antwort.isKorrekt){
+      _color = Colors.red;
+    }
+    else if(!isSelected && antwort.isKorrekt) {
+      _color = Colors.yellow;
+    }
+
+    notifyListeners();
+  }
+
+  blink() async {
+    // wenn der Nutzer keine Antwort gewählt hat
+    _color = Colors.pink;
+    notifyListeners();
+    await Future.delayed(Duration(seconds: 1));
+    _color = Colors.transparent;
     notifyListeners();
   }
 

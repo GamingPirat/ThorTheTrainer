@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/menu/mok_user_model.dart';
 import 'package:lernplatform/menu/my_appBar.dart';
+import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/session.dart';
 
 import 'menu/my_left_drawer.dart';
@@ -26,11 +28,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
-    session = Session();
-    session.appBar = MyAppBar(setThemeMode: (themeMode) {
+    session = Session(setThemeMode: (themeMode) {
       setThemeMode(themeMode);
-    },);
-    session.drawer = MyLeftDrawer();
+    });
     super.initState();
   }
 
@@ -39,12 +39,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      // Zugriff auf den themeMode über den State von MyAppBar:
-      themeMode: _themeMode, // Dies ist eine vereinfachte Annahme.
-      home: Scaffold(
-        appBar: session.appBar,
-        drawer: session.drawer,
-        body: const Center(
+      themeMode: _themeMode,
+      home: MyStaticMenu(
+        content: const Center(
           child: Text('Wiederholung ist die Mutter des Lernens'),
         ),
       ),

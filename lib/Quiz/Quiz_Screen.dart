@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/quiz_model.dart';
 import 'package:lernplatform/Quiz/quiz_teilnehmer.dart';
 import 'package:lernplatform/Quiz/Frage_Widget.dart';
-import 'package:lernplatform/a_only_for_demonstration.dart';
+import 'package:lernplatform/Quiz/right_drawer.dart';
+import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 import '../pages/progress_bar.dart';
 
 class Quiz_Screen extends StatelessWidget {
-  final QuizModel viewModel = QuizModel(
-      quizTeilnehmer: QuizTeilnehmer(teilnehmer: mok_teilnehmer));
+  late final QuizModel viewModel;
 
-  Quiz_Screen({super.key}) {
-
+  Quiz_Screen({required QuizTeilnehmer quizTeilnehmer}){
+    viewModel = QuizModel(quizTeilnehmer: quizTeilnehmer);
   }
 
   @override
@@ -21,29 +21,28 @@ class Quiz_Screen extends StatelessWidget {
       value: viewModel,
       child: Consumer<QuizModel>(
         builder: (context, vm, child) {
-          return Scaffold(
-            appBar: Session().appBar,
-            drawer: Session().drawer,
-            body: Stack(
+          return MyStaticMenu(
+            content: vm.isLoading
+              ? CircularProgressIndicator()
+              : Stack(
               children: [
                 Column(
                   children: [
-                    ProgressBar(logThema: vm.aktuellesThema,),
+                    ProgressBar(logThema: vm.aktuellesThema),
                     Expanded(
-                      child: Frage_Widget(
-                          viewModel: vm.currentQuestioin)
+                      child: Frage_Widget(viewModel: vm.currentQuestioin),
                     ),
-
                     vm.isLocked
                         ? IconButton(
                       icon: const Icon(Icons.arrow_downward, color: Colors.white),
                       onPressed: () {
-                        vm.nextTapped(); // Setzt isLocked auf false
-                        // Slide die Column nach oben
+                        vm.nextTapped();
                       },
                     )
                         : ElevatedButton(
-                      onPressed: vm.lockTapped, // Setzt isLocked auf true
+                      onPressed: () {
+                        // vm.lockTapped();
+                      },
                       child: const Text("lock"),
                     ),
                     const SizedBox(
@@ -51,6 +50,10 @@ class Quiz_Screen extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                // Der nicht blockierende Drawer
+                RightDrawer(isVisible: vm.isLocked,),
+
               ],
             ),
           );
@@ -58,8 +61,4 @@ class Quiz_Screen extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(DemonstrationApp(home: Quiz_Screen()));
 }

@@ -1,50 +1,43 @@
 import 'package:flutter/material.dart';
 
-class ProgressIcons extends StatelessWidget {
-  final int points;
+class MyWidget<T> extends StatelessWidget {
+  final Widget tchild;
+  final Future<T> future;
 
-  ProgressIcons({required this.points});
+  MyWidget({required this.tchild, required this.future});
 
   @override
   Widget build(BuildContext context) {
-    List<IconData> icons = [
-      Icons.star,
-      Icons.favorite,
-      Icons.check_circle,
-      Icons.thumb_up,
-      Icons.emoji_events,
-      Icons.flash_on,
-      Icons.verified,
-      Icons.grade,
-      Icons.trending_up,
-      Icons.military_tech,
-    ];
-
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: icons.map((icon) {
-        return Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(icon, color: Colors.blue),
-            SizedBox(width: 8),
-            Text(
-              '$points',
-              style: TextStyle(fontSize: 24, color: Colors.blue),
-            ),
-          ],
-        );
-      }).toList(),
+    return FutureBuilder<T>(
+      future: future, // Übergebe das Future-Objekt
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator(); // Ladeindikator
+        } else if (snapshot.hasError) {
+          return Text('Fehler: ${snapshot.error}'); // Fehleranzeige
+        } else if (snapshot.hasData) {
+          final data = snapshot.data; // Daten vorhanden, zeige Widget
+          return Text('Daten: ${data.toString()}'); // Hier kann ein anderes Widget verwendet werden
+        } else {
+          return tchild; // Widget, das angezeigt wird, wenn keine Daten vorhanden sind
+        }
+      },
     );
   }
 }
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      body: Center(
-        child: ProgressIcons(points: 8),
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: MyWidget<String>(
+          tchild: Text('Kein Inhalt verfügbar'),
+          future: Future.delayed(
+            Duration(seconds: 2),
+                () => 'Lade Daten erfolgreich!',
+          ), // Simuliertes Future für das Testen
+        ),
       ),
     ),
-  ));
+  );
 }

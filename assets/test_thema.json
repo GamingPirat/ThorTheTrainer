@@ -1,0 +1,79 @@
+{
+  "id": 1,
+  "name": "Allgemeinwissen",
+  "tags": [1, 2, 3],
+  "fragen": [
+    {
+      "nummer": 1,
+      "version": 1,
+      "themaID": 1,
+      "punkte": 5,
+      "text": "Welche der folgenden sind Programmiersprachen?",
+      "antworten": [
+        {
+          "text": "Python",
+          "erklaerung": "Python ist eine weit verbreitete Programmiersprache.",
+          "isKorrekt": true
+        },
+        {
+          "text": "HTML",
+          "erklaerung": "HTML ist eine Auszeichnungssprache, keine Programmiersprache.",
+          "isKorrekt": false
+        },
+        {
+          "text": "Java",
+          "erklaerung": "Java ist eine Programmiersprache.",
+          "isKorrekt": true
+        },
+        {
+          "text": "CSS",
+          "erklaerung": "CSS ist eine Stylesheet-Sprache.",
+          "isKorrekt": false
+        }
+      ]
+    },
+    {
+      "nummer": 2,
+      "version": 1,
+      "themaID": 1,
+      "punkte": 3,
+      "text": "Was ist die Hauptstadt von Frankreich?",
+      "antworten": [
+        {
+          "text": "Berlin",
+          "erklaerung": "Berlin ist die Hauptstadt von Deutschland.",
+          "isKorrekt": false
+        },
+        {
+          "text": "Madrid",
+          "erklaerung": "Madrid ist die Hauptstadt von Spanien.",
+          "isKorrekt": false
+        },
+        {
+          "text": "Paris",
+          "erklaerung": "Paris ist die Hauptstadt von Frankreich.",
+          "isKorrekt": true
+        }
+      ]
+    },
+    {
+      "nummer": 3,
+      "version": 1,
+      "themaID": 1,
+      "punkte": 2,
+      "text": "Die Erde ist eine Scheibe.",
+      "antworten": [
+        {
+          "text": "Wahr",
+          "erklaerung": "Die Erde ist keine Scheibe, sondern ein Geoid.",
+          "isKorrekt": false
+        },
+        {
+          "text": "Falsch",
+          "erklaerung": "Korrekt, die Erde ist keine Scheibe.",
+          "isKorrekt": true
+        }
+      ]
+    }
+  ]
+}

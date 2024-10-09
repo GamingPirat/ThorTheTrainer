@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/view_builder.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
 
-import '../a_only_for_demonstration.dart';
+import '../datenklassen/log_lernfeld_u_frage.dart';
 
 class FolderWidget extends StatelessWidget {
   final Folder folder;
@@ -36,21 +35,19 @@ class LernfeldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      // leading: Icon(Icons.lightbulb),
       title: Text(lernfeld.name),
       onTap: () {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => DemonstrationPage(
-              testWidget: Text('Platzhalter für ${lernfeld.name}'),
-            ),
+            builder: (context) => Text('Platzhalter für ${lernfeld.name}'),
           ),
         );
       },
     );
   }
 }
+
 
 class Folderlist_widget extends StatelessWidget {
   final List<ContentContainer> folders;
@@ -66,47 +63,6 @@ class Folderlist_widget extends StatelessWidget {
       // body: ListView(
       //   children: folders.map((folder) => FolderWidget(folder: folder)).toList(),
       // ),
-    );
-  }
-}
-
-void main() {
-  runApp(TestApp());
-}
-
-class TestApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    List<Folder> folders = [
-      Folder(
-        id: 1,
-        name: 'Schulen',
-        subFolder: [
-          Folder(
-            id: 2,
-            name: 'GFN',
-            subFolder: [],
-            lernFelder: [
-              Lernfeld(id: 3, name: 'Lernfeld 1 der Fachinformatiker', themen: []),
-              Lernfeld(id: 4, name: 'Lernfeld 2 der Fachinformatiker', themen: []),
-            ],
-          ),
-        ],
-        lernFelder: [
-          Lernfeld(id: 5, name: 'main.cc', themen: []),
-          Lernfeld(id: 6, name: 'my_application.cc', themen: []),
-          Lernfeld(id: 7, name: 'my_application.h', themen: []),
-        ],
-      ),
-    ];
-
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Test App'),
-        ),
-        body: Folderlist_widget(folders: folders),
-      ),
     );
   }
 }

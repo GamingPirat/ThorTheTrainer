@@ -7,20 +7,27 @@ import 'package:lernplatform/datenklassen/log_lernfeld_u_frage.dart';
 import 'package:lernplatform/log_and_content-converter.dart';
 import 'package:lernplatform/session.dart';
 import '../datenklassen/thema.dart';
-import '../datenklassen/view_builder.dart';
+import '../datenklassen/frage.dart';
+import '../datenklassen/thema_dbs.dart';
 import '../menu/punkte_widget.dart';
 
 class QuizModel with ChangeNotifier {
 
-  QuizTeilnehmer quizTeilnehmer;
+  late QuizTeilnehmer quizTeilnehmer;
   bool _isLocked = false;
+  bool _isLoading= true;
   List<Frage_Model> historie = [];
-  int _bei10wirdGespeichert = 1;
   Random rnd = Random();
   late LogThema _aktuellesThema;
   late Frage_Model _currentQuestioin;
   FortschrittSpeicherAnzeiger fortschrittSpeicherAnzeiger = FortschrittSpeicherAnzeiger(fortschritt: 1);
-  PunkteAnzeige erreichtePunkte = PunkteAnzeige(punkte: 15,);
+  PunkteAnzeige erreichtePunkte = PunkteAnzeige(punkte: 0,);
+  Drawer rightDrawer = Drawer(
+    child: Container(
+      color: Colors.white,
+      child: Text("Blah!"),
+    ),
+  );
 
   QuizModel({required this.quizTeilnehmer}){
     Session().pageHeader = Row(
@@ -36,50 +43,49 @@ class QuizModel with ChangeNotifier {
     nextTapped();
   }
 
+
   void lockTapped() {
-    _isLocked = true;
-    // Suche das Objekt, dessen id mit der aktuellen Frage übereinstimmt
-    LogFrage removed = _aktuellesThema.offeneFragen.firstWhere(
-          (frage) => frage.id == _currentQuestioin.frage!.id,
-    );
-    _aktuellesThema.offeneFragen.remove(removed);
+    if(_currentQuestioin.isSomthingSelected()){
+      _isLocked = true;
+      // schreibe Punkte gut
+      int erreichte_punkte = currentQuestioin.evaluate();
+      erreichtePunkte.punkte += erreichte_punkte;
 
-    if (_currentQuestioin.frage.punkte > _currentQuestioin.evaluate())
-      _aktuellesThema.falschBeantworteteFragen.add(removed);
-    else
-      _aktuellesThema.richtigBeantworteteFragen.add(removed);
+      // stecke aktuelle Frage in richtig- oder falsch -beantwortete
+      if (_currentQuestioin.frage.punkte > erreichte_punkte)
+        _aktuellesThema.falschBeantworteteFragen.add(_currentQuestioin.frage.id.toString());
+      else
+        _aktuellesThema.richtigBeantworteteFragen.add(_currentQuestioin.frage.id.toString());
 
-    bei10wirdGespeichert++;
+      // erhöhe Fortschritt
+      bei10wirdGespeichert++;
+      notifyListeners();
+    }
 
-    notifyListeners();
   }
 
-  void nextTapped(){
-    _aktuellesThema = quizTeilnehmer.nextThema();
+
+
+  void nextTapped() {
     _isLocked = false;
-    List<Frage> randomFragen = convertToFragen(logFragen: _aktuellesThema.offeneFragen);
-    _currentQuestioin = Frage_Model(frage: randomFragen[rnd.nextInt(randomFragen.length)]);
+    _aktuellesThema = quizTeilnehmer.nextThema();
+    _currentQuestioin = Frage_Model(frage: Session().themenService.getRandomFrage(_aktuellesThema));
     notifyListeners();
-  }
 
+  }
 
   LogThema get aktuellesThema => _aktuellesThema;
   Frage_Model get currentQuestioin => _currentQuestioin;
   bool get isLocked => _isLocked;
-  int get bei10wirdGespeichert => _bei10wirdGespeichert;
+  bool get isLoading => _isLoading;
+  int get bei10wirdGespeichert => quizTeilnehmer.alle10RundenWirdGespeichert;
   set bei10wirdGespeichert(int value){
-    _bei10wirdGespeichert = value;
-    if(_bei10wirdGespeichert == 10){
+    quizTeilnehmer.alle10RundenWirdGespeichert = value;
+    if(quizTeilnehmer.alle10RundenWirdGespeichert == 10){
       erreichtePunkte.punkte = 0;
-      Session().punkteAnzeige.punkte +=15;
-      // quizTeilnehmer.speichern();  todo
-    } else if (_bei10wirdGespeichert == 11)
-      _bei10wirdGespeichert = 1;
-    fortschrittSpeicherAnzeiger.updateFilledContainers(_bei10wirdGespeichert);
+      Session().punkteAnzeige.punkte +=15; // todo
+    fortschrittSpeicherAnzeiger.updateFilledContainers(quizTeilnehmer.alle10RundenWirdGespeichert);
+    }
+
   }
-
 }
-
-
-
-

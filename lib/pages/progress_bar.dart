@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/a_only_for_demonstration.dart';
 
 import '../datenklassen/thema.dart';
 
@@ -55,14 +54,4 @@ class _ProgressBarState extends State<ProgressBar> {
       ),
     );
   }
-}
-
-void main(){
-  runApp(DemonstrationApp(
-      home: DemonstrationPage(
-        testWidget: ProgressBar(
-          logThema: mok_lokThemen[0],
-        ),
-      )
-  ));
 }

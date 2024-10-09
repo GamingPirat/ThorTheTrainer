@@ -1,8 +1,10 @@
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '../datenklassen/view_builder.dart';
-import 'Antwort_Model.dart';
+
+import '../Quiz/Antwort_Model.dart';
+import '../datenklassen/frage.dart';
+
 
 class Frage_Model with ChangeNotifier {
   final Frage frage;
@@ -36,8 +38,6 @@ class Frage_Model with ChangeNotifier {
     }
   }
 
-  String get titel => frage.text;
-  bool get locked => _locked;
 
   int evaluate() {
     // iteriere durch deine Antworten
@@ -52,7 +52,6 @@ class Frage_Model with ChangeNotifier {
     return frage.punkte*richtige~/antwortenViewModel.length; // ~/ == intdivisionOperator
   }
 
-    List<Antwort_Model> get antworten => antwortenViewModel;
 
   void unselectAntworten(Antwort_Model model) {
     print("unselectAntworten");
@@ -63,4 +62,20 @@ class Frage_Model with ChangeNotifier {
     }
     notifyListeners();
   }
+
+  bool isSomthingSelected(){
+    bool flag = false;
+    for (Antwort_Model antwort in antworten)
+      if(antwort.isSelected){
+        return true;
+      }
+    for (Antwort_Model antwort in antworten)
+      antwort.blink();
+    return false;
+  }
+
+
+  String get titel => frage.text;
+  bool get locked => _locked;
+  List<Antwort_Model> get antworten => antwortenViewModel;
 }

@@ -1,0 +1,19 @@
+{
+  "lernfelder": [
+    {
+      "id": 1,
+      "name": "Informatik",
+      "themen": []
+    },
+    {
+      "id": 2,
+      "name": "Physik",
+      "themen": []
+    },
+    {
+      "id": 3,
+      "name": "Mathematik",
+      "themen": []
+    }
+  ]
+}

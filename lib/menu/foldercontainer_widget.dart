@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
-import '../datenklassen/view_builder.dart';
+import '../datenklassen/frage.dart';
 
 class FolderContainer_Widget extends StatefulWidget {
   const FolderContainer_Widget({super.key});

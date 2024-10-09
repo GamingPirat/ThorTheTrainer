@@ -1,10 +1,46 @@
 import 'dart:convert'; // Für JSON-Konvertierung
 import 'package:flutter/material.dart';
+import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/datenklassen/thema.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'folder_types.dart';
+import 'dart:io';
 
-import '../Quiz/quiz_teilnehmer.dart'; // Für den Zugriff auf den lokalen Speicher
+class Lernfeld extends ContentContainer {
+  final List<Thema> themen;
 
+  Lernfeld({
+    required int id,
+    required String name,
+    required this.themen,
+  }) : super(id: id, name: name);
+
+  factory Lernfeld.fromJson(Map<String, dynamic> json) {
+    return Lernfeld(
+      id: json['id'],
+      name: json['name'],
+      themen: (json['themen'] as List<dynamic>?)
+          ?.map((themaJson) => Thema.fromJson(themaJson))
+          .toList() ??
+          [],
+    );
+  }
+
+  static Future<Lernfeld> fromJsonFile(int id) async {
+    final file = File('assets/test_lernfelder');
+    final contents = await file.readAsString();
+    final json = jsonDecode(contents);
+
+    // Die Lernfelder werden als Liste erwartet, also nach dem ID suchen.
+    final lernfelder = (json['lernfelder'] as List<dynamic>?)
+        ?.firstWhere((lf) => lf['id'] == id, orElse: () => null);
+
+    if (lernfelder == null) {
+      throw Exception("Lernfeld mit ID $id nicht gefunden.");
+    }
+
+    return Lernfeld.fromJson(lernfelder);
+  }
+}
 
 
 class LogLernfeld {
@@ -12,7 +48,7 @@ class LogLernfeld {
   List<LogThema> meineThemen;
 
   LogLernfeld(this.id, this.meineThemen);
-
+//
 }
 
 List<LogLernfeld> mok_lernfelder = [
@@ -26,108 +62,4 @@ class LogFrage {
   LogFrage(this.id);
 
 
-}
-
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Themen Verwaltung',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ThemenVerwaltung(),
-    );
-  }
-}
-
-class ThemenVerwaltung extends StatefulWidget {
-  @override
-  _ThemenVerwaltungState createState() => _ThemenVerwaltungState();
-}
-
-class _ThemenVerwaltungState extends State<ThemenVerwaltung> {
-  Teilnehmer teilnehmer = Teilnehmer();
-  TextEditingController _controller = TextEditingController();
-  bool isLoading = true;
-
-  @override
-  void initState() {
-    super.initState();
-    loadData();
-  }
-
-  Future<void> loadData() async {
-    await teilnehmer.load();
-    setState(() {
-      isLoading = false;
-    });
-  }
-
-  Future<void> addThema() async {
-    if (_controller.text.isNotEmpty) {
-      setState(() {
-        teilnehmer.meineLernfelder.add(LogLernfeld(
-          teilnehmer.meineLernfelder.length + 1,
-          [],
-        ));
-      });
-      _controller.clear();
-      await teilnehmer.save();
-    }
-  }
-
-  Future<void> deleteThema(int index) async {
-    setState(() {
-      teilnehmer.meineLernfelder.removeAt(index);
-    });
-    await teilnehmer.save();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Themen Verwaltung'),
-      ),
-      body: isLoading
-          ? Center(child: CircularProgressIndicator())
-          : Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextField(
-              controller: _controller,
-              decoration: InputDecoration(
-                labelText: 'Neues Thema',
-                suffixIcon: IconButton(
-                  icon: Icon(Icons.add),
-                  onPressed: addThema,
-                ),
-              ),
-            ),
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: teilnehmer.meineLernfelder.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text('Thema ${teilnehmer.meineLernfelder[index].id}'),
-                  trailing: IconButton(
-                    icon: Icon(Icons.delete),
-                    onPressed: () => deleteThema(index),
-                  ),
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 }

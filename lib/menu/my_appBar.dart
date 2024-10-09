@@ -7,6 +7,7 @@ import 'folder_widget.dart';
 
 
 class MyAppBar extends AppBar {
+
   final void Function(ThemeMode) setThemeMode;
 
   MyAppBar({Key? key, required this.setThemeMode})
@@ -80,37 +81,37 @@ class _MyAppBarState extends State<MyAppBar> {
   }
 }
 
-void main() {
-  runApp(MyTestApp());
-}
-
-// Nur zu Testzwecken eingebaut
-void setThemeMode(ThemeMode value) {
-  // Dummy Funktion für Testzwecke
-}
-
-// Nur zu Testzwecken eingebaut
-late Session session;
-
-class MyTestApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // Nur zu Testzwecken eingebaut
-    session = Session();
-    session.appBar = MyAppBar(setThemeMode: (themeMode) {
-      setThemeMode(themeMode);
-    });
-    session.drawer = MyLeftDrawer();
-
-    return MaterialApp(
-      theme: ThemeData.dark(),
-      home: Scaffold(
-        appBar: session.appBar,
-        drawer: session.drawer,
-        body: Center(
-          child: Text('TestApp Content'),
-        ),
-      ),
-    );
-  }
-}
+// void main() {
+//   runApp(MyTestApp());
+// }
+//
+// // Nur zu Testzwecken eingebaut
+// void setThemeMode(ThemeMode value) {
+//   // Dummy Funktion für Testzwecke
+// }
+//
+// // Nur zu Testzwecken eingebaut
+// late Session session;
+//
+// class MyTestApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     // Nur zu Testzwecken eingebaut
+//     session = Session.create();
+//     session.appBar = MyAppBar(setThemeMode: (themeMode) {
+//       setThemeMode(themeMode);
+//     });
+//     session.drawer = MyLeftDrawer();
+//
+//     return MaterialApp(
+//       theme: ThemeData.dark(),
+//       home: Scaffold(
+//         appBar: session.appBar,
+//         drawer: session.drawer,
+//         body: Center(
+//           child: Text('TestApp Content'),
+//         ),
+//       ),
+//     );
+//   }
+// }
