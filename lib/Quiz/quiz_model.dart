@@ -3,17 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/Frage_Model.dart';
 import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/Quiz/quiz_teilnehmer.dart';
-import 'package:lernplatform/datenklassen/log_lernfeld_u_frage.dart';
-import 'package:lernplatform/log_and_content-converter.dart';
+import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/session.dart';
-import '../datenklassen/thema.dart';
-import '../datenklassen/frage.dart';
-import '../datenklassen/thema_dbs.dart';
 import '../menu/punkte_widget.dart';
 
 class QuizModel with ChangeNotifier {
 
-  late QuizTeilnehmer quizTeilnehmer;
+  late QuizThema quizTeilnehmer;
   bool _isLocked = false;
   bool _isLoading= true;
   List<Frage_Model> historie = [];
@@ -61,10 +57,7 @@ class QuizModel with ChangeNotifier {
       bei10wirdGespeichert++;
       notifyListeners();
     }
-
   }
-
-
 
   void nextTapped() {
     _isLocked = false;

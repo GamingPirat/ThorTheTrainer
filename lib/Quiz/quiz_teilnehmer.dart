@@ -1,44 +1,35 @@
 import 'dart:math';
-
-import '../datenklassen/log_lernfeld_u_frage.dart';
-import '../datenklassen/log_teilnehmer.dart';
-import '../datenklassen/thema.dart';
-import '../datenklassen/thema_dbs.dart';
 import '../session.dart';
+import 'package:lernplatform/datenklassen/lernfeld.dart';
+import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import '../datenklassen/thema.dart';
 
-class QuizTeilnehmer {
-  late List<Thema> ausgewaehlteThemen;
-  late List<LogThema> ausgewaehlteLogThemen;
-  late LogThema _aktuellesLogThema;
-  int _alle10RundenwirdGespeichert = 0;
+class QuizThema {
+  late Thema thema;
+  final LogThema logThema;
   final random = Random();
 
-  QuizTeilnehmer({required this.ausgewaehlteLogThemen});
-
-  LogThema nextThema() {
-    if (ausgewaehlteLogThemen.isEmpty) {
-      throw Exception("Keine LogThemen verfügbar, um fortzufahren."); // Fehler ausgeben, falls keine LogThemen gefunden wurden
-    }
-
-    ++alle10RundenWirdGespeichert;
-    _aktuellesLogThema = ausgewaehlteLogThemen[random.nextInt(ausgewaehlteLogThemen.length)]; // Korrekte Länge verwenden
-    return aktuellesLogThema;
+  QuizThema({required this.logThema}){
+    for(Lernfeld lernfeld in Session().user.usersLernfelder)
+      for(Thema thema in lernfeld.themen)
+          if(thema.id == logThema.id)
+            this.thema = thema;
   }
 
-  LogThema get aktuellesLogThema => _aktuellesLogThema;
-  int get alle10RundenWirdGespeichert => _alle10RundenwirdGespeichert;
+  userHatRichtigGeantwortet(){}
+  userHatFalschGeantwortet(){}
 
-  set alle10RundenWirdGespeichert(int value) {
-    _alle10RundenwirdGespeichert = value;
-    if (_alle10RundenwirdGespeichert == 10) {
-      Session().derEingeloggteUser_Model.teilnehmer.save();
-      _alle10RundenwirdGespeichert = 0;
-    }
-  }
+  // Frage nextFrage(){
+  //   // suche nach dem aktuellem konkretem Thema
+  //   List<String> geseheneFragen =[
+  //     ..._aktuellesLogThema.richtigBeantworteteFragen,
+  //     ..._aktuellesLogThema.falschBeantworteteFragen
+  //   ];
+  //   for(Thema thema in ausgewaehlteThemen)
+  //     if(thema.id == _aktuellesLogThema.id)
+  //       // versuche offene Frage zu returnieren
+  //
+  //       return thema.
+  // }
+
 }
-
-QuizTeilnehmer mok_quizTeilnehmer = QuizTeilnehmer(
-    ausgewaehlteLogThemen: [
-    Session().derEingeloggteUser_Model.teilnehmer.meineLernfelder[0].meineThemen[0]
-    ]
-);

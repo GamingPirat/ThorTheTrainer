@@ -11,7 +11,7 @@ import '../pages/progress_bar.dart';
 class Quiz_Screen extends StatelessWidget {
   late final QuizModel viewModel;
 
-  Quiz_Screen({required QuizTeilnehmer quizTeilnehmer}){
+  Quiz_Screen({required QuizThema quizTeilnehmer}){
     viewModel = QuizModel(quizTeilnehmer: quizTeilnehmer);
   }
 

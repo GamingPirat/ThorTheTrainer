@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
 
-import '../datenklassen/log_lernfeld_u_frage.dart';
+import '../datenklassen/lernfeld.dart';
 
 class FolderWidget extends StatelessWidget {
   final Folder folder;

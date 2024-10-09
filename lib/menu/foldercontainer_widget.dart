@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
+import 'package:lernplatform/session.dart';
 import '../datenklassen/frage.dart';
 
 class FolderContainer_Widget extends StatefulWidget {
@@ -14,7 +15,7 @@ class _FolderContainer_WidgetState extends State<FolderContainer_Widget> {
 
   @override
   void initState() {
-    contentcontainers = mok_lernfelder;
+    contentcontainers = Session().user.usersLernfelder;
     super.initState();
   }
 

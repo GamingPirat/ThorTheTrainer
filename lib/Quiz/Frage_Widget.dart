@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/thema_dbs.dart';
 import 'package:provider/provider.dart';
-import '../datenklassen/frage.dart';
 import 'Antwort_Widget.dart';
 import 'Frage_Model.dart';
 

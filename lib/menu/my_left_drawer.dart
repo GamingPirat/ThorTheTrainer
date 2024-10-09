@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/session.dart';
 import '../Quiz/Quiz_Screen.dart';
 import '../Quiz/quiz_teilnehmer.dart';
 import '../datenklassen/folder_types.dart';
@@ -52,7 +53,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
   Widget buildFolderList() {
     return Expanded(
       child: ListView(
-        children: mok_TeilnehmerFolder.lernFelder.map((lernfeld) {
+        children: Session().user.usersLernfelder.map((lernfeld) {
           return LernfeldWidget(lernfeld: lernfeld,);
         }).toList(),
       ),

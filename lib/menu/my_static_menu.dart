@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 class MyStaticMenu extends StatelessWidget {
 
-  MokUserModel viewModel = Session().derEingeloggteUser_Model;
+  UserModel viewModel = Session().user;
 
   Widget content;
   MyStaticMenu({super.key, required this.content});
@@ -14,7 +14,7 @@ class MyStaticMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<MokUserModel>(
+      child: Consumer<UserModel>(
           builder: (context, vm, child) {
           return Scaffold(
             appBar: Session().appBar,

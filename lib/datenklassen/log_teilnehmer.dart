@@ -1,44 +1,49 @@
-import 'package:lernplatform/datenklassen/thema.dart';
-import 'package:lernplatform/datenklassen/thema_dbs.dart';
-
-import '../log_and_content-converter.dart';
-import 'log_lernfeld_u_frage.dart';
+import 'package:lernplatform/datenklassen/log_and_content-converter.dart';
 
 class Teilnehmer {
-  late List<LogLernfeld> meineLernfelder;
+  List<LogLernfeld> meineLernfelder;
   final String key;
 
-  // Privater Konstruktor
-  Teilnehmer._private({required this.key});
-
-  Future<void> load() async {
-    List<LogThema> pseudDaten = [];
-    final themaService = await Thema_JSONService.getInstance('assets/test_thema.json');
-
-    for (Thema thema in themaService.themen) {
-      pseudDaten.add(
-          LogThema(
-              id: thema.id,
-              falschBeantworteteFragen: [],
-              richtigBeantworteteFragen: []
-          )
-      );
-    }
-
-    meineLernfelder = [LogLernfeld(1, pseudDaten)];
-  }
-
-  Future<void> save() async {
-    // Speichern, falls benötigt
-  }
-
-  // Statische Methode zum Erstellen eines Teilnehmers
-  static Future<Teilnehmer> loadTeilnehmer(String key) async {
-    Teilnehmer teilnehmer = Teilnehmer._private(key: key);
-    await teilnehmer.load(); // Teilnehmerdaten laden
-    return teilnehmer;
-  }
+  Teilnehmer({required this.key, required this.meineLernfelder});
 }
 
 
+class LogLernfeld {
+  int id;
+  List<LogThema> meineThemen;
+  LogLernfeld(this.id, this.meineThemen);
+}
+
+
+class LogThema {
+  int id;
+  List<String> falschBeantworteteFragen;
+  List<String> richtigBeantworteteFragen;
+
+  LogThema({
+    required this.id,
+    required this.falschBeantworteteFragen,
+    required this.richtigBeantworteteFragen,
+  });
+
+  double getProgress(){
+    // zähle wie viele richtig beantwortet sind
+    int erreichteZahl = 0;
+    for(String frage in richtigBeantworteteFragen){
+      if (frage.split('_').last == '1')
+        erreichteZahl++;
+    }
+    int gesamtZahl = convertToThema(logthema: this).getTrueLengthOfFragen();
+
+    // bilde fortschritt
+    double progress = erreichteZahl / gesamtZahl;
+
+    // stelle sicher das fortschritt nicht größer als 1 ist
+    progress = progress.clamp(0.0, 1.0);
+
+    return progress;
+  }
+
+  String get name => convertToThema(logthema: this).name;
+}
 

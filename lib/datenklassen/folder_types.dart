@@ -1,7 +1,8 @@
+import 'package:lernplatform/datenklassen/mokdaten.dart';
 import 'package:lernplatform/datenklassen/thema.dart';
 import 'package:lernplatform/datenklassen/frage.dart';
 
-import 'log_lernfeld_u_frage.dart';
+import 'lernfeld.dart';
 
 
 class ContentContainer {
@@ -46,16 +47,3 @@ Folder mok_Mainfolder = Folder(pk: 1, name: "mok_MainFolder", lernFelder: [],
     ])
   ],
 );
-
-
-
-List<Lernfeld> mok_lernfelder = [
-  Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: []),
-  Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: []),
-  Lernfeld(id: 3, name: "FSM I", themen: []),
-  Lernfeld(id: 4, name: "FSM II", themen: []),
-  Lernfeld(id: 5, name: "Mobile", themen: []),
-  Lernfeld(id: 6, name: "Web", themen: []),
-];
-
-Folder mok_TeilnehmerFolder = Folder(pk: 9999999, name: "mok_TeilnehmerFolder", subFolder: [], lernFelder: mok_lernfelder);

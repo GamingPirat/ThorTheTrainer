@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/thema_dbs.dart';
-import 'datenklassen/thema.dart';
 import 'menu/mok_user_model.dart';
 import 'menu/my_appBar.dart';
 import 'menu/my_left_drawer.dart';
@@ -12,10 +10,8 @@ class Session {
   late MyLeftDrawer drawer;
   late MyAppBar appBar;
   late Widget pageHeader;
-  late MokUserModel derEingeloggteUser_Model;
+  late UserModel user;
   PunkteAnzeige punkteAnzeige = PunkteAnzeige(punkte: 345);
-  late Thema_JSONService themenService;
-  get themen => themenService.themen;
 
   Session._internal();
 
@@ -30,7 +26,10 @@ class Session {
     drawer = MyLeftDrawer();
     appBar = MyAppBar(setThemeMode: setThemeMode);
     pageHeader = Text("Wiederholung ist die Mutter des Lernens");
-    derEingeloggteUser_Model = MokUserModel();
+    user = UserModel();
+    while(user.isLoading){
+      // wait
+    }
   }
 
   void _loadThemen() async {

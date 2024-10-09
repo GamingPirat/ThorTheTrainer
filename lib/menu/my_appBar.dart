@@ -73,7 +73,7 @@ class _MyAppBarState extends State<MyAppBar> {
   Widget buildFolderList() {
     return Expanded(
       child: ListView(
-        children: mok_TeilnehmerFolder.lernFelder.map((lernfeld) {
+        children: Session().user.usersLernfelder.map((lernfeld) {
           return LernfeldWidget(lernfeld: lernfeld,);
         }).toList(),
       ),
