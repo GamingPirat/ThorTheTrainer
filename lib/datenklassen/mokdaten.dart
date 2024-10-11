@@ -90,8 +90,12 @@ List<LogThema> blanco_logThemen_zu_Loglernfeld1 =[
 ];
 
 List<Lernfeld> mok_lernfelder = [
-  Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: []),
-  Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: []),
+  Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: [
+    mok_themen[0], mok_themen[1],
+  ]),
+  Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: [
+    mok_themen[2], mok_themen[3],
+  ]),
   Lernfeld(id: 3, name: "FSM I", themen: []),
   Lernfeld(id: 4, name: "FSM II", themen: []),
   Lernfeld(id: 5, name: "Mobile", themen: []),
@@ -100,10 +104,10 @@ List<Lernfeld> mok_lernfelder = [
 
 
 List<Thema> mok_themen = [
-  Thema(id: 1, name: "LF 1 T1", tags: [1], fragen: []),
-  Thema(id: 2, name: "LF 1 T2", tags: [1], fragen: []),
-  Thema(id: 3, name: "LF 1,2 T3", tags: [1,2], fragen: []),
-  Thema(id: 4, name: "LF 1,2 T4", tags: [1,2], fragen: []),
+  Thema(id: 1, name: "LF 1 T1", tags: [1], fragen: mok_fragen_zuThema1),
+  Thema(id: 2, name: "LF 1 T2", tags: [1], fragen: mok_fragen_zuThema2),
+  Thema(id: 3, name: "LF 1,2 T3", tags: [2], fragen: mok_fragen_zuThema1),
+  Thema(id: 4, name: "LF 1,2 T4", tags: [2], fragen: mok_fragen_zuThema2),
 ];
 
 List<Frage> mok_fragen_zuThema1 = [

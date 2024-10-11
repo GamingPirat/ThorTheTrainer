@@ -28,7 +28,7 @@ class Antworten_Widget extends StatelessWidget {
                     padding: EdgeInsets.all(16.0),
                     margin: EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      color: Colors.grey[850],
+                      color: Theme.of(context).brightness == Brightness.dark ? Colors.grey[850] : Colors.grey[300],
                       borderRadius: BorderRadius.circular(
                           vm.isMultipleChoice ? 0 : 100),
                       boxShadow: [

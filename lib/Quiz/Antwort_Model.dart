@@ -31,27 +31,23 @@ class Antwort_Model with ChangeNotifier {
   bool get locked => _locked;
   bool get isSelected => _isSelected;
 
-  bool? evaluate(){
+  double evaluate(double antwortwert){
     _locked = true;
-    // flag == true == Pluspunkte,
-    // flag == false == Minuspunkte,
-    // flag == null == neutral
-    bool? flag;
-    if (antwort.isKorrekt && !isSelected && !isMultipleChoice) flag = null;
-    else flag = antwort.isKorrekt && isSelected;
 
-    // farbe ändern
-    if(isSelected && antwort.isKorrekt){
+    if(isSelected && antwort.isKorrekt)
       _color = Colors.green;
-    }
     else if(isSelected && !antwort.isKorrekt){
       _color = Colors.red;
+      antwortwert *= -1;
     }
     else if(!isSelected && antwort.isKorrekt) {
       _color = Colors.yellow;
+      antwortwert = 0;
     }
+    else antwortwert = 0;
 
     notifyListeners();
+    return antwortwert;
   }
 
   blink() async {

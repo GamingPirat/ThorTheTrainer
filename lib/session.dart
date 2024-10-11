@@ -22,18 +22,10 @@ class Session {
   }
 
   void _initialize(void Function(ThemeMode) setThemeMode) {
-    _loadThemen();
     drawer = MyLeftDrawer();
     appBar = MyAppBar(setThemeMode: setThemeMode);
     pageHeader = Text("Wiederholung ist die Mutter des Lernens");
     user = UserModel();
-    while(user.isLoading){
-      // wait
-    }
-  }
-
-  void _loadThemen() async {
-    await Thema_JSONService.getInstance('assets/test_thema.json');
   }
 }
 

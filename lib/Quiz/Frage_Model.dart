@@ -40,21 +40,25 @@ class Frage_Model with ChangeNotifier {
 
 
   int evaluate() {
-    // iteriere durch deine Antworten
-    int richtige = 0;
-    for (Antwort_Model antwort in antwortenViewModel) {
-      if (antwort.evaluate() != null)
-        if (antwort.evaluate() == true)
-          richtige++;
-        else
-          richtige--;
-    }
-    return frage.punkte*richtige~/antwortenViewModel.length; // ~/ == intdivisionOperator
+    double punkte = 0;
+    int richtigeAntworten = 0;
+
+    for (Antwort_Model antwort in antwortenViewModel)
+      if (antwort.antwort.isKorrekt) richtigeAntworten++;
+
+    double antwortwert = frage.punkte / richtigeAntworten;
+
+    for (Antwort_Model antwort in antwortenViewModel)
+      punkte += antwort.evaluate(antwortwert);
+
+    print("${frage.punkte} $punkte $antwortwert");
+    return punkte.ceil();
   }
 
 
+
+
   void unselectAntworten(Antwort_Model model) {
-    print("unselectAntworten");
     for (Antwort_Model antwort in antworten) {
       if (antwort != model) {
         antwort.isSelected = false;
@@ -64,11 +68,10 @@ class Frage_Model with ChangeNotifier {
   }
 
   bool isSomthingSelected(){
-    bool flag = false;
     for (Antwort_Model antwort in antworten)
-      if(antwort.isSelected){
+      if(antwort.isSelected)
         return true;
-      }
+
     for (Antwort_Model antwort in antworten)
       antwort.blink();
     return false;

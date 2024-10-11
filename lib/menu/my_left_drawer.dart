@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/session.dart';
 import '../Quiz/Quiz_Screen.dart';
-import '../Quiz/quiz_teilnehmer.dart';
-import '../datenklassen/folder_types.dart';
 import 'folder_widget.dart';
 
 class MyLeftDrawer extends StatefulWidget {
@@ -29,7 +27,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Quiz_Screen(quizTeilnehmer: mok_quizTeilnehmer,),
+                        builder: (context) => Quiz_Screen(quizThemen: mok_QuizThemen(),),
                       ),
                     );
                   },

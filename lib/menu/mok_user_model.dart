@@ -11,7 +11,7 @@ class UserModel with ChangeNotifier {
   List<Lernfeld> usersLernfelder = [];
   bool _isLoading = true;
 
-  UserModel(){_load;}
+  UserModel(){_load();}
 
   get isLoading => _isLoading;
 
