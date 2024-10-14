@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'Antwort_Model.dart';
-import 'Frage_Model.dart';
 
 class Antworten_Widget extends StatelessWidget {
   final List<Antwort_Model> viewModels;

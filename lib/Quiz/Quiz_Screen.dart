@@ -58,6 +58,7 @@ class _Quiz_ScreenState extends State<Quiz_Screen> {
                       icon: const Icon(Icons.arrow_downward, color: Colors.white),
                       onPressed: () {
                         vm.nextTapped();
+                        print("Qzizscreen:    nextTaped");
                       },
                     )
                         : ElevatedButton(
