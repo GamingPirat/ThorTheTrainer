@@ -40,15 +40,15 @@ class QuizModel with ChangeNotifier {
       _isLocked = true;
 
       // Berechne die Punkte und aktualisiere sie im Punkteanzeige-Modell
-      int erreichte_punkte = currentQuestioin.evaluate();
-      _erreichtePunkte.punkte += erreichte_punkte;
+      // int erreichte_punkte = currentQuestioin.evaluate();
+      // _erreichtePunkte.punkte += erreichte_punkte;
 
       // Stecke aktuelle Frage in richtig- oder falsch-beantwortete Liste
-      if (_currentQuestioin.frage.punkte == erreichte_punkte) {
-        _aktuellesThema.userHatRichtigGeantwortet(_currentQuestioin.frage.id);
-      } else {
-        _aktuellesThema.userHatFalschGeantwortet(_currentQuestioin.frage.id);
-      }
+      // if (_currentQuestioin.frage.punkte == erreichte_punkte) {
+      //   _aktuellesThema.userHatRichtigGeantwortet(_currentQuestioin.frage.id);
+      // } else {
+      //   _aktuellesThema.userHatFalschGeantwortet(_currentQuestioin.frage.id);
+      // }
 
       // Erhöhe den Fortschritt, speichere bei 10 Punkten und aktualisiere die Fortschrittsanzeige
       _bei10wirdGespeichert++;

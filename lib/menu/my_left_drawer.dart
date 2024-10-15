@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/Quiz/new_Quizscreen.dart';
+import 'package:lernplatform/Quiz/quiz_thema.dart';
+import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/session.dart';
 import '../Quiz/Quiz_Screen.dart';
 import 'folder_widget.dart';
+
+List<QuizThema> mok_QuizThemen() {
+  List<QuizThema> list = [];
+  for (LogLernfeld loglernfeld in Session().user.teilnehmer.meineLernfelder) {
+    for (LogThema logThema in loglernfeld.meineThemen) {
+      list.add(QuizThema(logThema: logThema));
+    }
+  }
+  return list;
+}
 
 class MyLeftDrawer extends StatefulWidget {
 
@@ -27,7 +40,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Quiz_Screen(quizThemen: mok_QuizThemen(),),
+                        builder: (context) => NewQuizScreen(quizThemen: mok_QuizThemen(),),
                       ),
                     );
                   },

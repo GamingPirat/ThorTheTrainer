@@ -53,21 +53,21 @@ class _Quiz_ScreenState extends State<Quiz_Screen> {
                     Expanded(
                       child: Frage_Widget(viewModel: vm.currentQuestioin),
                     ),
-                    vm.isLocked
-                        ? IconButton(
-                      icon: const Icon(Icons.arrow_downward, color: Colors.white),
-                      onPressed: () {
-                        vm.nextTapped();
-                        print("Qzizscreen:    nextTaped");
-                      },
-                    )
-                        : ElevatedButton(
-                      onPressed: () {
-                        vm.lockTapped();
-                      },
-                      child: const Text("lock"),
-                    ),
-                    const SizedBox(height: 16),
+                    // vm.isLocked
+                    //     ? IconButton(
+                    //   icon: const Icon(Icons.arrow_downward, color: Colors.white),
+                    //   onPressed: () {
+                    //     vm.nextTapped();
+                    //     print("Qzizscreen:    nextTaped");
+                    //   },
+                    // )
+                    //     : ElevatedButton(
+                    //   onPressed: () {
+                    //     vm.lockTapped();
+                    //   },
+                    //   child: const Text("lock"),
+                    // ),
+                    // const SizedBox(height: 16),
                   ],
                 ),
                 // Der nicht blockierende Drawer

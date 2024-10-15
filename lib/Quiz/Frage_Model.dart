@@ -39,20 +39,27 @@ class Frage_Model with ChangeNotifier {
   }
 
 
-  int evaluate() {
-    double punkte = 0;
-    int richtigeAntworten = 0;
+  void evaluate() {
+    if(isSomthingSelected()){
+      double punkte = 0;
+      int richtigeAntworten = 0;
 
-    for (Antwort_Model antwort in antwortenViewModel)
-      if (antwort.antwort.isKorrekt) richtigeAntworten++;
+      for (Antwort_Model antwort in antwortenViewModel)
+        if (antwort.antwort.isKorrekt) richtigeAntworten++;
 
-    double antwortwert = frage.punkte / richtigeAntworten;
+      double antwortwert = frage.punkte / richtigeAntworten;
 
-    for (Antwort_Model antwort in antwortenViewModel)
-      punkte += antwort.evaluate(antwortwert);
+      for (Antwort_Model antwort in antwortenViewModel)
+        punkte += antwort.evaluate(antwortwert);
 
-    print("${frage.punkte} $punkte $antwortwert");
-    return punkte.ceil();
+      print("${frage.punkte} $punkte $antwortwert");
+      // return punkte.ceil();
+      _locked = true;
+      notifyListeners();
+    }
+
+    // sag der Session.PunkteStand, den neuen Punktestand
+    // aktualisiere das Fortscchritt Widget
   }
 
 
