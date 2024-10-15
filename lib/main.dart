@@ -1,16 +1,41 @@
+
 import 'package:flutter/material.dart';
 import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  FirebaseFirestore.instance.settings = Settings( // macht alles kostengünstiger
+    persistenceEnabled: true,
+    cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
+  );
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeNotifier(), // Für das Theme
-      child: MyApp(),
-    ),
+      ChangeNotifierProvider(
+        create: (_) => ThemeNotifier(), // Für das Theme
+        child: MyApp(),
+      )
   );
 }
+
+
+
+
+// void main() {
+//   runApp(
+//     ChangeNotifierProvider(
+//       create: (_) => ThemeNotifier(), // Für das Theme
+//       child: MyApp(),
+//     ),
+//   );
+// }
 
 class MyApp extends StatefulWidget {
   @override

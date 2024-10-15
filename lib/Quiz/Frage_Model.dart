@@ -8,12 +8,14 @@ import '../datenklassen/frage.dart';
 
 class Frage_Model with ChangeNotifier {
   final Frage frage;
+  final Function lockTapped;
   late List<Antwort_Model> antwortenViewModel;
 
   bool _locked = false;
 
   Frage_Model({
     required this.frage,
+    required this.lockTapped,
   }) {
     antwortenViewModel = [];
     bool isMultipleChoice = _isMultipleChoice(frage.antworten);
@@ -53,13 +55,16 @@ class Frage_Model with ChangeNotifier {
         punkte += antwort.evaluate(antwortwert);
 
       print("${frage.punkte} $punkte $antwortwert");
-      // return punkte.ceil();
+
       _locked = true;
       notifyListeners();
+
+      lockTapped(punkte.ceil());
+
+      // sag der Session.PunkteStand, den neuen Punktestand
+      // aktualisiere das Fortscchritt Widget
     }
 
-    // sag der Session.PunkteStand, den neuen Punktestand
-    // aktualisiere das Fortscchritt Widget
   }
 
 

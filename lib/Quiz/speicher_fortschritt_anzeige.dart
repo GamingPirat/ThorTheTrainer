@@ -56,19 +56,14 @@ class FortschrittSpeicherAnzeiger extends StatelessWidget {
       value: _model,
       child: Consumer<FortschrittSpeicherAnzeigerModel>(
         builder: (context, vm, child) {
-          if (vm.showSavedText) {
-            return Row(
-              children: [
-                Spacer(),
-                Text(
-                  'Fortschritt Gespeichert',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                Spacer(),
-              ],
-            );
-          } else {
-            return Row(
+            return vm.showSavedText
+            ? const Center(
+              child: Text(
+                'Fortschritt Gespeichert',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            )
+          : Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(9, (index) {
                 return AnimatedContainer(
@@ -90,7 +85,6 @@ class FortschrittSpeicherAnzeiger extends StatelessWidget {
                   ),
                 )),
             );
-          }
         },
       ),
     );

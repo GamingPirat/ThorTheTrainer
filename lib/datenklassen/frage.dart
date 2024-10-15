@@ -47,9 +47,10 @@ class Frage {
 
   String get id => "${themaID}_${nummer}_$version";
 
+  // fromJson factory method
   factory Frage.fromJson(Map<String, dynamic> json) {
-    var antwortenJson = json['antworten'] as List;
-    List<Antwort> antwortenList = antwortenJson.map((i) => Antwort.fromJson(i)).toList();
+    var antwortenJson = json['antworten'] as List<dynamic>;
+    List<Antwort> antwortenList = antwortenJson.map((item) => Antwort.fromJson(item as Map<String, dynamic>)).toList();
 
     return Frage(
       nummer: json['nummer'],
@@ -60,7 +61,44 @@ class Frage {
       antworten: antwortenList,
     );
   }
-}
+
+
+  // toJson method
+  Map<String, dynamic> toJson() {
+    return {
+      'nummer': nummer,
+      'version': version,
+      'themaID': themaID,
+      'punkte': punkte,
+      'text': text,
+      'antworten': antworten.map((antwort) => antwort.toJson()).toList(),
+    };
+  }
+
+  // copyWith method
+  Frage copyWith({
+    int? nummer,
+    int? version,
+    int? themaID,
+    int? punkte,
+    String? text,
+    List<Antwort>? antworten,
+  }) {
+    return Frage(
+      nummer: nummer ?? this.nummer,
+      version: version ?? this.version,
+      themaID: themaID ?? this.themaID,
+      punkte: punkte ?? this.punkte,
+      text: text ?? this.text,
+      antworten: antworten ?? this.antworten,
+    );
+  }
+
+
+  @override
+  String toString() {
+    return 'Frage $nummer: $text\nAntworten:\n${antworten.map((a) => a.toString()).join('\n')}';
+  }}
 
 class Antwort {
   final String text;
@@ -73,15 +111,41 @@ class Antwort {
     required this.isKorrekt,
   });
 
+  // fromJson factory method
   factory Antwort.fromJson(Map<String, dynamic> json) {
     return Antwort(
       text: json['text'],
       erklaerung: json['erklaerung'],
-      isKorrekt: json['isKorrekt'], // Direkter boolean-Wert
+      isKorrekt: json['isKorrekt'],
     );
   }
-}
 
+  // toJson method
+  Map<String, dynamic> toJson() {
+    return {
+      'text': text,
+      'erklaerung': erklaerung,
+      'isKorrekt': isKorrekt,
+    };
+  }
+
+  // copyWith method
+  Antwort copyWith({
+    String? text,
+    String? erklaerung,
+    bool? isKorrekt,
+  }) {
+    return Antwort(
+      text: text ?? this.text,
+      erklaerung: erklaerung ?? this.erklaerung,
+      isKorrekt: isKorrekt ?? this.isKorrekt,
+    );
+  }
+  @override
+  String toString() {
+    return 'Antwort: $text, Korrekt: $isKorrekt';
+  }
+}
 
 
 

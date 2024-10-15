@@ -1,0 +1,110 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:lernplatform/FrageDBService.dart';
+import 'dart:convert';
+import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/firebase_options.dart';
+
+class JsonInputApp extends StatefulWidget {
+  @override
+  _JsonInputAppState createState() => _JsonInputAppState();
+}
+
+class _JsonInputAppState extends State<JsonInputApp> {
+  final TextEditingController _controller = TextEditingController();
+  final FrageDBService _frageDBService = FrageDBService();
+
+  // Methode zum Abschicken der Liste von Objekten
+  void _submitJsonList() async {
+    try {
+      List<dynamic> jsonData = jsonDecode(_controller.text);
+      List<Frage> fragen = jsonData.map((item) => Frage.fromJson(item)).toList();
+
+      for (var frage in fragen) {
+        await _frageDBService.createFrage(frage);
+      }
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Fragenliste erfolgreich gespeichert!')),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Fehler beim Einfügen der Fragen: $e')),
+      );
+    }
+  }
+
+  // Methode zum Abschicken eines einzelnen Objekts
+  void _submitSingleJson() async {
+    try {
+      Map<String, dynamic> jsonData = jsonDecode(_controller.text);
+      Frage frage = Frage.fromJson(jsonData);
+
+      await _frageDBService.createFrage(frage);
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Einzelne Frage erfolgreich gespeichert!')),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Fehler beim Einfügen der Frage: $e')),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('JSON Fragen Input')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: TextField(
+                controller: _controller,
+                maxLines: null,
+                expands: true,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'JSON-Liste oder einzelnes Objekt hier einfügen',
+                ),
+              ),
+            ),
+            SizedBox(height: 16),
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: _submitJsonList,
+                    child: Text('Liste abschicken'),
+                  ),
+                ),
+                SizedBox(width: 16),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: _submitSingleJson,
+                    child: Text('Einzelnes Objekt abschicken'),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  FirebaseFirestore.instance.settings = Settings( // macht alles kostengünstiger
+    persistenceEnabled: true,
+    cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
+  );
+  runApp(MaterialApp(home: JsonInputApp()));
+}

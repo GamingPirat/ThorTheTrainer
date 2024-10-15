@@ -56,6 +56,7 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
 
   // Methode zum Erstellen eines neuen Containers
   Widget _buildContainer(int index) {
+    viewModel.nextTapped();
     return Frage_Widget(viewModel: viewModel.currentQuestioin);
   }
 
@@ -63,7 +64,7 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   void _onScroll(PointerScrollEvent event) {
     if (event.scrollDelta.dy > 0) {
       // Scroll nach unten (nächster Container)
-      if (_currentIndex == _containers.length - 1) {
+      if (_currentIndex == _containers.length - 1 && viewModel.isLocked) {
         // Wenn wir am letzten Container sind, einen neuen hinzufügen
         setState(() {
           _containers.add(_buildContainer(_containers.length));

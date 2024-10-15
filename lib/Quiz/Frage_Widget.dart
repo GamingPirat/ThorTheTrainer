@@ -27,11 +27,14 @@ class Frage_Widget extends StatelessWidget {
                       ),
                       Antworten_Widget(viewModels: vm.antwortenViewModel),
                       Spacer(),
-                      ElevatedButton(
-                        onPressed: () {
-                          vm.evaluate();
-                        },
-                        child: const Text("lock"),
+                      Visibility(
+                        visible: !vm.locked,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            vm.evaluate();
+                          },
+                          child: const Text("lock"),
+                        ),
                       ),
                     ],
                   ),
