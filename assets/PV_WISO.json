@@ -1,0 +1,84 @@
+{
+  "id": 1,
+  "name": "WISO Prüfungsvorbereitung",
+  "themen": [
+    {
+      "id": 1,
+      "name": "Wirtschaftsbezogene Kompetenzen",
+      "subthemen": [
+        {
+          "id": 1,
+          "name": "Grundlagen der Wirtschaft",
+          "tags": [1],
+          "fragen": []
+        },
+        {
+          "id": 2,
+          "name": "Betriebswirtschaftliche Grundlagen",
+          "tags": [1],
+          "fragen": []
+        },
+        {
+          "id": 3,
+          "name": "Rechnungswesen",
+          "tags": [1],
+          "fragen": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rechtliche Grundlagen",
+      "subthemen": [
+        {
+          "id": 4,
+          "name": "Arbeitsrecht",
+          "tags": [2],
+          "fragen": []
+        },
+        {
+          "id": 5,
+          "name": "Sozialrecht",
+          "tags": [2],
+          "fragen": []
+        },
+        {
+          "id": 6,
+          "name": "Kaufvertrag und Vertragsrecht",
+          "tags": [2],
+          "fragen": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Soziale und gesellschaftliche Kompetenzen",
+      "subthemen": [
+        {
+          "id": 7,
+          "name": "Arbeitsschutz und Arbeitssicherheit",
+          "tags": [3],
+          "fragen": []
+        },
+        {
+          "id": 8,
+          "name": "Mitbestimmung und Betriebsverfassung",
+          "tags": [3],
+          "fragen": []
+        },
+        {
+          "id": 9,
+          "name": "Berufsbildung",
+          "tags": [3],
+          "fragen": []
+        },
+        {
+          "id": 10,
+          "name": "Umweltschutz",
+          "tags": [3],
+          "fragen": []
+        }
+      ]
+    }
+  ]
+}

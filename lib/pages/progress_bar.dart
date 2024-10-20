@@ -4,7 +4,7 @@ import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import '../datenklassen/thema.dart';
 
 class ProgressBar extends StatefulWidget {
-  final LogThema logThema;
+  final LogSubThema logThema;
 
   const ProgressBar({required this.logThema});
 
@@ -52,6 +52,37 @@ class _ProgressBarState extends State<ProgressBar> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark(), // Dark Mode Theme
+      home: TestProgressBarScreen(),
+    );
+  }
+}
+
+class TestProgressBarScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Beispiel-Daten für LogThema
+    LogSubThema logThema = LogSubThema(id: 1, falschBeantworteteFragen: [], richtigBeantworteteFragen: []); // todo hol das aus der Session.teilnehmer
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("ProgressBar Test"),
+      ),
+      body: Center(
+        child: ProgressBar(logThema: logThema), // Hier dein ProgressBar Widget
       ),
     );
   }

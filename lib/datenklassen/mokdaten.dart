@@ -4,9 +4,11 @@ import 'package:lernplatform/datenklassen/frage.dart';
 import 'package:lernplatform/datenklassen/lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/datenklassen/thema.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-Future<Teilnehmer> ladeOderErzeugeTeilnehmer() async {
+
+Future<Teilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String teilnehmerKey = "ThorTheTrainer";
 
@@ -18,145 +20,211 @@ Future<Teilnehmer> ladeOderErzeugeTeilnehmer() async {
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
     return Teilnehmer(
       key: data['key'],
-      meineLernfelder: (data['meineLernfelder'] as List)
-          .map((feld) => LogLernfeld(
-        feld['id'],
-        (feld['meineThemen'] as List).map((thema) => LogThema(
-          id: thema['id'],
-          falschBeantworteteFragen: List<String>.from(thema['falschBeantworteteFragen']),
-          richtigBeantworteteFragen: List<String>.from(thema['richtigBeantworteteFragen']),
-        )).toList(),
-      ))
-          .toList(),
+      meineLernfelder: (data['meineLernfelder'] as List).map((feld) {
+        return LogLernfeld(
+          feld['id'],
+          (feld['meineThemen'] as List).map((thema) {
+            return LogThema(
+              id: thema['id'],
+              logSubthemen: (thema['logSubthemen'] as List).map((subthema) {
+                return LogSubThema(
+                  id: subthema['id'],
+                  falschBeantworteteFragen: List<String>.from(subthema['falschBeantworteteFragen']),
+                  richtigBeantworteteFragen: List<String>.from(subthema['richtigBeantworteteFragen']),
+                );
+              }).toList(),
+            );
+          }).toList(),
+        );
+      }).toList(),
     );
   }
-  return blanco_teilnehmer;
-}
 
-Future<void> speichereTeilnehmer(Teilnehmer teilnehmer) async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  String teilnehmerKey = "ThorTheTrainer";
+  // Wenn kein Teilnehmer gefunden wurde, erstelle einen Blanco-Teilnehmer basierend auf Firestore-Daten
+  print_Green("Erzeuge Blanco-Teilnehmer basierend auf Firestore-Daten");
 
-  // Teilnehmer in JSON-Format umwandeln und speichern
-  prefs.setString(teilnehmerKey, jsonEncode({
-    'key': teilnehmer.key,
-    'meineLernfelder': teilnehmer.meineLernfelder
-        .map((feld) => {
-      'id': feld.id,
-      'meineThemen': feld.meineThemen.map((thema) => {
-        'id': thema.id,
-        'falschBeantworteteFragen': thema.falschBeantworteteFragen,
-        'richtigBeantworteteFragen': thema.richtigBeantworteteFragen,
+  // Erstelle LogLernfelder als Abbilder der Firestore-Lernfelder mit den passenden IDs
+  List<LogLernfeld> logLernfelder = firestoreLernfelder.map((lernfeld) {
+    return LogLernfeld(
+      lernfeld.id,
+      lernfeld.themen.map((thema) {
+        return LogThema(
+          id: thema.id,
+          logSubthemen: thema.subthemen.map((subthema) {
+            return LogSubThema(
+              id: subthema.id,
+              falschBeantworteteFragen: [],
+              richtigBeantworteteFragen: [],
+            );
+          }).toList(),
+        );
       }).toList(),
-    })
-        .toList(),
-  }));
+    );
+  }).toList();
+
+  return Teilnehmer(key: teilnehmerKey, meineLernfelder: logLernfelder);
 }
 
 
-Teilnehmer blanco_teilnehmer = Teilnehmer(
-    key: "key",
-    meineLernfelder: [
-      LogLernfeld(1, blanco_logThemen_zu_Loglernfeld1),
-      LogLernfeld(2, []),
-      LogLernfeld(3, []),
-      LogLernfeld(4, []),
-      LogLernfeld(5, []),
-      LogLernfeld(6, []),
-    ]
-);
 
-List<LogThema> blanco_logThemen_zu_Loglernfeld1 =[
-  LogThema(
+
+
+
+
+
+
+// todo das ist die alte Version
+// Future<Teilnehmer> ladeOderErzeugeTeilnehmer() async {
+//   SharedPreferences prefs = await SharedPreferences.getInstance();
+//   String teilnehmerKey = "ThorTheTrainer";
+//
+//   // Lade Daten aus dem LocalStorage
+//   String? gespeicherterTeilnehmer = prefs.getString(teilnehmerKey);
+//
+//   // Wenn Teilnehmer gefunden wurde, diesen zurückgeben
+//   if (gespeicherterTeilnehmer != null) {
+//     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
+//     return Teilnehmer(
+//       key: data['key'],
+//       meineLernfelder: (data['meineLernfelder'] as List)
+//           .map((feld) => LogLernfeld(
+//         feld['id'],
+//         (feld['meineThemen'] as List).map((thema) => LogThema(
+//           id: thema['id'],
+//           falschBeantworteteFragen: List<String>.from(thema['falschBeantworteteFragen']),
+//           richtigBeantworteteFragen: List<String>.from(thema['richtigBeantworteteFragen']),
+//         )).toList(),
+//       ))
+//           .toList(),
+//     );
+//   }
+//   return blanco_teilnehmer;
+// }
+
+// Future<void> speichereTeilnehmer(Teilnehmer teilnehmer) async {
+//   SharedPreferences prefs = await SharedPreferences.getInstance();
+//   String teilnehmerKey = "ThorTheTrainer";
+//
+//   // Teilnehmer in JSON-Format umwandeln und speichern
+//   prefs.setString(teilnehmerKey, jsonEncode({
+//     'key': teilnehmer.key,
+//     'meineLernfelder': teilnehmer.meineLernfelder
+//         .map((feld) => {
+//       'id': feld.id,
+//       'meineThemen': feld.meineThemen.map((thema) => {
+//         'id': thema.id,
+//         'falschBeantworteteFragen': thema.falschBeantworteteFragen,
+//         'richtigBeantworteteFragen': thema.richtigBeantworteteFragen,
+//       }).toList(),
+//     })
+//         .toList(),
+//   }));
+// }
+
+
+// Teilnehmer blanco_teilnehmer = Teilnehmer(
+//     key: "key",
+//     meineLernfelder: [
+//       LogLernfeld(1, blanco_logThemen_zu_Loglernfeld1),
+//       LogLernfeld(2, []),
+//       LogLernfeld(3, []),
+//       LogLernfeld(4, []),
+//       LogLernfeld(5, []),
+//       LogLernfeld(6, []),
+//     ]
+// );
+
+List<LogSubThema> blanco_logThemen_zu_Loglernfeld1 =[
+  LogSubThema(
       id: 1,
       falschBeantworteteFragen: [],
       richtigBeantworteteFragen: []
   ),
-  LogThema(
+  LogSubThema(
       id: 2,
       falschBeantworteteFragen: [],
       richtigBeantworteteFragen: []
   ),
-  LogThema(
+  LogSubThema(
       id: 3,
       falschBeantworteteFragen: [],
       richtigBeantworteteFragen: []
   ),
-  LogThema(
+  LogSubThema(
       id: 4,
       falschBeantworteteFragen: [],
       richtigBeantworteteFragen: []
   ),
 ];
 
-List<Lernfeld> mok_lernfelder = [
-  Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: [
-    mok_themen[0], mok_themen[1],
-  ]),
-  Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: [
-    mok_themen[2], mok_themen[3],
-  ]),
-  Lernfeld(id: 3, name: "FSM I", themen: []),
-  Lernfeld(id: 4, name: "FSM II", themen: []),
-  Lernfeld(id: 5, name: "Mobile", themen: []),
-  Lernfeld(id: 6, name: "Web", themen: []),
-];
+// List<Lernfeld> mok_lernfelder = [
+//   Lernfeld(id: 1, name: "Lernfeld 1 der Fachinformatiker", themen: [
+//     mok_themen[0], mok_themen[1],
+//   ]),
+//   Lernfeld(id: 2, name: "Lernfeld 2 der Fachinformatiker", themen: [
+//     mok_themen[2], mok_themen[3],
+//   ]),
+//   Lernfeld(id: 3, name: "FSM I", themen: []),
+//   Lernfeld(id: 4, name: "FSM II", themen: []),
+//   Lernfeld(id: 5, name: "Mobile", themen: []),
+//   Lernfeld(id: 6, name: "Web", themen: []),
+// ];
 
 
-List<Thema> mok_themen = [
-  Thema(id: 1, name: "LF 1 T1", tags: [1], fragen: mok_fragen_zuThema1),
-  Thema(id: 2, name: "LF 1 T2", tags: [1], fragen: mok_fragen_zuThema2),
-  Thema(id: 3, name: "LF 1,2 T3", tags: [2], fragen: mok_fragen_zuThema1),
-  Thema(id: 4, name: "LF 1,2 T4", tags: [2], fragen: mok_fragen_zuThema2),
-];
-
-List<Frage> mok_fragen_zuThema1 = [
-  // Fragen für Thema 1 (LF 1 T1)
-  Frage(
-    nummer: 1,
-    version: 1,
-    themaID: 1,
-    punkte: 5,
-    text: "Was ist ein Betriebssystem?",
-    antworten: [
-      Antwort(text: "Eine Software, die Hardware verwaltet", erklaerung: "Betriebssysteme sind für die Verwaltung der Hardware zuständig.", isKorrekt: true),
-      Antwort(text: "Ein Programm, das Dateien speichert", erklaerung: "Falsch, Betriebssysteme verwalten Dateien, aber das ist nicht ihre Hauptaufgabe.", isKorrekt: false),
-    ],
-  ),
-  Frage(
-    nummer: 1,
-    version: 2,
-    themaID: 1,
-    punkte: 5,
-    text: "Wofür ist ein Betriebssystem zuständig?",
-    antworten: [
-      Antwort(text: "Für die Verwaltung von Hardware und Software", erklaerung: "Das ist korrekt.", isKorrekt: true),
-      Antwort(text: "Für die Sicherheit von Anwendungen", erklaerung: "Das ist nicht die Hauptaufgabe eines Betriebssystems.", isKorrekt: false),
-    ],
-  ),
-  Frage(
-    nummer: 2,
-    version: 1,
-    themaID: 1,
-    punkte: 5,
-    text: "Welcher dieser Speicher ist flüchtig?",
-    antworten: [
-      Antwort(text: "RAM", erklaerung: "RAM ist flüchtiger Speicher.", isKorrekt: true),
-      Antwort(text: "Festplatte", erklaerung: "Festplatten sind nicht flüchtig.", isKorrekt: false),
-    ],
-  ),
-  Frage(
-    nummer: 2,
-    version: 2,
-    themaID: 1,
-    punkte: 5,
-    text: "Welcher Speicher verliert seinen Inhalt nach einem Neustart?",
-    antworten: [
-      Antwort(text: "RAM", erklaerung: "Korrekt, RAM verliert seinen Inhalt.", isKorrekt: true),
-      Antwort(text: "SSD", erklaerung: "SSD speichert Daten auch nach dem Ausschalten.", isKorrekt: false),
-    ],
-  ),
-];
+// List<Thema> mok_themen = [
+//   Thema(id: 1, name: "LF 1 T1", tags: [1], subthemen: mok_fragen_zuThema1),
+//   Thema(id: 2, name: "LF 1 T2", tags: [1], subthemen: mok_fragen_zuThema2),
+//   Thema(id: 3, name: "LF 1,2 T3", tags: [2], subthemen: mok_fragen_zuThema1),
+//   Thema(id: 4, name: "LF 1,2 T4", tags: [2], subthemen: mok_fragen_zuThema2),
+// ];
+//
+// List<Frage> mok_fragen_zuThema1 = [
+//   // Fragen für Thema 1 (LF 1 T1)
+//   Frage(
+//     nummer: 1,
+//     version: 1,
+//     themaID: 1,
+//     punkte: 5,
+//     text: "Was ist ein Betriebssystem?",
+//     antworten: [
+//       Antwort(text: "Eine Software, die Hardware verwaltet", erklaerung: "Betriebssysteme sind für die Verwaltung der Hardware zuständig.", isKorrekt: true),
+//       Antwort(text: "Ein Programm, das Dateien speichert", erklaerung: "Falsch, Betriebssysteme verwalten Dateien, aber das ist nicht ihre Hauptaufgabe.", isKorrekt: false),
+//     ],
+//   ),
+//   Frage(
+//     nummer: 1,
+//     version: 2,
+//     themaID: 1,
+//     punkte: 5,
+//     text: "Wofür ist ein Betriebssystem zuständig?",
+//     antworten: [
+//       Antwort(text: "Für die Verwaltung von Hardware und Software", erklaerung: "Das ist korrekt.", isKorrekt: true),
+//       Antwort(text: "Für die Sicherheit von Anwendungen", erklaerung: "Das ist nicht die Hauptaufgabe eines Betriebssystems.", isKorrekt: false),
+//     ],
+//   ),
+//   Frage(
+//     nummer: 2,
+//     version: 1,
+//     themaID: 1,
+//     punkte: 5,
+//     text: "Welcher dieser Speicher ist flüchtig?",
+//     antworten: [
+//       Antwort(text: "RAM", erklaerung: "RAM ist flüchtiger Speicher.", isKorrekt: true),
+//       Antwort(text: "Festplatte", erklaerung: "Festplatten sind nicht flüchtig.", isKorrekt: false),
+//     ],
+//   ),
+//   Frage(
+//     nummer: 2,
+//     version: 2,
+//     themaID: 1,
+//     punkte: 5,
+//     text: "Welcher Speicher verliert seinen Inhalt nach einem Neustart?",
+//     antworten: [
+//       Antwort(text: "RAM", erklaerung: "Korrekt, RAM verliert seinen Inhalt.", isKorrekt: true),
+//       Antwort(text: "SSD", erklaerung: "SSD speichert Daten auch nach dem Ausschalten.", isKorrekt: false),
+//     ],
+//   ),
+// ];
 
 
 

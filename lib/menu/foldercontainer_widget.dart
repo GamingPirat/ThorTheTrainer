@@ -11,7 +11,7 @@ class FolderContainer_Widget extends StatefulWidget {
 }
 
 class _FolderContainer_WidgetState extends State<FolderContainer_Widget> {
-  late List<ContentContainer> contentcontainers;
+  late List<ContentCarrier> contentcontainers;
 
   @override
   void initState() {

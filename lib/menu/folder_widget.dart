@@ -40,7 +40,22 @@ class LernfeldWidget extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Text('Platzhalter für ${lernfeld.name}'),
+            builder: (context) => Scaffold(  // Scaffold sorgt für die korrekte Anwendung des Themes
+              appBar: AppBar(
+                title: Text('Lernfeld Details'),  // AppBar wird auch das Dark Mode Theme übernehmen
+              ),
+              body: Container(
+                color: Theme.of(context).scaffoldBackgroundColor,  // Verwende die Hintergrundfarbe des aktuellen Themes
+                child: Center(
+                  child: Text(
+                    'Platzhalter für ${lernfeld.name} \n \n Dieses Feature wird bald hinzugefügt',
+                    style: TextStyle(
+                      color: Theme.of(context).textTheme.bodyMedium?.color,  // Verwende die Textfarbe des aktuellen Themes
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         );
       },
@@ -50,7 +65,7 @@ class LernfeldWidget extends StatelessWidget {
 
 
 class Folderlist_widget extends StatelessWidget {
-  final List<ContentContainer> folders;
+  final List<ContentCarrier> folders;
 
   Folderlist_widget({required this.folders});
 

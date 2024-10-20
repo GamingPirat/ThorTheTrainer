@@ -1,27 +1,31 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/datenklassen/subthema.dart';
 import 'folder_types.dart';
 
 
 
-class Thema extends ContentContainer {
+class Thema extends ContentCarrier {
   final List<int> tags; // Id's von Lernfeldern
-  final List<Frage> fragen;
+  final List<SubThema> subthemen;
 
   Thema({
     required int id,
     required String name,
     required this.tags,
-    required this.fragen,
+    required this.subthemen,
   }) : super(id: id, name: name);
 
   factory Thema.fromJson(Map<String, dynamic> json) {
     return Thema(
-      id: json['id'],
-      name: json['name'],
-      tags: List<int>.from(json['tags'] ?? []), // Sicherheit hinzufügen, um leere Tags zu vermeiden
-      fragen: (json['fragen'] as List<dynamic>?)?.map((frageJson) => Frage.fromJson(frageJson)).toList() ?? [], // Fragen korrekt dekodieren
+      id: json['id'] ?? 0,
+      name: json['name'] ?? 'Unbekannt',
+      tags: json['tags'] != null ? List<int>.from(json['tags']) : [],
+      subthemen: json['subthemen'] != null
+          ? (json['subthemen'] as List<dynamic>)
+          .map((subThemaJson) => SubThema.fromJson(subThemaJson))
+          .toList()
+          : [],
     );
   }
 
@@ -30,14 +34,6 @@ class Thema extends ContentContainer {
     final contents = await file.readAsString();
     final json = jsonDecode(contents);
     return Thema.fromJson(json);
-  }
-
-  int getTrueLengthOfFragen() {
-    int counter = 0;
-    for (Frage frage in fragen) {
-      if (frage.version == 1) counter++;
-    }
-    return counter;
   }
 }
 

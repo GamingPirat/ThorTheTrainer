@@ -3,6 +3,8 @@ import 'package:lernplatform/menu/mok_user_model.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 
+import '../print_colors.dart';
+
 class MyStaticMenu extends StatelessWidget {
 
   UserModel viewModel = Session().user;
@@ -12,6 +14,7 @@ class MyStaticMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print_Magenta("build MyStaticMenu");
     return ChangeNotifierProvider.value(
       value: viewModel,
       child: Consumer<UserModel>(

@@ -7,18 +7,18 @@ import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/session.dart';
 
-List<QuizThema> mok_QuizThemen() {
-  List<QuizThema> list = [];
-  for (LogLernfeld loglernfeld in Session().user.teilnehmer.meineLernfelder) {
-    for (LogThema logThema in loglernfeld.meineThemen) {
-      list.add(QuizThema(logThema: logThema));
-    }
-  }
-  return list;
-}
+// List<QuizThema> mok_QuizThemen() {
+//   List<QuizThema> list = [];
+//   for (LogLernfeld loglernfeld in Session().user.teilnehmer.meineLernfelder) {
+//     for (LogSubThema logThema in loglernfeld.meineThemen) {
+//       list.add(QuizThema(logThema: logThema));
+//     }
+//   }
+//   return list;
+// }
 
 class NewQuizScreen extends StatefulWidget {
-  final List<QuizThema> quizThemen;
+  final List<QuizSubThema> quizThemen;
 
   NewQuizScreen({required this.quizThemen});
 
@@ -158,10 +158,10 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   }
 }
 
-void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      body: NewQuizScreen(quizThemen: mok_QuizThemen(),),
-    ),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: Scaffold(
+//       body: NewQuizScreen(quizThemen: mok_QuizThemen(),),
+//     ),
+//   ));
+// }

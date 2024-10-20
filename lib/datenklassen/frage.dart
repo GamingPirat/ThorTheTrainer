@@ -1,32 +1,32 @@
 import 'package:lernplatform/datenklassen/mokdaten.dart';
 import 'package:lernplatform/datenklassen/thema.dart';
 
-List<Frage> convertToFragen({required List<String> logFragen}){
-  List<Frage> returnValue = [];
-  // hol dir das zugehörige Thema
-  Thema thema = Thema(
-      id: 999999,
-      name: "Thema existiert nicht",
-      tags: [],
-      fragen: []
-  );
-  // durchsuche themen und finde das richtige
-  int searchForThemaID =  int.parse(logFragen[0].split('_')[0]);
-  for(Thema current in mok_themen){
-    if(current.id == searchForThemaID){
-      thema = current;
-      break;
-    }
-  }
-  // und iterriee dann durch dessen Fragen während du nach der id suchst
-  for(String logfrage in logFragen){
-    for (Frage current in thema.fragen) {
-      if(current.id == logfrage)
-        returnValue.add(current);
-    }
-  }
-  return returnValue;
-}
+// List<Frage> convertToFragen({required List<String> logFragen}){
+//   List<Frage> returnValue = [];
+//   // hol dir das zugehörige Thema
+//   Thema thema = Thema(
+//       id: 999999,
+//       name: "Thema existiert nicht",
+//       tags: [],
+//       subthemen: []
+//   );
+//   // durchsuche themen und finde das richtige
+//   int searchForThemaID =  int.parse(logFragen[0].split('_')[0]);
+//   for(Thema current in mok_themen){
+//     if(current.id == searchForThemaID){
+//       thema = current;
+//       break;
+//     }
+//   }
+//   // und iterriee dann durch dessen Fragen während du nach der id suchst
+//   for(String logfrage in logFragen){
+//     for (Frage current in thema.subthemen) {
+//       if(current.id == logfrage)
+//         returnValue.add(current);
+//     }
+//   }
+//   return returnValue;
+// }
 
 class Frage {
   final int nummer;

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/menu/my_left_drawer.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'menu/mok_user_model.dart';
 import 'menu/my_appBar.dart';
-import 'menu/my_left_drawer.dart';
 import 'menu/punkte_widget.dart';
 
 class Session {
@@ -16,8 +17,10 @@ class Session {
   Session._internal();
 
   factory Session({void Function(ThemeMode)? setThemeMode}) {
+    print_Blue("Session factory aufgerufen");
     if(setThemeMode != null)
       _instance._initialize(setThemeMode);
+
     return _instance;
   }
 

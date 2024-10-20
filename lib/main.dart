@@ -26,17 +26,6 @@ void main() async{
 }
 
 
-
-
-// void main() {
-//   runApp(
-//     ChangeNotifierProvider(
-//       create: (_) => ThemeNotifier(), // Für das Theme
-//       child: MyApp(),
-//     ),
-//   );
-// }
-
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();

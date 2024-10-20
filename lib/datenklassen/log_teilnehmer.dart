@@ -1,5 +1,7 @@
 import 'package:lernplatform/datenklassen/log_and_content-converter.dart';
 
+import 'frage.dart';
+
 class Teilnehmer {
   List<LogLernfeld> meineLernfelder;
   final String key;
@@ -14,13 +16,42 @@ class LogLernfeld {
   LogLernfeld(this.id, this.meineThemen);
 }
 
-
 class LogThema {
+  int id;
+  List<LogSubThema> logSubthemen;
+
+  // String get name => convertToThema(logthema: this).name;
+
+  LogThema({
+    required this.id,
+    required this.logSubthemen,
+  });
+
+  double getProgress(){
+    // ittereiere durch deine subthemen und lass dir den progress geben
+
+    double erreichteZahl = 0;
+    for(LogSubThema subThema in logSubthemen){
+      erreichteZahl += subThema.getProgress();
+    }
+    while (erreichteZahl > 1)
+      erreichteZahl /= 10;
+
+    return 1 - erreichteZahl;
+  }
+
+}
+
+
+
+
+
+class LogSubThema {
   int id;
   List<String> falschBeantworteteFragen;
   List<String> richtigBeantworteteFragen;
 
-  LogThema({
+  LogSubThema({
     required this.id,
     required this.falschBeantworteteFragen,
     required this.richtigBeantworteteFragen,
@@ -28,15 +59,16 @@ class LogThema {
 
   double getProgress(){
     // zähle wie viele richtig beantwortet sind
-    int erreichteZahl = 0;
+    int richtigbeantwortete = 0;
     for(String frage in richtigBeantworteteFragen){
       if (frage.split('_').last == '1')
-        erreichteZahl++;
+        richtigbeantwortete++;
     }
-    int gesamtZahl = convertToThema(logthema: this).getTrueLengthOfFragen();
+
+    int trueLengthOfFragen = convertToSubThema(logthema: this).fragen.length;
 
     // bilde fortschritt
-    double progress = erreichteZahl / gesamtZahl;
+    double progress = richtigbeantwortete / trueLengthOfFragen;
 
     // stelle sicher das fortschritt nicht größer als 1 ist
     progress = progress.clamp(0.0, 1.0);
@@ -44,6 +76,6 @@ class LogThema {
     return progress;
   }
 
-  String get name => convertToThema(logthema: this).name;
+  String get name => convertToSubThema(logthema: this).name;
 }
 

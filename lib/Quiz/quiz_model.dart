@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/Frage_Model.dart';
 import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/Quiz/quiz_thema.dart';
+import 'package:lernplatform/datenklassen/frage.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/session.dart';
 import '../menu/punkte_widget.dart';
 
 class QuizModel with ChangeNotifier {
-  final List<QuizThema> quizThemen;
-  late QuizThema _aktuellesThema;
+  final List<QuizSubThema> quizThemen;
+  late QuizSubThema _aktuellesThema;
   bool _isLocked = false;
   Random _rnd = Random();
   int _bei3gibtsNeFalscheFrage = 0;
@@ -52,15 +53,28 @@ class QuizModel with ChangeNotifier {
 
   void nextTapped() {
     _isLocked = false;
-    _aktuellesThema = quizThemen[_rnd.nextInt(quizThemen.length)];
-    _currentQuestioin = Frage_Model(
-      frage: _aktuellesThema.getRandomFrage(++_bei3gibtsNeFalscheFrage),
-      lockTapped: (int erreichtePunkte) => lockTapped(erreichtePunkte: erreichtePunkte)
-    );
+
+    // Überprüfe, ob die Liste leer ist, bevor du versuchst, darauf zuzugreifen
+    if (quizThemen.isNotEmpty) {
+      _aktuellesThema = quizThemen[_rnd.nextInt(quizThemen.length)];
+      _currentQuestioin = Frage_Model(
+          frage: _aktuellesThema.getRandomFrage(++_bei3gibtsNeFalscheFrage),
+          lockTapped: (int erreichtePunkte) => lockTapped(erreichtePunkte: erreichtePunkte)
+      );
+    } else {
+      print("Keine Quiz-Themen vorhanden");
+      // Hier kannst du eine alternative Logik einfügen, falls keine Themen vorhanden sind
+      _currentQuestioin = Frage_Model(
+          frage: Frage( text: 'Keine Quiz-Themen vorhanden', nummer: 1, version: 1, themaID: 1, punkte: 1, antworten: []),
+          lockTapped: (int erreichtePunkte) => lockTapped(erreichtePunkte: erreichtePunkte)
+      );
+    }
+
     if (_bei3gibtsNeFalscheFrage == 3) _bei3gibtsNeFalscheFrage = 0;
   }
 
-  QuizThema get aktuellesThema => _aktuellesThema;
+
+  QuizSubThema get aktuellesThema => _aktuellesThema;
   Frage_Model get currentQuestioin => _currentQuestioin;
   bool get isLocked => _isLocked;
   int get _bei10wirdGespeichert => __bei10wirdGespeichert;
