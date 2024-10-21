@@ -1,83 +1,70 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
+import 'package:lernplatform/datenklassen/thema.dart';
 
 import '../datenklassen/lernfeld.dart';
 
-class FolderWidget extends StatelessWidget {
-  final Folder folder;
+class LernfeldWidget extends StatefulWidget {
+  final Lernfeld lernfeld;
 
-  FolderWidget({required this.folder});
+  LernfeldWidget({required this.lernfeld}) : super(key: ValueKey(lernfeld.id));
+
+  @override
+  _LernfeldWidgetState createState() => _LernfeldWidgetState();
+}
+
+class _LernfeldWidgetState extends State<LernfeldWidget> {
+  bool isExpanded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    print("Rendering LernfeldWidget: ${widget.lernfeld.name}, Expanded: $isExpanded");
+
+    return ExpansionTile(
+      title: Text(widget.lernfeld.name),
+      initiallyExpanded: isExpanded,
+      onExpansionChanged: (expanded) {
+        setState(() {
+          isExpanded = expanded;
+        });
+      },
+      children: widget.lernfeld.themen.map((thema) {
+        return ThemaWidget(thema: thema);
+      }).toList(),
+    );
+  }
+}
+
+
+
+
+class ThemaWidget extends StatefulWidget {
+  final Thema thema;
+
+  ThemaWidget({required this.thema});
+
+  @override
+  State<ThemaWidget> createState() => _ThemaWidgetState();
+}
+
+class _ThemaWidgetState extends State<ThemaWidget> {
+  bool isExpanded = false;
 
   @override
   Widget build(BuildContext context) {
     return ExpansionTile(
-      title: Row(
-        children: [
-          Icon(Icons.folder, color: Colors.red),
-          SizedBox(width: 8),
-          Text(folder.name),
-        ],
-      ),
-      childrenPadding: EdgeInsets.only(left: 16.0),
-      children: [
-        ...folder.subFolder.map((subFolder) => FolderWidget(folder: subFolder)).toList(),
-        ...folder.lernFelder.map((lernfeld) => LernfeldWidget(lernfeld: lernfeld)).toList(),
-      ],
-    );
-  }
-}
-
-class LernfeldWidget extends StatelessWidget {
-  final Lernfeld lernfeld;
-
-  LernfeldWidget({required this.lernfeld});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(lernfeld.name),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Scaffold(  // Scaffold sorgt für die korrekte Anwendung des Themes
-              appBar: AppBar(
-                title: Text('Lernfeld Details'),  // AppBar wird auch das Dark Mode Theme übernehmen
-              ),
-              body: Container(
-                color: Theme.of(context).scaffoldBackgroundColor,  // Verwende die Hintergrundfarbe des aktuellen Themes
-                child: Center(
-                  child: Text(
-                    'Platzhalter für ${lernfeld.name} \n \n Dieses Feature wird bald hinzugefügt',
-                    style: TextStyle(
-                      color: Theme.of(context).textTheme.bodyMedium?.color,  // Verwende die Textfarbe des aktuellen Themes
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        );
+      title: Text(widget.thema.name),
+      initiallyExpanded: isExpanded,
+      onExpansionChanged: (expanded) {
+        setState(() {
+          isExpanded = expanded;
+        });
       },
-    );
-  }
-}
-
-
-class Folderlist_widget extends StatelessWidget {
-  final List<ContentCarrier> folders;
-
-  Folderlist_widget({required this.folders});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Projektansicht'),
-      ),
-      // body: ListView(
-      //   children: folders.map((folder) => FolderWidget(folder: folder)).toList(),
-      // ),
+      children: widget.thema.subthemen.map((subThema) {
+        return ListTile(
+          title: Text(subThema.name),
+        );
+      }).toList(),
     );
   }
 }

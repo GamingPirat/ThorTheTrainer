@@ -18,7 +18,7 @@ Future<Teilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder)
   // Wenn Teilnehmer gefunden wurde, diesen zurückgeben
   if (gespeicherterTeilnehmer != null) {
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
-    return Teilnehmer(
+    Teilnehmer returnvalue = Teilnehmer(
       key: data['key'],
       meineLernfelder: (data['meineLernfelder'] as List).map((feld) {
         return LogLernfeld(
@@ -38,10 +38,12 @@ Future<Teilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder)
         );
       }).toList(),
     );
+    print_Yellow(returnvalue.toString());
+    return returnvalue;
   }
 
   // Wenn kein Teilnehmer gefunden wurde, erstelle einen Blanco-Teilnehmer basierend auf Firestore-Daten
-  print_Green("Erzeuge Blanco-Teilnehmer basierend auf Firestore-Daten");
+  // print_Green("Erzeuge Blanco-Teilnehmer basierend auf Firestore-Daten"); // todo
 
   // Erstelle LogLernfelder als Abbilder der Firestore-Lernfelder mit den passenden IDs
   List<LogLernfeld> logLernfelder = firestoreLernfelder.map((lernfeld) {

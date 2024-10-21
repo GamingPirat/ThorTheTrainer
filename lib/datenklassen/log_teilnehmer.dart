@@ -7,6 +7,8 @@ class Teilnehmer {
   final String key;
 
   Teilnehmer({required this.key, required this.meineLernfelder});
+
+  String get getKey => key;
 }
 
 

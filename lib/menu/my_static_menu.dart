@@ -14,7 +14,7 @@ class MyStaticMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print_Magenta("build MyStaticMenu");
+    // print_Magenta("build MyStaticMenu"); //todo
     return ChangeNotifierProvider.value(
       value: viewModel,
       child: Consumer<UserModel>(

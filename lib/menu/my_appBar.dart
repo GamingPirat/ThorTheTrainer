@@ -54,18 +54,30 @@ class _MyAppBarState extends State<MyAppBar> {
           },
         ),
         Builder(
-          builder: (context) => IconButton(
-            icon: Icon(Icons.info),
-            onPressed: () {
+          builder: (context) => GestureDetector(
+            onLongPress: () async {
+              await Future.delayed(Duration(seconds: 7));
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Ich arbeite noch an diesem Feature'),
+                  content: Text('Geheimer Admin-Zugang!'),
                   duration: Duration(seconds: 2),
                 ),
               );
             },
+            child: IconButton(
+              icon: Icon(Icons.info),
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Ich arbeite noch an diesem Feature'),
+                    duration: Duration(seconds: 2),
+                  ),
+                );
+              },
+            ),
           ),
-        ),
+        )
+
       ],
     );
   }
@@ -80,38 +92,3 @@ class _MyAppBarState extends State<MyAppBar> {
     );
   }
 }
-
-// void main() {
-//   runApp(MyTestApp());
-// }
-//
-// // Nur zu Testzwecken eingebaut
-// void setThemeMode(ThemeMode value) {
-//   // Dummy Funktion für Testzwecke
-// }
-//
-// // Nur zu Testzwecken eingebaut
-// late Session session;
-//
-// class MyTestApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     // Nur zu Testzwecken eingebaut
-//     session = Session.create();
-//     session.appBar = MyAppBar(setThemeMode: (themeMode) {
-//       setThemeMode(themeMode);
-//     });
-//     session.drawer = MyLeftDrawer();
-//
-//     return MaterialApp(
-//       theme: ThemeData.dark(),
-//       home: Scaffold(
-//         appBar: session.appBar,
-//         drawer: session.drawer,
-//         body: Center(
-//           child: Text('TestApp Content'),
-//         ),
-//       ),
-//     );
-//   }
-// }

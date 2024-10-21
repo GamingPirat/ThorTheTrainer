@@ -19,21 +19,11 @@ class Thema extends ContentCarrier {
   factory Thema.fromJson(Map<String, dynamic> json) {
     return Thema(
       id: json['id'] ?? 0,
-      name: json['name'] ?? 'Unbekannt',
-      tags: json['tags'] != null ? List<int>.from(json['tags']) : [],
-      subthemen: json['subthemen'] != null
-          ? (json['subthemen'] as List<dynamic>)
-          .map((subThemaJson) => SubThema.fromJson(subThemaJson))
-          .toList()
-          : [],
+      name: json['name'] ?? 'Unbekanntes Thema',
+      subthemen: (json['subthemen'] as List)
+          .map((subthemaJson) => SubThema.fromJson(subthemaJson))
+          .toList(), tags: [],
     );
-  }
-
-  static Future<Thema> fromJsonFile(String path) async {
-    final file = File(path);
-    final contents = await file.readAsString();
-    final json = jsonDecode(contents);
-    return Thema.fromJson(json);
   }
 }
 
