@@ -2,9 +2,9 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 
-import '../Quiz/Antwort_Model.dart';
-import '../datenklassen/db_frage.dart';
+import 'Antwort_Model.dart';
 
 
 class Frage_Model with ChangeNotifier {

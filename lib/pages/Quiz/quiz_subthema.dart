@@ -1,10 +1,7 @@
 import 'dart:math';
 import 'package:lernplatform/datenklassen/db_frage.dart' as IDKW;
 import 'package:lernplatform/datenklassen/db_subthema.dart';
-import '../session.dart';
-import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-import '../datenklassen/db_thema.dart';
 
 class QuizSubThema {
   late final SubThema subThema;

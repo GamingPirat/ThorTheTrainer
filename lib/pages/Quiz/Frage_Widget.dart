@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/Quiz/right_drawer.dart';
+import 'package:lernplatform/pages/Quiz/right_drawer.dart';
 import 'package:provider/provider.dart';
 import 'Antwort_Widget.dart';
 import 'Frage_Model.dart';

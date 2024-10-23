@@ -22,8 +22,14 @@ class _ProgressWidgetState extends State<ProgressWidget> {
         return Container(
           padding: EdgeInsets.all(10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("${vm.name}" ),
+              Text("${vm.name}",
+                softWrap: false,
+                overflow: TextOverflow.clip,
+                maxLines: 1,
+                textAlign: TextAlign.left,
+              ),
               Stack(
                 children: [
                   Container(

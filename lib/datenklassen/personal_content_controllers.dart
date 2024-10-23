@@ -9,19 +9,23 @@ abstract class UsersContentModel with ChangeNotifier{
   late final int id;
   late final String name;
   late double _progress;
+  bool _isSelected = false;
 
   UsersContentModel({
     required this.id,
     required this.name,
   });
 
-  double get progress => _progress;
-  void set progress(double value) {
-    _progress = value;
-    notifyListeners();
-  }
-
   double loadProgress();
+
+  double get progress => _progress;
+
+  void set progress(double value) { _progress = value; notifyListeners(); }
+
+  bool get isSelected => _isSelected;
+
+  void set isSelected(bool value);
+
 }
 
 class Lernfeld_Personal extends UsersContentModel{
@@ -31,13 +35,38 @@ class Lernfeld_Personal extends UsersContentModel{
 
   Lernfeld_Personal({required this.logLernfeld, required Lernfeld_DB l,})
       : super(id: l.id, name: l.name){
-    for(Thema t in l.themen)
-      for(LogThema lt in logLernfeld.meineThemen)
-        if(t.id == lt.id)
-          meineThemen.add(Thema_Personal(logThema: lt, t: t));
+    for(Thema thema in l.themen)
+      for(LogThema logThema in logLernfeld.meineThemen)
+        if(thema.id == logThema.id)
+          meineThemen.add(
+              Thema_Personal(
+                  logThema: logThema,
+                  thema: thema,
+                  selectParent: () => isSelected = true
+              ));
     loadProgress();
   }
 
+  @override
+  void set isSelected(bool value) {
+    for(Thema_Personal thema in meineThemen){
+      thema.isSelected = value;
+      for(SubThema_Personal subthema in thema.meineSubThemen)
+        subthema.isSelected = value;
+    }
+    _isSelected = value; notifyListeners();
+  }
+
+  bool checkIfAllChildrenAreSelected(){
+    int counter = 0;
+    for(Thema_Personal thema in meineThemen)
+      if(thema.isSelected)
+        counter++;
+
+    if(counter == meineThemen.length)
+      isSelected = true;
+    return isSelected;
+  }
 
   @override
   double loadProgress(){
@@ -54,14 +83,46 @@ class Thema_Personal extends UsersContentModel{
 
   LogThema logThema;
   late List<SubThema_Personal> meineSubThemen = [];
+  final Function selectParent;
 
-  Thema_Personal({required this.logThema, required Thema t,})
-      : super(id: t.id, name: t.name){
-    for(SubThema st in t.subthemen)
+  Thema_Personal({
+    required this.logThema,
+    required Thema thema,
+    required this.selectParent,
+  })
+      : super(id: thema.id, name: thema.name){
+    for(SubThema st in thema.subthemen)
       for(LogSubThema lst in logThema.logSubthemen)
         if(st.id == lst.id)
-          meineSubThemen.add(SubThema_Personal(logSubThema: lst, subThema: st));
+          meineSubThemen.add(
+              SubThema_Personal(
+                  logSubThema: lst,
+                  subThema: st,
+                  selectParent: ()=> isSelected = true
+              ));
     loadProgress();
+  }
+
+  @override
+  void set isSelected(bool value) {
+    for(SubThema_Personal subthema in meineSubThemen)
+      subthema.isSelected = value;
+
+    if(value) selectParent();
+
+    _isSelected = value; notifyListeners();
+  }
+
+
+  bool checkIfAllChildrenAreSelected(){
+    int counter = 0;
+    for(SubThema_Personal subthema in meineSubThemen)
+      if(subthema.isSelected)
+        counter++;
+
+    if(counter == meineSubThemen.length)
+      isSelected = true;
+    return isSelected;
   }
 
 
@@ -79,8 +140,13 @@ class Thema_Personal extends UsersContentModel{
 class SubThema_Personal extends UsersContentModel{
   LogSubThema logSubThema;
   final SubThema subThema;
+  final Function selectParent;
 
-  SubThema_Personal({required this.logSubThema, required this.subThema,})
+  SubThema_Personal({
+    required this.logSubThema,
+    required this.subThema,
+    required this.selectParent,
+  })
       : super(id: subThema.id, name: subThema.name) {
     loadProgress();
   }
@@ -100,5 +166,12 @@ class SubThema_Personal extends UsersContentModel{
     // stelle sicher das fortschritt nicht größer als 1 ist
     this.progress = progress.clamp(0.0, 1.0);
     return this.progress;
+  }
+
+  @override
+  set isSelected(bool value) {
+    isSelected = value;
+    if(isSelected)  selectParent();
+    notifyListeners();
   }
 }

@@ -1,12 +1,11 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/Quiz/Frage_Model.dart';
-import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
-import 'package:lernplatform/Quiz/quiz_thema.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/menu/punkte_widget.dart';
+import 'package:lernplatform/pages/Quiz/Frage_Model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
+import 'package:lernplatform/pages/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/session.dart';
-import '../menu/punkte_widget.dart';
 
 class QuizModel with ChangeNotifier {
   final List<QuizSubThema> quizThemen;

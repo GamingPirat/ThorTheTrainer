@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
-import '../datenklassen/db_frage.dart';
 
 class Antwort_Model with ChangeNotifier {
   final Antwort antwort;

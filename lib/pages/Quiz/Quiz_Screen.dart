@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:lernplatform/Quiz/quiz_model.dart';
-// import 'package:lernplatform/Quiz/quiz_thema.dart';
+// import 'package:lernplatform/Quiz/quiz_subthema.dart';
 // import 'package:lernplatform/Quiz/Frage_Widget.dart';
 // import 'package:lernplatform/Quiz/right_drawer.dart';
 // import 'package:lernplatform/datenklassen/log_teilnehmer.dart';

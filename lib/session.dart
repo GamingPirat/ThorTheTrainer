@@ -23,4 +23,10 @@ class Session {
     print_Yellow("initializeAppBar");
     appBar = MyAppBar(setThemeMode: setThemeMode);
   }
+
+  bool _drawerIsOpen = false;
+  bool get drawerIsOpen => _drawerIsOpen;
+  set drawerIsOpen(bool value){
+    _drawerIsOpen = value;
+  }
 }

@@ -1,11 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/Quiz/Frage_Widget.dart';
-import 'package:lernplatform/Quiz/quiz_model.dart';
-import 'package:lernplatform/Quiz/quiz_thema.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/menu/my_static_menu.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/pages/Quiz/Frage_Widget.dart';
+import 'package:lernplatform/pages/Quiz/quiz_model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
 
 // List<QuizThema> mok_QuizThemen() {
 //   List<QuizThema> list = [];
