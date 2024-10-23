@@ -1,8 +1,8 @@
 import 'package:lernplatform/datenklassen/mokdaten.dart';
-import 'lernfeld.dart';
+import 'db_lernfeld.dart';
 
 
-class ContentCarrier {
+abstract class ContentCarrier {
   final int id;
   final String name;
 
@@ -10,13 +10,14 @@ class ContentCarrier {
     required this.id,
     required this.name,
   });
+
 }
 
 class Folder{
   final int id;
   final String name;
   final List<Folder> subFolder;
-  final List<Lernfeld> lernFelder;
+  final List<Lernfeld_DB> lernFelder;
 
   Folder({
     required this.id,

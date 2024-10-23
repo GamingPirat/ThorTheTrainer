@@ -1,8 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/lernfeld.dart';
+import 'package:lernplatform/datenklassen/db_lernfeld.dart';
+import 'package:lernplatform/datenklassen/db_subthema.dart';
+import 'package:lernplatform/datenklassen/db_thema.dart';
+import 'package:lernplatform/datenklassen/folder_types.dart';
 import 'package:lernplatform/datenklassen/mokdaten.dart';
-import '../datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
+import 'log_teilnehmer.dart';
 import '../print_colors.dart';
 
 
@@ -10,7 +14,7 @@ import '../print_colors.dart';
 class UserModel with ChangeNotifier {
 
   late Teilnehmer teilnehmer;
-  List<Lernfeld> usersLernfelder = [];
+  List<Lernfeld_Personal> usersLernfelder = [];
   bool _isLoading = true;
 
   UserModel(){_load();}
@@ -23,7 +27,7 @@ class UserModel with ChangeNotifier {
     _isLoading = true;
     notifyListeners();  // Setzt den Ladezustand und benachrichtigt alle Listener
 
-    List<Lernfeld> firestoreLernfelder = [];
+    List<Lernfeld_DB> firestoreLernfelder = [];
 
     try {
       // Lade das EINZIGE Lernfeld-Dokument aus der gesamten Sammlung
@@ -37,25 +41,17 @@ class UserModel with ChangeNotifier {
         // Nehme das erste Dokument aus der Sammlung
         DocumentSnapshot<Map<String, dynamic>> doc = snapshot.docs.first;
         Map<String, dynamic> data = doc.data()!;
-        print_Red("Firestore Dokument-Daten: $data"); // todo
+        // print_Red("Firestore Dokument-Daten: $data"); // todo
 
         // Konvertiere das Dokument direkt in ein Lernfeld-Objekt
-        Lernfeld lernfeld = Lernfeld.fromJson(data, "Prüfungsvorbereitung WISO");
-
-        // Überprüfe, ob alle Themen und Subthemen korrekt geladen wurden // todo
-        // for (var thema in lernfeld.themen) {
-        //   print_Green("Thema: ${thema.name}, Anzahl Subthemen: ${thema.subthemen.length}"); // todo
-        //   for (var subThema in thema.subthemen) {
-        //     print_Green("SubThema: ${subThema.name}, Anzahl Fragen: ${subThema.fragen.length}"); // todo
-        //   }
-        // }
+        Lernfeld_DB lernfeld = Lernfeld_DB.fromJson(data, "Prüfungsvorbereitung WISO");
 
         firestoreLernfelder.add(lernfeld);  // Füge das Lernfeld zur Liste hinzu
       } else {
-        print('Keine Dokumente in der Sammlung vorhanden');
+        // print('Keine Dokumente in der Sammlung vorhanden');
       }
 
-      print_Green("Lernfelder erfolgreich konvertiert.");
+      // print_Green("Lernfelder erfolgreich konvertiert.");
     } catch (e) {
       print('Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
@@ -67,10 +63,10 @@ class UserModel with ChangeNotifier {
     // Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers
     usersLernfelder.clear();  // Leere die Liste, bevor du neue Einträge hinzufügst
     for (LogLernfeld logLernfeld in teilnehmer.meineLernfelder) {
-      for (Lernfeld lernfeld in firestoreLernfelder) {
+      for (Lernfeld_DB lernfeld in firestoreLernfelder) {
         // print('Vergleiche: logLernfeld.id = ${logLernfeld.id}, lernfeld.id = ${lernfeld.id}'); // todo
         if (logLernfeld.id == lernfeld.id) {
-          usersLernfelder.add(lernfeld);
+          usersLernfelder.add(Lernfeld_Personal(logLernfeld: logLernfeld, l: lernfeld));
           // print("Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo
         }
       }
@@ -81,16 +77,26 @@ class UserModel with ChangeNotifier {
     notifyListeners();  // Ladezustand auf "false" setzen und Listener benachrichtigen
   }
 
-
-
-
-
-
-
-
-
-
-// Future<void>speichern() async {
-  //   speichereTeilnehmer(teilnehmer);
+  // double getProgress(ContentCarrier cc) {
+  //
+  //   if (cc is Lernfeld_DB)
+  //     for(LogLernfeld lernfeld in teilnehmer.meineLernfelder)
+  //       if(lernfeld.id == cc.id)
+  //         return lernfeld.getProgress();
+  //
+  //   else if (cc is Thema)
+  //       for(LogLernfeld lernfeld in teilnehmer.meineLernfelder)
+  //         for(LogThema thema in lernfeld.meineThemen)
+  //           if(thema.id == cc.id)
+  //             return thema.getProgress();
+  //
+  //   else if (cc is SubThema)
+  //       for(LogLernfeld lernfeld in teilnehmer.meineLernfelder)
+  //         for(LogThema thema in lernfeld.meineThemen)
+  //           for(LogSubThema subTthema in thema.logSubthemen)
+  //             if(subTthema.id == cc.id)
+  //               return subTthema.getProgress();
+  //
+  //   return -1.0;
   // }
 }

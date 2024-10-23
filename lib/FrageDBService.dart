@@ -1,32 +1,32 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 
 class FrageDBService {
   final CollectionReference _fragenCollection = FirebaseFirestore.instance.collection('testfragen');
 
   // Create (neue Frage ohne ID, Firestore generiert automatisch eine ID)
-  Future<void> createFrage(Frage frage) async {
+  Future<void> createFrage(DB_Frage frage) async {
     await _fragenCollection.add(frage.toJson());
     print("### FrageDBService createFrage: Neue Frage hinzugefügt.\n$frage");
   }
 
-  Future<List<Frage>> getFragenById(String id) async {
+  Future<List<DB_Frage>> getFragenById(String id) async {
     QuerySnapshot snapshot = await _fragenCollection.where(FieldPath.documentId, isEqualTo: id).get();
-    return snapshot.docs.map((doc) => Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
+    return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
   }
 
   // Read (alle Fragen mit einer bestimmten themaID lesen)
-  Future<List<Frage>> getByThemaID(int themaID) async {
+  Future<List<DB_Frage>> getByThemaID(int themaID) async {
     QuerySnapshot snapshot = await _fragenCollection.where('themaID', isEqualTo: themaID).get();
     print("### FrageDBService getByThemaID:");
-    for (Frage frage in snapshot.docs.map((doc) => Frage.fromJson(doc.data() as Map<String, dynamic>)).toList()) {
+    for (DB_Frage frage in snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList()) {
       print(frage);
     }
-    return snapshot.docs.map((doc) => Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
+    return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
   }
 
   // Update (eine Frage updaten)
-  Future<void> updateFrage(String id, Frage neueFrage) async {
+  Future<void> updateFrage(String id, DB_Frage neueFrage) async {
     // Prüfe, ob das Dokument mit der angegebenen ID existiert
     DocumentSnapshot docSnapshot = await _fragenCollection.doc(id).get();
 

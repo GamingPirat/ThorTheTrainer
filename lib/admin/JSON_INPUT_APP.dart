@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:lernplatform/FrageDBService.dart';
 import 'dart:convert';
-import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/firebase_options.dart';
 
 class JsonInputApp extends StatefulWidget {
@@ -19,7 +19,7 @@ class _JsonInputAppState extends State<JsonInputApp> {
   void _submitJsonList() async {
     try {
       List<dynamic> jsonData = jsonDecode(_controller.text);
-      List<Frage> fragen = jsonData.map((item) => Frage.fromJson(item)).toList();
+      List<DB_Frage> fragen = jsonData.map((item) => DB_Frage.fromJson(item)).toList();
 
       for (var frage in fragen) {
         await _frageDBService.createFrage(frage);
@@ -39,7 +39,7 @@ class _JsonInputAppState extends State<JsonInputApp> {
   void _submitSingleJson() async {
     try {
       Map<String, dynamic> jsonData = jsonDecode(_controller.text);
-      Frage frage = Frage.fromJson(jsonData);
+      DB_Frage frage = DB_Frage.fromJson(jsonData);
 
       await _frageDBService.createFrage(frage);
 

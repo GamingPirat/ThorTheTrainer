@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'folder_types.dart';
 
@@ -8,7 +8,7 @@ import 'folder_types.dart';
 
 class SubThema extends ContentCarrier {
   final List<int> tags; // Id's von Themen
-  final List<Frage> fragen;
+  final List<DB_Frage> fragen;
 
   SubThema({
     required int id,
@@ -24,7 +24,7 @@ class SubThema extends ContentCarrier {
       tags: json['tags'] != null ? List<int>.from(json['tags']) : [],
       fragen: json['fragen'] != null
           ? (json['fragen'] as List<dynamic>)
-          .map((frageJson) => Frage.fromJson(frageJson))
+          .map((frageJson) => DB_Frage.fromJson(frageJson))
           .toList()
           : [],
     );
@@ -39,7 +39,7 @@ class SubThema extends ContentCarrier {
 
   int getTrueLengthOfFragen() {
     int counter = 0;
-    for (Frage frage in fragen) {
+    for (DB_Frage frage in fragen) {
       if (frage.version == 1) counter++;
     }
     return counter;

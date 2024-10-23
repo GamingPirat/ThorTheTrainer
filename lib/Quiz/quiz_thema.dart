@@ -1,10 +1,10 @@
 import 'dart:math';
-import 'package:lernplatform/datenklassen/frage.dart' as IDKW;
-import 'package:lernplatform/datenklassen/subthema.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart' as IDKW;
+import 'package:lernplatform/datenklassen/db_subthema.dart';
 import '../session.dart';
-import 'package:lernplatform/datenklassen/lernfeld.dart';
+import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-import '../datenklassen/thema.dart';
+import '../datenklassen/db_thema.dart';
 
 class QuizSubThema {
   late final SubThema subThema;
@@ -31,14 +31,14 @@ class QuizSubThema {
     logSubThema.falschBeantworteteFragen.add(value);
   }
 
-  IDKW.Frage _getFalschbeantworteteFrage(){
+  IDKW.DB_Frage _getFalschbeantworteteFrage(){
     if(logSubThema.falschBeantworteteFragen.isEmpty)
       return getRandomFrage(1);
     else{
       // finde die Version einer Frage die der User noch nicht gesehen hat
 
       for(String falschFrage in logSubThema.falschBeantworteteFragen)
-        for(IDKW.Frage frage in subThema.fragen)
+        for(IDKW.DB_Frage frage in subThema.fragen)
           if(frage.id.split('_')[1] == falschFrage.split('_')[1])     // FrageNummer ==
             if(frage.id.split('_')[2] != falschFrage.split('_')[2])   // FrageVersion !=
               return frage;
@@ -51,11 +51,11 @@ class QuizSubThema {
     }
   }
 
-  IDKW.Frage getRandomFrage(int counter){
+  IDKW.DB_Frage getRandomFrage(int counter){
     // der User soll alle 3 Runden mit einer bereits falsch beantworteten Frage
     // konfrontiert werden aber in einer anderen Version dieser Frage.
     if(counter != 3)
-      for(IDKW.Frage frage in subThema.fragen)
+      for(IDKW.DB_Frage frage in subThema.fragen)
         if( ! geseheneFragen.contains(frage.id))
           return frage;
 

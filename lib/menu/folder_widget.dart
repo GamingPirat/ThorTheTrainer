@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/folder_types.dart';
-import 'package:lernplatform/datenklassen/thema.dart';
+import 'package:lernplatform/datenklassen/db_thema.dart';
 
-import '../datenklassen/lernfeld.dart';
+import '../datenklassen/db_lernfeld.dart';
 
 class LernfeldWidget extends StatefulWidget {
-  final Lernfeld lernfeld;
+  final Lernfeld_DB lernfeld;
 
   LernfeldWidget({required this.lernfeld}) : super(key: ValueKey(lernfeld.id));
 

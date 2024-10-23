@@ -1,13 +1,14 @@
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:lernplatform/datenklassen/db_antwort.dart';
 
 import '../Quiz/Antwort_Model.dart';
-import '../datenklassen/frage.dart';
+import '../datenklassen/db_frage.dart';
 
 
 class Frage_Model with ChangeNotifier {
-  final Frage frage;
+  final DB_Frage frage;
   final Function lockTapped;
   late List<Antwort_Model> antwortenViewModel;
 

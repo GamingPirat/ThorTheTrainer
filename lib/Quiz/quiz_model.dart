@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/Frage_Model.dart';
 import 'package:lernplatform/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/Quiz/quiz_thema.dart';
-import 'package:lernplatform/datenklassen/frage.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/session.dart';
 import '../menu/punkte_widget.dart';
@@ -65,7 +65,7 @@ class QuizModel with ChangeNotifier {
       print("Keine Quiz-Themen vorhanden");
       // Hier kannst du eine alternative Logik einfügen, falls keine Themen vorhanden sind
       _currentQuestioin = Frage_Model(
-          frage: Frage( text: 'Keine Quiz-Themen vorhanden', nummer: 1, version: 1, themaID: 1, punkte: 1, antworten: []),
+          frage: DB_Frage( text: 'Keine Quiz-Themen vorhanden', nummer: 1, version: 1, themaID: 1, punkte: 1, antworten: []),
           lockTapped: (int erreichtePunkte) => lockTapped(erreichtePunkte: erreichtePunkte)
       );
     }

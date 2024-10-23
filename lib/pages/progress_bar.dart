@@ -1,89 +1,133 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
+import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:provider/provider.dart';
 
-import '../datenklassen/thema.dart';
+class ProgressWidget extends StatefulWidget {
+  final UsersContentModel viewModel;
 
-class ProgressBar extends StatefulWidget {
-  final LogSubThema logThema;
-
-  const ProgressBar({required this.logThema});
+  ProgressWidget({required this.viewModel});
 
   @override
-  _ProgressBarState createState() => _ProgressBarState();
+  _ProgressWidgetState createState() => _ProgressWidgetState();
 }
 
-class _ProgressBarState extends State<ProgressBar> {
-  bool isHighlighted = false;
-
+class _ProgressWidgetState extends State<ProgressWidget> {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isHighlighted = !isHighlighted;
-        });
-      },
-      child: Container(
-        height: 40,
-        margin: EdgeInsets.all(8),
-        width: double.infinity,
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.white, width: 2),
-          borderRadius: BorderRadius.circular(5),
-          boxShadow: isHighlighted
-              ? [BoxShadow(color: Colors.yellow, blurRadius: 10, spreadRadius: 2)]
-              : [],
-        ),
-        child: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(5),
+    return ChangeNotifierProvider.value(
+      value: widget.viewModel,
+      child: Consumer<UsersContentModel>(builder: (context, vm, child) {
+        return Container(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Text("${vm.name}" ),
+              Stack(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.red,
+                    ),
+                    child: FractionallySizedBox(
+                      widthFactor: vm.progress,
+                      child: Container(
+                        height: 20,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.blue,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Center(child: Text("${(vm.progress * 100).toStringAsFixed(0)}%"),),
+                  // Positioned.fill(
+                  //   child: Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: Padding(
+                  //       padding: const EdgeInsets.symmetric(horizontal: 10),
+                  //       child: Text("${vm.name}" ),
+                  //     ),
+                  //   ),
+                  // ),
+                ],
               ),
-              width: widget.logThema.getProgress().clamp(0.0, 1.0) * MediaQuery.of(context).size.width,
-              height: 40,
-            ),
-            Center(
-              child: Text(
-                widget.logThema.name,
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ],
-        ),
-      ),
+            ],
+          ),
+        );
+      }),
     );
   }
 }
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+// TestApp for testing
+class TestApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Lernfeld_Personal testModel = Lernfeld_Personal(
+      logLernfeld: LogLernfeld(1, []),
+      l: Lernfeld_DB(id: 1, name: 'Das n langes Lernfeld', themen: []),
+    );
+
+    TextEditingController progressController = TextEditingController();
+
     return MaterialApp(
-      theme: ThemeData.dark(), // Dark Mode Theme
-      home: TestProgressBarScreen(),
+      home: Scaffold(
+        appBar: AppBar(title: Text("Progress Widget")),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ProgressWidget(
+                viewModel: testModel,
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    child: TextField(
+                      controller: progressController,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        labelText: "Progress",
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  // Hier kommt der Builder, um den korrekten Kontext für ScaffoldMessenger zu bekommen
+                  Builder(
+                    builder: (BuildContext newContext) {
+                      return ElevatedButton(
+                        onPressed: () {
+                          double? newProgress = double.tryParse(progressController.text);
+                          if (newProgress != null && newProgress >= 0 && newProgress <= 1) {
+                            testModel.progress = newProgress; // Setzt den neuen progress-Wert
+                          } else {
+                            // Verwende den Kontext aus dem Builder, um den ScaffoldMessenger zu erreichen
+                            ScaffoldMessenger.of(newContext).showSnackBar(
+                              SnackBar(content: Text("Bitte eine Zahl zwischen 0 und 1 eingeben.")),
+                            );
+                          }
+                        },
+                        child: Text("Set Progress"),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
 
-class TestProgressBarScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // Beispiel-Daten für LogThema
-    LogSubThema logThema = LogSubThema(id: 1, falschBeantworteteFragen: [], richtigBeantworteteFragen: []); // todo hol das aus der Session.teilnehmer
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("ProgressBar Test"),
-      ),
-      body: Center(
-        child: ProgressBar(logThema: logThema), // Hier dein ProgressBar Widget
-      ),
-    );
-  }
-}
+void main() => runApp(TestApp());

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/menu/mok_user_model.dart';
+import 'package:lernplatform/datenklassen/mok_user_model.dart';
 import 'package:lernplatform/menu/my_appBar.dart';
 import 'package:lernplatform/menu/my_left_drawer.dart';
 import 'package:lernplatform/menu/punkte_widget.dart';

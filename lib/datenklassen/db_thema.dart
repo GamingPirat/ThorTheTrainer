@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:lernplatform/datenklassen/subthema.dart';
+import 'package:lernplatform/datenklassen/db_subthema.dart';
 import 'folder_types.dart';
 
 

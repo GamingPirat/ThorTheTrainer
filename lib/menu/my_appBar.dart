@@ -81,14 +81,4 @@ class _MyAppBarState extends State<MyAppBar> {
       ],
     );
   }
-
-  Widget buildFolderList() {
-    return Expanded(
-      child: ListView(
-        children: Session().user.usersLernfelder.map((lernfeld) {
-          return LernfeldWidget(lernfeld: lernfeld,);
-        }).toList(),
-      ),
-    );
-  }
 }

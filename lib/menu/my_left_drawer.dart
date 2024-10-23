@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/Quiz/new_Quizscreen.dart';
 import 'package:lernplatform/Quiz/quiz_thema.dart';
-import 'package:lernplatform/datenklassen/lernfeld.dart';
+import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-import 'package:lernplatform/datenklassen/subthema.dart';
-import 'package:lernplatform/datenklassen/thema.dart';
+import 'package:lernplatform/datenklassen/db_subthema.dart';
+import 'package:lernplatform/datenklassen/db_thema.dart';
 import 'package:lernplatform/menu/foldercontainer_widget.dart';
+import 'package:lernplatform/pages/progress_bar.dart';
 import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 import '../Quiz/Quiz_Screen.dart';
@@ -94,16 +95,8 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
           // Initialisiere den Zustand, falls noch nicht vorhanden
           expandedStates.putIfAbsent(lernfeld.id, () => false);
 
-          print_Yellow("Lernfeld: ${lernfeld.name}");
-          for (Thema thema in lernfeld.themen) {
-            print_Yellow("\tThema: ${thema.name}");
-            for (SubThema subThema in thema.subthemen) {
-              print_Yellow("\t\tSubThema: ${subThema.name}");
-            }
-          }
-
           return ExpansionTile(
-            title: Text(lernfeld.name),
+            title: ProgressWidget(viewModel: lernfeld,),
             // Icon links anzeigen: Geschlossenes oder geöffnetes Ordner-Icon je nach Zustand
             leading: Icon(
               expandedStates[lernfeld.id] == true
@@ -120,48 +113,51 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
               });
             },
             // ExpansionTile für jedes Thema innerhalb des Lernfeldes
-            children: lernfeld.themen.map((thema) {
+            children: lernfeld.meineThemen.map((thema) {
               // Ein zusätzlicher Map für Themen-Expanded-Zustände
               bool isThemaExpanded = expandedStates[thema.id] ?? false;
 
-              return Padding(
-                padding: const EdgeInsets.only(left: 16.0),  // Themen eingerückt
-                child: ExpansionTile(
-                  title: Text(thema.name),
-                  // Icon für Themen anzeigen: Geschlossener oder geöffneter Ordner, abhängig vom Zustand
-                  leading: Icon(
-                    isThemaExpanded
-                        ? Icons.folder_open  // Geöffneter Ordner, wenn expanded
-                        : Icons.folder,  // Geschlossener Ordner, wenn collapsed
-                  ),
-                  // Pfeil-Icon ausblenden
-                  trailing: SizedBox.shrink(),
-                  // Übergebe den gespeicherten Expanded-Zustand für das Thema
-                  initiallyExpanded: isThemaExpanded,
-                  onExpansionChanged: (bool expanded) {
-                    setState(() {
-                      expandedStates[thema.id] = expanded;  // Zustand für das Thema speichern
-                    });
-                  },
-                  // Jedes Thema hat seine Subthemen als Kinder
-                  children: thema.subthemen.map((subThema) {
-                    return Padding(
-                      padding: const EdgeInsets.only(left: 32.0),  // Subthemen noch weiter eingerückt
-                      child: InkWell(
-                        onTap: () {
-                          // Handle tap on SubThema
-                          print("Tapped on SubThema: ${subThema.name}");
-                          // Hier kannst du die gewünschte Navigation oder Aktion für das SubThema hinzufügen
-                        },
-                        hoverColor: Colors.blue.withOpacity(0.2),  // Leichter Hover-Effekt
-                        child: ListTile(
-                          title: Text(subThema.name),
-                          // Optional: Du kannst auch hier Icons oder andere Interaktionen hinzufügen
-                        ),
-                      ),
-                    );
-                  }).toList(),
+              return ExpansionTile(
+                title: ProgressWidget(viewModel: thema,),
+                // Pfeil-Icon rechts anzeigen
+                trailing: Icon(
+                  isThemaExpanded
+                      ? Icons.arrow_drop_down  // Pfeil nach unten, wenn expanded
+                      : Icons.arrow_right,  // Pfeil nach rechts, wenn collapsed
                 ),
+                // Übergebe den gespeicherten Expanded-Zustand für das Thema
+                initiallyExpanded: isThemaExpanded,
+                onExpansionChanged: (bool expanded) {
+                  setState(() {
+                    expandedStates[thema.id] = expanded;  // Zustand für das Thema speichern
+                  });
+                },
+                // Jedes Thema hat seine Subthemen als Kinder
+                children: thema.meineSubThemen.map((subThema) {
+                  return InkWell(
+                    onTap: () {
+                      // Handle tap on SubThema
+                      print("Tapped on SubThema: \${subThema.name}");
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          Future.delayed(Duration(seconds: 3), () {
+                            Navigator.of(context).pop(); // Schließt das Popup nach 3 Sekunden
+                          });
+                          return AlertDialog(
+                            title: Text("Dieses Feature befindet sich noch in Arbeit"),
+                            // content: Text("Dieses Feature befindet sich noch in Arbeit"),
+                          );
+                        },
+                      );
+                    },
+                    hoverColor: Colors.blue.withOpacity(0.2),  // Leichter Hover-Effekt
+                    child: ListTile(
+                      title: ProgressWidget(viewModel: subThema,),
+                      // Optional: Du kannst auch hier Icons oder andere Interaktionen hinzufügen
+                    ),
+                  );
+                }).toList(),
               );
             }).toList(),
           );

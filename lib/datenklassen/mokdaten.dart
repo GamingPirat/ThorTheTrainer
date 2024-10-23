@@ -1,14 +1,15 @@
 import 'dart:convert';
 
-import 'package:lernplatform/datenklassen/frage.dart';
-import 'package:lernplatform/datenklassen/lernfeld.dart';
+import 'package:lernplatform/datenklassen/db_antwort.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
+import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-import 'package:lernplatform/datenklassen/thema.dart';
+import 'package:lernplatform/datenklassen/db_thema.dart';
 import 'package:lernplatform/print_colors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
-Future<Teilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder) async {
+Future<Teilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld_DB> firestoreLernfelder) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String teilnehmerKey = "ThorTheTrainer";
 
@@ -230,8 +231,8 @@ List<LogSubThema> blanco_logThemen_zu_Loglernfeld1 =[
 
 
 
-List<Frage> mok_fragen_zuThema2 = [
-  Frage(
+List<DB_Frage> mok_fragen_zuThema2 = [
+  DB_Frage(
     nummer: 1,
     version: 1,
     themaID: 2,
@@ -242,7 +243,7 @@ List<Frage> mok_fragen_zuThema2 = [
       Antwort(text: "Daten sichern", erklaerung: "Firewalls schützen, aber sie sichern keine Daten.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 1,
     version: 2,
     themaID: 2,
@@ -253,7 +254,7 @@ List<Frage> mok_fragen_zuThema2 = [
       Antwort(text: "Zum Backup von Daten", erklaerung: "Backups sind nicht die Aufgabe einer Firewall.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 1,
     themaID: 2,
@@ -264,7 +265,7 @@ List<Frage> mok_fragen_zuThema2 = [
       Antwort(text: "FTP", erklaerung: "FTP wird für Dateitransfers verwendet, nicht für E-Mail.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 2,
     themaID: 2,
@@ -279,8 +280,8 @@ List<Frage> mok_fragen_zuThema2 = [
 
 
 
-List<Frage> mok_fragen_zuThema3 = [
-  Frage(
+List<DB_Frage> mok_fragen_zuThema3 = [
+  DB_Frage(
     nummer: 1,
     version: 1,
     themaID: 3,
@@ -291,7 +292,7 @@ List<Frage> mok_fragen_zuThema3 = [
       Antwort(text: "Erstellen von Programmen", erklaerung: "Betriebssysteme erstellen keine Programme.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 1,
     version: 2,
     themaID: 3,
@@ -302,7 +303,7 @@ List<Frage> mok_fragen_zuThema3 = [
       Antwort(text: "Es installiert Software", erklaerung: "Das ist nicht die Hauptaufgabe eines Betriebssystems.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 1,
     themaID: 3,
@@ -313,7 +314,7 @@ List<Frage> mok_fragen_zuThema3 = [
       Antwort(text: "SMTP", erklaerung: "SMTP wird für E-Mail verwendet, nicht für Webseiten.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 2,
     themaID: 3,
@@ -328,8 +329,8 @@ List<Frage> mok_fragen_zuThema3 = [
 
 
 
-List<Frage> mok_fragen_zuThema4 = [
-  Frage(
+List<DB_Frage> mok_fragen_zuThema4 = [
+  DB_Frage(
     nummer: 1,
     version: 1,
     themaID: 4,
@@ -340,7 +341,7 @@ List<Frage> mok_fragen_zuThema4 = [
       Antwort(text: "Dateien auf Server hochladen", erklaerung: "Falsch, dafür wird FTP verwendet.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 1,
     version: 2,
     themaID: 4,
@@ -351,7 +352,7 @@ List<Frage> mok_fragen_zuThema4 = [
       Antwort(text: "Übertragung von E-Mails", erklaerung: "E-Mails werden mit SMTP übertragen.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 1,
     themaID: 4,
@@ -362,7 +363,7 @@ List<Frage> mok_fragen_zuThema4 = [
       Antwort(text: "Ein Computer für normale Benutzer", erklaerung: "Das ist nicht korrekt, Server sind für Dienste zuständig.", isKorrekt: false),
     ],
   ),
-  Frage(
+  DB_Frage(
     nummer: 2,
     version: 2,
     themaID: 4,
