@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/session.dart';
 
 class MyScreen extends StatelessWidget {
-  Widget header;
   Widget body;
 
 
-  MyScreen({required this.header,required this.body,super.key});
+  MyScreen({required this.body,super.key});
 
   @override
   Widget build(BuildContext context) {
-    Session().pageHeader = header;
-    return Column(
+    return ListView(
       children: [
         Session().appBar,
         body,
@@ -23,14 +21,13 @@ class MyScreen extends StatelessWidget {
 
 void MyNavigator({
   required BuildContext context,
-  required Widget header,
   required Widget body,
 }) {
 
   Navigator.push(context, PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) {
       return Material(
-        child: MyScreen(header: header, body: body), // Nutze das Material-Widget, um den Theme-Kontext zu übernehmen
+        child: MyScreen(body: body), // Nutze das Material-Widget, um den Theme-Kontext zu übernehmen
       );
     },
     transitionsBuilder: (context, animation, secondaryAnimation, child) {

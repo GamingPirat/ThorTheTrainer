@@ -42,7 +42,7 @@ class Lernfeld_Personal extends UsersContentModel{
               Thema_Personal(
                   logThema: logThema,
                   thema: thema,
-                  selectParent: () => isSelected = true
+                  checkParent: () => checkIfAllChildrenAreSelected
               ));
     loadProgress();
   }
@@ -60,7 +60,7 @@ class Lernfeld_Personal extends UsersContentModel{
   bool checkIfAllChildrenAreSelected(){
     int counter = 0;
     for(Thema_Personal thema in meineThemen)
-      if(thema.isSelected)
+      if(thema.checkIfAllChildrenAreSelected())
         counter++;
 
     if(counter == meineThemen.length)
@@ -83,12 +83,12 @@ class Thema_Personal extends UsersContentModel{
 
   LogThema logThema;
   late List<SubThema_Personal> meineSubThemen = [];
-  final Function selectParent;
+  final Function checkParent;
 
   Thema_Personal({
     required this.logThema,
     required Thema thema,
-    required this.selectParent,
+    required this.checkParent,
   })
       : super(id: thema.id, name: thema.name){
     for(SubThema st in thema.subthemen)
@@ -98,7 +98,7 @@ class Thema_Personal extends UsersContentModel{
               SubThema_Personal(
                   logSubThema: lst,
                   subThema: st,
-                  selectParent: ()=> isSelected = true
+                  selectParent: ()=> checkIfAllChildrenAreSelected
               ));
     loadProgress();
   }
@@ -108,7 +108,7 @@ class Thema_Personal extends UsersContentModel{
     for(SubThema_Personal subthema in meineSubThemen)
       subthema.isSelected = value;
 
-    if(value) selectParent();
+    if(value) checkParent();
 
     _isSelected = value; notifyListeners();
   }
@@ -170,8 +170,9 @@ class SubThema_Personal extends UsersContentModel{
 
   @override
   set isSelected(bool value) {
-    isSelected = value;
-    if(isSelected)  selectParent();
+    _isSelected = value;  // Direktes Setzen der privaten Variable
+    if(_isSelected) selectParent();
     notifyListeners();
   }
+
 }

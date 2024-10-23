@@ -12,28 +12,36 @@ class QuizStarterSubThemaWidget extends StatelessWidget {
     return ChangeNotifierProvider.value(
       value: viewModel,
       child: Consumer<SubThema_Personal>(
-          builder: (context, vm, child) {
-            return Container(
-              padding: EdgeInsets.all(16.0),
-              margin: EdgeInsets.all(8.0),
-              decoration: BoxDecoration(
-                color: Theme.of(context).brightness == Brightness.dark ? Colors.grey[850] : Colors.grey[300],
-                borderRadius: BorderRadius.circular(100),
-                boxShadow: [
-                  BoxShadow(
-                    color: vm.isSelected ? Colors.blue : Colors.transparent,
-                    spreadRadius: 5,
-                    blurRadius: 12,
-                    offset: Offset(0, 3),
-                  ),
-                ],
+        builder: (context, vm, child) {
+          return Container(
+            padding: EdgeInsets.all(4),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: vm.isSelected ? Colors.blue : Colors.transparent,
+                  spreadRadius: 5,
+                  blurRadius: 12,
+                  offset: const Offset(0, 3),
+                ),
+              ],
+              borderRadius: BorderRadius.circular(16), // Eckenabrundung
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(16),  // Gleiche Eckenabrundung für Hover-Effekt
+              child: Container(
+                padding: EdgeInsets.all(4),
+                color: vm.isSelected ? Color(0xFF101010) : Colors.transparent,
+                child: InkWell(
+                  onTap: () => vm.isSelected = !vm.isSelected,
+                  hoverColor: Colors.blue.withOpacity(0.2),
+                  child: Center(child: Text(vm.name)),
+                ),
               ),
-              child: ElevatedButton(
-              onPressed: () => vm.isSelected = !vm.isSelected,
-              child: Text(vm.name),
             ),
           );
-        }
+
+
+        },
       ),
     );
   }

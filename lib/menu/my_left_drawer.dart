@@ -37,17 +37,16 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
       padding: const EdgeInsets.all(16.0),
       child: ElevatedButton(
         onPressed: () {
-          List<QuizSubThema> quizThemen = [];
-          for (LogLernfeld lernfeld in Session().user.teilnehmer.meineLernfelder) {
-            for (LogThema thema in lernfeld.meineThemen) {
-              for (LogSubThema subThema in thema.logSubthemen) {
-                quizThemen.add(QuizSubThema(logSubThema: subThema));
-              }
-            }
-          }
+          // List<QuizSubThema> quizThemen = [];
+          // for (LogLernfeld lernfeld in Session().user.teilnehmer.meineLernfelder) {
+          //   for (LogThema thema in lernfeld.meineThemen) {
+          //     for (LogSubThema subThema in thema.logSubthemen) {
+          //       quizThemen.add(QuizSubThema(logSubThema: subThema));
+          //     }
+          //   }
+          // }
           MyNavigator(
               context: context,
-              header: Text("Welche Fragen sollen im Quiz sein?"),
               body: QuizStarter_Screen()
           );
         },
