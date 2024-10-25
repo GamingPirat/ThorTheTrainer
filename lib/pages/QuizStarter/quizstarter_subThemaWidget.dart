@@ -24,20 +24,25 @@ class QuizStarterSelecterWidget extends StatelessWidget {
                   offset: const Offset(0, 3),
                 ),
               ],
-              borderRadius: BorderRadius.circular(16), // Eckenabrundung
+              borderRadius: BorderRadius.circular(2), // Eckenabrundung
             ),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(16),  // Gleiche Eckenabrundung für Hover-Effekt
+              borderRadius: BorderRadius.circular(2),  // Gleiche Eckenabrundung für Hover-Effekt
               child: Container(
                 padding: EdgeInsets.all(4),
                 color: vm.isSelected
                     ? (Theme.of(context).brightness == Brightness.dark ? Color(0xFF101010) : Color(0xFFF0F0F0))
-                    : Colors.transparent,
+                    : Colors.black.withOpacity(0.5),
 
                 child: InkWell(
                   onTap: () => vm.isSelected = !vm.isSelected,
                   hoverColor: Colors.blue.withOpacity(0.2),
-                  child: Center(child: Text(vm.name)),
+                  child: Center(child: Text(
+                    vm.name,
+                    maxLines: 2,
+                    overflow: TextOverflow.visible,
+
+                  )),
                 ),
               ),
             ),
