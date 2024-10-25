@@ -4,19 +4,23 @@ import 'package:lernplatform/session.dart';
 class MyScreen extends StatelessWidget {
   Widget body;
 
-
-  MyScreen({required this.body,super.key});
+  MyScreen({required this.body, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       children: [
         Session().appBar,
-        body,
+        Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: body,
+        ),
       ],
     );
   }
 }
+
 
 
 void MyNavigator({

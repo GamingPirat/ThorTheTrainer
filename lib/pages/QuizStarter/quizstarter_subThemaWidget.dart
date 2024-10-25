@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
 import 'package:provider/provider.dart';
 
-class QuizStarterSubThemaWidget extends StatelessWidget {
-  SubThema_Personal viewModel;
-  QuizStarterSubThemaWidget({required this.viewModel, super.key});
+class QuizStarterSelecterWidget extends StatelessWidget {
+  UsersContentModel viewModel;
+  QuizStarterSelecterWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<SubThema_Personal>(
+      child: Consumer<UsersContentModel>(
         builder: (context, vm, child) {
           return Container(
             padding: EdgeInsets.all(4),
@@ -30,7 +30,10 @@ class QuizStarterSubThemaWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),  // Gleiche Eckenabrundung für Hover-Effekt
               child: Container(
                 padding: EdgeInsets.all(4),
-                color: vm.isSelected ? Color(0xFF101010) : Colors.transparent,
+                color: vm.isSelected
+                    ? (Theme.of(context).brightness == Brightness.dark ? Color(0xFF101010) : Color(0xFFF0F0F0))
+                    : Colors.transparent,
+
                 child: InkWell(
                   onTap: () => vm.isSelected = !vm.isSelected,
                   hoverColor: Colors.blue.withOpacity(0.2),

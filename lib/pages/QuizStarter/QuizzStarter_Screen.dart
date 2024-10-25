@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_subThemaWidget.dart';
+import 'package:lernplatform/pages/QuizStarter/quizstarter_thema_widget.dart';
 import 'package:lernplatform/session.dart';
 
 class QuizStarter_Screen extends StatelessWidget {
@@ -8,33 +9,35 @@ class QuizStarter_Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Session().pageHeader = Text("Welche Fragen sollen im Quiz sein?");
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.width,
-      padding: const EdgeInsets.all(8.0),
-      child: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,        // Anzahl der Spalten
-          crossAxisSpacing: 4,     // Abstand zwischen den Spalten
-          mainAxisSpacing: 4,      // Abstand zwischen den Reihen
-          childAspectRatio: 4,    // Seitenverhältnis der Kinder (Breite zu Höhe)
-        ),
-        itemCount: Session().user.usersLernfelder
-            .expand((lernfeld) => lernfeld.meineThemen)
-            .expand((thema) => thema.meineSubThemen)
-            .length,
-        itemBuilder: (context, index) {
-          List<SubThema_Personal> subthemen = Session().user.usersLernfelder
-              .expand((lernfeld) => lernfeld.meineThemen)
-              .expand((thema) => thema.meineSubThemen)
-              .toList();
+    Session().pageHeader = const Text("Welche Fragen sollen im Quiz sein?");
 
-          SubThema_Personal subthema = subthemen[index];
+    return ListView.builder(
+      itemCount: Session().user.usersLernfelder.length,
+      itemBuilder: (context, index) {
+        Lernfeld_Personal lernfeld = Session().user.usersLernfelder[index];
 
-          return QuizStarterSubThemaWidget(viewModel: subthema);
-        },
-      ),
+        return Column(
+          children: [
+            QuizStarterSelecterWidget(viewModel: lernfeld),
+            GridView.builder(
+              shrinkWrap: true,  // GridView nimmt nur so viel Platz ein, wie es benötigt
+              physics: const NeverScrollableScrollPhysics(),  // Kein eigenes Scrollen
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 4,
+                mainAxisSpacing: 4,
+                childAspectRatio: 4,
+              ),
+              itemCount: lernfeld.meineThemen.length,
+              itemBuilder: (context, index) {
+                Thema_Personal thema = lernfeld.meineThemen[index];
+                return QuizstarterThemaWidget(viewModel: thema);
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
+
