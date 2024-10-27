@@ -1,12 +1,12 @@
-import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_subthema.dart';
 import 'package:lernplatform/datenklassen/db_thema.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 
-class UsersThema extends UsersViewModel {
+class UsersThema extends UsersContentModel {
   final LogThema logThema;
-  late final List<UsersSubthema> meineSubThemen = [];
+  late final List<UsersSubThema> meineSubThemen = [];
   final Function parentCallBack_CheckChilds;
 
   UsersThema({
@@ -18,7 +18,7 @@ class UsersThema extends UsersViewModel {
       for (LogSubThema lst in logThema.logSubthemen) {
         if (st.id == lst.id) {
           meineSubThemen.add(
-            UsersSubthema(
+            UsersSubThema(
               logSubThema: lst,
               subThema: st,
               parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
@@ -42,7 +42,7 @@ class UsersThema extends UsersViewModel {
 
   set parentsSelectStatus(bool value) {
     Protected_isSelected = value;
-    for (UsersSubthema subthema in meineSubThemen) {
+    for (UsersSubThema subthema in meineSubThemen) {
       subthema.parentsSelectStatus = isSelected;
     }
     notifyListeners();

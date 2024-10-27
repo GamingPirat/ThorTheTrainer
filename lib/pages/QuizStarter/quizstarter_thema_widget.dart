@@ -25,7 +25,7 @@ class QuizstarterThemaWidget extends StatelessWidget {
           ),
           itemCount: viewModel.meineSubThemen.length,
           itemBuilder: (context, index) {
-            UsersSubthema subthema = viewModel.meineSubThemen[index];
+            UsersSubThema subthema = viewModel.meineSubThemen[index];
             return QuizStarterSelecterWidget(viewModel: subthema);
           },
         ),

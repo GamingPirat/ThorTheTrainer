@@ -1,62 +1,80 @@
 import 'dart:math';
-import 'package:lernplatform/datenklassen/db_frage.dart' as IDKW;
-import 'package:lernplatform/datenklassen/db_subthema.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:flutter/material.dart';
+import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
+import 'package:lernplatform/print_colors.dart';
 
-class QuizSubThema {
-  late final SubThema subThema;
+class QuizSubThema with ChangeNotifier {
   late final List<String> geseheneFragen;
-  final LogSubThema logSubThema;
+  final UsersSubThema usersSubThema;
   final random = Random();
+  bool _isloading = true;
+  bool get isloading => _isloading;
 
-  QuizSubThema({required this.logSubThema}){
-    // for(Lernfeld lernfeld in Session().user.usersLernfelder)
-    //   for(Thema thema in lernfeld.themen)
-    //     for(SubThema thema in lernfeld.themen)
-    //         if(thema.id == logSubThema.id)
-    //           this.subThema = thema;
+  QuizSubThema({required this.usersSubThema}){
       geseheneFragen =[
-        ...logSubThema.richtigBeantworteteFragen,
-        ...logSubThema.falschBeantworteteFragen
+        ...usersSubThema.logSubThema.richtigBeantworteteFragen,
+        ...usersSubThema.logSubThema.falschBeantworteteFragen
       ];
   }
 
+  Future<void> _load() async{
+    // durchsuche den FirebaseSpeicher der QuizSubThemafragen nach deiner ID
+    // und hol dir daher deine Fragen todo
+    _isloading = false;
+    notifyListeners();
+  }
+
   userHatRichtigGeantwortet(String value){
-    logSubThema.richtigBeantworteteFragen.add(value);
+    usersSubThema.logSubThema.richtigBeantworteteFragen.add(value);
   }
   userHatFalschGeantwortet(String value){
-    logSubThema.falschBeantworteteFragen.add(value);
+    usersSubThema.logSubThema.falschBeantworteteFragen.add(value);
   }
 
-  IDKW.DB_Frage _getFalschbeantworteteFrage(){
-    if(logSubThema.falschBeantworteteFragen.isEmpty)
-      return getRandomFrage(1);
-    else{
-      // finde die Version einer Frage die der User noch nicht gesehen hat
+  DB_Frage getRandomFrage(int counter) {
+    print_Magenta("QuizSubThema getRandomFrage(int counter) geseheneFragen.length = ${geseheneFragen.length}");
 
-      for(String falschFrage in logSubThema.falschBeantworteteFragen)
-        for(IDKW.DB_Frage frage in subThema.fragen)
-          if(frage.id.split('_')[1] == falschFrage.split('_')[1])     // FrageNummer ==
-            if(frage.id.split('_')[2] != falschFrage.split('_')[2])   // FrageVersion !=
-              return frage;
-
-      // wenn es keine ungesehene Version einer falsch beantworteten Frage mehr gibt
-      // lösche die falschBeantworteteFragen und mach damit alle darin enthaltenen zu offenen Fragen
-      logSubThema.falschBeantworteteFragen.clear();
-      geseheneFragen =[...logSubThema.richtigBeantworteteFragen];
-      return getRandomFrage(1);
+    // Alle 3 Aufrufe `getRandomFrage` soll eine falsch beantwortete Frage zurückgeben, wenn vorhanden
+    if (counter == 3 && usersSubThema.logSubThema.falschBeantworteteFragen.isNotEmpty) {
+      return _getFalschbeantworteteFrage();
     }
-  }
 
-  IDKW.DB_Frage getRandomFrage(int counter){
-    // der User soll alle 3 Runden mit einer bereits falsch beantworteten Frage
-    // konfrontiert werden aber in einer anderen Version dieser Frage.
-    if(counter != 3)
-      for(IDKW.DB_Frage frage in subThema.fragen)
-        if( ! geseheneFragen.contains(frage.id))
-          return frage;
+    // Sucht eine ungesehene Frage
+    for (DB_Frage frage in usersSubThema.subThema.fragen) {
+      if (!geseheneFragen.contains(frage.id)) {
+        return frage;
+      }
+    }
 
+    // Falls alle Fragen gesehen wurden, gibt eine falsch beantwortete Frage zurück
     return _getFalschbeantworteteFrage();
   }
+
+  DB_Frage _getFalschbeantworteteFrage() {
+    if (usersSubThema.logSubThema.falschBeantworteteFragen.isEmpty) {
+      // Falls keine falsch beantworteten Fragen mehr verfügbar sind, gib eine zufällige Frage zurück
+      print_Magenta("QuizSubThema _getFalschbeantworteteFrage usersSubThema.subThema.fragen.length = ${usersSubThema.subThema.fragen.length}"); // todo print
+      return usersSubThema.subThema.fragen[random.nextInt(usersSubThema.subThema.fragen.length)];
+    }
+
+    // Durchsucht die falsch beantworteten Fragen nach einer alternativen Version
+    for (String falschFrage in usersSubThema.logSubThema.falschBeantworteteFragen) {
+      for (DB_Frage frage in usersSubThema.subThema.fragen) {
+        if (frage.id.split('_')[1] == falschFrage.split('_')[1] &&
+            frage.id.split('_')[2] != falschFrage.split('_')[2]) {
+          return frage;
+        }
+      }
+    }
+
+    // Setzt die falsch beantworteten Fragen zurück, falls keine alternative Version gefunden wurde
+    usersSubThema.logSubThema.falschBeantworteteFragen.clear();
+    geseheneFragen = [...usersSubThema.logSubThema.richtigBeantworteteFragen];
+
+    // Gibt eine zufällige Frage zurück, da keine Alternative verfügbar ist
+    return usersSubThema.subThema.fragen[random.nextInt(usersSubThema.subThema.fragen.length)];
+  }
+
 
 }

@@ -27,11 +27,6 @@ class _MyAppBarState extends State<MyAppBar> {
       leading:IconButton(
         icon: Icon(Icons.menu),
         onPressed: () {
-        // Session().drawerIsOpen = !Session().drawerIsOpen;
-        //   Session().drawerIsOpen
-        //   ? openCustomDrawer(context)
-        //   : Navigator.pop(context);
-
         openCustomDrawer(context);
         }
       ),

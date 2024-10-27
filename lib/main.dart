@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/mok_user_model.dart';
+import 'package:lernplatform/d_users_view_models/user_viewmodel.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 
@@ -56,6 +57,7 @@ class _MyAppState extends State<MyApp> {
         value: Session().user,
         child: Consumer<UserModel>(
           builder: (context, vm, child) {
+            print_Cyan("MaterialApp erstellt"); // todo print
             return Scaffold(
               appBar: Session().appBar,
               drawer: Session().drawer,

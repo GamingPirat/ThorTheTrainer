@@ -5,7 +5,7 @@
 // // import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 // import 'package:lernplatform/firebase_options.dart';
 // import 'package:lernplatform/main.dart';
-// import 'package:lernplatform/datenklassen/mok_user_model.dart';
+// import 'package:lernplatform/datenklassen/user_viewmodel.dart';
 // import 'package:lernplatform/session.dart';
 // import 'package:provider/provider.dart';
 //

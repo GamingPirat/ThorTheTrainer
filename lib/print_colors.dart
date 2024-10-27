@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:lernplatform/session.dart';
+
 // ANSI Escape Codes für Farben
 const String resetColor = "\x1B[0m";
 const String black = "\x1B[30m";
@@ -11,45 +14,74 @@ const String white = "\x1B[37m";
 
 // Methoden für farbige Prints
 void print_Black(String message) {
-  print("$black$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$black$message$resetColor");
 }
 
 void print_Red(String message) {
-  print("$red$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$red$message$resetColor");
 }
 
 void print_Green(String message) {
-  print("$green$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$green$message$resetColor");
 }
 
 void print_Yellow(String message) {
-  print("$yellow$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$yellow$message$resetColor");
 }
 
 void print_Blue(String message) {
-  print("$blue$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$blue$message$resetColor");
 }
 
 void print_Magenta(String message) {
-  print("$magenta$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$magenta$message$resetColor");
 }
 
 void print_Cyan(String message) {
-  print("$cyan$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$cyan$message$resetColor");
 }
 
 void print_White(String message) {
-  print("$white$message$resetColor");
+  if (Session().IS_IN_DEBUG_MODE) print("$white$message$resetColor");
 }
 
-// Teste die Farben
+
 void main() {
-  print_Black("Das ist eine Nachricht in Schwarz.");
-  print_Red("Das ist eine Nachricht in Rot.");
-  print_Green("Das ist eine Nachricht in Grün.");
-  print_Yellow("Das ist eine Nachricht in Gelb.");
-  print_Blue("Das ist eine Nachricht in Blau.");
-  print_Magenta("Das ist eine Nachricht in Magenta.");
-  print_Cyan("Das ist eine Nachricht in Cyan.");
-  print_White("Das ist eine Nachricht in Weiß.");
+  runApp(MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: Scaffold(
+        appBar: AppBar(title: Text("Color Print Test")),
+        body: Center(
+          child: PrintTestWidget(),
+        ),
+      ),
+    );
+  }
+}
+
+class PrintTestWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Teste farbige Ausgaben in der Konsole
+    print_Black("Das ist eine Nachricht in Schwarz.");
+    print_Red("Das ist eine Nachricht in Rot.");
+    print_Green("Das ist eine Nachricht in Grün.");
+    print_Yellow("Das ist eine Nachricht in Gelb.");
+    print_Blue("Das ist eine Nachricht in Blau.");
+    print_Magenta("Das ist eine Nachricht in Magenta.");
+    print_Cyan("Das ist eine Nachricht in Cyan.");
+    print_White("Das ist eine Nachricht in Weiß.");
+
+    return Text(
+      "Check console for colored output.",
+      style: TextStyle(color: Colors.white),
+    );
+  }
+}
+

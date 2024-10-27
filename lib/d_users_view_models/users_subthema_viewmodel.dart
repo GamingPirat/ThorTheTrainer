@@ -1,17 +1,18 @@
-import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_subthema.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 
-class UsersSubthema extends UsersViewModel {
+class UsersSubThema extends UsersContentModel {
   final LogSubThema logSubThema;
   final SubThema subThema;
   final Function parentCallBack_CheckChilds;
 
-  UsersSubthema({
+  UsersSubThema({
     required this.logSubThema,
     required this.subThema,
     required this.parentCallBack_CheckChilds,
-  }) : super(id: subThema.id, name: subThema.name);
+  })
+      : super(id: subThema.id, name: subThema.name);
 
   @override
   double get progress {

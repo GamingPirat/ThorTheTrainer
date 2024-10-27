@@ -5,20 +5,7 @@ import 'package:lernplatform/pages/Quiz/quiz_model.dart';
 import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
 import 'package:lernplatform/session.dart';
 
-// List<QuizThema> mok_QuizThemen() {
-//   List<QuizThema> list = [];
-//   for (LogLernfeld loglernfeld in Session().user.teilnehmer.meineLernfelder) {
-//     for (LogSubThema logThema in loglernfeld.meineThemen) {
-//       list.add(QuizThema(logThema: logThema));
-//     }
-//   }
-//   return list;
-// }
-
 class NewQuizScreen extends StatefulWidget {
-  final List<QuizSubThema> quizThemen;
-
-  NewQuizScreen({required this.quizThemen});
 
   @override
   _NewQuizScreenState createState() => _NewQuizScreenState();
@@ -39,7 +26,7 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   void initState() {
     super.initState();
 
-    viewModel = QuizModel(quizThemen: widget.quizThemen);
+    viewModel = QuizModel();
 
     // Initialisiere die Liste mit nur einem Container
     _containers = [_buildContainer(0)];
@@ -148,11 +135,3 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
     super.dispose();
   }
 }
-
-// void main() {
-//   runApp(MaterialApp(
-//     home: Scaffold(
-//       body: NewQuizScreen(quizThemen: mok_QuizThemen(),),
-//     ),
-//   ));
-// }

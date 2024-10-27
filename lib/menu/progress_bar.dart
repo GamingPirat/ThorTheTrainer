@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:provider/provider.dart';
 
 class ProgressWidget extends StatefulWidget {
-  final UsersViewModel viewModel;
+  final UsersContentModel viewModel;
 
   ProgressWidget({required this.viewModel});
 
@@ -19,7 +19,7 @@ class _ProgressWidgetState extends State<ProgressWidget> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: widget.viewModel,
-      child: Consumer<UsersViewModel>(builder: (context, vm, child) {
+      child: Consumer<UsersContentModel>(builder: (context, vm, child) {
         return Container(
           padding: EdgeInsets.all(10),
           child: Column(

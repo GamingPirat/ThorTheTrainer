@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
@@ -12,7 +12,7 @@ import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 
 class ExpandableWidget extends StatelessWidget {
-  final UsersViewModel usersViewModel;
+  final UsersContentModel usersViewModel;
   final List<Widget> children;
 
   const ExpandableWidget({required this.usersViewModel, required this.children});
@@ -31,7 +31,7 @@ class ExpandableWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: usersViewModel,
-      child: Consumer<UsersViewModel>(
+      child: Consumer<UsersContentModel>(
         builder: (context, vm, child) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -44,7 +44,7 @@ class ExpandableWidget extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: vm.isSelected ? Colors.blue : Colors.transparent,
+                        color: vm.glowColor,
                         spreadRadius: 5,
                         blurRadius: 12,
                         offset: const Offset(0, 3),
@@ -121,7 +121,7 @@ class QuizStarter_Screen extends StatelessWidget {
                   children: lernfeld.usersThemen.map((UsersThema thema) {
                     return ExpandableWidget(
                       usersViewModel: thema,
-                      children: thema.meineSubThemen.map((UsersSubthema subthema) {
+                      children: thema.meineSubThemen.map((UsersSubThema subthema) {
                         return QuizStarterSelecterWidget(viewModel: subthema);
                       }).toList(),
                     );
