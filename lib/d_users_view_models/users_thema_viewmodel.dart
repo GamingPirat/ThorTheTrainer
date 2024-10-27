@@ -1,0 +1,72 @@
+import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
+import 'package:lernplatform/datenklassen/db_subthema.dart';
+import 'package:lernplatform/datenklassen/db_thema.dart';
+import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+
+class UsersThema extends UsersViewModel {
+  final LogThema logThema;
+  late final List<UsersSubthema> meineSubThemen = [];
+  final Function parentCallBack_CheckChilds;
+
+  UsersThema({
+    required this.logThema,
+    required Thema thema,
+    required this.parentCallBack_CheckChilds,
+  }) : super(id: thema.id, name: thema.name) {
+    for (SubThema st in thema.subthemen) {
+      for (LogSubThema lst in logThema.logSubthemen) {
+        if (st.id == lst.id) {
+          meineSubThemen.add(
+            UsersSubthema(
+              logSubThema: lst,
+              subThema: st,
+              parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
+            ),
+          );
+        }
+      }
+    }
+  }
+
+  @override
+  set isSelected(bool value) {
+    Protected_isSelected = value;
+    for (var subthema in meineSubThemen) {
+      subthema.isSelected = value;  // Setze jeden einzelnen subthema.isSelected
+    }
+    parentCallBack_CheckChilds();  // Callback zum übergeordneten Lernfeld aufrufen
+    notifyListeners();
+  }
+
+
+  set parentsSelectStatus(bool value) {
+    Protected_isSelected = value;
+    for (UsersSubthema subthema in meineSubThemen) {
+      subthema.parentsSelectStatus = isSelected;
+    }
+    notifyListeners();
+  }
+
+  void checkIfAllChildrenAreSelected() {
+    // Prüft, ob alle Subthemen ausgewählt sind
+    if (meineSubThemen.every((subthema) => subthema.isSelected)) {
+      Protected_isSelected = true;
+    } else {
+      Protected_isSelected = false;
+    }
+    updateSelectionStatus();
+  }
+
+  void updateSelectionStatus() {
+    Protected_isSelected = meineSubThemen.every((subthema) => subthema.isSelected);
+    parentCallBack_CheckChilds(); // ruft Eltern-Callback auf, um den Lernfeld-Status zu prüfen
+    notifyListeners();
+  }
+
+  @override
+  double get progress {
+    double erreichteZahl = meineSubThemen.fold(0.0, (sum, subThema) => sum + subThema.progress);
+    return erreichteZahl.clamp(0.0, 1.0);
+  }
+}

@@ -1,17 +1,17 @@
 
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class QuizStarterSelecterWidget extends StatelessWidget {
-  UsersContentModel viewModel;
+  UsersViewModel viewModel;
   QuizStarterSelecterWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<UsersContentModel>(
+      child: Consumer<UsersViewModel>(
         builder: (context, vm, child) {
           return Container(
             padding: EdgeInsets.all(4),
@@ -41,7 +41,6 @@ class QuizStarterSelecterWidget extends StatelessWidget {
                     vm.name,
                     maxLines: 2,
                     overflow: TextOverflow.visible,
-
                   )),
                 ),
               ),

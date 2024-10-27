@@ -4,7 +4,7 @@
 // import 'package:lernplatform/Quiz/Frage_Widget.dart';
 // import 'package:lernplatform/Quiz/right_drawer.dart';
 // import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-// import 'package:lernplatform/menu/my_static_menu.dart';
+// import 'package:lernplatform/menu/loadingStartPage.dart';
 // import 'package:lernplatform/session.dart';
 // import 'package:provider/provider.dart';
 // import '../pages/progress_bar.dart';

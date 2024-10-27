@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
-import 'package:lernplatform/pages/QuizStarter/quizstarter_subThemaWidget.dart';
+import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
 
 class QuizstarterThemaWidget extends StatelessWidget {
-  Thema_Personal viewModel;
+  UsersThema viewModel;
   QuizstarterThemaWidget({required this.viewModel, super.key});
 
   @override
@@ -24,7 +25,7 @@ class QuizstarterThemaWidget extends StatelessWidget {
           ),
           itemCount: viewModel.meineSubThemen.length,
           itemBuilder: (context, index) {
-            SubThema_Personal subthema = viewModel.meineSubThemen[index];
+            UsersSubthema subthema = viewModel.meineSubThemen[index];
             return QuizStarterSelecterWidget(viewModel: subthema);
           },
         ),

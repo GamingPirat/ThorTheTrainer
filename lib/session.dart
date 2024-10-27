@@ -20,7 +20,7 @@ class Session {
   factory Session()=> _instance; // Rückgabe des Singleton-Instanz
 
   void initializeAppBar(void Function(ThemeMode) setThemeMode) {
-    print_Yellow("initializeAppBar");
+    // print_Yellow("initializeAppBar");// todo
     appBar = MyAppBar(setThemeMode: setThemeMode);
   }
 

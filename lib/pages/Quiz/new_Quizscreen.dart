@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/pages/Quiz/Frage_Widget.dart';
 import 'package:lernplatform/pages/Quiz/quiz_model.dart';
 import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
+import 'package:lernplatform/session.dart';
 
 // List<QuizThema> mok_QuizThemen() {
 //   List<QuizThema> list = [];
@@ -113,37 +113,30 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    return Listener(
-      // Erkennung des Scrollens mit dem Mausrad
-      onPointerSignal: (pointerSignal) {
-        if (pointerSignal is PointerScrollEvent) {
-          _onScroll(pointerSignal);
-          print("Scrollen erfass");
-        }
-      },
-      child: MyStaticMenu(
-        content: Listener(
-          // Erkennung des Scrollens mit dem Mausrad
-          onPointerSignal: (pointerSignal) {
-            if (pointerSignal is PointerScrollEvent) {
-              _onScroll(pointerSignal);
-              print("Scrollen erfass");
-            }
-          },
-          child: Stack(
-            children: [
-              // SlideTransition für den alten Container (rausgleiten)
-              SlideTransition(
-                position: _oldContainerAnimation,
-                child: _containers[_previousIndex],
-              ),
-              // SlideTransition für den neuen Container (reingleiten)
-              SlideTransition(
-                position: _newContainerAnimation,
-                child: _containers[_currentIndex],
-              ),
-            ],
-          ),
+    return Scaffold(
+      appBar: Session().appBar,
+      drawer: Session().drawer,
+      body: Listener(
+        // Erkennung des Scrollens mit dem Mausrad
+        onPointerSignal: (pointerSignal) {
+          if (pointerSignal is PointerScrollEvent) {
+            _onScroll(pointerSignal);
+            print("Scrollen erfasst");
+          }
+        },
+        child: Stack(
+          children: [
+            // SlideTransition für den alten Container (rausgleiten)
+            SlideTransition(
+              position: _oldContainerAnimation,
+              child: _containers[_previousIndex],
+            ),
+            // SlideTransition für den neuen Container (reingleiten)
+            SlideTransition(
+              position: _newContainerAnimation,
+              child: _containers[_currentIndex],
+            ),
+          ],
         ),
       ),
     );

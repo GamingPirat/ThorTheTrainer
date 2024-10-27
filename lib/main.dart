@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/mok_user_model.dart';
-import 'package:lernplatform/menu/my_static_menu.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
 
@@ -53,9 +52,18 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: themeNotifier.themeMode, // Use the themeMode from ThemeNotifier
-      home: MyStaticMenu(
-        content: const Center(
-          child: Text('Wiederholung ist die Mutter des Lernens'),
+      home: ChangeNotifierProvider.value(
+        value: Session().user,
+        child: Consumer<UserModel>(
+          builder: (context, vm, child) {
+            return Scaffold(
+              appBar: Session().appBar,
+              drawer: Session().drawer,
+              body: vm.isLoading
+                  ? Center(child: CircularProgressIndicator())
+                  : Center( child: Text('Wiederholung ist die Mutter des Lernens'),),
+            );
+          },
         ),
       ), // Current page remains the same after theme change
     );

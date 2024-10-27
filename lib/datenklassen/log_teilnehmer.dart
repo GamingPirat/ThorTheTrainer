@@ -5,6 +5,11 @@ class Teilnehmer {
   Teilnehmer({required this.key, required this.meineLernfelder});
 
   String get getKey => key;
+
+  @override
+  String toString() {
+    return "Teilnehmer{ key: $key meineLernfelder: ${meineLernfelder.length}";
+  }
 }
 
 class LogLernfeld {

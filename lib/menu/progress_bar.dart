@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
+import 'package:lernplatform/d_users_view_models/abstract_users_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:provider/provider.dart';
 
 class ProgressWidget extends StatefulWidget {
-  final UsersContentModel viewModel;
+  final UsersViewModel viewModel;
 
   ProgressWidget({required this.viewModel});
 
@@ -18,7 +19,7 @@ class _ProgressWidgetState extends State<ProgressWidget> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: widget.viewModel,
-      child: Consumer<UsersContentModel>(builder: (context, vm, child) {
+      child: Consumer<UsersViewModel>(builder: (context, vm, child) {
         return Container(
           padding: EdgeInsets.all(10),
           child: Column(
@@ -70,70 +71,3 @@ class _ProgressWidgetState extends State<ProgressWidget> {
     );
   }
 }
-
-// TestApp for testing
-class TestApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    Lernfeld_Personal testModel = Lernfeld_Personal(
-      logLernfeld: LogLernfeld(1, []),
-      l: Lernfeld_DB(id: 1, name: 'Das n langes Lernfeld', themen: []),
-    );
-
-    TextEditingController progressController = TextEditingController();
-
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("Progress Widget")),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ProgressWidget(
-                viewModel: testModel,
-              ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100,
-                    child: TextField(
-                      controller: progressController,
-                      keyboardType: TextInputType.number,
-                      decoration: InputDecoration(
-                        labelText: "Progress",
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  // Hier kommt der Builder, um den korrekten Kontext für ScaffoldMessenger zu bekommen
-                  Builder(
-                    builder: (BuildContext newContext) {
-                      return ElevatedButton(
-                        onPressed: () {
-                          double? newProgress = double.tryParse(progressController.text);
-                          if (newProgress != null && newProgress >= 0 && newProgress <= 1) {
-                            testModel.progress = newProgress; // Setzt den neuen progress-Wert
-                          } else {
-                            // Verwende den Kontext aus dem Builder, um den ScaffoldMessenger zu erreichen
-                            ScaffoldMessenger.of(newContext).showSnackBar(
-                              SnackBar(content: Text("Bitte eine Zahl zwischen 0 und 1 eingeben.")),
-                            );
-                          }
-                        },
-                        child: Text("Set Progress"),
-                      );
-                    },
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-void main() => runApp(TestApp());

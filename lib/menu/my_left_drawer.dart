@@ -96,7 +96,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                         expandedStates[lernfeld.id] = expanded;
                       });
                     },
-                    children: lernfeld.meineThemen.map((thema) {
+                    children: lernfeld.usersThemen.map((thema) {
                       bool isThemaExpanded = expandedStates[thema.id] ?? false;
 
                       return ExpansionTile(

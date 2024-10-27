@@ -1,20 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
-import 'package:lernplatform/datenklassen/db_subthema.dart';
-import 'package:lernplatform/datenklassen/db_thema.dart';
-import 'package:lernplatform/datenklassen/folder_types.dart';
 import 'package:lernplatform/datenklassen/mokdaten.dart';
-import 'package:lernplatform/datenklassen/personal_content_controllers.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'log_teilnehmer.dart';
-import '../print_colors.dart';
 
 
 
 class UserModel with ChangeNotifier {
 
   late Teilnehmer teilnehmer;
-  List<Lernfeld_Personal> usersLernfelder = [];
+  List<UsersLernfeld> usersLernfelder = [];
   bool _isLoading = true;
 
   UserModel(){_load();}
@@ -48,16 +45,17 @@ class UserModel with ChangeNotifier {
 
         firestoreLernfelder.add(lernfeld);  // Füge das Lernfeld zur Liste hinzu
       } else {
-        // print('Keine Dokumente in der Sammlung vorhanden');
+        print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
       }
 
-      // print_Green("Lernfelder erfolgreich konvertiert.");
+      // print_Green("UserModel Lernfelder erfolgreich konvertiert."); // todo
     } catch (e) {
-      print('Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
+      print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
 
     // Initialisiere den Teilnehmer basierend auf den geladenen Daten
     teilnehmer = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);  // Teilnehmer wird jetzt korrekt initialisiert
+    // print_Green("UserModel teilnehmer geladen. $teilnehmer"); // todo
 
 
     // Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers
@@ -66,8 +64,8 @@ class UserModel with ChangeNotifier {
       for (Lernfeld_DB lernfeld in firestoreLernfelder) {
         // print('Vergleiche: logLernfeld.id = ${logLernfeld.id}, lernfeld.id = ${lernfeld.id}'); // todo
         if (logLernfeld.id == lernfeld.id) {
-          usersLernfelder.add(Lernfeld_Personal(logLernfeld: logLernfeld, l: lernfeld));
-          // print("Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo
+          usersLernfelder.add(UsersLernfeld(logLernfeld: logLernfeld, lernfeld: lernfeld));
+          // print_Yellow("Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo
         }
       }
     }
