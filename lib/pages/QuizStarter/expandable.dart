@@ -2,11 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/user_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/firebase_options.dart';
 import 'package:lernplatform/main.dart';
+import 'package:lernplatform/menu/progress_bar.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
 import 'package:lernplatform/session.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +17,8 @@ class ExpandableWidget extends StatelessWidget {
   final UsersContentModel usersViewModel;
   final List<Widget> children;
 
-  const ExpandableWidget({required this.usersViewModel, required this.children});
+  ExpandableWidget({required this.usersViewModel, required this.children}) {
+  }
 
   void _setExpanded(bool value) {
     if (usersViewModel.ishovered) {
@@ -40,11 +43,13 @@ class ExpandableWidget extends StatelessWidget {
                 onEnter: (_) => _setExpanded(true),
                 onExit: (_) => _setExpanded(false),
                 child: Container(
-                  padding: EdgeInsets.all(4),
+                  margin: vm is UsersThema
+                      ? EdgeInsets.fromLTRB(80,0,80,0)
+                      : EdgeInsets.fromLTRB(0,0,0,0),
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: vm.glowColor,
+                        color: vm.glowColor ,
                         spreadRadius: 5,
                         blurRadius: 12,
                         offset: const Offset(0, 3),
@@ -62,15 +67,7 @@ class ExpandableWidget extends StatelessWidget {
 
                       child: InkWell(
                         onTap: () => vm.isSelected = !vm.isSelected,
-                        hoverColor: Colors.blue.withOpacity(0.2),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            vm.name,
-                            maxLines: 2,
-                            overflow: TextOverflow.visible,
-                          ),
-                        ),
+                        child: Center(child: ProgressWidget(viewModel: vm)),
                       ),
                     ),
                   ),

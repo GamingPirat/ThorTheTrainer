@@ -1,5 +1,5 @@
+import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/db_thema.dart';
@@ -16,6 +16,7 @@ class UsersLernfeld extends UsersContentModel {
     required Lernfeld_DB lernfeld,
   })
       : super(id: lernfeld.id, name: lernfeld.name) {
+    effect_color = Colors.purpleAccent;
     for (Thema thema in lernfeld.themen) {
       for (LogThema logThema in logLernfeld.meineThemen) {
         if (thema.id == logThema.id) {

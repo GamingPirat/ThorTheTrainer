@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
-import 'package:lernplatform/datenklassen/db_lernfeld.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:provider/provider.dart';
 
 class ProgressWidget extends StatefulWidget {

@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
+import 'package:lernplatform/menu/progress_bar.dart';
 import 'package:provider/provider.dart';
 
 class QuizStarterSelecterWidget extends StatelessWidget {
@@ -14,7 +15,7 @@ class QuizStarterSelecterWidget extends StatelessWidget {
       child: Consumer<UsersContentModel>(
         builder: (context, vm, child) {
           return Container(
-            padding: EdgeInsets.all(4),
+            margin: EdgeInsets.fromLTRB(160,0,160,0),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -36,12 +37,7 @@ class QuizStarterSelecterWidget extends StatelessWidget {
 
                 child: InkWell(
                   onTap: () => vm.isSelected = !vm.isSelected,
-                  hoverColor: Colors.blue.withOpacity(0.2),
-                  child: Center(child: Text(
-                    vm.name,
-                    maxLines: 2,
-                    overflow: TextOverflow.visible,
-                  )),
+                  child: Center(child: ProgressWidget(viewModel: viewModel)),
                 ),
               ),
             ),

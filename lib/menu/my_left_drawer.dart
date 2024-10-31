@@ -83,7 +83,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                   expandedStates.putIfAbsent(lernfeld.id, () => false);
 
                   return ExpansionTile(
-                    title: ProgressWidget(viewModel: lernfeld),
+                    title: Text(lernfeld.name),
                     leading: Icon(
                       expandedStates[lernfeld.id] == true
                           ? Icons.folder_open  // Offener Ordner wenn expanded
@@ -100,7 +100,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                       bool isThemaExpanded = expandedStates[thema.id] ?? false;
 
                       return ExpansionTile(
-                        title: ProgressWidget(viewModel: thema),
+                        title: Center(child: Text(thema.name)),
                         trailing: Icon(
                           isThemaExpanded
                               ? Icons.arrow_drop_down
@@ -132,7 +132,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(0, 0, 56, 0),
                               child: ListTile(
-                                title: ProgressWidget(viewModel: subThema),
+                                  title: Text(subThema.name)
                               ),
                             ),
                           );

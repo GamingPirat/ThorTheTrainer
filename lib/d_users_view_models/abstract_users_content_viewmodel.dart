@@ -4,6 +4,7 @@ abstract class UsersContentModel with ChangeNotifier{
 
   late final int id;
   late final String name;
+  late Color effect_color;
 
   UsersContentModel({
     required this.id,
@@ -18,6 +19,11 @@ abstract class UsersContentModel with ChangeNotifier{
   Color get glowColor => _glowColor;
   void set glowColor(Color value){ _glowColor = value; notifyListeners();}
 
+
+  // es gibt _Protected_isSelected und zusätzlich isSelected. weil isSelected
+  // überschrieben werden muss und daher nen anderen Algorythus ausführen soll.
+  // Ich muss also diesen bool ändern können ohne den isSelected Algorythmus
+  // aus zu lösen.
   bool _Protected_isSelected = false;
   void set Protected_isSelected(bool value){
     _Protected_isSelected = value;

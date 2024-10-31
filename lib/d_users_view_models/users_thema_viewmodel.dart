@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_subthema.dart';
@@ -14,13 +15,14 @@ class UsersThema extends UsersContentModel {
     required Thema thema,
     required this.parentCallBack_CheckChilds,
   }) : super(id: thema.id, name: thema.name) {
-    for (SubThema st in thema.subthemen) {
+    effect_color = Colors.blueAccent;
+    for (SubThema subThema in thema.subthemen) {
       for (LogSubThema lst in logThema.logSubthemen) {
-        if (st.id == lst.id) {
+        if (subThema.id == lst.id) {
           meineSubThemen.add(
             UsersSubThema(
               logSubThema: lst,
-              subThema: st,
+              subThema: subThema,
               parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
             ),
           );

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_subthema.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
@@ -12,7 +13,9 @@ class UsersSubThema extends UsersContentModel {
     required this.subThema,
     required this.parentCallBack_CheckChilds,
   })
-      : super(id: subThema.id, name: subThema.name);
+    : super(id: subThema.id, name: subThema.name){
+      effect_color = Colors.greenAccent;
+  }
 
   @override
   double get progress {

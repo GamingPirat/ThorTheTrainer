@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/menu/my_left_drawer.dart';
-import 'package:lernplatform/menu/punkte_widget.dart';
 import 'package:lernplatform/session.dart';
-import '../datenklassen/folder_types.dart';
-import 'folder_widget.dart';
 
 
 class MyAppBar extends AppBar {
