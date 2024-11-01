@@ -1,8 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lernplatform/pages/Quiz/Frage_Widget.dart';
-import 'package:lernplatform/pages/Quiz/quiz_model.dart';
-import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
+import 'package:lernplatform/pages/Quiz/new_quiz_subthema_widget.dart';
+import 'package:lernplatform/pages/Quiz/new_quizmaster.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 
 class NewQuizScreen extends StatefulWidget {
@@ -12,7 +12,7 @@ class NewQuizScreen extends StatefulWidget {
 }
 
 class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateMixin {
-  late QuizModel viewModel;
+  late Quizmaster viewModel;
   late List<Widget> _containers;
   int _currentIndex = 0;
   int _previousIndex = 0;
@@ -26,7 +26,7 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   void initState() {
     super.initState();
 
-    viewModel = QuizModel();
+    viewModel = Quizmaster();
 
     // Initialisiere die Liste mit nur einem Container
     _containers = [_buildContainer(0)];
@@ -42,14 +42,15 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   // Methode zum Erstellen eines neuen Containers
   Widget _buildContainer(int index) {
     viewModel.nextTapped();
-    return Frage_Widget(viewModel: viewModel.currentQuestioin);
+    return NewQuizSubthemaWidget(viewmodel: viewModel.aktuelles_subthema);
   }
 
   // Methode zur Steuerung der Animationen und des Wechsels
   void _onScroll(PointerScrollEvent event) {
+    print_Magenta("NewQuizScreen scrollen erfasst");
     if (event.scrollDelta.dy > 0) {
       // Scroll nach unten (nächster Container)
-      if (_currentIndex == _containers.length - 1 && viewModel.isLocked) {
+      if (_currentIndex == _containers.length - 1 && viewModel.is_locked) {
         // Wenn wir am letzten Container sind, einen neuen hinzufügen
         setState(() {
           _containers.add(_buildContainer(_containers.length));
@@ -103,29 +104,24 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
     return Scaffold(
       appBar: Session().appBar,
       drawer: Session().drawer,
-      body: Listener(
-        // Erkennung des Scrollens mit dem Mausrad
-        onPointerSignal: (pointerSignal) {
-          if (pointerSignal is PointerScrollEvent) {
-            _onScroll(pointerSignal);
-            print("Scrollen erfasst");
-          }
+      body: GestureDetector(
+        onVerticalDragUpdate: (details) {
+          _onScroll(PointerScrollEvent(position: Offset.zero, scrollDelta: details.delta));
         },
         child: Stack(
           children: [
-            // SlideTransition für den alten Container (rausgleiten)
             SlideTransition(
               position: _oldContainerAnimation,
               child: _containers[_previousIndex],
             ),
-            // SlideTransition für den neuen Container (reingleiten)
             SlideTransition(
               position: _newContainerAnimation,
               child: _containers[_currentIndex],
             ),
           ],
         ),
-      ),
+      )
+
     );
   }
 

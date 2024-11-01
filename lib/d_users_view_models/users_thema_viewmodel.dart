@@ -17,11 +17,11 @@ class UsersThema extends UsersContentModel {
   }) : super(id: thema.id, name: thema.name) {
     effect_color = Colors.blueAccent;
     for (SubThema subThema in thema.subthemen) {
-      for (LogSubThema lst in logThema.logSubthemen) {
-        if (subThema.id == lst.id) {
+      for (LogSubThema logSubThema in logThema.logSubthemen) {
+        if (subThema.id == logSubThema.id) {
           meineSubThemen.add(
             UsersSubThema(
-              logSubThema: lst,
+              logSubThema: logSubThema,
               subThema: subThema,
               parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
             ),

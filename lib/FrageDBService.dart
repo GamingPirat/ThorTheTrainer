@@ -2,7 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 
 class FrageDBService {
-  final CollectionReference _fragenCollection = FirebaseFirestore.instance.collection('testfragen');
+
+  late final CollectionReference _fragenCollection;
+
+  FrageDBService({required String dateiname }) : _fragenCollection = FirebaseFirestore.instance.collection(dateiname);
+
 
   // Create (neue Frage ohne ID, Firestore generiert automatisch eine ID)
   Future<void> createFrage(DB_Frage frage) async {

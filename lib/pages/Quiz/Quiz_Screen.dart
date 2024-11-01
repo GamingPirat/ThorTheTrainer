@@ -7,7 +7,7 @@
 // import 'package:lernplatform/menu/loadingStartPage.dart';
 // import 'package:lernplatform/session.dart';
 // import 'package:provider/provider.dart';
-// import '../pages/progress_bar.dart';
+// import '../pages/progress_bar_widget.dart';
 //
 // List<QuizSubThema> mok_QuizThemen() {
 //   List<QuizSubThema> list = [];

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
-import 'package:lernplatform/menu/progress_bar.dart';
+import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
 
 class QuizStarterSelecterWidget extends StatelessWidget {

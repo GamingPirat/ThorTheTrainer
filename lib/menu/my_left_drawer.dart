@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/pages/QuizStarter/QuizzStarter_Screen.dart';
-import 'package:lernplatform/pages/my_navigator.dart';
-import 'package:lernplatform/pages/Quiz/quiz_subthema.dart';
-import 'package:lernplatform/menu/progress_bar.dart';
-import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 
 // List<QuizThema> mok_QuizThemen() {
@@ -15,7 +10,7 @@ import 'package:lernplatform/session.dart';
 //     }
 //   }
 //   return list;
-// } todo
+// } todo mokdaten löschen
 
 class MyLeftDrawer extends StatefulWidget {
   @override
@@ -56,16 +51,12 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                   },
                 ),
               );
-              // MyNavigator(
-              //   context: context,
-              //   body: QuizStarter_Screen(),
-              // );
             },
             child: const Row(
               children: [
                 Icon(Icons.emoji_events),
                 Spacer(),
-                Text("Quiz"),
+                Text("Fortschritte"),
                 Spacer(),
               ],
             ),
@@ -115,7 +106,6 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                         children: thema.meineSubThemen.map((subThema) {
                           return InkWell(
                             onTap: () {
-                              print("Tapped on SubThema: ${subThema.name}");
                               showDialog(
                                 context: context,
                                 builder: (BuildContext context) {

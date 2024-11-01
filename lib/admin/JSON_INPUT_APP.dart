@@ -13,16 +13,26 @@ class JsonInputApp extends StatefulWidget {
 
 class _JsonInputAppState extends State<JsonInputApp> {
   final TextEditingController _controller = TextEditingController();
-  final FrageDBService _frageDBService = FrageDBService();
+  final TextEditingController _fileNameController = TextEditingController();
+  FrageDBService? _frageDBService;
 
   // Methode zum Abschicken der Liste von Objekten
   void _submitJsonList() async {
+    if (_fileNameController.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Bitte geben Sie einen Dateinamen an.')),
+      );
+      return;
+    }
+
+    _frageDBService = FrageDBService(dateiname: _fileNameController.text);
+
     try {
       List<dynamic> jsonData = jsonDecode(_controller.text);
       List<DB_Frage> fragen = jsonData.map((item) => DB_Frage.fromJson(item)).toList();
 
       for (var frage in fragen) {
-        await _frageDBService.createFrage(frage);
+        await _frageDBService!.createFrage(frage);
       }
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -37,11 +47,20 @@ class _JsonInputAppState extends State<JsonInputApp> {
 
   // Methode zum Abschicken eines einzelnen Objekts
   void _submitSingleJson() async {
+    if (_fileNameController.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Bitte geben Sie einen Dateinamen an.')),
+      );
+      return;
+    }
+
+    _frageDBService = FrageDBService(dateiname: _fileNameController.text);
+
     try {
       Map<String, dynamic> jsonData = jsonDecode(_controller.text);
       DB_Frage frage = DB_Frage.fromJson(jsonData);
 
-      await _frageDBService.createFrage(frage);
+      await _frageDBService!.createFrage(frage);
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Einzelne Frage erfolgreich gespeichert!')),
@@ -61,6 +80,14 @@ class _JsonInputAppState extends State<JsonInputApp> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            TextField(
+              controller: _fileNameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Dateiname eingeben',
+              ),
+            ),
+            SizedBox(height: 16),
             Expanded(
               child: TextField(
                 controller: _controller,
@@ -106,5 +133,5 @@ void main() async {
     persistenceEnabled: true,
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
   );
-  runApp(MaterialApp(home: JsonInputApp()));
+  runApp(MaterialApp(theme: ThemeData.dark(),home: JsonInputApp()));
 }

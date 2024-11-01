@@ -16,15 +16,6 @@ class QuizSubThema with ChangeNotifier {
         ...usersSubThema.logSubThema.richtigBeantworteteFragen,
         ...usersSubThema.logSubThema.falschBeantworteteFragen
       ];
-      _load();
-  }
-
-  Future<void> _load() async{
-    print_Red("Hier arbeitest du gerade: QuizSubThema _load()"); // todo print
-    print_Red("QuizSubThema ist nun ein ChangeNotifier und es muss sehr viel deswegen umgebaut werden"); // todo print
-    // durchsuche den FirebaseSpeicher der QuizSubThemafragen nach deiner ID
-    _isloading = false;
-    notifyListeners();
   }
 
   userHatRichtigGeantwortet(String value){
