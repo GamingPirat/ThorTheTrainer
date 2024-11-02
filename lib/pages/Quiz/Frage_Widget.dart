@@ -4,10 +4,10 @@ import 'package:provider/provider.dart';
 import 'Antwort_Widget.dart';
 import 'Frage_Model.dart';
 
-class Frage_Widget extends StatelessWidget {
+class FrageWidget extends StatelessWidget {
   late Frage_Model viewModel;
 
-  Frage_Widget({required this.viewModel, super.key});
+  FrageWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,32 +15,34 @@ class Frage_Widget extends StatelessWidget {
       value: viewModel,
       child: Consumer<Frage_Model>(
           builder: (context, vm, child) {
-            return Stack(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    children: [
-                      Text(
-                        vm.titel,
-                        style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-                      ),
-                      Antworten_Widget(viewModels: vm.antwortenViewModel),
-                      Spacer(),
-                      Visibility(
-                        visible: !vm.locked,
-                        child: ElevatedButton(
-                          onPressed: () {
-                            vm.evaluate();
-                          },
-                          child: const Text("lock"),
+            return Expanded(
+              child: Stack(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      children: [
+                        Text(
+                          vm.titel,
+                          style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                         ),
-                      ),
-                    ],
+                        Antworten_Widget(viewModels: vm.antwortenViewModel),
+                        Spacer(),
+                        Visibility(
+                          visible: !vm.locked,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              vm.evaluate();
+                            },
+                            child: const Text("lock"),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                RightDrawer(isVisible: vm.locked),
-              ],
+                  RightDrawer(isVisible: vm.locked),
+                ],
+              ),
             );
           }
       ),

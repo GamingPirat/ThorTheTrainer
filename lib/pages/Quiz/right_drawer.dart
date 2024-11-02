@@ -80,19 +80,37 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
             child: Column(
               children: [
                 const Spacer(flex: 3),
-                IconButton(
-                  icon: Icon(Icons.thumb_down, size: 48, color: iconColor),
-                  onPressed: _showDialog,
+                // IconButton(
+                //   icon: Icon(Icons.thumb_down, size: 48, color: iconColor),
+                //   onPressed: _showDialog,
+                // ),
+                // const Spacer(flex: 1),
+                InkWell(
+                  onTap: _showDialog,
+                  child: Column(
+                    children: [
+                      Icon(Icons.lightbulb, size: 48, color: iconColor),
+                      Text("Dir"),
+                      Text("ist eine"),
+                      Text("Frage"),
+                      Text("eingefallen?"),
+                      Text("Spende"),
+                      Text("ne Frage."),
+                      Text("Erweitere"),
+                      Text("den Pool."),
+                    ],
+                  ),
                 ),
                 const Spacer(flex: 1),
-                IconButton(
-                  icon: Icon(Icons.note_add, size: 48, color: iconColor),
-                  onPressed: _showDialog,
-                ),
-                const Spacer(flex: 1),
-                IconButton(
-                  icon: Icon(Icons.lightbulb, size: 48, color: iconColor),
-                  onPressed: _showDialog,
+                InkWell(
+                  onTap: _showDialog,
+                  child: Column(
+                    children: [
+                      Icon(Icons.note_add, size: 48, color: iconColor),
+                      Text("Diese Frage ist"),
+                      Text("verbesserungsqürdig?"),
+                    ],
+                  ),
                 ),
                 const Spacer(flex: 3),
               ],

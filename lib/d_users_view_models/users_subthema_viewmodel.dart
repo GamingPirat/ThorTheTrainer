@@ -22,30 +22,8 @@ class UsersSubThema extends UsersContentModel {
   })
     : super(id: subThema.id, name: subThema.name){
       effect_color = Colors.greenAccent;
-      _load();
   }
 
-  void _load() async{
-    //***************************************************************
-    // wisse in welcher Firestore Sammlung du liegst
-    //***************************************************************
-    late String wo_bin_ich_gespeichert;
-    for (UsersLernfeld lernfeld in Session().user.usersLernfelder)
-      for (UsersThema thema in lernfeld.usersThemen)
-        for (UsersSubThema subThema in thema.meineSubThemen)
-          if (subThema.id == this.subThema.id)
-            wo_bin_ich_gespeichert = lernfeld.name;
-    wo_bin_ich_gespeichert = wo_bin_ich_gespeichert ?? "Datei nicht vorhanden";
-
-    //***************************************************************
-    // lade die users_fragen
-    //***************************************************************
-    FrageDBService dbService = FrageDBService(dateiname: wo_bin_ich_gespeichert);
-    users_fragen = [];
-    List<DB_Frage> fragen = await dbService.getByThemaID(subThema.id);
-    for(DB_Frage frage in fragen)
-      users_fragen.add(Frage_Model(frage: frage, lockTapped: (){}));
-  }
 
   @override
   double get progress {

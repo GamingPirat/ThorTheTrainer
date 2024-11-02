@@ -8,26 +8,17 @@ class FortschrittSpeicherAnzeigerModel with ChangeNotifier {
   int get filledContainers => _filledContainers;
   bool get showSavedText => _showSavedText;
 
-  void updateFilledContainers(int newCount) {
-    _showSavedText = false;
-    // Wert auf 1 setzen, wenn kleiner als 1 oder größer als 10
-    if (newCount < 1 || newCount > 10) {
-      newCount = 1;
-    }
-    _animateContainers(newCount);
-  }
-
-  void _animateContainers(int newCount) async {
+  void set filledContainers(int newCount) {
     for (int i = 0; i <= newCount; i++) {
-      await Future.delayed(Duration(milliseconds: 30));
+      Future.delayed(Duration(milliseconds: 30));
       _filledContainers = i;
       notifyListeners();
     }
     if (newCount == 10) {
-      await Future.delayed(Duration(seconds: 1));
+      Future.delayed(Duration(seconds: 1));
       _showSavedText = true;
       notifyListeners();
-      await Future.delayed(Duration(seconds: 1));
+      Future.delayed(Duration(seconds: 1));
       _showSavedText = false;
       notifyListeners();
     }
@@ -38,16 +29,17 @@ class FortschrittSpeicherAnzeiger extends StatelessWidget {
   late FortschrittSpeicherAnzeigerModel _model;
 
   void updateFilledContainers(int newCount){
-    _model.updateFilledContainers(newCount);
+    _model.filledContainers = newCount;
   }
 
-  set containerCount(int value) {
-    _model.updateFilledContainers(value);
+  set fortschritt(int value) {
+    _model.filledContainers = value;
   }
+
+  int get fortschritt => _model.filledContainers;
 
   FortschrittSpeicherAnzeiger({super.key, required int fortschritt}) {
     _model = FortschrittSpeicherAnzeigerModel();
-    _model.updateFilledContainers(fortschritt);
   }
 
   @override
@@ -134,7 +126,7 @@ class _TestAppState extends State<TestApp> {
                   int? newValue = int.tryParse(_controller.text);
                   if (newValue != null) {
                     setState(() {
-                      containerAnzeige.containerCount = newValue;
+                      containerAnzeige.fortschritt = newValue;
                     });
                   }
                 },

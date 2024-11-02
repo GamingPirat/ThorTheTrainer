@@ -9,7 +9,7 @@ import 'Antwort_Model.dart';
 
 class Frage_Model with ChangeNotifier {
   final DB_Frage frage;
-  final Function lockTapped;
+  final Function(int) lockTapped;
   late List<Antwort_Model> antwortenViewModel;
 
   bool _locked = false;
@@ -30,6 +30,7 @@ class Frage_Model with ChangeNotifier {
     return korrekteAntwortenCount > 1;
   }
 
+
   // Initialisiert die Liste der Antwort-ViewModels
   void _initializeAntwortenViewModel(List<Antwort> antworten, bool isMultipleChoice) {
     for (var antwort in antworten) {
@@ -43,32 +44,22 @@ class Frage_Model with ChangeNotifier {
 
 
   void evaluate() {
-    if(isSomthingSelected()){
-      double punkte = 0;
-      int richtigeAntworten = 0;
+    double punkte = 0;
+    int richtigeAntworten = 0;
 
-      for (Antwort_Model antwort in antwortenViewModel)
-        if (antwort.antwort.isKorrekt) richtigeAntworten++;
+    for (Antwort_Model antwort in antwortenViewModel)
+      if (antwort.antwort.isKorrekt) richtigeAntworten++;
 
-      double antwortwert = frage.punkte / richtigeAntworten;
+    double antwortwert = frage.punkte / richtigeAntworten;
 
-      for (Antwort_Model antwort in antwortenViewModel)
-        punkte += antwort.evaluate(antwortwert);
+    for (Antwort_Model antwort in antwortenViewModel)
+      punkte += antwort.evaluate(antwortwert);
 
-      print("${frage.punkte} $punkte $antwortwert");
-
-      _locked = true;
-      notifyListeners();
-
-      lockTapped(punkte.ceil());
-
-      // sag der Session.PunkteStand, den neuen Punktestand
-      // aktualisiere das Fortscchritt Widget
-    }
-
+    // print("${frage.punkte} $punkte $antwortwert");// todo print
+    _locked = true;
+    notifyListeners();
+    lockTapped(punkte.toInt());
   }
-
-
 
 
   void unselectAntworten(Antwort_Model model) {
@@ -80,7 +71,14 @@ class Frage_Model with ChangeNotifier {
     notifyListeners();
   }
 
-  bool isSomthingSelected(){
+  void blink(){
+    for(Antwort_Model antwort_model in antwortenViewModel)
+      antwort_model.blink();
+  }
+
+
+
+  bool get somethingIsSelected {
     for (Antwort_Model antwort in antworten)
       if(antwort.isSelected)
         return true;
@@ -89,8 +87,6 @@ class Frage_Model with ChangeNotifier {
       antwort.blink();
     return false;
   }
-
-
   String get titel => frage.text;
   bool get locked => _locked;
   List<Antwort_Model> get antworten => antwortenViewModel;
