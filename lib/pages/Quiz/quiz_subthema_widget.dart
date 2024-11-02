@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/pages/Quiz/Frage_Widget.dart';
-import 'package:lernplatform/pages/Quiz/new_quizsubthema_model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
 
-class NewQuizSubthemaWidget extends StatelessWidget {
+class QuizSubthemaWidget extends StatelessWidget {
   NewQuizsubthemaModel viewModel;
 
-  NewQuizSubthemaWidget({required this.viewModel, super.key});
+  QuizSubthemaWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {

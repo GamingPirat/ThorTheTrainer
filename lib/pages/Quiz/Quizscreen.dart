@@ -1,18 +1,18 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:lernplatform/pages/Quiz/new_quiz_subthema_widget.dart';
-import 'package:lernplatform/pages/Quiz/new_quizmaster.dart';
+import 'package:lernplatform/pages/Quiz/quiz_subthema_widget.dart';
+import 'package:lernplatform/pages/Quiz/quizmaster.dart';
 import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 
-class NewQuizScreen extends StatefulWidget {
+class QuizScreen extends StatefulWidget {
 
   @override
-  _NewQuizScreenState createState() => _NewQuizScreenState();
+  _QuizScreenState createState() => _QuizScreenState();
 }
 
-class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateMixin {
+class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   late Quizmaster viewModel;
   late List<Widget> _containers;
   int _currentIndex = 0;
@@ -43,23 +43,22 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
   // Methode zum Erstellen eines neuen Containers
   Widget _buildContainer(int index) {
     viewModel.nextQuestion();
-    return NewQuizSubthemaWidget(viewModel: viewModel.aktuelles_subthema);
+    return QuizSubthemaWidget(viewModel: viewModel.aktuelles_subthema);
   }
 
   void _onScroll(double dy) {
-    print_Magenta("QuizScreen scrollen erfasst: Delta = $dy"); // todo print
-    
+    // print_Magenta("QuizScreen scrollen erfasst: Delta = $dy"); // todo print
+
     if (dy > 0) {
       // Scroll nach unten (nächster Container)
-      // _currentIndex++;
-      print_Magenta("QuizScreen Scroll nach unten "
-          "_currentIndex == _containers.length "
-          "${_currentIndex == _containers.length} "
-          "$_currentIndex == ${_containers.length} "
-          "viewModel.is_locked == ${viewModel.is_locked}"); // todo print
+      // print_Magenta("QuizScreen Scroll nach unten "
+      //     "_currentIndex == _containers.length "
+      //     "${_currentIndex == _containers.length} "
+      //     "$_currentIndex == ${_containers.length} "
+          // "viewModel.is_locked == ${viewModel.is_locked}"); // todo print
       if (_currentIndex == _containers.length - 1 && viewModel.is_locked) {
         setState(() {
-          print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
+          // print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
           _containers.add(_buildContainer(_containers.length));
           _isScrollingDown = true;
           _previousIndex = _currentIndex;
@@ -68,7 +67,7 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
         });
       } else if (_currentIndex < _containers.length - 1) {
         setState(() {
-          print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
+          // print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
           _isScrollingDown = true;
           _previousIndex = _currentIndex;
           _currentIndex++;
@@ -77,10 +76,9 @@ class _NewQuizScreenState extends State<NewQuizScreen> with TickerProviderStateM
       }
     } else if (dy < 0) {
       // Scroll nach oben (vorheriger Container)
-      // _currentIndex--;
       if (_currentIndex > 0) {
         setState(() {
-          print_Magenta("QuizScreen Scroll nach oben (vorheriger Container"); // todo print
+          // print_Magenta("QuizScreen Scroll nach oben (vorheriger Container"); // todo print
           _isScrollingDown = false;
           _previousIndex = _currentIndex;
           _currentIndex--;

@@ -9,7 +9,7 @@ import 'Antwort_Model.dart';
 
 class Frage_Model with ChangeNotifier {
   final DB_Frage frage;
-  final Function(int) lockTapped;
+  final Function() lockTapped;
   late List<Antwort_Model> antwortenViewModel;
 
   bool _locked = false;
@@ -43,7 +43,7 @@ class Frage_Model with ChangeNotifier {
   }
 
 
-  void evaluate() {
+  int evaluate() {
     double punkte = 0;
     int richtigeAntworten = 0;
 
@@ -58,7 +58,7 @@ class Frage_Model with ChangeNotifier {
     // print("${frage.punkte} $punkte $antwortwert");// todo print
     _locked = true;
     notifyListeners();
-    lockTapped(punkte.toInt());
+    return (punkte.toInt());
   }
 
 

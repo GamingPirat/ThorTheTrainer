@@ -5,9 +5,8 @@ import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/menu/punkte_widget.dart';
-import 'package:lernplatform/pages/Quiz/new_quizsubthema_model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
 import 'package:lernplatform/pages/Quiz/speicher_fortschritt_anzeige.dart';
-import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 
 class Quizmaster with ChangeNotifier{
@@ -54,14 +53,14 @@ class Quizmaster with ChangeNotifier{
     ++bei_dritter_frage;
       aktuelles_subthema = NewQuizsubthemaModel(
         selected_subthema: selected_subthemen[Random().nextInt(selected_subthemen.length)],
-        onLockTapped: (int erreichtePunkte)=> onLockTapped(erreichtePunkte),
+        onLockTapped: ()=> onLockTapped(),
       );
-    print_Yellow("Quizmaster.nextTapped"); // todo print
+    // print_Yellow("Quizmaster.nextTapped"); // todo print
     notifyListeners();
   }
 
-  void onLockTapped(int erreichtePunkte){
-    print_Yellow("Quizmaster.onLockTapped erreichtePunkte = $erreichtePunkte"); // todo print
+  void onLockTapped(){
+    // print_Yellow("Quizmaster.onLockTapped"); // todo print
 
     if(aktuelles_subthema.random_question.somethingIsSelected) _evaluate();
     else aktuelles_subthema.random_question.blink();
@@ -69,9 +68,10 @@ class Quizmaster with ChangeNotifier{
   }
 
   void _evaluate(){
-    aktuelles_subthema.random_question.evaluate();
+    _erreichtePunkteAnzeiger.punkte += aktuelles_subthema.random_question.evaluate();
     _fortschrittSpeicherAnzeiger.fortschritt++;
     _is_locked = true;
     notifyListeners();
+    // print_Yellow("Quizmaster _evaluate $_is_locked"); // todo print
   }
 }

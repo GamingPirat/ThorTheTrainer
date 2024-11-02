@@ -3,7 +3,7 @@ import 'package:lernplatform/d_users_view_models/user_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
-import 'package:lernplatform/pages/Quiz/new_Quizscreen.dart';
+import 'package:lernplatform/pages/Quiz/Quizscreen.dart';
 import 'package:lernplatform/pages/QuizStarter/expandable.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
 import 'package:lernplatform/print_colors.dart';
@@ -119,7 +119,7 @@ class QuizStarter_Screen extends StatelessWidget {
                           onPressed: () {
                             vm.childIsSelected
                             ? Navigator.of(context).push(
-                              MaterialPageRoute(builder: (context) => NewQuizScreen()),
+                              MaterialPageRoute(builder: (context) => QuizScreen()),
                             )
 
                             :  showDialog(

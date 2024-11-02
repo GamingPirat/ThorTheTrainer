@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/pages/Quiz/right_drawer.dart';
+import 'package:lernplatform/pages/Quiz/right_drawer_on_frage.dart';
 import 'package:provider/provider.dart';
 import 'Antwort_Widget.dart';
 import 'Frage_Model.dart';
@@ -32,7 +32,7 @@ class FrageWidget extends StatelessWidget {
                           visible: !vm.locked,
                           child: ElevatedButton(
                             onPressed: () {
-                              vm.evaluate();
+                              vm.lockTapped();
                             },
                             child: const Text("lock"),
                           ),

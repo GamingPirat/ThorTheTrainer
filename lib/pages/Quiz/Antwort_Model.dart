@@ -52,10 +52,11 @@ class Antwort_Model with ChangeNotifier {
 
   blink() async {
     // wenn der Nutzer keine Antwort gewählt hat
+    Color previusColor = _color;
     _color = Colors.pink;
     notifyListeners();
     await Future.delayed(Duration(seconds: 1));
-    _color = Colors.transparent;
+    _color = previusColor;
     notifyListeners();
   }
 

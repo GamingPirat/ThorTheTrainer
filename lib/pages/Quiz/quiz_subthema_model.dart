@@ -1,15 +1,11 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:lernplatform/FrageDBService.dart';
-import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/pages/Quiz/Frage_Model.dart';
 import 'package:lernplatform/print_colors.dart';
-import 'package:lernplatform/session.dart';
 
 class NewQuizsubthemaModel with ChangeNotifier{
 
@@ -18,7 +14,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
 
   NewQuizsubthemaModel({
     required this.selected_subthema,
-    required Function(int) onLockTapped,
+    required Function() onLockTapped,
   }){
     _load(onLockTapped);
   }
@@ -26,7 +22,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
   bool _isLoading = true;
   bool get isLoading => _isLoading;
 
-  void _load(Function(int) onLockTapped) async{
+  void _load(Function() onLockTapped) async{
 
     //***************************************************************
     // lade die users_fragen
@@ -42,7 +38,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
     try{
       random_question = Frage_Model(
         frage: fragen[Random().nextInt(fragen.length)],
-        lockTapped: (int erreichtePunkte)=> onLockTapped(erreichtePunkte),
+        lockTapped: ()=> onLockTapped(),
       );
     } catch (RangeError){       // wenn keine Fragen geladen wurden
       random_question = Frage_Model(
@@ -56,7 +52,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
               Antwort(text: 'weiter', erklaerung: '', isKorrekt: true),
             ]
         ),
-        lockTapped: (int erreichtePunkte)=> onLockTapped(erreichtePunkte),
+        lockTapped: () => onLockTapped(),
       );
     }
     _isLoading = false;
