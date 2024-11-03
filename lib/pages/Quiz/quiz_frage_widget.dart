@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/pages/Quiz/right_drawer_on_frage.dart';
 import 'package:provider/provider.dart';
-import 'Antwort_Widget.dart';
-import 'Frage_Model.dart';
+import 'quiz_antworten_widget.dart';
+import 'quiz_frage_model.dart';
 
-class FrageWidget extends StatelessWidget {
-  late Frage_Model viewModel;
+class QuizFrageWidget extends StatelessWidget {
+  late QuizFrageModel viewModel;
 
-  FrageWidget({required this.viewModel, super.key});
+  QuizFrageWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<Frage_Model>(
+      child: Consumer<QuizFrageModel>(
           builder: (context, vm, child) {
             return Expanded(
               child: Stack(
@@ -26,7 +26,7 @@ class FrageWidget extends StatelessWidget {
                           vm.titel,
                           style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                         ),
-                        Antworten_Widget(viewModels: vm.antwortenViewModel),
+                        QuizAntwortenWidget(viewModels: vm.antwortenViewModel),
                         Spacer(),
                         Visibility(
                           visible: !vm.locked,

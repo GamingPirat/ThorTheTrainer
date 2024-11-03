@@ -25,7 +25,7 @@ class _JsonInputAppState extends State<JsonInputApp> {
       return;
     }
 
-    _frageDBService = FrageDBService(dateiname: _fileNameController.text);
+    _frageDBService = FrageDBService(datei_name: _fileNameController.text);
 
     try {
       List<dynamic> jsonData = jsonDecode(_controller.text);
@@ -54,7 +54,7 @@ class _JsonInputAppState extends State<JsonInputApp> {
       return;
     }
 
-    _frageDBService = FrageDBService(dateiname: _fileNameController.text);
+    _frageDBService = FrageDBService(datei_name: _fileNameController.text);
 
     try {
       Map<String, dynamic> jsonData = jsonDecode(_controller.text);

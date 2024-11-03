@@ -67,8 +67,14 @@ class UsersThema extends UsersContentModel {
   }
 
   @override
-  double get progress {
-    double erreichteZahl = meineSubThemen.fold(0.0, (sum, subThema) => sum + subThema.progress);
-    return erreichteZahl.clamp(0.0, 1.0);
+  updateProgress() {
+    double max_progress = 0;
+    double current_progress = 0;
+    for(UsersSubThema u_subThema in meineSubThemen){
+      u_subThema.updateProgress();
+      max_progress += 100;
+      current_progress += u_subThema.progress;
+    }
+    progress = max_progress / 100 * current_progress;
   }
 }

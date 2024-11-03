@@ -1,21 +1,27 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:lernplatform/FrageDBService.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'folder_types.dart';
 
 
 
 class SubThema extends ContentCarrier {
   final List<int> tags; // Id's von Themen
-  final List<DB_Frage> fragen;
+  List<DB_Frage> fragen;
 
   SubThema({
     required int id,
     required String name,
     required this.tags,
     required this.fragen,
-  }) : super(id: id, name: name);
+  }) : super(id: id, name: name){_loadFragen();}
+
+  void _loadFragen() async{
+    fragen = await FrageDBService(datei_name: "PV_WISO_Fragen").getByThemaID(id);
+    print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}");
+  }
 
   factory SubThema.fromJson(Map<String, dynamic> json) {
     return SubThema(

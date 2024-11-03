@@ -7,6 +7,7 @@ import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/menu/punkte_widget.dart';
 import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
 import 'package:lernplatform/pages/Quiz/speicher_fortschritt_anzeige.dart';
+import 'package:lernplatform/print_colors.dart';
 import 'package:lernplatform/session.dart';
 
 class Quizmaster with ChangeNotifier{
@@ -68,10 +69,18 @@ class Quizmaster with ChangeNotifier{
   }
 
   void _evaluate(){
-    _erreichtePunkteAnzeiger.punkte += aktuelles_subthema.random_question.evaluate();
+    int erreichte_punkte = aktuelles_subthema.random_question.erreichtePunkte_after_LockTapped();
     _fortschrittSpeicherAnzeiger.fortschritt++;
+    _erreichtePunkteAnzeiger.punkte += erreichte_punkte;
+
+    if(erreichte_punkte == aktuelles_subthema.random_question.frage.punkte)
+      aktuelles_subthema.selected_subthema.logSubThema.richtigBeantworteteFragen.add(aktuelles_subthema.random_question.frage.id);
+    else
+      aktuelles_subthema.selected_subthema.logSubThema.falschBeantworteteFragen.add(aktuelles_subthema.random_question.frage.id);
+
+    aktuelles_subthema.selected_subthema.updateProgress();
     _is_locked = true;
     notifyListeners();
-    // print_Yellow("Quizmaster _evaluate $_is_locked"); // todo print
+    print_Yellow("Quizmaster _evaluated"); // todo print
   }
 }

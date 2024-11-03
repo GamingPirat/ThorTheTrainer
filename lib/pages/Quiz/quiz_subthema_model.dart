@@ -4,13 +4,13 @@ import 'package:lernplatform/FrageDBService.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/pages/Quiz/Frage_Model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_frage_model.dart';
 import 'package:lernplatform/print_colors.dart';
 
 class NewQuizsubthemaModel with ChangeNotifier{
 
   UsersSubThema selected_subthema;
-  late Frage_Model random_question;
+  late QuizFrageModel random_question;
 
   NewQuizsubthemaModel({
     required this.selected_subthema,
@@ -23,25 +23,25 @@ class NewQuizsubthemaModel with ChangeNotifier{
   bool get isLoading => _isLoading;
 
   void _load(Function() onLockTapped) async{
-
-    //***************************************************************
-    // lade die users_fragen
-    //***************************************************************
-    FrageDBService dbService = FrageDBService(dateiname: "PV_WISO_Fragen");
-    List<DB_Frage> fragen = await dbService.getByThemaID(selected_subthema.id);
-    print_Cyan("NewQuizsubthemaModel dbService.fragen.length = ${fragen.length}");
+    //
+    // //***************************************************************
+    // // lade die users_fragen
+    // //***************************************************************
+    // FrageDBService dbService = FrageDBService(datei_name: "PV_WISO_Fragen");
+    // selected_subthema.subThema.fragen = await dbService.getByThemaID(selected_subthema.id);
+    // print_Cyan("NewQuizsubthemaModel selected_subthema.subThema.fragen.length = ${selected_subthema.subThema.fragen.length}");// todo print
 
 
     //***************************************************************
     // wähle random Frage
     //***************************************************************
     try{
-      random_question = Frage_Model(
-        frage: fragen[Random().nextInt(fragen.length)],
+      random_question = QuizFrageModel(
+        frage: selected_subthema.subThema.fragen[Random().nextInt(selected_subthema.subThema.fragen.length)],
         lockTapped: ()=> onLockTapped(),
       );
     } catch (RangeError){       // wenn keine Fragen geladen wurden
-      random_question = Frage_Model(
+      random_question = QuizFrageModel(
         frage: DB_Frage(
             nummer: 9999,
             version: 9999,
@@ -59,5 +59,6 @@ class NewQuizsubthemaModel with ChangeNotifier{
     notifyListeners();
     print_Cyan("NewQuizsubthemaModel _load beendet");
   }
+
 
 }

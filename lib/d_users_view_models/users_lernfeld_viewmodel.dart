@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/db_thema.dart';
@@ -59,8 +60,14 @@ class UsersLernfeld extends UsersContentModel {
   }
 
   @override
-  double get progress {
-    double erreichteZahl = usersThemen.fold(0.0, (sum, thema) => sum + thema.progress);
-    return erreichteZahl.clamp(0.0, 1.0);
+  updateProgress() {
+    double max_progress = 0;
+    double current_progress = 0;
+    for(UsersThema u_Thema in usersThemen){
+      u_Thema.updateProgress();
+      max_progress += 100;
+      current_progress += u_Thema.progress;
+      }
+    progress = max_progress / 100 * current_progress;
   }
 }

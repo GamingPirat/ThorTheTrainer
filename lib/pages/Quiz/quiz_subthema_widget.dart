@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/pages/Quiz/Frage_Widget.dart';
+import 'package:lernplatform/pages/Quiz/quiz_frage_widget.dart';
 import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +23,7 @@ class QuizSubthemaWidget extends StatelessWidget {
                 Center(
                   child: ProgressWidget(viewModel: viewModel.selected_subthema)
                 ),
-                FrageWidget(viewModel: vm.random_question,),
+                QuizFrageWidget(viewModel: vm.random_question,),
               ],
                         ),
             );

@@ -36,7 +36,8 @@ class _ProgressWidgetState extends State<ProgressWidget> {
                       color: Colors.red,
                     ),
                     child: FractionallySizedBox(
-                      widthFactor: vm.progress,
+                      // widthFactor: 0.5,
+                      widthFactor: vm.progress == null ? 0 : vm.progress / 100,
                       child: Container(
                         height: 20,
                         decoration: BoxDecoration(
@@ -49,7 +50,8 @@ class _ProgressWidgetState extends State<ProgressWidget> {
                       ),
                     ),
                   ),
-                  Center(child: Text("${(vm.progress * 100).toStringAsFixed(0)}%"),),
+                  // Center(child: Text("${(vm.progress).toStringAsFixed(0)}%"),),
+                  Center(child: Text("${(vm.progress)}%"),),
                   // Positioned.fill(
                   //   child: Align(
                   //     alignment: Alignment.centerLeft,

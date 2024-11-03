@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 
-class Antwort_Model with ChangeNotifier {
+class QuizAntwortModel with ChangeNotifier {
   final Antwort antwort;
   final Function unselectAntworten;
   final bool isMultipleChoice;
@@ -11,7 +11,7 @@ class Antwort_Model with ChangeNotifier {
   bool erklaerungVisible = false;
   Color _color = Colors.transparent;
 
-  Antwort_Model({
+  QuizAntwortModel({
     required this.antwort,
     required this.unselectAntworten,
     required this.isMultipleChoice
@@ -31,23 +31,19 @@ class Antwort_Model with ChangeNotifier {
   bool get locked => _locked;
   bool get isSelected => _isSelected;
 
-  double evaluate(double antwortwert){
+  void evaluate(){
     _locked = true;
 
     if(isSelected && antwort.isKorrekt)
       _color = Colors.green;
     else if(isSelected && !antwort.isKorrekt){
       _color = Colors.red;
-      antwortwert *= -1;
     }
     else if(!isSelected && antwort.isKorrekt) {
       _color = Colors.yellow;
-      antwortwert = 0;
     }
-    else antwortwert = 0;
 
     notifyListeners();
-    return antwortwert;
   }
 
   blink() async {

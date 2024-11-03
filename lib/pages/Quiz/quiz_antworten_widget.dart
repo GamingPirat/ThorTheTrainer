@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'Antwort_Model.dart';
+import 'quiz_antwort_model.dart';
 
-class Antworten_Widget extends StatelessWidget {
-  final List<Antwort_Model> viewModels;
+class QuizAntwortenWidget extends StatelessWidget {
+  final List<QuizAntwortModel> viewModels;
 
-  const Antworten_Widget({required this.viewModels, super.key});
+  const QuizAntwortenWidget({required this.viewModels, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class Antworten_Widget extends StatelessWidget {
         final model = viewModels[index];
         return ChangeNotifierProvider.value(
           value: model,
-          child: Consumer<Antwort_Model>(
+          child: Consumer<QuizAntwortModel>(
               builder: (context, vm, child) {
                 return GestureDetector(
                   onTap: () {

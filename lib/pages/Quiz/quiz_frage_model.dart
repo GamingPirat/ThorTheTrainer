@@ -3,18 +3,17 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
+import 'package:lernplatform/print_colors.dart';
+import 'quiz_antwort_model.dart';
 
-import 'Antwort_Model.dart';
-
-
-class Frage_Model with ChangeNotifier {
+class QuizFrageModel with ChangeNotifier {
   final DB_Frage frage;
   final Function() lockTapped;
-  late List<Antwort_Model> antwortenViewModel;
+  late List<QuizAntwortModel> antwortenViewModel;
 
   bool _locked = false;
 
-  Frage_Model({
+  QuizFrageModel({
     required this.frage,
     required this.lockTapped,
   }) {
@@ -34,7 +33,7 @@ class Frage_Model with ChangeNotifier {
   // Initialisiert die Liste der Antwort-ViewModels
   void _initializeAntwortenViewModel(List<Antwort> antworten, bool isMultipleChoice) {
     for (var antwort in antworten) {
-      antwortenViewModel.add(Antwort_Model(
+      antwortenViewModel.add(QuizAntwortModel(
         antwort: antwort,
         unselectAntworten: unselectAntworten,
         isMultipleChoice: isMultipleChoice,
@@ -43,27 +42,25 @@ class Frage_Model with ChangeNotifier {
   }
 
 
-  int evaluate() {
-    double punkte = 0;
-    int richtigeAntworten = 0;
-
-    for (Antwort_Model antwort in antwortenViewModel)
-      if (antwort.antwort.isKorrekt) richtigeAntworten++;
-
-    double antwortwert = frage.punkte / richtigeAntworten;
-
-    for (Antwort_Model antwort in antwortenViewModel)
-      punkte += antwort.evaluate(antwortwert);
-
-    // print("${frage.punkte} $punkte $antwortwert");// todo print
-    _locked = true;
-    notifyListeners();
-    return (punkte.toInt());
+  int erreichtePunkte_after_LockTapped() {
+      int max_richtige_antworten = 0;
+      int richtige_antworten = 0;
+      for (QuizAntwortModel antwort in antwortenViewModel) {
+        if (antwort.antwort.isKorrekt){
+          max_richtige_antworten++;
+          if(antwort.isSelected)
+            richtige_antworten++;
+        }
+      }
+      double richtige_antworten_wert = frage.punkte / max_richtige_antworten;
+      int erreichte_punkte = (richtige_antworten * richtige_antworten_wert).ceilToDouble().toInt();
+      print_Magenta("QuizFrageModel erreichtePunkte_after_LockTapped $erreichte_punkte Frage.punkte = ${frage.punkte}"); // todo print
+      return erreichte_punkte;
   }
 
 
-  void unselectAntworten(Antwort_Model model) {
-    for (Antwort_Model antwort in antworten) {
+  void unselectAntworten(QuizAntwortModel model) {
+    for (QuizAntwortModel antwort in antworten) {
       if (antwort != model) {
         antwort.isSelected = false;
       }
@@ -72,22 +69,22 @@ class Frage_Model with ChangeNotifier {
   }
 
   void blink(){
-    for(Antwort_Model antwort_model in antwortenViewModel)
+    for(QuizAntwortModel antwort_model in antwortenViewModel)
       antwort_model.blink();
   }
 
 
 
   bool get somethingIsSelected {
-    for (Antwort_Model antwort in antworten)
+    for (QuizAntwortModel antwort in antworten)
       if(antwort.isSelected)
         return true;
 
-    for (Antwort_Model antwort in antworten)
+    for (QuizAntwortModel antwort in antworten)
       antwort.blink();
     return false;
   }
   String get titel => frage.text;
   bool get locked => _locked;
-  List<Antwort_Model> get antworten => antwortenViewModel;
+  List<QuizAntwortModel> get antworten => antwortenViewModel;
 }
