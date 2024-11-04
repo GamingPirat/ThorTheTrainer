@@ -5,7 +5,7 @@ import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/db_thema.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
-import 'package:lernplatform/print_colors.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 
 class UsersLernfeld extends UsersContentModel {
   final LogLernfeld logLernfeld;
@@ -26,6 +26,7 @@ class UsersLernfeld extends UsersContentModel {
               logThema: logThema,
               thema: thema,
               parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
+              parentCallBack_updateProgress: (bool updateParent) => updateProgress(updateParent: updateParent),
             ),
           );
         }
@@ -36,7 +37,7 @@ class UsersLernfeld extends UsersContentModel {
   @override
   set isSelected(bool value) {
     Protected_isSelected = value;
-    print_Yellow("UsersLernfeld isSelected = ${isSelected}"); // todo print
+    // print_Yellow("UsersLernfeld isSelected = ${isSelected}"); // todo print
     for (var thema in usersThemen) {
       thema.isSelected = value;  // Setze jeden einzelnen thema.isSelected
     }
@@ -59,15 +60,16 @@ class UsersLernfeld extends UsersContentModel {
     notifyListeners();
   }
 
+
   @override
-  updateProgress() {
-    double max_progress = 0;
+  updateProgress({required bool updateParent}) {
+    double max_progress = 100.0 * usersThemen.length;
     double current_progress = 0;
     for(UsersThema u_Thema in usersThemen){
-      u_Thema.updateProgress();
-      max_progress += 100;
+      u_Thema.updateProgress(updateParent: false);
       current_progress += u_Thema.progress;
-      }
-    progress = max_progress / 100 * current_progress;
+    }
+    progress = max_progress > 0 ? (current_progress / max_progress) * 100 : 0.0;
+    notifyListeners();
   }
 }

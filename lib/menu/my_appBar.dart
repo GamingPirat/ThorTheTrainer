@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
+import 'package:lernplatform/globals/session.dart';
+import 'package:lernplatform/pages/Startseiten/the_door_page.dart';
 
 
 class MyAppBar extends AppBar {
@@ -17,8 +19,9 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Theme.of(context).brightness == Brightness.dark
-        ? Color.fromRGBO(22,22,22,1) : Color.fromRGBO(255,255,240,1),
+      backgroundColor: (Theme.of(context).brightness == Brightness.dark
+          ? Color(0xFF101010)
+          : Color(0xFFF0F0F0)),
       title: Center(child: Session().pageHeader),
       leading:IconButton(
         icon: Icon(Icons.menu),
@@ -57,7 +60,7 @@ class _MyAppBarState extends State<MyAppBar> {
           child: Row(
             children: [
               Icon(Icons.star),
-              Session().punkteAnzeige,
+              Session().sterneAnzeige,
             ],
           ),
         ),
@@ -75,31 +78,47 @@ class _MyAppBarState extends State<MyAppBar> {
             // );
           },
         ),
-        Builder(
-          builder: (context) => GestureDetector(
-            onLongPress: () async {
-              await Future.delayed(Duration(seconds: 7));
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text('Geheimer Admin-Zugang!'),
-                  duration: Duration(seconds: 2),
-                ),
-              );
-            },
-            child: IconButton(
-              icon: Icon(Icons.info),
-              onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('Ich arbeite noch an diesem Feature'),
-                    duration: Duration(seconds: 2),
+        SizedBox(width:12),
+        IconButton(
+          icon: Icon(Icons.info),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: Row(
+                    children: const [
+                      Icon(Icons.info, color: Colors.blue),
+                      SizedBox(width: 10),
+                      Text('Fortschritt zurücksetzen'),
+                    ],
                   ),
+                  content: const Text(
+                    'Willst du wirklich den gesamten Fortschritt zurücksetzen?\n'
+                        'Sämtliche Fortschritsbalken werden zurückgesetzt. Gesammelte Sterne bleiben erhalten',
+                  ),
+                  actions: [
+                    // Abbrechen-Button
+                    TextButton(
+                      onPressed: ()=> Navigator.of(context).pop(), // Der Button macht NICHTS
+                      child: const Text('Abbrechen'),
+                    ),
+                    // Fortschritt löschen-Button
+                    TextButton(
+                      onPressed: ()=> {
+                        Session().user.fortschritt_loeschen(),
+                        for(UsersLernfeld lernfeld in Session().user.usersLernfelder)
+                          lernfeld.updateProgress(updateParent: false),
+                        Navigator.of(context).pop()
+                      },
+                      child: const Text('Fortschritt löschen'),
+                    ),
+                  ],
                 );
               },
-            ),
-          ),
-        )
-
+            );
+          },
+        ),
       ],
     );
   }

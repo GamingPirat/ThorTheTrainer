@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/globals/session.dart';
 
 // ANSI Escape Codes für Farben
 const String resetColor = "\x1B[0m";

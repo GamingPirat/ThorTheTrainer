@@ -16,9 +16,7 @@ class QuizSubthemaWidget extends StatelessWidget {
       child: Consumer<NewQuizsubthemaModel>(
           builder: (context, vm, child) {
             return Container(
-              child: vm.isLoading
-                  ? CircularProgressIndicator()
-                  : Column(
+              child: Column(
               children: [
                 Center(
                   child: ProgressWidget(viewModel: viewModel.selected_subthema)

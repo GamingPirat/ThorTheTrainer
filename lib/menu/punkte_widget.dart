@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/globals/session.dart';
 import 'package:provider/provider.dart';
 
 class PunkteAnzeige extends StatelessWidget {

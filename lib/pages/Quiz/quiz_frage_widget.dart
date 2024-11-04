@@ -32,7 +32,7 @@ class QuizFrageWidget extends StatelessWidget {
                           visible: !vm.locked,
                           child: ElevatedButton(
                             onPressed: () {
-                              vm.lockTapped();
+                              vm.onLockTapped();
                             },
                             child: const Text("lock"),
                           ),

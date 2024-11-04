@@ -1,4 +1,4 @@
-import 'package:lernplatform/datenklassen/mokdaten.dart';
+import 'package:lernplatform/globals/lokal_storage_verwalter.dart';
 import 'db_lernfeld.dart';
 
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:convert';
 import 'package:firebase_core/firebase_core.dart';
-import '../firebase_options.dart'; // Stelle sicher, dass du die richtigen Firebase-Optionen hast
+import 'package:lernplatform/firabase/firebase_options.dart';
 
 
 // todo README!!!!

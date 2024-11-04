@@ -31,9 +31,9 @@ class QuizStarterSelecterWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(2),  // Gleiche Eckenabrundung für Hover-Effekt
               child: Container(
                 padding: EdgeInsets.all(4),
-                color: vm.isSelected
-                    ? (Theme.of(context).brightness == Brightness.dark ? Color(0xFF101010) : Color(0xFFF0F0F0))
-                    : Colors.black.withOpacity(0.5),
+                color: (Theme.of(context).brightness == Brightness.dark
+                    ? Color(0xFF101010)
+                    : Color(0xFFF0F0F0)),
 
                 child: InkWell(
                   onTap: () => vm.isSelected = !vm.isSelected,

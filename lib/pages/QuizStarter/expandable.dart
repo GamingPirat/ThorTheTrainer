@@ -5,87 +5,93 @@ import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmode
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
-import 'package:lernplatform/firebase_options.dart';
+import 'package:lernplatform/firabase/firebase_options.dart';
 import 'package:lernplatform/main.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/globals/session.dart';
 import 'package:provider/provider.dart';
 
-class ExpandableWidget extends StatelessWidget {
+class ExpandableWidget extends StatefulWidget {
   final UsersContentModel usersViewModel;
   final List<Widget> children;
 
-  ExpandableWidget({required this.usersViewModel, required this.children}) {
-  }
+  ExpandableWidget({required this.usersViewModel, required this.children});
 
-  void _setExpanded(bool value) {
-    if (usersViewModel.ishovered) {
-      Future.delayed(Duration(milliseconds: 1000), () {
-        usersViewModel.ishovered = value;
-      });
-    } else {
-      usersViewModel.ishovered = value;
-    }
+  @override
+  _ExpandableWidgetState createState() => _ExpandableWidgetState();
+}
+
+class _ExpandableWidgetState extends State<ExpandableWidget> {
+  bool isExpanded = false; // Kontrolliert, ob das Widget ausgeklappt ist
+
+  void toggleExpanded() {
+    setState(() {
+      isExpanded = !isExpanded;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
-      value: usersViewModel,
+      value: widget.usersViewModel,
       child: Consumer<UsersContentModel>(
         builder: (context, vm, child) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              MouseRegion(
-                onEnter: (_) => _setExpanded(true),
-                onExit: (_) => _setExpanded(false),
-                child: Container(
-                  margin: vm is UsersThema
-                      ? EdgeInsets.fromLTRB(80,0,80,0)
-                      : EdgeInsets.fromLTRB(0,0,0,0),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: vm.glowColor ,
-                        spreadRadius: 5,
-                        blurRadius: 12,
-                        offset: const Offset(0, 3),
-                      ),
-                    ],
-                    borderRadius: BorderRadius.circular(2), // Eckenabrundung
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(2),  // Gleiche Eckenabrundung für Hover-Effekt
-                    child: Container(
-                      padding: EdgeInsets.all(4),
-                      color: vm.isSelected
-                          ? (Theme.of(context).brightness == Brightness.dark ? Color(0xFF101010) : Color(0xFFF0F0F0))
-                          : Colors.black.withOpacity(0.5),
-
-                      child: InkWell(
-                        onTap: () => vm.isSelected = !vm.isSelected,
-                        child: Center(child: ProgressWidget(viewModel: vm)),
-                      ),
+              Container(
+                margin: vm is UsersThema
+                    ? EdgeInsets.fromLTRB(80, 0, 80, 0)
+                    : EdgeInsets.fromLTRB(0, 0, 0, 0),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: vm.glowColor,
+                      spreadRadius: 5,
+                      blurRadius: 12,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(2), // Eckenabrundung
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(2), // Eckenabrundung für Hover-Effekt
+                  child: Container(
+                    padding: EdgeInsets.all(4),
+                    color: (Theme.of(context).brightness == Brightness.dark
+                        ? Color(0xFF101010)
+                        : Color(0xFFF0F0F0)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: InkWell(
+                            onTap: () => vm.isSelected = !vm.isSelected,
+                            child: Center(child: ProgressWidget(viewModel: vm)),
+                          ),
+                        ),
+                        IconButton(
+                          icon: Icon(isExpanded
+                              ? Icons.expand_less
+                              : Icons.expand_more), // Pfeil-Icon abhängig vom Status
+                          onPressed: toggleExpanded, // Klick-Event
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
-              if (vm.ishovered)
-                MouseRegion(
-                  onEnter: (_) => _setExpanded(true),
-                  onExit: (_) => _setExpanded(false),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: children
-                        .map((child) => Padding(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 4.0, horizontal: 16.0),
-                      child: child,
-                    ))
-                        .toList(),
-                  ),
+              if (isExpanded)
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: widget.children
+                      .map((child) => Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 4.0, horizontal: 16.0),
+                    child: child,
+                  ))
+                      .toList(),
                 ),
             ],
           );
@@ -94,6 +100,7 @@ class ExpandableWidget extends StatelessWidget {
     );
   }
 }
+
 
 class QuizStarter_Screen extends StatelessWidget {
   @override

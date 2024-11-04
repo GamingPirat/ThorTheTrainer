@@ -4,14 +4,15 @@ import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
-import 'package:lernplatform/datenklassen/mokdaten.dart';
-import 'package:lernplatform/print_colors.dart';
+import 'package:lernplatform/globals/lokal_storage_verwalter.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 import '../datenklassen/log_teilnehmer.dart';
 
 class UserModel with ChangeNotifier {
 
-  late Teilnehmer teilnehmer;
+  late LogTeilnehmer teilnehmer;
   List<UsersLernfeld> usersLernfelder = [];
+  List<Lernfeld_DB> firestoreLernfelder = [];
   bool _isLoading = true;
 
   UserModel() {_load();}
@@ -20,13 +21,7 @@ class UserModel with ChangeNotifier {
   // todo später wenn Teilnehmer nur begrenzte Lernfelder haben muss die firstore Abfrage konkreter werden. Sprich ich muss was mit der Datenbank machen das Teilnehmer.key x nur zugriff auf x hat
 
   Future<void> _load() async {
-    print_Green("UserModel: _load()");// todo print
-    final Stopwatch stopwatch = Stopwatch();
-    stopwatch.start();
-    _isLoading = true;
-    notifyListeners();  // Setzt den Ladezustand und benachrichtigt alle Listener
 
-    List<Lernfeld_DB> firestoreLernfelder = [];
 
     try {
       // Lade das EINZIGE Lernfeld-Dokument aus der gesamten Sammlung
@@ -75,17 +70,20 @@ class UserModel with ChangeNotifier {
       }
     }
     // print_Green("Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers abgeschlossen"); // todo print
-
-    // while(stopwatch.elapsedMilliseconds < 5000){
-    //   Future.delayed(Duration(milliseconds: 1));
-    //   print_Yellow("stopwatch.elapsedMilliseconds = ${stopwatch.elapsedMilliseconds}"); // todo print ladezeit verlängern
-    // }
     _isLoading = false;
     notifyListeners();
   }
 
+  void speichern(){
+    speichereTeilnehmer(teilnehmer);
+  }
+
+  void fortschritt_loeschen(){
+    loescheTeilnehmer();
+  }
+
   bool get childIsSelected {
-    print_Yellow("UserModel got called: childIsSelected");
+    // print_Yellow("UserModel got called: childIsSelected"); // todo print
     for (UsersLernfeld lernfeld in usersLernfelder) {
       if (lernfeld.isSelected) {
         return true;

@@ -51,7 +51,10 @@ class _ProgressWidgetState extends State<ProgressWidget> {
                     ),
                   ),
                   // Center(child: Text("${(vm.progress).toStringAsFixed(0)}%"),),
-                  Center(child: Text("${(vm.progress)}%"),),
+                  Center(
+                    child: Text("${((vm.progress * 10).floor() / 10).toStringAsFixed(1)}%"),
+                  ),
+
                   // Positioned.fill(
                   //   child: Align(
                   //     alignment: Alignment.centerLeft,

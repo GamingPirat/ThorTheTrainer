@@ -1,12 +1,11 @@
-
 import 'package:flutter/material.dart';
-import 'package:lernplatform/d_users_view_models/user_viewmodel.dart';
-import 'package:lernplatform/print_colors.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/globals/user_viewmodel.dart';
+import 'package:lernplatform/firabase/firebase_options.dart';
+import 'package:lernplatform/globals/print_colors.dart';
+import 'package:lernplatform/globals/session.dart';
+import 'package:lernplatform/pages/Startseiten/the_door_page.dart';
 import 'package:provider/provider.dart';
-
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() async{
@@ -34,7 +33,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   late Session session;
-  late Widget _currentPage; // Holds the current page to avoid rebuilding
 
   @override
   void initState() {
@@ -47,27 +45,14 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    final themeNotifier = Provider.of<ThemeNotifier>(context); // Get the theme from the Provider
+    final themeNotifier = Provider.of<ThemeNotifier>(context);
+    print_Cyan("MaterialApp erstellt"); // todo print
 
     return MaterialApp(
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: themeNotifier.themeMode, // Use the themeMode from ThemeNotifier
-      home: ChangeNotifierProvider.value(
-        value: Session().user,
-        child: Consumer<UserModel>(
-          builder: (context, vm, child) {
-            print_Cyan("MaterialApp erstellt"); // todo print
-            return Scaffold(
-              appBar: Session().appBar,
-              drawer: Session().drawer,
-              body: vm.isLoading
-                  ? Center(child: CircularProgressIndicator())
-                  : Center( child: Text('Wiederholung ist die Mutter des Lernens'),),
-            );
-          },
-        ),
-      ), // Current page remains the same after theme change
+      home: TheDoorPage(),
     );
   }
 }

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:lernplatform/pages/Quiz/quiz_subthema_widget.dart';
 import 'package:lernplatform/pages/Quiz/quizmaster.dart';
-import 'package:lernplatform/print_colors.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/globals/print_colors.dart';
+import 'package:lernplatform/globals/session.dart';
 
 class QuizScreen extends StatefulWidget {
 
@@ -90,7 +90,6 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
 
   // Animationen für den Wechsel zwischen Containern
   void _startAnimation() {
-    print_Yellow("QuizScreen _startAnimation() called");
     _controller.reset();
 
     // Alte Container-Animation: Scrollt nach oben oder unten raus
@@ -113,8 +112,6 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
     if (event is PointerScrollEvent) {
       final dy = event.scrollDelta.dy;
       if (dy != 0) {
-        print("Scrollrad erfasst: Delta = $dy");
-        // Dein Code zum Scrollen weiter oder zurück
         _onScroll(dy);
       }
     }

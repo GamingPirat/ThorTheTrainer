@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:lernplatform/FrageDBService.dart';
+import 'package:lernplatform/firabase/FrageDBService.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/print_colors.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 import 'folder_types.dart';
 
 
@@ -20,7 +20,7 @@ class SubThema extends ContentCarrier {
 
   void _loadFragen() async{
     fragen = await FrageDBService(datei_name: "PV_WISO_Fragen").getByThemaID(id);
-    print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}");
+    // print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}"); // todo print
   }
 
   factory SubThema.fromJson(Map<String, dynamic> json) {

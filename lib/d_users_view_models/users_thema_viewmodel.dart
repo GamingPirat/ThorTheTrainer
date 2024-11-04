@@ -9,11 +9,13 @@ class UsersThema extends UsersContentModel {
   final LogThema logThema;
   late final List<UsersSubThema> meineSubThemen = [];
   final Function parentCallBack_CheckChilds;
+  final Function parentCallBack_updateProgress;
 
   UsersThema({
     required this.logThema,
     required Thema thema,
     required this.parentCallBack_CheckChilds,
+    required this.parentCallBack_updateProgress,
   }) : super(id: thema.id, name: thema.name) {
     effect_color = Colors.blueAccent;
     for (SubThema subThema in thema.subthemen) {
@@ -23,7 +25,8 @@ class UsersThema extends UsersContentModel {
             UsersSubThema(
               logSubThema: logSubThema,
               subThema: subThema,
-              parentCallBack_CheckChilds: () => checkIfAllChildrenAreSelected(),
+              parentCallBack_areChildsSelected: () => checkIfAllChildrenAreSelected(),
+              parentCallBack_updateProgress: (bool updateParent) => updateProgress(updateParent: updateParent),
             ),
           );
         }
@@ -66,15 +69,18 @@ class UsersThema extends UsersContentModel {
     notifyListeners();
   }
 
+
+
   @override
-  updateProgress() {
-    double max_progress = 0;
+  updateProgress({required bool updateParent}) {
+    if(updateParent) parentCallBack_updateProgress(updateParent);
+    double max_progress = 100.0 * meineSubThemen.length; // Korrigiert: max_progress entspricht der Anzahl der Subthemen mal 100
     double current_progress = 0;
     for(UsersSubThema u_subThema in meineSubThemen){
-      u_subThema.updateProgress();
-      max_progress += 100;
+      u_subThema.updateProgress(updateParent: false);
       current_progress += u_subThema.progress;
     }
-    progress = max_progress / 100 * current_progress;
+    progress = max_progress > 0 ? (current_progress / max_progress) * 100 : 0.0; // Berechnet den Fortschritt in Prozent
+    notifyListeners();
   }
 }

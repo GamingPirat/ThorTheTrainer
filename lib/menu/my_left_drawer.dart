@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/pages/QuizStarter/QuizzStarter_Screen.dart';
-import 'package:lernplatform/session.dart';
+import 'package:lernplatform/globals/session.dart';
 
 // List<QuizThema> mok_QuizThemen() {
 //   List<QuizThema> list = [];
@@ -23,8 +23,6 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
 
   @override
   Widget build(BuildContext context) {
-    print("build MyLeftDrawer");
-
     return Column(
       children: [
         SizedBox(height: 32),

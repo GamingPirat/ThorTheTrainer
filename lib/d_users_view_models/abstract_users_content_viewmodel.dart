@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/print_colors.dart';
 
 abstract class UsersContentModel with ChangeNotifier{
 
@@ -11,7 +10,7 @@ abstract class UsersContentModel with ChangeNotifier{
   UsersContentModel({
     required this.id,
     required this.name,
-  }){updateProgress();}
+  }){updateProgress(updateParent: false);}
 
   bool _isHovered = false;
   bool get ishovered => _isHovered;
@@ -36,13 +35,13 @@ abstract class UsersContentModel with ChangeNotifier{
   bool get isSelected => _Protected_isSelected;
   void set isSelected(bool value){ _Protected_isSelected = value; notifyListeners(); }
 
-  void updateProgress();
+  void updateProgress({required bool updateParent});
 
   double get progress => _progress;
   set progress (double value) {
     _progress = value;
     notifyListeners();
-  print_Green("UsersContentModel progress updated = $progress");
+  // print_Green("UsersContentModel progress updated = $progress"); // todo print
   }
 
 
