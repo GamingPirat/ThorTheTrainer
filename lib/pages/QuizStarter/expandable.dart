@@ -115,9 +115,9 @@ class QuizStarter_Screen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: ListView.builder(
-              itemCount: Session().user.usersLernfelder.length,
+              itemCount: Session().user.lernfelder.length,
               itemBuilder: (context, index) {
-                UsersLernfeld lernfeld = Session().user.usersLernfelder[index];
+                UsersLernfeld lernfeld = Session().user.lernfelder[index];
 
                 return ExpandableWidget(
                   usersViewModel: lernfeld,

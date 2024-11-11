@@ -4,7 +4,6 @@ import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/pages/Quiz/quiz_frage_model.dart';
-import 'package:lernplatform/globals/print_colors.dart';
 
 class NewQuizsubthemaModel with ChangeNotifier{
 

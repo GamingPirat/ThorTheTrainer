@@ -54,9 +54,9 @@ class QuizStarter_Screen extends StatelessWidget {
                       Expanded(
                         flex: 12,
                         child: ListView.builder(
-                          itemCount: vm.usersLernfelder.length,
+                          itemCount: vm.lernfelder.length,
                           itemBuilder: (context, index) {
-                            UsersLernfeld lernfeld = vm.usersLernfelder[index];
+                            UsersLernfeld lernfeld = vm.lernfelder[index];
 
                             return ExpandableWidget(
                               usersViewModel: lernfeld,

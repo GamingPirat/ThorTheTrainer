@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/globals/user_viewmodel.dart';
 import 'package:lernplatform/firabase/firebase_options.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';

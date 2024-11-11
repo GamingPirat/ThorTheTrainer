@@ -107,7 +107,7 @@ class _MyAppBarState extends State<MyAppBar> {
                     TextButton(
                       onPressed: ()=> {
                         Session().user.fortschritt_loeschen(),
-                        for(UsersLernfeld lernfeld in Session().user.usersLernfelder)
+                        for(UsersLernfeld lernfeld in Session().user.lernfelder)
                           lernfeld.updateProgress(updateParent: false),
                         Navigator.of(context).pop()
                       },

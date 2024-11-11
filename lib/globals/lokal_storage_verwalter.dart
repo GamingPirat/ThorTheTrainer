@@ -86,13 +86,13 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
 }
 
 Future<void> loescheTeilnehmer() async {
-  for(LogLernfeld lernfeld in Session().user.teilnehmer.meineLernfelder)
+  for(LogLernfeld lernfeld in Session().user.logTeilnehmer.meineLernfelder)
     for(LogThema tehma in lernfeld.meineThemen)
       for(LogSubThema subTehma in tehma.logSubthemen){
         subTehma.falschBeantworteteFragen = [];
         subTehma.richtigBeantworteteFragen = [];
       }
 
-  speichereTeilnehmer(Session().user.teilnehmer);
+  speichereTeilnehmer(Session().user.logTeilnehmer);
 }
 

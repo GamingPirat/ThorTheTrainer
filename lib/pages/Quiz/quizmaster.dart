@@ -25,7 +25,7 @@ class Quizmaster with ChangeNotifier{
     // hol dir die Subthemen die der User ausgewählt hat
     // ***************************************************************
     selected_subthemen = [];
-    for(UsersLernfeld lernfeld in Session().user.usersLernfelder)
+    for(UsersLernfeld lernfeld in Session().user.lernfelder)
       for(UsersThema thema in lernfeld.usersThemen)
         for(UsersSubThema subthema in thema.meineSubThemen)
           if(subthema.isSelected)

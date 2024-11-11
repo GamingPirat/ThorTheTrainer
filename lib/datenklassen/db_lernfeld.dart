@@ -1,5 +1,6 @@
 import 'package:lernplatform/datenklassen/folder_types.dart';
 import 'package:lernplatform/datenklassen/db_thema.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 
 class Lernfeld_DB extends ContentCarrier {
   final List<Thema> themen;
@@ -10,8 +11,8 @@ class Lernfeld_DB extends ContentCarrier {
     required this.themen,
   }) : super(id: id, name: name);
 
-  factory Lernfeld_DB.fromJson(Map<String, dynamic> json, lernfeldName) {
-    print("Parsed Lernfeld Name: $lernfeldName");  // Debugging Print
+  factory Lernfeld_DB.fromJson(Map<String, dynamic> json) {
+    print_Yellow("$json");  // Debugging Print
 
     List<Thema> themen = (json['details'] as List)
         .map((themaJson) => Thema.fromJson(themaJson))
@@ -19,7 +20,7 @@ class Lernfeld_DB extends ContentCarrier {
 
     return Lernfeld_DB(
       id: json['id'] ?? 0,
-      name: lernfeldName,
+      name: json['name'] ?? "Lernfeldname konnte nicht gelesen werden",
       themen: themen,
     );
   }

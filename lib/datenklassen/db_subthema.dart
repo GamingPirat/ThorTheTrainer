@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:lernplatform/firabase/FrageDBService.dart';
+import 'package:lernplatform/datenklassen/a_db_service_fragen.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'folder_types.dart';

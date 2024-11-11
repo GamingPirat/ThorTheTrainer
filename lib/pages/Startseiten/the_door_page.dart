@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/firabase/firebase_options.dart';
+import 'package:lernplatform/globals/print_colors.dart';
+import 'package:lernplatform/globals/session.dart';
 import 'package:lernplatform/main.dart';
 import 'package:lernplatform/pages/Startseiten/startseite.dart';
 import 'package:provider/provider.dart';
@@ -106,10 +108,13 @@ class _TheDoorPageState extends State<TheDoorPage> {
               ElevatedButton(
                 onPressed: _isButtonEnabled
                     ? () async {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Startseite()),
-                  );
+                  print_Blue("Betreten Button gedrückt ${_controller.text}");
+                  bool flag = await Session().enter(_controller.text);
+                  if(flag)
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Startseite()),
+                    );
                 }
                     : null,
                 child: const Text('Betreten'),

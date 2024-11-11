@@ -14,11 +14,6 @@ class FrageDBService {
     // print("### FrageDBService createFrage: Neue Frage hinzugefügt.\n$frage");// todo print
   }
 
-  Future<List<DB_Frage>> getFragenById(String id) async {
-    QuerySnapshot snapshot = await _fragenCollection.where(FieldPath.documentId, isEqualTo: id).get();
-    return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
-  }
-
   // Read (alle Fragen mit einer bestimmten themaID lesen)
   Future<List<DB_Frage>> getByThemaID(int themaID) async {
     QuerySnapshot snapshot = await _fragenCollection.where('themaID', isEqualTo: themaID).get();
@@ -49,4 +44,9 @@ class FrageDBService {
     await _fragenCollection.doc(id).delete();
     // print("### FrageDBService deleteFrage: Frage mit ID $id gelöscht.");// todo print
   }
+
+// Future<List<DB_Frage>> getFragenById(String id) async {
+//   QuerySnapshot snapshot = await _fragenCollection.where(FieldPath.documentId, isEqualTo: id).get();
+//   return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
+// }
 }

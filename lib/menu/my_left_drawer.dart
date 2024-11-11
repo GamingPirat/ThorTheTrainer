@@ -62,13 +62,13 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
         ),
         Builder(
           builder: (context) {
-            if (Session().user.usersLernfelder.isEmpty) {
+            if (Session().user.lernfelder.isEmpty) {
               return Center(child: Text("Keine Lernfelder verfügbar"));
             }
 
             return Expanded(
               child: ListView(
-                children: Session().user.usersLernfelder.map((lernfeld) {
+                children: Session().user.lernfelder.map((lernfeld) {
                   expandedStates.putIfAbsent(lernfeld.id, () => false);
 
                   return ExpansionTile(

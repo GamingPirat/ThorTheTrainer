@@ -129,13 +129,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
           onVerticalDragUpdate: (details) {
             if (details.primaryDelta != null) {
               _onScroll(details.primaryDelta!);
-              print_Yellow("QuizScreen: Scroll erfasst.");
-            } else {
-              print_Yellow("QuizScreen: Scroll primaryDelta ist null");
             }
-          },
-          onVerticalDragEnd: (details) {
-            print_Yellow("QuizScreen: Scroll Scrollbewegung beendet");
           },
           child: Stack(
             children: [

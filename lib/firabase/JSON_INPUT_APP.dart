@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:lernplatform/firabase/FrageDBService.dart';
+import 'package:lernplatform/datenklassen/a_db_service_fragen.dart';
 import 'dart:convert';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/firabase/firebase_options.dart';
