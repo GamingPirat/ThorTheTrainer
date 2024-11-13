@@ -22,29 +22,46 @@ class Session {
 
   factory Session()=> _instance;
 
-  Future<bool> enter(String key) async{
-
+  Future<bool> enter(String key) async {
     QuerySnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore.instance
         .collection("Keys")
+        .where("key", isEqualTo: key)
         .get();
 
-    for (var doc in snapshot.docs) {
+    // Prüfe, ob überhaupt ein Dokument gefunden wurde
+    if (snapshot.docs.isNotEmpty) {
+      // Greife direkt auf das erste Dokument zu
+      var doc = snapshot.docs.first;
+      print_Red("Dokument-ID: ${doc.id}, Daten: ${doc.data()}");
+
       try {
         Map<String, dynamic>? data = doc.data();
-        print("Dokumentdaten: ${data.toString()}"); // Debugging: Daten ausgeben
-        print("Vergleich mit Schlüssel: $key"); // Debugging: Schlüsselvergleich ausgeben
+        print_Red("Session enter() Vergleich mit Schlüssel: $key");
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
           user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));
+          // Aussagekräftiger Print über den Inhalt von data
+          String schluessel = data["key"];
+          String expires = data.containsKey("expires") ? data["expires"].toString() : "Nicht vorhanden";
+          String lernfelder = data.containsKey("lernfelder") ? data["lernfelder"].toString() : "Nicht vorhanden";
+
+          print_Green("Erfolgreiche Anmeldung:");
+          print_Green("  Schlüssel: $schluessel");
+          print_Green("  Ablaufdatum (expires): $expires");
+          print_Green("  Lernfelder: $lernfelder");
           return true;
         }
       } catch (e) {
-        print("Fehler beim Zugriff auf Dokumentdaten: ${e.toString()}"); // Fehlerbehandlung und Ausgabe
+        print_Red("Fehler beim Zugriff auf Dokumentdaten: ${e.toString()}");
       }
+    } else {
+      print_Red("Kein Dokument mit dem angegebenen Schlüssel gefunden.");
     }
 
     return false;
   }
+
+
 
 
   void initializeAppBar(void Function(ThemeMode) setThemeMode) {

@@ -1,0 +1,87 @@
+{
+  "id": 6,
+  "name": "LF 06",
+  "kompetenzbereiche": [
+    {
+      "id": 61,
+      "name": "Kundenkommunikation",
+      "themen": [
+        {
+          "id": 611,
+          "name": "Grundlagen der effektiven Kommunikation: aktives Zuhören und gezielte Fragen",
+          "fragen": [
+            {
+              "id": 1,
+              "name": "Erklären von Sachverhalten auf verständliche Weise",
+              "tags": [1]
+            },
+            {
+              "id": 2,
+              "name": "Informieren über Status und Fortschritt der Bearbeitung",
+              "tags": [1]
+            },
+            {
+              "id": 2,
+              "name": "Umgang mit schwierigen Kunden oder komplexen Anfragen",
+              "tags": [1]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Priorisierung und Eskalation",
+          "fragen": [
+            {
+              "id": 3,
+              "name": "Wie wird die Priorität einer Anfrage festgelegt?",
+              "tags": [1]
+            },
+            {
+              "id": 4,
+              "name": "Was sind die Eskalationsstufen im Service Management?",
+              "tags": [1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anpassung von Betriebssystemen",
+      "themen": [
+        {
+          "id": 3,
+          "name": "Installation und Konfiguration",
+          "fragen": [
+            {
+              "id": 5,
+              "name": "Wie wird ein Betriebssystem für spezifische Anforderungen konfiguriert?",
+              "tags": [2]
+            },
+            {
+              "id": 6,
+              "name": "Welche Schritte sind für die Installation eines Betriebssystems notwendig?",
+              "tags": [2]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Fehlerbehebung und Optimierung",
+          "fragen": [
+            {
+              "id": 7,
+              "name": "Wie können Fehler in Betriebssystemen diagnostiziert und behoben werden?",
+              "tags": [2]
+            },
+            {
+              "id": 8,
+              "name": "Welche Methoden werden zur Optimierung der Systemleistung angewendet?",
+              "tags": [2]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

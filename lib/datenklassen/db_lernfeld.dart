@@ -12,11 +12,17 @@ class Lernfeld_DB extends ContentCarrier {
   }) : super(id: id, name: name);
 
   factory Lernfeld_DB.fromJson(Map<String, dynamic> json) {
-    print_Yellow("$json");  // Debugging Print
+    List<Thema> detailsThemen = (json['details'] as List?)
+        ?.map((themaJson) => Thema.fromJson(themaJson))
+        .toList() ?? [];
+    List<Thema> kompetenzbereicheThemen = (json['Kompetenzbereiche'] as List?)
+        ?.map((themaJson) => Thema.fromJson(themaJson))
+        .toList() ?? [];
 
-    List<Thema> themen = (json['details'] as List)
-        .map((themaJson) => Thema.fromJson(themaJson))
-        .toList();
+    // Kombiniere beide Listen
+    List<Thema> themen = [];
+    themen.addAll(detailsThemen);
+    themen.addAll(kompetenzbereicheThemen);
 
     return Lernfeld_DB(
       id: json['id'] ?? 0,

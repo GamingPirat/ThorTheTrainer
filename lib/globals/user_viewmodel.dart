@@ -48,26 +48,26 @@ class UserModel with ChangeNotifier {
         print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
       }
 
-      // print_Green("UserModel Lernfelder erfolgreich konvertiert."); // todo print
+      print_Green("UserModel _load()  Lernfelder erfolgreich konvertiert."); // todo print
     } catch (e) {
       print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
 
     // Initialisiere den Teilnehmer basierend auf den geladenen Daten
     logTeilnehmer = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);  // Teilnehmer wird jetzt korrekt initialisiert
-    // print_Green("UserModel teilnehmer geladen. $teilnehmer"); // todo print
+    print_Green("UserModel _load() UserModel teilnehmer geladen. $logTeilnehmer"); // todo print
 
 
     // Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers
     for (LogLernfeld logLernfeld in logTeilnehmer.meineLernfelder) {
       for (Lernfeld_DB lernfeld in firestoreLernfelder) {
-        // print('Vergleiche: logLernfeld.id = ${logLernfeld.id}, lernfeld.id = ${lernfeld.id}'); // todo print
+        print_Green("UserModel _load() Vergleiche: logLernfeld.id = ${logLernfeld.id}, lernfeld.id = ${lernfeld.id}"); // todo print
         if (logLernfeld.id == lernfeld.id) {
           lernfelder.add(UsersLernfeld(
             logLernfeld: logLernfeld,
             lernfeld: lernfeld,
           ));
-          // print_Yellow("Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo print
+          print_Green("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo print
         }
       }
     }
@@ -79,7 +79,7 @@ class UserModel with ChangeNotifier {
   }
 
 
-    // print_Green("Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers abgeschlossen"); // todo print
+    print_Green("Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers abgeschlossen"); // todo print
     _isLoading = false;
     notifyListeners();
   }

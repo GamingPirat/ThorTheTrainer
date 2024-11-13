@@ -8,9 +8,9 @@ class AlphaKey {
     List<String> lernfelderList = [];
     if (json['lernfelder'] != null) {
       try {
-        lernfelderList = List<String>.from(json['lernfelder'] as Iterable);
+        lernfelderList = (json['lernfelder'] as Map<String, dynamic>).keys.toList();
       } catch (e) {
-        print("Fehler beim Konvertieren von lernfelder: ${e.toString()}");
+        print("Fehler beim Konvertieren von lernfelder (Schlüssel): ${e.toString()}");
       }
     }
     return AlphaKey(
@@ -18,4 +18,5 @@ class AlphaKey {
       lernfelder: lernfelderList,
     );
   }
+
 }

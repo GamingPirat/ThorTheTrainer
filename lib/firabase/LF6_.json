@@ -1,0 +1,143 @@
+{
+  "Lernfeld_6": {
+    "id": 6,
+    "name": "LF 6 Serviceanfragen bearbeiten",
+    "Kompetenzbereiche": [
+      {
+        "id": 61,
+        "name": "Kundenkommunikation",
+        "themen": [
+          {
+            "id": 611,
+            "name": "aktives Zuhören und gezielte Fragen",
+            "tags": [61]
+          },
+          {
+            "id": 612,
+            "name": "Erklären von Sachverhalten auf verständliche Weise",
+            "tags": [61]
+          },
+          {
+            "id": 613,
+            "name": "Informieren über Status und Fortschritt der Bearbeitung",
+            "tags": [61]
+          },
+          {
+            "id": 614,
+            "name": "Umgang mit schwierigen Kunden oder komplexen Anfragen",
+            "tags": [61]
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "Annahme und Analyse von Serviceanfragen",
+        "themen": [
+          {
+            "id": 621,
+            "name": "Systematisches Erfassen von Kundenanfragen und Anforderungen",
+            "tags": [62]
+          },
+          {
+            "id": 621,
+            "name": "Priorisieren und Kategorisieren von Anfragen",
+            "tags": [62]
+          },
+          {
+            "id": 622,
+            "name": "Grundlegende Analysetechniken zur Erfassung der Problemursache",
+            "tags": [62]
+          },
+          {
+            "id": 623,
+            "name": "Erfassen und Dokumentieren von Symptomen und Kontext der Anfrage",
+            "tags": [62]
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "name": "Fehlerdiagnose und -behebung",
+        "themen": [
+          {
+            "id": 631,
+            "name": "Identifizieren und Untersuchen typischer Fehlerquellen",
+            "tags": [63]
+          },
+          {
+            "id": 631,
+            "name": "Nutzung von Diagnosetools und -methoden (z. B. Protokollanalysen, Debugging)",
+            "tags": [63]
+          },
+          {
+            "id": 631,
+            "name": "Einleiten erster Schritte zur Problemlösung",
+            "tags": [63]
+          },
+          {
+            "id": 631,
+            "name": "Testen und Verifizieren der Lösung",
+            "tags": [63]
+          },
+          {
+            "id": 631,
+            "name": "Eskalation bei nicht lösbaren Problemen und Weiterleitung an spezialisierte Teams",
+            "tags": [63]
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "name": "Dokumentation",
+        "themen": [
+          {
+            "id": 641,
+            "name": "Dokumentieren von Symptomen, Analysen und Lösungsschritten",
+            "tags": [64]
+          },
+          {
+            "id": 643,
+            "name": "Nutzung geeigneter Werkzeuge zur Dokumentation (z. B. Ticket-Systeme)",
+            "tags": [64]
+          },
+          {
+            "id": 643,
+            "name": "Erstellen von Wissensartikeln und Lösungsdatenbanken",
+            "tags": [64]
+          },
+          {
+            "id": 644,
+            "name": "Nachvollziehbare und einheitliche Dokumentation für spätere Fälle",
+            "tags": [64]
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "name": "Qualitätssicherung und Nachbereitung",
+        "themen": [
+          {
+            "id": 651,
+            "name": "Überprüfen der Kundenzufriedenheit nach Problemlösung",
+            "tags": [65]
+          },
+          {
+            "id": 652,
+            "name": "Feedback zur Qualität der Dienstleistung sammeln und analysieren",
+            "tags": [65]
+          },
+          {
+            "id": 653,
+            "name": "Kontinuierliche Verbesserung von Prozessen basierend auf Kundenfeedback",
+            "tags": [65]
+          },
+          {
+            "id": 654,
+            "name": "Reflektion und Anpassung der eigenen Vorgehensweise bei Serviceanfragen",
+            "tags": [65]
+          }
+        ]
+      }
+    ]
+  }
+}

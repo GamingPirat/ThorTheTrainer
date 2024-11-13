@@ -17,12 +17,23 @@ class Thema extends ContentCarrier {
   }) : super(id: id, name: name);
 
   factory Thema.fromJson(Map<String, dynamic> json) {
+    List<SubThema> subthemenDetails = (json['subthemen'] as List?)
+        ?.map((subthemaJson) => SubThema.fromJson(subthemaJson))
+        .toList() ?? [];
+    List<SubThema> themenDetails = (json['themen'] as List?)
+        ?.map((subthemaJson) => SubThema.fromJson(subthemaJson))
+        .toList() ?? [];
+
+    // Kombiniere beide Listen
+    List<SubThema> subthemen = [];
+    subthemen.addAll(subthemenDetails);
+    subthemen.addAll(themenDetails);
+
     return Thema(
       id: json['id'] ?? 0,
       name: json['name'] ?? 'Unbekanntes Thema',
-      subthemen: (json['subthemen'] as List)
-          .map((subthemaJson) => SubThema.fromJson(subthemaJson))
-          .toList(), tags: [],
+      subthemen: subthemen,
+      tags: List<int>.from(json['tags'] ?? []),
     );
   }
 }

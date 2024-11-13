@@ -108,7 +108,7 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
                     children: [
                       Icon(Icons.note_add, size: 48, color: iconColor),
                       Text("Diese Frage ist"),
-                      Text("verbesserungsqürdig?"),
+                      Text("verbesserungswürdig?"),
                     ],
                   ),
                 ),

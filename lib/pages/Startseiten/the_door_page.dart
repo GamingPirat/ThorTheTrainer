@@ -110,6 +110,7 @@ class _TheDoorPageState extends State<TheDoorPage> {
                     ? () async {
                   print_Blue("Betreten Button gedrückt ${_controller.text}");
                   bool flag = await Session().enter(_controller.text);
+                  print_Red("Flag-Wert nach enter: $flag");
                   if(flag)
                     Navigator.push(
                       context,

@@ -17,9 +17,13 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld_DB> firestoreLernf
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
     LogTeilnehmer returnvalue = LogTeilnehmer.fromJson(data);  // Nutze die fromJson Methode von Teilnehmer
     print_Yellow(returnvalue.toString());
+
+    print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer in Cookies gefunden: $gespeicherterTeilnehmer");
+
     return returnvalue;
   }
 
+  print_Yellow("ladeOderErzeugeTeilnehmer() Es Wurde ein neuer Teilnehmer erzeugt");
   // Wenn kein Teilnehmer gefunden wurde, erstelle einen neuen Teilnehmer basierend auf Firestore-Daten
   List<LogLernfeld> logLernfelder = firestoreLernfelder.map((lernfeld) {
     return LogLernfeld(
@@ -44,8 +48,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld_DB> firestoreLernf
   // Speichere den neuen Teilnehmer im LocalStorage
   await prefs.setString(teilnehmerKey, jsonEncode(neuerTeilnehmer.toJson()));  // Nutze die toJson Methode von Teilnehmer
 
-  print_Green("Neuer Teilnehmer wurde erstellt und gespeichert:");
-  print_Green(neuerTeilnehmer.toString());
+  print_Yellow("ladeOderErzeugeTeilnehmer() TTeilnehmer Erstellt: $gespeicherterTeilnehmer");
 
   return neuerTeilnehmer;
 }
@@ -80,6 +83,9 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   String teilnehmerJson = jsonEncode(teilnehmerData);
   await prefs.setString(teilnehmerKey, teilnehmerJson);
 
+
+  print_Yellow("speichereTeilnehmer() Teilnehmer gespeichert in Cookies gefunden: \n"
+      ""+teilnehmerJson);
   // print_Green("Teilnehmer gespeichert. LokalStorage sieht jetzt so aus:");
   // LogTeilnehmer debugghelper = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);
   // print(debugghelper);
@@ -93,6 +99,6 @@ Future<void> loescheTeilnehmer() async {
         subTehma.richtigBeantworteteFragen = [];
       }
 
-  speichereTeilnehmer(Session().user.logTeilnehmer);
+  await speichereTeilnehmer(Session().user.logTeilnehmer);
 }
 
