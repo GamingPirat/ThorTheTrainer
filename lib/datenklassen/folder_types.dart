@@ -17,7 +17,7 @@ class Folder{
   final int id;
   final String name;
   final List<Folder> subFolder;
-  final List<Lernfeld_DB> lernFelder;
+  final List<Lernfeld> lernFelder;
 
   Folder({
     required this.id,

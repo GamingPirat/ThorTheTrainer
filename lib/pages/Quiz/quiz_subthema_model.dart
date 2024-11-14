@@ -34,7 +34,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
         frage: DB_Frage(
             nummer: 9999,
             version: 9999,
-            themaID: 9999,
+            inhalt_id: 9999,
             punkte: 0,
             text: "keine Fragen vorhanden",
             antworten: [

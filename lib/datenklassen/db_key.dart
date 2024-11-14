@@ -19,4 +19,10 @@ class AlphaKey {
     );
   }
 
+  @override
+  String toString() {
+    return 'AlphaKey{key: $key, lernfelder: $lernfelder}';
+  }
+
+
 }

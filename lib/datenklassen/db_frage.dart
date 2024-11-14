@@ -3,7 +3,7 @@ import 'package:lernplatform/datenklassen/db_antwort.dart';
 class DB_Frage {
   final int nummer;
   final int version;
-  final int themaID;
+  final int inhalt_id;
   final int punkte;
   final String text;
   final List<Antwort> antworten;
@@ -11,13 +11,13 @@ class DB_Frage {
   DB_Frage({
     required this.nummer,
     required this.version,
-    required this.themaID,
+    required this.inhalt_id,
     required this.punkte,
     required this.text,
     required this.antworten,
   });
 
-  String get id => "${themaID}_${nummer}_$version";
+  String get id => "${inhalt_id}_${nummer}_$version";
 
   // fromJson factory method
   factory DB_Frage.fromJson(Map<String, dynamic> json) {
@@ -27,7 +27,7 @@ class DB_Frage {
     return DB_Frage(
       nummer: json['nummer'],
       version: json['version'],
-      themaID: json['themaID'],
+      inhalt_id: json['inhalt_id'],
       punkte: json['punkte'],
       text: json['text'],
       antworten: antwortenList,
@@ -40,7 +40,7 @@ class DB_Frage {
     return {
       'nummer': nummer,
       'version': version,
-      'themaID': themaID,
+      'inhalt_id': inhalt_id,
       'punkte': punkte,
       'text': text,
       'antworten': antworten.map((antwort) => antwort.toJson()).toList(),
@@ -51,7 +51,7 @@ class DB_Frage {
   DB_Frage copyWith({
     int? nummer,
     int? version,
-    int? themaID,
+    int? inhalt_id,
     int? punkte,
     String? text,
     List<Antwort>? antworten,
@@ -59,7 +59,7 @@ class DB_Frage {
     return DB_Frage(
       nummer: nummer ?? this.nummer,
       version: version ?? this.version,
-      themaID: themaID ?? this.themaID,
+      inhalt_id: inhalt_id ?? this.inhalt_id,
       punkte: punkte ?? this.punkte,
       text: text ?? this.text,
       antworten: antworten ?? this.antworten,

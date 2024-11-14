@@ -4,8 +4,8 @@ import 'package:lernplatform/datenklassen/db_subthema.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 
 class UsersSubThema extends UsersContentModel {
-  final LogSubThema logSubThema;
-  final SubThema subThema;
+  final LogInhalt logSubThema;
+  final Inhalt subThema;
   final Function parentCallBack_areChildsSelected;
   final Function parentCallBack_updateProgress;
 

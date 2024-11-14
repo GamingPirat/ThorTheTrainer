@@ -3,7 +3,7 @@ import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmode
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
-import 'package:lernplatform/datenklassen/db_thema.dart';
+import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 
@@ -14,12 +14,12 @@ class UsersLernfeld extends UsersContentModel {
 
   UsersLernfeld({
     required this.logLernfeld,
-    required Lernfeld_DB lernfeld,
+    required Lernfeld lernfeld,
   })
       : super(id: lernfeld.id, name: lernfeld.name) {
     effect_color = Colors.purpleAccent;
-    for (Thema thema in lernfeld.themen) {
-      for (LogThema logThema in logLernfeld.meineThemen) {
+    for (KompetenzBereich thema in lernfeld.kompetenzbereiche) {
+      for (LogKompetenzbereich logThema in logLernfeld.meineThemen) {
         if (thema.id == logThema.id) {
           usersThemen.add(
             UsersThema(

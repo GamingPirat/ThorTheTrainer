@@ -1,0 +1,75 @@
+{
+  "name": "AP2 PV WISO",
+  "id": 15,
+  "kompetenzbereiche": [
+    {
+      "id": 150,
+      "name": "Wirtschaftsbezogene Kompetenzen",
+      "inhalte": [
+        {
+          "id": 1500,
+          "name": "Grundlagen der Wirtschaft",
+          "tags": [150]
+        },
+        {
+          "id": 1501,
+          "name": "Betriebswirtschaftliche Grundlagen",
+          "tags": [150]
+        },
+        {
+          "id": 1502,
+          "name": "Rechnungswesen",
+          "tags": [150]
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Rechtliche Grundlagen",
+      "inhalte": [
+        {
+          "id": 1510,
+          "name": "Arbeitsrecht",
+          "tags": [151]
+        },
+        {
+          "id": 1511,
+          "name": "Sozialrecht",
+          "tags": [151]
+        },
+        {
+          "id": 1512,
+          "name": "Kaufvertrag und Vertragsrecht",
+          "tags": [151]
+        }
+      ]
+    },
+    {
+      "name": "Soziale und gesellschaftliche Kompetenzen",
+      "id": 152,
+      "inhalte": [
+        {
+          "id": 1520,
+          "name": "Arbeitsschutz und Arbeitssicherheit",
+          "tags": [152]
+        },
+        {
+          "id": 1521,
+          "name": "Mitbestimmung und Betriebsverfassung",
+          "tags": [152]
+        },
+        {
+          "id": 1522,
+          "name": "Berufsbildung",
+          "tags": [152]
+        },
+        {
+          "id": 1523,
+          "name": "Umweltschutz",
+          "fragen": [],
+          "tags": [152]
+        }
+      ]
+    }
+  ]
+}

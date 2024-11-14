@@ -7,11 +7,11 @@ import 'folder_types.dart';
 
 
 
-class SubThema extends ContentCarrier {
+class Inhalt extends ContentCarrier {
   final List<int> tags; // Id's von Themen
   List<DB_Frage> fragen;
 
-  SubThema({
+  Inhalt({
     required int id,
     required String name,
     required this.tags,
@@ -19,12 +19,12 @@ class SubThema extends ContentCarrier {
   }) : super(id: id, name: name){_loadFragen();}
 
   void _loadFragen() async{
-    fragen = await FrageDBService(datei_name: "PV_WISO_Fragen").getByThemaID(id);
+    fragen = await FrageDBService().getByThemaID(id);
     // print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}"); // todo print
   }
 
-  factory SubThema.fromJson(Map<String, dynamic> json) {
-    return SubThema(
+  factory Inhalt.fromJson(Map<String, dynamic> json) {
+    return Inhalt(
       id: json['id'] ?? 0,
       name: json['name'] ?? 'Unbekannt',
       tags: json['tags'] != null ? List<int>.from(json['tags']) : [],
@@ -36,11 +36,11 @@ class SubThema extends ContentCarrier {
     );
   }
 
-  static Future<SubThema> fromJsonFile(String path) async {
+  static Future<Inhalt> fromJsonFile(String path) async {
     final file = File(path);
     final contents = await file.readAsString();
     final json = jsonDecode(contents);
-    return SubThema.fromJson(json);
+    return Inhalt.fromJson(json);
   }
 
   int getTrueLengthOfFragen() {

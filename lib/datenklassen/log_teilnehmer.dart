@@ -1,13 +1,4 @@
-// ANSI Escape Codes für Farben
-const String resetColor = "\x1B[0m";
-const String black = "\x1B[30m";
-const String red = "\x1B[31m";
-const String green = "\x1B[32m";
-const String yellow = "\x1B[33m";
-const String blue = "\x1B[34m";
-const String magenta = "\x1B[35m";
-const String cyan = "\x1B[36m";
-const String white = "\x1B[37m";
+
 
 class LogTeilnehmer {
   List<LogLernfeld> meineLernfelder;
@@ -30,67 +21,67 @@ class LogTeilnehmer {
   @override
   String toString() {
     final lernfelderString = meineLernfelder.map((lernfeld) => lernfeld.toString()).join("\n");
-    return "${cyan}Teilnehmer{ key: $sterne, meineLernfelder:\n$lernfelderString\n ${cyan}}$resetColor";
+    return "${cyan}Teilnehmer{ sterne: $sterne, meineLernfelder:\n$lernfelderString\n ${cyan}}$resetColor";
   }
 }
 
 class LogLernfeld {
   int id;
-  List<LogThema> meineThemen;
+  List<LogKompetenzbereich> meineThemen;
 
   LogLernfeld(this.id, this.meineThemen);
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'meineThemen': meineThemen.map((thema) => thema.toJson()).toList(),
+    'kompetenzbereiche': meineThemen.map((kompetenzbereich) => kompetenzbereich.toJson()).toList(),
   };
 
   factory LogLernfeld.fromJson(Map<String, dynamic> json) => LogLernfeld(
     json['id'],
-    (json['meineThemen'] as List).map((item) => LogThema.fromJson(item)).toList(),
+    (json['kompetenzbereiche'] as List).map((item) => LogKompetenzbereich.fromJson(item)).toList(),
   );
 
   @override
   String toString() {
-    final themenString = meineThemen.map((thema) => thema.toString()).join("\n");
-    return "${green}  LogLernfeld{ id: $id, meineThemen:\n$themenString\n  ${green}}$resetColor";
+    final kompetenzbereiche_ = meineThemen.map((thema) => thema.toString()).join("\n");
+    return "${green}  LogLernfeld{ id: $id, kompetenzbereiche:\n$kompetenzbereiche_\n   ${green}}$resetColor";
   }
 }
 
-class LogThema {
+class LogKompetenzbereich {
   int id;
-  List<LogSubThema> logSubthemen;
+  List<LogInhalt> logInhalte;
 
-  LogThema({
+  LogKompetenzbereich({
     required this.id,
-    required this.logSubthemen,
+    required this.logInhalte,
   });
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'logSubthemen': logSubthemen.map((subThema) => subThema.toJson()).toList(),
+    'logInhalte': logInhalte.map((logInhalt) => logInhalt.toJson()).toList(),
   };
 
-  factory LogThema.fromJson(Map<String, dynamic> json) => LogThema(
+  factory LogKompetenzbereich.fromJson(Map<String, dynamic> json) => LogKompetenzbereich(
     id: json['id'],
-    logSubthemen: (json['logSubthemen'] as List)
-        .map((item) => LogSubThema.fromJson(item))
+    logInhalte: (json['logInhalte'] as List)
+        .map((item) => LogInhalt.fromJson(item))
         .toList(),
   );
 
   @override
   String toString() {
-    final subthemenString = logSubthemen.map((subThema) => subThema.toString()).join("\n");
-    return "${yellow}    LogThema{ id: $id, logSubthemen:\n$subthemenString\n    ${yellow}}$resetColor";
+    final subthemenString = logInhalte.map((subThema) => subThema.toString()).join("\n");
+    return "${yellow}    LogKompetenzbereich{ id: $id, logInhalte:\n$subthemenString\n    ${yellow}}$resetColor";
   }
 }
 
-class LogSubThema {
+class LogInhalt {
   int id;
   List<String> falschBeantworteteFragen;
   List<String> richtigBeantworteteFragen;
 
-  LogSubThema({
+  LogInhalt({
     required this.id,
     required this.falschBeantworteteFragen,
     required this.richtigBeantworteteFragen,
@@ -102,7 +93,7 @@ class LogSubThema {
     'richtigBeantworteteFragen': richtigBeantworteteFragen,
   };
 
-  factory LogSubThema.fromJson(Map<String, dynamic> json) => LogSubThema(
+  factory LogInhalt.fromJson(Map<String, dynamic> json) => LogInhalt(
     id: json['id'],
     falschBeantworteteFragen: List<String>.from(json['falschBeantworteteFragen']),
     richtigBeantworteteFragen: List<String>.from(json['richtigBeantworteteFragen']),
@@ -110,6 +101,18 @@ class LogSubThema {
 
   @override
   String toString() {
-    return "${magenta}      LogSubThema{ id: $id, falschBeantworteteFragen: ${falschBeantworteteFragen.length}, richtigBeantworteteFragen: ${richtigBeantworteteFragen.length}      ${magenta}}$resetColor";
+    return "${magenta}      LogInhalt{ id: $id, falschBeantworteteFragen: ${falschBeantworteteFragen.length}, richtigBeantworteteFragen: ${richtigBeantworteteFragen.length} ${magenta}}$resetColor";
   }
 }
+
+
+// ANSI Escape Codes für Farben
+const String resetColor = "\x1B[0m";
+const String black = "\x1B[30m";
+const String red = "\x1B[31m";
+const String green = "\x1B[32m";
+const String yellow = "\x1B[33m";
+const String blue = "\x1B[34m";
+const String magenta = "\x1B[35m";
+const String cyan = "\x1B[36m";
+const String white = "\x1B[37m";

@@ -2,24 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_subthema.dart';
-import 'package:lernplatform/datenklassen/db_thema.dart';
+import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 
 class UsersThema extends UsersContentModel {
-  final LogThema logThema;
+  final LogKompetenzbereich logThema;
   late final List<UsersSubThema> meineSubThemen = [];
   final Function parentCallBack_CheckChilds;
   final Function parentCallBack_updateProgress;
 
   UsersThema({
     required this.logThema,
-    required Thema thema,
+    required KompetenzBereich thema,
     required this.parentCallBack_CheckChilds,
     required this.parentCallBack_updateProgress,
   }) : super(id: thema.id, name: thema.name) {
     effect_color = Colors.blueAccent;
-    for (SubThema subThema in thema.subthemen) {
-      for (LogSubThema logSubThema in logThema.logSubthemen) {
+    for (Inhalt subThema in thema.inhalte) {
+      for (LogInhalt logSubThema in logThema.logInhalte) {
         if (subThema.id == logSubThema.id) {
           meineSubThemen.add(
             UsersSubThema(

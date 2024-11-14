@@ -5,34 +5,61 @@ import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld_DB> firestoreLernfelder) async {
+Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder) async {
+  print_Yellow("ladeOderErzeugeTeilnehmer firestoreLernfelder $firestoreLernfelder");
+
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  String teilnehmerKey = "ThorTheTrainer";  // Der Key für das LocalStorage
+  String storageKey = "ThorTheTrainer";  // Der Key für das LocalStorage
 
   // Lade den Teilnehmer aus dem LocalStorage
-  String? gespeicherterTeilnehmer = prefs.getString(teilnehmerKey);
+  String? gespeicherterTeilnehmer = prefs.getString(storageKey);
 
-  // Wenn der Teilnehmer gefunden wurde, diesen zurückgeben
+  // Wenn der Teilnehmer gefunden wurde, lese die Daten und gleiche ab
   if (gespeicherterTeilnehmer != null) {
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
-    LogTeilnehmer returnvalue = LogTeilnehmer.fromJson(data);  // Nutze die fromJson Methode von Teilnehmer
-    print_Yellow(returnvalue.toString());
+    LogTeilnehmer returnvalue = LogTeilnehmer.fromJson(data);
 
-    print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer in Cookies gefunden: $gespeicherterTeilnehmer");
+    print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer gefunden: $gespeicherterTeilnehmer");
 
+    // Abgleich: Fehlende Lernfelder hinzufügen
+    for (Lernfeld lernfeld in firestoreLernfelder) {
+      bool lernfeldExists = returnvalue.meineLernfelder.any((logLernfeld) => logLernfeld.id == lernfeld.id);
+
+      if (!lernfeldExists) {
+        LogLernfeld neuesLernfeld = LogLernfeld(
+          lernfeld.id,
+          lernfeld.kompetenzbereiche.map((thema) {
+            return LogKompetenzbereich(
+              id: thema.id,
+              logInhalte: thema.inhalte.map((subthema) {
+                return LogInhalt(
+                  id: subthema.id,
+                  falschBeantworteteFragen: [],
+                  richtigBeantworteteFragen: [],
+                );
+              }).toList(),
+            );
+          }).toList(),
+        );
+        returnvalue.meineLernfelder.add(neuesLernfeld);
+        print_Yellow("Neues Lernfeld hinzugefügt: ${neuesLernfeld.id}");
+      }
+    }
+
+    // Speichere den aktualisierten Teilnehmer zurück im LocalStorage
+    await prefs.setString(storageKey, jsonEncode(returnvalue.toJson()));
     return returnvalue;
   }
 
-  print_Yellow("ladeOderErzeugeTeilnehmer() Es Wurde ein neuer Teilnehmer erzeugt");
-  // Wenn kein Teilnehmer gefunden wurde, erstelle einen neuen Teilnehmer basierend auf Firestore-Daten
+  // Falls kein Teilnehmer existiert, neuen Teilnehmer mit allen Firestore-Daten erstellen
   List<LogLernfeld> logLernfelder = firestoreLernfelder.map((lernfeld) {
     return LogLernfeld(
       lernfeld.id,
-      lernfeld.themen.map((thema) {
-        return LogThema(
+      lernfeld.kompetenzbereiche.map((thema) {
+        return LogKompetenzbereich(
           id: thema.id,
-          logSubthemen: thema.subthemen.map((subthema) {
-            return LogSubThema(
+          logInhalte: thema.inhalte.map((subthema) {
+            return LogInhalt(
               id: subthema.id,
               falschBeantworteteFragen: [],
               richtigBeantworteteFragen: [],
@@ -46,12 +73,15 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld_DB> firestoreLernf
   LogTeilnehmer neuerTeilnehmer = LogTeilnehmer(sterne: 0, meineLernfelder: logLernfelder);
 
   // Speichere den neuen Teilnehmer im LocalStorage
-  await prefs.setString(teilnehmerKey, jsonEncode(neuerTeilnehmer.toJson()));  // Nutze die toJson Methode von Teilnehmer
-
-  print_Yellow("ladeOderErzeugeTeilnehmer() TTeilnehmer Erstellt: $gespeicherterTeilnehmer");
+  await prefs.setString(storageKey, jsonEncode(neuerTeilnehmer.toJson()));
+  print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer Erstellt: $neuerTeilnehmer");
 
   return neuerTeilnehmer;
 }
+
+
+
+
 
 Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -66,7 +96,7 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
         'meineThemen': lernfeld.meineThemen.map((thema) {
           return {
             'id': thema.id,
-            'logSubthemen': thema.logSubthemen.map((subthema) {
+            'logSubthemen': thema.logInhalte.map((subthema) {
               return {
                 'id': subthema.id,
                 'falschBeantworteteFragen': subthema.falschBeantworteteFragen,
@@ -91,10 +121,13 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   // print(debugghelper);
 }
 
-Future<void> loescheTeilnehmer() async {
+
+
+
+Future<void> reseteTeilnehmer() async {
   for(LogLernfeld lernfeld in Session().user.logTeilnehmer.meineLernfelder)
-    for(LogThema tehma in lernfeld.meineThemen)
-      for(LogSubThema subTehma in tehma.logSubthemen){
+    for(LogKompetenzbereich tehma in lernfeld.meineThemen)
+      for(LogInhalt subTehma in tehma.logInhalte){
         subTehma.falschBeantworteteFragen = [];
         subTehma.richtigBeantworteteFragen = [];
       }
@@ -102,3 +135,8 @@ Future<void> loescheTeilnehmer() async {
   await speichereTeilnehmer(Session().user.logTeilnehmer);
 }
 
+Future<void> clearAllLocalData() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  await prefs.clear();
+  print_Yellow("Alle lokalen Daten wurden gelöscht.");
+}

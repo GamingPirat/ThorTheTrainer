@@ -1,6 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:lernplatform/firabase/updated/fragen_inserter.dart';
+import 'package:lernplatform/firabase/updated/lernfeld_eintrag_erstellen.dart';
+import 'package:lernplatform/firabase/updated/samlung_to_json.dart';
 import 'package:lernplatform/firabase/updated/sammlung_erstellen.dart';
 import 'package:provider/provider.dart';
 
@@ -37,6 +40,9 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final List<Map<String, dynamic>> pages = [
     {"text": "neue Sammlung erstellen", "page": SammlungErstellen()},
+    {"text": "Die Sammlung 'Lernfelder' erweitern", "page": LernfeldEintragErstellen()},
+    {"text": "SammlungToJson", "page": SammlungToJson()},
+    {"text": "FragenInserter", "page": FragenInserter()},
   ];
 
   final List<Color> rainbowColors = [

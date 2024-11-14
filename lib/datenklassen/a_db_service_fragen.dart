@@ -5,7 +5,7 @@ class FrageDBService {
 
   late final CollectionReference _fragenCollection;
 
-  FrageDBService({required String datei_name }) : _fragenCollection = FirebaseFirestore.instance.collection(datei_name);
+  FrageDBService() : _fragenCollection = FirebaseFirestore.instance.collection("Fragen");
 
 
   // Create (neue Frage ohne ID, Firestore generiert automatisch eine ID)

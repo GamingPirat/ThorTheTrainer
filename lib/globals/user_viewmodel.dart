@@ -17,7 +17,7 @@ class UserModel with ChangeNotifier {
   AlphaKey alpha_key;
   late LogTeilnehmer logTeilnehmer;
   List<UsersLernfeld> lernfelder = [];
-  List<Lernfeld_DB> firestoreLernfelder = [];
+  List<Lernfeld> firestoreLernfelder = [];
   bool _isLoading = true;
 
   UserModel({required this.alpha_key}) {_load();}
@@ -26,74 +26,62 @@ class UserModel with ChangeNotifier {
   // todo später wenn Teilnehmer nur begrenzte Lernfelder haben muss die firstore Abfrage konkreter werden. Sprich ich muss was mit der Datenbank machen das Teilnehmer.key x nur zugriff auf x hat
 
   Future<void> _load() async {
-
-  for(String fireLernfeld in alpha_key.lernfelder){
     try {
-      // Lade das EINZIGE Lernfeld-Dokument aus der gesamten Sammlung
+      // Lade alle Lernfeld-Dokumente aus der gesamten Sammlung
       QuerySnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore.instance
-          .collection(fireLernfeld)
+          .collection("Lernfelder")
           .get();
 
-      // Überprüfe, ob überhaupt Dokumente vorhanden sind
+      // Überprüfe, ob Dokumente vorhanden sind
       if (snapshot.docs.isNotEmpty) {
-        // Nehme das erste Dokument aus der Sammlung
-        DocumentSnapshot<Map<String, dynamic>> doc = snapshot.docs.first;
-        Map<String, dynamic> data = doc.data()!;
-
-        // Konvertiere das Dokument direkt in ein Lernfeld-Objekt
-        Lernfeld_DB lernfeld = Lernfeld_DB.fromJson(data);
-
-        firestoreLernfelder.add(lernfeld);  // Füge das Lernfeld zur Liste hinzu
+        // Gehe alle Dokumente durch und füge sie zur Liste hinzu
+        for (var doc in snapshot.docs) {
+          Map<String, dynamic> data = doc.data();
+          Lernfeld lernfeld = Lernfeld.fromJson(data);
+          firestoreLernfelder.add(lernfeld);
+        }
+        print_Cyan("snapshot data: ${firestoreLernfelder.map((lf) => lf.name).toList()}");
       } else {
         print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
       }
-
-      print_Green("UserModel _load()  Lernfelder erfolgreich konvertiert."); // todo print
     } catch (e) {
       print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
 
     // Initialisiere den Teilnehmer basierend auf den geladenen Daten
-    logTeilnehmer = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);  // Teilnehmer wird jetzt korrekt initialisiert
-    print_Green("UserModel _load() UserModel teilnehmer geladen. $logTeilnehmer"); // todo print
+    logTeilnehmer = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);
 
-
-    // Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers
+    // Fülle die lernfelder-Liste mit UsersLernfeld-Instanzen, wenn IDs übereinstimmen
     for (LogLernfeld logLernfeld in logTeilnehmer.meineLernfelder) {
-      for (Lernfeld_DB lernfeld in firestoreLernfelder) {
-        print_Green("UserModel _load() Vergleiche: logLernfeld.id = ${logLernfeld.id}, lernfeld.id = ${lernfeld.id}"); // todo print
+      for (Lernfeld lernfeld in firestoreLernfelder) {
         if (logLernfeld.id == lernfeld.id) {
           lernfelder.add(UsersLernfeld(
             logLernfeld: logLernfeld,
             lernfeld: lernfeld,
           ));
-          print_Green("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Themen: ${lernfeld.themen.length}"); // todo print
+          print_Cyan("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Kompetenzbereiche: ${lernfeld.kompetenzbereiche.length}");
         }
       }
     }
-  }
-
-  if(alpha_key.lernfelder.length == 0){
-    alpha_key.lernfelder = await fire_all_lernfelder();
-    _load();
-  }
 
 
-    print_Green("Vergleiche die geladenen Lernfelder mit den Lernfeldern des Teilnehmers abgeschlossen"); // todo print
+
     _isLoading = false;
     notifyListeners();
   }
+
+
 
   void speichern(){
     speichereTeilnehmer(logTeilnehmer);
   }
 
   void fortschritt_loeschen(){
-    loescheTeilnehmer();
+    reseteTeilnehmer();
   }
 
   bool get childIsSelected {
-    // print_Yellow("UserModel got called: childIsSelected"); // todo print
+    // print_Cyan("UserModel got called: childIsSelected"); // todo print
     for (UsersLernfeld lernfeld in lernfelder) {
       if (lernfeld.isSelected) {
         return true;

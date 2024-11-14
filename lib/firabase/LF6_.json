@@ -1,29 +1,28 @@
 {
-  "Lernfeld_6": {
-    "id": 6,
     "name": "LF 6 Serviceanfragen bearbeiten",
-    "Kompetenzbereiche": [
+    "id": 6,
+    "kompetenzbereiche": [
       {
         "id": 61,
         "name": "Kundenkommunikation",
-        "themen": [
+        "inhalte": [
           {
-            "id": 611,
+            "id": 610,
             "name": "aktives Zuhören und gezielte Fragen",
             "tags": [61]
           },
           {
-            "id": 612,
+            "id": 611,
             "name": "Erklären von Sachverhalten auf verständliche Weise",
             "tags": [61]
           },
           {
-            "id": 613,
+            "id": 612,
             "name": "Informieren über Status und Fortschritt der Bearbeitung",
             "tags": [61]
           },
           {
-            "id": 614,
+            "id": 613,
             "name": "Umgang mit schwierigen Kunden oder komplexen Anfragen",
             "tags": [61]
           }
@@ -32,9 +31,9 @@
       {
         "id": 62,
         "name": "Annahme und Analyse von Serviceanfragen",
-        "themen": [
+        "inhalteinhalte": [
           {
-            "id": 621,
+            "id": 620,
             "name": "Systematisches Erfassen von Kundenanfragen und Anforderungen",
             "tags": [62]
           },
@@ -58,9 +57,9 @@
       {
         "id": 63,
         "name": "Fehlerdiagnose und -behebung",
-        "themen": [
+        "inhalte": [
           {
-            "id": 631,
+            "id": 630,
             "name": "Identifizieren und Untersuchen typischer Fehlerquellen",
             "tags": [63]
           },
@@ -70,17 +69,17 @@
             "tags": [63]
           },
           {
-            "id": 631,
+            "id": 632,
             "name": "Einleiten erster Schritte zur Problemlösung",
             "tags": [63]
           },
           {
-            "id": 631,
+            "id": 633,
             "name": "Testen und Verifizieren der Lösung",
             "tags": [63]
           },
           {
-            "id": 631,
+            "id": 634,
             "name": "Eskalation bei nicht lösbaren Problemen und Weiterleitung an spezialisierte Teams",
             "tags": [63]
           }
@@ -89,24 +88,24 @@
       {
         "id": 64,
         "name": "Dokumentation",
-        "themen": [
+        "inhalte": [
           {
-            "id": 641,
+            "id": 640,
             "name": "Dokumentieren von Symptomen, Analysen und Lösungsschritten",
             "tags": [64]
           },
           {
-            "id": 643,
+            "id": 641,
             "name": "Nutzung geeigneter Werkzeuge zur Dokumentation (z. B. Ticket-Systeme)",
             "tags": [64]
           },
           {
-            "id": 643,
+            "id": 642,
             "name": "Erstellen von Wissensartikeln und Lösungsdatenbanken",
             "tags": [64]
           },
           {
-            "id": 644,
+            "id": 643,
             "name": "Nachvollziehbare und einheitliche Dokumentation für spätere Fälle",
             "tags": [64]
           }
@@ -115,29 +114,28 @@
       {
         "id": 65,
         "name": "Qualitätssicherung und Nachbereitung",
-        "themen": [
+        "inhalte": [
           {
-            "id": 651,
+            "id": 650,
             "name": "Überprüfen der Kundenzufriedenheit nach Problemlösung",
             "tags": [65]
           },
           {
-            "id": 652,
+            "id": 651,
             "name": "Feedback zur Qualität der Dienstleistung sammeln und analysieren",
             "tags": [65]
           },
           {
-            "id": 653,
+            "id": 652,
             "name": "Kontinuierliche Verbesserung von Prozessen basierend auf Kundenfeedback",
             "tags": [65]
           },
           {
-            "id": 654,
+            "id": 653,
             "name": "Reflektion und Anpassung der eigenen Vorgehensweise bei Serviceanfragen",
             "tags": [65]
           }
         ]
       }
     ]
-  }
 }

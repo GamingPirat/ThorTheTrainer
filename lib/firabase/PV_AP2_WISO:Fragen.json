@@ -1,0 +1,2622 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 10,
+    "antworten": [
+      {
+        "erklaerung": "Abfallvermeidung ist die oberste Priorität der Abfallhierarchie.",
+        "text": "Vermeidung",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verwertung",
+        "erklaerung": "Die Verwertung von Abfällen steht in der Abfallhierarchie an zweiter Stelle.",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "Verbrennung als erste Option",
+        "erklaerung": "Verbrennung ist in der Hierarchie niedriger angesiedelt als Vermeidung und Verwertung."
+      }
+    ],
+    "text": "Welche Maßnahmen sind Bestandteil der Abfallhierarchie laut Kreislaufwirtschaftsgesetz?",
+    "version": 1,
+    "nummer": 4
+  },
+  {
+    "themaID": 6,
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Im Fernabsatz besteht eine Informationspflicht über das Widerrufsrecht.",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Der Verkäufer ist verpflichtet, über das Widerrufsrecht zu informieren."
+      }
+    ],
+    "text": "Beim Abschluss eines Kaufvertrags muss der Verkäufer den Käufer über das Widerrufsrecht informieren, wenn der Kauf im Fernabsatz erfolgt.",
+    "punkte": 1,
+    "nummer": 15
+  },
+  {
+    "themaID": 4,
+    "version": 1,
+    "text": "Welche Entgeltarten gibt es im Arbeitsrecht?",
+    "nummer": 13,
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Lohn",
+        "isKorrekt": true,
+        "erklaerung": "Lohn ist eine Form des Arbeitsentgelts."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Gehalt ist ebenfalls eine Entgeltart.",
+        "text": "Gehalt"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Umsatz ist kein Entgelt, sondern Erlös.",
+        "text": "Umsatz"
+      },
+      {
+        "isKorrekt": true,
+        "text": "Provision",
+        "erklaerung": "Provision ist eine erfolgsabhängige Entlohnung."
+      }
+    ]
+  },
+  {
+    "themaID": 3,
+    "punkte": 2,
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Der Cashflow zeigt den Geldfluss und die Liquidität.",
+        "text": "Er zeigt die Liquidität eines Unternehmens an."
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Gewinn und Cashflow sind nicht dasselbe.",
+        "text": "Er gibt an, wie viel Gewinn erwirtschaftet wurde."
+      },
+      {
+        "erklaerung": "Cashflow misst die Zahlungsfähigkeit, nicht die Effizienz der Buchhaltung.",
+        "text": "Er misst die Effizienz der Finanzbuchhaltung.",
+        "isKorrekt": false
+      }
+    ],
+    "text": "Welche Bedeutung hat der Cashflow für ein Unternehmen?",
+    "nummer": 5
+  },
+  {
+    "version": 1,
+    "text": "Wann endet ein befristeter Arbeitsvertrag automatisch?",
+    "themaID": 4,
+    "punkte": 3,
+    "nummer": 7,
+    "antworten": [
+      {
+        "erklaerung": "Ein befristeter Vertrag endet ohne Kündigung zum Enddatum.",
+        "text": "Mit Ablauf der vereinbarten Zeit",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nach sechs Monaten",
+        "erklaerung": "Der Zeitpunkt hängt von der Vereinbarung, nicht der Dauer ab.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Bei gegenseitigem Einvernehmen",
+        "erklaerung": "Einvernehmen kann einen Vertrag beenden, jedoch nicht automatisch.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "antworten": [
+      {
+        "erklaerung": "Der Beitragssatz ist einkommensabhängig.",
+        "isKorrekt": true,
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Die Beiträge sind in der gesetzlichen Krankenversicherung einkommensabhängig.",
+        "text": "falsch",
+        "isKorrekt": false
+      }
+    ],
+    "nummer": 10,
+    "text": "Die Beiträge zur gesetzlichen Krankenversicherung richten sich nach dem Einkommen des Versicherten.",
+    "themaID": 5,
+    "version": 1,
+    "punkte": 1
+  },
+  {
+    "themaID": 3,
+    "version": 1,
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": true,
+        "erklaerung": "Die doppelte Buchführung verlangt eine Buchung im Soll und eine im Haben."
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Mindestens zwei Konten sind immer beteiligt."
+      }
+    ],
+    "text": "Die doppelte Buchführung erfordert, dass jeder Geschäftsvorfall auf mindestens zwei Konten erfasst wird.",
+    "punkte": 1
+  },
+  {
+    "themaID": 4,
+    "version": 1,
+    "antworten": [
+      {
+        "erklaerung": "Urlaubsansprüche sind gesetzlich geregelt.",
+        "text": "richtig",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Der Mindesturlaub ist gesetzlich festgelegt.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Arbeitgeber können den Urlaubsanspruch der Arbeitnehmer nach eigenem Ermessen festlegen.",
+    "punkte": 1,
+    "nummer": 14
+  },
+  {
+    "punkte": 1,
+    "version": 1,
+    "nummer": 12,
+    "text": "Unternehmen haben keine gesetzliche Pflicht zur Aufstellung einer Bilanz.",
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Kapitalgesellschaften sind zur Bilanzierung verpflichtet.",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Bestimmte Unternehmensformen müssen eine Bilanz erstellen.",
+        "text": "falsch"
+      }
+    ],
+    "themaID": 2
+  },
+  {
+    "text": "Welche Leistungen deckt die gesetzliche Krankenversicherung ab?",
+    "version": 1,
+    "punkte": 2,
+    "themaID": 5,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Behandlungen sind zentraler Bestandteil der Krankenversicherung.",
+        "text": "Ambulante und stationäre Behandlung"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Diese wird von der Rentenversicherung gezahlt.",
+        "text": "Erwerbsunfähigkeitsrente"
+      },
+      {
+        "erklaerung": "Medikamente werden im Rahmen der medizinischen Versorgung übernommen.",
+        "isKorrekt": true,
+        "text": "Medikamente"
+      }
+    ],
+    "nummer": 11
+  },
+  {
+    "nummer": 10,
+    "text": "Was beschreibt die Nachfragekurve?",
+    "antworten": [
+      {
+        "erklaerung": "Die Nachfragekurve zeigt das Verhältnis von Preis und Nachfrage.",
+        "text": "Die Beziehung zwischen Preis und nachgefragter Menge",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Dies wird durch die Produktionsfunktion, nicht die Nachfragekurve, beschrieben.",
+        "text": "Das Produktionsniveau eines Unternehmens"
+      }
+    ],
+    "version": 1,
+    "themaID": 1,
+    "punkte": 2
+  },
+  {
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Miete",
+        "isKorrekt": true,
+        "erklaerung": "Mietkosten fallen als Gemeinkosten an."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Materialeinzelkosten",
+        "erklaerung": "Einzelkosten fallen direkt und nicht als Gemeinkosten an."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Verwaltungskosten sind Gemeinkosten.",
+        "text": "Gehälter der Verwaltung"
+      },
+      {
+        "text": "Produktionslöhne",
+        "isKorrekt": false,
+        "erklaerung": "Produktionslöhne können Einzelkosten sein."
+      }
+    ],
+    "nummer": 13,
+    "themaID": 3,
+    "version": 1,
+    "text": "Welche der folgenden Kostenarten gehören zu den Gemeinkosten?"
+  },
+  {
+    "version": 1,
+    "punkte": 2,
+    "nummer": 11,
+    "themaID": 2,
+    "text": "Was ist eine Aufgabe der Personalwirtschaft?",
+    "antworten": [
+      {
+        "erklaerung": "Die Personalwirtschaft kümmert sich u.a. um das Rekrutieren von Personal.",
+        "isKorrekt": true,
+        "text": "Mitarbeitergewinnung"
+      },
+      {
+        "erklaerung": "Bilanzierung ist Aufgabe des Rechnungswesens.",
+        "text": "Bilanzierung",
+        "isKorrekt": false
+      },
+      {
+        "text": "Entgeltabrechnung",
+        "isKorrekt": true,
+        "erklaerung": "Die Personalwirtschaft ist für die Lohnabrechnung zuständig."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Produktplanung",
+        "erklaerung": "Produktplanung gehört zum Produktionsmanagement."
+      }
+    ]
+  },
+  {
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Jeder Arbeitnehmer zahlt in die Sozialversicherung ein, es gibt jedoch Ausnahmen.",
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Es gibt einige wenige Ausnahmen.",
+        "isKorrekt": false,
+        "text": "falsch"
+      }
+    ],
+    "version": 1,
+    "nummer": 3,
+    "punkte": 1,
+    "text": "In Deutschland ist jeder Arbeitnehmer verpflichtet, in die gesetzliche Sozialversicherung einzuzahlen.",
+    "themaID": 5
+  },
+  {
+    "themaID": 1,
+    "version": 1,
+    "nummer": 4,
+    "text": "Was ist das Hauptziel der Inflation?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Erhöhung des allgemeinen Preisniveaus",
+        "erklaerung": "Inflation beschreibt eine Preisniveausteigerung."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Reduktion des Geldwertes",
+        "erklaerung": "Eine Folge der Inflation, nicht ihr Ziel."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Steigerung des wirtschaftlichen Wachstums",
+        "erklaerung": "Inflation kann Wirtschaftswachstum beeinflussen, ist aber kein Ziel."
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "themaID": 7,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Regelmäßige Unterweisungen sind gesetzlich vorgeschrieben.",
+        "text": "richtig"
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Unterweisungen müssen regelmäßig durchgeführt werden."
+      }
+    ],
+    "text": "Das Arbeitsschutzgesetz (ArbSchG) verpflichtet Arbeitgeber dazu, ihre Mitarbeiter regelmäßig zu unterweisen.",
+    "nummer": 7,
+    "punkte": 1
+  },
+  {
+    "themaID": 5,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Das Sozialrecht betrifft viele Bereiche, nicht nur Arbeitslose."
+      },
+      {
+        "erklaerung": "Es umfasst auch Renten, Krankengeld, Pflegegeld etc.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "nummer": 5,
+    "version": 1,
+    "punkte": 1,
+    "text": "Das Sozialrecht umfasst nur Leistungen für Arbeitslose."
+  },
+  {
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Das Widerrufsrecht gilt meist nur für Fernabsatz- und Haustürgeschäfte.",
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Im Geschäft abgeschlossene Verträge unterliegen in der Regel keinem Widerrufsrecht.",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Das Widerrufsrecht gilt auch für alle Kaufverträge, die im Geschäft abgeschlossen wurden.",
+    "nummer": 9,
+    "punkte": 1,
+    "version": 1,
+    "themaID": 6
+  },
+  {
+    "text": "Welche Vorteile bietet ein Umweltmanagementsystem für Unternehmen?",
+    "antworten": [
+      {
+        "text": "Einsparung von Ressourcen",
+        "isKorrekt": true,
+        "erklaerung": "Ein Umweltmanagementsystem zielt auf Ressourcenschonung ab."
+      },
+      {
+        "text": "Erhöhung der Energieausgaben",
+        "erklaerung": "Ein Umweltmanagementsystem soll Energieeinsparungen fördern, nicht erhöhen.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Ein Umweltmanagementsystem kann das Image eines Unternehmens verbessern.",
+        "text": "Verbesserung des Unternehmensimages",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Das System soll Abfall reduzieren, nicht erhöhen.",
+        "text": "Erhöhung des Abfallaufkommens",
+        "isKorrekt": false
+      }
+    ],
+    "punkte": 3,
+    "version": 1,
+    "nummer": 2,
+    "themaID": 10
+  },
+  {
+    "version": 1,
+    "punkte": 2,
+    "themaID": 4,
+    "text": "Was regelt das Arbeitszeitgesetz (ArbZG) in Deutschland?",
+    "antworten": [
+      {
+        "erklaerung": "Das ArbZG legt u.a. maximale Arbeitszeiten fest.",
+        "isKorrekt": true,
+        "text": "Maximale Arbeitszeiten und Ruhepausen"
+      },
+      {
+        "erklaerung": "Der Mindestlohn wird durch das Mindestlohngesetz geregelt.",
+        "text": "Mindestlohn für Arbeitnehmer",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Urlaubsgeld ist nicht Teil des ArbZG.",
+        "text": "Voraussetzungen für Urlaubsgeld",
+        "isKorrekt": false
+      }
+    ],
+    "nummer": 1
+  },
+  {
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Cashflow misst den Zufluss und Abfluss von Geldmitteln.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Der Cashflow ist ein wichtiger Indikator für die Liquidität.",
+        "isKorrekt": false,
+        "text": "falsch"
+      }
+    ],
+    "version": 1,
+    "punkte": 1,
+    "themaID": 2,
+    "text": "Der Cashflow zeigt die finanzielle Lage des Unternehmens an und gibt Aufschluss über die Liquidität."
+  },
+  {
+    "text": "Ein Auszubildender darf selbstständig entscheiden, ob er an der Berufsschule teilnimmt.",
+    "nummer": 5,
+    "version": 1,
+    "themaID": 9,
+    "punkte": 1,
+    "antworten": [
+      {
+        "erklaerung": "Die Teilnahme an der Berufsschule ist verpflichtend.",
+        "isKorrekt": false,
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Berufsschulpflicht besteht für Auszubildende.",
+        "isKorrekt": true,
+        "text": "falsch"
+      }
+    ]
+  },
+  {
+    "themaID": 6,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Eigentumsvorbehalt sichert die Rechte des Verkäufers bis zur Bezahlung.",
+        "text": "Der Verkäufer bleibt bis zur vollständigen Zahlung Eigentümer der Ware"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Der Käufer erhält die Ware erst nach vollständiger Zahlung",
+        "erklaerung": "Die Ware kann vor Zahlung übergeben werden, bleibt aber im Eigentum des Verkäufers."
+      }
+    ],
+    "nummer": 8,
+    "text": "Welche Bedeutung hat der Eigentumsvorbehalt bei Kaufverträgen?",
+    "version": 1,
+    "punkte": 2
+  },
+  {
+    "text": "Alle gesetzlich Versicherten in Deutschland haben Anspruch auf den gleichen Leistungskatalog in der Krankenversicherung.",
+    "nummer": 14,
+    "punkte": 1,
+    "themaID": 5,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": true,
+        "erklaerung": "Der Leistungskatalog der GKV ist für alle Versicherungen gleich."
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Der Leistungskatalog ist einheitlich festgelegt."
+      }
+    ],
+    "version": 1
+  },
+  {
+    "themaID": 7,
+    "nummer": 13,
+    "punkte": 1,
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Der Sicherheitsbeauftragte unterstützt, trägt jedoch nicht die Verantwortung."
+      },
+      {
+        "isKorrekt": true,
+        "text": "falsch",
+        "erklaerung": "Die Verantwortung liegt beim Arbeitgeber; der Beauftragte unterstützt nur."
+      }
+    ],
+    "text": "Ein Sicherheitsbeauftragter übernimmt die Verantwortung für alle Arbeitssicherheitsmaßnahmen im Unternehmen."
+  },
+  {
+    "version": 1,
+    "punkte": 2,
+    "text": "Welche Voraussetzungen müssen für die wirksame Anfechtung eines Vertrags erfüllt sein?",
+    "antworten": [
+      {
+        "erklaerung": "Ein wesentlicher Irrtum kann zur Anfechtung berechtigen.",
+        "isKorrekt": true,
+        "text": "Ein Irrtum über eine wesentliche Eigenschaft"
+      },
+      {
+        "isKorrekt": true,
+        "text": "Arglistige Täuschung durch den Vertragspartner",
+        "erklaerung": "Täuschung berechtigt zur Anfechtung des Vertrags."
+      },
+      {
+        "text": "Unerwünschter Preisnachlass",
+        "erklaerung": "Preisänderungen berechtigen nicht zur Anfechtung.",
+        "isKorrekt": false
+      }
+    ],
+    "themaID": 6,
+    "nummer": 6
+  },
+  {
+    "nummer": 15,
+    "punkte": 2,
+    "version": 1,
+    "themaID": 4,
+    "text": "Was beschreibt der Begriff 'Probezeit' im Arbeitsrecht?",
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Auch während der Probezeit sind Gründe erforderlich.",
+        "text": "Eine Zeitspanne, in der das Arbeitsverhältnis ohne Gründe gekündigt werden kann"
+      },
+      {
+        "erklaerung": "Die Probezeit dient der Überprüfung der Eignung des Arbeitnehmers.",
+        "isKorrekt": true,
+        "text": "Eine vereinbarte Anfangsphase zur Erprobung der Eignung"
+      },
+      {
+        "erklaerung": "Urlaubsansprüche bestehen auch in der Probezeit.",
+        "isKorrekt": false,
+        "text": "Ein Zeitraum ohne Urlaubsanspruch"
+      }
+    ]
+  },
+  {
+    "nummer": 2,
+    "version": 1,
+    "text": "Welche der folgenden Rechte haben Arbeitnehmer laut Betriebsverfassungsgesetz?",
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Das BetrVG gewährt Mitbestimmungsrechte.",
+        "text": "Mitbestimmung bei betrieblichen Regelungen"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Urlaubsregelungen sind individuell, nicht im BetrVG geregelt.",
+        "text": "Anspruch auf Urlaubsplanung"
+      },
+      {
+        "erklaerung": "Das BetrVG gewährt Informationsrechte bei wirtschaftlichen Änderungen.",
+        "isKorrekt": true,
+        "text": "Informationsrecht bei wirtschaftlichen Veränderungen"
+      },
+      {
+        "text": "Anspruch auf Lohnerhöhung",
+        "isKorrekt": false,
+        "erklaerung": "Lohnerhöhungen werden nicht durch das BetrVG festgelegt."
+      }
+    ],
+    "themaID": 4,
+    "punkte": 3
+  },
+  {
+    "punkte": 1,
+    "text": "Ein langfristiges Unternehmensziel ist immer die kurzfristige Gewinnmaximierung.",
+    "themaID": 2,
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Langfristige Ziele sind oft nachhaltiger als kurzfristige Gewinnziele.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Unternehmen haben auch langfristige Ziele wie Marktanteilssteigerung.",
+        "isKorrekt": true,
+        "text": "falsch"
+      }
+    ],
+    "nummer": 3
+  },
+  {
+    "themaID": 8,
+    "version": 1,
+    "text": "Der Betriebsrat hat in allen wirtschaftlichen Angelegenheiten ein Vetorecht.",
+    "punkte": 1,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Der Betriebsrat hat ein Vetorecht nur in sozialen, nicht wirtschaftlichen Angelegenheiten.",
+        "text": "richtig"
+      },
+      {
+        "isKorrekt": true,
+        "text": "falsch",
+        "erklaerung": "Der Betriebsrat kann nur in sozialen Angelegenheiten mitbestimmen, nicht in allen wirtschaftlichen Fragen."
+      }
+    ],
+    "nummer": 3
+  },
+  {
+    "antworten": [
+      {
+        "text": "Ermittlung des Betriebsergebnisses",
+        "erklaerung": "Die GuV zeigt den Gewinn oder Verlust des Unternehmens.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Das ist der Zweck der Bilanz, nicht der GuV.",
+        "text": "Dokumentation von Vermögensgegenständen",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Steuern basieren auf den Ergebnissen der GuV, aber die GuV dient nicht direkt der Steuerberechnung.",
+        "text": "Berechnung der Steuerverpflichtung"
+      }
+    ],
+    "punkte": 2,
+    "version": 1,
+    "text": "Was ist der Zweck der Gewinn- und Verlustrechnung?",
+    "nummer": 4,
+    "themaID": 3
+  },
+  {
+    "punkte": 1,
+    "themaID": 4,
+    "nummer": 10,
+    "antworten": [
+      {
+        "erklaerung": "Das MuSchG schützt Schwangere vor Kündigungen.",
+        "text": "richtig",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Das MuSchG beinhaltet Kündigungsschutz.",
+        "isKorrekt": false
+      }
+    ],
+    "version": 1,
+    "text": "Das Mutterschutzgesetz (MuSchG) schützt werdende Mütter vor Kündigungen während der Schwangerschaft."
+  },
+  {
+    "themaID": 4,
+    "nummer": 5,
+    "punkte": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": true,
+        "erklaerung": "Das Bundesurlaubsgesetz gewährt diesen Mindestanspruch."
+      },
+      {
+        "erklaerung": "Der gesetzliche Mindestanspruch beträgt 20 Tage.",
+        "isKorrekt": false,
+        "text": "falsch"
+      }
+    ],
+    "text": "Arbeitnehmer haben in Deutschland einen Anspruch auf mindestens 20 Urlaubstage bei einer 5-Tage-Woche.",
+    "version": 1
+  },
+  {
+    "themaID": 5,
+    "punkte": 2,
+    "version": 1,
+    "nummer": 1,
+    "text": "Was ist die Hauptaufgabe der Sozialversicherung?",
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Absicherung der Bevölkerung gegen soziale Risiken",
+        "erklaerung": "Die Sozialversicherung bietet Schutz bei Krankheit, Arbeitslosigkeit, etc."
+      },
+      {
+        "erklaerung": "Arbeitsplatzschaffung ist nicht die Aufgabe der Sozialversicherung.",
+        "text": "Schaffung von Arbeitsplätzen",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Die Steuereinnahmen werden durch das Finanzamt, nicht durch die Sozialversicherung geregelt.",
+        "text": "Durchführung der Steuereinnahmen"
+      }
+    ]
+  },
+  {
+    "nummer": 3,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Ein Arbeitsvertrag kann auch mündlich wirksam sein."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Ein mündlicher Arbeitsvertrag ist ebenfalls gültig.",
+        "text": "falsch"
+      }
+    ],
+    "text": "Ein Arbeitsvertrag muss in Deutschland zwingend schriftlich abgeschlossen werden.",
+    "punkte": 1,
+    "themaID": 4,
+    "version": 1
+  },
+  {
+    "antworten": [
+      {
+        "text": "Starke unterstützen Schwache",
+        "isKorrekt": true,
+        "erklaerung": "Das Solidaritätsprinzip besagt, dass die Gemeinschaft die Schwächeren stützt."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Jeder sorgt für sich selbst",
+        "erklaerung": "Dies widerspricht dem Solidaritätsprinzip."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Arbeitnehmer tragen allein die Beiträge",
+        "erklaerung": "Arbeitnehmer und Arbeitgeber teilen sich in der Regel die Beiträge."
+      }
+    ],
+    "punkte": 2,
+    "nummer": 9,
+    "text": "Was versteht man unter dem Solidaritätsprinzip in der Sozialversicherung?",
+    "version": 1,
+    "themaID": 5
+  },
+  {
+    "antworten": [
+      {
+        "text": "Rückenschmerzen",
+        "erklaerung": "Ergonomische Maßnahmen beugen Rückenschmerzen vor.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Augenbelastung",
+        "isKorrekt": true,
+        "erklaerung": "Bildschirmarbeit kann durch ergonomische Einstellungen Augenbelastung mindern."
+      },
+      {
+        "text": "Gehörverlust",
+        "isKorrekt": false,
+        "erklaerung": "Gehörverlust wird durch Schallschutz, nicht Ergonomie, verhindert."
+      }
+    ],
+    "version": 1,
+    "punkte": 2,
+    "nummer": 8,
+    "themaID": 7,
+    "text": "Welche Gefahren können durch ergonomische Maßnahmen am Arbeitsplatz reduziert werden?"
+  },
+  {
+    "themaID": 5,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Das Umlageverfahren ist die Basis der Rentenversicherung.",
+        "text": "Umlageverfahren"
+      },
+      {
+        "erklaerung": "Das Kapitaldeckungsverfahren wird bei privaten Renten angewandt.",
+        "text": "Kapitaldeckungsverfahren",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Dies ist keine Finanzierungsform der Sozialversicherung.",
+        "text": "Einnahmenüberschussrechnung",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Die Beitragsfinanzierung ist in allen Bereichen der Sozialversicherung zentral.",
+        "isKorrekt": true,
+        "text": "Beitragsfinanzierung"
+      }
+    ],
+    "version": 1,
+    "nummer": 7,
+    "punkte": 3,
+    "text": "Welche Finanzierungsmethoden kommen in der Sozialversicherung zur Anwendung?"
+  },
+  {
+    "themaID": 7,
+    "version": 1,
+    "punkte": 1,
+    "nummer": 9,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Die Pflicht zur Benennung eines Sicherheitsbeauftragten besteht bereits ab 20 Mitarbeitern."
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "In Deutschland besteht ab 20 Mitarbeitern die Pflicht für einen Sicherheitsbeauftragten.",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Ein Sicherheitsbeauftragter ist in Unternehmen nur ab einer Größe von 50 Mitarbeitern notwendig."
+  },
+  {
+    "text": "Welche Maßnahmen kann der Käufer im Fall von arglistiger Täuschung durch den Verkäufer ergreifen?",
+    "antworten": [
+      {
+        "erklaerung": "Bei arglistiger Täuschung ist die Anfechtung möglich.",
+        "isKorrekt": true,
+        "text": "Anfechtung des Vertrags"
+      },
+      {
+        "text": "Schadensersatzforderung",
+        "erklaerung": "Schadensersatz kann bei Täuschung verlangt werden.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Der Widerruf ist hier nicht relevant; der Vertrag kann angefochten werden.",
+        "text": "Verzicht auf das Widerrufsrecht",
+        "isKorrekt": false
+      }
+    ],
+    "punkte": 2,
+    "themaID": 6,
+    "version": 1,
+    "nummer": 14
+  },
+  {
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": false,
+        "erklaerung": "Kosten können durch Globalisierung steigen oder sinken."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Die Effekte der Globalisierung variieren je nach Branche und Markt.",
+        "text": "falsch"
+      }
+    ],
+    "nummer": 9,
+    "version": 1,
+    "text": "Die Globalisierung führt zwangsläufig zu einer Reduktion der Produktionskosten für alle Unternehmen.",
+    "themaID": 1,
+    "punkte": 1
+  },
+  {
+    "antworten": [
+      {
+        "text": "Bereitstellung von Feuerlöschern",
+        "isKorrekt": true,
+        "erklaerung": "Feuerlöscher gehören zum Brandschutz."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Rauchmelder sind Teil der Brandschutzmaßnahmen.",
+        "text": "Installation von Rauchmeldern"
+      },
+      {
+        "text": "Bereitstellung von Helmen",
+        "isKorrekt": false,
+        "erklaerung": "Helme gehören zur PSA, jedoch nicht zum Brandschutz."
+      }
+    ],
+    "text": "Welche Maßnahmen gehören zum Brandschutz am Arbeitsplatz?",
+    "nummer": 12,
+    "themaID": 7,
+    "version": 1,
+    "punkte": 2
+  },
+  {
+    "version": 1,
+    "punkte": 1,
+    "themaID": 7,
+    "text": "Arbeitgeber müssen jährlich eine Gefährdungsbeurteilung durchführen.",
+    "antworten": [
+      {
+        "erklaerung": "Gefährdungsbeurteilungen sind regelmäßig, jedoch nicht zwingend jährlich durchzuführen.",
+        "isKorrekt": false,
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Gefährdungsbeurteilungen müssen nur bei Bedarf aktualisiert werden.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "nummer": 3
+  },
+  {
+    "punkte": 1,
+    "themaID": 2,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Marketing ist breiter und umfasst Werbung, PR und Vertrieb."
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": true,
+        "erklaerung": "Vertrieb ist Teil des Marketingmixes, aber nicht identisch mit Marketing."
+      }
+    ],
+    "nummer": 14,
+    "version": 1,
+    "text": "Marketing und Vertrieb sind immer dasselbe."
+  },
+  {
+    "text": "Das Tragen eines Gehörschutzes ist nur in Arbeitsbereichen erforderlich, in denen der Lärmpegel über 80 dB(A) liegt.",
+    "punkte": 1,
+    "themaID": 7,
+    "version": 1,
+    "nummer": 11,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Ein Gehörschutz ist ab 85 dB(A) verpflichtend.",
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": true,
+        "erklaerung": "Ab einem Lärmpegel von 85 dB(A) ist Gehörschutz erforderlich."
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "nummer": 9,
+    "text": "Welche der folgenden sind Grundsätze ordnungsmäßiger Buchführung (GoB)?",
+    "antworten": [
+      {
+        "erklaerung": "Dies ist ein Grundsatz der ordnungsmäßigen Buchführung.",
+        "isKorrekt": true,
+        "text": "Klarheit und Übersichtlichkeit"
+      },
+      {
+        "erklaerung": "Vollständigkeit ist ebenfalls ein GoB.",
+        "text": "Vollständigkeit",
+        "isKorrekt": true
+      },
+      {
+        "text": "Liquidität",
+        "erklaerung": "Liquidität ist eine Kennzahl, kein GoB.",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Verrechnungsfähigkeit ist kein GoB.",
+        "text": "Verrechnungsfähigkeit"
+      }
+    ],
+    "themaID": 3,
+    "punkte": 2
+  },
+  {
+    "text": "Wann liegt ein Sachmangel vor?",
+    "punkte": 2,
+    "nummer": 4,
+    "themaID": 6,
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Wenn die Ware nicht die vereinbarte Beschaffenheit hat",
+        "erklaerung": "Ein Mangel besteht, wenn die Ware nicht der Vereinbarung entspricht."
+      },
+      {
+        "erklaerung": "Die Lieferung zum richtigen Zeitpunkt stellt keinen Mangel dar.",
+        "isKorrekt": false,
+        "text": "Wenn die Ware zum vereinbarten Zeitpunkt geliefert wird"
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Eine Falschlieferung stellt einen Mangel dar.",
+        "text": "Wenn die Ware eine andere als die bestellte ist"
+      }
+    ]
+  },
+  {
+    "text": "Welche der folgenden Vertragsarten zählen zum Kaufrecht?",
+    "punkte": 2,
+    "themaID": 6,
+    "version": 1,
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "Kaufvertrag",
+        "isKorrekt": true,
+        "erklaerung": "Der Kaufvertrag ist eine der Hauptarten im Kaufrecht."
+      },
+      {
+        "erklaerung": "Der Mietvertrag ist ein eigenständiger Vertragstyp.",
+        "text": "Mietvertrag",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Werkverträge fallen nicht unter das Kaufrecht.",
+        "text": "Werkvertrag"
+      },
+      {
+        "text": "Ratenlieferungsvertrag",
+        "isKorrekt": true,
+        "erklaerung": "Ratenlieferungsverträge gehören zum Kaufrecht."
+      }
+    ]
+  },
+  {
+    "nummer": 1,
+    "antworten": [
+      {
+        "erklaerung": "Die Reduzierung des Energieverbrauchs senkt die Umweltbelastung.",
+        "text": "Reduzierung des Energieverbrauchs",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "Verwendung von Einwegverpackungen",
+        "erklaerung": "Einwegverpackungen erhöhen das Müllaufkommen und belasten die Umwelt."
+      },
+      {
+        "isKorrekt": true,
+        "text": "Recycling von Abfällen",
+        "erklaerung": "Recycling hilft, Rohstoffe zu sparen und Abfall zu reduzieren."
+      }
+    ],
+    "themaID": 10,
+    "punkte": 2,
+    "version": 1,
+    "text": "Welche der folgenden Maßnahmen trägt zum betrieblichen Umweltschutz bei?"
+  },
+  {
+    "nummer": 5,
+    "version": 1,
+    "text": "Welche Funktion übernimmt das Geld in einer Volkswirtschaft?",
+    "punkte": 2,
+    "themaID": 1,
+    "antworten": [
+      {
+        "text": "Tauschmittel",
+        "isKorrekt": true,
+        "erklaerung": "Eine wesentliche Funktion von Geld."
+      },
+      {
+        "erklaerung": "Geld selbst ist keine Einnahmequelle.",
+        "isKorrekt": false,
+        "text": "Hauptquelle für Staatseinnahmen"
+      },
+      {
+        "erklaerung": "Geld dient als Wertaufbewahrungsmittel.",
+        "text": "Wertaufbewahrungsmittel",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Verzinsung ist eine Nutzungsmöglichkeit, keine Funktion des Geldes.",
+        "isKorrekt": false,
+        "text": "Verzinsungsfaktor"
+      }
+    ]
+  },
+  {
+    "themaID": 3,
+    "punkte": 1,
+    "antworten": [
+      {
+        "erklaerung": "Gewinne erhöhen, Verluste mindern das Eigenkapital.",
+        "text": "richtig",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Dies ist korrekt, Gewinne erhöhen das Eigenkapital.",
+        "isKorrekt": false,
+        "text": "falsch"
+      }
+    ],
+    "nummer": 10,
+    "text": "Das Eigenkapital erhöht sich durch Gewinne und sinkt durch Verluste.",
+    "version": 1
+  },
+  {
+    "version": 1,
+    "punkte": 1,
+    "themaID": 6,
+    "text": "Ein Verbraucher kann einen online abgeschlossenen Kaufvertrag ohne Angabe von Gründen widerrufen.",
+    "nummer": 11,
+    "antworten": [
+      {
+        "erklaerung": "Verbraucher haben bei Online-Käufen ein Widerrufsrecht.",
+        "isKorrekt": true,
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": false,
+        "erklaerung": "Der Widerruf kann ohne Gründe erfolgen."
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "themaID": 4,
+    "version": 1,
+    "text": "Welche Pflicht hat der Arbeitgeber im Rahmen der Fürsorgepflicht?",
+    "nummer": 6,
+    "antworten": [
+      {
+        "text": "Gewährleistung sicherer Arbeitsbedingungen",
+        "isKorrekt": true,
+        "erklaerung": "Der Arbeitgeber muss sichere Arbeitsbedingungen schaffen."
+      },
+      {
+        "text": "Bereitstellung von Urlaubsgeld",
+        "isKorrekt": false,
+        "erklaerung": "Urlaubsgeld ist nicht verpflichtend."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Überstunden können anfallen, sollten aber geregelt sein.",
+        "text": "Vermeidung von Überstunden"
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "text": "Welche Maßnahmen müssen Arbeitgeber zur Gewährleistung der Arbeitssicherheit ergreifen?",
+    "antworten": [
+      {
+        "erklaerung": "Gefährdungsbeurteilungen sind eine gesetzliche Pflicht.",
+        "isKorrekt": true,
+        "text": "Gefährdungsbeurteilungen durchführen"
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Schutzausrüstung muss für Beschäftigte bereitgestellt werden.",
+        "text": "Schutzausrüstung bereitstellen"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Arbeitsplätze ausschließlich in klimatisierten Räumen anbieten",
+        "erklaerung": "Klimatisierung ist nicht generell vorgeschrieben."
+      },
+      {
+        "erklaerung": "Arbeitsschutz-Unterweisungen sind verpflichtend.",
+        "text": "Unterweisungen zur Arbeitssicherheit durchführen",
+        "isKorrekt": true
+      }
+    ],
+    "nummer": 2,
+    "version": 1,
+    "themaID": 7
+  },
+  {
+    "text": "Welche Leistungen bietet die gesetzliche Rentenversicherung?",
+    "nummer": 4,
+    "punkte": 2,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Altersrente",
+        "erklaerung": "Die gesetzliche Rentenversicherung zahlt die Altersrente."
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Krankengeld wird von der Krankenversicherung gezahlt.",
+        "text": "Krankengeld"
+      },
+      {
+        "erklaerung": "Die Rentenversicherung übernimmt auch Rehabilitationsmaßnahmen.",
+        "isKorrekt": true,
+        "text": "Rehabilitationsmaßnahmen"
+      },
+      {
+        "text": "Pflegegeld",
+        "isKorrekt": false,
+        "erklaerung": "Pflegegeld wird von der Pflegeversicherung gewährt."
+      }
+    ],
+    "version": 1,
+    "themaID": 5
+  },
+  {
+    "nummer": 2,
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Die Ausbildungsvergütung ist im BBiG geregelt.",
+        "text": "Anspruch auf eine angemessene Ausbildungsvergütung"
+      },
+      {
+        "erklaerung": "Auszubildende haben Anspruch auf Freistellung für die Berufsschule.",
+        "isKorrekt": true,
+        "text": "Freistellung für den Berufsschulunterricht"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Kündigungen sind in Ausnahmefällen möglich.",
+        "text": "Unkündbarkeit während der gesamten Ausbildung"
+      },
+      {
+        "text": "Anspruch auf Prüfungsteilnahme",
+        "isKorrekt": true,
+        "erklaerung": "Das BBiG sichert das Recht auf Prüfungsteilnahme."
+      }
+    ],
+    "punkte": 3,
+    "text": "Welche Rechte hat ein Auszubildender laut Berufsbildungsgesetz (BBiG)?",
+    "themaID": 9
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Der Deckungsbeitrag zeigt den Ertrag nach Abzug der variablen Kosten.",
+        "text": "Erträge abzüglich variabler Kosten"
+      },
+      {
+        "erklaerung": "Dies beschreibt nicht den Deckungsbeitrag.",
+        "text": "Gesamtkosten abzüglich fixer Kosten",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einnahmen abzüglich aller Kosten",
+        "erklaerung": "Dies beschreibt eher den Gewinn als den Deckungsbeitrag.",
+        "isKorrekt": false
+      }
+    ],
+    "themaID": 3,
+    "punkte": 2,
+    "nummer": 15,
+    "text": "Was versteht man unter dem Begriff 'Deckungsbeitrag'?"
+  },
+  {
+    "nummer": 5,
+    "themaID": 7,
+    "text": "Das Tragen von Schutzausrüstung am Arbeitsplatz ist eine freiwillige Entscheidung der Mitarbeiter.",
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Das Tragen von Schutzausrüstung ist verpflichtend, wenn es vom Arbeitgeber angeordnet wird."
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": true,
+        "erklaerung": "Schutzausrüstung ist Pflicht, wenn erforderlich und angeordnet."
+      }
+    ],
+    "punkte": 1
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Selbstständige müssen sich freiwillig versichern.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Selbstständige sind nicht automatisch pflichtversichert.",
+        "isKorrekt": true,
+        "text": "falsch"
+      }
+    ],
+    "text": "Selbstständige sind in Deutschland automatisch in der gesetzlichen Rentenversicherung pflichtversichert.",
+    "nummer": 12,
+    "punkte": 1,
+    "themaID": 5
+  },
+  {
+    "punkte": 1,
+    "text": "Der freie Markt regelt Angebot und Nachfrage ausschließlich durch staatliche Eingriffe.",
+    "antworten": [
+      {
+        "erklaerung": "Ein freier Markt wird durch Wettbewerb geregelt, nicht durch staatliche Eingriffe.",
+        "isKorrekt": false,
+        "text": "richtig"
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Der freie Markt ist durch das Zusammenspiel von Angebot und Nachfrage charakterisiert.",
+        "text": "falsch"
+      }
+    ],
+    "nummer": 3,
+    "version": 1,
+    "themaID": 1
+  },
+  {
+    "themaID": 8,
+    "antworten": [
+      {
+        "text": "Zustimmungsverweigerung",
+        "erklaerung": "Der Betriebsrat kann in bestimmten Fällen die Zustimmung verweigern.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Der Betriebsrat ist nicht an der Unterzeichnung von Verträgen beteiligt.",
+        "isKorrekt": false,
+        "text": "Unterzeichnung von Arbeitsverträgen"
+      },
+      {
+        "text": "Beratungsrecht",
+        "erklaerung": "Der Betriebsrat muss bei personellen Maßnahmen konsultiert werden.",
+        "isKorrekt": true
+      }
+    ],
+    "version": 1,
+    "punkte": 2,
+    "text": "Welches Recht hat der Betriebsrat bei personellen Maßnahmen wie Einstellungen oder Versetzungen?",
+    "nummer": 1
+  },
+  {
+    "version": 1,
+    "nummer": 13,
+    "themaID": 6,
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Eine Garantie ist freiwillig und nicht gesetzlich vorgeschrieben.",
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Garantie ist eine freiwillige Leistung des Verkäufers.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "punkte": 1,
+    "text": "Eine Garantie ist gesetzlich verpflichtend und muss bei jedem Kaufvertrag gewährt werden."
+  },
+  {
+    "text": "Ein Vermögensgegenstand kann auch außerhalb der Abschreibung seine Wertminderung verlieren.",
+    "themaID": 3,
+    "nummer": 14,
+    "antworten": [
+      {
+        "erklaerung": "Wertverluste können auch durch Marktveränderungen entstehen.",
+        "isKorrekt": true,
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Wertminderung erfolgt auch durch äußere Einflüsse.",
+        "isKorrekt": false
+      }
+    ],
+    "punkte": 1,
+    "version": 1
+  },
+  {
+    "antworten": [
+      {
+        "text": "Aktiva",
+        "isKorrekt": true,
+        "erklaerung": "Aktiva sind Vermögenswerte und ein Teil der Bilanz."
+      },
+      {
+        "text": "Passiva",
+        "erklaerung": "Passiva umfassen Schulden und Eigenkapital und sind Teil der Bilanz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Gewinn- und Verlustrechnung",
+        "isKorrekt": false,
+        "erklaerung": "Die GuV ist ein separater Bestandteil des Jahresabschlusses."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Eigenkapital gehört zu den Passiva der Bilanz.",
+        "text": "Eigenkapital"
+      }
+    ],
+    "punkte": 3,
+    "nummer": 2,
+    "version": 1,
+    "themaID": 3,
+    "text": "Welche der folgenden Bestandteile gehören zu einer Bilanz?"
+  },
+  {
+    "text": "Das Kreislaufwirtschaftsgesetz (KrWG) zielt darauf ab, Abfälle zu vermeiden und Ressourcen zu schonen.",
+    "nummer": 3,
+    "antworten": [
+      {
+        "erklaerung": "Das KrWG hat das Ziel, Abfälle zu vermeiden und Rohstoffe zu schonen.",
+        "isKorrekt": true,
+        "text": "richtig"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Das KrWG fördert Ressourcenschonung und Abfallvermeidung.",
+        "text": "falsch"
+      }
+    ],
+    "version": 1,
+    "themaID": 10,
+    "punkte": 1
+  },
+  {
+    "themaID": 7,
+    "text": "Welche Funktion erfüllt eine Betriebsanweisung zur Arbeitssicherheit?",
+    "nummer": 14,
+    "punkte": 2,
+    "version": 1,
+    "antworten": [
+      {
+        "text": "Information über Schutzmaßnahmen und Verhaltensregeln",
+        "erklaerung": "Betriebsanweisungen informieren über Maßnahmen und Verhalten.",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Arbeitszeiten sind nicht Bestandteil der Betriebsanweisungen zur Sicherheit.",
+        "text": "Regelung der Arbeitszeiten"
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Die Nutzungsvorgaben von Geräten sind in Betriebsanweisungen enthalten.",
+        "text": "Anleitung zur Benutzung von Geräten und Anlagen"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "text": "Ein Tarifvertrag gilt immer für alle Arbeitnehmer eines Unternehmens.",
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Ein Tarifvertrag gilt nur, wenn Arbeitnehmer und Arbeitgeber tarifgebunden sind.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Nur tarifgebundene Arbeitnehmer sind betroffen.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "themaID": 4,
+    "punkte": 1
+  },
+  {
+    "version": 1,
+    "text": "Die Gewinn- und Verlustrechnung zeigt, ob ein Unternehmen liquide ist.",
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "text": "richtig",
+        "erklaerung": "Die GuV zeigt den Erfolg, nicht zwingend die Liquidität."
+      },
+      {
+        "erklaerung": "Die Liquidität wird über Kennzahlen der Bilanz ermittelt.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "punkte": 1,
+    "nummer": 6,
+    "themaID": 2
+  },
+  {
+    "themaID": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Dies sind die klassischen Produktionsfaktoren.",
+        "text": "Kapital, Boden, Arbeit"
+      },
+      {
+        "erklaerung": "Kosten sind eine Folge der Produktion, kein Faktor.",
+        "text": "Kapital, Arbeit, Kosten",
+        "isKorrekt": false
+      },
+      {
+        "text": "Boden, Ressourcen, Technologie",
+        "isKorrekt": false,
+        "erklaerung": "Technologie ist kein traditioneller Produktionsfaktor."
+      },
+      {
+        "isKorrekt": true,
+        "text": "Boden, Kapital, Arbeit, Wissen",
+        "erklaerung": "Wissen ist in moderner Betrachtung ein zusätzlicher Faktor."
+      }
+    ],
+    "nummer": 2,
+    "version": 1,
+    "punkte": 3,
+    "text": "Welche sind die Produktionsfaktoren in der Wirtschaft?"
+  },
+  {
+    "punkte": 2,
+    "version": 1,
+    "text": "Was beschreibt der Begriff 'Liquidität' in einem Unternehmen?",
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Die Fähigkeit, kurzfristige Verbindlichkeiten zu begleichen",
+        "erklaerung": "Liquidität beschreibt die Zahlungsfähigkeit eines Unternehmens."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Die Höhe der Gewinne",
+        "erklaerung": "Gewinne sind nicht gleichbedeutend mit Liquidität."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Das Eigenkapital des Unternehmens",
+        "erklaerung": "Eigenkapital beschreibt das Kapital, das nicht durch Fremdmittel finanziert wird."
+      }
+    ],
+    "themaID": 2,
+    "nummer": 5
+  },
+  {
+    "version": 1,
+    "nummer": 4,
+    "text": "Welche der folgenden Maßnahmen zählt zur persönlichen Schutzausrüstung (PSA)?",
+    "themaID": 7,
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Sicherheitshelm",
+        "isKorrekt": true,
+        "erklaerung": "Der Sicherheitshelm schützt den Kopf und ist Teil der PSA."
+      },
+      {
+        "text": "Erste-Hilfe-Kasten",
+        "erklaerung": "Der Erste-Hilfe-Kasten ist eine Notfallausrüstung, aber keine PSA.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Die Atemschutzmaske schützt die Atemwege und gehört zur PSA.",
+        "text": "Atemschutzmaske",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "nummer": 5,
+    "themaID": 8,
+    "antworten": [
+      {
+        "erklaerung": "Betriebsvereinbarungen sind bindend, stehen aber unterhalb gesetzlicher Regelungen.",
+        "text": "richtig",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": true,
+        "text": "falsch",
+        "erklaerung": "Gesetze haben Vorrang vor Betriebsvereinbarungen."
+      }
+    ],
+    "version": 1,
+    "text": "Betriebsvereinbarungen haben den gleichen Stellenwert wie gesetzliche Regelungen.",
+    "punkte": 1
+  },
+  {
+    "antworten": [
+      {
+        "erklaerung": "Für die Gründung eines Betriebsrats sind mindestens fünf Arbeitnehmer erforderlich.",
+        "text": "Mindestens fünf wahlberechtigte Arbeitnehmer im Betrieb",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Eine Mindestbetriebszugehörigkeit ist für die Gründung nicht erforderlich.",
+        "isKorrekt": false,
+        "text": "Mindestens ein Jahr Betriebszugehörigkeit der Arbeitnehmer"
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Das Einverständnis des Arbeitgebers ist nicht notwendig.",
+        "text": "Einverständnis des Arbeitgebers"
+      }
+    ],
+    "nummer": 4,
+    "themaID": 8,
+    "punkte": 2,
+    "text": "Welche Voraussetzungen müssen erfüllt sein, damit ein Betriebsrat gegründet werden kann?",
+    "version": 1
+  },
+  {
+    "themaID": 5,
+    "nummer": 6,
+    "antworten": [
+      {
+        "erklaerung": "Arbeitnehmer sind grundsätzlich in der Unfallversicherung versichert.",
+        "isKorrekt": true,
+        "text": "Arbeitnehmer"
+      },
+      {
+        "erklaerung": "Selbstständige sind nur freiwillig versichert, wenn sie es beantragen.",
+        "text": "Selbstständige",
+        "isKorrekt": false
+      },
+      {
+        "text": "Beamte",
+        "isKorrekt": false,
+        "erklaerung": "Beamte sind über das Dienstherrnprinzip abgesichert, nicht in der gesetzlichen Unfallversicherung."
+      }
+    ],
+    "punkte": 2,
+    "version": 1,
+    "text": "Wer ist in der Regel in der gesetzlichen Unfallversicherung versichert?"
+  },
+  {
+    "themaID": 2,
+    "text": "Was ist der Zweck einer Kostenstellenrechnung?",
+    "punkte": 2,
+    "nummer": 15,
+    "antworten": [
+      {
+        "erklaerung": "Kostenstellenrechnung ordnet Kosten zu und zeigt Kostentreiber auf.",
+        "isKorrekt": true,
+        "text": "Ermittlung der Kosten für bestimmte Unternehmensbereiche"
+      },
+      {
+        "text": "Analyse der Einnahmenquellen",
+        "erklaerung": "Einnahmenquellenanalyse ist Aufgabe des Controllings, nicht der Kostenstellenrechnung.",
+        "isKorrekt": false
+      }
+    ],
+    "version": 1
+  },
+  {
+    "themaID": 2,
+    "antworten": [
+      {
+        "text": "Maximierung des Gewinns",
+        "erklaerung": "Gewinnmaximierung ist das Hauptziel vieler Unternehmen.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Dies ist ein soziales Ziel, aber nicht das primäre Ziel der meisten Unternehmen.",
+        "text": "Förderung der sozialen Gerechtigkeit",
+        "isKorrekt": false
+      },
+      {
+        "text": "Steigerung der Kundenzufriedenheit",
+        "erklaerung": "Kundenzufriedenheit ist wichtig, jedoch meist ein Mittel zum Zweck der Gewinnmaximierung.",
+        "isKorrekt": false
+      }
+    ],
+    "punkte": 2,
+    "text": "Was ist das primäre Ziel eines Unternehmens?",
+    "version": 1,
+    "nummer": 1
+  },
+  {
+    "punkte": 2,
+    "version": 1,
+    "text": "Was ist das Hauptziel der Buchführung?",
+    "themaID": 3,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Dokumentation der Geschäftsvorgänge",
+        "erklaerung": "Buchführung dokumentiert alle Finanztransaktionen eines Unternehmens."
+      },
+      {
+        "text": "Reduktion der Unternehmensausgaben",
+        "erklaerung": "Die Reduktion von Ausgaben ist kein direktes Ziel der Buchführung.",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Die Buchführung dokumentiert nur, ohne Einfluss auf Gewinne zu nehmen.",
+        "text": "Steigerung der Gewinne"
+      }
+    ],
+    "nummer": 1
+  },
+  {
+    "antworten": [
+      {
+        "text": "Ermittlung der Kosten eines Produkts oder einer Dienstleistung",
+        "isKorrekt": true,
+        "erklaerung": "Die Kostenrechnung dient der Ermittlung der Kosten für Produkte oder Dienstleistungen."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Festlegung des Verkaufspreises",
+        "erklaerung": "Die Kostenrechnung unterstützt die Preisfindung, legt aber nicht den Preis fest."
+      },
+      {
+        "erklaerung": "Gewinnanalyse ist Teil der GuV, nicht der Kostenrechnung.",
+        "text": "Analyse der Gewinnspanne",
+        "isKorrekt": false
+      }
+    ],
+    "text": "Was ist das Hauptziel der Kostenrechnung?",
+    "themaID": 3,
+    "version": 1,
+    "nummer": 7,
+    "punkte": 2
+  },
+  {
+    "text": "Welche Aufgabe hat das Arbeitsschutzgesetz (ArbSchG) in Deutschland?",
+    "themaID": 7,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Schutz der Gesundheit der Beschäftigten am Arbeitsplatz",
+        "erklaerung": "Das ArbSchG schützt die Gesundheit der Beschäftigten."
+      },
+      {
+        "erklaerung": "Arbeitszeiten und Pausen werden durch das Arbeitszeitgesetz geregelt.",
+        "text": "Regelung von Arbeitszeiten und Pausen",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Tarifverträge werden durch Tarifparteien, nicht durch das ArbSchG, geregelt.",
+        "text": "Schaffung von Tarifverträgen"
+      }
+    ],
+    "punkte": 2,
+    "nummer": 1,
+    "version": 1
+  },
+  {
+    "punkte": 3,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Arbeitskosten",
+        "erklaerung": "Arbeitskosten beeinflussen die Entscheidung für einen Standort."
+      },
+      {
+        "text": "Kundenzufriedenheit",
+        "erklaerung": "Kundenzufriedenheit ist das Ziel, beeinflusst aber nicht direkt die Standortwahl.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Infrastruktur",
+        "erklaerung": "Eine gute Infrastruktur ist oft ein wichtiges Standortkriterium.",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": true,
+        "text": "Steuerlast",
+        "erklaerung": "Die Steuerbelastung beeinflusst oft die Standortwahl."
+      }
+    ],
+    "text": "Welche der folgenden Faktoren beeinflussen die Standortwahl eines Unternehmens?",
+    "version": 1,
+    "nummer": 2,
+    "themaID": 2
+  },
+  {
+    "nummer": 15,
+    "themaID": 7,
+    "version": 1,
+    "text": "Arbeitsschutzunterweisungen müssen mindestens einmal jährlich durchgeführt werden.",
+    "punkte": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "richtig",
+        "erklaerung": "Unterweisungen sind jährlich oder bei Bedarf durchzuführen."
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Unterweisungen sollten mindestens einmal jährlich stattfinden."
+      }
+    ]
+  },
+  {
+    "themaID": 2,
+    "text": "Das Ziel der Preispolitik ist es, immer den höchsten Preis am Markt durchzusetzen.",
+    "nummer": 8,
+    "punkte": 1,
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": false,
+        "erklaerung": "Der Preis orientiert sich auch an der Nachfrage und Wettbewerb."
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Die Preispolitik kann verschiedene Preisstrategien verfolgen.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "antworten": [
+      {
+        "text": "Liquiditätsplanung",
+        "erklaerung": "Das Finanzmanagement stellt die Zahlungsfähigkeit sicher.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Lagerhaltung",
+        "isKorrekt": false,
+        "erklaerung": "Lagerhaltung ist Aufgabe der Logistik, nicht des Finanzmanagements."
+      },
+      {
+        "erklaerung": "Die Budgetplanung ist Teil des Finanzmanagements.",
+        "isKorrekt": true,
+        "text": "Budgetierung"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Vertrieb",
+        "erklaerung": "Der Vertrieb gehört zum Marketing und Verkauf."
+      }
+    ],
+    "themaID": 2,
+    "version": 1,
+    "punkte": 3,
+    "nummer": 13,
+    "text": "Welche Aufgaben übernimmt das Finanzmanagement?"
+  },
+  {
+    "nummer": 4,
+    "text": "Was ist eine Bilanz?",
+    "antworten": [
+      {
+        "text": "Eine Übersicht über Einnahmen und Ausgaben",
+        "isKorrekt": false,
+        "erklaerung": "Dies beschreibt die Gewinn- und Verlustrechnung."
+      },
+      {
+        "text": "Eine Gegenüberstellung von Vermögen und Schulden",
+        "isKorrekt": true,
+        "erklaerung": "Die Bilanz zeigt das Verhältnis von Vermögen und Schulden."
+      },
+      {
+        "erklaerung": "Dies beschreibt die Gewinn- und Verlustrechnung, nicht die Bilanz.",
+        "text": "Eine Aufstellung der Unternehmensgewinne",
+        "isKorrekt": false
+      }
+    ],
+    "themaID": 2,
+    "punkte": 2,
+    "version": 1
+  },
+  {
+    "text": "Welche Elemente sind für das Zustandekommen eines Kaufvertrags erforderlich?",
+    "punkte": 2,
+    "nummer": 1,
+    "themaID": 6,
+    "version": 1,
+    "antworten": [
+      {
+        "erklaerung": "Ein Kaufvertrag kommt durch Angebot und Annahme zustande.",
+        "isKorrekt": true,
+        "text": "Angebot und Annahme"
+      },
+      {
+        "erklaerung": "Ein Kaufvertrag kann auch mündlich wirksam sein.",
+        "text": "Schriftliche Vereinbarung",
+        "isKorrekt": false
+      },
+      {
+        "text": "Übergabe der Ware",
+        "erklaerung": "Die Übergabe ist für die Erfüllung, nicht das Zustandekommen relevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "nummer": 7,
+    "themaID": 2,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Die Produktpolitik ist ein Bestandteil des Marketing-Mix.",
+        "text": "Produktpolitik"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Kapitalplanung",
+        "erklaerung": "Kapitalplanung gehört nicht zum Marketing-Mix."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Preispolitik ist ein wesentlicher Teil des Marketing-Mix.",
+        "text": "Preispolitik"
+      },
+      {
+        "erklaerung": "Die Distributionspolitik gehört ebenfalls dazu.",
+        "isKorrekt": true,
+        "text": "Distributionspolitik"
+      }
+    ],
+    "punkte": 2,
+    "text": "Welche der folgenden Begriffe sind Teil des Marketing-Mix?",
+    "version": 1
+  },
+  {
+    "nummer": 15,
+    "punkte": 2,
+    "version": 1,
+    "themaID": 5,
+    "text": "Was beschreibt das Prinzip der Beitragsäquivalenz in der Sozialversicherung?",
+    "antworten": [
+      {
+        "isKorrekt": false,
+        "erklaerung": "Beitragsäquivalenz bedeutet, dass Leistungen proportional zu den eingezahlten Beiträgen stehen.",
+        "text": "Die Höhe der Beiträge ist an das Einkommen gebunden"
+      },
+      {
+        "erklaerung": "Beitragsäquivalenz bedeutet Leistung gemäß Beitragshöhe.",
+        "isKorrekt": true,
+        "text": "Leistungen stehen im Verhältnis zu den eingezahlten Beiträgen"
+      },
+      {
+        "text": "Jeder Versicherte zahlt den gleichen Beitrag",
+        "erklaerung": "Das trifft nicht auf beitragsäquivalente Versicherungen zu.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "themaID": 9,
+    "version": 1,
+    "text": "Welche Aufgaben hat der Ausbildungsbetrieb laut BBiG?",
+    "nummer": 4,
+    "antworten": [
+      {
+        "text": "Vermittlung der beruflichen Fertigkeiten und Kenntnisse",
+        "erklaerung": "Der Betrieb ist für die praktische Ausbildung verantwortlich.",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "Bereitstellung von Unterrichtsmaterialien für die Berufsschule",
+        "erklaerung": "Die Materialien für die Berufsschule sind Aufgabe der Schule."
+      },
+      {
+        "text": "Anmeldung zur Abschlussprüfung",
+        "erklaerung": "Der Ausbildungsbetrieb meldet Auszubildende zur Prüfung an.",
+        "isKorrekt": true
+      }
+    ],
+    "punkte": 2
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Die Implementierung eines Umweltmanagementsystems ist freiwillig.",
+        "isKorrekt": false
+      },
+      {
+        "isKorrekt": true,
+        "text": "falsch",
+        "erklaerung": "Die Einführung eines Umweltmanagementsystems ist keine gesetzliche Pflicht, sondern freiwillig."
+      }
+    ],
+    "text": "Unternehmen sind gesetzlich verpflichtet, ein Umweltmanagementsystem nach ISO 14001 zu implementieren.",
+    "nummer": 5,
+    "punkte": 1,
+    "themaID": 10
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "text": "Diebstahl",
+        "erklaerung": "Diebstahl ist ein Grund für fristlose Kündigung.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Mehrfache Abmahnungen können erforderlich sein.",
+        "text": "Häufiges Zuspätkommen",
+        "isKorrekt": false
+      },
+      {
+        "text": "Gewalttätiges Verhalten",
+        "erklaerung": "Gewalt kann fristlose Kündigung rechtfertigen.",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Welche Faktoren können eine fristlose Kündigung rechtfertigen?",
+    "nummer": 11,
+    "punkte": 2,
+    "themaID": 4
+  },
+  {
+    "antworten": [
+      {
+        "text": "Untersuchung des Wirtschaftswachstums",
+        "isKorrekt": true,
+        "erklaerung": "Volkswirtschaft untersucht verschiedene wirtschaftliche Aspekte."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Analyse der Buchführung von Unternehmen",
+        "erklaerung": "Das ist ein Teil der Betriebswirtschaftslehre."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Untersuchung von Gewinnmaximierungsstrategien",
+        "erklaerung": "Gewinnmaximierung ist eine Zielsetzung, nicht die Hauptaufgabe."
+      }
+    ],
+    "themaID": 1,
+    "text": "Was ist die Hauptaufgabe der Volkswirtschaftslehre?",
+    "punkte": 2,
+    "version": 1,
+    "nummer": 1
+  },
+  {
+    "text": "In welchen Bereichen hat der Betriebsrat ein Mitbestimmungsrecht?",
+    "nummer": 2,
+    "antworten": [
+      {
+        "erklaerung": "Der Betriebsrat hat Mitbestimmungsrechte bei der Gestaltung der Arbeitszeit.",
+        "text": "Arbeitszeitgestaltung",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Bei der Festlegung des Urlaubsplans ist der Betriebsrat mitbestimmungsberechtigt.",
+        "isKorrekt": true,
+        "text": "Urlaubsregelungen"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Höhe der Gehälter",
+        "erklaerung": "Die Höhe der Gehälter fällt nicht in die Mitbestimmung des Betriebsrats."
+      },
+      {
+        "isKorrekt": true,
+        "text": "Soziale Angelegenheiten",
+        "erklaerung": "Der Betriebsrat hat Mitbestimmungsrechte in sozialen Angelegenheiten."
+      }
+    ],
+    "punkte": 3,
+    "version": 1,
+    "themaID": 8
+  },
+  {
+    "text": "Was beschreibt das magische Viereck der Wirtschaftspolitik?",
+    "themaID": 1,
+    "nummer": 7,
+    "version": 1,
+    "punkte": 2,
+    "antworten": [
+      {
+        "erklaerung": "Die vier Ziele des magischen Vierecks.",
+        "text": "Preisstabilität, hoher Beschäftigungsstand, Außenwirtschaftliches Gleichgewicht, Wirtschaftswachstum",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "Inflation, Deflation, Wirtschaftswachstum, Stagnation",
+        "erklaerung": "Dies sind wirtschaftliche Phänomene, keine Ziele des magischen Vierecks."
+      },
+      {
+        "erklaerung": "Steuergerechtigkeit und Umweltpolitik sind keine Ziele des magischen Vierecks.",
+        "isKorrekt": false,
+        "text": "Preisstabilität, Wirtschaftswachstum, Steuergerechtigkeit, Umweltpolitik"
+      }
+    ]
+  },
+  {
+    "nummer": 9,
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Es analysiert und kontrolliert die betrieblichen Prozesse.",
+        "isKorrekt": true,
+        "erklaerung": "Controlling prüft die Prozesse und zeigt Schwachstellen auf."
+      },
+      {
+        "text": "Es definiert Unternehmensziele",
+        "isKorrekt": false,
+        "erklaerung": "Die Zielsetzung ist Aufgabe der Unternehmensführung."
+      },
+      {
+        "erklaerung": "Buchführung ist eine Funktion des Rechnungswesens, nicht des Controllings.",
+        "isKorrekt": false,
+        "text": "Es übernimmt die Buchführung"
+      }
+    ],
+    "version": 1,
+    "text": "Welche Funktion übernimmt das Controlling in einem Unternehmen?",
+    "themaID": 2
+  },
+  {
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Zwei Wochen",
+        "erklaerung": "Die gesetzliche Kündigungsfrist in der Probezeit beträgt zwei Wochen.",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Ein Monat ist keine gängige Kündigungsfrist in der Probezeit.",
+        "isKorrekt": false,
+        "text": "Ein Monat"
+      },
+      {
+        "erklaerung": "Eine dreitägige Frist gibt es im deutschen Arbeitsrecht nicht.",
+        "text": "Drei Tage",
+        "isKorrekt": false
+      }
+    ],
+    "nummer": 9,
+    "text": "Welche Kündigungsfrist gilt in der Regel für Arbeitnehmer in der Probezeit?",
+    "version": 1,
+    "themaID": 4
+  },
+  {
+    "text": "Ein Aufhebungsvertrag kann das Arbeitsverhältnis auch ohne Einhaltung der Kündigungsfrist beenden.",
+    "themaID": 4,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": true,
+        "erklaerung": "Ein Aufhebungsvertrag kann frei verhandelte Fristen beinhalten."
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Der Aufhebungsvertrag kann abweichende Fristen vereinbaren.",
+        "text": "falsch"
+      }
+    ],
+    "version": 1,
+    "punkte": 1,
+    "nummer": 12
+  },
+  {
+    "text": "Ein Angebot im Kaufrecht kann bis zur Annahme widerrufen werden.",
+    "antworten": [
+      {
+        "erklaerung": "Angebote können widerrufen werden, solange sie nicht angenommen wurden.",
+        "isKorrekt": true,
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": false,
+        "erklaerung": "Widerruf ist möglich, bevor das Angebot angenommen wird."
+      }
+    ],
+    "punkte": 1,
+    "version": 1,
+    "themaID": 6,
+    "nummer": 7
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Abschreibungen erfassen die Wertminderung eines Vermögensgegenstands.",
+        "text": "Wertminderung eines Vermögensgegenstands"
+      },
+      {
+        "text": "Erhöhung des Vermögenswertes",
+        "isKorrekt": false,
+        "erklaerung": "Abschreibungen reduzieren den Wert, erhöhen ihn nicht."
+      },
+      {
+        "isKorrekt": false,
+        "text": "Einmalige Zahlung für die Instandhaltung",
+        "erklaerung": "Abschreibungen sind kein Instandhaltungsaufwand."
+      }
+    ],
+    "nummer": 11,
+    "punkte": 2,
+    "themaID": 3,
+    "text": "Was versteht man unter Abschreibungen?"
+  },
+  {
+    "version": 1,
+    "nummer": 3,
+    "text": "Ein Kaufvertrag ist nur gültig, wenn er schriftlich abgeschlossen wird.",
+    "themaID": 6,
+    "antworten": [
+      {
+        "erklaerung": "Ein Kaufvertrag kann auch mündlich gültig sein.",
+        "isKorrekt": false,
+        "text": "richtig"
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Ein Kaufvertrag bedarf keiner Schriftform, um gültig zu sein.",
+        "text": "falsch"
+      }
+    ],
+    "punkte": 1
+  },
+  {
+    "version": 1,
+    "punkte": 2,
+    "themaID": 7,
+    "antworten": [
+      {
+        "erklaerung": "Die Arbeitsstättenverordnung regelt die Gestaltung der Arbeitsräume.",
+        "isKorrekt": true,
+        "text": "Gestaltung der Arbeitsplätze und Arbeitsräume"
+      },
+      {
+        "text": "Bereitstellung von Parkplätzen",
+        "erklaerung": "Parkplätze sind nicht durch die Arbeitsstättenverordnung geregelt.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Beleuchtung ist ein Bestandteil der Arbeitsstättenverordnung.",
+        "text": "Sicherstellung ausreichender Beleuchtung",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Welche Verantwortung hat ein Arbeitgeber laut Arbeitsstättenverordnung?",
+    "nummer": 10
+  },
+  {
+    "antworten": [
+      {
+        "erklaerung": "Die duale Ausbildung kombiniert theoretische und praktische Inhalte.",
+        "text": "Vermittlung theoretischer Kenntnisse und praktischer Fertigkeiten",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Die duale Ausbildung beinhaltet auch betriebliche Praxis.",
+        "text": "Nur theoretische Bildung an einer Berufsschule"
+      },
+      {
+        "erklaerung": "Der Ausbildungsbetrieb ist ein zentraler Bestandteil der dualen Ausbildung.",
+        "isKorrekt": false,
+        "text": "Unabhängigkeit vom Ausbildungsbetrieb"
+      }
+    ],
+    "version": 1,
+    "nummer": 1,
+    "text": "Welches Ziel hat die duale Ausbildung in Deutschland?",
+    "punkte": 2,
+    "themaID": 9
+  },
+  {
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "richtig",
+        "erklaerung": "Die lineare Abschreibung erfolgt in gleichbleibenden Beträgen."
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": false,
+        "erklaerung": "Die lineare Abschreibung ist gleichmäßig."
+      }
+    ],
+    "nummer": 12,
+    "themaID": 3,
+    "punkte": 1,
+    "text": "Die lineare Abschreibung bedeutet, dass der Vermögenswert gleichmäßig über die Nutzungsdauer abgeschrieben wird."
+  },
+  {
+    "text": "Die gesetzliche Pflegeversicherung bietet Leistungen nur für pflegebedürftige Personen.",
+    "version": 1,
+    "antworten": [
+      {
+        "erklaerung": "Die Pflegeversicherung ist nur für Pflegebedürftige relevant.",
+        "text": "richtig",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": false,
+        "text": "falsch",
+        "erklaerung": "Die Pflegeversicherung zahlt nur bei Pflegebedarf."
+      }
+    ],
+    "themaID": 5,
+    "punkte": 1,
+    "nummer": 8
+  },
+  {
+    "punkte": 1,
+    "nummer": 6,
+    "text": "Steigende Nachfrage bei gleichbleibendem Angebot führt normalerweise zu fallenden Preisen.",
+    "themaID": 1,
+    "antworten": [
+      {
+        "erklaerung": "Steigende Nachfrage erhöht die Preise.",
+        "text": "richtig",
+        "isKorrekt": false
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": true,
+        "erklaerung": "Die Preise steigen bei steigender Nachfrage und gleichem Angebot."
+      }
+    ],
+    "version": 1
+  },
+  {
+    "nummer": 6,
+    "text": "Welche Verpflichtung haben Arbeitnehmer laut Arbeitsschutzgesetz?",
+    "version": 1,
+    "antworten": [
+      {
+        "erklaerung": "Arbeitnehmer sollen die Gefährdungsbeurteilung unterstützen.",
+        "text": "Mitwirkung bei der Gefährdungsbeurteilung",
+        "isKorrekt": true
+      },
+      {
+        "erklaerung": "Arbeitnehmer müssen die Sicherheitsvorgaben beachten.",
+        "isKorrekt": true,
+        "text": "Einhaltung der Arbeitssicherheitsvorgaben"
+      },
+      {
+        "text": "Gestaltung der Arbeitszeit",
+        "erklaerung": "Die Arbeitszeitgestaltung ist Aufgabe des Arbeitgebers.",
+        "isKorrekt": false
+      }
+    ],
+    "themaID": 7,
+    "punkte": 2
+  },
+  {
+    "punkte": 1,
+    "text": "Ausbilder benötigen eine spezielle Eignung, um Auszubildende betreuen zu dürfen.",
+    "nummer": 3,
+    "themaID": 9,
+    "version": 1,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Ausbilder müssen eine Ausbildereignungsprüfung absolvieren.",
+        "text": "richtig"
+      },
+      {
+        "text": "falsch",
+        "isKorrekt": false,
+        "erklaerung": "Ausbilder benötigen eine spezielle Qualifikation."
+      }
+    ]
+  },
+  {
+    "antworten": [
+      {
+        "erklaerung": "Die ordentliche Kündigung ist eine Kündigungsart.",
+        "text": "Ordentliche Kündigung",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Fristlose Kündigung ist eine weitere Art der Kündigung.",
+        "text": "Fristlose Kündigung"
+      },
+      {
+        "text": "Tarifkündigung",
+        "erklaerung": "Es gibt keine Tarifkündigung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Außerordentliche Kündigung",
+        "isKorrekt": true,
+        "erklaerung": "Eine außerordentliche Kündigung ist eine Art der Kündigung."
+      }
+    ],
+    "version": 1,
+    "nummer": 4,
+    "punkte": 2,
+    "text": "Welche Kündigungsarten gibt es im Arbeitsrecht?",
+    "themaID": 4
+  },
+  {
+    "nummer": 3,
+    "punkte": 1,
+    "themaID": 3,
+    "antworten": [
+      {
+        "erklaerung": "Die Aktivseite zeigt die Verwendung des Kapitals, nicht die Herkunft.",
+        "text": "richtig",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Die Passivseite zeigt die Herkunft des Kapitals.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "text": "Die Aktivseite der Bilanz zeigt die Herkunft des Kapitals eines Unternehmens.",
+    "version": 1
+  },
+  {
+    "version": 1,
+    "punkte": 3,
+    "nummer": 2,
+    "text": "Welche Versicherungsarten gehören zur gesetzlichen Sozialversicherung in Deutschland?",
+    "antworten": [
+      {
+        "erklaerung": "Krankenversicherung ist Teil der gesetzlichen Sozialversicherung.",
+        "text": "Krankenversicherung",
+        "isKorrekt": true
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Unfallversicherung ist ebenfalls eine gesetzliche Sozialversicherung.",
+        "text": "Unfallversicherung"
+      },
+      {
+        "isKorrekt": false,
+        "text": "Lebensversicherung",
+        "erklaerung": "Lebensversicherung ist eine private, keine gesetzliche Versicherung."
+      },
+      {
+        "text": "Rentenversicherung",
+        "isKorrekt": true,
+        "erklaerung": "Rentenversicherung ist Teil der gesetzlichen Sozialversicherung."
+      }
+    ],
+    "themaID": 5
+  },
+  {
+    "themaID": 5,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "text": "Mindestens 12 Monate versicherungspflichtige Beschäftigung",
+        "erklaerung": "Eine Voraussetzung für den Anspruch auf ALG I."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Eine Anmeldung ist erforderlich.",
+        "text": "Anmeldung als arbeitssuchend"
+      },
+      {
+        "text": "Volljährigkeit",
+        "erklaerung": "ALG I ist nicht an das Alter gekoppelt, sondern an die Versicherungspflicht.",
+        "isKorrekt": false
+      }
+    ],
+    "version": 1,
+    "nummer": 13,
+    "punkte": 3,
+    "text": "Welche Voraussetzungen gelten für den Bezug von Arbeitslosengeld I?"
+  },
+  {
+    "themaID": 3,
+    "version": 1,
+    "antworten": [
+      {
+        "text": "richtig",
+        "isKorrekt": false,
+        "erklaerung": "Cashflow zeigt die Zahlungsfähigkeit, nicht zwingend die Rentabilität."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Der Cashflow misst Liquidität und nicht unbedingt die Rentabilität.",
+        "text": "falsch"
+      }
+    ],
+    "punkte": 1,
+    "text": "Der Cashflow ist immer ein Indikator für die Rentabilität eines Unternehmens.",
+    "nummer": 6
+  },
+  {
+    "text": "Was bedeutet Gewährleistung im Kaufrecht?",
+    "nummer": 12,
+    "themaID": 6,
+    "version": 1,
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Der Verkäufer haftet für Mängel der Ware",
+        "isKorrekt": true,
+        "erklaerung": "Die Gewährleistung umfasst die Mängelhaftung."
+      },
+      {
+        "text": "Der Käufer ist verpflichtet, die Ware zu überprüfen",
+        "isKorrekt": false,
+        "erklaerung": "Prüfungspflicht besteht nur im kaufmännischen Verkehr."
+      },
+      {
+        "isKorrekt": true,
+        "erklaerung": "Erstattung ist eine mögliche Maßnahme im Rahmen der Gewährleistung.",
+        "text": "Der Käufer kann bei Mängeln eine Erstattung verlangen"
+      }
+    ]
+  },
+  {
+    "nummer": 8,
+    "themaID": 1,
+    "antworten": [
+      {
+        "text": "Monopol",
+        "erklaerung": "Ein Anbieter dominiert den Markt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Oligopol",
+        "isKorrekt": true,
+        "erklaerung": "Wenige Anbieter teilen den Markt."
+      },
+      {
+        "isKorrekt": false,
+        "erklaerung": "Eine Marktart, jedoch keine Marktform.",
+        "text": "Devisenmarkt"
+      },
+      {
+        "erklaerung": "Viele Anbieter und Nachfrager bestimmen den Markt.",
+        "isKorrekt": true,
+        "text": "Polypol"
+      }
+    ],
+    "punkte": 3,
+    "text": "Welche Marktformen existieren in einer freien Marktwirtschaft?",
+    "version": 1
+  },
+  {
+    "punkte": 3,
+    "nummer": 2,
+    "version": 1,
+    "themaID": 6,
+    "antworten": [
+      {
+        "isKorrekt": true,
+        "erklaerung": "Der Käufer kann Nachbesserung oder Ersatzlieferung fordern.",
+        "text": "Nacherfüllung verlangen"
+      },
+      {
+        "erklaerung": "Der Käufer kann bei Mängeln den Preis mindern.",
+        "text": "Kaufpreis mindern",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sofortige Auflösung des Vertrags",
+        "erklaerung": "Dies ist oft nur nach erfolgloser Nacherfüllung möglich.",
+        "isKorrekt": false
+      },
+      {
+        "erklaerung": "Schadensersatz kann bei Mängeln verlangt werden.",
+        "isKorrekt": true,
+        "text": "Schadensersatz verlangen"
+      }
+    ],
+    "text": "Welche Rechte hat ein Käufer bei einer mangelhaften Lieferung?"
+  },
+  {
+    "nummer": 5,
+    "punkte": 1,
+    "text": "Kaufverträge sind nach deutschem Recht immer bindend.",
+    "themaID": 6,
+    "antworten": [
+      {
+        "erklaerung": "Es gibt gesetzliche Widerrufsrechte, z.B. im Fernabsatz.",
+        "isKorrekt": false,
+        "text": "richtig"
+      },
+      {
+        "erklaerung": "Bestimmte Kaufverträge können widerrufen werden.",
+        "text": "falsch",
+        "isKorrekt": true
+      }
+    ],
+    "version": 1
+  }
+]
