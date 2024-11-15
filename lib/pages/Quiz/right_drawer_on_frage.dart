@@ -237,7 +237,7 @@ class _AddQuestionDialogState extends State<AddQuestionDialog> {
               },
             ),
           ),
-          child: const Text('Mitwirken und Spenden'),
+          child: const Text('Mitwirken'),
         ),
       ],
     );
