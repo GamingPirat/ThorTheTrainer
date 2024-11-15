@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 622,
+    "text": "Warum ist das Einholen von Feedback nach einer Problemlösung wichtig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Um den Service kontinuierlich zu verbessern",
+        "erklaerung": "Feedback gibt Hinweise, wie der Service optimiert werden kann.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil es dem Kunden zeigt, dass seine Meinung wertgeschätzt wird",
+        "erklaerung": "Kundenbindung wird gestärkt, wenn deren Meinung zählt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit der Kunde zukünftige Serviceprozesse besser versteht",
+        "erklaerung": "Das Hauptziel ist die Verbesserung des Services, nicht die Aufklärung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 622,
+    "text": "Welche Methoden eignen sich, um qualitativ hochwertiges Feedback vom Kunden zu erhalten?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Direkte Befragung durch Servicemitarbeiter nach Abschluss der Lösung",
+        "erklaerung": "Direkte Befragung ermöglicht detailliertes, persönliches Feedback.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Online-Bewertungen ohne weitere Kontaktaufnahme",
+        "erklaerung": "Online-Bewertungen sind oft unspezifisch und nicht immer hilfreich.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Anonyme Umfragen, die gezielte Fragen zur Serviceerfahrung stellen",
+        "erklaerung": "Anonyme Umfragen fördern ehrliches Feedback.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 622,
+    "text": "Feedback nach einer Serviceleistung einzuholen ist ein wichtiger Schritt zur Qualitätsverbesserung.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Feedback ermöglicht wertvolle Einblicke zur Optimierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Ohne Feedback wird die Qualitätssicherung erschwert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 622,
+    "text": "Welche Fragen sollten in einem Feedbackformular enthalten sein, um die Servicequalität zu bewerten?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Fragen zur Zufriedenheit mit der erhaltenen Lösung",
+        "erklaerung": "Die Zufriedenheit zeigt, wie gut die Lösung den Erwartungen entsprach.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Fragen zur Bereitschaft des Kunden, für den Service mehr zu bezahlen",
+        "erklaerung": "Diese Frage ist irrelevant für die Qualitätsbewertung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Fragen zur Kommunikation und Verständlichkeit der Erklärungen",
+        "erklaerung": "Feedback zur Kommunikation hilft, den Service zu verbessern.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 622,
+    "text": "Welche Vorteile bietet regelmäßiges Feedback für den Serviceprozess?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Erkenntnisse zur kontinuierlichen Verbesserung der Servicequalität",
+        "erklaerung": "Feedback zeigt Verbesserungsmöglichkeiten im Service auf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine genaue Kontrolle, ob Kundenanfragen zeitnah bearbeitet werden",
+        "erklaerung": "Feedback zeigt oft auch, ob der Bearbeitungszeitraum angemessen war.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Rückgang des Personalaufwands bei der Erfassung zukünftiger Anfragen",
+        "erklaerung": "Feedback reduziert nicht direkt den Aufwand bei Anfragen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

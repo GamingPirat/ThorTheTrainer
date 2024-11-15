@@ -1,9 +1,13 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 
 class RightDrawer extends StatefulWidget {
-  final bool isVisible; // Der boolean-Wert, der die Animation steuert
+  final bool isVisible;
+  final DB_Frage db_frage;
+  bool frageGesendet = false;
 
-  const RightDrawer({super.key, required this.isVisible});
+  RightDrawer({super.key, required this.isVisible, required this.db_frage});
 
   @override
   _RightDrawerState createState() => _RightDrawerState();
@@ -12,7 +16,6 @@ class RightDrawer extends StatefulWidget {
 class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _offsetAnimation;
-  bool _isDialogVisible = false;
 
   @override
   void initState() {
@@ -22,9 +25,9 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
       vsync: this,
     );
     _offsetAnimation = Tween<Offset>(
-      begin: const Offset(1.0, 0.0), // Start außerhalb des Bildschirms (rechts)
-      end: Offset.zero, // Ende auf der Bildschirmfläche
-    ).animate(_controller);
+      begin: const Offset(1.0, 0.0),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
 
     if (widget.isVisible) {
       _controller.forward();
@@ -38,11 +41,7 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
     super.didUpdateWidget(oldWidget);
 
     if (oldWidget.isVisible != widget.isVisible) {
-      if (widget.isVisible) {
-        _controller.forward();
-      } else {
-        _controller.reverse();
-      }
+      widget.isVisible ? _controller.forward() : _controller.reverse();
     }
   }
 
@@ -52,23 +51,38 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
     super.dispose();
   }
 
-  void _showDialog() {
-    setState(() {
-      _isDialogVisible = true;
-    });
+  Future<void> _addQuestionToFirestore(String questionText) async {
+    CollectionReference neueFragenRef = FirebaseFirestore.instance.collection('Neue Fragen');
+
+    try {
+      await neueFragenRef.add({
+        ...widget.db_frage.toJson(),
+        'neue_frage': questionText,
+      });
+      print("Frage und Nachricht erfolgreich hinzugefügt!");
+    } catch (e) {
+      print("Fehler beim Hinzufügen der Frage: $e");
+    }
   }
 
-  void _hideDialog() {
-    setState(() {
-      _isDialogVisible = false;
-    });
+  void _showAddQuestionDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AddQuestionDialog(
+          onSend: (questionText) async {
+            await _addQuestionToFirestore(questionText);
+            setState(() => widget.frageGesendet = true);
+            Navigator.of(context).pop(); // Dialog schließen
+          },
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    // Hier wird die Farbe dynamisch aus dem aktuellen Theme abgerufen
     Color iconColor = Theme.of(context).iconTheme.color!.withOpacity(0.5);
-
     return Stack(
       children: [
         Positioned(
@@ -80,22 +94,17 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
             child: Column(
               children: [
                 const Spacer(flex: 3),
-                // IconButton(
-                //   icon: Icon(Icons.thumb_down, size: 48, color: iconColor),
-                //   onPressed: _showDialog,
-                // ),
-                // const Spacer(flex: 1),
                 InkWell(
-                  onTap: _showDialog,
-                  child: Column(
+                  onTap: _showAddQuestionDialog,
+                  child: widget.frageGesendet
+                      ? Icon(Icons.thumb_up, size: 48, color: Colors.greenAccent)
+                      : Column(
                     children: [
                       Icon(Icons.lightbulb, size: 48, color: iconColor),
                       Text("Dir"),
                       Text("ist eine"),
                       Text("Frage"),
                       Text("eingefallen?"),
-                      Text("Spende"),
-                      Text("ne Frage."),
                       Text("Erweitere"),
                       Text("den Pool."),
                     ],
@@ -103,7 +112,7 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
                 ),
                 const Spacer(flex: 1),
                 InkWell(
-                  onTap: _showDialog,
+                  onTap: _showAddQuestionDialog,
                   child: Column(
                     children: [
                       Icon(Icons.note_add, size: 48, color: iconColor),
@@ -117,54 +126,119 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
             ),
           ),
         ),
-        // Das überlagernde Dialog-Fenster
-        if (_isDialogVisible)
-          GestureDetector(
-            onTap: _hideDialog, // Schließt das Fenster bei Tap außerhalb
-            child: Container(
-              color: Colors.black.withOpacity(0.5), // Dimm-Effekt
-              child: Center(
-                child: GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    width: 300,
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).dialogBackgroundColor, // Dynamische Hintergrundfarbe
-                      borderRadius: BorderRadius.circular(10),
+      ],
+    );
+  }
+}
+
+class AddQuestionDialog extends StatefulWidget {
+  final Future<void> Function(String) onSend;
+
+  const AddQuestionDialog({Key? key, required this.onSend}) : super(key: key);
+
+  @override
+  _AddQuestionDialogState createState() => _AddQuestionDialogState();
+}
+
+class _AddQuestionDialogState extends State<AddQuestionDialog> {
+  final TextEditingController _textController = TextEditingController();
+  bool _hasText = false;
+  bool _questionSent = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _textController.addListener(_onTextChanged);
+  }
+
+  @override
+  void dispose() {
+    _textController.removeListener(_onTextChanged);
+    _textController.dispose();
+    super.dispose();
+  }
+
+  void _onTextChanged() {
+    setState(() {
+      _hasText = _textController.text.trim().isNotEmpty;
+    });
+  }
+
+  void _sendQuestion() async {
+    await widget.onSend(_textController.text);
+    setState(() {
+      _textController.clear();
+      _hasText = false;
+      _questionSent = true;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Frage hinzufügen'),
+      content: SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.of(context).size.height * 0.4,
+          ),
+          child: IntrinsicHeight(
+            child: Column(
+              children: [
+                Expanded(
+                  child: _questionSent
+                      ? Icon(Icons.thumb_up, size: 48, color: Color(0xFF00FF00))
+                      : TextField(
+                    controller: _textController,
+                    decoration: const InputDecoration(
+                      hintText: 'Welche Frage ist dir eingefallen?',
+                      border: OutlineInputBorder(),
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text(
-                          'Feature wird noch entwickelt',
-                          style: TextStyle(fontSize: 18),
-                        ),
-                        const SizedBox(height: 20),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            TextButton(
-                              onPressed: _hideDialog,
-                              child: const Text('Abbrechen'),
-                            ),
-                            const SizedBox(width: 10),
-                            TextButton(
-                              onPressed: () {
-                                // Logik für den Bestätigungsbutton
-                                _hideDialog();
-                              },
-                              child: const Text('Akzeptieren'),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
+                    maxLines: null, // Erlaubt das Wachsen des Textfeldes
+                    expands: true, // Lässt das Textfeld vertikal expandieren
+                    keyboardType: TextInputType.multiline,
                   ),
                 ),
-              ),
+                if (_questionSent)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: Text("Frage erfolgreich gesendet!"),
+                  ),
+              ],
             ),
           ),
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pop(); // Dialog schließen
+            _textController.clear();
+          },
+          child: const Text('Abbrechen'),
+        ),
+        TextButton(
+          onPressed: _hasText ? _sendQuestion : null,
+          style: ButtonStyle(
+            foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                  (Set<MaterialState> states) {
+                if (states.contains(MaterialState.disabled)) {
+                  return Colors.grey; // Farbe im deaktivierten Zustand
+                }
+                return Colors.blue; // Farbe im aktiven Zustand
+              },
+            ),
+            backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                  (Set<MaterialState> states) {
+                if (states.contains(MaterialState.disabled)) {
+                  return Colors.grey.withOpacity(0.2); // Hintergrund im deaktivierten Zustand
+                }
+                return Colors.blue.withOpacity(0.1); // Hintergrund im aktiven Zustand
+              },
+            ),
+          ),
+          child: const Text('Mitwirken und Spenden'),
+        ),
       ],
     );
   }

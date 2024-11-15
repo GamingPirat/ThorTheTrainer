@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 600,
+    "text": "Warum ist es wichtig, die Anfrage eines Kunden vollständig zu erfassen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Um Zeit zu sparen und eine schnelle Lösung zu bieten",
+        "erklaerung": "Eine vollständige Erfassung ist oft entscheidend, um Missverständnisse zu vermeiden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Damit das Anliegen des Kunden präzise bearbeitet werden kann",
+        "erklaerung": "Eine klare Erfassung stellt sicher, dass das Anliegen verstanden wird.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit alle Kundenanfragen gleich behandelt werden",
+        "erklaerung": "Die Bearbeitung orientiert sich am Inhalt, nicht an Gleichheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 600,
+    "text": "Welche Rolle spielt das aktive Zuhören beim Erfassen einer Kundenanfrage?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Es hilft, alle Details zu hören, die der Kunde mitteilt",
+        "erklaerung": "Aktives Zuhören umfasst auch das Verständnis von Gefühlen und Anliegen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es ermöglicht ein tieferes Verständnis der Kundenbedürfnisse",
+        "erklaerung": "Aktives Zuhören sorgt für präzises Erfassen der Anfrage.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es zeigt dem Kunden, dass man eine schnelle Lösung bevorzugt",
+        "erklaerung": "Zuhören ist auf Verständnis, nicht auf Schnelligkeit ausgelegt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 600,
+    "text": "Welche Information ist bei der Erfassung einer Anfrage irrelevant?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die genaue Beschreibung des Problems",
+        "erklaerung": "Eine genaue Beschreibung ist notwendig, um das Anliegen zu verstehen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Informationen zum Kundenfeedback",
+        "erklaerung": "Das Feedback ist für spätere Schritte relevant, nicht für die Erfassung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die zeitliche Dringlichkeit des Problems",
+        "erklaerung": "Dringlichkeit hilft, die Bearbeitung zu priorisieren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 600,
+    "text": "Warum ist Empathie bei der Aufnahme einer Anfrage wichtig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Weil sie hilft, das Problem aus Kundensicht besser zu verstehen",
+        "erklaerung": "Empathie sorgt für ein besseres Verständnis der Kundenanliegen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie die technische Lösung des Problems beschleunigt",
+        "erklaerung": "Empathie unterstützt das Verständnis, beschleunigt aber nicht die Lösung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil es zeigt, dass der Kundenwunsch ignoriert wird",
+        "erklaerung": "Empathie ist auf das Verstehen und nicht auf Ignorieren ausgelegt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 600,
+    "text": "Wie kann ein Service-Mitarbeiter sicherstellen, dass er die Kundenanfrage korrekt erfasst hat?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Indem er die Anfrage wortwörtlich notiert",
+        "erklaerung": "Eine wortwörtliche Notierung reicht oft nicht aus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Indem er die Anfrage zusammenfasst und Rückfragen stellt",
+        "erklaerung": "Eine Zusammenfassung stellt sicher, dass keine Details übersehen wurden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Indem er sofort eine Lösung präsentiert",
+        "erklaerung": "Schnelle Lösungen ohne Rückfragen sind oft ungenau.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 600,
+    "text": "Was sollte vermieden werden, um die Anfrage eines Kunden korrekt zu erfassen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Direktes Nachfragen bei Unklarheiten",
+        "erklaerung": "Nachfragen ist wichtig für ein korrektes Erfassen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Schnelles Antworten ohne die Anfrage zu verstehen",
+        "erklaerung": "Ein schnelles, oberflächliches Verständnis führt oft zu Fehlern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Warten, bis der Kunde von sich aus weitere Details liefert",
+        "erklaerung": "Es ist ratsam, aktiv Rückfragen zu stellen.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 600,
+    "text": "Warum ist es nicht empfehlenswert, die Lösung direkt bei der Erfassung der Anfrage anzubieten?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Weil die genaue Analyse der Anfrage häufig mehr Zeit benötigt",
+        "erklaerung": "Eine schnelle Antwort kann wichtige Details übersehen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil der Kunde erwartet, dass er für die Analyse Zeit geben muss",
+        "erklaerung": "Dies trifft nur teilweise zu.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil es professioneller ist, eine Lösung erst später zu präsentieren",
+        "erklaerung": "Die Professionalität hängt vom Fall und nicht vom Timing ab.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 600,
+    "text": "Wie sollte ein Mitarbeiter auf unscharfe oder ungenaue Formulierungen reagieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Mit direkter Korrektur des Kunden",
+        "erklaerung": "Eine zu direkte Korrektur kann unhöflich wirken.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mit gezielten Nachfragen zur Klärung",
+        "erklaerung": "Gezielte Nachfragen helfen, das Anliegen besser zu verstehen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mit einem Vorschlag für die Formulierung",
+        "erklaerung": "Der Fokus sollte auf Verstehen, nicht auf Neuformulierung liegen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 600,
+    "text": "Was kann zu Missverständnissen bei der Erfassung einer Kundenanfrage führen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Ein vollständiges Nachfragen zu jeder Unsicherheit",
+        "erklaerung": "Nachfragen minimiert Missverständnisse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Zuhören ohne Verständnisfragen",
+        "erklaerung": "Verständnisfragen sind entscheidend für eine genaue Erfassung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Nutzen von Notizen und Zusammenfassungen",
+        "erklaerung": "Notizen helfen, Details festzuhalten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 600,
+    "text": "Welches Verhalten kann einen Kunden beim Erfassen seiner Anfrage irritieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die Nachfrage nach weiteren Details zur Klärung",
+        "erklaerung": "Details verbessern oft das Verständnis, wirken aber nicht irritierend.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Unterbrechen des Kunden, um schneller zu einer Lösung zu kommen",
+        "erklaerung": "Unterbrechungen können den Kunden verärgern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das freundliche Wiederholen der Kundenanfrage zur Bestätigung",
+        "erklaerung": "Dies zeigt Interesse und fördert Klarheit.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

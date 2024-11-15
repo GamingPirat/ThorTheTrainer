@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 611,
+    "text": "Welche Faktoren sollten bei der Planung von Maßnahmen berücksichtigt werden?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die Dringlichkeit des Problems",
+        "erklaerung": "Dringlichkeit hilft, Prioritäten zu setzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Kosten und der Ressourcenaufwand",
+        "erklaerung": "Kosten und Ressourcen beeinflussen die Durchführbarkeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die persönliche Vorliebe des Mitarbeiters",
+        "erklaerung": "Vorlieben sind nicht relevant für die Maßnahmeplanung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 611,
+    "text": "Warum ist eine klare Maßnahmenplanung notwendig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass alle relevanten Schritte zur Problemlösung abgedeckt sind",
+        "erklaerung": "Eine Planung minimiert das Risiko von Lücken.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit der Kunde genau weiß, welche Maßnahmen ergriffen werden",
+        "erklaerung": "Kundenkommunikation ist wichtig, aber die Planung dient primär der Umsetzung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Zeit und Ressourcen effizienter einzusetzen",
+        "erklaerung": "Effiziente Planung reduziert unnötigen Aufwand.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 611,
+    "text": "Eine sorgfältige Planung geeigneter Maßnahmen erhöht die Erfolgswahrscheinlichkeit der Problemlösung.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Sorgfältige Planung legt den Grundstein für Erfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Ohne Planung besteht ein höheres Risiko für Misserfolge.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 611,
+    "text": "Welche Aspekte sind bei der Umsetzung geplanter Maßnahmen wichtig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die kontinuierliche Überwachung des Fortschritts",
+        "erklaerung": "Überwachung sichert die Zielerreichung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine sofortige Anpassung der Maßnahme bei geringsten Abweichungen",
+        "erklaerung": "Nicht jede Abweichung erfordert sofortige Anpassungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Regelmäßige Feedback-Schleifen zur Erfolgskontrolle",
+        "erklaerung": "Feedback hilft, die Effektivität zu bewerten.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 611,
+    "text": "Welche Kriterien unterstützen die Auswahl geeigneter Maßnahmen zur Problemlösung?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Kosten-Nutzen-Verhältnis der Maßnahmen",
+        "erklaerung": "Ein positives Kosten-Nutzen-Verhältnis zeigt eine praktikable Maßnahme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verfügbarkeit der benötigten Ressourcen",
+        "erklaerung": "Ohne Ressourcen kann die Maßnahme nicht umgesetzt werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vertrautheit des Teams mit der Maßnahme",
+        "erklaerung": "Vertrautheit kann nützlich sein, ist aber kein entscheidender Faktor.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -70,12 +70,5 @@ class DB_Frage {
   @override
   String toString() {
     return 'Frage $nummer: $text\nAntworten:\n${antworten.map((a) => a.toString()).join('\n')}';
-  }}
-
-
-
-
-
-
-
-
+  }
+}

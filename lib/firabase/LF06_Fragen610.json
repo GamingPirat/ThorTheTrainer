@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 610,
+    "text": "Welche Schritte gehören zur effektiven Durchführung einer Fehlerdiagnose?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Das Sammeln relevanter Systeminformationen",
+        "erklaerung": "Systeminformationen helfen, das Problem einzugrenzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die direkte Umsetzung einer Lösung ohne Analyse",
+        "erklaerung": "Eine Analyse ist notwendig, bevor eine Lösung umgesetzt wird.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Vergleichen der aktuellen Symptome mit bekannten Fehlern",
+        "erklaerung": "Der Vergleich mit bekannten Fällen beschleunigt die Diagnose.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 610,
+    "text": "Warum ist die Dokumentation von Fehlerdiagnosen hilfreich?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Um zukünftige, ähnliche Probleme schneller zu lösen",
+        "erklaerung": "Dokumentationen helfen bei der Wiedererkennung von Fehlern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie verhindert, dass die gleichen Schritte wiederholt werden",
+        "erklaerung": "Eine gute Dokumentation vermeidet doppelte Arbeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um den Kunden sofort mit einer Lösung zu beeindrucken",
+        "erklaerung": "Die Dokumentation ist primär für interne Zwecke gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 610,
+    "text": "Eine strukturierte Fehlerdiagnose minimiert die Zeit zur Problemlösung.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Eine klare Diagnose verkürzt den Weg zur Lösung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Ohne Struktur kann die Diagnose unnötig lang dauern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 610,
+    "text": "Welche Faktoren können die Fehlerdiagnose erschweren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Ein Mangel an detaillierten Informationen",
+        "erklaerung": "Ohne Details wird die Diagnose erschwert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Vorhandensein mehrfacher, ähnlicher Fehlermeldungen",
+        "erklaerung": "Mehrere Fehlermeldungen können die Diagnose verwirren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine sehr spezifische und klare Fehlermeldung",
+        "erklaerung": "Klare Fehlermeldungen erleichtern die Diagnose.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 610,
+    "text": "Welche Techniken sind hilfreich für eine effiziente Fehlerdiagnose?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Das Ausführen von Diagnosetools zur Protokollanalyse",
+        "erklaerung": "Diagnosetools geben wertvolle Einblicke in Systemfehler.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Überprüfung bekannter Problemmuster und -lösungen",
+        "erklaerung": "Bekannte Muster helfen, das Problem schneller zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine direkte Behebung des Problems ohne zusätzliche Analyse",
+        "erklaerung": "Eine Diagnose sollte vor der Lösung erfolgen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

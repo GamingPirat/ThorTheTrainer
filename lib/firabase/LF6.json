@@ -1,0 +1,69 @@
+{
+  "name": "LF 6 Serviceanfragen bearbeiten",
+  "id": 6,
+  "kompetenzbereiche": [
+    {
+      "id": 60,
+      "name": "Serviceanfragen entgegennehmen und analysieren",
+      "inhalte": [
+        {
+          "id": 600,
+          "name": "Kundenanfragen erfassen",
+          "tags": [60]
+        },
+        {
+          "id": 601,
+          "name": "Probleme identifizieren",
+          "tags": [60]
+        },
+        {
+          "id": 602,
+          "name": "Prioritäten festlegen",
+          "tags": [60]
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Lösungen entwickeln und umsetzen",
+      "inhalte": [
+        {
+          "id": 610,
+          "name": "Fehlerdiagnose durchführen",
+          "tags": [61]
+        },
+        {
+          "id": 611,
+          "name": "Geeignete Maßnahmen planen",
+          "tags": [61]
+        },
+        {
+          "id": 612,
+          "name": "Lösungen implementieren",
+          "tags": [61]
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Ergebnisse dokumentieren und kommunizieren",
+      "inhalte": [
+        {
+          "id": 620,
+          "name": "Lösungswege dokumentieren",
+          "tags": [62]
+        },
+        {
+          "id": 621,
+          "name": "Kunden über Ergebnisse informieren",
+          "tags": [62]
+        },
+        {
+          "id": 622,
+          "name": "Feedback einholen",
+          "tags": [62]
+        }
+      ]
+    }
+  ]
+}

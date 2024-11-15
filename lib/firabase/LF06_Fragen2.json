@@ -1,0 +1,219 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 601,
+    "text": "Welche Schritte sind wichtig, um das Problem eines Kunden korrekt zu identifizieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Aktives Zuhören und detailliertes Nachfragen",
+        "erklaerung": "Diese Techniken helfen, die Bedürfnisse und Probleme des Kunden klar zu verstehen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Alle Informationen ohne Bewertung zu sammeln",
+        "erklaerung": "Eine unvoreingenommene Sammlung ist hilfreich, um ein vollständiges Bild zu erhalten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Direkt eine Lösung anzubieten",
+        "erklaerung": "Eine zu frühe Lösungsfindung kann zu Missverständnissen führen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Problem anhand früherer Fälle automatisch zu kategorisieren",
+        "erklaerung": "Jeder Fall sollte individuell analysiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 601,
+    "text": "Welche Quellen sind nützlich, um die Ursachen eines Problems einzugrenzen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Frühere Support-Tickets zu ähnlichen Problemen",
+        "erklaerung": "Ähnliche Probleme können Hinweise auf die Ursache geben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Dokumentationen und Handbücher des verwendeten Systems",
+        "erklaerung": "Dokumentationen bieten oft Lösungen oder Erklärungen für bestimmte Probleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vermutungen des Servicemitarbeiters",
+        "erklaerung": "Vermutungen allein sind oft ungenau und riskant.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Feedback von Kunden mit ähnlichen Erfahrungen",
+        "erklaerung": "Kundenfeedback kann nützliche Hinweise geben.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 601,
+    "text": "Welche Faktoren können das Identifizieren eines Problems erschweren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Unklare oder ungenaue Problembeschreibungen durch den Kunden",
+        "erklaerung": "Missverständnisse können das Problem verdecken.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Komplexität des technischen Systems",
+        "erklaerung": "Komplexe Systeme erfordern oft detaillierte Analysen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unzureichende technische Kenntnisse des Servicemitarbeiters",
+        "erklaerung": "Technische Kenntnisse sind für eine genaue Analyse unerlässlich.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der Einsatz standardisierter Analyseverfahren",
+        "erklaerung": "Standardverfahren helfen oft, Probleme schneller zu erkennen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 601,
+    "text": "Ein gut strukturiertes Protokoll hilft, Probleme effektiv zu identifizieren.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Ein strukturiertes Protokoll kann die Problemidentifikation erheblich erleichtern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Das Fehlen eines Protokolls kann zur Verwirrung führen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 601,
+    "text": "Welche Informationen sind entscheidend, um technische Probleme präzise zu identifizieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Fehlermeldungen oder Systemprotokolle",
+        "erklaerung": "Diese bieten oft konkrete Hinweise auf die Problemursache.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Detaillierte Beschreibungen der Umstände des Auftretens",
+        "erklaerung": "Umstände und Kontexte sind oft kritisch für das Verständnis des Problems.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Allgemeine Zufriedenheit des Kunden",
+        "erklaerung": "Die Zufriedenheit des Kunden ist für die Problemanalyse nicht relevant.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die genauen Schritte, die zum Problem führten",
+        "erklaerung": "Diese helfen, das Problem effizienter zu identifizieren.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 601,
+    "text": "Welche Art von Fragen helfen, um die Ursache eines Problems zu identifizieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Offene Fragen, um mehr Details zu erfahren",
+        "erklaerung": "Offene Fragen ermöglichen detaillierte Antworten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ja/Nein-Fragen zur Eingrenzung spezifischer Aspekte",
+        "erklaerung": "Solche Fragen können bestimmte Ursachen bestätigen oder ausschließen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Suggestivfragen, um den Kunden in eine bestimmte Richtung zu lenken",
+        "erklaerung": "Suggestivfragen können den Kunden beeinflussen und sind daher riskant.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Technische Fragen, um die Kundenkenntnisse zu prüfen",
+        "erklaerung": "Die Prüfung von Kundenkenntnissen steht nicht im Fokus der Problemidentifikation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 601,
+    "text": "Welche Elemente sind hilfreich, um Probleme schnell zu identifizieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Eine klare und strukturierte Problemfallbeschreibung",
+        "erklaerung": "Eine Strukturierte Beschreibung fördert das Verständnis.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein direkter Vergleich mit bekannten Problemmustern",
+        "erklaerung": "Der Vergleich hilft, ähnliche Fälle schneller zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ignorieren von Details, die irrelevant erscheinen",
+        "erklaerung": "Details können wichtig sein und sollten nicht ignoriert werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein schnelles Durcharbeiten ohne Rückfragen",
+        "erklaerung": "Ohne Rückfragen können wichtige Informationen verloren gehen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 601,
+    "text": "Welche Vorteile bietet eine systematische Problemanalyse?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Sie verhindert, dass unvollständige Informationen zu falschen Annahmen führen",
+        "erklaerung": "Systematik sorgt für vollständige und klare Informationserfassung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie stellt sicher, dass das Problem vollständig verstanden wird",
+        "erklaerung": "Eine systematische Herangehensweise minimiert das Risiko von Missverständnissen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ermöglicht die sofortige Lösung des Problems",
+        "erklaerung": "Die Analyse bereitet nur die Lösung vor, löst sie aber nicht sofort.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

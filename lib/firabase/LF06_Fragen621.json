@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 621,
+    "text": "Warum ist es wichtig, den Kunden über die Ergebnisse der Problemlösung zu informieren?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Weil es das Vertrauen des Kunden in den Service stärkt",
+        "erklaerung": "Ein transparenter Informationsfluss schafft Vertrauen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil der Kunde so die Lösung selbst kontrollieren kann",
+        "erklaerung": "Die Kontrolle liegt beim Service, der Kunde wird nur informiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil der Kunde so den Wert des geleisteten Services besser einschätzen kann",
+        "erklaerung": "Informationen über die Ergebnisse verdeutlichen die Servicequalität.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 621,
+    "text": "Welche Informationen sollten dem Kunden bei der Ergebnisübermittlung bereitgestellt werden?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die Schritte, die zur Lösung geführt haben",
+        "erklaerung": "Erklärung der Schritte zeigt den Lösungsprozess auf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Empfehlungen für zukünftiges Verhalten zur Vermeidung des Problems",
+        "erklaerung": "Empfehlungen helfen dem Kunden, ähnliche Probleme zu vermeiden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine detaillierte technische Analyse des Problems",
+        "erklaerung": "Technische Details sind oft zu komplex und nicht erforderlich.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 621,
+    "text": "Die Kommunikation der Problemlösungsergebnisse hilft, das Vertrauen des Kunden zu stärken.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Offene Kommunikation trägt wesentlich zur Vertrauensbildung bei.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Fehlende Informationen können das Vertrauen schwächen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 621,
+    "text": "Wie sollte die Kommunikation der Lösungsergebnisse an den Kunden gestaltet sein?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Klar und verständlich, ohne unnötigen Fachjargon",
+        "erklaerung": "Klarheit vermeidet Missverständnisse und verbessert das Verständnis.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mit möglichst vielen technischen Details, um Kompetenz zu zeigen",
+        "erklaerung": "Zu viele technische Details können den Kunden verwirren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Fokussiert auf die Relevanz der Lösung und deren Auswirkungen",
+        "erklaerung": "Relevante Informationen sind für den Kunden am hilfreichsten.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 621,
+    "text": "Welche Vorteile bietet eine regelmäßige Kommunikation mit dem Kunden während und nach der Problemlösung?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Erhöhte Kundenzufriedenheit und Vertrauen in den Service",
+        "erklaerung": "Regelmäßige Kommunikation stärkt das Vertrauen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verringerung von Rückfragen seitens des Kunden",
+        "erklaerung": "Gut informierte Kunden haben weniger Verständnisfragen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Reduzierung des Serviceaufwands durch weniger detaillierte Kommunikation",
+        "erklaerung": "Regelmäßige Kommunikation erhöht zunächst den Aufwand.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

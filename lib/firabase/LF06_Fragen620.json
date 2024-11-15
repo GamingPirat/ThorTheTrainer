@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 620,
+    "text": "Warum ist die Dokumentation von Lösungswegen wichtig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Damit zukünftige Probleme schneller gelöst werden können",
+        "erklaerung": "Dokumentierte Lösungswege erleichtern die zukünftige Fehlerbehebung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Effizienz des Teams langfristig zu steigern",
+        "erklaerung": "Eine gute Dokumentation hilft, doppelte Arbeit zu vermeiden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit der Kunde den genauen technischen Prozess nachvollziehen kann",
+        "erklaerung": "Die Dokumentation ist primär für interne Zwecke gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 620,
+    "text": "Welche Informationen sollten in einer guten Dokumentation von Lösungswegen enthalten sein?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die einzelnen Schritte, die zur Problemlösung geführt haben",
+        "erklaerung": "Schritt-für-Schritt-Anleitungen sind nützlich für spätere Referenzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mögliche Fehlerquellen und wie sie behoben wurden",
+        "erklaerung": "Fehlerquellen und ihre Lösungen helfen, ähnliche Probleme schneller zu beheben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine genaue Zeitangabe, wann jedes Detail dokumentiert wurde",
+        "erklaerung": "Die genaue Zeitangabe ist oft weniger relevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 620,
+    "text": "Eine gut strukturierte Dokumentation der Lösungswege hilft bei der Vermeidung zukünftiger Probleme.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Eine gut dokumentierte Lösung kann als Leitfaden dienen und zukünftige Fehler vermeiden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Eine fehlende Dokumentation erschwert oft die zukünftige Fehlerbehebung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 620,
+    "text": "Welche Vorteile bietet eine lückenlose Dokumentation der Lösungswege?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Eine höhere Transparenz innerhalb des Teams",
+        "erklaerung": "Transparenz hilft, das Wissen im Team zu teilen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein besseres Verständnis der genutzten Techniken und Methoden",
+        "erklaerung": "Dokumentation klärt über Methoden auf, die zur Lösung führten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Reduzierung des Dokumentationsaufwands bei zukünftigen Fällen",
+        "erklaerung": "Eine umfassende Dokumentation erfordert Zeit, reduziert jedoch nicht zukünftigen Aufwand.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 620,
+    "text": "Welche Elemente sind wichtig, um eine Dokumentation von Lösungswegen verständlich und zugänglich zu machen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Klare und prägnante Beschreibungen jedes Schrittes",
+        "erklaerung": "Klarheit sorgt für Verständlichkeit und leichtere Anwendung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verwendung von Fachjargon, um Professionalität zu zeigen",
+        "erklaerung": "Fachjargon kann die Verständlichkeit für andere Mitarbeiter einschränken.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Visualisierungen wie Diagramme oder Tabellen",
+        "erklaerung": "Visualisierungen machen komplexe Abläufe nachvollziehbar.",
+        "isKorrekt": true
+      }
+    ]
+  }
+]

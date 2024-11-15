@@ -1,6 +1,5 @@
 import 'package:lernplatform/datenklassen/folder_types.dart';
 import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
-import 'package:lernplatform/globals/print_colors.dart';
 
 class Lernfeld extends ContentCarrier {
   final List<KompetenzBereich> kompetenzbereiche;

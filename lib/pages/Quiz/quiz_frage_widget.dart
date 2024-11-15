@@ -40,7 +40,7 @@ class QuizFrageWidget extends StatelessWidget {
                       ],
                     ),
                   ),
-                  RightDrawer(isVisible: vm.locked),
+                  RightDrawer(isVisible: vm.locked, db_frage: vm.frage,),
                 ],
               ),
             );

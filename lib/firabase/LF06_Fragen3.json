@@ -1,0 +1,117 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 602,
+    "text": "Welche Faktoren sind entscheidend, um die Priorität einer Anfrage festzulegen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Die Dringlichkeit des Problems",
+        "erklaerung": "Die Dringlichkeit beeinflusst maßgeblich die Priorität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Verfügbarkeit des zuständigen Mitarbeiters",
+        "erklaerung": "Die Verfügbarkeit ist nicht entscheidend für die Priorität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Auswirkungen des Problems auf den Geschäftsbetrieb",
+        "erklaerung": "Starke Auswirkungen rechtfertigen eine höhere Priorität.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 602,
+    "text": "Warum ist das Festlegen von Prioritäten bei eingehenden Anfragen notwendig?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass die dringlichsten Probleme zuerst bearbeitet werden",
+        "erklaerung": "Prioritäten helfen, Ressourcen auf dringende Probleme zu fokussieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil dies die Zufriedenheit des Kunden erhöht",
+        "erklaerung": "Eine gezielte Bearbeitung schafft Kundenzufriedenheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit alle Anfragen gleich schnell bearbeitet werden",
+        "erklaerung": "Gleichmäßige Bearbeitung steht nicht im Fokus bei Prioritäten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 602,
+    "text": "Ein gut strukturiertes Priorisierungssystem verhindert Engpässe in der Bearbeitung von Anfragen.",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "richtig",
+        "erklaerung": "Eine klare Priorisierung vermeidet Überlastung und Engpässe.",
+        "isKorrekt": true
+      },
+      {
+        "text": "falsch",
+        "erklaerung": "Ohne Priorisierung kann es leicht zu Engpässen kommen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 602,
+    "text": "Welche Kriterien sind hilfreich, um eine Supportanfrage als 'hochpriorisiert' zu kennzeichnen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Wenn das Problem den Betrieb des Kunden ernsthaft beeinträchtigt",
+        "erklaerung": "Starke Beeinträchtigungen rechtfertigen eine hohe Priorität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Wenn die Lösung des Problems sehr viel Zeit in Anspruch nehmen wird",
+        "erklaerung": "Die Bearbeitungszeit beeinflusst nicht direkt die Priorität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Wenn das Problem eine Vielzahl von Endnutzern betrifft",
+        "erklaerung": "Probleme mit weitreichenden Auswirkungen sollten priorisiert werden.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 602,
+    "text": "Welche Vorteile bietet ein klar definiertes Prioritätensystem für Serviceanfragen?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Es verbessert die Effizienz, indem dringende Anliegen zuerst bearbeitet werden",
+        "erklaerung": "Effizienzsteigerung ist ein wesentlicher Vorteil.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es reduziert die Notwendigkeit für zusätzliche Ressourcen",
+        "erklaerung": "Eine Priorisierung kann den Ressourceneinsatz optimieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es stellt sicher, dass alle Kundenanfragen auf die gleiche Weise behandelt werden",
+        "erklaerung": "Ein Prioritätensystem unterscheidet gerade zwischen unterschiedlichen Anliegen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:lernplatform/datenklassen/a_db_service_fragen.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/globals/print_colors.dart';
 import 'folder_types.dart';
 
 
@@ -19,7 +18,7 @@ class Inhalt extends ContentCarrier {
   }) : super(id: id, name: name){_loadFragen();}
 
   void _loadFragen() async{
-    fragen = await FrageDBService().getByThemaID(id);
+    fragen = await FrageDBService().getByInhaltID(id);
     // print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}"); // todo print
   }
 

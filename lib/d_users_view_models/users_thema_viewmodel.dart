@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/datenklassen/db_subthema.dart';
+import 'package:lernplatform/datenklassen/db_inhalt.dart';
 import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
 

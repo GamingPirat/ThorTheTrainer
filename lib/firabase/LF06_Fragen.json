@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 600,
+    "text": "Was beschreibt den Kern des aktiven Zuhörens?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Nur auf die Worte des Kunden zu achten",
+        "erklaerung": "Aktives Zuhören umfasst mehr als das bloße Hören von Worten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Kunden zu unterbrechen, um schnell zu einer Lösung zu kommen",
+        "erklaerung": "Aktives Zuhören beinhaltet das vollständige Ausredenlassen des Kunden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Auf die Bedürfnisse des Kunden einzugehen und Rückfragen zu stellen",
+        "erklaerung": "Aktives Zuhören umfasst Empathie und gezieltes Nachfragen.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 601,
+    "text": "Welche Technik ist entscheidend, um technische Sachverhalte verständlich zu erklären?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Nutzung von Fachjargon",
+        "erklaerung": "Fachjargon kann oft zu Missverständnissen führen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verwendung einfacher Beispiele und Analogien",
+        "erklaerung": "Einfachheit und Vergleiche helfen, komplexe Inhalte zu vermitteln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur die technischen Details hervorzuheben",
+        "erklaerung": "Technische Details können für Laien schwer verständlich sein.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 602,
+    "text": "Warum ist es wichtig, den Kunden über den Bearbeitungsstand zu informieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Zeit zu sparen und den Kunden nicht zu beunruhigen",
+        "erklaerung": "Transparenz und regelmäßige Updates sind wichtig für das Vertrauen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Damit der Kunde den Fortschritt nachvollziehen kann",
+        "erklaerung": "Fortschrittsinformationen zeigen Engagement und fördern Vertrauen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit der Kunde versteht, dass technische Probleme immer komplex sind",
+        "erklaerung": "Die Komplexität der Probleme ist nicht der Hauptgrund für Updates.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 603,
+    "text": "Wie sollte man mit schwierigen Kunden umgehen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Indem man ihre Aussagen direkt korrigiert",
+        "erklaerung": "Direkte Korrekturen können oft zu weiteren Spannungen führen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mit Geduld und Verständnis, um die Situation zu deeskalieren",
+        "erklaerung": "Ein empathischer Ansatz hilft, Konflikte zu vermeiden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Indem man sachlich bleibt und den Kunden auf die Geschäftsbedingungen hinweist",
+        "erklaerung": "Dies kann hilfreich sein, sollte jedoch nicht die erste Maßnahme sein.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 610,
+    "text": "Was ist der erste Schritt bei der Analyse einer Kundenanfrage?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Direkt eine Lösung vorschlagen",
+        "erklaerung": "Zuerst muss die Anfrage vollständig verstanden werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Anfrage systematisch erfassen und verstehen",
+        "erklaerung": "Eine systematische Erfassung ist der Schlüssel für eine erfolgreiche Bearbeitung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zu entscheiden, ob die Anfrage wichtig genug ist",
+        "erklaerung": "Alle Anfragen sollten ernst genommen und analysiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 611,
+    "text": "Welche Methode ist sinnvoll, um Serviceanfragen zu priorisieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Anfragen nach ihrem Eingangsdatum zu sortieren",
+        "erklaerung": "Die Priorität hängt eher von der Dringlichkeit als vom Zeitpunkt ab.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Dringlichkeit und den Kundenbedarf zu bewerten",
+        "erklaerung": "Dringlichkeit und Kundenanforderungen bestimmen die Priorität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur auf die einfachsten Anfragen zuerst zu reagieren",
+        "erklaerung": "Leichte Anfragen sind nicht immer die dringendsten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 612,
+    "text": "Warum ist die Anwendung von Analysetechniken bei der Bearbeitung von Serviceanfragen wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um jede Anfrage gleich zu behandeln",
+        "erklaerung": "Die Analyse hilft, Probleme spezifisch zu erkennen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur effektiven Identifikation der Problemursache",
+        "erklaerung": "Analysen ermöglichen ein gezieltes Verständnis des Problems.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um den Kunden zu beeindrucken",
+        "erklaerung": "Der Nutzen liegt eher in der Problemlösung als in der Darstellung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 620,
+    "text": "Warum ist es wichtig, Lösungswege während des Supportprozesses zu dokumentieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Damit der Kunde den Fortschritt nachverfolgen kann",
+        "erklaerung": "Die Dokumentation dient nicht nur der Nachverfolgung durch den Kunden, sondern auch der internen Referenz.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um sicherzustellen, dass alle notwendigen Schritte für eine Lösung ergriffen wurden",
+        "erklaerung": "Dokumentation ermöglicht eine strukturierte Problemlösung und sorgt für Konsistenz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit die Lösung beim nächsten Vorfall nicht wiederholt werden muss",
+        "erklaerung": "Es hilft, wiederkehrende Probleme zu vermeiden, aber primär dient es der Nachvollziehbarkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 621,
+    "text": "Welche Information sollte beim Informieren eines Kunden über den Fortschritt der Bearbeitung niemals fehlen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die genaue Zeitangabe, wann das Problem behoben sein wird",
+        "erklaerung": "Da sich Probleme manchmal ändern, sollte eine präzise Zeitangabe vermieden werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine klare Übersicht der bisher ergriffenen Maßnahmen",
+        "erklaerung": "Kunden sollten wissen, welche Schritte bereits unternommen wurden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Fehlerursache, auch wenn sie noch nicht vollständig analysiert wurde",
+        "erklaerung": "Die Ursache muss sicher identifiziert sein, bevor sie kommuniziert wird.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 622,
+    "text": "Warum ist es wichtig, Feedback vom Kunden nach der Lösung eines Problems einzuholen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil der Kunde so seine Zufriedenheit ausdrücken kann",
+        "erklaerung": "Zufriedenheit ist wichtig, aber Feedback hilft auch, Prozesse zu verbessern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil es die Möglichkeit zur Verbesserung des Serviceprozesses gibt",
+        "erklaerung": "Feedback zeigt, wo Prozesse optimiert werden können.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil der Kunde durch Feedback die Verantwortung für die Lösung übernimmt",
+        "erklaerung": "Das Feedback ist für die Verbesserung des Service und nicht für die Schuldzuweisung gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

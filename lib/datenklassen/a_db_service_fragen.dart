@@ -2,51 +2,40 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 
 class FrageDBService {
+  // Liste, um alle geladenen Fragen für diese Instanz zu speichern
+  List<DB_Frage>? _alleFragenCache;
 
-  late final CollectionReference _fragenCollection;
-
-  FrageDBService() : _fragenCollection = FirebaseFirestore.instance.collection("Fragen");
-
-
-  // Create (neue Frage ohne ID, Firestore generiert automatisch eine ID)
-  Future<void> createFrage(DB_Frage frage) async {
-    await _fragenCollection.add(frage.toJson());
-    // print("### FrageDBService createFrage: Neue Frage hinzugefügt.\n$frage");// todo print
-  }
-
-  // Read (alle Fragen mit einer bestimmten themaID lesen)
-  Future<List<DB_Frage>> getByThemaID(int themaID) async {
-    QuerySnapshot snapshot = await _fragenCollection.where('themaID', isEqualTo: themaID).get();
-    // print("### FrageDBService getByThemaID:");// todo print
-    for (DB_Frage frage in snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList()) {
-      // print(frage); //todo print
+  // Methode zum Abrufen von Fragen nach Inhalt-ID, nutzt Caching
+  Future<List<DB_Frage>> getByInhaltID(int inhaltId) async {
+    // Prüfen, ob der Cache bereits befüllt ist
+    if (_alleFragenCache != null) {
+      // Filtere die gecachten Fragen basierend auf inhaltId
+      return _alleFragenCache!.where((frage) => frage.inhalt_id == inhaltId).toList();
     }
-    return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
-  }
 
-  // Update (eine Frage updaten)
-  Future<void> updateFrage(String id, DB_Frage neueFrage) async {
-    // Prüfe, ob das Dokument mit der angegebenen ID existiert
-    DocumentSnapshot docSnapshot = await _fragenCollection.doc(id).get();
+    // Wenn der Cache leer ist, laden wir alle Fragen aus Firebase
+    _alleFragenCache = [];
+    CollectionReference lernfelderCollection = FirebaseFirestore.instance.collection('Lernfelder');
 
-    if (docSnapshot.exists) {
-      // Dokument mit dieser ID existiert, also wird es aktualisiert
-      await _fragenCollection.doc(id).update(neueFrage.toJson());
-      // print("### FrageDBService updateFrage: Dokument mit ID $id aktualisiert.\n$neueFrage");// todo print
-    } else {
-      // Dokument existiert nicht, Fehler werfen
-      throw Exception("Fehler: Dokument mit ID $id existiert nicht.");
+    QuerySnapshot lernfelderSnapshot = await lernfelderCollection.get();
+    for (var lernfeldDoc in lernfelderSnapshot.docs) {
+      String lernfeldId = lernfeldDoc.id;
+      String subcollectionName = '$lernfeldId Fragen';
+      CollectionReference fragenCollection = lernfelderCollection
+          .doc(lernfeldId)
+          .collection(subcollectionName);
+
+      QuerySnapshot snapshot = await fragenCollection.get();
+      var fragen = snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
+      _alleFragenCache!.addAll(fragen);
     }
+
+    // Rückgabe der gefilterten Fragen basierend auf inhaltId
+    return _alleFragenCache!.where((frage) => frage.inhalt_id == inhaltId).toList();
   }
 
-  // Delete (eine Frage löschen)
-  Future<void> deleteFrage(String id) async {
-    await _fragenCollection.doc(id).delete();
-    // print("### FrageDBService deleteFrage: Frage mit ID $id gelöscht.");// todo print
+  // Methode zum Leeren des Caches (z.B. wenn man die Daten aktualisieren möchte)
+  void clearCache() {
+    _alleFragenCache = null;
   }
-
-// Future<List<DB_Frage>> getFragenById(String id) async {
-//   QuerySnapshot snapshot = await _fragenCollection.where(FieldPath.documentId, isEqualTo: id).get();
-//   return snapshot.docs.map((doc) => DB_Frage.fromJson(doc.data() as Map<String, dynamic>)).toList();
-// }
 }
