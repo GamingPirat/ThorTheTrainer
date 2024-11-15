@@ -36,91 +36,93 @@ class _TheDoorPageState extends State<TheDoorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(32.0),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                "Wiederholung ist die Mutter des Lernens.",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              const Text(
-                "Erlebe den Alltag eines IT-Mitarbeiters in dem du zum Teil dämliche Fragen deiner Kollegen und Kunden beantwortest.",
-                style: TextStyle(
-                  fontSize: 20,
-                ),
-              ),
-              SizedBox(height: 80,),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: TextField(
-                  controller: _controller,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Zugangsschlüssel',
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(32.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Wiederholung ist die Mutter des Lernens.",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
-              Text("Allgemeine Geschäftsbedingungen:",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                  "Diese App befindet sich noch in der Alpha-Testphase. "
-                      "Nur ausgewählte Personen (im Folgenden Alpha-Tester genannt) "
-                      "erhalten einen speziellen Zugangsschlüssel, um die App "
-                      "testen und durch aktive Beiträge erweitern zu können.\nAlle automatisch generierten Daten der "
-                      "Alpha-Tester (im Folgenden Fortschritt genannt) werden "
-                      "lokal auf dem Endgerät des Alpha-Testers im sogenannten "
-                      "LocalStorage bzw. in den Cookies gespeichert.\n"
-                      "Alpha-Tester können aktiv Feedback geben und dem Entwickler"
-                      " Content (im weiteren Quizfragen genannt) zur verfügung stellen.\nMit dem Einreichen von Feedback oder "
-                      "Quizfragen erklärt sich der Alpha-Tester einverstanden, dass "
-                      "diese vom Entwickler für kommerzielle Zwecke genutzt werden"
-                      " dürfen, ohne dass daraus Forderungen abgeleitet werden können."
-              ),
-              SizedBox(height: 32,),
-              Row(
-                children: [
-                  Spacer(),
-                  Checkbox(
-                    value: _isChecked,
-                    onChanged: (value) {
-                      setState(() {
-                        _isChecked = value ?? false;
-                        _checkInput();
-                      });
-                    },
+                SizedBox(height: 16),
+                const Text(
+                  "Erlebe den Alltag eines IT-Mitarbeiters in dem du zum Teil dämliche Fragen deiner Kollegen und Kunden beantwortest.",
+                  style: TextStyle(
+                    fontSize: 20,
                   ),
-                  Text("AGb´s akzeptieren"),
-                  Spacer(),
-                ],
-              ),
-              SizedBox(height: 32,),
-              ElevatedButton(
-                onPressed: _isButtonEnabled
-                    ? () async {
-                  print_Blue("Betreten Button gedrückt ${_controller.text}");
-                  bool flag = await Session().enter(_controller.text);
-                  print_Red("Flag-Wert nach enter: $flag");
-                  if(flag)
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Startseite()),
-                    );
-                }
-                    : null,
-                child: const Text('Betreten'),
-              ),
-            ],
+                ),
+                SizedBox(height: 80,),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: TextField(
+                    controller: _controller,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Zugangsschlüssel',
+                    ),
+                  ),
+                ),
+                Text("Allgemeine Geschäftsbedingungen:",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                    "Diese App befindet sich noch in der Alpha-Testphase. "
+                        "Nur ausgewählte Personen (im Folgenden Alpha-Tester genannt) "
+                        "erhalten einen speziellen Zugangsschlüssel, um die App "
+                        "testen und durch aktive Beiträge erweitern zu können.\nAlle automatisch generierten Daten der "
+                        "Alpha-Tester (im Folgenden Fortschritt genannt) werden "
+                        "lokal auf dem Endgerät des Alpha-Testers im sogenannten "
+                        "LocalStorage bzw. in den Cookies gespeichert.\n"
+                        "Alpha-Tester können aktiv Feedback geben und dem Entwickler"
+                        " Content (im weiteren Quizfragen genannt) zur verfügung stellen.\nMit dem Einreichen von Feedback oder "
+                        "Quizfragen erklärt sich der Alpha-Tester einverstanden, dass "
+                        "diese vom Entwickler für kommerzielle Zwecke genutzt werden"
+                        " dürfen, ohne dass daraus Forderungen abgeleitet werden können."
+                ),
+                SizedBox(height: 32,),
+                Row(
+                  children: [
+                    Spacer(),
+                    Checkbox(
+                      value: _isChecked,
+                      onChanged: (value) {
+                        setState(() {
+                          _isChecked = value ?? false;
+                          _checkInput();
+                        });
+                      },
+                    ),
+                    Text("AGb´s akzeptieren"),
+                    Spacer(),
+                  ],
+                ),
+                SizedBox(height: 32,),
+                ElevatedButton(
+                  onPressed: _isButtonEnabled
+                      ? () async {
+                    print_Blue("Betreten Button gedrückt ${_controller.text}");
+                    bool flag = await Session().enter(_controller.text);
+                    print_Red("Flag-Wert nach enter: $flag");
+                    if(flag)
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Startseite()),
+                      );
+                  }
+                      : null,
+                  child: const Text('Betreten'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
