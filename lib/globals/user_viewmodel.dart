@@ -40,12 +40,12 @@ class UserModel with ChangeNotifier {
           Lernfeld lernfeld = Lernfeld.fromJson(data);
           firestoreLernfelder.add(lernfeld);
         }
-        print_Cyan("snapshot data: ${firestoreLernfelder.map((lf) => lf.name).toList()}");
+        // print_Cyan("snapshot data: ${firestoreLernfelder.map((lf) => lf.name).toList()}");
       } else {
-        print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
+        // print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
       }
     } catch (e) {
-      print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
+      // print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
 
     // Initialisiere den Teilnehmer basierend auf den geladenen Daten
@@ -59,7 +59,7 @@ class UserModel with ChangeNotifier {
             logLernfeld: logLernfeld,
             lernfeld: lernfeld,
           ));
-          print_Cyan("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Kompetenzbereiche: ${lernfeld.kompetenzbereiche.length}");
+          // print_Cyan("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Kompetenzbereiche: ${lernfeld.kompetenzbereiche.length}");
         }
       }
     }

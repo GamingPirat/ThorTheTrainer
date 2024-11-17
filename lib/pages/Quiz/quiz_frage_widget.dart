@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lernplatform/Baustelle.dart';
 import 'package:lernplatform/pages/Quiz/right_drawer_on_frage.dart';
 import 'package:provider/provider.dart';
 import 'quiz_antworten_widget.dart';
@@ -22,9 +23,12 @@ class QuizFrageWidget extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
-                        Text(
-                          vm.titel,
-                          style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                        CustomContainerWithImage(
+                          imagePath: 'characters/emotionslos.webp',
+                          child: Text(
+                            vm.titel,
+                            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                          ),
                         ),
                         QuizAntwortenWidget(viewModels: vm.antwortenViewModel),
                         Spacer(),

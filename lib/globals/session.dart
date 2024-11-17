@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_key.dart';
+import 'package:lernplatform/globals/my_background.dart';
 import 'package:lernplatform/globals/user_viewmodel.dart';
 import 'package:lernplatform/menu/my_appBar.dart';
 import 'package:lernplatform/menu/my_left_drawer.dart';
@@ -16,6 +17,7 @@ class Session {
   late UserModel user;
   late final Function changeTemeMode;
   final PunkteAnzeige _sterneAnzeige = PunkteAnzeige(punkte: 0); // todo punkte sollten im User sein
+  final Widget background = MyBackGround();
   final bool IS_IN_DEBUG_MODE = true;
 
   Session._internal();
@@ -40,15 +42,6 @@ class Session {
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
           user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));
-          // Aussagekräftiger Print über den Inhalt von data
-          String schluessel = data["key"];
-          String expires = data.containsKey("expires") ? data["expires"].toString() : "Nicht vorhanden";
-          String lernfelder = data.containsKey("lernfelder") ? data["lernfelder"].toString() : "Nicht vorhanden";
-
-          print_Green("Erfolgreiche Anmeldung:");
-          print_Green("  Schlüssel: $schluessel");
-          print_Green("  Ablaufdatum (expires): $expires");
-          print_Green("  Lernfelder: $lernfelder");
           return true;
         }
       } catch (e) {

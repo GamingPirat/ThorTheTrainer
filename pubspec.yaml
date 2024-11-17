@@ -70,6 +70,16 @@ flutter:
   uses-material-design: true
   assets:
     - assets/test_thema.json
+    - assets/phone_like.png
+    - assets/TTT.png
+    - assets/characters/philosoph.webp
+    - assets/characters/professional.webp
+    - assets/characters/kumpel.webp
+    - assets/characters/technisch.webp
+    - assets/characters/provokant.webp
+    - assets/characters/emotionslos.webp
+    - assets/characters/humorvoll_sarkastisch.webp
+    - assets/characters/vereinfachte_sprache.webp
 
   # To add assets to your application, add an assets section, like this:
   # assets:

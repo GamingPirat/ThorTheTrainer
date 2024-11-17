@@ -122,28 +122,33 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
     return Scaffold(
       appBar: Session().appBar,
       drawer: Session().drawer,
-      body: Listener(
-        onPointerSignal: _onScrollWheel,
-        child: GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onVerticalDragUpdate: (details) {
-            if (details.primaryDelta != null) {
-              _onScroll(details.primaryDelta!);
-            }
-          },
-          child: Stack(
-            children: [
-              SlideTransition(
-                position: _oldContainerAnimation,
-                child: _containers[_previousIndex],
+      body: Stack(
+        children: [
+          Session().background,
+          Listener(
+            onPointerSignal: _onScrollWheel,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onVerticalDragUpdate: (details) {
+                if (details.primaryDelta != null) {
+                  _onScroll(details.primaryDelta!);
+                }
+              },
+              child: Stack(
+                children: [
+                  SlideTransition(
+                    position: _oldContainerAnimation,
+                    child: _containers[_previousIndex],
+                  ),
+                  SlideTransition(
+                    position: _newContainerAnimation,
+                    child: _containers[_currentIndex],
+                  ),
+                ],
               ),
-              SlideTransition(
-                position: _newContainerAnimation,
-                child: _containers[_currentIndex],
-              ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

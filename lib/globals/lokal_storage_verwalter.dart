@@ -6,7 +6,7 @@ import 'package:lernplatform/globals/session.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfelder) async {
-  print_Yellow("ladeOderErzeugeTeilnehmer firestoreLernfelder $firestoreLernfelder");
+  // print_Yellow("ladeOderErzeugeTeilnehmer firestoreLernfelder $firestoreLernfelder");
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String storageKey = "ThorTheTrainer";  // Der Key für das LocalStorage
@@ -19,7 +19,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
     LogTeilnehmer returnvalue = LogTeilnehmer.fromJson(data);
 
-    print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer gefunden: $gespeicherterTeilnehmer");
+    // print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer gefunden: $gespeicherterTeilnehmer");
 
     // Abgleich: Fehlende Lernfelder hinzufügen
     for (Lernfeld lernfeld in firestoreLernfelder) {
@@ -42,7 +42,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
           }).toList(),
         );
         returnvalue.meineLernfelder.add(neuesLernfeld);
-        print_Yellow("Neues Lernfeld hinzugefügt: ${neuesLernfeld.id}");
+        // print_Yellow("Neues Lernfeld hinzugefügt: ${neuesLernfeld.id}");
       }
     }
 
@@ -74,7 +74,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
 
   // Speichere den neuen Teilnehmer im LocalStorage
   await prefs.setString(storageKey, jsonEncode(neuerTeilnehmer.toJson()));
-  print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer Erstellt: $neuerTeilnehmer");
+  // print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer Erstellt: $neuerTeilnehmer");
 
   return neuerTeilnehmer;
 }
@@ -114,8 +114,8 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   await prefs.setString(teilnehmerKey, teilnehmerJson);
 
 
-  print_Yellow("speichereTeilnehmer() Teilnehmer gespeichert in Cookies gefunden: \n"
-      ""+teilnehmerJson);
+  // print_Yellow("speichereTeilnehmer() Teilnehmer gespeichert in Cookies gefunden: \n"
+  //     ""+teilnehmerJson);
   // print_Green("Teilnehmer gespeichert. LokalStorage sieht jetzt so aus:");
   // LogTeilnehmer debugghelper = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);
   // print(debugghelper);
