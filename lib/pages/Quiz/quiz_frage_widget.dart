@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:lernplatform/Baustelle.dart';
 import 'package:lernplatform/pages/Quiz/right_drawer_on_frage.dart';
@@ -6,7 +8,7 @@ import 'quiz_antworten_widget.dart';
 import 'quiz_frage_model.dart';
 
 class QuizFrageWidget extends StatelessWidget {
-  late QuizFrageModel viewModel;
+  late QuizFrageController viewModel;
 
   QuizFrageWidget({required this.viewModel, super.key});
 
@@ -14,7 +16,7 @@ class QuizFrageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<QuizFrageModel>(
+      child: Consumer<QuizFrageController>(
           builder: (context, vm, child) {
             return Expanded(
               child: Stack(
@@ -24,7 +26,7 @@ class QuizFrageWidget extends StatelessWidget {
                     child: Column(
                       children: [
                         CustomContainerWithImage(
-                          imagePath: 'characters/emotionslos.webp',
+                          imagePath: vm.imagePath,
                           child: Text(
                             vm.titel,
                             style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),

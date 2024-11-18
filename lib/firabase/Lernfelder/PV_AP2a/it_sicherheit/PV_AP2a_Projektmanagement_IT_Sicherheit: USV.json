@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2046,
+    "text": "Was ist die Hauptfunktion einer USV?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Stromversorgung bei einem Ausfall sicherzustellen",
+        "erklaerung": "Eine USV verhindert Unterbrechungen bei der Stromversorgung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Energieeffizienz eines Netzwerks zu erhöhen",
+        "erklaerung": "USVs sind nicht primär auf Energieeffizienz ausgelegt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Lebensdauer von Hardware zu verlängern",
+        "erklaerung": "USVs schützen Hardware, aber ihre Hauptfunktion ist die Stromversorgung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2046,
+    "text": "Welche Art von Geräten werden typischerweise an eine USV angeschlossen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Server, Netzwerkspeicher und kritische IT-Infrastruktur",
+        "erklaerung": "Diese Geräte benötigen eine kontinuierliche Stromversorgung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Haushaltsgeräte wie Kühlschränke",
+        "erklaerung": "USVs werden selten für Haushaltsgeräte eingesetzt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mobiltelefone und Tablets",
+        "erklaerung": "Mobilgeräte haben eigene Batterien und benötigen keine USV.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2046,
+    "text": "Welche Typen von USV-Systemen gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Offline-, Line-Interactive- und Online-USV",
+        "erklaerung": "Diese Typen unterscheiden sich in ihrer Funktionsweise und ihrem Schutzumfang.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mechanische-, digitale- und analoge USV",
+        "erklaerung": "Diese Begriffe beschreiben keine USV-Typen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Standard- und Cloud-USV",
+        "erklaerung": "Cloud-USV existieren nicht, USVs sind physische Geräte.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2046,
+    "text": "Wie schützt eine Online-USV die angeschlossenen Geräte?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch eine kontinuierliche Stromversorgung ohne Umschaltzeit",
+        "erklaerung": "Online-USVs versorgen Geräte dauerhaft über ihren Wechselrichter.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch direkte Weiterleitung des Netzstroms",
+        "erklaerung": "Das ist typisch für Offline-USVs, nicht für Online-USVs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch das Abschalten der Stromzufuhr bei Problemen",
+        "erklaerung": "USVs sorgen für eine kontinuierliche Stromversorgung, nicht für Unterbrechungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2046,
+    "text": "Was passiert, wenn die Batteriekapazität einer USV erschöpft ist?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die angeschlossenen Geräte verlieren die Stromversorgung",
+        "erklaerung": "Nach Entleerung der Batterie schaltet die USV die Stromversorgung ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die USV schaltet automatisch auf Netzstrom um",
+        "erklaerung": "Nach Batterieerschöpfung ist kein Netzstrom verfügbar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Geräte werden automatisch abgeschaltet",
+        "erklaerung": "Das passiert nur, wenn eine Abschaltlogik integriert ist.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2046,
+    "text": "Welche zusätzlichen Funktionen kann eine moderne USV bieten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Überwachung von Stromqualität und Netzspannung",
+        "erklaerung": "Moderne USVs bieten Tools zur Überwachung und Steuerung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Dauerhafte Stromversorgung ohne externe Energiequelle",
+        "erklaerung": "USVs benötigen Batterien oder Netzstrom, sie erzeugen keinen Strom.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komplette Netzwerkkontrolle",
+        "erklaerung": "Netzwerkkontrolle ist nicht die Aufgabe einer USV.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2046,
+    "text": "Wie lange kann eine typische USV Geräte mit Strom versorgen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Je nach Modell und Last wenige Minuten bis mehrere Stunden",
+        "erklaerung": "Die Laufzeit hängt von der Kapazität der Batterie und der angeschlossenen Last ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unbegrenzt, solange sie angeschlossen ist",
+        "erklaerung": "USVs haben begrenzte Batteriekapazität und können nicht unbegrenzt laufen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Immer exakt eine Stunde",
+        "erklaerung": "Die Laufzeit variiert je nach USV-Modell und angeschlossenen Geräten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2046,
+    "text": "Wie oft sollten USV-Batterien gewartet oder ausgetauscht werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Je nach Nutzung alle 3 bis 5 Jahre",
+        "erklaerung": "Batterien haben eine begrenzte Lebensdauer und sollten regelmäßig überprüft werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Alle 10 Jahre unabhängig von der Nutzung",
+        "erklaerung": "Die Lebensdauer der Batterien beträgt in der Regel weniger als 10 Jahre.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nie, da Batterien unbegrenzt haltbar sind",
+        "erklaerung": "Batterien verlieren mit der Zeit ihre Kapazität und müssen ersetzt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2046,
+    "text": "Was ist ein Vorteil von Line-Interactive-USVs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie können Spannungsschwankungen ohne Umschalten ausgleichen",
+        "erklaerung": "Line-Interactive-USVs regeln die Spannung, ohne die Batterien zu belasten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie bieten keine Verzögerung beim Umschalten",
+        "erklaerung": "Das ist ein Vorteil von Online-USVs, nicht von Line-Interactive-USVs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie benötigen keine Batterien",
+        "erklaerung": "Line-Interactive-USVs verwenden Batterien für Notfälle.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2046,
+    "text": "Warum ist eine USV in Rechenzentren besonders wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Datenverluste und Systemausfälle bei Stromausfällen zu vermeiden",
+        "erklaerung": "USVs sorgen für eine kontinuierliche Stromversorgung, um kritische Systeme zu schützen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Internetgeschwindigkeit zu erhöhen",
+        "erklaerung": "Die Internetgeschwindigkeit wird durch eine USV nicht beeinflusst.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Temperatur im Serverraum zu regulieren",
+        "erklaerung": "USVs steuern nicht die Klimatisierung, sondern die Stromversorgung.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

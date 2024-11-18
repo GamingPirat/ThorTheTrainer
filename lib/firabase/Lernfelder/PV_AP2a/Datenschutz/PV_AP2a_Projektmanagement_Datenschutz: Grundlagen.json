@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2020,
+    "text": "Welcher Grundsatz ist zentral für den Datenschutz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Datenminimierung",
+        "erklaerung": "Datenminimierung bedeutet, nur die nötigsten Daten zu erheben und zu verarbeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unbegrenzte Datenspeicherung",
+        "erklaerung": "Unbegrenzte Datenspeicherung widerspricht den Grundsätzen des Datenschutzes.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Freier Zugriff auf alle personenbezogenen Daten",
+        "erklaerung": "Freier Zugriff steht im Widerspruch zum Schutz personenbezogener Daten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2020,
+    "text": "Welche Rolle spielt die Einwilligung im Datenschutz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie ist eine rechtliche Grundlage für die Verarbeitung personenbezogener Daten",
+        "erklaerung": "Die Einwilligung erlaubt die Verarbeitung von Daten, wenn sie freiwillig gegeben wird.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ist in allen Fällen zwingend erforderlich",
+        "erklaerung": "Es gibt andere Rechtsgrundlagen, wie z. B. berechtigtes Interesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie ersetzt die Informationspflicht des Unternehmens",
+        "erklaerung": "Einwilligung ergänzt, ersetzt aber nicht die Informationspflicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2020,
+    "text": "Was versteht man unter dem Recht auf Vergessenwerden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Recht, dass personenbezogene Daten gelöscht werden, wenn sie nicht mehr benötigt werden",
+        "erklaerung": "Das Recht auf Vergessenwerden schützt die Privatsphäre und fordert die Löschung irrelevanter Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Recht, alle gespeicherten Daten jederzeit einzusehen",
+        "erklaerung": "Das Einsichtsrecht ist ein separates Datenschutzrecht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Recht, dass Daten niemals archiviert werden",
+        "erklaerung": "Archivierung ist unter bestimmten Bedingungen erlaubt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2020,
+    "text": "Welche Aufgabe hat ein Datenschutzbeauftragter in einem Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Überwachung der Einhaltung von Datenschutzrichtlinien",
+        "erklaerung": "Der Datenschutzbeauftragte sorgt für die Einhaltung der Datenschutzgesetze.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Erstellung von Marketingstrategien",
+        "erklaerung": "Marketing gehört nicht zu den Aufgaben eines Datenschutzbeauftragten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Genehmigung aller Datenverarbeitungsprozesse",
+        "erklaerung": "Der Datenschutzbeauftragte berät, genehmigt aber nicht direkt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2020,
+    "text": "Welche Informationen müssen bei der Erhebung personenbezogener Daten bereitgestellt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zweck der Verarbeitung und Rechte der Betroffenen",
+        "erklaerung": "Der Zweck und die Rechte der Betroffenen müssen klar kommuniziert werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der Name aller Mitarbeiter im Unternehmen",
+        "erklaerung": "Dies ist für die Betroffenen irrelevant und nicht erforderlich.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Dauer aller internen Meetings",
+        "erklaerung": "Diese Information ist nicht relevant für den Datenschutz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2020,
+    "text": "Wann dürfen personenbezogene Daten ohne Einwilligung verarbeitet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Wenn die Verarbeitung zur Erfüllung eines Vertrags erforderlich ist",
+        "erklaerung": "Ein Vertrag ist eine gültige Rechtsgrundlage für die Datenverarbeitung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Wenn die Daten für Werbezwecke genutzt werden sollen",
+        "erklaerung": "Werbezwecke erfordern in der Regel eine Einwilligung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Wenn das Unternehmen einen internen Bedarf dafür hat",
+        "erklaerung": "Interner Bedarf allein reicht nicht aus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2020,
+    "text": "Welche Art von Daten fällt unter die besonderen Kategorien personenbezogener Daten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Daten zur ethnischen Herkunft oder politischen Meinung",
+        "erklaerung": "Diese Daten zählen zu den besonderen Kategorien und erfordern besonderen Schutz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der Vorname einer Person",
+        "erklaerung": "Vorname zählt zu allgemeinen personenbezogenen Daten, nicht zu besonderen Kategorien.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Der Wohnort einer Person",
+        "erklaerung": "Der Wohnort gehört nicht zu den besonderen Kategorien.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2020,
+    "text": "Was ist die Datenschutz-Folgenabschätzung (DSFA)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Analyse zur Bewertung der Risiken einer Datenverarbeitung für Betroffene",
+        "erklaerung": "Die DSFA bewertet die Risiken und legt Maßnahmen zur Minderung fest.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Bericht über die internen Datenschutzmaßnahmen eines Unternehmens",
+        "erklaerung": "Die DSFA konzentriert sich auf Risiken für Betroffene, nicht auf interne Berichte.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Dokument zur Speicherung der Einwilligung der Betroffenen",
+        "erklaerung": "Die DSFA hat einen anderen Zweck und ist nicht für die Einwilligung gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2020,
+    "text": "Welche Strafe kann bei Verstößen gegen die DSGVO verhängt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Geldbußen von bis zu 20 Millionen Euro oder 4 % des weltweiten Jahresumsatzes",
+        "erklaerung": "Dies ist die maximale Strafe gemäß DSGVO.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine maximale Strafe von 10.000 Euro",
+        "erklaerung": "Die DSGVO sieht deutlich höhere Strafen vor.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein sofortiges Betriebsverbot",
+        "erklaerung": "Ein Betriebsverbot ist keine direkte DSGVO-Strafe.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2020,
+    "text": "Was versteht man unter Privacy by Design?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Integration von Datenschutzmaßnahmen in den Entwicklungsprozess von Anfang an",
+        "erklaerung": "Privacy by Design fordert Datenschutz als integralen Bestandteil der Entwicklung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die vollständige Vermeidung der Erhebung personenbezogener Daten",
+        "erklaerung": "Privacy by Design bedeutet nicht, dass keine Daten erhoben werden dürfen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die zentrale Speicherung aller Daten an einem Ort",
+        "erklaerung": "Das widerspricht den Grundsätzen des Datenschutzes.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

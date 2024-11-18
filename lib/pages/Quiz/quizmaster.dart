@@ -5,7 +5,7 @@ import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
 import 'package:lernplatform/menu/punkte_widget.dart';
-import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_inhalt_controller.dart';
 import 'package:lernplatform/pages/Quiz/speicher_fortschritt_anzeige.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
@@ -13,7 +13,7 @@ import 'package:lernplatform/globals/session.dart';
 class Quizmaster with ChangeNotifier{
 
   late List<UsersSubThema> selected_subthemen;
-  late NewQuizsubthemaModel aktuelles_subthema;
+  late QuizInhaltController aktuelles_subthema;
   int runde = 0;
   int _bei_10_wird_gespeichert = 0;
   bool _is_locked = false;
@@ -52,7 +52,7 @@ class Quizmaster with ChangeNotifier{
 
   void nextQuestion(){
     _is_locked = false;
-    aktuelles_subthema = NewQuizsubthemaModel(
+    aktuelles_subthema = QuizInhaltController(
       selected_subthema: selected_subthemen[Random().nextInt(selected_subthemen.length)],
       onLockTapped: ()=> onLockTapped(),
       runde: ++runde

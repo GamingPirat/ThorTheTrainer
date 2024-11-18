@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2010,
+    "text": "Was ist das Hauptziel des Qualitätsmanagements?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Sicherstellung, dass Produkte oder Dienstleistungen die Anforderungen erfüllen",
+        "erklaerung": "Qualitätsmanagement stellt sicher, dass die Anforderungen von Kunden oder Standards erfüllt werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Maximierung des Gewinns eines Unternehmens",
+        "erklaerung": "Gewinnmaximierung ist nicht das Hauptziel des Qualitätsmanagements.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Reduzierung der Anzahl von Projektdokumenten",
+        "erklaerung": "Qualitätsmanagement hat keinen direkten Bezug zur Projektdokumentation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2010,
+    "text": "Welche der folgenden Aussagen beschreibt Qualität im Kontext des Qualitätsmanagements am besten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Qualität bedeutet, die Erwartungen der Kunden zu erfüllen oder zu übertreffen",
+        "erklaerung": "Im Qualitätsmanagement geht es darum, die Anforderungen und Erwartungen zu erfüllen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Qualität bedeutet, dass ein Produkt fehlerfrei ist",
+        "erklaerung": "Fehlerfreiheit ist ein Aspekt, aber nicht die umfassende Definition von Qualität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Qualität ist subjektiv und nicht messbar",
+        "erklaerung": "Qualitätsmanagement zielt darauf ab, Qualität objektiv messbar zu machen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2010,
+    "text": "Welche Aufgaben gehören typischerweise zum Qualitätsmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Planung, Steuerung und Verbesserung der Qualität",
+        "erklaerung": "Diese Aufgaben sind zentrale Bestandteile des Qualitätsmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erstellung von Marketingstrategien",
+        "erklaerung": "Marketing gehört nicht zum Qualitätsmanagement.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Optimierung der Unternehmensfinanzen",
+        "erklaerung": "Finanzmanagement ist nicht Teil des Qualitätsmanagements.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2010,
+    "text": "Was beschreibt die Qualitätspolitik eines Unternehmens?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die übergeordneten Ziele und Prinzipien des Unternehmens in Bezug auf Qualität",
+        "erklaerung": "Die Qualitätspolitik legt fest, wie das Unternehmen Qualität definiert und umsetzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die detaillierte Beschreibung aller Qualitätsprozesse",
+        "erklaerung": "Die Qualitätspolitik ist übergeordnet, nicht prozessspezifisch.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die gesetzlichen Anforderungen an ein Unternehmen",
+        "erklaerung": "Qualitätspolitik ist intern definiert und geht über gesetzliche Anforderungen hinaus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2010,
+    "text": "Welche Rolle spielt die Kundenzufriedenheit im Qualitätsmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kundenzufriedenheit ist ein entscheidendes Kriterium zur Bewertung der Qualität",
+        "erklaerung": "Die Zufriedenheit der Kunden zeigt, ob die Qualitätsziele erreicht wurden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kundenzufriedenheit wird im Qualitätsmanagement nicht berücksichtigt",
+        "erklaerung": "Kundenzufriedenheit ist ein zentraler Bestandteil des Qualitätsmanagements.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Kundenzufriedenheit ist nur relevant, wenn gesetzliche Standards nicht eingehalten werden",
+        "erklaerung": "Die Zufriedenheit ist unabhängig von gesetzlichen Standards relevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2010,
+    "text": "Was ist ein Qualitätsaudit?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine systematische Überprüfung von Qualitätsprozessen und -standards",
+        "erklaerung": "Ein Audit dient der Überprüfung und Bewertung von Qualitätssystemen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine einmalige Kontrolle von Endprodukten",
+        "erklaerung": "Ein Audit ist systematisch und kein einmaliger Prozess.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Analyse von Projektrisiken",
+        "erklaerung": "Risikoanalyse gehört nicht direkt zu einem Qualitätsaudit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2010,
+    "text": "Welche Norm wird häufig als Grundlage für Qualitätsmanagementsysteme verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "ISO 9001",
+        "erklaerung": "Die ISO 9001 ist eine international anerkannte Norm für Qualitätsmanagementsysteme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "DIN 5000",
+        "erklaerung": "DIN 5000 ist keine relevante Norm für Qualitätsmanagement.",
+        "isKorrekt": false
+      },
+      {
+        "text": "GDPR",
+        "erklaerung": "GDPR betrifft Datenschutz, nicht Qualitätsmanagement.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2010,
+    "text": "Warum ist die kontinuierliche Verbesserung ein wichtiger Aspekt des Qualitätsmanagements?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil sie sicherstellt, dass das Unternehmen wettbewerbsfähig bleibt",
+        "erklaerung": "Kontinuierliche Verbesserung hilft, Prozesse und Produkte langfristig zu optimieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie gesetzlich vorgeschrieben ist",
+        "erklaerung": "Die kontinuierliche Verbesserung ist eine freiwillige Maßnahme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil sie den Projektumfang reduziert",
+        "erklaerung": "Die Verbesserung hat keinen Einfluss auf den Umfang eines Projekts.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2010,
+    "text": "Welche Phase des Qualitätsmanagements umfasst die Festlegung von Qualitätsanforderungen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Planungsphase",
+        "erklaerung": "In der Planungsphase werden die Anforderungen definiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Überwachungsphase",
+        "erklaerung": "In der Überwachungsphase wird die Qualität kontrolliert, nicht festgelegt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Abschlussphase",
+        "erklaerung": "Die Abschlussphase dokumentiert Ergebnisse, definiert aber keine Anforderungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2010,
+    "text": "Welche Rolle spielen Mitarbeiter im Qualitätsmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mitarbeiter tragen durch die Einhaltung von Standards zur Qualität bei",
+        "erklaerung": "Qualitätsmanagement erfordert die aktive Mitwirkung der Mitarbeiter.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mitarbeiter sind nicht direkt in das Qualitätsmanagement einbezogen",
+        "erklaerung": "Mitarbeiter spielen eine Schlüsselrolle im Qualitätsmanagement.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mitarbeiter übernehmen nur die Kontrolle der Endprodukte",
+        "erklaerung": "Qualitätsmanagement umfasst mehr als die Endproduktkontrolle.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

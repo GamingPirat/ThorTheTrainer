@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/pages/Quiz/quiz_frage_widget.dart';
-import 'package:lernplatform/pages/Quiz/quiz_subthema_model.dart';
+import 'package:lernplatform/pages/Quiz/quiz_inhalt_controller.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
 
 class QuizSubthemaWidget extends StatelessWidget {
-  NewQuizsubthemaModel viewModel;
+  QuizInhaltController viewModel;
 
   QuizSubthemaWidget({required this.viewModel, super.key});
 
@@ -13,7 +13,7 @@ class QuizSubthemaWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider.value(
       value: viewModel,
-      child: Consumer<NewQuizsubthemaModel>(
+      child: Consumer<QuizInhaltController>(
           builder: (context, vm, child) {
             return Container(
               child: Column(

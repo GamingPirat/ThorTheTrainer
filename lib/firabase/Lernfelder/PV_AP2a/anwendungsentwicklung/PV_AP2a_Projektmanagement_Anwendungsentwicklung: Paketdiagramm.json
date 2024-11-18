@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20512,
+    "text": "Was stellt ein Paketdiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Abhängigkeiten und Gruppierungen von Paketen in einem System",
+        "erklaerung": "Paketdiagramme zeigen die Organisation und Abhängigkeiten von Paketen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die zeitliche Reihenfolge von Nachrichten zwischen Objekten",
+        "erklaerung": "Das ist die Funktion von Sequenzdiagrammen, nicht von Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Abläufe und Entscheidungen in einem Prozess",
+        "erklaerung": "Das beschreibt ein Aktivitätsdiagramm, nicht ein Paketdiagramm.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20512,
+    "text": "Welche Elemente sind typisch für ein Paketdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Pakete, Abhängigkeiten und Klassen",
+        "erklaerung": "Diese Elemente sind zentral für Paketdiagramme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Prozesse, Bedingungen und Schleifen",
+        "erklaerung": "Diese gehören zu Aktivitätsdiagrammen, nicht zu Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Lebenslinien, Pfeile und Aktivierungsbalken",
+        "erklaerung": "Diese Elemente gehören zu Sequenzdiagrammen, nicht zu Paketdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20512,
+    "text": "Wofür werden Paketdiagramme typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Darstellung der Modularisierung und Abhängigkeiten eines Systems",
+        "erklaerung": "Paketdiagramme helfen, die Struktur und Abhängigkeiten von Paketen zu visualisieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Visualisierung von Datenflüssen",
+        "erklaerung": "Datenflussdiagramme dienen der Visualisierung von Datenflüssen, nicht Paketdiagramme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Beschreibung der Workflows in einem Prozess",
+        "erklaerung": "Das ist die Funktion von Aktivitätsdiagrammen, nicht von Paketdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20512,
+    "text": "Wie werden Pakete in einem Paketdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Rechtecke mit einem kleinen Tab oben links",
+        "erklaerung": "Dieses Symbol ist standardmäßig für Pakete in Paketdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Ovale mit Pfeilen",
+        "erklaerung": "Ovale werden in Paketdiagrammen nicht verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Kreise und Linien",
+        "erklaerung": "Kreise sind keine typischen Symbole in Paketdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20512,
+    "text": "Was beschreibt eine Abhängigkeitsbeziehung in einem Paketdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Paket benötigt das andere Paket zur Kompilierung oder Laufzeit",
+        "erklaerung": "Abhängigkeiten zeigen, dass ein Paket auf ein anderes angewiesen ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die zeitliche Reihenfolge der Ausführung von Paketen",
+        "erklaerung": "Paketdiagramme zeigen keine zeitlichen Abläufe.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Beziehung zwischen Datenbanktabellen",
+        "erklaerung": "Das ist die Funktion von ER-Diagrammen, nicht von Paketdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20512,
+    "text": "Welche Software wird häufig zur Erstellung von Paketdiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Enterprise Architect, Lucidchart oder Microsoft Visio",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von UML-Diagrammen, einschließlich Paketdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "MySQL Workbench",
+        "erklaerung": "MySQL Workbench dient der Datenbankmodellierung, nicht UML-Diagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine geeignete Software zur Erstellung von UML-Diagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20512,
+    "text": "Welche Einschränkungen haben Paketdiagramme?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie zeigen keine internen Details der Pakete",
+        "erklaerung": "Paketdiagramme beschreiben nur die Struktur und Abhängigkeiten, nicht die Details.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine Abhängigkeiten darstellen",
+        "erklaerung": "Abhängigkeiten sind ein zentraler Bestandteil von Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind nicht zur Modularisierung geeignet",
+        "erklaerung": "Paketdiagramme dienen explizit der Modularisierung und Visualisierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20512,
+    "text": "Wie können Pakete in einem Paketdiagramm gruppiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch geschachtelte Pakete",
+        "erklaerung": "Pakete können geschachtelt werden, um ihre Hierarchie zu verdeutlichen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Pfeile mit Bedingungen",
+        "erklaerung": "Pfeile zeigen Abhängigkeiten, keine Gruppierungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch gestrichelte Linien",
+        "erklaerung": "Gestrichelte Linien symbolisieren Abhängigkeiten, keine Gruppierungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20512,
+    "text": "Welche Beziehung wird durch eine gestrichelte Linie in einem Paketdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Abhängigkeit zwischen zwei Paketen",
+        "erklaerung": "Gestrichelte Linien zeigen Abhängigkeiten in einem Paketdiagramm.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Vererbung zwischen zwei Paketen",
+        "erklaerung": "Vererbung wird in Klassendiagrammen dargestellt, nicht in Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Kommunikation zwischen zwei Paketen",
+        "erklaerung": "Paketdiagramme zeigen keine direkte Kommunikation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20512,
+    "text": "Wie kann die Modularisierung durch Paketdiagramme verbessert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch klare Darstellung von Abhängigkeiten und Gruppierungen",
+        "erklaerung": "Paketdiagramme helfen, die Modularität eines Systems durch klare Strukturen zu verbessern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Darstellung von Datenflüssen",
+        "erklaerung": "Datenflüsse werden in Datenflussdiagrammen gezeigt, nicht in Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Definition von Datenbanktabellen",
+        "erklaerung": "Paketdiagramme befassen sich nicht mit Datenbanktabellen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

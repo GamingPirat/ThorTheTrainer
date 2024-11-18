@@ -1,0 +1,325 @@
+{
+  "name": "PV AP2a",
+  "id": 20,
+  "kompetenzbereiche": [
+    {
+      "id": 200,
+      "name": "Projektmanagement",
+      "inhalte": [
+        {
+          "id": 2000,
+          "name": "Projektmanagement Grundlagen",
+          "tags": [200]
+        },
+        {
+          "id": 2001,
+          "name": "Netzplan",
+          "tags": [200]
+        },
+        {
+          "id": 2002,
+          "name": "Gantt Diagramm",
+          "tags": [200]
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "name": "Qualitätsmanagement",
+      "inhalte": [
+        {
+          "id": 2010,
+          "name": "Qualitätsmanagement Grundlagen",
+          "tags": [201]
+        },
+        {
+          "id": 2011,
+          "name": "Softwarequalität",
+          "tags": [201]
+        },
+        {
+          "id": 2012,
+          "name": "Software testen",
+          "tags": [201]
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "name": "Datenschutz",
+      "inhalte": [
+        {
+          "id": 2020,
+          "name": "Datenschutz Grundlagen",
+          "tags": [202]
+        },
+        {
+          "id": 2021,
+          "name": "Datenschutz Begriffe",
+          "tags": [202]
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "name": "IT Sicherheit",
+      "inhalte": [
+        {
+          "id": 2030,
+          "name": "IT Sicherheit Begriffe",
+          "tags": [203]
+        },
+        {
+          "id": 2031,
+          "name": "Schutzbedarfsanalyse",
+          "tags": [203]
+        },
+        {
+          "id": 2032,
+          "name": "Sicherheitsbedrohungen",
+          "tags": [203]
+        },
+        {
+          "id": 2033,
+          "name": "Schwachstellen",
+          "tags": [203]
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "name": "IT Systeme",
+      "inhalte": [
+        {
+          "id": 2040,
+          "name": "Industrie 4.0",
+          "tags": [204]
+        },
+        {
+          "id": 2041,
+          "name": "Verschlüsselungsverfahren",
+          "tags": [204]
+        },
+        {
+          "id": 2042,
+          "name": "Schnittstellen",
+          "tags": [204]
+        },
+        {
+          "id": 2043,
+          "name": "Redundanz",
+          "tags": [204]
+        },
+        {
+          "id": 2044,
+          "name": "Neuronale Netze",
+          "tags": [204]
+        },
+        {
+          "id": 2045,
+          "name": "Speicher Arten",
+          "tags": [204]
+        },
+        {
+          "id": 2046,
+          "name": "USV",
+          "tags": [204]
+        },
+        {
+          "id": 2047,
+          "name": "Server",
+          "tags": [204]
+        },
+        {
+          "id": 2048,
+          "name": "Support in der IT",
+          "tags": [204]
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "name": "Anwendungsentwicklung",
+      "inhalte": [
+        {
+          "id": 2050,
+          "name": "Software Schnittstellen",
+          "tags": [205]
+        },
+        {
+          "id": 2051,
+          "name": "Software Entwicklung planen",
+          "tags": [205]
+        },
+        {
+          "id": 2052,
+          "name": "Programmierparadigmen",
+          "tags": [205]
+        },
+        {
+          "id": 2053,
+          "name": "Sortiealgorythmen",
+          "tags": [205]
+        },
+        {
+          "id": 2054,
+          "name": "OOP",
+          "tags": [205]
+        },
+        {
+          "id": 2056,
+          "name": "SQL",
+          "tags": [205]
+        },
+        {
+          "id": 2057,
+          "name": "Programmablaufplan",
+          "tags": [205]
+        },
+        {
+          "id": 2058,
+          "name": "Struktogramm",
+          "tags": [205]
+        },
+        {
+          "id": 2059,
+          "name": "Anwendungsfalldiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20510,
+          "name": "Sequenzdiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20511,
+          "name": "Aktivitätsdiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20512,
+          "name": "Paketdiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20513,
+          "name": "Zustandsdiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20514,
+          "name": "Zeitverlaufsdiagramm",
+          "tags": [205]
+        },
+        {
+          "id": 20516,
+          "name": "Designpattern",
+          "tags": [205]
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "name": "Netzwerke",
+      "inhalte": [
+        {
+          "id": 2060,
+          "name": "Ethernet",
+          "tags": [206]
+        },
+        {
+          "id": 2061,
+          "name": "IPV4",
+          "tags": [206]
+        },
+        {
+          "id": 2062,
+          "name": "IPV6",
+          "tags": [206]
+        },
+        {
+          "id": 2063,
+          "name": "Routing",
+          "tags": [206]
+        },
+        {
+          "id": 2064,
+          "name": "Firewall",
+          "tags": [206]
+        },
+        {
+          "id": 2065,
+          "name": "Sicherung von Anwendungen",
+          "tags": [206]
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "name": "Geschäftsprozesse",
+      "inhalte": [
+        {
+          "id": 2070,
+          "name": "Serviceanfragen bearbeiten",
+          "tags": [207]
+        },
+        {
+          "id": 2071,
+          "name": "Rechtliche Regelungen für Unternehmen",
+          "tags": [207]
+        },
+        {
+          "id": 2072,
+          "name": "Der Betrieb und sein Umfeld",
+          "tags": [207]
+        },
+        {
+          "id": 2073,
+          "name": "Die eigene Rolle im Betrieb",
+          "tags": [207]
+        },
+        {
+          "id": 2074,
+          "name": "Green IT",
+          "tags": [207]
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "name": "Daten- und Prozessanalyse",
+      "inhalte": [
+        {
+          "id": 2080,
+          "name": "Data Sience",
+          "tags": [208]
+        },
+        {
+          "id": 2081,
+          "name": "Datenanalyse",
+          "tags": [208]
+        },
+        {
+          "id": 2082,
+          "name": "Prozessanalyse",
+          "tags": [208]
+        },
+        {
+          "id": 2083,
+          "name": "Fehleranalyse",
+          "tags": [208]
+        },
+        {
+          "id": 2084,
+          "name": "Clustering",
+          "tags": [208]
+        },
+        {
+          "id": 2085,
+          "name": "Entscheidungsbaum",
+          "tags": [208]
+        }
+      ]
+    }
+  ]
+}

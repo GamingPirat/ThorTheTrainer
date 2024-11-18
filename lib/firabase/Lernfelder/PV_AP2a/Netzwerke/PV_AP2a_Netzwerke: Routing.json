@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Was ist das Ziel des Routings in einem Netzwerk?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Effiziente Weiterleitung von Datenpaketen zu ihrem Ziel.",
+        "erklaerung": "Routing sorgt dafür, dass Datenpakete den optimalen Pfad zum Ziel nehmen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Netzwerkgeschwindigkeit durch Hardware-Optimierung.",
+        "erklaerung": "Routing optimiert den Pfad, nicht die Hardware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verschlüsselung der übertragenen Daten.",
+        "erklaerung": "Routing hat nichts mit der Verschlüsselung zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2063,
+    "text": "Welche Information wird in einer Routing-Tabelle gespeichert?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Netzwerkziel, Subnetzmaske und nächster Hop.",
+        "erklaerung": "Diese Informationen sind in einer Routing-Tabelle enthalten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "MAC-Adresse des Ziels und Portnummer.",
+        "erklaerung": "Routing-Tabelle speichert keine MAC-Adressen oder Portnummern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verschlüsselungsmethode und Datenpaketgröße.",
+        "erklaerung": "Diese Informationen haben nichts mit einer Routing-Tabelle zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Welche Arten von Routing gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Statisches Routing und dynamisches Routing.",
+        "erklaerung": "Diese beiden Arten von Routing sind die gängigsten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Logisches Routing und physisches Routing.",
+        "erklaerung": "Diese Begriffe existieren nicht im Routing.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Virtuelles Routing und reales Routing.",
+        "erklaerung": "Diese Begriffe sind keine Routing-Methoden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Was ist der Unterschied zwischen statischem und dynamischem Routing?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Statisches Routing erfordert manuelle Konfiguration, dynamisches Routing erfolgt automatisch.",
+        "erklaerung": "Statisches Routing wird vom Administrator konfiguriert, dynamisches Routing passt sich an.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Dynamisches Routing funktioniert nur in kleinen Netzwerken.",
+        "erklaerung": "Dynamisches Routing ist für große Netzwerke optimiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Statisches Routing ist immer effizienter als dynamisches Routing.",
+        "erklaerung": "Effizienz hängt von der Netzwerktopologie ab.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2063,
+    "text": "Welche Protokolle werden für dynamisches Routing verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RIP, OSPF und BGP.",
+        "erklaerung": "Diese Protokolle sind typische Vertreter für dynamisches Routing.",
+        "isKorrekt": true
+      },
+      {
+        "text": "TCP, UDP und FTP.",
+        "erklaerung": "Das sind Transport- und Anwendungsprotokolle, keine Routing-Protokolle.",
+        "isKorrekt": false
+      },
+      {
+        "text": "DHCP, DNS und ARP.",
+        "erklaerung": "Diese Protokolle unterstützen andere Netzwerkdienste, sind aber keine Routing-Protokolle.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2063,
+    "text": "Welches Routing-Protokoll basiert auf dem Bellman-Ford-Algorithmus?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RIP (Routing Information Protocol).",
+        "erklaerung": "RIP verwendet den Bellman-Ford-Algorithmus für die Berechnung von Routen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "OSPF (Open Shortest Path First).",
+        "erklaerung": "OSPF verwendet den Dijkstra-Algorithmus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "BGP (Border Gateway Protocol).",
+        "erklaerung": "BGP ist ein Pfadvektor-Protokoll und verwendet keinen Bellman-Ford-Algorithmus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Welche Aufgabe hat ein Router in einem Netzwerk?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weiterleitung von Datenpaketen zwischen verschiedenen Netzwerken.",
+        "erklaerung": "Router verbinden Netzwerke und leiten Daten basierend auf Routing-Tabellen weiter.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erstellen von IP-Adressen für Geräte.",
+        "erklaerung": "Das ist die Aufgabe eines DHCP-Servers, nicht eines Routers.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verschlüsselung von Daten während der Übertragung.",
+        "erklaerung": "Router verschlüsseln Daten nicht, sie leiten nur Pakete weiter.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2063,
+    "text": "Was ist die Funktion von NAT (Network Address Translation) bei Routern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Übersetzung von privaten IP-Adressen in öffentliche IP-Adressen.",
+        "erklaerung": "NAT ermöglicht Geräten mit privaten Adressen den Zugriff auf das Internet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verschlüsselung von Daten bei der Übertragung.",
+        "erklaerung": "NAT hat keine Verschlüsselungsfunktion.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erstellen von Routing-Tabellen.",
+        "erklaerung": "Routing-Tabellen werden durch Protokolle oder manuell erstellt, nicht durch NAT.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Welche Metrik wird bei OSPF zur Bestimmung des besten Pfades verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kosten (Cost).",
+        "erklaerung": "OSPF verwendet die Kosten als Metrik, die auf der Bandbreite basiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Anzahl der Hops.",
+        "erklaerung": "Die Anzahl der Hops wird von RIP, nicht von OSPF verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verzögerung (Delay).",
+        "erklaerung": "Verzögerung wird von EIGRP als Metrik genutzt, nicht von OSPF.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2063,
+    "text": "Was ist eine Default Route in einer Routing-Tabelle?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Standardpfad für Pakete, deren Ziel nicht explizit bekannt ist.",
+        "erklaerung": "Die Default Route ist ein Fallback, wenn kein spezifischer Eintrag existiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Route für Broadcast-Pakete.",
+        "erklaerung": "Broadcast-Pakete werden nicht durch Routing behandelt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Route mit der höchsten Priorität.",
+        "erklaerung": "Die Default Route hat in der Regel die niedrigste Priorität.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

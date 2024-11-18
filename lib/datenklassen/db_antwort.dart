@@ -12,9 +12,9 @@ class Antwort {
   // fromJson factory method
   factory Antwort.fromJson(Map<String, dynamic> json) {
     return Antwort(
-      text: json['text'],
-      erklaerung: json['erklaerung'],
-      isKorrekt: json['isKorrekt'],
+      text: json['text'] ?? "Antwort konnte nicht geladen werden",
+      erklaerung: json['erklaerung'] ?? "",
+      isKorrekt: json['isKorrekt'] ?? true,
     );
   }
 

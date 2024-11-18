@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2033,
+    "text": "Was versteht man unter einer Sicherheitslücke (Schwachstelle)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Schwäche in einem System, die von Angreifern ausgenutzt werden kann",
+        "erklaerung": "Sicherheitslücken entstehen durch Schwächen in Hardware, Software oder Prozessen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Funktion, die ein System beschleunigt",
+        "erklaerung": "Sicherheitslücken haben nichts mit der Leistungsoptimierung zu tun.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Designmerkmal, das zusätzliche Sicherheit bietet",
+        "erklaerung": "Eine Schwachstelle mindert die Sicherheit, anstatt sie zu verbessern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2033,
+    "text": "Welche Kategorie von Schwachstellen betrifft die Benutzerinteraktion?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Menschliche Schwachstellen",
+        "erklaerung": "Fehler oder Nachlässigkeit von Benutzern gehören zu menschlichen Schwachstellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardware-Schwachstellen",
+        "erklaerung": "Diese beziehen sich auf physische Geräte, nicht auf Benutzer.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Protokoll-Schwachstellen",
+        "erklaerung": "Diese betreffen Kommunikationsprotokolle, nicht Benutzerinteraktionen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2033,
+    "text": "Welche Schwachstelle wird durch unzureichende Passwortrichtlinien verursacht?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine erhöhte Anfälligkeit für Brute-Force-Angriffe",
+        "erklaerung": "Schwache Passwortrichtlinien erleichtern das Erraten von Passwörtern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine reduzierte Netzwerkgeschwindigkeit",
+        "erklaerung": "Passwortrichtlinien haben keinen direkten Einfluss auf die Netzwerkgeschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine erhöhte Anfälligkeit für Hardware-Ausfälle",
+        "erklaerung": "Hardware-Ausfälle sind nicht mit Passwortrichtlinien verbunden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2033,
+    "text": "Was kann eine Schwachstelle in einer Webanwendung verursachen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Unzureichende Eingabevalidierung",
+        "erklaerung": "Fehlende Eingabevalidierung kann Angriffe wie SQL-Injection ermöglichen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zu viele Benutzerzugriffe",
+        "erklaerung": "Benutzerzugriffe sind keine direkte Schwachstelle.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Überdimensionierte Serverkapazität",
+        "erklaerung": "Dies ist keine Schwachstelle, sondern kann ein Vorteil sein.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2033,
+    "text": "Wie können Schwachstellen in Software entdeckt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch regelmäßige Sicherheitsüberprüfungen und Penetrationstests",
+        "erklaerung": "Diese Methoden identifizieren Schwachstellen in Software.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Installation zusätzlicher Software ohne Tests",
+        "erklaerung": "Zusätzliche Software kann neue Schwachstellen einführen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch das Löschen von Benutzerkonten",
+        "erklaerung": "Das Löschen von Konten behebt keine Schwachstellen in der Software.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2033,
+    "text": "Was versteht man unter einer 'Zero-Day-Schwachstelle'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Schwachstelle, die Angreifer ausnutzen, bevor ein Patch verfügbar ist",
+        "erklaerung": "Zero-Day-Schwachstellen sind besonders gefährlich, da sie unbemerkt ausgenutzt werden können.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Schwachstelle, die keinen Einfluss auf die IT-Sicherheit hat",
+        "erklaerung": "Zero-Day-Schwachstellen können erhebliche Schäden verursachen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Schwachstelle, die durch veraltete Software verursacht wird",
+        "erklaerung": "Veraltete Software birgt Risiken, ist aber keine Zero-Day-Schwachstelle.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2033,
+    "text": "Wie kann man Schwachstellen durch menschliche Fehler minimieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch regelmäßige Schulungen und Sicherheitsrichtlinien",
+        "erklaerung": "Schulungen und klare Richtlinien helfen, menschliche Fehler zu reduzieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Reduzierung der Anzahl der Mitarbeiter",
+        "erklaerung": "Die Mitarbeiterzahl hat keinen direkten Einfluss auf Schwachstellen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Installation von Antiviren-Software",
+        "erklaerung": "Antiviren-Software schützt vor Malware, nicht vor menschlichen Fehlern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2033,
+    "text": "Welche Schwachstelle kann durch veraltete Software entstehen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Bekannte Sicherheitslücken, die nicht mehr gepatcht wurden",
+        "erklaerung": "Veraltete Software enthält oft Schwachstellen, die Angreifer ausnutzen können.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine erhöhte Netzwerkgeschwindigkeit",
+        "erklaerung": "Veraltete Software hat keinen Einfluss auf die Netzwerkgeschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einen reduzierten Speicherverbrauch",
+        "erklaerung": "Speicherverbrauch hat keinen direkten Bezug zu veralteter Software.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2033,
+    "text": "Welche Schwachstellen können durch schlechte Zugangskontrollen entstehen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Unbefugter Zugriff auf vertrauliche Daten",
+        "erklaerung": "Schlechte Zugangskontrollen ermöglichen unautorisierten Zugriff.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein erhöhtes Datenübertragungsvolumen",
+        "erklaerung": "Zugangskontrollen beeinflussen nicht das Datenvolumen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die automatische Behebung von Softwarefehlern",
+        "erklaerung": "Zugangskontrollen beheben keine Softwarefehler.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2033,
+    "text": "Wie können Schwachstellen in Netzwerken reduziert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die regelmäßige Aktualisierung von Software und Hardware",
+        "erklaerung": "Updates schließen bekannte Sicherheitslücken.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Abschalten von Firewalls",
+        "erklaerung": "Das Abschalten von Firewalls erhöht die Anfälligkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Nutzung von unsicheren Passwörtern",
+        "erklaerung": "Unsichere Passwörter erhöhen das Risiko für Schwachstellen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2085,
+    "text": "Was ist ein Entscheidungsbaum?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Modell, das Entscheidungen und ihre möglichen Folgen darstellt.",
+        "erklaerung": "Ein Entscheidungsbaum visualisiert Entscheidungswege und deren Ergebnisse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Diagramm zur Darstellung von Datenflüssen.",
+        "erklaerung": "Das ist die Funktion eines Datenflussdiagramms, nicht eines Entscheidungsbaums.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Methode zur Organisation von Dateien.",
+        "erklaerung": "Ein Entscheidungsbaum hat nichts mit Datei-Organisation zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2085,
+    "text": "Welche Bestandteile hat ein Entscheidungsbaum?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Knoten, Äste und Blätter.",
+        "erklaerung": "Knoten repräsentieren Entscheidungen, Äste Verzweigungen und Blätter Ergebnisse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kreise, Quadrate und Dreiecke.",
+        "erklaerung": "Diese Formen gehören nicht zur Darstellung eines Entscheidungsbaums.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Tabellen und Spalten.",
+        "erklaerung": "Tabellen sind kein Bestandteil eines Entscheidungsbaums.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2085,
+    "text": "Wofür wird ein Entscheidungsbaum in der Datenanalyse verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Visualisierung von Entscheidungsprozessen und Datenklassifikation.",
+        "erklaerung": "Entscheidungsbäume helfen bei der Analyse und Klassifikation von Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Berechnung von Datenbankindizes.",
+        "erklaerung": "Datenbankindizes werden nicht mit Entscheidungsbäumen berechnet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Speicherung von Datenstrukturen.",
+        "erklaerung": "Entscheidungsbäume speichern keine Daten, sondern dienen der Analyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2085,
+    "text": "Wie wird eine Entscheidung in einem Entscheidungsbaum dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch einen Knoten mit ausgehenden Ästen.",
+        "erklaerung": "Entscheidungsknoten haben mehrere Verzweigungen zu weiteren Knoten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch einen Kreis ohne Verzweigungen.",
+        "erklaerung": "Ein Kreis ist keine typische Darstellung für eine Entscheidung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch eine Linie mit einem Pfeil.",
+        "erklaerung": "Eine Linie stellt keine Entscheidung, sondern einen Übergang dar.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2085,
+    "text": "Welche Vorteile bietet ein Entscheidungsbaum?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einfache Visualisierung komplexer Entscheidungsprozesse.",
+        "erklaerung": "Entscheidungsbäume machen Entscheidungsprozesse übersichtlich und verständlich.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Automatische Datenbereinigung.",
+        "erklaerung": "Ein Entscheidungsbaum analysiert Daten, bereinigt sie jedoch nicht automatisch.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Reduktion des Speicherplatzbedarfs.",
+        "erklaerung": "Entscheidungsbäume sind Analysewerkzeuge und haben keinen Einfluss auf den Speicherplatz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2085,
+    "text": "Wie werden die Ergebnisse eines Entscheidungsbaums dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Als Blätter am Ende der Äste.",
+        "erklaerung": "Blätter repräsentieren die Ergebnisse des Entscheidungsprozesses.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Als Zahlen in einer Tabelle.",
+        "erklaerung": "Tabellen sind keine typische Darstellung der Ergebnisse eines Entscheidungsbaums.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Als Textdokument.",
+        "erklaerung": "Die Ergebnisse eines Entscheidungsbaums werden grafisch dargestellt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2085,
+    "text": "Welche Algorithmen werden zur Erstellung von Entscheidungsbäumen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "CART (Classification and Regression Trees) und ID3.",
+        "erklaerung": "CART und ID3 sind gängige Algorithmen zur Erstellung von Entscheidungsbäumen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "SQL-Abfragen.",
+        "erklaerung": "SQL-Abfragen dienen der Datenabfrage, nicht der Erstellung von Entscheidungsbäumen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Neurale Netzwerke.",
+        "erklaerung": "Neurale Netzwerke sind keine Algorithmen für Entscheidungsbäume.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2085,
+    "text": "Welche Nachteile können Entscheidungsbäume haben?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie können anfällig für Überanpassung (Overfitting) sein.",
+        "erklaerung": "Komplexe Entscheidungsbäume neigen dazu, die Trainingsdaten zu stark zu modellieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine Entscheidungen darstellen.",
+        "erklaerung": "Die Darstellung von Entscheidungen ist die Hauptfunktion von Entscheidungsbäumen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind nicht visuell darstellbar.",
+        "erklaerung": "Entscheidungsbäume sind gerade wegen ihrer Visualisierungsfähigkeit beliebt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2085,
+    "text": "Welche Anwendungsmöglichkeiten haben Entscheidungsbäume?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Datenklassifikation, Entscheidungsfindung und Prognosen.",
+        "erklaerung": "Entscheidungsbäume werden in vielen Bereichen der Datenanalyse eingesetzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Speicherung von großen Datenmengen.",
+        "erklaerung": "Entscheidungsbäume dienen nicht der Datenspeicherung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Berechnung von komplexen mathematischen Gleichungen.",
+        "erklaerung": "Entscheidungsbäume dienen der Entscheidungsfindung, nicht der mathematischen Berechnung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2085,
+    "text": "Warum ist die Wahl der Kriterien für die Knoten eines Entscheidungsbaums wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Kriterien beeinflussen die Genauigkeit und Aussagekraft des Baums.",
+        "erklaerung": "Gut gewählte Kriterien verbessern die Leistungsfähigkeit des Entscheidungsbaums.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Kriterien bestimmen die Größe der Datenbank.",
+        "erklaerung": "Die Wahl der Kriterien hat keinen direkten Einfluss auf die Datenbankgröße.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Kriterien verhindern das Erstellen von Blättern.",
+        "erklaerung": "Die Kriterien legen den Entscheidungsweg fest, nicht das Vorhandensein von Blättern.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

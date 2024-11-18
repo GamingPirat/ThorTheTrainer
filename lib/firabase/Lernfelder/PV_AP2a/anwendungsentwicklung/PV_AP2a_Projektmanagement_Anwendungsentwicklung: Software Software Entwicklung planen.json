@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2051,
+    "text": "Was ist der erste Schritt bei der Planung einer Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Anforderungsanalyse durchführen",
+        "erklaerung": "Die Anforderungsanalyse definiert die Ziele und Anforderungen an die Software.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Code-Review starten",
+        "erklaerung": "Code-Reviews sind Teil der späteren Entwicklungsphasen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Testfälle erstellen",
+        "erklaerung": "Testfälle werden nach der Planungsphase erstellt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2051,
+    "text": "Welche Methode wird häufig verwendet, um den Entwicklungsprozess zu strukturieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Agile Entwicklungsmethoden wie Scrum",
+        "erklaerung": "Scrum ist eine beliebte Methode zur Strukturierung von Entwicklungsprojekten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Speicherung aller Daten in Tabellen",
+        "erklaerung": "Das hat keinen Bezug zur Entwicklungsprozessstrukturierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Benutzung von E-Mails zur Kommunikation",
+        "erklaerung": "E-Mails sind kein strukturierendes Element eines Entwicklungsprozesses.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2051,
+    "text": "Welche Rolle spielt ein Lastenheft in der Planung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es beschreibt die Anforderungen aus der Sicht des Auftraggebers",
+        "erklaerung": "Das Lastenheft dient als Grundlage für die Planung und Spezifikation.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es enthält detaillierte technische Lösungen",
+        "erklaerung": "Das gehört ins Pflichtenheft, nicht ins Lastenheft.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es wird nur im agilen Entwicklungsprozess verwendet",
+        "erklaerung": "Das Lastenheft ist unabhängig von der Entwicklungsstrategie.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2051,
+    "text": "Was ist ein Gantt-Diagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Tool zur Darstellung von Projektzeitplänen",
+        "erklaerung": "Gantt-Diagramme visualisieren zeitliche Abfolgen und Abhängigkeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Werkzeug zur Erstellung von Quellcode",
+        "erklaerung": "Gantt-Diagramme sind für Zeitplanung, nicht für Programmierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Technik zur Analyse von Anforderungen",
+        "erklaerung": "Gantt-Diagramme dienen der Zeitplanung, nicht der Anforderungsanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2051,
+    "text": "Welche Funktion hat ein Pflichtenheft?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es beschreibt, wie die Anforderungen technisch umgesetzt werden sollen",
+        "erklaerung": "Das Pflichtenheft legt die technische Lösung detailliert fest.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es dient der Verwaltung der Projektressourcen",
+        "erklaerung": "Das Pflichtenheft ist für die technische Spezifikation, nicht für Ressourcenverwaltung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es wird ausschließlich vom Kunden erstellt",
+        "erklaerung": "Das Lastenheft wird vom Kunden erstellt, nicht das Pflichtenheft.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2051,
+    "text": "Welche Risiken müssen bei der Planung berücksichtigt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zeitverzug, Budgetüberschreitung und technische Unsicherheiten",
+        "erklaerung": "Diese Risiken können den Projekterfolg gefährden und sollten geplant werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Fehlende Stromversorgung während der Entwicklung",
+        "erklaerung": "Das ist kein typisches Risiko in der Softwareentwicklung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Fehlende Büroausstattung",
+        "erklaerung": "Das ist ein organisatorisches Problem, aber selten ein Entwicklungsrisiko.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2051,
+    "text": "Warum ist die Definition von Meilensteinen wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Fortschritte im Projekt zu messen und zu kontrollieren",
+        "erklaerung": "Meilensteine helfen bei der Überwachung des Projektfortschritts.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Anzahl der Teammitglieder festzulegen",
+        "erklaerung": "Meilensteine beziehen sich auf Projektphasen, nicht auf Teamzusammensetzungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die technischen Anforderungen zu reduzieren",
+        "erklaerung": "Meilensteine haben keinen Einfluss auf die Anforderungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2051,
+    "text": "Was ist eine iterative Entwicklungsplanung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Ansatz, bei dem die Software in kleinen, wiederholten Schritten entwickelt wird",
+        "erklaerung": "Iterative Planung ermöglicht flexible Anpassungen während der Entwicklung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Methode, bei der alle Anforderungen vorab festgelegt werden",
+        "erklaerung": "Das entspricht dem Wasserfallmodell, nicht der iterativen Planung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Ansatz, der keine Tests beinhaltet",
+        "erklaerung": "Tests sind integraler Bestandteil der iterativen Planung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2051,
+    "text": "Welche Rolle spielt ein Produkt-Backlog in agilen Projekten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es enthält priorisierte Aufgaben und Anforderungen für das Projekt",
+        "erklaerung": "Das Produkt-Backlog dient als Grundlage für die Aufgabenplanung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es dokumentiert die Testergebnisse",
+        "erklaerung": "Testergebnisse gehören nicht ins Produkt-Backlog.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es wird nur am Projektende erstellt",
+        "erklaerung": "Das Produkt-Backlog wird während des gesamten Projekts gepflegt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2051,
+    "text": "Welche Ressourcen müssen bei der Planung berücksichtigt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Personal, Budget und technische Infrastruktur",
+        "erklaerung": "Diese Ressourcen sind essenziell für den Projekterfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verfügbarkeit von Snacks und Getränken",
+        "erklaerung": "Das hat keinen direkten Einfluss auf die Projektplanung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Anzahl der Büropflanzen",
+        "erklaerung": "Büropflanzen sind für die Projektplanung nicht relevant.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

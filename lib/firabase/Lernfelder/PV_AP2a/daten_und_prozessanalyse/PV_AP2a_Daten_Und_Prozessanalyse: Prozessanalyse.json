@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2082,
+    "text": "Was ist das Hauptziel der Prozessanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verbesserung und Optimierung von Prozessen.",
+        "erklaerung": "Die Prozessanalyse identifiziert Schwächen und verbessert die Effizienz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Entwicklung neuer Softwareanwendungen.",
+        "erklaerung": "Das ist kein Ziel der Prozessanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erhöhung der Hardwareleistung.",
+        "erklaerung": "Hardwareoptimierung gehört nicht zur Prozessanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2082,
+    "text": "Welche Schritte gehören typischerweise zur Prozessanalyse?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Prozesserhebung, Prozessmodellierung und Prozessbewertung.",
+        "erklaerung": "Diese Schritte sind zentrale Bestandteile der Prozessanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardwareinstallation, Netzwerkmanagement und Datenarchivierung.",
+        "erklaerung": "Diese Aufgaben gehören nicht zur Prozessanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Anwendungsdesign, Datenkompression und Benutzertraining.",
+        "erklaerung": "Diese Tätigkeiten sind nicht Bestandteil der Prozessanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2082,
+    "text": "Welche Methoden werden in der Prozessanalyse häufig eingesetzt?",
+    "version": 1,
+    "nummer": 3,
+    "antworten": [
+      {
+        "text": "Flowcharts, BPMN und Wertstromanalyse.",
+        "erklaerung": "Diese Methoden visualisieren und analysieren Prozesse effektiv.",
+        "isKorrekt": true
+      },
+      {
+        "text": "HTML, CSS und JavaScript.",
+        "erklaerung": "Diese Technologien dienen der Webentwicklung, nicht der Prozessanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Photoshop, Illustrator und Premiere Pro.",
+        "erklaerung": "Diese Tools sind für Grafik- und Videobearbeitung, nicht für Prozessanalysen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2082,
+    "text": "Was ist der Zweck eines Prozessmodells?",
+    "version": 1,
+    "nummer": 4,
+    "antworten": [
+      {
+        "text": "Darstellung eines Prozesses zur Identifikation von Schwachstellen.",
+        "erklaerung": "Prozessmodelle dienen dazu, Abläufe zu visualisieren und zu analysieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Speicherung von Datenbankstrukturen.",
+        "erklaerung": "Datenbanken gehören nicht zur Prozessmodellierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verbesserung der grafischen Darstellung von Anwendungen.",
+        "erklaerung": "Das ist kein Ziel eines Prozessmodells.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2082,
+    "text": "Welche Software wird häufig für Prozessanalysen genutzt?",
+    "version": 1,
+    "nummer": 5,
+    "antworten": [
+      {
+        "text": "Visio, ARIS und Lucidchart.",
+        "erklaerung": "Diese Tools werden häufig zur Prozessmodellierung verwendet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unity, Blender und GIMP.",
+        "erklaerung": "Diese Software wird für Grafik- und Spieleentwicklung genutzt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Notepad, Word und Excel.",
+        "erklaerung": "Nur Excel ist teilweise geeignet, Notepad und Word jedoch nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2082,
+    "text": "Was bedeutet der Begriff 'Bottleneck' in der Prozessanalyse?",
+    "version": 1,
+    "nummer": 6,
+    "antworten": [
+      {
+        "text": "Eine Engstelle, die den Prozessfluss verlangsamt.",
+        "erklaerung": "Ein Bottleneck ist ein Punkt, an dem Prozesse verzögert werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Prozess, der besonders effizient ist.",
+        "erklaerung": "Ein Bottleneck beschreibt keine Effizienz, sondern eine Einschränkung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Schritt, der automatisch optimiert wird.",
+        "erklaerung": "Bottlenecks müssen manuell identifiziert und optimiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2082,
+    "text": "Welche Rolle spielt die Wertstromanalyse in der Prozessanalyse?",
+    "version": 1,
+    "nummer": 7,
+    "antworten": [
+      {
+        "text": "Sie identifiziert Mehrwert- und Nicht-Mehrwert-Aktivitäten.",
+        "erklaerung": "Die Wertstromanalyse dient der Verbesserung von Prozesswerten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie analysiert die physische Netzwerktopologie.",
+        "erklaerung": "Die Wertstromanalyse bezieht sich nicht auf Netzwerke.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie dient ausschließlich der Kostenreduktion.",
+        "erklaerung": "Die Wertstromanalyse hat ein breiteres Ziel als nur Kostenreduktion.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2082,
+    "text": "Was ist der Unterschied zwischen as-is und to-be Modellen in der Prozessanalyse?",
+    "version": 1,
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "As-is beschreibt den aktuellen Zustand, to-be den Zielzustand.",
+        "erklaerung": "As-is Modelle zeigen, wie Prozesse aktuell ablaufen, to-be zeigt Verbesserungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "To-be ist detaillierter als as-is.",
+        "erklaerung": "Die Detaillierung hängt von der Analyse ab, nicht vom Modell.",
+        "isKorrekt": false
+      },
+      {
+        "text": "As-is Modelle sind ausschließlich digital.",
+        "erklaerung": "As-is Modelle können digital oder analog erstellt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2082,
+    "text": "Welche Metriken werden typischerweise in der Prozessanalyse verwendet?",
+    "version": 1,
+    "nummer": 9,
+    "antworten": [
+      {
+        "text": "Durchlaufzeit, Fehlerquote und Ressourcenauslastung.",
+        "erklaerung": "Diese Metriken sind zentrale Kennzahlen in der Prozessanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Netzwerkbandbreite, CPU-Auslastung und Speicherkapazität.",
+        "erklaerung": "Diese Metriken gehören zur IT-Analyse, nicht zur Prozessanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Designqualität, Farbharmonie und Benutzerfreundlichkeit.",
+        "erklaerung": "Diese Kriterien sind für die Gestaltung von Benutzeroberflächen relevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2082,
+    "text": "Welche Herausforderungen können bei der Prozessanalyse auftreten?",
+    "version": 1,
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "Fehlende Daten oder unklare Prozessdefinitionen.",
+        "erklaerung": "Solche Herausforderungen erschweren die Analyse und Optimierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zu hohe Netzwerkgeschwindigkeiten.",
+        "erklaerung": "Netzwerkgeschwindigkeit ist kein typisches Problem der Prozessanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komplexe Benutzeroberflächen.",
+        "erklaerung": "Das ist kein direktes Problem der Prozessanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

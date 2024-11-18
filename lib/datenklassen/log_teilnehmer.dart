@@ -12,8 +12,8 @@ class LogTeilnehmer {
   };
 
   factory LogTeilnehmer.fromJson(Map<String, dynamic> json) => LogTeilnehmer(
-    sterne: json['sterne'],
-    meineLernfelder: (json['meineLernfelder'] as List)
+    sterne: json['sterne'] ?? 0,
+    meineLernfelder: ((json['meineLernfelder'] as List) ?? [])
         .map((item) => LogLernfeld.fromJson(item))
         .toList(),
   );

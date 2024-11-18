@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2012,
+    "text": "Was ist das Hauptziel von Softwaretests?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Fehler in der Software zu identifizieren und zu beheben",
+        "erklaerung": "Das Finden und Beheben von Fehlern ist das Hauptziel von Softwaretests.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Anzahl der Benutzer zu maximieren",
+        "erklaerung": "Softwaretests zielen nicht darauf ab, die Benutzeranzahl zu erhöhen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Entwicklungszeit zu verkürzen",
+        "erklaerung": "Tests können die Qualität sichern, aber nicht direkt die Entwicklungszeit verkürzen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2012,
+    "text": "Welche der folgenden Testarten gehört nicht zu den klassischen Softwaretests?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Integrationstests",
+        "erklaerung": "Integrationstests prüfen das Zusammenspiel verschiedener Module.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Usability-Tests",
+        "erklaerung": "Usability-Tests gehören zu den klassischen Softwaretests.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Marketing-Tests",
+        "erklaerung": "Marketing-Tests sind kein Bestandteil klassischer Softwaretests.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2012,
+    "text": "Was wird bei einem Unit-Test überprüft?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einzelne Code-Einheiten oder Module",
+        "erklaerung": "Unit-Tests überprüfen isolierte Module oder Funktionen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Interaktion zwischen verschiedenen Modulen",
+        "erklaerung": "Das ist das Ziel von Integrationstests, nicht Unit-Tests.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Benutzerfreundlichkeit der Software",
+        "erklaerung": "Das wird in Usability-Tests überprüft, nicht in Unit-Tests.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2012,
+    "text": "Welche Testmethode wird verwendet, um die Performance einer Software zu bewerten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lasttests",
+        "erklaerung": "Lasttests messen die Performance der Software unter hoher Belastung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unit-Tests",
+        "erklaerung": "Unit-Tests prüfen Funktionalität, nicht Performance.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Usability-Tests",
+        "erklaerung": "Usability-Tests bewerten die Benutzerfreundlichkeit, nicht die Performance.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2012,
+    "text": "Was ist der Zweck von Regressionstests?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sicherzustellen, dass Änderungen keine neuen Fehler verursachen",
+        "erklaerung": "Regressionstests prüfen, ob bestehende Funktionen weiterhin korrekt arbeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Funktionalität neuer Features zu testen",
+        "erklaerung": "Neue Features werden in Funktionstests überprüft, nicht in Regressionstests.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Performance der Software zu optimieren",
+        "erklaerung": "Performanceoptimierung gehört nicht zu den Aufgaben von Regressionstests.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2012,
+    "text": "Welche Teststrategie beinhaltet das Testen ohne Vorkenntnisse des Quellcodes?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Black-Box-Testing",
+        "erklaerung": "Beim Black-Box-Testing wird die Software getestet, ohne den Quellcode zu kennen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "White-Box-Testing",
+        "erklaerung": "White-Box-Testing setzt Kenntnisse des Quellcodes voraus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Regressionstests",
+        "erklaerung": "Regressionstests haben keine spezifische Beziehung zum Quellcode.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2012,
+    "text": "Warum sind automatisierte Tests wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil sie Tests effizienter und wiederholbar machen",
+        "erklaerung": "Automatisierte Tests sparen Zeit und sorgen für konsistente Ergebnisse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie manuelle Tests vollständig ersetzen",
+        "erklaerung": "Automatisierte Tests ergänzen manuelle Tests, ersetzen sie aber nicht vollständig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil sie die Benutzererfahrung verbessern",
+        "erklaerung": "Automatisierte Tests prüfen Funktionalität, nicht direkt die Benutzererfahrung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2012,
+    "text": "Welche Aussage beschreibt Smoke-Tests korrekt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie prüfen grundlegende Funktionalitäten einer Software",
+        "erklaerung": "Smoke-Tests stellen sicher, dass die Software grundlegend funktioniert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie prüfen die Sicherheit der Software",
+        "erklaerung": "Die Sicherheit wird durch Penetrationstests überprüft.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie simulieren hohe Belastung auf die Software",
+        "erklaerung": "Hohe Belastung wird in Lasttests überprüft, nicht in Smoke-Tests.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2012,
+    "text": "Welche Tests werden häufig vor einem Release durchgeführt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Akzeptanztests",
+        "erklaerung": "Akzeptanztests überprüfen, ob die Software den Anforderungen des Kunden entspricht.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unit-Tests",
+        "erklaerung": "Unit-Tests werden während der Entwicklung durchgeführt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Lasttests",
+        "erklaerung": "Lasttests können Teil der Tests sein, sind aber nicht spezifisch auf den Release ausgerichtet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2012,
+    "text": "Was ist ein Ziel von End-to-End-Tests?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die gesamte Benutzerinteraktion vom Anfang bis zum Ende zu überprüfen",
+        "erklaerung": "End-to-End-Tests simulieren reale Nutzungsszenarien, um die gesamte Funktionalität zu prüfen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den Quellcode auf Sicherheitslücken zu analysieren",
+        "erklaerung": "Das ist das Ziel von Code-Analysen, nicht von End-to-End-Tests.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Geschwindigkeit einzelner Funktionen zu messen",
+        "erklaerung": "Performance-Messungen sind kein Ziel von End-to-End-Tests.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

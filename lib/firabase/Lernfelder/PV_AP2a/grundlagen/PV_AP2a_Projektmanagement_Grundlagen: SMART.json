@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was bedeutet das 'S' in SMART-Zielen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schnell",
+        "erklaerung": "SMART-Ziele sollen spezifisch, nicht schnell, sein.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Spezifisch",
+        "erklaerung": "Spezifisch bedeutet, dass das Ziel klar und eindeutig definiert ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Standardisiert",
+        "erklaerung": "SMART-Ziele sind individuell und nicht standardisiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Warum ist es wichtig, dass SMART-Ziele messbar sind?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass das Ziel allgemein verständlich ist",
+        "erklaerung": "Messbarkeit hat nichts mit allgemeiner Verständlichkeit zu tun.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um den Fortschritt und Erfolg des Ziels bewerten zu können",
+        "erklaerung": "Messbare Ziele ermöglichen eine objektive Bewertung des Fortschritts.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit die Zieldefinition nicht zu detailliert ist",
+        "erklaerung": "Messbarkeit erfordert Details, nicht deren Vermeidung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was bedeutet es, dass ein Ziel erreichbar sein muss?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Ziel sollte keine Ressourcen erfordern",
+        "erklaerung": "Erreichbarkeit berücksichtigt Ressourcen, schließt sie aber nicht aus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ziel sollte mit den vorhandenen Mitteln und Fähigkeiten umsetzbar sein",
+        "erklaerung": "Erreichbarkeit bedeutet, dass ein Ziel realistisch ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ziel sollte so einfach wie möglich sein",
+        "erklaerung": "Erreichbarkeit bedeutet nicht Einfachheit, sondern Realismus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was bedeutet es, dass ein SMART-Ziel relevant sein muss?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Ziel sollte für das Projekt oder die Organisation von Bedeutung sein",
+        "erklaerung": "Relevanz bedeutet, dass das Ziel einen Mehrwert für das Projekt hat.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ziel sollte immer kurzfristig sein",
+        "erklaerung": "Relevanz ist unabhängig vom zeitlichen Horizont.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ziel sollte keine detaillierte Planung erfordern",
+        "erklaerung": "Detaillierte Planung hat keinen Einfluss auf die Relevanz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was bedeutet es, dass ein SMART-Ziel zeitgebunden sein muss?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Ziel sollte nur kurzfristig erreichbar sein",
+        "erklaerung": "Zeitgebundenheit bedeutet nicht, dass das Ziel kurzfristig sein muss.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ziel sollte eine klare Deadline oder einen definierten Zeitrahmen haben",
+        "erklaerung": "Zeitgebundenheit sorgt für klare zeitliche Vorgaben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ziel sollte keine Flexibilität bei der Umsetzung zulassen",
+        "erklaerung": "Zeitgebundenheit schließt Flexibilität nicht aus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Welche Eigenschaft eines SMART-Ziels wird durch eine klare Deadline unterstützt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Messbarkeit",
+        "erklaerung": "Messbarkeit wird durch andere Kriterien als eine Deadline definiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zeitgebundenheit",
+        "erklaerung": "Zeitgebundenheit erfordert eine klare Deadline.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Relevanz",
+        "erklaerung": "Relevanz betrifft den Nutzen des Ziels, nicht den Zeitrahmen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was passiert, wenn ein SMART-Ziel nicht messbar ist?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Ziel kann nicht überprüft werden",
+        "erklaerung": "Ohne Messbarkeit ist der Fortschritt schwer nachvollziehbar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ziel wird automatisch erreicht",
+        "erklaerung": "Ein Ziel ist ohne Messbarkeit nicht automatisch erreichbar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ziel verliert seine Relevanz",
+        "erklaerung": "Messbarkeit und Relevanz sind unabhängige Kriterien.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum sollten SMART-Ziele spezifisch formuliert sein?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Missverständnisse und Interpretationsspielraum zu vermeiden",
+        "erklaerung": "Spezifische Ziele helfen, klare Erwartungen zu setzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Damit sie nicht zu detailliert sind",
+        "erklaerung": "Spezifische Ziele sind präzise und können detailliert sein.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Damit sie schneller erreicht werden können",
+        "erklaerung": "Spezifisch bedeutet nicht zwangsläufig schneller.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welches der folgenden Ziele erfüllt das Kriterium der SMART-Zielsetzung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ich möchte erfolgreich sein",
+        "erklaerung": "Dieses Ziel ist nicht spezifisch oder messbar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ich möchte meinen Umsatz um 10 % innerhalb der nächsten 6 Monate steigern",
+        "erklaerung": "Dieses Ziel ist spezifisch, messbar, erreichbar, relevant und zeitgebunden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ich möchte irgendwann mehr Kunden gewinnen",
+        "erklaerung": "Das Ziel ist weder zeitgebunden noch spezifisch.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist ein Beispiel für ein nicht erreichbares Ziel?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Steigerung der Produktivität um 5 % in einem Jahr",
+        "erklaerung": "Das ist realistisch und erreichbar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Verdopplung des Umsatzes innerhalb einer Woche",
+        "erklaerung": "Dieses Ziel ist unrealistisch und nicht erreichbar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Verbesserung der Kundenzufriedenheit durch regelmäßige Feedback-Umfragen",
+        "erklaerung": "Das ist ein realistisches Ziel.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

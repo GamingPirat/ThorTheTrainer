@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist das Hauptziel des Projektmanagements?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Alle Projektbeteiligten zufriedenstellen",
+        "erklaerung": "Das Ziel des Projektmanagements liegt in der Erreichung des definierten Projekterfolgs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Projekt innerhalb der vorgegebenen Zeit, des Budgets und der Qualität erfolgreich abzuschließen",
+        "erklaerung": "Dies beschreibt das zentrale Ziel des Projektmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Möglichst viele Ressourcen einsetzen",
+        "erklaerung": "Effizienz ist wichtiger als der Einsatz von Ressourcen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Elemente gehören zur klassischen Projektmanagement-Trias?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zeit, Budget, Ressourcen",
+        "erklaerung": "Ressourcen gehören nicht zur klassischen Trias.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zeit, Kosten, Qualität",
+        "erklaerung": "Dies sind die drei klassischen Elemente des Projektmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Planung, Durchführung, Abschluss",
+        "erklaerung": "Das sind Phasen im Projektmanagement, keine Trias.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was versteht man unter Ressourcenmanagement im Projektmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die genaue Planung und Kontrolle des Projektbudgets",
+        "erklaerung": "Das Budgetmanagement ist nur ein Teilbereich.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die effiziente Nutzung und Verteilung von Personal, Material und Finanzen",
+        "erklaerung": "Dies ist die Hauptaufgabe des Ressourcenmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Definition von Projektzielen",
+        "erklaerung": "Das gehört zur Zieldefinition, nicht zum Ressourcenmanagement.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Warum ist die Zieldefinition im Projektmanagement wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um die Kommunikation im Team zu verbessern",
+        "erklaerung": "Das ist ein Nebeneffekt, aber nicht der Hauptgrund.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um den Erfolg des Projekts zu messen",
+        "erklaerung": "Klar definierte Ziele sind entscheidend für die Erfolgsmessung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um Risiken zu vermeiden",
+        "erklaerung": "Risiken können durch Zieldefinition nicht vollständig vermieden werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Was bedeutet es, ein Projektziel „spezifisch“ zu formulieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Ziel sollte detailliert und klar verständlich sein",
+        "erklaerung": "Spezifische Ziele helfen, Missverständnisse zu vermeiden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Ziel sollte flexibel bleiben",
+        "erklaerung": "Flexibilität ist hier nicht gemeint.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ziel sollte vor allem auf kurzfristige Gewinne abzielen",
+        "erklaerung": "Projektziele sind meist langfristig ausgelegt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Aufgabe hat das Projektmanagement bezüglich des Zeitrahmens?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Projektlaufzeit möglichst kurz zu halten",
+        "erklaerung": "Der Zeitrahmen sollte realistisch sein, nicht zwangsläufig kurz.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einen realistischen Zeitplan zu erstellen und einzuhalten",
+        "erklaerung": "Dies ist die Kernaufgabe des Zeitmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur die Endtermine zu berücksichtigen",
+        "erklaerung": "Ein umfassender Zeitplan ist wichtig, nicht nur die Endtermine.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist ein typisches Anzeichen dafür, dass ein Projekt über das Budget hinausläuft?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Teammitglied benötigt mehr Zeit für eine Aufgabe",
+        "erklaerung": "Einzelne Verzögerungen führen nicht direkt zu Budgetüberschreitungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es gibt unerwartete Änderungen im Projektumfang",
+        "erklaerung": "Solche Änderungen sind häufige Gründe für Budgetüberschreitungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es wird zusätzliche Kommunikation mit dem Kunden benötigt",
+        "erklaerung": "Mehr Kommunikation beeinflusst das Budget in der Regel nur indirekt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum ist es wichtig, den Projektumfang klar zu definieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass die Ressourcen effizient genutzt werden",
+        "erklaerung": "Ein klar definierter Umfang hilft bei der effizienten Ressourcennutzung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Kommunikation im Team zu reduzieren",
+        "erklaerung": "Eine klare Definition fördert die Kommunikation, reduziert sie aber nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Änderungen während des Projekts zu vermeiden",
+        "erklaerung": "Änderungen können nicht vollständig vermieden werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Rolle spielt die Kommunikation bei der Definition von Projektzielen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie hilft, die Ziele mit allen Beteiligten zu teilen und Missverständnisse zu vermeiden",
+        "erklaerung": "Gute Kommunikation ist essenziell, um ein gemeinsames Verständnis der Ziele zu schaffen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ist nur bei großen Projekten notwendig",
+        "erklaerung": "Kommunikation ist unabhängig von der Projektgröße wichtig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie dient ausschließlich der Dokumentation",
+        "erklaerung": "Kommunikation dient auch der Klärung und Abstimmung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist die Hauptaufgabe des Projektmanagers bei der Ressourcenkoordination?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mehr Ressourcen als benötigt bereitzustellen",
+        "erklaerung": "Ressourcenmanagement zielt auf Effizienz, nicht auf Überfluss.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die verfügbaren Ressourcen effizient und zielgerichtet einzusetzen",
+        "erklaerung": "Effizienz ist die Kernaufgabe des Ressourcenmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ressourcen ohne Rücksicht auf das Budget zu beschaffen",
+        "erklaerung": "Das Budget ist ein wesentlicher Faktor bei der Ressourcenbeschaffung.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

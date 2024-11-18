@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2042,
+    "text": "Was versteht man unter einer Benutzerschnittstelle (User Interface)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Schnittstelle zwischen Benutzer und Software, die die Interaktion ermöglicht",
+        "erklaerung": "Eine Benutzerschnittstelle dient der Kommunikation zwischen Benutzer und System.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Hardwarekomponente zur Datenspeicherung",
+        "erklaerung": "Benutzerschnittstellen sind keine Hardwarekomponenten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein System zur Verschlüsselung von Daten",
+        "erklaerung": "Die Verschlüsselung ist nicht Aufgabe einer Benutzerschnittstelle.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2042,
+    "text": "Was ist der Zweck eines SDK (Software Development Kit)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Entwicklern Werkzeuge zur Verfügung zu stellen, um Anwendungen für eine bestimmte Plattform zu erstellen",
+        "erklaerung": "SDKs bieten Schnittstellen, Bibliotheken und Dokumentationen für Entwickler.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die physische Verbindung von Geräten zu ermöglichen",
+        "erklaerung": "SDKs betreffen Software, nicht physische Verbindungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Netzwerkgeschwindigkeit zu erhöhen",
+        "erklaerung": "SDKs haben keinen direkten Einfluss auf Netzwerkgeschwindigkeiten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2042,
+    "text": "Welche Kommunikationsprotokolle werden häufig für Schnittstellen genutzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "HTTP, HTTPS und MQTT",
+        "erklaerung": "Diese Protokolle werden oft in APIs und IoT-Anwendungen verwendet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "TCP/IP, DNS und Bluetooth",
+        "erklaerung": "Diese Protokolle betreffen Netzwerke und Hardware, nicht primär Schnittstellen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HTML, CSS und JavaScript",
+        "erklaerung": "Diese Technologien betreffen die Darstellung im Web, nicht die Kommunikation zwischen Schnittstellen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2042,
+    "text": "Was ist eine Plug-and-Play-Schnittstelle?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Schnittstelle, die Hardware automatisch erkennt und integriert",
+        "erklaerung": "Plug-and-Play ermöglicht die automatische Konfiguration von Hardware.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Software, die manuell installiert werden muss",
+        "erklaerung": "Plug-and-Play erfordert keine manuelle Installation.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Protokoll zur Verschlüsselung von Daten",
+        "erklaerung": "Plug-and-Play bezieht sich auf Hardwareintegration, nicht auf Verschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2042,
+    "text": "Welche Art von Schnittstelle ermöglicht die Integration von Cloud-Diensten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RESTful APIs",
+        "erklaerung": "RESTful APIs sind der Standard für die Kommunikation mit Cloud-Diensten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "USB-Schnittstellen",
+        "erklaerung": "USB-Schnittstellen betreffen Hardware, nicht Cloud-Dienste.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HDMI-Schnittstellen",
+        "erklaerung": "HDMI ist keine Schnittstelle für Cloud-Dienste.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2042,
+    "text": "Was ist eine Herausforderung bei der Implementierung von Schnittstellen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Sicherstellung der Kompatibilität zwischen verschiedenen Systemen",
+        "erklaerung": "Schnittstellen müssen oft Systeme mit unterschiedlichen Standards verbinden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Reduzierung der Netzwerkgeschwindigkeit",
+        "erklaerung": "Eine gute Schnittstelle sollte die Geschwindigkeit nicht verringern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Entfernung von Authentifizierungsmechanismen",
+        "erklaerung": "Sicherheit ist eine zentrale Herausforderung und darf nicht vernachlässigt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2042,
+    "text": "Was ist der Unterschied zwischen einer API und einer GUI?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "APIs verbinden Anwendungen, GUIs ermöglichen die Interaktion mit Benutzern",
+        "erklaerung": "APIs und GUIs haben unterschiedliche Aufgaben und Zielgruppen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "APIs sind langsamer als GUIs",
+        "erklaerung": "Die Geschwindigkeit hängt von der Implementierung ab, nicht von der Art.",
+        "isKorrekt": false
+      },
+      {
+        "text": "APIs erfordern immer Benutzerinteraktion",
+        "erklaerung": "APIs arbeiten oft im Hintergrund und erfordern keine Benutzerinteraktion.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2042,
+    "text": "Wie verbessert eine Middleware-Schnittstelle die Systemintegration?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie verbindet verschiedene Anwendungen und Datenquellen miteinander",
+        "erklaerung": "Middleware erleichtert die Integration durch Bereitstellung von standardisierten Schnittstellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ersetzt alle vorhandenen Schnittstellen",
+        "erklaerung": "Middleware ergänzt bestehende Schnittstellen, ersetzt sie aber nicht vollständig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie ermöglicht nur die Offline-Datenübertragung",
+        "erklaerung": "Middleware unterstützt sowohl Offline- als auch Echtzeit-Integration.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2042,
+    "text": "Was bedeutet 'Backward Compatibility' bei Schnittstellen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Fähigkeit einer neuen Schnittstelle, mit älteren Versionen kompatibel zu sein",
+        "erklaerung": "Backward Compatibility stellt sicher, dass ältere Systeme weiterhin genutzt werden können.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Unterstützung ausschließlich moderner Technologien",
+        "erklaerung": "Backward Compatibility bezieht sich auf ältere Systeme, nicht nur auf moderne Technologien.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Entfernung aller bisherigen Funktionen",
+        "erklaerung": "Backward Compatibility bewahrt bestehende Funktionen, anstatt sie zu entfernen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2042,
+    "text": "Welche Datenformate werden häufig für Schnittstellen genutzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "JSON und XML",
+        "erklaerung": "Diese Formate sind Standard für den Datenaustausch in APIs.",
+        "isKorrekt": true
+      },
+      {
+        "text": "CSV und TXT",
+        "erklaerung": "Diese Formate werden auch genutzt, aber JSON und XML sind verbreiteter für Schnittstellen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "PDF und DOCX",
+        "erklaerung": "PDF und DOCX sind für Dokumente, nicht primär für Schnittstellen gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

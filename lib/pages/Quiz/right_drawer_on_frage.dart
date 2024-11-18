@@ -65,11 +65,13 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
     }
   }
 
-  void _showAddQuestionDialog() {
+  void _showAddQuestionDialog({required String title, required String hint, }) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AddQuestionDialog(
+          title: title,
+          hint: hint,
           onSend: (questionText) async {
             await _addQuestionToFirestore(questionText);
             setState(() => widget.frageGesendet = true);
@@ -95,31 +97,21 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
               children: [
                 const Spacer(flex: 3),
                 InkWell(
-                  onTap: _showAddQuestionDialog,
+                  onTap: () => _showAddQuestionDialog(
+                      title: "Dir ist eine Frage eingefallen?",
+                      hint: "Wirf sie in den Pool!"
+                  ),
                   child: widget.frageGesendet
                       ? Icon(Icons.thumb_up, size: 48, color: Colors.greenAccent)
-                      : Column(
-                    children: [
-                      Icon(Icons.lightbulb, size: 48, color: iconColor),
-                      Text("Dir"),
-                      Text("ist eine"),
-                      Text("Frage"),
-                      Text("eingefallen?"),
-                      Text("Erweitere"),
-                      Text("den Pool."),
-                    ],
-                  ),
+                      : Icon(Icons.lightbulb, size: 48, color: iconColor),
                 ),
                 const Spacer(flex: 1),
                 InkWell(
-                  onTap: _showAddQuestionDialog,
-                  child: Column(
-                    children: [
-                      Icon(Icons.note_add, size: 48, color: iconColor),
-                      Text("Diese Frage ist"),
-                      Text("verbesserungswürdig?"),
-                    ],
+                  onTap: () => _showAddQuestionDialog(
+                      title: "Mit der Frage stimmt was nicht?",
+                      hint: "Wie würdest du sie verbessern?"
                   ),
+                  child: Icon(Icons.note_add, size: 48, color: iconColor),
                 ),
                 const Spacer(flex: 3),
               ],
@@ -133,8 +125,14 @@ class _RightDrawerState extends State<RightDrawer> with SingleTickerProviderStat
 
 class AddQuestionDialog extends StatefulWidget {
   final Future<void> Function(String) onSend;
+  final String title;
+  final String hint;
 
-  const AddQuestionDialog({Key? key, required this.onSend}) : super(key: key);
+  const AddQuestionDialog({Key? key,
+    required this.onSend,
+    required this.title,
+    required this.hint,
+  }) : super(key: key);
 
   @override
   _AddQuestionDialogState createState() => _AddQuestionDialogState();
@@ -176,7 +174,7 @@ class _AddQuestionDialogState extends State<AddQuestionDialog> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Frage hinzufügen'),
+      title: Text(widget.title),
       content: SingleChildScrollView(
         child: ConstrainedBox(
           constraints: BoxConstraints(
@@ -190,19 +188,19 @@ class _AddQuestionDialogState extends State<AddQuestionDialog> {
                       ? Icon(Icons.thumb_up, size: 48, color: Color(0xFF00FF00))
                       : TextField(
                     controller: _textController,
-                    decoration: const InputDecoration(
-                      hintText: 'Welche Frage ist dir eingefallen?',
+                    decoration: InputDecoration(
+                      hintText: widget.hint,
                       border: OutlineInputBorder(),
                     ),
-                    maxLines: null, // Erlaubt das Wachsen des Textfeldes
+                    maxLines: null,
                     expands: true, // Lässt das Textfeld vertikal expandieren
                     keyboardType: TextInputType.multiline,
                   ),
                 ),
                 if (_questionSent)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 16.0),
-                    child: Text("Frage erfolgreich gesendet!"),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 16.0),
+                    child: Text("Nachricht erfolgreich gesendet!"),
                   ),
               ],
             ),

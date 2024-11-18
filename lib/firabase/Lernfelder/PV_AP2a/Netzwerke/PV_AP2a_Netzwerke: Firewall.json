@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2064,
+    "text": "Was ist die Hauptaufgabe einer Firewall?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutz des Netzwerks vor unautorisiertem Zugriff.",
+        "erklaerung": "Firewalls blockieren oder erlauben Datenverkehr basierend auf Regeln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Netzwerkgeschwindigkeit.",
+        "erklaerung": "Firewalls verbessern nicht die Geschwindigkeit, sondern die Sicherheit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verschlüsselung von Datenpaketen.",
+        "erklaerung": "Verschlüsselung gehört nicht zur Funktion einer Firewall.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2064,
+    "text": "Welche Arten von Firewalls gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Netzwerkbasierte und hostbasierte Firewalls.",
+        "erklaerung": "Netzwerkbasierte Firewalls schützen ganze Netzwerke, hostbasierte einzelne Geräte.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Physische und virtuelle Firewalls.",
+        "erklaerung": "Diese Einteilung ist unüblich und nicht korrekt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Hardware-Firewalls und DNS-Firewalls.",
+        "erklaerung": "DNS-Firewalls sind keine eigene Kategorie.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2064,
+    "text": "Was ist eine Stateful Firewall?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Firewall, die den Zustand von Netzwerkverbindungen überwacht.",
+        "erklaerung": "Stateful Firewalls analysieren den Kontext und den Status von Verbindungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Firewall, die nur eingehenden Datenverkehr filtert.",
+        "erklaerung": "Stateful Firewalls überwachen sowohl eingehenden als auch ausgehenden Verkehr.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Firewall, die ausschließlich auf Hardware basiert.",
+        "erklaerung": "Der Begriff Stateful beschreibt die Funktionalität, nicht die Implementierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2064,
+    "text": "Welche Daten werden von einer Firewall geprüft?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Header-Informationen der Datenpakete.",
+        "erklaerung": "Firewalls prüfen meist die Header, um Absender, Ziel und Ports zu analysieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur den Payload von Datenpaketen.",
+        "erklaerung": "Der Payload wird in der Regel nicht geprüft, außer bei Deep Packet Inspection.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ausschließlich verschlüsselte Daten.",
+        "erklaerung": "Firewalls analysieren Daten unabhängig von deren Verschlüsselungsstatus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2064,
+    "text": "Was ist ein DMZ (Demilitarized Zone) in Verbindung mit Firewalls?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein isolierter Bereich für öffentlich zugängliche Server.",
+        "erklaerung": "Die DMZ ist ein Netzwerkbereich zwischen der internen und der externen Firewall.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Netzwerkbereich ohne jegliche Sicherheitsrichtlinien.",
+        "erklaerung": "DMZs haben spezifische Regeln, um externe Angriffe zu minimieren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine zusätzliche Software für Firewalls.",
+        "erklaerung": "DMZ beschreibt eine Netzwerktopologie, keine Software.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2064,
+    "text": "Welche Technik wird von Firewalls verwendet, um Datenpakete zu blockieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Regelbasierte Filterung.",
+        "erklaerung": "Firewalls verwenden Regeln, um Datenverkehr zu erlauben oder zu blockieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Automatische Datenverschlüsselung.",
+        "erklaerung": "Firewalls verschlüsseln keine Daten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Datenkompression.",
+        "erklaerung": "Firewalls komprimieren keine Daten, sondern filtern sie.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2064,
+    "text": "Welche Firewall-Technologie analysiert den Inhalt von Datenpaketen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Deep Packet Inspection (DPI).",
+        "erklaerung": "DPI analysiert den Inhalt von Paketen, um Sicherheitsbedrohungen zu erkennen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Proxy-Server.",
+        "erklaerung": "Ein Proxy leitet Daten weiter, analysiert aber nicht detailliert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Stateless Filtering.",
+        "erklaerung": "Stateless Filtering analysiert nur die Header von Paketen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2064,
+    "text": "Welche Ports können von einer Firewall blockiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Beliebige Ports basierend auf den Firewall-Regeln.",
+        "erklaerung": "Firewalls können Regeln erstellen, um spezifische Ports zu blockieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur Ports über 1024.",
+        "erklaerung": "Firewalls können auch Systemports unter 1024 blockieren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur Ports, die von Angriffen betroffen sind.",
+        "erklaerung": "Firewalls arbeiten regelbasiert und nicht nur auf Angriffsmuster.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2064,
+    "text": "Was ist der Unterschied zwischen einer Hardware- und einer Software-Firewall?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Hardware-Firewall ist ein separates Gerät, eine Software-Firewall läuft auf einem Host.",
+        "erklaerung": "Hardware-Firewalls sind physische Geräte, Software-Firewalls sind Programme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Software-Firewall ist immer leistungsstärker als eine Hardware-Firewall.",
+        "erklaerung": "Leistung hängt von der Implementierung ab, nicht vom Typ der Firewall.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Hardware-Firewalls benötigen keine Konfiguration.",
+        "erklaerung": "Auch Hardware-Firewalls müssen konfiguriert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2064,
+    "text": "Welche Schwachstellen kann eine Firewall nicht verhindern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Phishing-Angriffe.",
+        "erklaerung": "Phishing basiert auf Social Engineering und nicht auf Netzwerkverkehr.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Denial-of-Service-Angriffe.",
+        "erklaerung": "Moderne Firewalls können oft DoS-Angriffe minimieren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unberechtigten Netzwerkzugriff.",
+        "erklaerung": "Dies ist eine der Hauptfunktionen von Firewalls.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

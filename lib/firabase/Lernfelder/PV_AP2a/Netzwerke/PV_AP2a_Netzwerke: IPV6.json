@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Wie viele Bits hat eine IPv6-Adresse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "128 Bits",
+        "erklaerung": "Eine IPv6-Adresse besteht aus 128 Bits, im Gegensatz zu IPv4 mit 32 Bits.",
+        "isKorrekt": true
+      },
+      {
+        "text": "64 Bits",
+        "erklaerung": "IPv6 verwendet 128 Bits, nicht 64.",
+        "isKorrekt": false
+      },
+      {
+        "text": "32 Bits",
+        "erklaerung": "32 Bits werden für IPv4-Adressen genutzt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Wie wird eine IPv6-Adresse dargestellt?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Als acht Gruppen von vier hexadezimalen Ziffern, getrennt durch Doppelpunkte.",
+        "erklaerung": "IPv6-Adressen bestehen aus acht 16-Bit-Blöcken.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Als vier Dezimalzahlen, getrennt durch Punkte.",
+        "erklaerung": "Dies ist die Darstellung von IPv4-Adressen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Als eine Binärsequenz ohne Trennzeichen.",
+        "erklaerung": "Eine Binärsequenz ohne Trennzeichen ist unpraktisch und wird nicht verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2062,
+    "text": "Welche der folgenden Adressen ist eine gültige IPv6-Adresse?",
+    "version": 1,
+    "nummer": 3,
+    "antworten": [
+      {
+        "text": "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
+        "erklaerung": "Das ist eine gültige IPv6-Adresse im Standardformat.",
+        "isKorrekt": true
+      },
+      {
+        "text": "192.168.0.1",
+        "erklaerung": "Das ist eine IPv4-Adresse, keine IPv6-Adresse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "127.0.0.1",
+        "erklaerung": "Das ist die Loopback-Adresse von IPv4.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Welches Hauptproblem von IPv4 löst IPv6?",
+    "version": 1,
+    "nummer": 4,
+    "antworten": [
+      {
+        "text": "Den begrenzten Adressraum.",
+        "erklaerung": "IPv6 bietet 2^128 mögliche Adressen und löst damit die Adressknappheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die mangelnde Unterstützung für drahtlose Netzwerke.",
+        "erklaerung": "IPv4 unterstützt drahtlose Netzwerke ebenso wie IPv6.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Kompatibilität mit älteren Protokollen.",
+        "erklaerung": "IPv6 ist nicht direkt kompatibel mit IPv4.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2062,
+    "text": "Welche Adresse ist die IPv6-Loopback-Adresse?",
+    "version": 1,
+    "nummer": 5,
+    "antworten": [
+      {
+        "text": "::1",
+        "erklaerung": "::1 ist die standardisierte Loopback-Adresse in IPv6.",
+        "isKorrekt": true
+      },
+      {
+        "text": "127.0.0.1",
+        "erklaerung": "127.0.0.1 ist die IPv4-Loopback-Adresse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "fe80::1",
+        "erklaerung": "fe80::1 ist eine Link-Local-Adresse, keine Loopback-Adresse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Was bedeutet der Präfix 'fe80::' in IPv6?",
+    "version": 1,
+    "nummer": 6,
+    "antworten": [
+      {
+        "text": "Es handelt sich um eine Link-Local-Adresse.",
+        "erklaerung": "Link-Local-Adressen sind auf den lokalen Link beschränkt und beginnen mit fe80::.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es handelt sich um eine globale Unicast-Adresse.",
+        "erklaerung": "Globale Unicast-Adressen haben einen anderen Präfix.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es handelt sich um eine Multicast-Adresse.",
+        "erklaerung": "Multicast-Adressen beginnen typischerweise mit ff00::.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Welche Rolle spielt der DNS bei IPv6?",
+    "version": 1,
+    "nummer": 7,
+    "antworten": [
+      {
+        "text": "DNS ordnet Domainnamen IPv6-Adressen zu.",
+        "erklaerung": "DNS übersetzt Domainnamen in IPv4- oder IPv6-Adressen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "DNS verschlüsselt IPv6-Pakete.",
+        "erklaerung": "DNS dient nicht zur Verschlüsselung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "DNS dient als Firewall für IPv6-Netzwerke.",
+        "erklaerung": "DNS hat keine Firewall-Funktion.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2062,
+    "text": "Welche Sicherheitsfunktion wird in IPv6 nativ unterstützt?",
+    "version": 1,
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "IPsec",
+        "erklaerung": "IPv6 unterstützt IPsec nativ für sichere Kommunikation.",
+        "isKorrekt": true
+      },
+      {
+        "text": "SSL/TLS",
+        "erklaerung": "SSL/TLS sind Protokolle auf höherer Ebene, nicht direkt in IPv6 integriert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MAC-Adressverschlüsselung",
+        "erklaerung": "IPv6 verschlüsselt keine MAC-Adressen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2062,
+    "text": "Welche Typen von IPv6-Adressen gibt es?",
+    "version": 1,
+    "nummer": 9,
+    "antworten": [
+      {
+        "text": "Unicast, Multicast und Anycast",
+        "erklaerung": "Diese drei Typen decken alle IPv6-Adresskategorien ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Broadcast, Unicast und Subnet",
+        "erklaerung": "Broadcast existiert nicht in IPv6.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unicast, Broadcast und Tunnel",
+        "erklaerung": "Broadcast wird in IPv6 durch Multicast ersetzt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2062,
+    "text": "Welche Transition-Methoden erleichtern den Wechsel von IPv4 zu IPv6?",
+    "version": 1,
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "Dual Stack, Tunneling und NAT64",
+        "erklaerung": "Diese Methoden ermöglichen die Koexistenz und den Übergang zwischen IPv4 und IPv6.",
+        "isKorrekt": true
+      },
+      {
+        "text": "ARP, DHCP und DNSSEC",
+        "erklaerung": "Diese Technologien stehen nicht im direkten Zusammenhang mit IPv6-Transition.",
+        "isKorrekt": false
+      },
+      {
+        "text": "VLAN, SNMP und ICMPv6",
+        "erklaerung": "Diese Protokolle unterstützen IPv6, sind aber keine Transition-Methoden.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

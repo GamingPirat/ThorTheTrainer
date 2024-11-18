@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2065,
+    "text": "Was ist das Ziel der Sicherung von Anwendungen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutz vor unautorisiertem Zugriff und Datenverlust.",
+        "erklaerung": "Die Sicherung von Anwendungen soll Integrität, Vertraulichkeit und Verfügbarkeit gewährleisten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Netzwerkgeschwindigkeit.",
+        "erklaerung": "Die Sicherung von Anwendungen hat keinen Einfluss auf die Netzwerkgeschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Automatische Verschlüsselung aller Datenbanken.",
+        "erklaerung": "Nicht alle Sicherungsmethoden umfassen Verschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2065,
+    "text": "Welche Maßnahmen gehören zur Anwendungssicherheit?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Regelmäßige Sicherheitsupdates und Patches.",
+        "erklaerung": "Updates beheben bekannte Schwachstellen und schützen Anwendungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Optimierung der Anwendungsgeschwindigkeit.",
+        "erklaerung": "Geschwindigkeit ist kein direkter Bestandteil der Sicherheit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Installation von Firewalls.",
+        "erklaerung": "Firewalls schützen Netzwerke, aber nicht direkt Anwendungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2065,
+    "text": "Was ist eine Schwachstellenanalyse in Bezug auf Anwendungen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Identifikation potenzieller Sicherheitslücken.",
+        "erklaerung": "Eine Schwachstellenanalyse dient dazu, Schwachstellen in Anwendungen zu finden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Analyse der Anwendungsleistung.",
+        "erklaerung": "Die Leistung einer Anwendung hat nichts mit der Schwachstellenanalyse zu tun.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Überprüfung der Hardware-Kompatibilität.",
+        "erklaerung": "Hardware-Kompatibilität ist kein Aspekt der Anwendungssicherung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2065,
+    "text": "Welche Sicherheitsbedrohung wird durch Input Validation verhindert?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "SQL-Injection.",
+        "erklaerung": "Input Validation verhindert, dass schädliche Eingaben die Anwendung kompromittieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "DDoS-Angriffe.",
+        "erklaerung": "DDoS-Angriffe erfordern andere Schutzmaßnahmen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Man-in-the-Middle-Angriffe.",
+        "erklaerung": "Diese werden durch Verschlüsselung verhindert, nicht durch Input Validation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2065,
+    "text": "Was ist der Zweck eines Penetrationstests bei der Anwendungssicherheit?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Simulation von Angriffen, um Schwachstellen zu finden.",
+        "erklaerung": "Penetrationstests prüfen die Sicherheit einer Anwendung durch gezielte Angriffe.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verbesserung der Benutzerfreundlichkeit.",
+        "erklaerung": "Penetrationstests zielen nicht auf die Benutzerfreundlichkeit ab.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Reduzierung der Anwendungsgröße.",
+        "erklaerung": "Penetrationstests haben keinen Einfluss auf die Anwendungsgröße.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2065,
+    "text": "Was beschreibt das Prinzip des Least Privilege?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Benutzer und Prozesse erhalten nur die minimal notwendigen Rechte.",
+        "erklaerung": "Dieses Prinzip minimiert das Risiko unautorisierter Aktionen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Benutzer dürfen alle Funktionen der Anwendung nutzen.",
+        "erklaerung": "Das widerspricht dem Sicherheitsprinzip des Least Privilege.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur Administratoren haben Zugriff auf die Anwendung.",
+        "erklaerung": "Das Prinzip bezieht sich nicht ausschließlich auf Administratoren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2065,
+    "text": "Welche Rolle spielt die Verschlüsselung bei der Sicherung von Anwendungen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutz sensibler Daten während der Übertragung und Speicherung.",
+        "erklaerung": "Verschlüsselung sorgt für Vertraulichkeit und Schutz vor unbefugtem Zugriff.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Anwendungsleistung.",
+        "erklaerung": "Verschlüsselung kann die Leistung geringfügig beeinflussen, ist aber nicht ihr Ziel.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Automatische Fehlerbehebung in der Anwendung.",
+        "erklaerung": "Verschlüsselung behebt keine Anwendungsfehler.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2065,
+    "text": "Was ist der Zweck eines Web Application Firewalls (WAF)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutz vor Angriffen wie Cross-Site Scripting und SQL-Injection.",
+        "erklaerung": "Eine WAF schützt Webanwendungen vor typischen Angriffen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verbesserung der Netzwerkgeschwindigkeit.",
+        "erklaerung": "Eine WAF hat keinen direkten Einfluss auf die Netzwerkgeschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sicherstellung der Anwendungsverfügbarkeit.",
+        "erklaerung": "Die WAF ist nicht primär für die Verfügbarkeit zuständig.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2065,
+    "text": "Wie können sichere Passwörter für Anwendungen gewährleistet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die Verwendung von starken Passwortrichtlinien.",
+        "erklaerung": "Starke Passwortrichtlinien fördern die Sicherheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Speichern von Passwörtern im Klartext.",
+        "erklaerung": "Passwörter sollten niemals im Klartext gespeichert werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Nutzung von unsicheren Algorithmen wie MD5.",
+        "erklaerung": "MD5 gilt als unsicher und sollte nicht verwendet werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2065,
+    "text": "Welche Funktion hat ein Security-Token in der Anwendungssicherheit?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Authentifizierung und Autorisierung von Benutzern.",
+        "erklaerung": "Security-Tokens werden verwendet, um Benutzer sicher zu authentifizieren und zu autorisieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Beschleunigung von Datenübertragungen.",
+        "erklaerung": "Security-Tokens haben keinen Einfluss auf die Geschwindigkeit von Datenübertragungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Automatische Fehlerkorrektur in Anwendungen.",
+        "erklaerung": "Security-Tokens korrigieren keine Fehler in Anwendungen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2072,
+    "text": "Was versteht man unter dem wirtschaftlichen Umfeld eines Betriebs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Markt, Kunden, Lieferanten und Konkurrenz",
+        "erklaerung": "Das wirtschaftliche Umfeld umfasst alle externen Einflüsse auf den Betrieb.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die interne Organisation und Mitarbeitenden",
+        "erklaerung": "Das gehört zum internen Umfeld, nicht zum wirtschaftlichen Umfeld.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Gesetzliche Vorgaben und Regelungen",
+        "erklaerung": "Das zählt eher zum rechtlichen Umfeld des Betriebs.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2072,
+    "text": "Welche Rolle spielen Lieferanten im Umfeld eines Betriebs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lieferanten sichern die Versorgung mit Rohstoffen und Dienstleistungen.",
+        "erklaerung": "Lieferanten sind essenziell für die Produktions- und Geschäftsprozesse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Lieferanten entscheiden über die Preisgestaltung des Betriebs.",
+        "erklaerung": "Die Preisgestaltung erfolgt im Betrieb, auch wenn Lieferkosten Einfluss haben.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Lieferanten regeln die internen Abläufe des Betriebs.",
+        "erklaerung": "Die internen Abläufe werden nicht durch Lieferanten gesteuert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2072,
+    "text": "Welche externen Faktoren können den Erfolg eines Betriebs beeinflussen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kundennachfrage, wirtschaftliche Trends und Wettbewerb",
+        "erklaerung": "Diese Faktoren bestimmen, wie erfolgreich ein Betrieb am Markt agiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Interne Kommunikationswege und Mitarbeiterschulungen",
+        "erklaerung": "Diese Faktoren gehören zum internen Management, nicht zum Umfeld.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Steuerliche Vorschriften und Buchhaltungsrichtlinien",
+        "erklaerung": "Diese zählen eher zu den rechtlichen Rahmenbedingungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2072,
+    "text": "Warum ist es wichtig, die Konkurrenz zu analysieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um die eigenen Wettbewerbsstrategien zu optimieren",
+        "erklaerung": "Die Konkurrenzanalyse hilft, die eigenen Marktchancen zu verbessern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um direkte Preisabsprachen mit Wettbewerbern zu treffen",
+        "erklaerung": "Preisabsprachen sind illegal und unethisch.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um interne Konflikte im Betrieb zu vermeiden",
+        "erklaerung": "Interne Konflikte haben wenig mit der Konkurrenzanalyse zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2072,
+    "text": "Welche gesetzlichen Rahmenbedingungen beeinflussen das betriebliche Umfeld?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Arbeitsrecht, Steuerrecht und Umweltgesetze",
+        "erklaerung": "Diese gesetzlichen Vorgaben haben direkten Einfluss auf das betriebliche Handeln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Interne Richtlinien und Unternehmensziele",
+        "erklaerung": "Interne Richtlinien gehören nicht zum gesetzlichen Umfeld.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Marketingstrategien und Budgetplanung",
+        "erklaerung": "Diese gehören zur internen Unternehmenssteuerung, nicht zum rechtlichen Umfeld.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2072,
+    "text": "Wie beeinflussen wirtschaftliche Trends das betriebliche Umfeld?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie beeinflussen die Nachfrage nach Produkten und Dienstleistungen.",
+        "erklaerung": "Wirtschaftliche Trends können die Kaufkraft und Nachfrage der Kunden beeinflussen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie bestimmen die interne Organisation des Betriebs.",
+        "erklaerung": "Die interne Organisation wird nicht direkt durch externe Trends beeinflusst.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie garantieren den Erfolg des Unternehmens.",
+        "erklaerung": "Erfolg hängt auch von internen Faktoren ab und ist nicht garantiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2072,
+    "text": "Welche Rolle spielen Kunden im Umfeld eines Betriebs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie sind die Hauptquelle für Einnahmen und bestimmen die Nachfrage.",
+        "erklaerung": "Kundenbedürfnisse und -verhalten sind entscheidend für den Erfolg eines Betriebs.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie regulieren die internen Prozesse eines Betriebs.",
+        "erklaerung": "Interne Prozesse werden durch das Management gesteuert, nicht durch Kunden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie legen die Preise für Produkte und Dienstleistungen fest.",
+        "erklaerung": "Preise werden vom Betrieb festgelegt, wobei Kundenverhalten berücksichtigt wird.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2072,
+    "text": "Warum ist die Einhaltung von Umweltgesetzen für Betriebe wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um rechtliche Konsequenzen und Imageschäden zu vermeiden.",
+        "erklaerung": "Die Einhaltung von Umweltgesetzen schützt den Betrieb vor Strafen und sichert das Ansehen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Produktion vollständig auf erneuerbare Energien umzustellen.",
+        "erklaerung": "Umweltgesetze fordern nicht zwangsläufig eine vollständige Umstellung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Kosten für Entsorgung und Recycling zu sparen.",
+        "erklaerung": "Umweltgesetze können zusätzliche Kosten verursachen, die langfristig jedoch sinnvoll sind.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2072,
+    "text": "Wie können Unternehmen ihr Umfeld positiv beeinflussen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch verantwortungsbewusstes Handeln und Kooperation mit Partnern.",
+        "erklaerung": "Unternehmen können durch nachhaltiges und kooperatives Handeln ihr Umfeld positiv beeinflussen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Vernachlässigung von gesetzlichen Vorgaben.",
+        "erklaerung": "Das Missachten von Gesetzen führt zu rechtlichen und finanziellen Konsequenzen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Vermeidung von Innovationen.",
+        "erklaerung": "Innovation stärkt die Position eines Unternehmens im Markt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2072,
+    "text": "Welche Bedeutung hat die regionale Infrastruktur für Betriebe?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie beeinflusst die Logistik und Erreichbarkeit des Betriebs.",
+        "erklaerung": "Eine gute Infrastruktur erleichtert den Transport und die Erreichbarkeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie regelt die internen Arbeitszeiten.",
+        "erklaerung": "Arbeitszeiten werden intern festgelegt, nicht durch die Infrastruktur.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie garantiert die Marktführerschaft eines Betriebs.",
+        "erklaerung": "Eine gute Infrastruktur kann Vorteile bringen, garantiert aber keinen Erfolg.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

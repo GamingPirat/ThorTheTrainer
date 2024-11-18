@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2043,
+    "text": "Was versteht man unter Redundanz in der IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Vorhandensein mehrerer Komponenten, die dieselbe Funktion erfüllen",
+        "erklaerung": "Redundanz erhöht die Verfügbarkeit durch das Bereitstellen von Ersatzkomponenten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Reduzierung von Hardwarekomponenten zur Kostenoptimierung",
+        "erklaerung": "Redundanz erhöht die Anzahl der Komponenten, nicht deren Reduktion.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Beschleunigung von Datenübertragungen",
+        "erklaerung": "Redundanz zielt auf Verfügbarkeit und Ausfallsicherheit, nicht auf Geschwindigkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2043,
+    "text": "Welche Art von Redundanz bietet ein RAID-1-System?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Spiegelung von Daten auf zwei oder mehr Festplatten",
+        "erklaerung": "RAID-1 erstellt exakte Kopien der Daten zur Erhöhung der Ausfallsicherheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Paritätsdaten zur Fehlerkorrektur",
+        "erklaerung": "Paritätsdaten werden in RAID-5 oder RAID-6 genutzt, nicht in RAID-1.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komprimierung von Daten zur Speicherplatzoptimierung",
+        "erklaerung": "RAID-1 zielt nicht auf Speicherplatzoptimierung ab.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2043,
+    "text": "Wie trägt Redundanz zur Ausfallsicherheit bei?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Bereitstellung von Ersatzkomponenten bei einem Ausfall",
+        "erklaerung": "Redundanz stellt sicher, dass eine andere Komponente übernimmt, wenn eine ausfällt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Reduktion der Anzahl an Komponenten",
+        "erklaerung": "Redundanz erhöht die Anzahl der Komponenten, um Ausfälle abzufangen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Verschlüsselung von Daten",
+        "erklaerung": "Verschlüsselung schützt Daten, trägt jedoch nicht direkt zur Ausfallsicherheit bei.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2043,
+    "text": "Was ist der Unterschied zwischen physischer und logischer Redundanz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Physische Redundanz bezieht sich auf Hardware, logische auf Software oder Prozesse",
+        "erklaerung": "Physische Redundanz bedeutet zusätzliche Hardware, logische betrifft Softwarelösungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Logische Redundanz erfordert mehr Hardware",
+        "erklaerung": "Logische Redundanz reduziert die Abhängigkeit von zusätzlicher Hardware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Physische Redundanz basiert auf Backups",
+        "erklaerung": "Backups sind keine Form von Redundanz, sondern eine Datensicherungsstrategie.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2043,
+    "text": "Welche Nachteile können durch Redundanz entstehen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erhöhte Kosten für zusätzliche Komponenten",
+        "erklaerung": "Redundanz erfordert Investitionen in zusätzliche Ressourcen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine geringere Verfügbarkeit von Systemen",
+        "erklaerung": "Redundanz erhöht die Verfügbarkeit, anstatt sie zu verringern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verminderte Datenintegrität",
+        "erklaerung": "Redundanz beeinflusst die Datenintegrität nicht negativ.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2043,
+    "text": "Was versteht man unter georedundanter Speicherung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Daten werden an mehreren geografisch getrennten Standorten gespeichert",
+        "erklaerung": "Georedundanz schützt vor Datenverlust durch regionale Ausfälle.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Daten werden in einer einzigen Cloud gespeichert",
+        "erklaerung": "Georedundanz verteilt Daten auf mehrere Standorte, nicht nur auf eine Cloud.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Daten werden nur auf lokalen Festplatten gesichert",
+        "erklaerung": "Georedundanz setzt auf verteilte Standorte, nicht auf lokale Speicherung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2043,
+    "text": "Welche Art von Redundanz wird bei Hochverfügbarkeitsclustern genutzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Aktive Redundanz, bei der mehrere Systeme gleichzeitig aktiv sind",
+        "erklaerung": "Hochverfügbarkeitscluster nutzen aktive Redundanz zur Minimierung von Ausfallzeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Passive Redundanz, bei der alle Systeme abgeschaltet sind",
+        "erklaerung": "Passive Redundanz ist nicht typisch für Hochverfügbarkeitscluster.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komprimierte Redundanz, bei der Daten reduziert werden",
+        "erklaerung": "Datenkomprimierung ist keine Form der Redundanz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2043,
+    "text": "Welche Rolle spielt Redundanz in der Netzwerktechnik?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie stellt alternative Verbindungen bereit, falls eine Verbindung ausfällt",
+        "erklaerung": "Netzwerkredundanz sorgt für Stabilität und Ausfallsicherheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie reduziert die Bandbreite",
+        "erklaerung": "Redundanz verringert keine Bandbreite, sondern erhöht die Verfügbarkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie ersetzt Sicherheitsmaßnahmen",
+        "erklaerung": "Redundanz ergänzt Sicherheitsmaßnahmen, ersetzt sie aber nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2043,
+    "text": "Wie kann Redundanz in Cloud-Systemen realisiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die Nutzung mehrerer Server und Standorte",
+        "erklaerung": "Mehrere Server und Standorte erhöhen die Ausfallsicherheit in Cloud-Systemen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Einschränkung des Zugriffs auf ein einziges Datencenter",
+        "erklaerung": "Redundanz erfordert die Verteilung auf mehrere Datencenter.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Reduktion der Datensicherung",
+        "erklaerung": "Redundanz erhöht die Datensicherung, anstatt sie zu reduzieren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2043,
+    "text": "Welche Art von Redundanz kann die Datenintegrität verbessern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Redundante Speicherung mit regelmäßiger Synchronisation",
+        "erklaerung": "Regelmäßige Synchronisation stellt sicher, dass alle Kopien konsistent sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Redundanz ohne Überprüfung",
+        "erklaerung": "Ohne Überprüfung können inkonsistente Daten entstehen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Minimale Redundanz zur Kostenreduktion",
+        "erklaerung": "Minimale Redundanz schützt nicht ausreichend vor Datenverlust.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

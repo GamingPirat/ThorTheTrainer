@@ -1,0 +1,247 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Was ist die Hauptfunktion von Ethernet in Netzwerken?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Datenübertragung zwischen Geräten in einem lokalen Netzwerk.",
+        "erklaerung": "Ethernet ermöglicht die Verbindung und Kommunikation zwischen Geräten in einem LAN.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Bereitstellung von Internetdiensten.",
+        "erklaerung": "Ethernet stellt keine Internetdienste bereit, sondern verbindet Geräte lokal.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verschlüsselung von Datenpaketen.",
+        "erklaerung": "Ethernet verschlüsselt keine Daten, es definiert nur den Übertragungsstandard.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2060,
+    "text": "Welche physische Komponente wird typischerweise für Ethernet verwendet?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Twisted-Pair-Kabel",
+        "erklaerung": "Twisted-Pair-Kabel sind die gängigsten Kabeltypen für Ethernet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Koaxialkabel",
+        "erklaerung": "Koaxialkabel wurden früher verwendet, sind aber nicht mehr verbreitet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Glasfaserkabel",
+        "erklaerung": "Glasfaserkabel werden ebenfalls für Ethernet verwendet, aber vor allem für größere Entfernungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Infrarotsensoren",
+        "erklaerung": "Infrarot wird nicht für Ethernet eingesetzt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Welche Standards gehören zum Ethernet-Protokoll?",
+    "version": 1,
+    "nummer": 3,
+    "antworten": [
+      {
+        "text": "IEEE 802.3",
+        "erklaerung": "IEEE 802.3 definiert Ethernet-Standards.",
+        "isKorrekt": true
+      },
+      {
+        "text": "IEEE 802.11",
+        "erklaerung": "IEEE 802.11 ist der WLAN-Standard.",
+        "isKorrekt": false
+      },
+      {
+        "text": "IEEE 802.15",
+        "erklaerung": "IEEE 802.15 ist der Standard für WPAN (Wireless Personal Area Networks).",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2060,
+    "text": "Welche Datenrate kann ein Gigabit-Ethernet erreichen?",
+    "version": 1,
+    "nummer": 4,
+    "antworten": [
+      {
+        "text": "1 Gbit/s",
+        "erklaerung": "Gigabit-Ethernet erreicht eine Datenrate von bis zu 1 Gbit/s.",
+        "isKorrekt": true
+      },
+      {
+        "text": "10 Gbit/s",
+        "erklaerung": "10 Gbit/s ist die Geschwindigkeit von 10-Gigabit-Ethernet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "100 Mbit/s",
+        "erklaerung": "100 Mbit/s entspricht Fast Ethernet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Was bedeutet CSMA/CD im Kontext von Ethernet?",
+    "version": 1,
+    "nummer": 5,
+    "antworten": [
+      {
+        "text": "Collision Detection und Vermeidung von Datenkollisionen.",
+        "erklaerung": "CSMA/CD erkennt Kollisionen und sorgt für eine erneute Übertragung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erweiterung der Bandbreite bei Überlastung.",
+        "erklaerung": "CSMA/CD erhöht nicht die Bandbreite.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Synchronisation von Geräten im Netzwerk.",
+        "erklaerung": "CSMA/CD dient der Kollisionsvermeidung, nicht der Synchronisation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2060,
+    "text": "Welches Gerät wird in Ethernet-Netzwerken häufig verwendet, um Datenpakete weiterzuleiten?",
+    "version": 1,
+    "nummer": 6,
+    "antworten": [
+      {
+        "text": "Switch",
+        "erklaerung": "Ein Switch leitet Datenpakete an die richtigen Geräte weiter.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Router",
+        "erklaerung": "Router verbinden Netzwerke, nicht Geräte innerhalb eines Netzwerks.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Modem",
+        "erklaerung": "Modems stellen Internetverbindungen bereit, sind aber kein Kernbestandteil von Ethernet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Welche Topologie wird in Ethernet-Netzwerken häufig verwendet?",
+    "version": 1,
+    "nummer": 7,
+    "antworten": [
+      {
+        "text": "Stern-Topologie",
+        "erklaerung": "In Ethernet-Netzwerken werden Geräte häufig in einer Stern-Topologie verbunden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Bus-Topologie",
+        "erklaerung": "Bus-Topologien wurden früher verwendet, sind aber veraltet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ring-Topologie",
+        "erklaerung": "Ring-Topologien sind bei Ethernet selten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Welche Aufgabe übernimmt das Ethernet-Frame?",
+    "version": 1,
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "Es strukturiert die Daten für die Übertragung.",
+        "erklaerung": "Das Ethernet-Frame enthält Header, Daten und Trailer zur Übertragung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es verschlüsselt die Daten.",
+        "erklaerung": "Ethernet-Frames verschlüsseln keine Daten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es optimiert die Bandbreitennutzung.",
+        "erklaerung": "Das Frame dient der Strukturierung, nicht der Optimierung der Bandbreite.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2060,
+    "text": "Welche MAC-Adresse ist in einem Ethernet-Netzwerk gültig?",
+    "version": 1,
+    "nummer": 9,
+    "antworten": [
+      {
+        "text": "48-Bit-Adresse, hexadezimal dargestellt",
+        "erklaerung": "MAC-Adressen sind 48-Bit-Adressen im Hexadezimalformat.",
+        "isKorrekt": true
+      },
+      {
+        "text": "32-Bit-Adresse, binär dargestellt",
+        "erklaerung": "32-Bit-Adressen werden nicht für MAC verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "128-Bit-Adresse, dezimal dargestellt",
+        "erklaerung": "128-Bit-Adressen beziehen sich auf IPv6, nicht auf MAC-Adressen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2060,
+    "text": "Welche maximale Kabellänge wird für Standard-Ethernet-Verbindungen empfohlen?",
+    "version": 1,
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "100 Meter",
+        "erklaerung": "100 Meter ist die empfohlene maximale Länge für Twisted-Pair-Kabel.",
+        "isKorrekt": true
+      },
+      {
+        "text": "50 Meter",
+        "erklaerung": "50 Meter ist nicht die maximale Länge für Standard-Ethernet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "200 Meter",
+        "erklaerung": "200 Meter überschreitet die Standardspezifikation.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

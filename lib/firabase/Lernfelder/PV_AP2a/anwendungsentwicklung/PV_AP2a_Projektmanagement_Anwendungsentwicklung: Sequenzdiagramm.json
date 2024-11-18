@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20510,
+    "text": "Was stellt ein Sequenzdiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die zeitliche Abfolge von Nachrichten zwischen Objekten",
+        "erklaerung": "Sequenzdiagramme zeigen, wie Objekte in einem System miteinander kommunizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die hierarchische Struktur eines Programms",
+        "erklaerung": "Das beschreibt ein Struktogramm, kein Sequenzdiagramm.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die physische Anordnung von Netzwerkknoten",
+        "erklaerung": "Sequenzdiagramme beziehen sich auf Softwareinteraktionen, nicht auf Netzwerke.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20510,
+    "text": "Welche Elemente sind in einem Sequenzdiagramm typisch?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Objekte, Lebenslinien und Nachrichten",
+        "erklaerung": "Diese Elemente sind zentral für die Darstellung von Sequenzdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Prozesse, Bedingungen und Schleifen",
+        "erklaerung": "Diese gehören eher zu Struktogrammen oder PAPs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Server, Clients und Datenbanken",
+        "erklaerung": "Das sind keine Standard-Elemente eines Sequenzdiagramms.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20510,
+    "text": "Was beschreibt eine Lebenslinie in einem Sequenzdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Existenzdauer eines Objekts während der Interaktion",
+        "erklaerung": "Eine Lebenslinie zeigt, wie lange ein Objekt in einem Prozess aktiv ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Beziehung zwischen zwei Objekten",
+        "erklaerung": "Lebenslinien zeigen nicht die Beziehung, sondern die Existenzdauer.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Anfang und das Ende eines Programms",
+        "erklaerung": "Das ist nicht die Funktion einer Lebenslinie.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20510,
+    "text": "Wie werden Nachrichten in einem Sequenzdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Pfeile zwischen den Lebenslinien",
+        "erklaerung": "Pfeile zeigen die Nachrichten und deren Richtung zwischen Objekten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Rechtecke mit Text",
+        "erklaerung": "Rechtecke stellen keine Nachrichten dar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Kreise und Linien",
+        "erklaerung": "Kreise werden in Sequenzdiagrammen nicht verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20510,
+    "text": "Welche Arten von Nachrichten gibt es in Sequenzdiagrammen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Synchron, asynchron und Rückgabemeldungen",
+        "erklaerung": "Diese Nachrichtenarten bestimmen die Kommunikationsform in Sequenzdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Primär- und Sekundärnachrichten",
+        "erklaerung": "Diese Begriffe existieren nicht in der Notation für Sequenzdiagramme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Statische und dynamische Nachrichten",
+        "erklaerung": "Diese Unterscheidung gibt es in Sequenzdiagrammen nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20510,
+    "text": "Was bedeutet eine gestrichelte Linie in einem Sequenzdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Rückgabemeldung",
+        "erklaerung": "Gestrichelte Linien symbolisieren Rückgabemeldungen in Sequenzdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Fehlernachricht",
+        "erklaerung": "Fehlermeldungen werden nicht durch gestrichelte Linien dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ende einer Lebenslinie",
+        "erklaerung": "Das Ende einer Lebenslinie wird durch ein Kreuz dargestellt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20510,
+    "text": "Welche Software wird häufig zur Erstellung von Sequenzdiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lucidchart, PlantUML oder Microsoft Visio",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von Sequenzdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine Software zur Erstellung von UML-Diagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MySQL Workbench",
+        "erklaerung": "MySQL Workbench dient der Datenbankmodellierung, nicht UML-Diagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20510,
+    "text": "Wie werden alternative Abläufe in Sequenzdiagrammen dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch ein Rechteck mit Bedingungsangabe",
+        "erklaerung": "Alternativen werden durch ein Rechteck mit Bedingungsanweisungen (alt) dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Pfeile mit doppelter Linie",
+        "erklaerung": "Pfeile mit doppelter Linie sind keine Standardnotation für Alternativen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch gestrichelte Linien",
+        "erklaerung": "Gestrichelte Linien symbolisieren Rückgabemeldungen, nicht Alternativen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20510,
+    "text": "Was zeigt ein Aktivierungsbalken in einem Sequenzdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Zeitspanne, in der ein Objekt aktiv eine Operation ausführt",
+        "erklaerung": "Aktivierungsbalken markieren die Dauer einer aktiven Operation.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Verbindungen zwischen Objekten",
+        "erklaerung": "Aktivierungsbalken zeigen keine Verbindungen, sondern Aktivitäten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Ende eines Prozesses",
+        "erklaerung": "Das Ende eines Prozesses wird nicht durch Aktivierungsbalken dargestellt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20510,
+    "text": "Welche Einschränkung haben Sequenzdiagramme?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie sind nicht geeignet, komplexe Datenflüsse darzustellen",
+        "erklaerung": "Sequenzdiagramme zeigen Nachrichtenflüsse, keine komplexen Datenstrukturen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine parallelen Abläufe darstellen",
+        "erklaerung": "Parallele Abläufe können mit Operatoren wie 'par' dargestellt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie stellen keine Lebenslinien dar",
+        "erklaerung": "Lebenslinien sind ein grundlegender Bestandteil von Sequenzdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

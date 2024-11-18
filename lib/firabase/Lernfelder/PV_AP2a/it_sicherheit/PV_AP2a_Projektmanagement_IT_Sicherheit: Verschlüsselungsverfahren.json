@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2041,
+    "text": "Was ist das Hauptziel von Verschlüsselungsverfahren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutz von Daten vor unbefugtem Zugriff",
+        "erklaerung": "Verschlüsselung macht Daten für Unbefugte unlesbar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Komprimierung von Daten zur Speicherplatzoptimierung",
+        "erklaerung": "Komprimierung reduziert die Datenmenge, ist aber kein Ziel der Verschlüsselung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verbesserung der Netzwerkgeschwindigkeit",
+        "erklaerung": "Verschlüsselung beeinflusst die Geschwindigkeit nicht direkt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2041,
+    "text": "Welche Eigenschaft hat symmetrische Verschlüsselung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verwendet denselben Schlüssel für Ver- und Entschlüsselung",
+        "erklaerung": "Symmetrische Verschlüsselung nutzt einen einzigen Schlüssel für beide Prozesse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verwendet unterschiedliche Schlüssel für Ver- und Entschlüsselung",
+        "erklaerung": "Das ist ein Merkmal der asymmetrischen Verschlüsselung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Benötigt keinen Schlüssel",
+        "erklaerung": "Verschlüsselung basiert immer auf einem Schlüssel.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2041,
+    "text": "Welches Beispiel gehört zur asymmetrischen Verschlüsselung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RSA",
+        "erklaerung": "RSA ist ein bekanntes asymmetrisches Verschlüsselungsverfahren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "AES",
+        "erklaerung": "AES ist ein symmetrisches Verschlüsselungsverfahren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MD5",
+        "erklaerung": "MD5 ist ein Hashverfahren, kein Verschlüsselungsverfahren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2041,
+    "text": "Welche Schwäche hat die symmetrische Verschlüsselung im Vergleich zur asymmetrischen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Der Schlüssel muss sicher an den Empfänger übermittelt werden",
+        "erklaerung": "Symmetrische Verschlüsselung erfordert eine sichere Schlüsselverteilung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ist langsamer als asymmetrische Verfahren",
+        "erklaerung": "Symmetrische Verschlüsselung ist schneller, nicht langsamer.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie kann nur für kleine Datenmengen verwendet werden",
+        "erklaerung": "Symmetrische Verschlüsselung ist nicht auf kleine Datenmengen beschränkt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2041,
+    "text": "Welche Aufgabe hat ein Public Key bei der asymmetrischen Verschlüsselung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verschlüsselung von Nachrichten",
+        "erklaerung": "Der öffentliche Schlüssel wird verwendet, um Daten zu verschlüsseln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Entschlüsselung von Nachrichten",
+        "erklaerung": "Zur Entschlüsselung wird der private Schlüssel verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Signierung von Nachrichten",
+        "erklaerung": "Die Signierung erfolgt üblicherweise mit dem privaten Schlüssel.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2041,
+    "text": "Was ist ein Vorteil asymmetrischer Verschlüsselung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Der Schlüssel muss nicht geheim übertragen werden",
+        "erklaerung": "Asymmetrische Verschlüsselung verwendet einen öffentlichen Schlüssel, der nicht geheim ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ist schneller als symmetrische Verfahren",
+        "erklaerung": "Asymmetrische Verschlüsselung ist langsamer als symmetrische Verfahren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie benötigt keinen Schlüssel",
+        "erklaerung": "Auch asymmetrische Verschlüsselung basiert auf Schlüsseln.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2041,
+    "text": "Was versteht man unter 'Ende-zu-Ende-Verschlüsselung'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Daten werden während der gesamten Übertragung verschlüsselt und nur vom Empfänger entschlüsselt",
+        "erklaerung": "Ende-zu-Ende-Verschlüsselung schützt Daten über die gesamte Kommunikationsstrecke.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Daten werden nur während der Speicherung verschlüsselt",
+        "erklaerung": "Das beschreibt keine Ende-zu-Ende-Verschlüsselung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Daten werden bei jedem Übertragungsabschnitt entschlüsselt und neu verschlüsselt",
+        "erklaerung": "Das beschreibt keine Ende-zu-Ende-Verschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2041,
+    "text": "Welche Aufgabe hat ein Hashverfahren im Kontext der Verschlüsselung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es dient der Integritätsprüfung von Daten",
+        "erklaerung": "Hashverfahren erstellen einen einzigartigen Fingerabdruck von Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es verschlüsselt Daten für die Übertragung",
+        "erklaerung": "Hashverfahren verschlüsseln nicht, sondern prüfen Integrität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es entschlüsselt verschlüsselte Nachrichten",
+        "erklaerung": "Hashverfahren dienen nicht der Entschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2041,
+    "text": "Welches Verschlüsselungsverfahren wird häufig für WLAN-Sicherheit verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "WPA2",
+        "erklaerung": "WPA2 ist ein gängiger Standard zur Sicherung von WLAN-Verbindungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "RSA",
+        "erklaerung": "RSA ist ein allgemeines Verschlüsselungsverfahren, wird aber selten für WLAN verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MD5",
+        "erklaerung": "MD5 ist ein Hashverfahren, kein Verschlüsselungsverfahren für WLAN.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2041,
+    "text": "Was ist eine Schwäche von Hashverfahren wie MD5?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kollisionen können auftreten, bei denen zwei unterschiedliche Eingaben denselben Hash erzeugen",
+        "erklaerung": "Kollisionen sind ein bekanntes Problem bei MD5 und machen es unsicher.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können zur Entschlüsselung verwendet werden",
+        "erklaerung": "Hashverfahren sind nicht für die Entschlüsselung ausgelegt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind langsamer als symmetrische Verschlüsselung",
+        "erklaerung": "Hashverfahren sind in der Regel sehr schnell.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

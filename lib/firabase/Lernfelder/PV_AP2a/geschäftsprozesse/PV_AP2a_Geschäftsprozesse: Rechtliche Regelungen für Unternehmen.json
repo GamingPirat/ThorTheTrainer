@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2071,
+    "text": "Welche Bedeutung hat die DSGVO für Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die DSGVO regelt den Schutz personenbezogener Daten innerhalb der EU.",
+        "erklaerung": "Die DSGVO verpflichtet Unternehmen zum Schutz personenbezogener Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die DSGVO erlaubt die freie Nutzung von Kundendaten für Marketingzwecke.",
+        "erklaerung": "Die DSGVO schränkt die Nutzung personenbezogener Daten stark ein.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die DSGVO gilt nur für Unternehmen außerhalb der EU.",
+        "erklaerung": "Die DSGVO gilt für alle Unternehmen, die Daten von EU-Bürgern verarbeiten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2071,
+    "text": "Welche rechtlichen Regelungen betreffen den Arbeitsschutz in Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Arbeitsschutzgesetz (ArbSchG)",
+        "erklaerung": "Das ArbSchG legt die Pflichten von Arbeitgebern zum Schutz der Arbeitnehmer fest.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Gewerbeordnung (GewO)",
+        "erklaerung": "Die GewO regelt eher betriebswirtschaftliche Aspekte, nicht den Arbeitsschutz.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Bürgerliche Gesetzbuch (BGB)",
+        "erklaerung": "Das BGB regelt zivilrechtliche Angelegenheiten, nicht den Arbeitsschutz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2071,
+    "text": "Welche Pflicht haben Unternehmen im Rahmen des Umweltrechts?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sicherstellen, dass die betrieblichen Prozesse die Umwelt möglichst wenig belasten.",
+        "erklaerung": "Unternehmen müssen gesetzliche Vorgaben zum Umweltschutz einhalten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur größere Unternehmen sind von umweltrechtlichen Regelungen betroffen.",
+        "erklaerung": "Umweltschutzregelungen gelten für alle Unternehmen unabhängig ihrer Größe.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unternehmen können Umweltauflagen ignorieren, wenn sie finanziell belastend sind.",
+        "erklaerung": "Gesetzliche Vorgaben müssen unabhängig der Kosten eingehalten werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2071,
+    "text": "Was ist der Zweck des Handelsgesetzbuches (HGB)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es regelt die Rechte und Pflichten von Kaufleuten.",
+        "erklaerung": "Das HGB legt Regeln für den Handel und kaufmännische Buchführung fest.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es regelt den Schutz der Verbraucher.",
+        "erklaerung": "Der Verbraucherschutz wird eher durch das BGB geregelt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es regelt die Besteuerung von Unternehmen.",
+        "erklaerung": "Die Besteuerung wird durch Steuergesetze, nicht das HGB, geregelt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2071,
+    "text": "Welche Pflicht haben Unternehmen im Rahmen des Steuerrechts?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Abgabe korrekter und fristgerechter Steuererklärungen",
+        "erklaerung": "Unternehmen müssen ihre Steuerpflichten fristgerecht und wahrheitsgemäß erfüllen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vermeidung von Steuerzahlungen durch Schlupflöcher",
+        "erklaerung": "Das Ausnutzen von Schlupflöchern ist nicht der Zweck des Steuerrechts.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur Großunternehmen sind steuerpflichtig.",
+        "erklaerung": "Steuerpflicht gilt für alle Unternehmen unabhängig der Größe.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2071,
+    "text": "Was regelt das Betriebsverfassungsgesetz (BetrVG)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Mitbestimmungsrechte von Arbeitnehmern und Betriebsräten",
+        "erklaerung": "Das BetrVG regelt die Zusammenarbeit zwischen Arbeitnehmern und Arbeitgebern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Arbeitszeiten für Arbeitnehmer",
+        "erklaerung": "Arbeitszeiten werden durch das Arbeitszeitgesetz (ArbZG) geregelt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Pflicht zur Zahlung von Mindestlöhnen",
+        "erklaerung": "Das Mindestlohngesetz regelt die Mindestlöhne, nicht das BetrVG.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2071,
+    "text": "Welche Konsequenzen drohen Unternehmen bei Verstößen gegen Arbeitsschutzgesetze?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Bußgelder, Haftung und Betriebsstilllegung",
+        "erklaerung": "Verstöße gegen Arbeitsschutzgesetze können ernsthafte rechtliche Konsequenzen haben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein vorübergehendes Aussetzen der Arbeitsschutzmaßnahmen",
+        "erklaerung": "Gesetzesverstöße können nicht durch Aussetzung der Maßnahmen legitimiert werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Keine Konsequenzen, solange keine Unfälle passieren",
+        "erklaerung": "Verstöße können auch ohne Unfälle sanktioniert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2071,
+    "text": "Welche Vorschrift regelt die Buchführungspflicht von Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Handelsgesetzbuch (HGB)",
+        "erklaerung": "Das HGB schreibt vor, wie Unternehmen ihre Bücher zu führen haben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Bürgerliche Gesetzbuch (BGB)",
+        "erklaerung": "Das BGB regelt allgemeine zivilrechtliche Belange, nicht die Buchführung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Gewerbeordnung (GewO)",
+        "erklaerung": "Die GewO betrifft die Gewerbeanmeldung und nicht die Buchführung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2071,
+    "text": "Welche Strafe droht bei Verstößen gegen die DSGVO?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Hohe Geldstrafen bis zu 20 Millionen Euro oder 4% des Jahresumsatzes",
+        "erklaerung": "Die DSGVO sieht hohe Geldstrafen bei Verstößen vor.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur eine schriftliche Verwarnung",
+        "erklaerung": "Die DSGVO kann auch erhebliche Strafen verhängen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Keine Strafen für kleine Unternehmen",
+        "erklaerung": "Die DSGVO gilt für alle Unternehmen unabhängig der Größe.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2071,
+    "text": "Welche Verantwortung haben Unternehmen im Rahmen der Produkthaftung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sicherstellen, dass ihre Produkte keine Schäden verursachen",
+        "erklaerung": "Unternehmen haften für Schäden, die durch ihre Produkte verursacht werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vermeidung jeglicher Verantwortung für ihre Produkte",
+        "erklaerung": "Unternehmen sind gesetzlich verpflichtet, Verantwortung zu übernehmen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur bei vorsätzlicher Fahrlässigkeit haften",
+        "erklaerung": "Unternehmen haften auch bei Fahrlässigkeit, nicht nur bei Vorsatz.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

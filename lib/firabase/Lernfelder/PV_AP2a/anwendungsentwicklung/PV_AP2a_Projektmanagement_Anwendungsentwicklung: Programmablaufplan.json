@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2057,
+    "text": "Was ist ein Programmablaufplan (PAP)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine grafische Darstellung eines Algorithmus oder Prozesses",
+        "erklaerung": "Ein PAP stellt die logischen Schritte eines Programms grafisch dar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Liste von Programmbefehlen in Textform",
+        "erklaerung": "Ein PAP ist eine grafische Darstellung, keine Textliste.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Werkzeug zur Überprüfung von Syntaxfehlern",
+        "erklaerung": "Ein PAP dient zur Darstellung von Abläufen, nicht zur Syntaxprüfung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2057,
+    "text": "Welches Symbol wird in einem PAP für eine Entscheidung verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Rhombus (Raute)",
+        "erklaerung": "Ein Rhombus symbolisiert eine bedingte Entscheidung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Rechteck",
+        "erklaerung": "Ein Rechteck steht für einen Prozessschritt, nicht für eine Entscheidung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Kreis",
+        "erklaerung": "Ein Kreis wird nicht für Entscheidungen verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2057,
+    "text": "Wofür wird ein PAP hauptsächlich verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Visualisierung von Abläufen und Prozessen in der Programmierung",
+        "erklaerung": "Ein PAP hilft, die Logik eines Algorithmus darzustellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Dokumentation von Hardwarekonfigurationen",
+        "erklaerung": "Ein PAP beschreibt keine Hardwarekonfigurationen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Ausführung von Programmcodes",
+        "erklaerung": "Ein PAP ist eine grafische Darstellung, die nicht ausführbar ist.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2057,
+    "text": "Welche Symbole sind typisch für einen PAP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Rechtecke, Rauten und Pfeile",
+        "erklaerung": "Diese Symbole werden in PAPs zur Darstellung von Prozessen und Entscheidungen verwendet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kreise, Quadrate und Dreiecke",
+        "erklaerung": "Diese Formen werden nicht standardmäßig in PAPs verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sterne, Linien und Rechtecke",
+        "erklaerung": "Sterne sind keine typischen Symbole in PAPs.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2057,
+    "text": "Wie wird ein Start- oder Endpunkt in einem PAP dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mit einem Oval",
+        "erklaerung": "Ovale symbolisieren den Start oder das Ende eines Prozesses.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mit einem Rechteck",
+        "erklaerung": "Rechtecke stehen für Prozesse, nicht für Start- oder Endpunkte.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mit einem Rhombus",
+        "erklaerung": "Rhomben stehen für Entscheidungen, nicht für Start- oder Endpunkte.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2057,
+    "text": "Welche Vorteile bietet ein PAP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Er erleichtert das Verständnis komplexer Abläufe",
+        "erklaerung": "Ein PAP macht Abläufe und Logiken leicht nachvollziehbar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Er reduziert die Ausführungszeit eines Programms",
+        "erklaerung": "Ein PAP hat keinen direkten Einfluss auf die Laufzeit von Programmen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Er ersetzt die Notwendigkeit von Tests",
+        "erklaerung": "Ein PAP ersetzt keine Tests, sondern unterstützt nur die Planung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2057,
+    "text": "Was ist der Unterschied zwischen einem PAP und einem Struktogramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein PAP ist grafischer, ein Struktogramm ist hierarchischer",
+        "erklaerung": "PAPs zeigen Abläufe visuell, Struktogramme fokussieren auf Hierarchie.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein PAP ist ausführbar, ein Struktogramm nicht",
+        "erklaerung": "Keines der beiden ist ausführbar.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Struktogramm zeigt keine Bedingungen",
+        "erklaerung": "Auch Struktogramme können Bedingungen darstellen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2057,
+    "text": "Wann wird ein PAP typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "In der Planungsphase eines Programms",
+        "erklaerung": "Ein PAP wird genutzt, um die Logik eines Programms vor der Implementierung zu planen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Während der Ausführung eines Programms",
+        "erklaerung": "Ein PAP wird nicht während der Ausführung, sondern in der Planungsphase verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nach der Fertigstellung eines Programms",
+        "erklaerung": "Ein PAP wird vor der Implementierung genutzt, nicht danach.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2057,
+    "text": "Wie wird in einem PAP eine Schleife dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch eine Kombination von Pfeilen und einer Entscheidung",
+        "erklaerung": "Schleifen werden durch bedingte Entscheidungen mit Rückführung dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch ein spezielles Symbol für Schleifen",
+        "erklaerung": "Es gibt kein separates Schleifensymbol, sondern Rückführungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch ein Rechteck mit einem Pfeil nach oben",
+        "erklaerung": "Rechtecke allein repräsentieren keine Schleifen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2057,
+    "text": "Welche Software kann für die Erstellung eines PAP verwendet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Microsoft Visio, Lucidchart oder Draw.io",
+        "erklaerung": "Diese Tools sind gängige Optionen zur Erstellung von PAPs.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Microsoft Word",
+        "erklaerung": "Word ist nicht für die Erstellung von PAPs optimiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eclipse IDE",
+        "erklaerung": "Eclipse ist eine Entwicklungsumgebung, keine Software für PAPs.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

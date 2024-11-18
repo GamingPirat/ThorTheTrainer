@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2040,
+    "text": "Was beschreibt der Begriff 'Industrie 4.0'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Digitalisierung und Vernetzung von Produktionsprozessen",
+        "erklaerung": "Industrie 4.0 steht für die intelligente und vernetzte Fertigung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Einführung von maschineller Fertigung im 19. Jahrhundert",
+        "erklaerung": "Das beschreibt die industrielle Revolution, nicht Industrie 4.0.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den vollständigen Ersatz von menschlicher Arbeit durch Roboter",
+        "erklaerung": "Industrie 4.0 fokussiert sich auf die Zusammenarbeit von Mensch und Maschine.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2040,
+    "text": "Welche Schlüsseltechnologie ermöglicht Industrie 4.0?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Internet der Dinge (IoT)",
+        "erklaerung": "IoT ist zentral für die Vernetzung von Geräten und Maschinen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Manuelle Produktionsprozesse",
+        "erklaerung": "Industrie 4.0 setzt auf Automatisierung und Digitalisierung, nicht auf manuelle Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Papierbasierte Dokumentation",
+        "erklaerung": "Industrie 4.0 zielt auf digitale Lösungen, nicht auf papierbasierte Ansätze.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2040,
+    "text": "Welche Vorteile bietet Industrie 4.0 für Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erhöhte Effizienz und Flexibilität in der Produktion",
+        "erklaerung": "Durch Vernetzung und Automatisierung können Produktionsprozesse optimiert werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Geringere Anforderungen an IT-Sicherheit",
+        "erklaerung": "Industrie 4.0 erhöht die Anforderungen an die IT-Sicherheit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die vollständige Eliminierung von Produktionskosten",
+        "erklaerung": "Industrie 4.0 kann Kosten reduzieren, aber nicht vollständig eliminieren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2040,
+    "text": "Welche Rolle spielen Cyber-Physische Systeme (CPS) in der Industrie 4.0?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie verbinden physische Maschinen mit digitalen Systemen",
+        "erklaerung": "CPS ermöglichen die Kommunikation zwischen physischen und digitalen Komponenten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie ersetzen alle physischen Produktionsanlagen",
+        "erklaerung": "CPS ergänzen bestehende Systeme, ersetzen sie aber nicht vollständig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie dienen ausschließlich der Datenspeicherung",
+        "erklaerung": "Die Hauptfunktion von CPS liegt in der Interaktion und Steuerung, nicht in der Speicherung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2040,
+    "text": "Welche Herausforderung stellt die Industrie 4.0 an Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Gewährleistung der IT-Sicherheit in vernetzten Systemen",
+        "erklaerung": "Mit der zunehmenden Vernetzung steigen auch die Risiken für IT-Sicherheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der vollständige Verzicht auf menschliche Arbeitskräfte",
+        "erklaerung": "Industrie 4.0 zielt auf Zusammenarbeit, nicht auf Ausschluss des Menschen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Abschaffung jeglicher Automatisierung",
+        "erklaerung": "Automatisierung ist ein zentraler Bestandteil der Industrie 4.0.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2040,
+    "text": "Was ist ein 'digitaler Zwilling' in der Industrie 4.0?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine virtuelle Repräsentation eines physischen Objekts oder Prozesses",
+        "erklaerung": "Digitale Zwillinge ermöglichen die Simulation und Überwachung von realen Prozessen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Backup aller Produktionsdaten",
+        "erklaerung": "Ein digitaler Zwilling ist mehr als nur ein Backup, er simuliert auch Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Sicherheitskonzept zur Verhinderung von Cyberangriffen",
+        "erklaerung": "Digitale Zwillinge dienen nicht primär der Sicherheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2040,
+    "text": "Welche Daten werden in der Industrie 4.0 häufig genutzt, um Prozesse zu optimieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Echtzeitdaten aus vernetzten Maschinen",
+        "erklaerung": "Echtzeitdaten ermöglichen eine präzise Überwachung und Anpassung von Prozessen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Archivierte Daten aus vergangenen Projekten",
+        "erklaerung": "Archivdaten sind weniger relevant für die Echtzeitoptimierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Daten aus papierbasierten Berichten",
+        "erklaerung": "Industrie 4.0 setzt auf digitale Daten, nicht auf papierbasierte Informationen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2040,
+    "text": "Wie können Unternehmen von Predictive Maintenance profitieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die frühzeitige Erkennung von Wartungsbedarf, bevor Ausfälle auftreten",
+        "erklaerung": "Predictive Maintenance minimiert Ausfallzeiten und reduziert Wartungskosten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Abschaffung aller Wartungsprozesse",
+        "erklaerung": "Predictive Maintenance verbessert Wartungsprozesse, eliminiert sie aber nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die vollständige Automatisierung der Produktion",
+        "erklaerung": "Predictive Maintenance bezieht sich auf Wartung, nicht auf Automatisierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2040,
+    "text": "Welche Rolle spielt künstliche Intelligenz (KI) in der Industrie 4.0?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "KI analysiert Daten und trifft Entscheidungen zur Optimierung von Prozessen",
+        "erklaerung": "KI ist ein wesentlicher Bestandteil zur Datenverarbeitung und Entscheidungsfindung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "KI ersetzt alle menschlichen Arbeitskräfte",
+        "erklaerung": "KI ergänzt menschliche Arbeit, ersetzt sie jedoch nicht vollständig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "KI dient ausschließlich der IT-Sicherheit",
+        "erklaerung": "KI hat viele Anwendungsbereiche, einschließlich, aber nicht ausschließlich, der Sicherheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2040,
+    "text": "Welche Technologien bilden die Grundlage für die Industrie 4.0?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "IoT, Big Data, Cloud Computing und KI",
+        "erklaerung": "Diese Technologien ermöglichen die Digitalisierung und Vernetzung der Industrie.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mechanische Produktionssysteme und Papierdokumentation",
+        "erklaerung": "Industrie 4.0 setzt auf digitale Technologien, nicht auf manuelle Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur mobile Anwendungen",
+        "erklaerung": "Mobile Anwendungen sind ein Teilbereich, aber nicht die Grundlage der Industrie 4.0.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

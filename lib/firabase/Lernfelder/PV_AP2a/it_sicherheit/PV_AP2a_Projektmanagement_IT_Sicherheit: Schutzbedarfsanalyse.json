@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2031,
+    "text": "Was ist das Ziel einer Schutzbedarfsanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den Schutzbedarf von IT-Systemen, Anwendungen und Daten zu bewerten",
+        "erklaerung": "Die Schutzbedarfsanalyse identifiziert den erforderlichen Schutz für verschiedene Komponenten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Kosten eines IT-Projekts zu kalkulieren",
+        "erklaerung": "Kostenkalkulation ist nicht das Ziel einer Schutzbedarfsanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Leistung von IT-Systemen zu optimieren",
+        "erklaerung": "Leistungsoptimierung ist nicht das Ziel einer Schutzbedarfsanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2031,
+    "text": "Welche Dimensionen werden typischerweise in einer Schutzbedarfsanalyse betrachtet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Vertraulichkeit, Integrität und Verfügbarkeit",
+        "erklaerung": "Diese drei Dimensionen bilden die Grundlage der Schutzbedarfsanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kosten, Nutzerfreundlichkeit und Design",
+        "erklaerung": "Diese Aspekte sind für die Schutzbedarfsanalyse irrelevant.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Speicherkapazität, Rechenleistung und Netzwerkgeschwindigkeit",
+        "erklaerung": "Technische Kennzahlen sind nicht Hauptbestandteil der Schutzbedarfsanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2031,
+    "text": "Was versteht man unter 'Vertraulichkeit' in der Schutzbedarfsanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den Schutz vor unbefugtem Zugriff auf Informationen",
+        "erklaerung": "Vertraulichkeit bedeutet, dass nur autorisierte Personen Zugriff auf Daten haben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Gewährleistung, dass Informationen jederzeit verfügbar sind",
+        "erklaerung": "Das beschreibt Verfügbarkeit, nicht Vertraulichkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Integrität von Daten sicherzustellen",
+        "erklaerung": "Integrität bezieht sich auf Datenkorrektheit, nicht Vertraulichkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2031,
+    "text": "Was ist ein Beispiel für eine Gefährdung der Verfügbarkeit?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Stromausfall, der den Zugriff auf IT-Systeme verhindert",
+        "erklaerung": "Ein Stromausfall kann die Verfügbarkeit von IT-Systemen beeinträchtigen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Abfangen von Daten während der Übertragung",
+        "erklaerung": "Das betrifft die Vertraulichkeit, nicht die Verfügbarkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine fehlerhafte Datenbankänderung",
+        "erklaerung": "Das betrifft die Integrität, nicht die Verfügbarkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2031,
+    "text": "Welche Methode wird häufig zur Schutzbedarfsanalyse verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Klassifikation von IT-Systemen nach Schutzbedarfskategorien",
+        "erklaerung": "Systeme und Daten werden oft in Kategorien wie niedrig, mittel und hoch eingestuft.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Benchmarking von IT-Systemen",
+        "erklaerung": "Benchmarking misst Leistung, nicht Schutzbedarf.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Erstellung von Marketingstrategien",
+        "erklaerung": "Marketingstrategien gehören nicht zur Schutzbedarfsanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2031,
+    "text": "Was beschreibt die Dimension 'Integrität' in der Schutzbedarfsanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Sicherstellung, dass Daten korrekt und unverändert bleiben",
+        "erklaerung": "Integrität bedeutet, dass Daten vor unautorisierten Änderungen geschützt sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Sicherstellung, dass Daten jederzeit verfügbar sind",
+        "erklaerung": "Das beschreibt Verfügbarkeit, nicht Integrität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Sicherstellung, dass nur autorisierte Personen Zugriff haben",
+        "erklaerung": "Das betrifft die Vertraulichkeit, nicht die Integrität.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2031,
+    "text": "Welche Folgen kann ein unzureichender Schutzbedarf haben?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verlust sensibler Daten oder Betriebsunterbrechungen",
+        "erklaerung": "Ein unzureichender Schutz kann zu Datenverlust oder Systemausfällen führen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine erhöhte Netzwerkgeschwindigkeit",
+        "erklaerung": "Ein unzureichender Schutz führt nicht zu höherer Geschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine bessere Nutzerfreundlichkeit der Systeme",
+        "erklaerung": "Ein mangelnder Schutz hat keinen Einfluss auf die Nutzerfreundlichkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2031,
+    "text": "Was ist eine typische Maßnahme nach der Schutzbedarfsanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Implementierung zusätzlicher Sicherheitsmaßnahmen wie Firewalls oder Backups",
+        "erklaerung": "Maßnahmen werden basierend auf dem identifizierten Schutzbedarf umgesetzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Reduzierung der IT-Systeme auf ein Minimum",
+        "erklaerung": "Die Reduktion der IT-Systeme ist keine typische Maßnahme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Abschaffung von Benutzerkonten",
+        "erklaerung": "Benutzerkonten sind notwendig und werden nicht einfach abgeschafft.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2031,
+    "text": "Was ist der Unterschied zwischen Schutzbedarf und Risiko?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schutzbedarf beschreibt die erforderlichen Maßnahmen, Risiko beschreibt die Wahrscheinlichkeit und Auswirkungen eines Vorfalls",
+        "erklaerung": "Der Schutzbedarf fokussiert sich auf Maßnahmen, Risiko auf Wahrscheinlichkeiten und Folgen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Schutzbedarf ist immer höher als das Risiko",
+        "erklaerung": "Das Verhältnis von Schutzbedarf und Risiko ist situationsabhängig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Schutzbedarf betrifft nur Daten, Risiko betrifft nur IT-Systeme",
+        "erklaerung": "Beide Konzepte beziehen sich auf Daten und Systeme gleichermaßen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2031,
+    "text": "Wie kann der Schutzbedarf eines IT-Systems ermittelt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die Analyse der potenziellen Auswirkungen von Sicherheitsverletzungen",
+        "erklaerung": "Die Auswirkungen geben Hinweise auf den erforderlichen Schutzbedarf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Installation von Antivirensoftware",
+        "erklaerung": "Antivirensoftware ist eine Maßnahme, keine Methode zur Analyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Auswahl der günstigsten IT-Komponenten",
+        "erklaerung": "Die Kosten der Komponenten sind kein Indikator für den Schutzbedarf.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

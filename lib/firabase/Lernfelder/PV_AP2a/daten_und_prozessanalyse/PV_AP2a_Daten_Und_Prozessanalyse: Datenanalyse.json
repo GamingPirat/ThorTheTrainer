@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2081,
+    "text": "Was ist das Ziel der Datenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Gewinnung von Erkenntnissen aus vorhandenen Daten.",
+        "erklaerung": "Datenanalyse dient der Identifikation von Mustern und Trends.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Optimierung der Hardwareleistung.",
+        "erklaerung": "Hardwareoptimierung ist kein Ziel der Datenanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erstellung von Netzwerksicherheitsrichtlinien.",
+        "erklaerung": "Netzwerksicherheit ist kein direktes Ziel der Datenanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2081,
+    "text": "Welche Typen von Daten werden in der Datenanalyse häufig verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Strukturierte, unstrukturierte und semistrukturierte Daten.",
+        "erklaerung": "Diese Kategorien umfassen alle Arten von Daten für Analysen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur numerische Daten.",
+        "erklaerung": "Datenanalyse umfasst weit mehr als nur numerische Daten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ausschließlich tabellarische Daten.",
+        "erklaerung": "Auch Text-, Bild- und andere Datenarten können analysiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2081,
+    "text": "Welche Schritte gehören typischerweise zur Datenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Datensammlung, Datenbereinigung und Datenvisualisierung.",
+        "erklaerung": "Diese Schritte sind essenziell für eine vollständige Analyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardwarewartung, Netzwerkkonfiguration und Datenarchivierung.",
+        "erklaerung": "Diese Aufgaben gehören nicht zur Datenanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Anwendungsdesign, Datenkompression und Webentwicklung.",
+        "erklaerung": "Diese Tätigkeiten sind nicht Bestandteil der Datenanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2081,
+    "text": "Welche Werkzeuge werden häufig in der Datenanalyse eingesetzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Excel, Python und Tableau.",
+        "erklaerung": "Diese Tools sind weit verbreitet in der Datenanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Photoshop, Illustrator und Premiere Pro.",
+        "erklaerung": "Diese Tools sind für Grafik- und Videobearbeitung, nicht für Datenanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MySQL Workbench, Notepad und Visual Studio.",
+        "erklaerung": "Nur MySQL Workbench ist für Datenanalyse relevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2081,
+    "text": "Welche Visualisierungsmethoden werden in der Datenanalyse genutzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Balkendiagramme, Liniendiagramme und Streudiagramme.",
+        "erklaerung": "Diese Visualisierungen helfen, Daten verständlich darzustellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Fotocollagen und Animationen.",
+        "erklaerung": "Diese Methoden sind nicht üblich in der Datenanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Skulpturen und Installationen.",
+        "erklaerung": "Diese gehören nicht zur Datenvisualisierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2081,
+    "text": "Welche Rolle spielt die Statistik in der Datenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Statistik liefert Methoden zur Interpretation und Bewertung von Daten.",
+        "erklaerung": "Statistik ist eine zentrale Grundlage für die Datenanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Statistik verbessert die Hardwareleistung.",
+        "erklaerung": "Statistik hat keinen Einfluss auf die Hardware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Statistik dient ausschließlich der Datenvisualisierung.",
+        "erklaerung": "Statistik wird auch zur Modellierung und Analyse verwendet, nicht nur für Visualisierungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2081,
+    "text": "Welche Datenbereinigungsschritte sind typisch in der Datenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Entfernen von Duplikaten und Umgang mit fehlenden Werten.",
+        "erklaerung": "Diese Schritte verbessern die Qualität der Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kompilieren von Programmcode.",
+        "erklaerung": "Das hat nichts mit Datenbereinigung zu tun.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erstellung von Backups.",
+        "erklaerung": "Backups sind nützlich, aber kein Bestandteil der Datenbereinigung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2081,
+    "text": "Welche Probleme können bei der Datenanalyse auftreten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Unvollständige oder inkonsistente Daten.",
+        "erklaerung": "Solche Probleme sind häufig und erfordern Datenbereinigung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardwaredefekte während der Analyse.",
+        "erklaerung": "Dies ist kein direktes Problem der Datenanalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unzureichende Anzahl an Visualisierungsoptionen.",
+        "erklaerung": "Visualisierungen können erweitert werden, aber das ist kein Kernproblem.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2081,
+    "text": "Was ist der Unterschied zwischen deskriptiver und prädiktiver Datenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Deskriptive Analysen beschreiben Vergangenes, prädiktive treffen Vorhersagen.",
+        "erklaerung": "Deskriptive Analysen geben Einblicke in historische Daten, prädiktive Analysen nutzen Modelle für Vorhersagen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Deskriptive Analysen benötigen KI, prädiktive nicht.",
+        "erklaerung": "Prädiktive Analysen basieren oft auf KI, deskriptive jedoch nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Prädiktive Analysen arbeiten ausschließlich mit Textdaten.",
+        "erklaerung": "Prädiktive Analysen verwenden verschiedene Datentypen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2081,
+    "text": "Welche Software wird häufig für Datenanalysen genutzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "R, Python und Power BI.",
+        "erklaerung": "Diese Tools sind gängige Werkzeuge in der Datenanalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Notepad, Word und Excel.",
+        "erklaerung": "Nur Excel ist geeignet, Notepad und Word sind nicht für Analysen gedacht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "C++, Unity und GIMP.",
+        "erklaerung": "Diese Software wird nicht primär für Datenanalysen genutzt.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2059,
+    "text": "Was stellt ein Anwendungsfalldiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Interaktionen zwischen Akteuren und einem System",
+        "erklaerung": "Ein Anwendungsfalldiagramm zeigt, wie Benutzer und Systeme interagieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die interne Logik eines Algorithmus",
+        "erklaerung": "Ein Anwendungsfalldiagramm beschreibt keine internen Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die physische Struktur eines Netzwerks",
+        "erklaerung": "Das wird in Netzwerktopologiediagrammen dargestellt, nicht in Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2059,
+    "text": "Welche Symbole werden in Anwendungsfalldiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ovale für Anwendungsfälle und Strichmännchen für Akteure",
+        "erklaerung": "Diese Symbole sind standardmäßig in Anwendungsfalldiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Rechtecke für Prozesse und Pfeile für Datenflüsse",
+        "erklaerung": "Diese Symbole gehören zu Datenflussdiagrammen, nicht zu Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Dreiecke für Hierarchien",
+        "erklaerung": "Dreiecke sind keine typischen Symbole in Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2059,
+    "text": "Wofür werden Anwendungsfalldiagramme typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Beschreibung von Anforderungen und Benutzerinteraktionen",
+        "erklaerung": "Sie helfen, die Anforderungen an ein System zu definieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung von Datenbanktabellen",
+        "erklaerung": "Datenbanken werden mit ER-Diagrammen dargestellt, nicht mit Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Definition von Hardwarekomponenten",
+        "erklaerung": "Hardware wird nicht in Anwendungsfalldiagrammen beschrieben.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2059,
+    "text": "Was beschreibt ein Akteur in einem Anwendungsfalldiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Person, ein System oder eine Rolle, die mit dem System interagiert",
+        "erklaerung": "Akteure repräsentieren externe Entitäten, die das System nutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen internen Prozess des Systems",
+        "erklaerung": "Akteure stehen außerhalb des Systems.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die physische Hardware des Systems",
+        "erklaerung": "Akteure sind keine Hardwarekomponenten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2059,
+    "text": "Welche Beziehungen können zwischen Anwendungsfällen existieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Include, Extend und Generalisierung",
+        "erklaerung": "Diese Beziehungen definieren, wie Anwendungsfälle miteinander verbunden sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vererbung, Aggregation und Komposition",
+        "erklaerung": "Diese Begriffe beziehen sich auf Klassen in UML, nicht auf Anwendungsfälle.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Start, Stopp und Wiederholung",
+        "erklaerung": "Das sind keine Beziehungen in Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2059,
+    "text": "Was bedeutet die Beziehung 'Include' in einem Anwendungsfalldiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Anwendungsfall beinhaltet den Ablauf eines anderen Anwendungsfalls",
+        "erklaerung": "Include zeigt an, dass ein Anwendungsfall einen anderen zwingend ausführt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Anwendungsfall erweitert den Ablauf eines anderen Anwendungsfalls",
+        "erklaerung": "Das beschreibt die Extend-Beziehung, nicht Include.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Anwendungsfall ersetzt einen anderen Anwendungsfall",
+        "erklaerung": "Include beschreibt keine Ersetzung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2059,
+    "text": "Wie wird die Extend-Beziehung in einem Anwendungsfalldiagramm verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Anwendungsfall erweitert optional den Ablauf eines anderen Anwendungsfalls",
+        "erklaerung": "Extend zeigt an, dass ein Anwendungsfall unter bestimmten Bedingungen erweitert wird.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Anwendungsfall wird durch einen anderen ersetzt",
+        "erklaerung": "Extend beschreibt keine Ersetzung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Anwendungsfall wird durch einen Akteur ausgeführt",
+        "erklaerung": "Das ist die normale Ausführung, nicht die Extend-Beziehung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2059,
+    "text": "Welche Software wird häufig zur Erstellung von Anwendungsfalldiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von UML-Diagrammen, einschließlich Anwendungsfalldiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eclipse IDE",
+        "erklaerung": "Eclipse ist eine Entwicklungsumgebung, keine primäre Software für Diagrammerstellung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine Software für Diagrammerstellung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2059,
+    "text": "Was ist der Unterschied zwischen einem primären und einem sekundären Akteur?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein primärer Akteur interagiert direkt mit dem System, ein sekundärer unterstützt den Ablauf",
+        "erklaerung": "Primäre Akteure sind Hauptnutzer, sekundäre haben unterstützende Rollen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein primärer Akteur ist immer eine Person, ein sekundärer immer ein System",
+        "erklaerung": "Akteure können sowohl Personen als auch Systeme sein, unabhängig von primär oder sekundär.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein sekundärer Akteur hat die Kontrolle über das System",
+        "erklaerung": "Primäre Akteure steuern das System, nicht sekundäre.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2059,
+    "text": "Welche Einschränkungen hat ein Anwendungsfalldiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es beschreibt keine detaillierte Logik oder Abläufe",
+        "erklaerung": "Anwendungsfalldiagramme geben nur einen Überblick über Interaktionen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es kann keine Beziehungen zwischen Anwendungsfällen darstellen",
+        "erklaerung": "Beziehungen wie Include und Extend können dargestellt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es kann keine Akteure darstellen",
+        "erklaerung": "Akteure sind ein zentraler Bestandteil von Anwendungsfalldiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2083,
+    "text": "Was ist das Hauptziel der Fehleranalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Identifikation und Behebung von Ursachen für Fehler.",
+        "erklaerung": "Die Fehleranalyse dient dazu, die zugrunde liegenden Probleme zu finden und zu lösen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vermeidung von Datenverlust durch Backups.",
+        "erklaerung": "Backups sind wichtig, gehören aber nicht zur Fehleranalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Optimierung von Netzwerksicherheitsrichtlinien.",
+        "erklaerung": "Netzwerksicherheit ist kein direktes Ziel der Fehleranalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2083,
+    "text": "Welche Schritte gehören typischerweise zur Fehleranalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Fehlererkennung, Ursachenanalyse und Lösungserarbeitung.",
+        "erklaerung": "Diese Schritte sind zentral für eine erfolgreiche Fehleranalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardwareinstallation, Softwareoptimierung und Datenarchivierung.",
+        "erklaerung": "Diese Tätigkeiten sind nicht Bestandteil der Fehleranalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Webdesign, Datenkompression und Netzwerkaufbau.",
+        "erklaerung": "Diese Aufgaben gehören nicht zur Fehleranalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2083,
+    "text": "Welche Techniken werden in der Fehleranalyse verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ishikawa-Diagramme, 5-Why-Methode und Root Cause Analysis.",
+        "erklaerung": "Diese Techniken sind hilfreich, um Fehlerquellen zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Balkendiagramme, Netzdiagramme und Sequenzdiagramme.",
+        "erklaerung": "Diese Visualisierungen sind nicht typisch für die Fehleranalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HTML, CSS und JavaScript.",
+        "erklaerung": "Diese Technologien gehören zur Webentwicklung, nicht zur Fehleranalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2083,
+    "text": "Was beschreibt die Root Cause Analysis in der Fehleranalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Identifikation der zugrunde liegenden Ursache eines Fehlers.",
+        "erklaerung": "Root Cause Analysis zielt darauf ab, den Ursprung eines Problems zu finden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Verfolgung von Fehlern in Netzwerkkonfigurationen.",
+        "erklaerung": "Netzwerkprobleme können Teil der Analyse sein, Root Cause Analysis ist jedoch breiter gefasst.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die automatische Lösung von Problemen in Software.",
+        "erklaerung": "Root Cause Analysis identifiziert Ursachen, löst aber keine Probleme automatisch.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2083,
+    "text": "Welche Tools können in der Fehleranalyse verwendet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Splunk, Wireshark und JIRA.",
+        "erklaerung": "Diese Tools unterstützen verschiedene Aspekte der Fehleranalyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Photoshop, Illustrator und Premiere Pro.",
+        "erklaerung": "Diese Tools sind für Design und Videobearbeitung, nicht für Fehleranalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unity, Blender und GIMP.",
+        "erklaerung": "Diese Software wird für 3D-Design genutzt, nicht für Fehleranalysen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2083,
+    "text": "Was bedeutet der Begriff 'Incident' in der Fehleranalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein unvorhergesehenes Ereignis, das den normalen Betrieb stört.",
+        "erklaerung": "Ein Incident ist ein Vorfall, der untersucht werden muss.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein geplantes Wartungsfenster.",
+        "erklaerung": "Wartungsfenster sind geplant und keine Incidents.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein erfolgreicher Testlauf eines neuen Systems.",
+        "erklaerung": "Tests sind keine Incidents, sondern geplante Ereignisse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2083,
+    "text": "Wie kann die 5-Why-Methode in der Fehleranalyse angewendet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch wiederholtes Fragen nach der Ursache eines Problems.",
+        "erklaerung": "Die Methode hilft, die zugrunde liegende Ursache eines Problems zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Erstellen von Diagrammen zur Visualisierung von Fehlern.",
+        "erklaerung": "Die 5-Why-Methode verwendet keine Diagramme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Überwachung von Netzwerksicherheit.",
+        "erklaerung": "Die Methode bezieht sich auf Ursachenanalyse, nicht auf Netzwerksicherheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2083,
+    "text": "Welche Arten von Fehlern können in der Fehleranalyse untersucht werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Logische, systematische und zufällige Fehler.",
+        "erklaerung": "Diese Fehlerarten treten häufig in IT- und Prozessen auf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardware, Software und Netzwerkausfälle.",
+        "erklaerung": "Diese sind Ursachen oder Kategorien, keine Fehlerarten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ethische, organisatorische und rechtliche Fehler.",
+        "erklaerung": "Diese Bereiche sind keine primären Themen der Fehleranalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2083,
+    "text": "Wie kann eine Ishikawa-Analyse in der Fehleranalyse helfen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Visualisierung der möglichen Ursachen eines Problems.",
+        "erklaerung": "Das Ishikawa-Diagramm hilft, mögliche Ursachen systematisch darzustellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch automatische Behebung von Fehlern.",
+        "erklaerung": "Das Ishikawa-Diagramm identifiziert Ursachen, löst aber keine Probleme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Speicherung von Fehlerprotokollen.",
+        "erklaerung": "Das Diagramm speichert keine Daten, sondern visualisiert Ursachen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2083,
+    "text": "Welche Herausforderungen können bei der Fehleranalyse auftreten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Unvollständige oder ungenaue Daten.",
+        "erklaerung": "Datenmangel erschwert die Identifikation von Fehlerursachen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hohe Bandbreite im Netzwerk.",
+        "erklaerung": "Netzwerkbandbreite ist kein typisches Problem der Fehleranalyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komplexe Benutzeroberflächen.",
+        "erklaerung": "Das ist kein direktes Problem der Fehleranalyse.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

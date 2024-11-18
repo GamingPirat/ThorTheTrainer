@@ -5,15 +5,15 @@ import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/pages/Quiz/quiz_frage_model.dart';
 
-class NewQuizsubthemaModel with ChangeNotifier{
+class QuizInhaltController with ChangeNotifier{
 
   UsersSubThema selected_subthema;
   Function() onLockTapped;
-  late QuizFrageModel random_question;
+  late QuizFrageController random_question;
   late List<DB_Frage> _ungesehene_fragen;
   Random rnd = Random();
 
-  NewQuizsubthemaModel({
+  QuizInhaltController({
     required this.selected_subthema,
     required this.onLockTapped,
     required int runde,
@@ -30,13 +30,13 @@ class NewQuizsubthemaModel with ChangeNotifier{
         random_question = _random_ungesehene_frage;
     }
     catch (RangeError){       // wenn keine Fragen geladen wurden
-      random_question = QuizFrageModel(
+      random_question = QuizFrageController(
         frage: DB_Frage(
             nummer: 9999,
             version: 9999,
             inhalt_id: 9999,
             punkte: 0,
-            text: "keine Fragen vorhanden",
+            text: "Ach! Jetzt ist's mir wieder eingefallen. Hat sich erledigt",
             antworten: [
               Antwort(text: 'weiter', erklaerung: '', isKorrekt: true),
             ]
@@ -48,7 +48,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
     // print_Cyan("NewQuizsubthemaModel _load beendet"); // todo print
   }
 
-  QuizFrageModel get _falschbeantwortete_frage_in_neuer_version{
+  QuizFrageController get _falschbeantwortete_frage_in_neuer_version{
     List<DB_Frage> ungesehene_fragen = _ungesehene_fragen;
     List<String> falsch_beantwortete_fragen_shuffled = selected_subthema.logSubThema.falschBeantworteteFragen;
     falsch_beantwortete_fragen_shuffled.shuffle();
@@ -60,7 +60,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
       for(DB_Frage db_frage in ungesehene_fragen){
         if(db_frage.id.split("_")[1] == falsch_beantwortete_frage.split("_")[1]
         && ! (db_frage.id.split("_")[2] == falsch_beantwortete_frage.split("_")[2]))
-          return QuizFrageModel(frage: db_frage, onLockTapped: ()=> onLockTapped());
+          return QuizFrageController(frage: db_frage, onLockTapped: ()=> onLockTapped());
       }
     }
 
@@ -71,7 +71,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
   }
 
 
-  QuizFrageModel get _random_falschbeantwortete_frage {
+  QuizFrageController get _random_falschbeantwortete_frage {
     List<String> falsch_beantwortete_fragen = selected_subthema.logSubThema.falschBeantworteteFragen;
     falsch_beantwortete_fragen.shuffle();
 
@@ -79,7 +79,7 @@ class NewQuizsubthemaModel with ChangeNotifier{
         falsch_beantwortete_fragen.contains(frage.id)).toList();
 
     if (matching_fragen.isNotEmpty) {
-      return QuizFrageModel(
+      return QuizFrageController(
           frage: matching_fragen[rnd.nextInt(matching_fragen.length)],
           onLockTapped: ()=> onLockTapped());
     }
@@ -90,8 +90,8 @@ class NewQuizsubthemaModel with ChangeNotifier{
   }
 
 
-  QuizFrageModel get _random_ungesehene_frage {
-    return QuizFrageModel(
+  QuizFrageController get _random_ungesehene_frage {
+    return QuizFrageController(
         frage: _ungesehene_fragen[rnd.nextInt(_ungesehene_fragen.length)],
         onLockTapped: ()=> onLockTapped());
   }

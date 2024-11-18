@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2032,
+    "text": "Was versteht man unter einer 'DDoS-Attacke'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einen Angriff, bei dem ein Server durch massenhafte Anfragen überlastet wird",
+        "erklaerung": "Eine DDoS-Attacke zielt darauf ab, die Verfügbarkeit eines Servers zu stören.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen Angriff, der Daten verschlüsselt und Lösegeld fordert",
+        "erklaerung": "Das beschreibt eine Ransomware-Attacke, keine DDoS-Attacke.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einen Angriff, bei dem Passwörter durch Brute-Force ermittelt werden",
+        "erklaerung": "Brute-Force-Angriffe sind eine andere Art von Bedrohung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2032,
+    "text": "Welche Gefahr geht von 'Phishing' aus?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Täuschung von Nutzern, um sensible Informationen wie Passwörter zu stehlen",
+        "erklaerung": "Phishing ist eine häufige Methode, um Daten durch Täuschung zu erlangen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Übernehmen von IT-Systemen durch Malware",
+        "erklaerung": "Das ist die Aufgabe von Malware, nicht von Phishing.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Blockieren von IT-Systemen durch eine DDoS-Attacke",
+        "erklaerung": "DDoS und Phishing sind unterschiedliche Angriffsmethoden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2032,
+    "text": "Was ist der Zweck von Ransomware?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Verschlüsselung von Daten, um ein Lösegeld für die Entschlüsselung zu fordern",
+        "erklaerung": "Ransomware verschlüsselt Daten und verlangt Lösegeld für die Wiederherstellung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Löschen aller Daten auf einem IT-System",
+        "erklaerung": "Ransomware löscht keine Daten, sondern verschlüsselt sie.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Überwachung von Benutzeraktivitäten",
+        "erklaerung": "Das beschreibt Spyware, nicht Ransomware.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2032,
+    "text": "Was beschreibt ein 'Zero-Day-Angriff'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einen Angriff, der eine unbekannte Sicherheitslücke ausnutzt",
+        "erklaerung": "Zero-Day-Angriffe nutzen Schwachstellen aus, bevor sie bekannt werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen Angriff, der keine Auswirkungen auf das IT-System hat",
+        "erklaerung": "Zero-Day-Angriffe können erhebliche Schäden verursachen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einen Angriff, der durch bekannte Sicherheitslücken durchgeführt wird",
+        "erklaerung": "Zero-Day-Angriffe betreffen unbekannte, nicht bekannte Lücken.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2032,
+    "text": "Was ist ein Botnetz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Netzwerk infizierter Geräte, die von einem Angreifer gesteuert werden",
+        "erklaerung": "Botnetze werden häufig für DDoS-Angriffe oder Spam-Versand genutzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein sicherheitsüberwachtes Netzwerk",
+        "erklaerung": "Ein Botnetz ist ein unsicheres Netzwerk, das von Angreifern genutzt wird.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Tool zur Netzwerkoptimierung",
+        "erklaerung": "Ein Botnetz hat nichts mit Optimierung zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2032,
+    "text": "Welche Gefahr geht von Social Engineering aus?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Manipulation von Personen, um vertrauliche Informationen zu erhalten",
+        "erklaerung": "Social Engineering zielt darauf ab, menschliche Schwachstellen auszunutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Übernahme eines Netzwerks durch Schadsoftware",
+        "erklaerung": "Das beschreibt Malware, nicht Social Engineering.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Angriffe auf Server durch massenhafte Anfragen",
+        "erklaerung": "Das beschreibt eine DDoS-Attacke, nicht Social Engineering.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2032,
+    "text": "Welche Bedrohung stellt ein Brute-Force-Angriff dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das systematische Ausprobieren von Passwörtern, um Zugang zu erhalten",
+        "erklaerung": "Brute-Force-Angriffe testen alle möglichen Passwortkombinationen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Abfangen von Daten während der Übertragung",
+        "erklaerung": "Das beschreibt einen Man-in-the-Middle-Angriff, nicht Brute-Force.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Blockieren eines Servers durch massenhafte Anfragen",
+        "erklaerung": "Das beschreibt eine DDoS-Attacke, nicht einen Brute-Force-Angriff.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2032,
+    "text": "Was ist ein Man-in-the-Middle-Angriff?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Angriff, bei dem ein Angreifer Daten zwischen zwei Parteien abfängt und manipuliert",
+        "erklaerung": "Man-in-the-Middle-Angriffe gefährden die Vertraulichkeit und Integrität von Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, der die Verfügbarkeit eines Servers beeinträchtigt",
+        "erklaerung": "Das beschreibt eine DDoS-Attacke, nicht einen Man-in-the-Middle-Angriff.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Angriff, der Passwörter durch systematisches Ausprobieren ermittelt",
+        "erklaerung": "Das beschreibt einen Brute-Force-Angriff, nicht einen Man-in-the-Middle-Angriff.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2032,
+    "text": "Was versteht man unter Spyware?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schadsoftware, die Informationen über Benutzer ohne deren Wissen sammelt",
+        "erklaerung": "Spyware wird verwendet, um vertrauliche Informationen zu stehlen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Schadsoftware, die Daten verschlüsselt und Lösegeld fordert",
+        "erklaerung": "Das beschreibt Ransomware, nicht Spyware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Tool, das Netzwerke überwacht und optimiert",
+        "erklaerung": "Spyware hat nichts mit Netzwerkoptimierung zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2032,
+    "text": "Welche Gefahr stellt eine SQL-Injection dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Angriff, bei dem schädlicher SQL-Code in eine Datenbankanfrage eingeschleust wird",
+        "erklaerung": "SQL-Injection zielt darauf ab, unbefugten Zugriff auf Datenbanken zu erlangen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, bei dem Daten während der Übertragung abgefangen werden",
+        "erklaerung": "Das beschreibt einen Man-in-the-Middle-Angriff, nicht eine SQL-Injection.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Angriff, der durch massenhafte Anfragen einen Server lahmlegt",
+        "erklaerung": "Das beschreibt eine DDoS-Attacke, nicht eine SQL-Injection.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

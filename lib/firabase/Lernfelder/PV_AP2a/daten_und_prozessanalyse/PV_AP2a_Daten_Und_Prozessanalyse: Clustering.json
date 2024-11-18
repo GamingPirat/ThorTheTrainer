@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2084,
+    "text": "Was versteht man unter Clustering?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Gruppierung von ähnlichen Datenpunkten in Cluster.",
+        "erklaerung": "Clustering wird verwendet, um Daten mit ähnlichen Eigenschaften zu gruppieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die lineare Anordnung von Datenpunkten.",
+        "erklaerung": "Clustering konzentriert sich auf Gruppenbildung, nicht auf lineare Anordnung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Bereinigung von fehlerhaften Daten.",
+        "erklaerung": "Clustering bezieht sich auf Gruppierung, nicht auf Datenbereinigung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2084,
+    "text": "Welche Methoden gibt es beim Clustering?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Hierarchisches Clustering und k-Means.",
+        "erklaerung": "Dies sind gängige Methoden für Clustering.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Datenbankabfragen und Tabellenverknüpfung.",
+        "erklaerung": "Diese Methoden beziehen sich auf Datenbankmanagement, nicht auf Clustering.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Klassifikation und Regression.",
+        "erklaerung": "Diese gehören zur Datenmodellierung, nicht zum Clustering.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2084,
+    "text": "Wofür wird Clustering in der Datenanalyse verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Entdeckung von Mustern und Strukturen in großen Datenmengen.",
+        "erklaerung": "Clustering hilft, verborgene Muster in den Daten zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Optimierung von Datenbanken.",
+        "erklaerung": "Datenbankoptimierung ist nicht der Zweck von Clustering.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur direkten Vorhersage von Datenwerten.",
+        "erklaerung": "Clustering ist nicht für Vorhersagen geeignet, sondern für Gruppierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2084,
+    "text": "Was ist der Unterschied zwischen k-Means und hierarchischem Clustering?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "k-Means teilt Daten in eine feste Anzahl von Clustern, hierarchisches Clustering erstellt eine Cluster-Hierarchie.",
+        "erklaerung": "k-Means benötigt eine vorher festgelegte Clusteranzahl, während hierarchisches Clustering Cluster hierarchisch organisiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "k-Means funktioniert nur mit numerischen Daten, hierarchisches Clustering nur mit Textdaten.",
+        "erklaerung": "Beide Methoden können mit numerischen Daten arbeiten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "k-Means erstellt Baumstrukturen, hierarchisches Clustering verwendet Zentroiden.",
+        "erklaerung": "Hierarchisches Clustering erstellt Baumstrukturen, nicht k-Means.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2084,
+    "text": "Welche Metrik wird häufig zur Bestimmung der Clusterzugehörigkeit verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Euklidische Distanz.",
+        "erklaerung": "Die euklidische Distanz ist eine der häufigsten Metriken im Clustering.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Datenbankabfragen.",
+        "erklaerung": "Datenbankabfragen sind keine Metriken für Clustering.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Logistische Regression.",
+        "erklaerung": "Logistische Regression gehört zur Modellierung, nicht zum Clustering.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2084,
+    "text": "Welche Herausforderungen können beim Clustering auftreten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Bestimmung der optimalen Anzahl von Clustern.",
+        "erklaerung": "Es ist oft schwierig, die optimale Clusteranzahl festzulegen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Notwendigkeit, nur strukturierte Daten zu verwenden.",
+        "erklaerung": "Clustering kann auch mit unstrukturierten Daten arbeiten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Unfähigkeit, Daten mit hoher Dimension zu analysieren.",
+        "erklaerung": "Es gibt Techniken wie PCA, die Clustering mit hochdimensionalen Daten ermöglichen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2084,
+    "text": "Wie wird die Qualität von Clustern bewertet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Metriken wie Silhouettenkoeffizient und Davies-Bouldin-Index.",
+        "erklaerung": "Diese Metriken bewerten die Trennung und Kompaktheit von Clustern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Anzahl der Datenpunkte in jedem Cluster.",
+        "erklaerung": "Die Anzahl allein sagt nichts über die Qualität der Cluster aus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Farbe der Cluster in der Visualisierung.",
+        "erklaerung": "Die Farbe dient nur der Visualisierung, nicht der Bewertung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2084,
+    "text": "Welche Softwaretools sind gängig für Clustering?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Python (Scikit-learn), R und MATLAB.",
+        "erklaerung": "Diese Tools bieten Bibliotheken für Clustering-Algorithmen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Microsoft Excel und Word.",
+        "erklaerung": "Excel und Word sind nicht für Clustering geeignet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Photoshop und Illustrator.",
+        "erklaerung": "Diese Programme sind für Grafikdesign, nicht für Clustering.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2084,
+    "text": "Was ist der Zweck von Clustering in der Kundenanalyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Segmentierung von Kunden in Gruppen mit ähnlichem Verhalten.",
+        "erklaerung": "Clustering hilft, Kunden mit ähnlichen Eigenschaften zu identifizieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vorhersage zukünftiger Kaufentscheidungen.",
+        "erklaerung": "Clustering liefert keine direkten Vorhersagen, sondern Gruppierungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Automatisierung der Kundenkommunikation.",
+        "erklaerung": "Clustering kann die Basis für Automatisierung sein, ist aber selbst keine Automatisierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2084,
+    "text": "Welche Voraussetzung sollte ein Datensatz für erfolgreiches Clustering erfüllen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Daten sollten vergleichbar und strukturiert sein.",
+        "erklaerung": "Vergleichbarkeit und Struktur erleichtern das Clustering.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der Datensatz muss keine fehlenden Werte enthalten.",
+        "erklaerung": "Fehlende Werte können behandelt werden und verhindern Clustering nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Der Datensatz muss immer numerisch sein.",
+        "erklaerung": "Es gibt Methoden, um auch kategoriale Daten zu clustern.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

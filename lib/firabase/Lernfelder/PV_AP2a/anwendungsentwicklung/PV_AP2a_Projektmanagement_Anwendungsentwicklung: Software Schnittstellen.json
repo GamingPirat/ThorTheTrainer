@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2050,
+    "text": "Was ist die Hauptaufgabe einer Software-Schnittstelle (API)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Kommunikation zwischen verschiedenen Softwareanwendungen zu ermöglichen",
+        "erklaerung": "APIs stellen Funktionen und Daten bereit, um die Interaktion zwischen Anwendungen zu ermöglichen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die physische Verbindung von Hardwarekomponenten zu steuern",
+        "erklaerung": "APIs betreffen Software, nicht Hardware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Netzwerkkonnektivität zu optimieren",
+        "erklaerung": "APIs optimieren keine Netzwerke, sondern ermöglichen Softwareinteraktionen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2050,
+    "text": "Welche Art von API wird häufig für Webanwendungen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "REST-API",
+        "erklaerung": "REST-APIs basieren auf HTTP und sind gängige Standards für Webanwendungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "CLI-API",
+        "erklaerung": "CLIs sind keine Standards für Webanwendungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "GUI-API",
+        "erklaerung": "GUI-APIs betreffen Benutzerschnittstellen, nicht Webkommunikation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2050,
+    "text": "Was ist ein Vorteil der Verwendung von REST-APIs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie sind leichtgewichtig und unterstützen verschiedene Datenformate wie JSON",
+        "erklaerung": "REST-APIs sind flexibel und ressourcenschonend.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie erfordern spezielle Tools für die Implementierung",
+        "erklaerung": "REST-APIs können mit Standardtechnologien implementiert werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind ausschließlich für Desktop-Anwendungen geeignet",
+        "erklaerung": "REST-APIs sind universell einsetzbar, auch für Web- und Mobilanwendungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2050,
+    "text": "Was ist eine SOAP-API?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Protokoll, das XML für den Datenaustausch verwendet",
+        "erklaerung": "SOAP ist ein standardisiertes Protokoll für strukturierte Datenübertragung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine API, die nur in REST-Format verfügbar ist",
+        "erklaerung": "SOAP verwendet XML, nicht REST.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine API für die grafische Benutzeroberfläche",
+        "erklaerung": "SOAP ist für Datenübertragung, nicht für GUI.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2050,
+    "text": "Was bedeutet API-Key-Authentifizierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Methode, um den Zugriff auf eine API durch einen eindeutigen Schlüssel zu sichern",
+        "erklaerung": "API-Keys identifizieren und authentifizieren API-Benutzer.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Methode, um Daten zwischen APIs zu verschlüsseln",
+        "erklaerung": "API-Keys verschlüsseln keine Daten, sie dienen der Authentifizierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Standard für die Entwicklung von API-Dokumentationen",
+        "erklaerung": "API-Keys sind keine Dokumentationsstandards.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2050,
+    "text": "Welche Datenformate werden typischerweise von APIs unterstützt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "JSON und XML",
+        "erklaerung": "Diese Formate sind die gängigsten für den Datenaustausch mit APIs.",
+        "isKorrekt": true
+      },
+      {
+        "text": "CSV und PDF",
+        "erklaerung": "Obwohl manchmal verwendet, sind CSV und PDF nicht die typischen Formate für APIs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HTML und CSS",
+        "erklaerung": "HTML und CSS werden für Webinhalte, nicht für API-Datenformate verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2050,
+    "text": "Was ist eine Middleware-Schnittstelle?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Software, die zwischen Anwendungen und Datenbanken vermittelt",
+        "erklaerung": "Middleware erleichtert die Integration verschiedener Systeme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Benutzeroberfläche für API-Dokumentation",
+        "erklaerung": "Middleware ist keine Benutzeroberfläche, sondern arbeitet im Hintergrund.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Methode zur Verschlüsselung von API-Daten",
+        "erklaerung": "Middleware bezieht sich auf Integration, nicht auf Verschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2050,
+    "text": "Was bedeutet REST im Kontext von APIs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Representational State Transfer",
+        "erklaerung": "REST ist ein Architekturstil für verteilte Systeme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Random State Transfer",
+        "erklaerung": "Das ist falsch, REST steht für Representational State Transfer.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Reliable Server Transfer",
+        "erklaerung": "REST ist nicht für zuverlässige Servertransfers konzipiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2050,
+    "text": "Warum sind Versionen in APIs wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Änderungen in der API zu verwalten, ohne bestehende Anwendungen zu beeinträchtigen",
+        "erklaerung": "Versionierung ermöglicht es, alte API-Funktionen zu unterstützen, während neue hinzugefügt werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um den Zugriff auf die API zu beschränken",
+        "erklaerung": "Versionierung dient nicht der Zugriffsbeschränkung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Performance der API zu verbessern",
+        "erklaerung": "Versionierung betrifft nicht direkt die Performance.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2050,
+    "text": "Was ist ein Webhook im Kontext von APIs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Mechanismus, der Benachrichtigungen bei bestimmten Ereignissen an eine URL sendet",
+        "erklaerung": "Webhooks ermöglichen Echtzeit-Kommunikation von einer API zu einem System.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine API, die ausschließlich für Webbrowser gedacht ist",
+        "erklaerung": "Webhooks sind nicht an Browser gebunden, sondern ein Kommunikationsmittel.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Methode zur Speicherung von API-Daten",
+        "erklaerung": "Webhooks speichern keine Daten, sondern senden Benachrichtigungen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

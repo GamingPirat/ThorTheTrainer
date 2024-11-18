@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2047,
+    "text": "Was ist die Hauptfunktion eines Servers?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Bereitstellung von Diensten oder Ressourcen für andere Geräte im Netzwerk",
+        "erklaerung": "Server stellen Ressourcen wie Dateien, Datenbanken oder Anwendungen bereit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verarbeitung von Eingaben auf einem lokalen Computer",
+        "erklaerung": "Diese Aufgabe wird von einem Client, nicht von einem Server ausgeführt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verbindung von Geräten über ein drahtloses Netzwerk",
+        "erklaerung": "Das ist die Aufgabe eines Routers, nicht eines Servers.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2047,
+    "text": "Welche Arten von Servern gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Dateiserver, Datenbankserver und Webserver",
+        "erklaerung": "Server können nach ihrer Funktion wie Datei- oder Datenbankserver kategorisiert werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Desktopserver, Mobilserver und Router",
+        "erklaerung": "Diese Begriffe beziehen sich nicht auf Servertypen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HDMI-Server, USB-Server und WLAN-Server",
+        "erklaerung": "Das sind keine Servertypen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2047,
+    "text": "Welche Hardwarekomponenten sind für einen Server besonders wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Leistungsstarke Prozessoren, viel Arbeitsspeicher und redundante Stromversorgung",
+        "erklaerung": "Server benötigen hohe Leistung und Zuverlässigkeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Touchscreens und hochauflösende Grafikkarten",
+        "erklaerung": "Diese Komponenten sind für Server weniger relevant.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Drahtlose Netzwerkadapter und Akkus",
+        "erklaerung": "Server werden in der Regel nicht drahtlos betrieben und verwenden keine Akkus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2047,
+    "text": "Was ist der Unterschied zwischen einem physischen und einem virtuellen Server?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein physischer Server ist eine Hardwareeinheit, ein virtueller Server läuft auf einer virtualisierten Umgebung",
+        "erklaerung": "Virtuelle Server teilen sich die Ressourcen eines physischen Servers.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Virtuelle Server sind schneller als physische Server",
+        "erklaerung": "Virtuelle Server sind nicht notwendigerweise schneller.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Physische Server können keine Betriebssysteme ausführen",
+        "erklaerung": "Physische Server können Betriebssysteme ausführen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2047,
+    "text": "Was ist ein 'Blade-Server'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein kompakter Server, der in ein Rack eingeschoben wird",
+        "erklaerung": "Blade-Server sparen Platz und sind für Rechenzentren optimiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein mobiler Server für Laptops",
+        "erklaerung": "Blade-Server sind stationäre Geräte für Racks, nicht für Laptops.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Server mit integrierter Grafikverarbeitung",
+        "erklaerung": "Blade-Server sind nicht auf Grafikverarbeitung spezialisiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2047,
+    "text": "Welche Rolle spielt ein DNS-Server im Netzwerk?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Er übersetzt Domainnamen in IP-Adressen",
+        "erklaerung": "Ein DNS-Server ermöglicht die Auflösung von Domainnamen in IP-Adressen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Er hostet Websites",
+        "erklaerung": "Webserver hosten Websites, nicht DNS-Server.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Er speichert alle Netzwerkdateien",
+        "erklaerung": "DNS-Server speichern keine Dateien, sondern bieten Namensauflösung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2047,
+    "text": "Was ist ein Vorteil der Virtualisierung von Servern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Effizientere Ressourcennutzung und einfachere Skalierbarkeit",
+        "erklaerung": "Virtualisierung ermöglicht es, Hardware-Ressourcen effizient zu teilen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Höherer Energieverbrauch",
+        "erklaerung": "Virtualisierung reduziert oft den Energieverbrauch durch effizientere Nutzung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erhöhte physische Sicherheit der Hardware",
+        "erklaerung": "Physische Sicherheit wird durch Virtualisierung nicht beeinflusst.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2047,
+    "text": "Was versteht man unter einem 'dedizierten Server'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einen Server, der exklusiv für einen einzelnen Kunden oder eine Anwendung genutzt wird",
+        "erklaerung": "Dedizierte Server bieten exklusive Ressourcen für bestimmte Aufgaben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen Server, der für mehrere Kunden gemeinsam genutzt wird",
+        "erklaerung": "Das beschreibt einen geteilten Server, nicht einen dedizierten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Einen Server, der ausschließlich in der Cloud betrieben wird",
+        "erklaerung": "Dedizierte Server können lokal oder in der Cloud betrieben werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2047,
+    "text": "Welche Funktion hat ein Load Balancer in einem Servernetzwerk?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verteilung von Netzwerkverkehr auf mehrere Server, um die Last auszugleichen",
+        "erklaerung": "Load Balancer optimieren die Ressourcennutzung und vermeiden Überlastungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Geschwindigkeit einzelner Server",
+        "erklaerung": "Ein Load Balancer verteilt Lasten, erhöht jedoch nicht direkt die Geschwindigkeit einzelner Server.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Bereitstellung von Stromversorgung für Server",
+        "erklaerung": "Das ist nicht die Aufgabe eines Load Balancers.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2047,
+    "text": "Warum ist eine redundante Stromversorgung bei Servern wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um bei einem Ausfall der Hauptstromquelle den Betrieb aufrechtzuerhalten",
+        "erklaerung": "Redundante Stromversorgung schützt Server vor Ausfällen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Energieeffizienz zu erhöhen",
+        "erklaerung": "Redundanz erhöht die Ausfallsicherheit, nicht die Energieeffizienz.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Server automatisch herunterzufahren",
+        "erklaerung": "Redundante Stromversorgung verhindert Ausfälle, schaltet Server nicht automatisch ab.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

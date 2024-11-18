@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist das Hauptziel einer Stakeholder-Analyse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Erstellung eines Projektzeitplans",
+        "erklaerung": "Der Projektzeitplan ist nicht das Ziel der Stakeholder-Analyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Identifikation von Personen oder Gruppen, die Einfluss auf das Projekt haben",
+        "erklaerung": "Dies ist das Hauptziel der Stakeholder-Analyse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Bewertung von Projektrisiken",
+        "erklaerung": "Risiken werden in der Risikoanalyse behandelt, nicht in der Stakeholder-Analyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum ist es wichtig, Stakeholder frühzeitig in ein Projekt einzubinden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um ihre Bedürfnisse und Erwartungen zu berücksichtigen",
+        "erklaerung": "Frühzeitige Einbindung hilft, die Anforderungen der Stakeholder zu verstehen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Projektlaufzeit zu verkürzen",
+        "erklaerung": "Stakeholder-Einbindung hat keinen direkten Einfluss auf die Laufzeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Anzahl der Projektbeteiligten zu minimieren",
+        "erklaerung": "Stakeholder-Einbindung zielt nicht darauf ab, die Beteiligten zu reduzieren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Gruppen zählen typischerweise zu den Stakeholdern eines Projekts?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Projektmitarbeiter, Kunden und Zulieferer",
+        "erklaerung": "Diese Gruppen sind typische Stakeholder eines Projekts.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur das Management",
+        "erklaerung": "Das Management ist nur eine von vielen Stakeholder-Gruppen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur die Endnutzer",
+        "erklaerung": "Endnutzer sind Stakeholder, aber nicht die einzigen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist ein wichtiger Schritt bei der Identifikation von Stakeholdern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Analyse ihrer Erwartungen und Einflussmöglichkeiten",
+        "erklaerung": "Die Analyse ist ein zentraler Bestandteil der Stakeholder-Identifikation.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Erstellung eines Netzplans",
+        "erklaerung": "Netzpläne gehören zur Zeitplanung, nicht zur Stakeholder-Analyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Definition der Projektziele",
+        "erklaerung": "Ziele werden in der Initiierungsphase definiert, unabhängig von der Stakeholder-Analyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum sollten Stakeholder regelmäßig über den Projektfortschritt informiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um ihr Vertrauen zu gewinnen und zu halten",
+        "erklaerung": "Regelmäßige Updates fördern Vertrauen und Transparenz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Projektlaufzeit zu reduzieren",
+        "erklaerung": "Updates haben keinen direkten Einfluss auf die Laufzeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Anzahl der Stakeholder zu verringern",
+        "erklaerung": "Die Anzahl der Stakeholder bleibt durch Updates unverändert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Wie können Stakeholder nach ihrer Relevanz priorisiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Nach ihrem Einfluss und Interesse am Projekt",
+        "erklaerung": "Stakeholder werden häufig nach diesen Kriterien priorisiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nach ihrer finanziellen Beteiligung",
+        "erklaerung": "Die finanzielle Beteiligung ist nur ein Aspekt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nach ihrer geographischen Nähe zum Projektstandort",
+        "erklaerung": "Die geographische Nähe ist für die Priorisierung meist irrelevant.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Methode wird häufig genutzt, um Stakeholder zu analysieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Stakeholder-Matrix",
+        "erklaerung": "Die Stakeholder-Matrix bewertet Einfluss und Interesse der Beteiligten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der Projektstrukturplan",
+        "erklaerung": "Der Projektstrukturplan dient der Aufgabenplanung, nicht der Stakeholder-Analyse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die SWOT-Analyse",
+        "erklaerung": "Die SWOT-Analyse analysiert Stärken und Schwächen, nicht Stakeholder.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Wie sollten Stakeholder mit hohem Einfluss und niedrigem Interesse behandelt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Regelmäßig informiert werden",
+        "erklaerung": "Stakeholder mit hohem Einfluss sollten gut informiert werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nicht in das Projekt einbezogen werden",
+        "erklaerung": "Stakeholder mit Einfluss sollten nicht ignoriert werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur bei Problemen kontaktiert werden",
+        "erklaerung": "Regelmäßige Informationen sind wichtig, nicht nur bei Problemen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist ein typisches Risiko, wenn Stakeholder nicht angemessen berücksichtigt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verzögerungen und Widerstand im Projektverlauf",
+        "erklaerung": "Nicht berücksichtigte Stakeholder können das Projekt negativ beeinflussen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Übererfüllung der Projektziele",
+        "erklaerung": "Übererfüllung hat keinen Bezug zur Stakeholder-Berücksichtigung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Reduktion der Projektkosten",
+        "erklaerung": "Die Berücksichtigung von Stakeholdern hat meist keine Kostenreduktion zur Folge.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Aussage beschreibt eine proaktive Stakeholder-Kommunikation?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Stakeholder werden regelmäßig und frühzeitig über Projektentwicklungen informiert",
+        "erklaerung": "Proaktive Kommunikation ist frühzeitig und regelmäßig.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Stakeholder werden nur bei Problemen kontaktiert",
+        "erklaerung": "Das wäre reaktive, nicht proaktive Kommunikation.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Stakeholder werden in Entscheidungen nicht einbezogen",
+        "erklaerung": "Proaktive Kommunikation schließt Stakeholder ein, nicht aus.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

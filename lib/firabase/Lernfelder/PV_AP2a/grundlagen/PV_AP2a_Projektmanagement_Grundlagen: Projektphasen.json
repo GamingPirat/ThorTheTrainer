@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Aufgabe steht typischerweise in der Initiierungsphase eines Projekts im Vordergrund?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Erstellung eines detaillierten Zeitplans",
+        "erklaerung": "Der Zeitplan wird in der Planungsphase erstellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Definition des Projektziels und des Umfangs",
+        "erklaerung": "In der Initiierungsphase werden Ziel und Umfang festgelegt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Durchführung erster Projektaufgaben",
+        "erklaerung": "Aufgaben werden erst in der Durchführungsphase bearbeitet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Phase des Projektmanagements umfasst die Identifikation von Risiken?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Initiierungsphase",
+        "erklaerung": "Risiken werden hauptsächlich in der Planungsphase identifiziert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Planungsphase",
+        "erklaerung": "In der Planungsphase werden Risiken systematisch erfasst und bewertet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Abschlussphase",
+        "erklaerung": "In der Abschlussphase werden die Ergebnisse dokumentiert, aber keine Risiken identifiziert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist ein typisches Ergebnis der Planungsphase eines Projekts?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein detaillierter Projektstrukturplan",
+        "erklaerung": "Der Projektstrukturplan wird in der Planungsphase erstellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein grober Überblick über das Projekt",
+        "erklaerung": "Ein grober Überblick wird bereits in der Initiierungsphase erstellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Abschlussbericht",
+        "erklaerung": "Der Abschlussbericht gehört zur Abschlussphase.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Aufgaben stehen in der Durchführungsphase im Vordergrund?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Monitoring und die Berichterstattung",
+        "erklaerung": "Monitoring gehört primär zur Überwachungsphase.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Umsetzung der geplanten Tätigkeiten",
+        "erklaerung": "In der Durchführungsphase werden die geplanten Aktivitäten umgesetzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Definition von Projektzielen",
+        "erklaerung": "Ziele werden bereits in der Initiierungsphase definiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist das Hauptziel der Überwachungsphase?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sicherzustellen, dass das Projekt im Zeit- und Kostenrahmen bleibt",
+        "erklaerung": "Die Überwachung kontrolliert Zeit, Kosten und Qualität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Erfüllung von Kundenanforderungen sicherzustellen",
+        "erklaerung": "Dies ist ein Ziel des gesamten Projekts, nicht nur der Überwachungsphase.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Projekt abzuschließen und Ergebnisse zu dokumentieren",
+        "erklaerung": "Das ist Aufgabe der Abschlussphase.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Aufgabe gehört zur Abschlussphase eines Projekts?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Erstellung eines Projektstrukturplans",
+        "erklaerung": "Der Projektstrukturplan gehört zur Planungsphase.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Übergabe der Projektergebnisse an den Kunden",
+        "erklaerung": "Die Übergabe ist eine zentrale Aufgabe der Abschlussphase.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Überwachung des Projektfortschritts",
+        "erklaerung": "Das Monitoring gehört zur Überwachungsphase.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Welche Phase umfasst typischerweise die Erstellung eines Zeitplans?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Initiierungsphase",
+        "erklaerung": "In der Initiierungsphase werden nur grobe Ziele definiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Planungsphase",
+        "erklaerung": "Ein detaillierter Zeitplan wird in der Planungsphase erstellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durchführungsphase",
+        "erklaerung": "Die Durchführungsphase setzt den Zeitplan um, erstellt ihn aber nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Dokumentation wird häufig in der Abschlussphase erstellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Projektstrukturplan",
+        "erklaerung": "Der Projektstrukturplan gehört zur Planungsphase.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Abschlussbericht",
+        "erklaerung": "Der Abschlussbericht fasst die Ergebnisse des Projekts zusammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Risikomanagementplan",
+        "erklaerung": "Der Risikomanagementplan gehört zur Planungsphase.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Warum ist die Überwachungsphase im Projektmanagement entscheidend?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um die Kommunikation zwischen Teammitgliedern zu verbessern",
+        "erklaerung": "Kommunikation ist wichtig, aber nicht das Hauptziel der Überwachung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um sicherzustellen, dass das Projektziel innerhalb der geplanten Parameter erreicht wird",
+        "erklaerung": "Die Überwachung stellt sicher, dass das Projekt im Zeit-, Kosten- und Qualitätsrahmen bleibt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um Änderungen im Projektumfang zu vermeiden",
+        "erklaerung": "Änderungen können während des Projekts auftreten und müssen flexibel gehandhabt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche der folgenden Tätigkeiten ist typisch für die Initiierungsphase?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Identifikation von Projektzielen",
+        "erklaerung": "In der Initiierungsphase werden die Ziele definiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Durchführung von Risikoanalysen",
+        "erklaerung": "Risikoanalysen gehören zur Planungsphase.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Umsetzung der Projektaufgaben",
+        "erklaerung": "Die Umsetzung erfolgt erst in der Durchführungsphase.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

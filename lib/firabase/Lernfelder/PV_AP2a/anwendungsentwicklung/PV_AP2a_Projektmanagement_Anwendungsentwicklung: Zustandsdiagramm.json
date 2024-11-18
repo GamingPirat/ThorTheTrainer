@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20513,
+    "text": "Was stellt ein Zustandsdiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Zustände eines Objekts und die Übergänge zwischen ihnen",
+        "erklaerung": "Zustandsdiagramme zeigen, wie ein Objekt durch Ereignisse Zustandsänderungen durchläuft.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die zeitliche Reihenfolge von Nachrichten zwischen Objekten",
+        "erklaerung": "Das ist die Funktion eines Sequenzdiagramms, nicht eines Zustandsdiagramms.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Abhängigkeiten zwischen Paketen in einem System",
+        "erklaerung": "Das ist die Funktion eines Paketdiagramms, nicht eines Zustandsdiagramms.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20513,
+    "text": "Welche Elemente sind typisch für ein Zustandsdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zustände, Übergänge und Ereignisse",
+        "erklaerung": "Diese Elemente bilden die Grundlage eines Zustandsdiagramms.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Aktivitäten, Entscheidungsknoten und Synchronisationsbalken",
+        "erklaerung": "Diese gehören zu Aktivitätsdiagrammen, nicht zu Zustandsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Pakete, Abhängigkeiten und Klassen",
+        "erklaerung": "Diese Elemente gehören zu Paketdiagrammen, nicht zu Zustandsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20513,
+    "text": "Wofür wird ein Zustandsdiagramm typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Modellierung des Lebenszyklus eines Objekts",
+        "erklaerung": "Zustandsdiagramme zeigen, wie ein Objekt durch Zustände wechselt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung von Datenflüssen in einem System",
+        "erklaerung": "Datenflussdiagramme zeigen Datenflüsse, nicht Zustandsübergänge.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Modellierung von Hardwarekomponenten",
+        "erklaerung": "Zustandsdiagramme beziehen sich auf Softwareobjekte, nicht auf Hardware.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20513,
+    "text": "Wie wird der Startzustand in einem Zustandsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch einen ausgefüllten Kreis",
+        "erklaerung": "Ein ausgefüllter Kreis markiert den Startzustand eines Zustandsdiagramms.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch ein Rechteck",
+        "erklaerung": "Rechtecke symbolisieren keine Zustände.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch eine Raute",
+        "erklaerung": "Rauten symbolisieren Entscheidungen, nicht Startzustände.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20513,
+    "text": "Wie werden Übergänge in einem Zustandsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch gerichtete Pfeile zwischen Zuständen",
+        "erklaerung": "Pfeile zeigen die Übergänge von einem Zustand in einen anderen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch gestrichelte Linien",
+        "erklaerung": "Gestrichelte Linien symbolisieren keine Übergänge.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Rechtecke",
+        "erklaerung": "Rechtecke werden nicht für Übergänge verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20513,
+    "text": "Wie wird der Endzustand in einem Zustandsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch einen Kreis mit einem ausgefüllten Punkt in der Mitte",
+        "erklaerung": "Der Endzustand wird durch einen Doppelkreis mit einem Punkt dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch ein Rechteck",
+        "erklaerung": "Rechtecke symbolisieren keine Zustände.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch eine Raute",
+        "erklaerung": "Rauten symbolisieren keine Endzustände.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20513,
+    "text": "Welche Software wird häufig zur Erstellung von Zustandsdiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von UML-Diagrammen, einschließlich Zustandsdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine geeignete Software zur Erstellung von UML-Diagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MySQL Workbench",
+        "erklaerung": "MySQL Workbench dient der Datenbankmodellierung, nicht UML-Diagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20513,
+    "text": "Welche Einschränkungen haben Zustandsdiagramme?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie zeigen keine internen Abläufe oder Datenflüsse",
+        "erklaerung": "Zustandsdiagramme konzentrieren sich auf Zustände und Übergänge.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine Übergänge darstellen",
+        "erklaerung": "Übergänge sind ein zentraler Bestandteil von Zustandsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie zeigen keine Zustände",
+        "erklaerung": "Zustände sind die Hauptbestandteile von Zustandsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20513,
+    "text": "Was ist der Zweck eines Zustandsdiagramms in der Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Analyse und Dokumentation von Zustandsänderungen eines Objekts",
+        "erklaerung": "Zustandsdiagramme zeigen, wie Objekte auf Ereignisse reagieren und Zustände wechseln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung von Datenstrukturen eines Systems",
+        "erklaerung": "Die Datenstrukturen werden durch ER-Diagramme beschrieben, nicht durch Zustandsdiagramme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Definition der physischen Architektur eines Systems",
+        "erklaerung": "Das ist die Funktion von Verteilungsdiagrammen, nicht Zustandsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20513,
+    "text": "Wie können parallele Zustände in einem Zustandsdiagramm dargestellt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch parallele Regionen innerhalb eines Zustandsdiagramms",
+        "erklaerung": "Parallele Regionen ermöglichen die Darstellung von Zuständen, die gleichzeitig existieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch gestrichelte Linien",
+        "erklaerung": "Gestrichelte Linien symbolisieren keine parallelen Zustände.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Rechtecke mit Bedingungen",
+        "erklaerung": "Rechtecke sind keine Standardnotation für parallele Zustände.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

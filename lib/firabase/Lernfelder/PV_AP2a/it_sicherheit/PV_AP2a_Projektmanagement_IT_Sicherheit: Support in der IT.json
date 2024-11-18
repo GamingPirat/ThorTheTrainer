@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2048,
+    "text": "Was ist die Hauptaufgabe des IT-Supports?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lösung technischer Probleme und Unterstützung von Endbenutzern",
+        "erklaerung": "Der IT-Support bietet Hilfe bei Hard- und Softwareproblemen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Entwicklung neuer Softwareanwendungen",
+        "erklaerung": "Das ist die Aufgabe von Entwicklern, nicht des IT-Supports.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Optimierung von Netzwerkrouten",
+        "erklaerung": "Netzwerkadministratoren kümmern sich um Netzwerke, nicht der allgemeine IT-Support.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2048,
+    "text": "Welche Arten von IT-Support gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "First-Level, Second-Level und Third-Level-Support",
+        "erklaerung": "Diese Stufen beschreiben die Eskalationsstruktur des Supports.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Online-Support, Telefon-Support und Hardware-Support",
+        "erklaerung": "Das beschreibt Kanäle, aber nicht die Ebenen des IT-Supports.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Kundensupport, Netzwerksupport und Serversupport",
+        "erklaerung": "Das beschreibt Einsatzbereiche, aber keine strukturierten Ebenen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2048,
+    "text": "Was ist die Aufgabe des First-Level-Supports?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erste Anlaufstelle für Benutzeranfragen und Lösung einfacher Probleme",
+        "erklaerung": "First-Level-Support bearbeitet häufig auftretende, leicht zu lösende Probleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Behebung komplexer technischer Probleme",
+        "erklaerung": "Das ist die Aufgabe des Second- oder Third-Level-Supports.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Bereitstellung neuer Software",
+        "erklaerung": "Softwarebereitstellung gehört nicht zur Hauptaufgabe des First-Level-Supports.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2048,
+    "text": "Was unterscheidet den Second-Level-Support vom First-Level-Support?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Second-Level-Support bearbeitet komplexere Probleme, die vom First-Level nicht gelöst werden können",
+        "erklaerung": "Second-Level-Support ist für technische Probleme zuständig, die mehr Fachwissen erfordern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Second-Level-Support bearbeitet ausschließlich Hardwareprobleme",
+        "erklaerung": "Second-Level-Support kümmert sich auch um Softwareprobleme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Second-Level-Support nimmt Anfragen direkt von Endbenutzern entgegen",
+        "erklaerung": "Anfragen gehen normalerweise vom First-Level-Support zum Second-Level.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2048,
+    "text": "Was ist ein Service-Level-Agreement (SLA)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Vereinbarung zwischen Anbieter und Kunde über die Qualität und Verfügbarkeit von Dienstleistungen",
+        "erklaerung": "SLAs definieren Standards und Ziele für die erbrachten IT-Dienstleistungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Liste der verfügbaren Softwarelizenzen",
+        "erklaerung": "SLAs betreffen Dienstleistungen, nicht Softwarelizenzen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Dokument, das die Netzwerkstruktur beschreibt",
+        "erklaerung": "SLAs haben nichts mit der Netzwerkdokumentation zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2048,
+    "text": "Welche Werkzeuge unterstützen den IT-Support bei der Problembehandlung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ticketing-Systeme, Remote-Desktop-Tools und Wissensdatenbanken",
+        "erklaerung": "Diese Werkzeuge helfen bei der Nachverfolgung, Analyse und Lösung von Problemen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Antivirenprogramme und Verschlüsselungssoftware",
+        "erklaerung": "Diese Programme schützen Systeme, unterstützen aber nicht direkt den Supportprozess.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Router-Management-Tools",
+        "erklaerung": "Diese Tools sind spezifisch für Netzwerke und nicht allgemein für den Support.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2048,
+    "text": "Welche Soft Skills sind für den IT-Support besonders wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kommunikationsfähigkeit, Geduld und Problemlösungsdenken",
+        "erklaerung": "Diese Fähigkeiten sind entscheidend für den Umgang mit Endbenutzern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Programmierkenntnisse und Datenbankadministration",
+        "erklaerung": "Das sind technische, keine sozialen Fähigkeiten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verhandlungsgeschick und Verkaufsfähigkeiten",
+        "erklaerung": "Diese Fähigkeiten sind für andere Bereiche wichtiger als für den IT-Support.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2048,
+    "text": "Welche Herausforderung besteht häufig im IT-Support?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kommunikation mit Benutzern, die wenig technisches Wissen haben",
+        "erklaerung": "IT-Support muss oft technische Probleme für Nicht-Experten verständlich machen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Installation von Routern und Netzwerkkabeln",
+        "erklaerung": "Das ist eher eine Aufgabe von Netzwerktechnikern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Entwicklung neuer Softwarelösungen",
+        "erklaerung": "Das fällt nicht in den Aufgabenbereich des IT-Supports.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2048,
+    "text": "Warum ist Dokumentation im IT-Support wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um den Verlauf und die Lösung von Problemen nachvollziehbar zu machen",
+        "erklaerung": "Dokumentation erleichtert die Nachverfolgung und zukünftige Bearbeitung ähnlicher Probleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Anzahl der Supportanfragen zu reduzieren",
+        "erklaerung": "Dokumentation reduziert nicht die Anzahl der Anfragen, sondern optimiert deren Bearbeitung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Leistung der Hardware zu überwachen",
+        "erklaerung": "Dokumentation ist nicht direkt für die Hardwareüberwachung gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2048,
+    "text": "Welche Rolle spielt Feedback im IT-Support?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es hilft, den Supportprozess zu verbessern und Benutzerzufriedenheit zu erhöhen",
+        "erklaerung": "Feedback ist ein wichtiges Werkzeug zur Qualitätssicherung im Support.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es reduziert den Bedarf an IT-Support",
+        "erklaerung": "Feedback reduziert nicht die Nachfrage nach IT-Support, sondern verbessert die Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es ersetzt die Dokumentation von Supportfällen",
+        "erklaerung": "Feedback ergänzt die Dokumentation, ersetzt sie aber nicht.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2045,
+    "text": "Was ist der Unterschied zwischen RAM und ROM?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RAM ist flüchtiger Speicher, ROM ist nicht-flüchtig",
+        "erklaerung": "RAM verliert Daten nach dem Ausschalten, ROM speichert dauerhaft.",
+        "isKorrekt": true
+      },
+      {
+        "text": "RAM speichert Daten permanent, ROM temporär",
+        "erklaerung": "Das Gegenteil ist der Fall: RAM ist temporär, ROM ist permanent.",
+        "isKorrekt": false
+      },
+      {
+        "text": "RAM ist kleiner als ROM",
+        "erklaerung": "RAM hat in der Regel eine größere Kapazität als ROM.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2045,
+    "text": "Welche Speicherart wird für den kurzfristigen Zugriff auf Daten verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RAM",
+        "erklaerung": "RAM wird verwendet, um schnell auf Daten zuzugreifen, die aktuell benötigt werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "ROM",
+        "erklaerung": "ROM speichert Daten dauerhaft und wird nicht für schnellen Zugriff verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Festplatte",
+        "erklaerung": "Festplatten sind langsamer als RAM und für langfristige Speicherung gedacht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2045,
+    "text": "Was beschreibt den Unterschied zwischen SSD und HDD?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "SSDs verwenden Flash-Speicher, HDDs mechanische Platten",
+        "erklaerung": "SSDs sind schneller, da sie keine beweglichen Teile haben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "SSDs sind langsamer als HDDs",
+        "erklaerung": "SSDs sind in der Regel schneller als HDDs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HDDs sind kleiner und leichter als SSDs",
+        "erklaerung": "HDDs sind oft größer und schwerer als SSDs.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2045,
+    "text": "Welche Speicherart wird typischerweise für BIOS verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "ROM",
+        "erklaerung": "Das BIOS wird im ROM gespeichert, da es dauerhaft verfügbar sein muss.",
+        "isKorrekt": true
+      },
+      {
+        "text": "RAM",
+        "erklaerung": "RAM ist flüchtig und daher nicht geeignet für BIOS.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Cache",
+        "erklaerung": "Cache wird für schnellen Datenzugriff verwendet, nicht für BIOS.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2045,
+    "text": "Was ist ein Cache-Speicher?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein schneller Zwischenspeicher für häufig genutzte Daten",
+        "erklaerung": "Cache-Speicher wird verwendet, um den Zugriff auf häufig benötigte Daten zu beschleunigen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein nicht-flüchtiger Speicher für langfristige Daten",
+        "erklaerung": "Cache ist flüchtig und nicht für langfristige Speicherung gedacht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Speicher, der nur bei Servern verwendet wird",
+        "erklaerung": "Cache wird in verschiedenen Geräten, nicht nur in Servern, genutzt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2045,
+    "text": "Welche Speicherart ist schneller: RAM oder Festplatte?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "RAM",
+        "erklaerung": "RAM ist deutlich schneller als eine Festplatte.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Festplatte",
+        "erklaerung": "Festplatten sind langsamer als RAM.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Beide sind gleich schnell",
+        "erklaerung": "RAM ist schneller als Festplatten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2045,
+    "text": "Was ist der Hauptvorteil von SSDs gegenüber HDDs?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Höhere Geschwindigkeit und geringere Zugriffszeiten",
+        "erklaerung": "SSDs bieten schnelleres Lesen und Schreiben als HDDs.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Niedrigere Kosten pro Gigabyte",
+        "erklaerung": "SSDs sind teurer pro Gigabyte als HDDs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Längere Lebensdauer bei intensiver Nutzung",
+        "erklaerung": "HDDs können bei intensiver Nutzung eine längere Lebensdauer haben.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2045,
+    "text": "Welche Speicherart wird für Daten-Backups bevorzugt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Externe Festplatten oder Cloud-Speicher",
+        "erklaerung": "Diese Speicherarten bieten ausreichend Kapazität und sind einfach zu nutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Cache-Speicher",
+        "erklaerung": "Cache ist für temporäre Daten, nicht für Backups geeignet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "ROM",
+        "erklaerung": "ROM ist nicht geeignet für Daten-Backups.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2045,
+    "text": "Was bedeutet 'flüchtiger Speicher'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Speicher, der seine Daten verliert, wenn die Stromversorgung unterbrochen wird",
+        "erklaerung": "RAM ist ein Beispiel für flüchtigen Speicher.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Speicher, der Daten dauerhaft speichert",
+        "erklaerung": "Das beschreibt nicht-flüchtigen Speicher wie Festplatten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Speicher, der nur in mobilen Geräten verwendet wird",
+        "erklaerung": "Flüchtiger Speicher wird in verschiedenen Geräten verwendet, nicht nur in mobilen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2045,
+    "text": "Welche Speichertechnologie wird in USB-Sticks verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Flash-Speicher",
+        "erklaerung": "USB-Sticks verwenden Flash-Speicher, der nicht-flüchtig ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "RAM",
+        "erklaerung": "RAM ist flüchtig und wird nicht in USB-Sticks verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Optische Speicher",
+        "erklaerung": "USB-Sticks basieren nicht auf optischen Speichern.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

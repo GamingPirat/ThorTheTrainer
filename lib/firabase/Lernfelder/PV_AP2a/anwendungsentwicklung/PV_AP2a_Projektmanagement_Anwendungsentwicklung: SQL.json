@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2056,
+    "text": "Wofür steht die Abkürzung SQL?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Structured Query Language",
+        "erklaerung": "SQL ist eine Sprache zur Verwaltung von Datenbanken.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Systematic Query Logic",
+        "erklaerung": "Das ist nicht die richtige Bedeutung von SQL.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Standard Quality Language",
+        "erklaerung": "Das beschreibt SQL nicht korrekt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2056,
+    "text": "Was ist der Hauptzweck von SQL?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Abfragen und Verwalten von Daten in relationalen Datenbanken",
+        "erklaerung": "SQL wird verwendet, um Datenbanken zu erstellen, zu manipulieren und abzufragen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erstellen von grafischen Benutzeroberflächen",
+        "erklaerung": "SQL hat keine Funktion für die Gestaltung von Benutzeroberflächen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Schreiben von Betriebssystemkerneln",
+        "erklaerung": "SQL ist für Datenbankmanagement, nicht für Betriebssysteme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2056,
+    "text": "Welche Arten von SQL-Befehlen gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "DML, DDL, DCL und TCL",
+        "erklaerung": "Diese Kategorien umfassen alle wichtigen SQL-Befehlstypen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "GET, POST, DELETE",
+        "erklaerung": "Das sind HTTP-Methoden, keine SQL-Befehle.",
+        "isKorrekt": false
+      },
+      {
+        "text": "INSERT, UPDATE, SELECT",
+        "erklaerung": "Das sind spezifische Befehle, nicht Kategorien.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2056,
+    "text": "Was macht der SQL-Befehl SELECT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Abfragen von Daten aus einer Datenbank",
+        "erklaerung": "SELECT wird verwendet, um Daten zu lesen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Löschen von Daten aus einer Datenbank",
+        "erklaerung": "Zum Löschen wird DELETE verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ändern von Daten in einer Datenbank",
+        "erklaerung": "Zum Ändern wird UPDATE verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2056,
+    "text": "Was ist ein Primärschlüssel in SQL?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein eindeutiger Identifikator für Datensätze in einer Tabelle",
+        "erklaerung": "Der Primärschlüssel stellt sicher, dass jeder Datensatz eindeutig ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Schlüssel, der auf eine andere Tabelle verweist",
+        "erklaerung": "Das beschreibt einen Fremdschlüssel, nicht einen Primärschlüssel.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Wert, der automatisch generiert wird",
+        "erklaerung": "Der Primärschlüssel muss nicht automatisch generiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2056,
+    "text": "Was ist der Unterschied zwischen INNER JOIN und OUTER JOIN?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "INNER JOIN zeigt nur übereinstimmende Datensätze, OUTER JOIN auch nicht-übereinstimmende",
+        "erklaerung": "Das ist die grundlegende Unterscheidung zwischen INNER und OUTER JOIN.",
+        "isKorrekt": true
+      },
+      {
+        "text": "OUTER JOIN ist schneller als INNER JOIN",
+        "erklaerung": "Die Geschwindigkeit hängt von der Datenbank und der Abfrage ab.",
+        "isKorrekt": false
+      },
+      {
+        "text": "INNER JOIN kombiniert alle Daten beider Tabellen",
+        "erklaerung": "INNER JOIN kombiniert nur übereinstimmende Datensätze.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2056,
+    "text": "Was ist der Zweck des SQL-Befehls GROUP BY?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Gruppieren von Datensätzen basierend auf gemeinsamen Werten",
+        "erklaerung": "GROUP BY wird verwendet, um Daten nach Spaltenwerten zu gruppieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Filtern von Datensätzen nach bestimmten Bedingungen",
+        "erklaerung": "Das ist die Funktion von WHERE, nicht GROUP BY.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sortieren von Datensätzen in einer bestimmten Reihenfolge",
+        "erklaerung": "Das ist die Funktion von ORDER BY, nicht GROUP BY.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2056,
+    "text": "Was macht der SQL-Befehl CREATE TABLE?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erstellt eine neue Tabelle in der Datenbank",
+        "erklaerung": "CREATE TABLE definiert eine neue Tabelle und deren Spalten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Löscht eine vorhandene Tabelle",
+        "erklaerung": "Zum Löschen einer Tabelle wird DROP TABLE verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Fügt Daten in eine Tabelle ein",
+        "erklaerung": "Zum Einfügen von Daten wird INSERT verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2056,
+    "text": "Welche Funktion hat der SQL-Befehl HAVING?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Filtern von Gruppen nach der Verwendung von GROUP BY",
+        "erklaerung": "HAVING filtert aggregierte Werte, ähnlich wie WHERE für Einzelwerte.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Filtern von Datensätzen vor der Gruppierung",
+        "erklaerung": "Das ist die Funktion von WHERE, nicht HAVING.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sortieren von Datensätzen in einer Tabelle",
+        "erklaerung": "Zum Sortieren wird ORDER BY verwendet, nicht HAVING.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2056,
+    "text": "Was ist der Zweck des SQL-Befehls INDEX?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Beschleunigung von Abfragen durch Optimierung der Datenzugriffszeit",
+        "erklaerung": "Indizes verbessern die Geschwindigkeit von SELECT- und WHERE-Abfragen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erstellen eines Backups der Datenbank",
+        "erklaerung": "INDEX dient der Abfrageoptimierung, nicht der Datensicherung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sortieren der Daten in einer Tabelle",
+        "erklaerung": "INDEX beeinflusst die Abfragegeschwindigkeit, nicht die Datensortierung.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

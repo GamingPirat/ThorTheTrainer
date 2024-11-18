@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2054,
+    "text": "Was ist das Hauptziel der objektorientierten Programmierung (OOP)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Modularisierung und Wiederverwendbarkeit von Code durch Objekte",
+        "erklaerung": "OOP erleichtert die Verwaltung und Wiederverwendung von Code durch Klassen und Objekte.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Schnellere Ausführung von Programmen",
+        "erklaerung": "OOP konzentriert sich auf Struktur und Wartbarkeit, nicht auf Geschwindigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Minimierung der Speicherverwendung",
+        "erklaerung": "OOP-Programme können je nach Design mehr Speicher benötigen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2054,
+    "text": "Welche grundlegenden Prinzipien hat die OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kapselung, Vererbung, Polymorphismus",
+        "erklaerung": "Diese drei Prinzipien bilden die Grundlage der OOP.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Rekursion, Modularität, Datenbanken",
+        "erklaerung": "Diese Begriffe gehören nicht direkt zu den Grundprinzipien der OOP.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Algorithmen, Datenstrukturen, Schnittstellen",
+        "erklaerung": "Diese Begriffe sind allgemeine Programmierkonzepte, nicht OOP-spezifisch.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2054,
+    "text": "Was bedeutet Kapselung in der OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Verbergen von Implementierungsdetails durch Zugriffsbeschränkungen",
+        "erklaerung": "Kapselung schützt Daten, indem sie nur über definierte Schnittstellen zugänglich sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Wiederverwendung von Code durch Vererbung",
+        "erklaerung": "Das beschreibt Vererbung, nicht Kapselung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Fähigkeit eines Objekts, mehrere Formen anzunehmen",
+        "erklaerung": "Das beschreibt Polymorphismus, nicht Kapselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2054,
+    "text": "Was versteht man unter Vererbung in der OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Möglichkeit, Eigenschaften und Methoden von einer Basisklasse zu erben",
+        "erklaerung": "Vererbung erlaubt die Wiederverwendung von Code und Erweiterung von Funktionalitäten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Fähigkeit, Methoden mit demselben Namen zu überladen",
+        "erklaerung": "Das beschreibt Polymorphismus, nicht Vererbung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Verbergen von Daten innerhalb einer Klasse",
+        "erklaerung": "Das beschreibt Kapselung, nicht Vererbung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2054,
+    "text": "Was beschreibt Polymorphismus in der OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Fähigkeit, Methoden in verschiedenen Kontexten unterschiedlich zu implementieren",
+        "erklaerung": "Polymorphismus ermöglicht Flexibilität durch verschiedene Implementierungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Gruppieren von Daten und Funktionen in einer Klasse",
+        "erklaerung": "Das beschreibt die Struktur einer Klasse, nicht Polymorphismus.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Weitergabe von Methoden und Eigenschaften an eine abgeleitete Klasse",
+        "erklaerung": "Das beschreibt Vererbung, nicht Polymorphismus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2054,
+    "text": "Was ist ein Vorteil der OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erhöhte Wartbarkeit durch modularen Code",
+        "erklaerung": "OOP erleichtert die Verwaltung und Erweiterung von Code.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weniger Speicherverbrauch als andere Paradigmen",
+        "erklaerung": "OOP kann je nach Design mehr Speicher benötigen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Keine Notwendigkeit für Dokumentation",
+        "erklaerung": "Dokumentation ist unabhängig vom Paradigma wichtig.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2054,
+    "text": "Was ist ein Interface in der OOP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Sammlung von Methoden ohne Implementierung, die eine Klasse erfüllen muss",
+        "erklaerung": "Interfaces definieren eine Struktur, die von Klassen implementiert werden muss.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein spezieller Typ von Klasse mit ausschließlich privaten Attributen",
+        "erklaerung": "Interfaces enthalten keine Implementierungen, sondern nur Methodensignaturen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Funktion, die wiederholt aufgerufen wird",
+        "erklaerung": "Das beschreibt keine Interfaces.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2054,
+    "text": "Wie wird in OOP die Beziehung 'ist ein' dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Vererbung",
+        "erklaerung": "Die 'ist ein'-Beziehung wird durch Vererbung dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Polymorphismus",
+        "erklaerung": "Polymorphismus ermöglicht Methodenvariationen, nicht die 'ist ein'-Beziehung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch Kapselung",
+        "erklaerung": "Kapselung schützt Daten, stellt aber keine Beziehung dar.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2054,
+    "text": "Warum sind Konstruktoren in OOP wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie initialisieren Objekte, wenn eine Klasse instanziiert wird",
+        "erklaerung": "Konstruktoren legen die Anfangswerte der Attribute fest.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie schützen Attribute vor unberechtigtem Zugriff",
+        "erklaerung": "Das ist eine Aufgabe von Zugriffsbeschränkungen, nicht von Konstruktoren.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie definieren die Methoden einer Klasse",
+        "erklaerung": "Konstruktoren initialisieren Objekte, sie definieren keine Methoden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2054,
+    "text": "Welche Sprache ist besonders für OOP geeignet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Java",
+        "erklaerung": "Java ist eine der beliebtesten objektorientierten Programmiersprachen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "HTML",
+        "erklaerung": "HTML ist keine Programmiersprache und unterstützt kein OOP.",
+        "isKorrekt": false
+      },
+      {
+        "text": "SQL",
+        "erklaerung": "SQL ist eine Abfragesprache und nicht objektorientiert.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

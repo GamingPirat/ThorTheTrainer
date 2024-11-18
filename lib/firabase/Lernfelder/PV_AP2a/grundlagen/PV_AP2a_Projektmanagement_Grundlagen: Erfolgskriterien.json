@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche der folgenden Kriterien ist ein typisches Erfolgskriterium für ein Projekt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einhaltung des Zeitrahmens",
+        "erklaerung": "Zeit ist ein wesentlicher Faktor für den Projekterfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Minimale Anzahl an Stakeholdern",
+        "erklaerung": "Die Anzahl der Stakeholder ist kein Erfolgskriterium.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Maximierung der Ressourcen",
+        "erklaerung": "Ressourcenoptimierung ist wichtig, aber keine Maximierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum ist die Qualität ein entscheidendes Erfolgskriterium in Projekten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil sie die Kundenzufriedenheit und langfristige Nutzung sicherstellt",
+        "erklaerung": "Qualität beeinflusst direkt die Zufriedenheit und den Nutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie die Projektkosten minimiert",
+        "erklaerung": "Qualität kann Kosten beeinflussen, ist aber nicht primär darauf ausgerichtet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil sie die Anzahl der Arbeitspakete erhöht",
+        "erklaerung": "Qualität hat keinen Einfluss auf die Anzahl der Arbeitspakete.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Faktoren beeinflussen die Zufriedenheit der Stakeholder?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erfüllung der Projektanforderungen und transparente Kommunikation",
+        "erklaerung": "Diese Faktoren tragen maßgeblich zur Stakeholder-Zufriedenheit bei.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Minimierung der Anzahl der Projektdokumente",
+        "erklaerung": "Stakeholder erwarten Qualität und Ergebnisse, nicht weniger Dokumente.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Maximale Nutzung des Projektbudgets",
+        "erklaerung": "Stakeholder legen Wert auf Ergebnisse, nicht auf maximale Budgetausnutzung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welcher Zusammenhang besteht zwischen Zeit und Projekterfolg?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Projekt gilt als erfolgreich, wenn es innerhalb des geplanten Zeitrahmens abgeschlossen wird",
+        "erklaerung": "Zeit ist ein wesentliches Kriterium für den Projekterfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Projektdauer spielt keine Rolle für den Erfolg",
+        "erklaerung": "Die Einhaltung des Zeitrahmens ist ein zentraler Erfolgsfaktor.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zeitliche Verzögerungen erhöhen die Projektqualität",
+        "erklaerung": "Verzögerungen wirken sich oft negativ auf die Qualität aus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Bedeutung hat die Kundenzufriedenheit als Erfolgskriterium?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie zeigt, ob die Anforderungen und Erwartungen des Kunden erfüllt wurden",
+        "erklaerung": "Zufriedene Kunden sind ein zentrales Ziel jedes Projekts.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie minimiert die benötigten Ressourcen",
+        "erklaerung": "Zufriedenheit steht in keinem direkten Zusammenhang mit Ressourcen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie ersetzt andere Erfolgskriterien wie Zeit und Qualität",
+        "erklaerung": "Zufriedenheit ergänzt die anderen Kriterien, ersetzt sie aber nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Aussage beschreibt ein erfolgreiches Projekt am besten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Projekt wurde innerhalb des Budgets abgeschlossen, die Qualität war zufriedenstellend und die Stakeholder sind zufrieden",
+        "erklaerung": "Budget, Qualität und Zufriedenheit sind wesentliche Erfolgsfaktoren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Projekt wurde schneller abgeschlossen als geplant, unabhängig von der Qualität",
+        "erklaerung": "Qualität ist ein wesentlicher Bestandteil des Projekterfolgs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Projekt hat alle Ressourcen aufgebraucht und die Ziele nur teilweise erfüllt",
+        "erklaerung": "Ein Projekt ist nur dann erfolgreich, wenn die Ziele vollständig erreicht werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Warum ist es wichtig, Erfolgskriterien vor Projektbeginn festzulegen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um den Projekterfolg objektiv bewerten zu können",
+        "erklaerung": "Erfolgskriterien sind die Basis für die Bewertung des Projekts.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Projektlaufzeit zu verlängern",
+        "erklaerung": "Erfolgskriterien verlängern nicht die Projektlaufzeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Anzahl der Stakeholder zu erhöhen",
+        "erklaerung": "Die Anzahl der Stakeholder wird durch Erfolgskriterien nicht beeinflusst.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Faktoren können den Projekterfolg negativ beeinflussen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Unklare Anforderungen und unrealistische Zeitpläne",
+        "erklaerung": "Diese Faktoren sind häufige Ursachen für Misserfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Regelmäßige Meetings mit Stakeholdern",
+        "erklaerung": "Regelmäßige Meetings fördern den Projekterfolg.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine hohe Qualität der Arbeitsergebnisse",
+        "erklaerung": "Hohe Qualität ist ein Erfolgsfaktor, kein Risiko.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist ein typisches Zeichen für ein erfolgreiches Projektmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Projekt wurde effizient und zur Zufriedenheit aller Beteiligten abgeschlossen",
+        "erklaerung": "Effizienz und Zufriedenheit sind Kennzeichen erfolgreichen Projektmanagements.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Projekt wurde unabhängig von den ursprünglichen Anforderungen abgeschlossen",
+        "erklaerung": "Die Einhaltung der Anforderungen ist entscheidend für den Erfolg.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Projekt hat alle geplanten Ressourcen verbraucht",
+        "erklaerung": "Ein erfolgreicher Abschluss hängt nicht von der Ressourcennutzung ab.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Welche drei Hauptkriterien werden in der Regel verwendet, um den Erfolg eines Projekts zu messen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zeit, Qualität, Kundenzufriedenheit",
+        "erklaerung": "Diese drei Kriterien sind die grundlegenden Maße für den Projekterfolg.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kosten, Anzahl der Stakeholder, Ressourcenverbrauch",
+        "erklaerung": "Diese Faktoren sind wichtig, aber nicht die primären Erfolgskriterien.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Risiken, Änderungsanforderungen, Teamgröße",
+        "erklaerung": "Diese Punkte beeinflussen den Erfolg, sind aber keine Erfolgskriterien.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

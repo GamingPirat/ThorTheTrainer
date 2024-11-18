@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2052,
+    "text": "Was beschreibt ein Programmierparadigma?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine grundlegende Herangehensweise, wie Software entwickelt wird",
+        "erklaerung": "Ein Programmierparadigma definiert einen Stil und eine Struktur für die Programmierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die spezifische Syntax einer Programmiersprache",
+        "erklaerung": "Ein Paradigma ist unabhängig von der spezifischen Syntax.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Algorithmus zur Optimierung von Rechenleistung",
+        "erklaerung": "Das ist nicht die Definition eines Paradigmas.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2052,
+    "text": "Welches der folgenden ist ein Beispiel für ein Programmierparadigma?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Objektorientierte Programmierung",
+        "erklaerung": "Die objektorientierte Programmierung ist ein weit verbreitetes Paradigma.",
+        "isKorrekt": true
+      },
+      {
+        "text": "HTML",
+        "erklaerung": "HTML ist keine Programmiersprache und kein Paradigma.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Benutzerfreundlichkeit",
+        "erklaerung": "Das beschreibt keine Programmiermethode oder -struktur.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2052,
+    "text": "Was ist das Hauptmerkmal der funktionalen Programmierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Verwendung von unveränderlichen Daten und Funktionen als erste Klasse",
+        "erklaerung": "Funktionale Programmierung setzt auf unveränderliche Daten und reine Funktionen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Verwendung von Schleifen zur Steuerung des Programmflusses",
+        "erklaerung": "Schleifen sind nicht das Hauptmerkmal der funktionalen Programmierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Modularisierung durch Klassen",
+        "erklaerung": "Das ist ein Merkmal der objektorientierten Programmierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2052,
+    "text": "Welche Programmiersprachen sind typischerweise objektorientiert?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Java, C++ und Python",
+        "erklaerung": "Diese Sprachen unterstützen die objektorientierte Programmierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "HTML, CSS und JavaScript",
+        "erklaerung": "HTML und CSS sind keine Programmiersprachen, JavaScript ist teils objektorientiert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "SQL, NoSQL und JSON",
+        "erklaerung": "Diese Technologien sind keine objektorientierten Programmiersprachen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2052,
+    "text": "Was unterscheidet imperative von deklarativen Programmierparadigmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Im imperativen Paradigma wird beschrieben, wie etwas zu tun ist; im deklarativen, was zu tun ist",
+        "erklaerung": "Imperative Ansätze legen den Fokus auf den Prozess, deklarative auf das Ergebnis.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das deklarative Paradigma erfordert mehr Code als das imperative",
+        "erklaerung": "Das Codevolumen hängt von der Implementierung ab, nicht vom Paradigma.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das imperative Paradigma wird nur in funktionalen Programmiersprachen verwendet",
+        "erklaerung": "Imperative Programmierung ist nicht auf funktionale Sprachen beschränkt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2052,
+    "text": "Was ist ein Vorteil der objektorientierten Programmierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Fördert Wiederverwendbarkeit durch Vererbung und Modularität",
+        "erklaerung": "OOP erleichtert die Wiederverwendung und Strukturierung von Code.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erfordert weniger Speicher als andere Paradigmen",
+        "erklaerung": "OOP kann mehr Speicher benötigen, da Objekte im Speicher gehalten werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erfordert keine Planung vor der Implementierung",
+        "erklaerung": "Gute Planung ist für OOP genauso wichtig wie für andere Paradigmen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2052,
+    "text": "Was ist das Ziel der prozeduralen Programmierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zerlegung eines Problems in kleinere, überschaubare Prozeduren oder Funktionen",
+        "erklaerung": "Prozedurale Programmierung strukturiert Programme in Prozeduren zur Wiederverwendung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vermeidung von Codewiederholung durch Klassen",
+        "erklaerung": "Das ist ein Merkmal der objektorientierten Programmierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verwendung von unveränderlichen Datenstrukturen",
+        "erklaerung": "Unveränderliche Daten sind typisch für funktionale Programmierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2052,
+    "text": "Welche Programmierparadigmen unterstützt Python?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Objektorientierte, prozedurale und funktionale Programmierung",
+        "erklaerung": "Python unterstützt mehrere Paradigmen, einschließlich OOP, Prozedural und Funktional.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur funktionale Programmierung",
+        "erklaerung": "Python ist vielseitig und unterstützt nicht nur funktionale Programmierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur prozedurale Programmierung",
+        "erklaerung": "Python unterstützt mehr als nur prozedurale Programmierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2052,
+    "text": "Was ist ein Nachteil der funktionalen Programmierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kann bei großen Projekten schwerer zu lesen und zu debuggen sein",
+        "erklaerung": "Die Abstraktion in der funktionalen Programmierung kann den Code komplexer machen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unterstützt keine Modularität",
+        "erklaerung": "Modularität wird auch in der funktionalen Programmierung unterstützt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erfordert die Verwendung von Schleifen",
+        "erklaerung": "Funktionale Programmierung setzt eher auf Rekursion als auf Schleifen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2052,
+    "text": "Was beschreibt das Konzept von Vererbung in der objektorientierten Programmierung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Klasse kann Eigenschaften und Methoden einer anderen Klasse übernehmen",
+        "erklaerung": "Vererbung fördert Wiederverwendung und hierarchische Strukturierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Objekt kann mehrere Klassen gleichzeitig implementieren",
+        "erklaerung": "Das ist Polymorphismus, nicht Vererbung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Klasse kann nur mit unveränderlichen Daten arbeiten",
+        "erklaerung": "Unveränderliche Daten sind nicht spezifisch für Vererbung.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

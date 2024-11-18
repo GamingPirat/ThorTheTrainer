@@ -1,0 +1,252 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2002,
+    "text": "Was ist das Hauptziel eines Gantt-Diagramms?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die zeitliche Planung und Visualisierung von Aktivitäten",
+        "erklaerung": "Ein Gantt-Diagramm stellt Aktivitäten und Zeitpläne grafisch dar.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Analyse von Projektrisiken",
+        "erklaerung": "Risikomanagement wird nicht durch ein Gantt-Diagramm abgedeckt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Darstellung von Ressourcenbedarf",
+        "erklaerung": "Ein Gantt-Diagramm visualisiert Zeit, nicht den Ressourcenbedarf.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2002,
+    "text": "Welche Information wird durch die Balken eines Gantt-Diagramms dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Dauer einer Aktivität innerhalb eines definierten Zeitraums",
+        "erklaerung": "Die Länge der Balken zeigt die Dauer der Aktivitäten an.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die benötigten Ressourcen für eine Aktivität",
+        "erklaerung": "Ressourcen werden nicht direkt durch Balken dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die kritischen Pfade im Projekt",
+        "erklaerung": "Der kritische Pfad wird durch ein Netzplan, nicht durch Balken visualisiert.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2002,
+    "text": "Welche Achsen werden in einem Gantt-Diagramm verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Vertikale Achse für Aktivitäten, horizontale Achse für Zeit",
+        "erklaerung": "Dies ist das typische Layout eines Gantt-Diagramms.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vertikale Achse für Zeit, horizontale Achse für Kosten",
+        "erklaerung": "Kosten werden nicht direkt in einem Gantt-Diagramm dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Vertikale Achse für Ressourcen, horizontale Achse für Aktivitäten",
+        "erklaerung": "Ressourcen sind keine primäre Dimension im Gantt-Diagramm.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2002,
+    "text": "Welche Aufgabe wird durch Meilensteine in einem Gantt-Diagramm unterstützt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Definition von wichtigen Projektabschnitten",
+        "erklaerung": "Meilensteine markieren entscheidende Punkte im Projektverlauf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die detaillierte Planung von Arbeitspaketen",
+        "erklaerung": "Arbeitspakete werden durch die Balken dargestellt, nicht durch Meilensteine.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Überwachung der Ressourcenverteilung",
+        "erklaerung": "Meilensteine sind nicht auf Ressourcenmanagement ausgelegt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2002,
+    "text": "Welche Vorteile bietet ein Gantt-Diagramm bei der Projektplanung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es bietet eine klare Übersicht über den Zeitplan und die Abhängigkeiten von Aktivitäten",
+        "erklaerung": "Das Gantt-Diagramm visualisiert Zeitpläne und Abhängigkeiten übersichtlich.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es zeigt alle potenziellen Risiken im Projektverlauf",
+        "erklaerung": "Risiken werden nicht direkt in einem Gantt-Diagramm dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es minimiert automatisch die Projektdauer",
+        "erklaerung": "Das Gantt-Diagramm optimiert die Darstellung, nicht die Dauer.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2002,
+    "text": "Wie können Abhängigkeiten zwischen Aktivitäten im Gantt-Diagramm dargestellt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Pfeile, die Aktivitäten miteinander verbinden",
+        "erklaerung": "Pfeile zeigen die Abhängigkeiten zwischen Aktivitäten an.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch unterschiedliche Farben der Balken",
+        "erklaerung": "Farben werden oft für andere Informationen genutzt, nicht für Abhängigkeiten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Länge der Balken",
+        "erklaerung": "Die Länge repräsentiert die Dauer, nicht die Abhängigkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2002,
+    "text": "Warum ist die regelmäßige Aktualisierung eines Gantt-Diagramms wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass der Zeitplan die tatsächlichen Fortschritte widerspiegelt",
+        "erklaerung": "Ein aktuelles Gantt-Diagramm zeigt den realen Fortschritt im Projekt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Anzahl der Aktivitäten zu reduzieren",
+        "erklaerung": "Aktualisierung ändert die Anzahl der Aktivitäten nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um neue Ressourcen zu identifizieren",
+        "erklaerung": "Die Ressourcenplanung wird durch ein Gantt-Diagramm nicht direkt beeinflusst.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2002,
+    "text": "Welche Art von Projekten profitieren besonders von einem Gantt-Diagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Projekte mit klar definierten Zeitrahmen und Aktivitäten",
+        "erklaerung": "Gantt-Diagramme sind ideal für Projekte mit klaren Zeitplänen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Projekte ohne feste Zeitvorgaben",
+        "erklaerung": "Projekte ohne feste Zeitvorgaben profitieren weniger von einem Gantt-Diagramm.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Projekte mit ausschließlich agilen Methoden",
+        "erklaerung": "Agile Methoden verwenden oft andere Werkzeuge als Gantt-Diagramme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2002,
+    "text": "Welche Einschränkungen hat ein Gantt-Diagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es kann bei sehr komplexen Projekten unübersichtlich werden",
+        "erklaerung": "Bei vielen Aktivitäten kann ein Gantt-Diagramm schwer lesbar werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es berücksichtigt keine zeitlichen Abhängigkeiten",
+        "erklaerung": "Zeitliche Abhängigkeiten sind ein Kernelement des Gantt-Diagramms.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es zeigt keine zeitliche Planung der Aktivitäten",
+        "erklaerung": "Zeitplanung ist der Hauptzweck des Gantt-Diagramms.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2002,
+    "text": "Was unterscheidet ein Gantt-Diagramm von einem Netzplan?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [{
+      "punkte": 1,
+      "inhalt_id": 2002,
+      "text": "Was unterscheidet ein Gantt-Diagramm von einem Netzplan?",
+      "version": 1,
+      "nummer": 1,
+      "antworten": [
+        {
+          "text": "Ein Gantt-Diagramm visualisiert die zeitliche Planung, ein Netzplan zeigt Abhängigkeiten",
+          "erklaerung": "Gantt-Diagramme legen den Fokus auf die zeitliche Darstellung, während Netzpläne die Abhängigkeiten hervorheben.",
+          "isKorrekt": true
+        },
+        {
+          "text": "Ein Gantt-Diagramm wird nur für kleine Projekte genutzt, ein Netzplan nur für große",
+          "erklaerung": "Beide können unabhängig von der Projektgröße eingesetzt werden.",
+          "isKorrekt": false
+        },
+        {
+          "text": "Ein Netzplan berücksichtigt keine Aktivitäten, ein Gantt-Diagramm schon",
+          "erklaerung": "Beide Werkzeuge berücksichtigen Aktivitäten, aber auf unterschiedliche Weise.",
+          "isKorrekt": false
+        }
+      ]
+    }
+
+  }
+}
+
+

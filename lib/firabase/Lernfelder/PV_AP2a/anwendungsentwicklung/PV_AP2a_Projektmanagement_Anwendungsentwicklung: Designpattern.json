@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20516,
+    "text": "Was sind Designpattern in der Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Wiederverwendbare Lösungen für häufig auftretende Probleme",
+        "erklaerung": "Designpattern sind bewährte Muster zur Lösung bestimmter Softwareprobleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Spezifische Programmiersprachen-Bibliotheken",
+        "erklaerung": "Designpattern sind konzeptionelle Ansätze, keine Bibliotheken.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Grafische Darstellungen von Programmen",
+        "erklaerung": "Designpattern sind keine grafischen Diagramme, sondern Muster.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20516,
+    "text": "Welche Kategorien von Designpattern gibt es?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erzeugungsmuster, Strukturmuster, Verhaltensmuster",
+        "erklaerung": "Diese Kategorien decken die meisten Designpattern ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Datenmuster, Kontrollmuster, Visualisierungsmuster",
+        "erklaerung": "Diese Kategorien existieren nicht in der Standarddefinition von Designpattern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Algorithmische Muster, Testmuster, Designmuster",
+        "erklaerung": "Die Begriffe stimmen nicht mit den Standardkategorien überein.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20516,
+    "text": "Welches der folgenden Muster gehört zu den Erzeugungsmustern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Singleton",
+        "erklaerung": "Das Singleton-Muster stellt sicher, dass eine Klasse nur eine Instanz hat.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Adapter",
+        "erklaerung": "Adapter gehört zu den Strukturmustern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Observer",
+        "erklaerung": "Observer gehört zu den Verhaltensmustern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20516,
+    "text": "Was ist der Hauptzweck des Singleton-Musters?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sicherstellen, dass eine Klasse nur eine Instanz hat",
+        "erklaerung": "Das Singleton-Muster begrenzt die Instanziierung auf eine einzige Instanz.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ermöglichen der dynamischen Erzeugung von Objekten",
+        "erklaerung": "Das ist die Funktion anderer Erzeugungsmuster, nicht des Singleton-Musters.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verwaltung der Kommunikation zwischen Objekten",
+        "erklaerung": "Das ist die Funktion von Verhaltensmustern, nicht des Singleton-Musters.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20516,
+    "text": "Welches der folgenden Muster gehört zu den Strukturmustern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Adapter",
+        "erklaerung": "Das Adapter-Muster verbindet inkompatible Schnittstellen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Factory Method",
+        "erklaerung": "Factory Method gehört zu den Erzeugungsmustern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Strategy",
+        "erklaerung": "Strategy gehört zu den Verhaltensmustern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20516,
+    "text": "Welches Problem löst das Observer-Muster?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Benachrichtigung mehrerer Objekte über Zustandsänderungen",
+        "erklaerung": "Das Observer-Muster informiert alle abhängigen Objekte bei Änderungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Erzeugung von Objekten in verschiedenen Zuständen",
+        "erklaerung": "Das ist die Funktion eines Erzeugungsmusters, nicht des Observer-Musters.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Strukturierung von Objekten und deren Beziehungen",
+        "erklaerung": "Das beschreibt Strukturmuster, nicht das Observer-Muster.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20516,
+    "text": "Was ist der Hauptzweck des Decorator-Musters?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Dynamisches Hinzufügen von Funktionen zu Objekten",
+        "erklaerung": "Das Decorator-Muster fügt Funktionen zu Objekten hinzu, ohne deren Klassen zu ändern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verhindern, dass eine Klasse mehr als eine Instanz hat",
+        "erklaerung": "Das ist der Zweck des Singleton-Musters, nicht des Decorator-Musters.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erstellen von Objekten ohne explizite Klassenangabe",
+        "erklaerung": "Das ist der Zweck der Factory Method, nicht des Decorator-Musters.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20516,
+    "text": "Welches der folgenden Muster gehört zu den Verhaltensmustern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Strategy",
+        "erklaerung": "Das Strategy-Muster ermöglicht den Austausch von Algorithmen zur Laufzeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Composite",
+        "erklaerung": "Composite gehört zu den Strukturmustern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Abstract Factory",
+        "erklaerung": "Abstract Factory gehört zu den Erzeugungsmustern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20516,
+    "text": "Wie kann das Factory Method-Muster beschrieben werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Muster zur Erzeugung von Objekten, bei dem die genaue Klasse zur Laufzeit bestimmt wird",
+        "erklaerung": "Die Factory Method ermöglicht die Erstellung von Objekten mit Laufzeitflexibilität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Muster zur Verhinderung mehrfacher Instanzen einer Klasse",
+        "erklaerung": "Das beschreibt das Singleton-Muster, nicht die Factory Method.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Muster zur Verwaltung von Beziehungen zwischen Objekten",
+        "erklaerung": "Das beschreibt Verhaltensmuster, nicht die Factory Method.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20516,
+    "text": "Welche Vorteile bieten Designpattern in der Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Wiederverwendbare Lösungen und verbesserte Verständlichkeit",
+        "erklaerung": "Designpattern fördern Wiederverwendbarkeit und Wartbarkeit von Code.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Automatische Generierung von Code",
+        "erklaerung": "Designpattern bieten konzeptionelle Ansätze, keine automatische Codegenerierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Optimierung der Hardwareleistung",
+        "erklaerung": "Designpattern befassen sich mit Softwarestruktur, nicht mit Hardwareleistung.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

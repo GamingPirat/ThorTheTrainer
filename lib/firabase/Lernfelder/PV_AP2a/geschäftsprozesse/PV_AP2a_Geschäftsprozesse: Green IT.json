@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2074,
+    "text": "Was versteht man unter Green IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die umweltfreundliche und nachhaltige Nutzung von IT-Ressourcen.",
+        "erklaerung": "Green IT zielt auf eine umweltbewusste Gestaltung und Nutzung von IT ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den Verzicht auf elektronische Geräte im Arbeitsalltag.",
+        "erklaerung": "Green IT strebt eine nachhaltige Nutzung, nicht den Verzicht auf IT an.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die ausschließliche Verwendung von Solarenergie in der IT.",
+        "erklaerung": "Solarenergie ist ein Aspekt, aber nicht der alleinige Fokus von Green IT.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2074,
+    "text": "Welche Ziele verfolgt Green IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Reduzierung des Energieverbrauchs und der Umweltbelastung durch IT.",
+        "erklaerung": "Green IT zielt darauf ab, die ökologischen Auswirkungen der IT zu minimieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Steigerung der Kosten für IT-Systeme.",
+        "erklaerung": "Green IT strebt Kosteneffizienz durch nachhaltige Praktiken an.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Erhöhung der Abfallproduktion durch IT-Altgeräte.",
+        "erklaerung": "Green IT fördert die Reduzierung und das Recycling von IT-Abfall.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2074,
+    "text": "Welche Maßnahmen können zur Umsetzung von Green IT beitragen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einsatz energieeffizienter Hardware und Virtualisierung von Servern.",
+        "erklaerung": "Diese Maßnahmen reduzieren den Energieverbrauch und fördern Nachhaltigkeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Verwendung von IT-Geräten ohne regelmäßige Wartung.",
+        "erklaerung": "Wartung erhöht die Effizienz und Lebensdauer von IT-Geräten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ausschließlich der Kauf von Geräten mit höchsten Anschaffungskosten.",
+        "erklaerung": "Hohe Kosten garantieren keine Nachhaltigkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2074,
+    "text": "Warum ist Recycling ein wichtiger Bestandteil von Green IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es reduziert die Umweltbelastung durch Elektroschrott.",
+        "erklaerung": "Recycling hilft, Ressourcen zu schonen und Abfall zu minimieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es erhöht die Produktionskosten für neue IT-Geräte.",
+        "erklaerung": "Recycling senkt langfristig die Kosten durch Wiederverwendung von Materialien.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es verhindert den Einsatz von energieeffizienten Geräten.",
+        "erklaerung": "Recycling fördert Nachhaltigkeit und behindert keine technischen Fortschritte.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2074,
+    "text": "Wie kann die Energieeffizienz von Rechenzentren verbessert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch den Einsatz moderner Kühltechniken und energiesparender Server.",
+        "erklaerung": "Effiziente Kühlung und Hardware senken den Energieverbrauch in Rechenzentren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch den Betrieb aller Server auf maximaler Leistung rund um die Uhr.",
+        "erklaerung": "Maximale Leistung erhöht den Energieverbrauch und ist nicht nachhaltig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die vollständige Abschaffung von Virtualisierungstechniken.",
+        "erklaerung": "Virtualisierung reduziert den Energiebedarf und verbessert die Ressourcennutzung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2074,
+    "text": "Welche Rolle spielt Software bei der Green IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Effiziente Software reduziert den Energieverbrauch von IT-Systemen.",
+        "erklaerung": "Gut optimierte Software spart Energie und verbessert die Systemleistung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Software hat keinen Einfluss auf den Energieverbrauch.",
+        "erklaerung": "Software kann den Energieverbrauch eines Systems erheblich beeinflussen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur die Hardware beeinflusst die Nachhaltigkeit eines Systems.",
+        "erklaerung": "Software spielt eine wesentliche Rolle bei der Energieeffizienz.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2074,
+    "text": "Welche Vorteile bietet Green IT für Unternehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Kostenersparnis durch Energieeffizienz und Imageverbesserung.",
+        "erklaerung": "Nachhaltige IT reduziert Kosten und steigert die Attraktivität des Unternehmens.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung des Energieverbrauchs durch neue Technologien.",
+        "erklaerung": "Green IT strebt die Senkung des Energieverbrauchs an.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ausschluss von innovativen Technologien zugunsten älterer Geräte.",
+        "erklaerung": "Green IT fördert den Einsatz moderner, energieeffizienter Technologien.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2074,
+    "text": "Was ist der Zweck von Energiemanagementsystemen in der IT?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Überwachung und Optimierung des Energieverbrauchs von IT-Systemen.",
+        "erklaerung": "Energiemanagementsysteme helfen, Energie effizient zu nutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung des Stromverbrauchs zur Maximierung der Leistung.",
+        "erklaerung": "Das Ziel ist die Reduzierung, nicht die Erhöhung des Energieverbrauchs.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ausschaltung von IT-Geräten während der Arbeitszeit.",
+        "erklaerung": "Energiemanagementsysteme zielen auf optimierte Nutzung, nicht auf Abschaltung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2074,
+    "text": "Warum sind Schulungen zu Green IT wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mitarbeiter lernen, wie sie IT nachhaltig einsetzen können.",
+        "erklaerung": "Schulungen fördern das Bewusstsein und die Kompetenz für nachhaltige IT-Nutzung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Schulungen verhindern die Nutzung von energieeffizienten Geräten.",
+        "erklaerung": "Schulungen sollen den Einsatz nachhaltiger Technologien fördern.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Schulungen erhöhen den Energieverbrauch durch zusätzliche Geräte.",
+        "erklaerung": "Schulungen zielen auf eine Reduzierung des Energieverbrauchs.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2074,
+    "text": "Wie kann Green IT in Büroumgebungen umgesetzt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch die Nutzung von Energiesparmodi und Recycling von Altgeräten.",
+        "erklaerung": "Energiesparmodi und Recycling tragen zu einer nachhaltigen IT-Nutzung bei.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die permanente Beleuchtung aller Räume.",
+        "erklaerung": "Dauerbeleuchtung erhöht den Energieverbrauch und widerspricht Green IT.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch den Verzicht auf digitale Arbeitsmethoden.",
+        "erklaerung": "Green IT zielt auf nachhaltige Digitalisierung, nicht auf deren Verzicht.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

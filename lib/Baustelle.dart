@@ -40,7 +40,7 @@ class CustomContainerWithImage extends StatelessWidget {
   final Widget child;
   final Color _color =Colors.green[900]!;
 
-  const CustomContainerWithImage({
+  CustomContainerWithImage({
     Key? key,
     required this.imagePath,
     required this.child,

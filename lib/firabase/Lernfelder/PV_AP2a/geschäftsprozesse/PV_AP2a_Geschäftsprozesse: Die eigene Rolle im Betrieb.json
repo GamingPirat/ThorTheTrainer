@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2073,
+    "text": "Warum ist es wichtig, die eigene Rolle im Betrieb zu verstehen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um die eigenen Aufgaben und Verantwortlichkeiten effektiv zu erfüllen.",
+        "erklaerung": "Das Verständnis der eigenen Rolle hilft, die Erwartungen des Arbeitgebers zu erfüllen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um Konflikte mit Kollegen zu vermeiden.",
+        "erklaerung": "Konfliktvermeidung ist nicht der Hauptgrund für das Rollenverständnis.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Arbeit von Vorgesetzten zu übernehmen.",
+        "erklaerung": "Das Verständnis der eigenen Rolle bedeutet nicht, die Aufgaben anderer zu übernehmen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2073,
+    "text": "Was gehört typischerweise zu den Aufgaben eines Mitarbeiters im Betrieb?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Ausführung von zugewiesenen Aufgaben und die Zusammenarbeit im Team.",
+        "erklaerung": "Mitarbeiter tragen zur Zielerreichung des Betriebs bei.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Festlegung der strategischen Ausrichtung des Unternehmens.",
+        "erklaerung": "Strategische Entscheidungen fallen meist in den Verantwortungsbereich der Führungsebene.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die eigenständige Änderung betrieblicher Prozesse ohne Rücksprache.",
+        "erklaerung": "Änderungen sollten immer in Absprache mit Vorgesetzten erfolgen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2073,
+    "text": "Wie kann ein Mitarbeiter zur Verbesserung des Betriebsklimas beitragen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch offene Kommunikation und respektvollen Umgang mit Kollegen.",
+        "erklaerung": "Ein positives Betriebsklima fördert die Zusammenarbeit und Produktivität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Ignorieren von Konflikten im Team.",
+        "erklaerung": "Konflikte sollten aktiv angesprochen und gelöst werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Vermeidung von Verantwortung für Fehler.",
+        "erklaerung": "Verantwortung zu übernehmen ist wichtig für ein gutes Arbeitsklima.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2073,
+    "text": "Welche Fähigkeiten sind für eine erfolgreiche Zusammenarbeit im Betrieb besonders wichtig?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Teamfähigkeit, Kommunikationsstärke und Zuverlässigkeit.",
+        "erklaerung": "Diese Fähigkeiten fördern eine produktive Zusammenarbeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unabhängigkeit und die Vermeidung von Rückfragen.",
+        "erklaerung": "Rückfragen sind wichtig, um Missverständnisse zu vermeiden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Strikte Ablehnung von Feedback.",
+        "erklaerung": "Feedback ist essenziell für die persönliche und berufliche Weiterentwicklung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2073,
+    "text": "Welche Bedeutung hat Eigeninitiative im Betrieb?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eigeninitiative zeigt Engagement und kann zur Verbesserung von Prozessen beitragen.",
+        "erklaerung": "Engagierte Mitarbeiter werden von Vorgesetzten geschätzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eigeninitiative ist irrelevant, da Vorgesetzte alle Entscheidungen treffen.",
+        "erklaerung": "Mitarbeiter sollten auch eigenständig Ideen einbringen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eigeninitiative führt immer zu Konflikten im Team.",
+        "erklaerung": "Richtig eingesetzte Eigeninitiative verbessert die Zusammenarbeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2073,
+    "text": "Was bedeutet Loyalität gegenüber dem Arbeitgeber?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Verlässliches Handeln im Sinne des Unternehmens und das Vermeiden von Rufschädigung.",
+        "erklaerung": "Loyalität stärkt das Vertrauensverhältnis zwischen Arbeitgeber und Mitarbeiter.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Stillschweigen bei Missständen im Unternehmen.",
+        "erklaerung": "Missstände sollten angesprochen und behoben werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Uneingeschränktes Befolgen aller Anweisungen, auch wenn sie unethisch sind.",
+        "erklaerung": "Loyalität darf nicht zu unethischem Verhalten führen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2073,
+    "text": "Wie kann ein Mitarbeiter zur Zielerreichung des Unternehmens beitragen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch das Einbringen von Ideen und die zuverlässige Umsetzung der eigenen Aufgaben.",
+        "erklaerung": "Mitarbeiter sind ein entscheidender Faktor für den Erfolg des Unternehmens.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Vermeidung von Zusammenarbeit mit Kollegen.",
+        "erklaerung": "Zusammenarbeit ist essenziell für die Zielerreichung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch das Übertragen der eigenen Aufgaben an andere.",
+        "erklaerung": "Jeder Mitarbeiter sollte seine eigenen Aufgaben erfüllen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2073,
+    "text": "Warum ist es wichtig, Feedback von Vorgesetzten anzunehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um die eigene Leistung zu verbessern und Erwartungen besser zu verstehen.",
+        "erklaerung": "Feedback hilft, sich weiterzuentwickeln und den Anforderungen gerecht zu werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die eigene Meinung den Vorgesetzten aufzuzwingen.",
+        "erklaerung": "Feedback dient nicht dazu, die eigene Meinung durchzusetzen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Kritik vollständig zu ignorieren.",
+        "erklaerung": "Konstruktive Kritik sollte angenommen und umgesetzt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2073,
+    "text": "Wie kann ein Mitarbeiter Verantwortung übernehmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch das eigenständige Bearbeiten von Aufgaben und das Eingestehen von Fehlern.",
+        "erklaerung": "Verantwortungsbewusstsein ist ein Schlüssel für Vertrauen und Professionalität.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Vermeiden jeglicher Fehler.",
+        "erklaerung": "Fehler sind Teil des Lernprozesses und sollten offen angesprochen werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch das Abwälzen der Verantwortung auf Kollegen.",
+        "erklaerung": "Verantwortung sollte nicht auf andere übertragen werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2073,
+    "text": "Welche Vorteile hat eine klare Rollenverteilung im Betrieb?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie fördert Effizienz und verhindert Missverständnisse.",
+        "erklaerung": "Klare Rollenverteilungen erleichtern die Zusammenarbeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie macht die Kommunikation im Team überflüssig.",
+        "erklaerung": "Kommunikation bleibt wichtig, auch bei klaren Rollen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie reduziert die Verantwortung jedes Einzelnen.",
+        "erklaerung": "Klare Rollen erhöhen die Verantwortlichkeit jedes Mitarbeiters.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

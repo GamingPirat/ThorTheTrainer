@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20514,
+    "text": "Was stellt ein Zeitverlaufsdiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den Zustand eines Objekts oder Systems im Verlauf der Zeit",
+        "erklaerung": "Ein Zeitverlaufsdiagramm visualisiert, wie sich Zustände oder Werte über die Zeit ändern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Abhängigkeiten zwischen Paketen",
+        "erklaerung": "Das ist die Funktion eines Paketdiagramms, nicht eines Zeitverlaufsdiagramms.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die zeitliche Abfolge von Nachrichten zwischen Objekten",
+        "erklaerung": "Das beschreibt Sequenzdiagramme, nicht Zeitverlaufsdiagramme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20514,
+    "text": "Welche Achsen hat ein Zeitverlaufsdiagramm typischerweise?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die horizontale Achse zeigt die Zeit, die vertikale Achse den Zustand oder Wert",
+        "erklaerung": "Die Zeit wird auf der X-Achse und der Zustand/Wert auf der Y-Achse dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die horizontale Achse zeigt den Zustand, die vertikale die Zeit",
+        "erklaerung": "Die Zeit wird immer auf der X-Achse dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Achsen sind frei wählbar",
+        "erklaerung": "Zeitverlaufsdiagramme haben standardisierte Achsen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20514,
+    "text": "Wofür werden Zeitverlaufsdiagramme typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Analyse von zeitabhängigen Prozessen und Zustandsänderungen",
+        "erklaerung": "Zeitverlaufsdiagramme visualisieren Veränderungen über die Zeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung der Datenstruktur eines Systems",
+        "erklaerung": "Die Datenstruktur wird durch ER-Diagramme beschrieben, nicht durch Zeitverlaufsdiagramme.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Modellierung der Interaktionen zwischen Objekten",
+        "erklaerung": "Interaktionen werden in Sequenzdiagrammen dargestellt, nicht in Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20514,
+    "text": "Welche Elemente sind typisch für ein Zeitverlaufsdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zeitpunkte, Werte und Zustände",
+        "erklaerung": "Zeitverlaufsdiagramme bestehen aus Achsen, Zeitpunkten und Zustandsänderungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Pakete, Abhängigkeiten und Klassen",
+        "erklaerung": "Diese Elemente gehören zu Paketdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zustände, Übergänge und Ereignisse",
+        "erklaerung": "Diese Begriffe gehören zu Zustandsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20514,
+    "text": "Wie wird eine Zustandsänderung in einem Zeitverlaufsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch eine Änderung des Wertes auf der vertikalen Achse",
+        "erklaerung": "Zustandsänderungen werden durch einen Wechsel auf der Y-Achse gezeigt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch einen Pfeil zwischen zwei Punkten",
+        "erklaerung": "Pfeile gehören nicht zur Standardnotation von Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch eine gestrichelte Linie",
+        "erklaerung": "Gestrichelte Linien sind keine Standardnotation für Zustandsänderungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20514,
+    "text": "Welche Software kann für die Erstellung von Zeitverlaufsdiagrammen verwendet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lucidchart, Microsoft Visio oder Diagram.net",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von Zeitverlaufsdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "MySQL Workbench",
+        "erklaerung": "MySQL Workbench dient der Datenbankmodellierung, nicht der Erstellung von Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine geeignete Software für Zeitverlaufsdiagramme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20514,
+    "text": "Welche Einschränkungen haben Zeitverlaufsdiagramme?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie zeigen keine detaillierten Abläufe oder Wechselwirkungen zwischen Objekten",
+        "erklaerung": "Zeitverlaufsdiagramme konzentrieren sich auf Zustandsänderungen über die Zeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine zeitlichen Veränderungen darstellen",
+        "erklaerung": "Zeitverlaufsdiagramme dienen explizit zur Darstellung zeitlicher Veränderungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie zeigen keine Zustandsänderungen",
+        "erklaerung": "Zustandsänderungen sind ein zentraler Bestandteil von Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20514,
+    "text": "Wie kann eine kontinuierliche Veränderung in einem Zeitverlaufsdiagramm dargestellt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch eine durchgehende Linie",
+        "erklaerung": "Kontinuierliche Veränderungen werden durch Linien dargestellt, die den Verlauf zeigen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch Kreise an jedem Datenpunkt",
+        "erklaerung": "Kreise werden in Zeitverlaufsdiagrammen nicht standardmäßig verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch gestrichelte Pfeile",
+        "erklaerung": "Gestrichelte Pfeile sind keine Standardnotation für Zeitverlaufsdiagramme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20514,
+    "text": "Was ist der Zweck eines Zeitverlaufsdiagramms in der Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Analyse von zeitabhängigen Zustandsänderungen oder Werten",
+        "erklaerung": "Zeitverlaufsdiagramme visualisieren Veränderungen über die Zeit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung der Datenstruktur eines Systems",
+        "erklaerung": "Datenstrukturen werden in ER-Diagrammen dargestellt, nicht in Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Modellierung von Interaktionen zwischen Objekten",
+        "erklaerung": "Das ist die Funktion von Sequenzdiagrammen, nicht von Zeitverlaufsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20514,
+    "text": "Was zeigt die Steigung einer Linie in einem Zeitverlaufsdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Geschwindigkeit der Zustands- oder Wertänderung",
+        "erklaerung": "Eine steile Steigung zeigt schnelle Änderungen, eine flache zeigt langsame Änderungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den absoluten Wert des Zustands",
+        "erklaerung": "Die Steigung zeigt die Geschwindigkeit, nicht den absoluten Wert.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Endpunkt des Zeitverlaufs",
+        "erklaerung": "Die Steigung zeigt Veränderungen, nicht den Endpunkt.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

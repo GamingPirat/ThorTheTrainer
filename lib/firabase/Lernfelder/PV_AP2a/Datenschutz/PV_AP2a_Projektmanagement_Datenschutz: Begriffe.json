@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2021,
+    "text": "Was versteht man unter 'personenbezogenen Daten'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Daten, die eine Person direkt oder indirekt identifizieren können",
+        "erklaerung": "Personenbezogene Daten sind Informationen, die auf eine Person zurückführbar sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Daten, die ausschließlich statistische Werte enthalten",
+        "erklaerung": "Statistische Daten sind anonym und zählen nicht als personenbezogene Daten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Alle Daten, die in einem Unternehmen gespeichert sind",
+        "erklaerung": "Nicht alle Daten in einem Unternehmen sind personenbezogen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2021,
+    "text": "Was bedeutet 'Anonymisierung' im Datenschutz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Entfernen von personenbezogenen Merkmalen, sodass keine Identifikation möglich ist",
+        "erklaerung": "Anonymisierung verhindert, dass Daten auf eine Person zurückführbar sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die vorübergehende Deaktivierung von Benutzerdaten",
+        "erklaerung": "Das beschreibt eine temporäre Maßnahme, keine Anonymisierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Verschlüsselung personenbezogener Daten",
+        "erklaerung": "Verschlüsselung schützt Daten, anonymisiert sie aber nicht vollständig.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2021,
+    "text": "Was ist der Unterschied zwischen 'Anonymisierung' und 'Pseudonymisierung'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Anonymisierte Daten sind nicht auf eine Person zurückführbar, pseudonymisierte Daten schon mit Zusatzinformationen",
+        "erklaerung": "Das ist der Hauptunterschied zwischen Anonymisierung und Pseudonymisierung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Pseudonymisierte Daten können niemals entschlüsselt werden",
+        "erklaerung": "Mit Zusatzinformationen können pseudonymisierte Daten auf eine Person zurückgeführt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Anonymisierung verwendet Verschlüsselung, Pseudonymisierung nicht",
+        "erklaerung": "Verschlüsselung ist keine Voraussetzung für Anonymisierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2021,
+    "text": "Was versteht man unter 'Datenverarbeitung' im Sinne des Datenschutzes?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Jeglichen Umgang mit personenbezogenen Daten, einschließlich Erhebung, Speicherung und Löschung",
+        "erklaerung": "Datenverarbeitung umfasst alle Schritte des Umgangs mit personenbezogenen Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur die Speicherung von Daten auf einem Server",
+        "erklaerung": "Speicherung ist nur ein Teil der Datenverarbeitung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Nutzung von Daten zu Werbezwecken",
+        "erklaerung": "Werbezwecke sind nur ein spezifischer Anwendungsfall der Datenverarbeitung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2021,
+    "text": "Was bedeutet 'Datenschutz durch Technikgestaltung' (Privacy by Design)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Berücksichtigung von Datenschutzmaßnahmen bereits bei der Entwicklung von Technologien",
+        "erklaerung": "Privacy by Design fordert den Schutz personenbezogener Daten von Anfang an.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Beschränkung von Datenschutzmaßnahmen auf Softwareprodukte",
+        "erklaerung": "Datenschutz durch Technikgestaltung gilt für alle Technologien, nicht nur Software.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die nachträgliche Integration von Datenschutzmaßnahmen",
+        "erklaerung": "Privacy by Design erfordert die frühzeitige Integration, nicht nachträglich.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2021,
+    "text": "Was versteht man unter einer 'Einwilligung' im Datenschutz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die freiwillige, informierte und eindeutige Zustimmung zur Datenverarbeitung",
+        "erklaerung": "Die Einwilligung muss den genannten Kriterien entsprechen, um gültig zu sein.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine automatische Zustimmung durch Nutzung einer Webseite",
+        "erklaerung": "Automatische Zustimmung ist nicht rechtmäßig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die generelle Zustimmung zu allen Verarbeitungszwecken",
+        "erklaerung": "Einwilligungen müssen spezifisch sein und dürfen nicht pauschal gelten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2021,
+    "text": "Welche Daten zählen zu den 'besonderen Kategorien personenbezogener Daten'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Gesundheitsdaten und religiöse Überzeugungen",
+        "erklaerung": "Diese Daten fallen unter die besonderen Kategorien und sind besonders geschützt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Vorname und Nachname",
+        "erklaerung": "Diese Daten gehören nicht zu den besonderen Kategorien.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Postanschriften",
+        "erklaerung": "Postanschriften sind allgemeine personenbezogene Daten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2021,
+    "text": "Was bedeutet der Begriff 'Datensparsamkeit'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Nur so viele Daten wie nötig zu erheben und zu verarbeiten",
+        "erklaerung": "Datensparsamkeit minimiert unnötige Datenverarbeitung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Alle Daten zu sammeln, die potenziell nützlich sein könnten",
+        "erklaerung": "Das widerspricht dem Grundsatz der Datensparsamkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Löschung aller Daten nach Nutzung",
+        "erklaerung": "Datensparsamkeit betrifft die Erhebung und Verarbeitung, nicht nur die Löschung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2021,
+    "text": "Was versteht man unter dem Begriff 'Betroffenenrechte' im Datenschutz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Rechte wie Auskunft, Berichtigung und Löschung, die einer Person zustehen",
+        "erklaerung": "Betroffenenrechte schützen die Kontrolle über personenbezogene Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Recht eines Unternehmens, personenbezogene Daten zu verwenden",
+        "erklaerung": "Betroffenenrechte schützen Individuen, nicht Unternehmen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Recht auf uneingeschränkten Zugang zu Unternehmensdaten",
+        "erklaerung": "Betroffenenrechte beziehen sich nur auf personenbezogene Daten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2021,
+    "text": "Was ist die Aufgabe des 'Verarbeitungsverzeichnisses'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Übersicht aller Datenverarbeitungsprozesse eines Unternehmens zu liefern",
+        "erklaerung": "Das Verarbeitungsverzeichnis dokumentiert die Verarbeitungstätigkeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Speicherung aller personenbezogenen Daten",
+        "erklaerung": "Das Verarbeitungsverzeichnis speichert keine Daten, sondern dokumentiert Prozesse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Schutz vor Cyberangriffen zu gewährleisten",
+        "erklaerung": "Das Verarbeitungsverzeichnis hat keinen direkten Einfluss auf die IT-Sicherheit.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

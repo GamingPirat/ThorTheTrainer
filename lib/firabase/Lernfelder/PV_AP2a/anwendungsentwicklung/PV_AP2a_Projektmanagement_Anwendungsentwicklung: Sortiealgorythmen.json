@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2053,
+    "text": "Was ist der Hauptzweck von Sortieralgorithmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Anordnung von Elementen in einer definierten Reihenfolge",
+        "erklaerung": "Sortieralgorithmen ordnen Daten in aufsteigender oder absteigender Reihenfolge.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Reduzierung des Speicherverbrauchs",
+        "erklaerung": "Sortieralgorithmen optimieren nicht den Speicherverbrauch, sondern die Reihenfolge.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Verschlüsselung von Daten",
+        "erklaerung": "Sortieralgorithmen haben nichts mit Verschlüsselung zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2053,
+    "text": "Welcher Sortieralgorithmus hat eine durchschnittliche Laufzeit von O(n log n)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Quicksort",
+        "erklaerung": "Quicksort hat im Durchschnitt eine Laufzeit von O(n log n).",
+        "isKorrekt": true
+      },
+      {
+        "text": "Bubblesort",
+        "erklaerung": "Bubblesort hat eine Laufzeit von O(n²) im Durchschnitt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Insertionsort",
+        "erklaerung": "Insertionsort hat eine durchschnittliche Laufzeit von O(n²).",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2053,
+    "text": "Was ist ein Nachteil von Bubblesort?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Hohe Zeitkomplexität von O(n²) im Durchschnitt",
+        "erklaerung": "Bubblesort ist ineffizient für große Datensätze.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Er benötigt zusätzlichen Speicherplatz",
+        "erklaerung": "Bubblesort ist ein in-place-Algorithmus und benötigt keinen zusätzlichen Speicher.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Er kann nur mit ganzen Zahlen arbeiten",
+        "erklaerung": "Bubblesort funktioniert mit jedem Datentyp, der vergleichbar ist.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2053,
+    "text": "Was unterscheidet Mergesort von Quicksort?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mergesort benötigt zusätzlichen Speicherplatz, Quicksort arbeitet in-place",
+        "erklaerung": "Mergesort verwendet zusätzliche Arrays, während Quicksort den Speicher effizienter nutzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Quicksort hat eine bessere Worst-Case-Laufzeit",
+        "erklaerung": "Mergesort hat im Worst-Case eine bessere Laufzeit (O(n log n)).",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mergesort funktioniert nur mit Zahlen",
+        "erklaerung": "Beide Algorithmen funktionieren mit beliebigen vergleichbaren Daten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2053,
+    "text": "Welcher Sortieralgorithmus ist stabil?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mergesort",
+        "erklaerung": "Mergesort ist stabil, da es die Reihenfolge von gleichen Elementen beibehält.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Quicksort",
+        "erklaerung": "Quicksort ist nicht stabil, da es die Reihenfolge gleicher Elemente ändern kann.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Heapsort",
+        "erklaerung": "Heapsort ist nicht stabil.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2053,
+    "text": "Welche Eigenschaft macht Insertionsort für kleine Datensätze geeignet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einfache Implementierung und gute Performance für fast sortierte Listen",
+        "erklaerung": "Insertionsort ist effizient für kleine oder fast sortierte Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es hat immer eine konstante Laufzeit",
+        "erklaerung": "Insertionsort hat keine konstante Laufzeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es benötigt zusätzlichen Speicher",
+        "erklaerung": "Insertionsort ist ein in-place-Algorithmus und benötigt keinen zusätzlichen Speicher.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2053,
+    "text": "Wann ist Heapsort nützlich?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Wenn eine konsistente Laufzeit von O(n log n) benötigt wird",
+        "erklaerung": "Heapsort garantiert eine konsistente Laufzeit, unabhängig vom Input.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Wenn der Algorithmus stabil sein muss",
+        "erklaerung": "Heapsort ist nicht stabil.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Wenn keine Rekursion verwendet werden darf",
+        "erklaerung": "Heapsort kann iterativ oder rekursiv implementiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2053,
+    "text": "Welche Sortieralgorithmen sind Divide-and-Conquer-Algorithmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mergesort und Quicksort",
+        "erklaerung": "Beide teilen das Problem in kleinere Teile und lösen diese rekursiv.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Bubblesort und Insertionsort",
+        "erklaerung": "Diese Algorithmen verwenden keine Divide-and-Conquer-Strategie.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Heapsort und Radixsort",
+        "erklaerung": "Diese Algorithmen basieren nicht auf Divide-and-Conquer.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2053,
+    "text": "Welche Eigenschaft unterscheidet Radixsort von vergleichsbasierten Sortieralgorithmen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Radixsort sortiert ohne Vergleiche zwischen Elementen",
+        "erklaerung": "Radixsort basiert auf der Analyse der Ziffern der Elemente und nicht auf Vergleichen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Radixsort hat eine Laufzeit von O(n²)",
+        "erklaerung": "Radixsort hat eine Laufzeit von O(nk) (n = Anzahl der Elemente, k = Ziffernanzahl).",
+        "isKorrekt": false
+      },
+      {
+        "text": "Radixsort verwendet Divide-and-Conquer",
+        "erklaerung": "Radixsort teilt das Problem nicht rekursiv auf.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2053,
+    "text": "Was ist ein Vorteil von TimSort?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es kombiniert Mergesort und Insertionsort für optimale Leistung",
+        "erklaerung": "TimSort verwendet die Stärken von Mergesort und Insertionsort.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es hat eine konstante Laufzeit von O(1)",
+        "erklaerung": "TimSort hat keine konstante Laufzeit, sondern O(n log n) im Durchschnitt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es funktioniert nur mit numerischen Daten",
+        "erklaerung": "TimSort funktioniert mit beliebigen vergleichbaren Daten.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

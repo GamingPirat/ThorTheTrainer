@@ -34,11 +34,10 @@ class Session {
     if (snapshot.docs.isNotEmpty) {
       // Greife direkt auf das erste Dokument zu
       var doc = snapshot.docs.first;
-      print_Red("Dokument-ID: ${doc.id}, Daten: ${doc.data()}");
+      print_Green("Dokument-ID: ${doc.id}, Daten: ${doc.data()}");
 
       try {
         Map<String, dynamic>? data = doc.data();
-        print_Red("Session enter() Vergleich mit Schlüssel: $key");
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
           user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));

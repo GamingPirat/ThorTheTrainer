@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 20511,
+    "text": "Was stellt ein Aktivitätsdiagramm dar?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Abläufe und Entscheidungen in einem Prozess",
+        "erklaerung": "Ein Aktivitätsdiagramm visualisiert Workflows und Entscheidungen in einem System.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die zeitliche Reihenfolge von Nachrichten zwischen Objekten",
+        "erklaerung": "Das ist die Funktion eines Sequenzdiagramms, nicht eines Aktivitätsdiagramms.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die physische Struktur eines Netzwerks",
+        "erklaerung": "Aktivitätsdiagramme beziehen sich auf Workflows, nicht auf Netzwerke.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20511,
+    "text": "Welche Symbole sind typisch für ein Aktivitätsdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Aktivitäten (Rechtecke), Entscheidungsknoten (Rauten) und Start-/Endknoten (Ovale)",
+        "erklaerung": "Diese Symbole sind die grundlegenden Bestandteile eines Aktivitätsdiagramms.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Lebenslinien, Pfeile und Aktivierungsbalken",
+        "erklaerung": "Diese Elemente gehören zu Sequenzdiagrammen, nicht zu Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Kreise, Dreiecke und Quadrate",
+        "erklaerung": "Diese Symbole gehören nicht zu UML-Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20511,
+    "text": "Wofür wird ein Aktivitätsdiagramm typischerweise verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Modellierung von Workflows und Geschäftsprozessen",
+        "erklaerung": "Aktivitätsdiagramme werden verwendet, um Abläufe und Prozesse zu visualisieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung der Datenstruktur eines Systems",
+        "erklaerung": "Das ist die Funktion von ER-Diagrammen, nicht von Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Beschreibung der physischen Architektur eines Systems",
+        "erklaerung": "Das ist die Funktion von Verteilungsdiagrammen, nicht von Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20511,
+    "text": "Wie werden parallele Abläufe in einem Aktivitätsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Mit Synchronisationsbalken",
+        "erklaerung": "Synchronisationsbalken trennen oder verbinden parallele Abläufe.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mit gestrichelten Pfeilen",
+        "erklaerung": "Gestrichelte Pfeile zeigen keine parallelen Abläufe.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Mit doppelten Rechtecken",
+        "erklaerung": "Doppelte Rechtecke sind keine Standardnotation für parallele Abläufe.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20511,
+    "text": "Wie wird eine Entscheidung in einem Aktivitätsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch eine Raute mit ausgehenden Pfeilen",
+        "erklaerung": "Rauten symbolisieren Entscheidungen mit mehreren möglichen Ausgängen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch ein Rechteck mit einem Fragezeichen",
+        "erklaerung": "Rechtecke repräsentieren Aktivitäten, nicht Entscheidungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch ein Oval",
+        "erklaerung": "Ovale symbolisieren Start- oder Endpunkte, keine Entscheidungen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20511,
+    "text": "Welche Beziehung besteht zwischen Aktivitäten in einem Aktivitätsdiagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie sind durch Pfeile verbunden, die die Reihenfolge darstellen",
+        "erklaerung": "Pfeile zeigen die Abfolge von Aktivitäten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie werden durch gestrichelte Linien gruppiert",
+        "erklaerung": "Gestrichelte Linien gruppieren keine Aktivitäten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind durch Kreise verbunden",
+        "erklaerung": "Kreise sind nicht Teil der Standardnotation in Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20511,
+    "text": "Welche Software wird häufig zur Erstellung von Aktivitätsdiagrammen verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
+        "erklaerung": "Diese Tools unterstützen die Erstellung von UML-Diagrammen, einschließlich Aktivitätsdiagrammen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Photoshop",
+        "erklaerung": "Photoshop ist keine geeignete Software zur Erstellung von Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MySQL Workbench",
+        "erklaerung": "MySQL Workbench dient der Datenbankmodellierung, nicht UML-Diagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20511,
+    "text": "Wie wird der Startpunkt eines Prozesses in einem Aktivitätsdiagramm dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch ein ausgefülltes Oval",
+        "erklaerung": "Ein ausgefülltes Oval markiert den Startpunkt eines Prozesses.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch ein Rechteck",
+        "erklaerung": "Rechtecke repräsentieren Aktivitäten, nicht den Startpunkt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch ein Dreieck",
+        "erklaerung": "Dreiecke werden in Aktivitätsdiagrammen nicht verwendet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 20511,
+    "text": "Welche Einschränkungen haben Aktivitätsdiagramme?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie stellen keine detaillierten technischen Implementierungen dar",
+        "erklaerung": "Aktivitätsdiagramme visualisieren Abläufe, keine Implementierungsdetails.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie können keine Entscheidungen darstellen",
+        "erklaerung": "Entscheidungen sind ein zentraler Bestandteil von Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie können keine parallelen Abläufe zeigen",
+        "erklaerung": "Parallele Abläufe können durch Synchronisationsbalken dargestellt werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 20511,
+    "text": "Was ist der Zweck von Aktivitätsdiagrammen in der Softwareentwicklung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Zur Analyse und Dokumentation von Prozessen und Abläufen",
+        "erklaerung": "Aktivitätsdiagramme helfen, Prozesse und Workflows zu visualisieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zur Darstellung der Datenbankstruktur",
+        "erklaerung": "Die Datenbankstruktur wird mit ER-Diagrammen dargestellt, nicht mit Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Zur Definition der physischen Architektur eines Systems",
+        "erklaerung": "Das ist die Funktion von Verteilungsdiagrammen, nicht Aktivitätsdiagrammen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

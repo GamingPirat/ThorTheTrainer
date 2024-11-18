@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2044,
+    "text": "Was ist ein neuronales Netz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Modell in der Künstlichen Intelligenz, das die Funktionsweise des menschlichen Gehirns nachahmt",
+        "erklaerung": "Neuronale Netze bestehen aus Schichten von Knoten, die ähnlich wie Neuronen arbeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein physisches Netzwerk aus Computerkabeln",
+        "erklaerung": "Neuronale Netze sind mathematische Modelle, keine physischen Netzwerke.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Modell, das ausschließlich in der Biologie verwendet wird",
+        "erklaerung": "Neuronale Netze werden in der Informatik verwendet und basieren auf biologischen Prinzipien.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2044,
+    "text": "Welche Komponenten sind in einem neuronalen Netz enthalten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eingabeschicht, versteckte Schichten und Ausgabeschicht",
+        "erklaerung": "Diese Schichten sind grundlegende Bestandteile neuronaler Netze.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Prozessor, Arbeitsspeicher und Festplatte",
+        "erklaerung": "Das beschreibt die Hardware, nicht die Komponenten eines neuronalen Netzes.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Router, Switches und Kabel",
+        "erklaerung": "Das sind Netzwerkkomponenten, keine Bestandteile eines neuronalen Netzes.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2044,
+    "text": "Was ist die Aufgabe der Aktivierungsfunktion in einem neuronalen Netz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie entscheidet, ob ein Neuron aktiviert wird oder nicht",
+        "erklaerung": "Aktivierungsfunktionen beeinflussen, wie Signale zwischen Neuronen weitergegeben werden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie speichert die Zwischenergebnisse eines Neurons",
+        "erklaerung": "Speichern ist nicht die Aufgabe einer Aktivierungsfunktion.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie überträgt Daten zwischen Neuronen ohne Verarbeitung",
+        "erklaerung": "Aktivierungsfunktionen verarbeiten Daten, bevor sie weitergeleitet werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2044,
+    "text": "Welche Art von Problemen können neuronale Netze lösen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Bilderkennung, Sprachverarbeitung und Vorhersagemodelle",
+        "erklaerung": "Neuronale Netze sind vielseitig einsetzbar, insbesondere in datenintensiven Anwendungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Mechanische Steuerung von Maschinen",
+        "erklaerung": "Neuronale Netze steuern keine Maschinen direkt, sondern analysieren Daten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Physikalische Vernetzung von Computern",
+        "erklaerung": "Das fällt nicht in den Aufgabenbereich neuronaler Netze.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2044,
+    "text": "Was bedeutet 'Überanpassung' (Overfitting) in neuronalen Netzen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Modell passt sich zu stark an die Trainingsdaten an und generalisiert schlecht",
+        "erklaerung": "Überanpassung führt dazu, dass ein Modell bei neuen Daten schlecht abschneidet.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Das Modell ist zu einfach und liefert schlechte Ergebnisse",
+        "erklaerung": "Das beschreibt Unteranpassung, nicht Überanpassung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Modell kann keine komplexen Muster erkennen",
+        "erklaerung": "Überanpassung bedeutet, dass das Modell zu viele Details erkennt, nicht zu wenige.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2044,
+    "text": "Was ist ein 'konvolutionales neuronales Netz' (CNN)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein spezieller Typ neuronaler Netze, der für die Verarbeitung von Bildern optimiert ist",
+        "erklaerung": "CNNs sind besonders geeignet für Bild- und Mustererkennung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Netzwerktyp, der ausschließlich Textdaten verarbeitet",
+        "erklaerung": "CNNs werden hauptsächlich für Bilddaten verwendet, nicht für Text.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Netzwerk, das keine Aktivierungsfunktionen benötigt",
+        "erklaerung": "Auch CNNs verwenden Aktivierungsfunktionen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2044,
+    "text": "Welche Rolle spielen Gewichte in einem neuronalen Netz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie bestimmen die Stärke der Verbindung zwischen Neuronen",
+        "erklaerung": "Gewichte beeinflussen, wie stark ein Eingangssignal ein Neuron aktiviert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie speichern die Zwischenergebnisse von Berechnungen",
+        "erklaerung": "Gewichte speichern keine Ergebnisse, sondern beeinflussen die Signalverarbeitung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie legen fest, wie viele Neuronen ein Netz hat",
+        "erklaerung": "Die Anzahl der Neuronen wird durch die Netzarchitektur, nicht durch Gewichte, bestimmt.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2044,
+    "text": "Was ist ein Vorteil tiefen neuronaler Netze (Deep Learning)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie können komplexe Muster in großen Datenmengen erkennen",
+        "erklaerung": "Deep Learning eignet sich besonders für komplexe und datenintensive Probleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie benötigen weniger Daten für das Training",
+        "erklaerung": "Tiefe neuronale Netze erfordern oft große Datenmengen für effektives Training.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie sind einfacher zu trainieren als einfache neuronale Netze",
+        "erklaerung": "Tiefe neuronale Netze sind oft schwieriger zu trainieren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2044,
+    "text": "Welche Herausforderung besteht bei der Verwendung neuronaler Netze?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Notwendigkeit großer Datenmengen und Rechenleistung",
+        "erklaerung": "Das Training neuronaler Netze ist rechenintensiv und erfordert viele Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die fehlende Fähigkeit, Muster in Daten zu erkennen",
+        "erklaerung": "Neuronale Netze sind genau dafür konzipiert, Muster zu erkennen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Unmöglichkeit, auf Hardware zu laufen",
+        "erklaerung": "Neuronale Netze laufen auf spezialisierter Hardware wie GPUs oder TPUs.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2044,
+    "text": "Was bedeutet 'Backpropagation' in neuronalen Netzen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Algorithmus, der die Gewichte im Netzwerk anpasst, um Fehler zu minimieren",
+        "erklaerung": "Backpropagation ist eine Methode zur Optimierung von neuronalen Netzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Speicherung von Zwischenzuständen des Netzes",
+        "erklaerung": "Backpropagation passt Gewichte an, speichert jedoch keine Zustände.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Training von Netzwerken ohne Daten",
+        "erklaerung": "Backpropagation erfordert Daten, um die Fehler zu berechnen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

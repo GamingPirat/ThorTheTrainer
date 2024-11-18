@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Was ist das Hauptziel eines Projektstrukturplans (PSP)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Projekt in handhabbare Teilaufgaben zu gliedern",
+        "erklaerung": "Der PSP dient dazu, komplexe Projekte zu strukturieren.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen detaillierten Zeitplan für das Projekt zu erstellen",
+        "erklaerung": "Der Zeitplan ist nicht das Hauptziel des PSP.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ressourcen effizient zu verteilen",
+        "erklaerung": "Der PSP hilft indirekt bei der Ressourcenplanung, hat aber andere Schwerpunkte.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Welche Darstellung wird typischerweise für einen Projektstrukturplan verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine hierarchische Baumstruktur",
+        "erklaerung": "Der PSP wird üblicherweise als Baumdiagramm dargestellt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Liste von Aufgaben ohne Hierarchie",
+        "erklaerung": "Ein PSP erfordert eine hierarchische Gliederung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Gantt-Diagramm",
+        "erklaerung": "Ein Gantt-Diagramm dient der Zeitplanung, nicht der Aufgabenstrukturierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was ist der Nutzen eines gut erstellten PSP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Er ermöglicht eine klare Zuordnung von Verantwortlichkeiten",
+        "erklaerung": "Ein PSP hilft bei der Aufgaben- und Verantwortlichkeitsverteilung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Er reduziert die Projektlaufzeit",
+        "erklaerung": "Die Laufzeit wird indirekt beeinflusst, ist aber nicht der Hauptnutzen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Er stellt sicher, dass das Budget eingehalten wird",
+        "erklaerung": "Ein PSP sorgt für Struktur, beeinflusst aber nicht direkt das Budget.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Elemente gehören zu einem typischen Projektstrukturplan?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Teilaufgaben, Arbeitspakete und Meilensteine",
+        "erklaerung": "Dies sind typische Bestandteile eines PSP.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ressourcenverteilung und Budgetplanung",
+        "erklaerung": "Diese Elemente gehören zur Projektplanung, nicht zum PSP.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Projektziele und Risiken",
+        "erklaerung": "Projektziele und Risiken werden separat behandelt, nicht im PSP.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was sollte ein Arbeitspaket im PSP enthalten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine klar definierte Aufgabe mit Verantwortlichkeiten",
+        "erklaerung": "Arbeitspakete sind kleinste Einheiten mit klaren Aufgaben und Zuständigkeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Einen detaillierten Zeitplan",
+        "erklaerung": "Der Zeitplan wird separat erstellt und gehört nicht direkt zum Arbeitspaket.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Ressourcenverteilung für das gesamte Projekt",
+        "erklaerung": "Die Ressourcenverteilung erfolgt auf Projektebene, nicht für einzelne Arbeitspakete.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2000,
+    "text": "Welche Aussage beschreibt einen typischen Fehler bei der Erstellung eines PSP?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Arbeitspakete werden zu groß oder zu allgemein definiert",
+        "erklaerung": "Zu große oder ungenaue Arbeitspakete machen die Planung unübersichtlich.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Zu viele Details werden in den Arbeitspaketen dokumentiert",
+        "erklaerung": "Ein PSP sollte ausreichend detailliert sein, ohne zu überladen zu wirken.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Meilensteine werden in den PSP integriert",
+        "erklaerung": "Meilensteine gehören typischerweise in den PSP.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Ebene des PSP enthält die ausführbaren Arbeitspakete?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die unterste Ebene des PSP",
+        "erklaerung": "Auf der untersten Ebene des PSP befinden sich die Arbeitspakete.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die mittlere Ebene des PSP",
+        "erklaerung": "Die mittlere Ebene enthält oft größere Teilaufgaben, keine Arbeitspakete.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die oberste Ebene des PSP",
+        "erklaerung": "Die oberste Ebene zeigt das Projektziel, nicht die Arbeitspakete.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Warum ist es wichtig, dass Arbeitspakete im PSP keine Überschneidungen aufweisen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Doppelarbeit zu vermeiden",
+        "erklaerung": "Überschneidungen können zu Ineffizienz und Konflikten führen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Projektlaufzeit zu verkürzen",
+        "erklaerung": "Die Vermeidung von Überschneidungen beeinflusst die Laufzeit nur indirekt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um das Projektbudget zu optimieren",
+        "erklaerung": "Das Budget wird indirekt beeinflusst, ist aber nicht der Hauptgrund.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2000,
+    "text": "Welche Vorteile bietet ein PSP bei der Projektplanung?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Er erleichtert die Kommunikation und Verantwortlichkeitsverteilung",
+        "erklaerung": "Der PSP schafft Transparenz und klare Zuständigkeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Er minimiert die Anzahl der benötigten Ressourcen",
+        "erklaerung": "Der PSP optimiert die Ressourcennutzung, minimiert sie aber nicht direkt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Er ersetzt die Risikoanalyse",
+        "erklaerung": "Der PSP unterstützt die Planung, ersetzt aber keine Risikoanalyse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2000,
+    "text": "Was unterscheidet den PSP von einem Gantt-Diagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Der PSP dient der Strukturierung von Aufgaben, während das Gantt-Diagramm der Zeitplanung dient",
+        "erklaerung": "Dies ist der grundlegende Unterschied zwischen beiden Methoden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Der PSP fokussiert auf Ressourcen, das Gantt-Diagramm auf Kosten",
+        "erklaerung": "Beide Werkzeuge fokussieren nicht primär auf Kosten oder Ressourcen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Der PSP wird nur in agilen Projekten eingesetzt",
+        "erklaerung": "Der PSP ist universell einsetzbar, nicht nur in agilen Projekten.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

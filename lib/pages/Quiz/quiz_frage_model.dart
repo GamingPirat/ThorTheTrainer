@@ -6,14 +6,15 @@ import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'quiz_antwort_model.dart';
 
-class QuizFrageModel with ChangeNotifier {
+class QuizFrageController with ChangeNotifier {
   final DB_Frage frage;
   final Function() onLockTapped;
   late List<QuizAntwortModel> antwortenViewModel;
+  late String imagePath;
 
   bool _locked = false;
 
-  QuizFrageModel({
+  QuizFrageController({
     required this.frage,
     required this.onLockTapped,
   }) {
@@ -21,6 +22,17 @@ class QuizFrageModel with ChangeNotifier {
     bool isMultipleChoice = _isMultipleChoice(frage.antworten);
     _initializeAntwortenViewModel(frage.antworten, isMultipleChoice);
     antwortenViewModel.shuffle(Random());
+    List<String> imagePaths = [
+      "characters/emotionslos.webp",
+      "characters/humorvoll_sarkastisch.webp",
+      "characters/kumpel.webp",
+      "characters/philosoph.webp",
+      "characters/professional.webp",
+      "characters/provokant.webp",
+      "characters/technisch.webp",
+      "characters/vereinfachte_sprache.webp",
+    ];
+    imagePath = imagePaths[Random().nextInt(imagePaths.length)];
   }
 
   // Prüft, ob es sich um eine Multiple-Choice-Frage handelt

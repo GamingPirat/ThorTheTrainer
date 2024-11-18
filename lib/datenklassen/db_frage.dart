@@ -25,11 +25,11 @@ class DB_Frage {
     List<Antwort> antwortenList = antwortenJson.map((item) => Antwort.fromJson(item as Map<String, dynamic>)).toList();
 
     return DB_Frage(
-      nummer: json['nummer'],
-      version: json['version'],
-      inhalt_id: json['inhalt_id'],
-      punkte: json['punkte'],
-      text: json['text'],
+      nummer: json['nummer'] ?? 0,
+      version: json['version'] ?? 0,
+      inhalt_id: json['inhalt_id'] ?? 0,
+      punkte: json['punkte'] ?? 0,
+      text: json['text'] ?? "Frage konte nicht geladen werden",
       antworten: antwortenList,
     );
   }

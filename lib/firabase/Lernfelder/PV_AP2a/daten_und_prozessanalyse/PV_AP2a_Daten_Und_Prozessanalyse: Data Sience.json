@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2080,
+    "text": "Was ist das Hauptziel von Data Science?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Gewinnung von Erkenntnissen aus großen Datenmengen.",
+        "erklaerung": "Data Science nutzt Datenanalyse, um Muster und Erkenntnisse zu gewinnen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhung der Netzwerksicherheit.",
+        "erklaerung": "Netzwerksicherheit ist nicht das Ziel von Data Science.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Entwicklung von Verschlüsselungsmethoden.",
+        "erklaerung": "Verschlüsselung ist nicht das Hauptaugenmerk von Data Science.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2080,
+    "text": "Welche grundlegenden Schritte gehören zum Data-Science-Prozess?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Datenaufbereitung, Modellbildung und Ergebnisinterpretation.",
+        "erklaerung": "Diese Schritte bilden den Kernprozess in Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Hardwareinstallation, Netzwerkkonfiguration und Datenbankpflege.",
+        "erklaerung": "Diese Tätigkeiten gehören nicht zum Data-Science-Prozess.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Softwaredesign, UI/UX-Entwicklung und Deployment.",
+        "erklaerung": "Das ist typischer für Softwareentwicklung, nicht Data Science.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2080,
+    "text": "Welche Programmiersprachen werden häufig in Data Science verwendet?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Python und R.",
+        "erklaerung": "Python und R sind die gängigsten Sprachen für Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "C++ und PHP.",
+        "erklaerung": "Diese Sprachen sind weniger üblich für Data Science.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Java und Ruby.",
+        "erklaerung": "Java und Ruby sind nicht die bevorzugten Sprachen in Data Science.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2080,
+    "text": "Welche Rolle spielt Machine Learning in der Data Science?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Es ermöglicht die Erstellung von Modellen zur Vorhersage und Mustererkennung.",
+        "erklaerung": "Machine Learning ist ein zentraler Bestandteil der Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Es sichert die Daten gegen externe Angriffe.",
+        "erklaerung": "Das gehört nicht zu den Aufgaben von Machine Learning.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Es verbessert die physische Netzwerkstruktur.",
+        "erklaerung": "Machine Learning hat keinen direkten Einfluss auf Netzwerke.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2080,
+    "text": "Welche Arten von Datenanalysen werden in Data Science durchgeführt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Deskriptive, diagnostische, prädiktive und präskriptive Analysen.",
+        "erklaerung": "Diese Analysen decken verschiedene Aspekte von Daten ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Visuelle, numerische und textuelle Analysen.",
+        "erklaerung": "Dies ist keine korrekte Einteilung von Datenanalysen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Hardware- und Softwareanalysen.",
+        "erklaerung": "Das gehört nicht zur Datenanalyse in Data Science.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2080,
+    "text": "Welche Datenformate sind typisch für die Arbeit in Data Science?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "CSV, JSON und SQL-Datenbanken.",
+        "erklaerung": "Diese Formate sind häufige Datenquellen in Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "JPEG, MP3 und MPEG.",
+        "erklaerung": "Diese Formate sind nicht primär für Datenanalysen gedacht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "HTML, CSS und XML.",
+        "erklaerung": "Nur XML wird manchmal für Daten genutzt, HTML und CSS nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2080,
+    "text": "Welche Tools werden häufig in Data Science eingesetzt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Jupyter, Tableau und TensorFlow.",
+        "erklaerung": "Diese Tools sind weit verbreitet in der Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eclipse, Photoshop und Unity.",
+        "erklaerung": "Diese Tools sind nicht typisch für Data Science.",
+        "isKorrekt": false
+      },
+      {
+        "text": "MySQL, MongoDB und Dreamweaver.",
+        "erklaerung": "MySQL und MongoDB sind relevant, aber Dreamweaver ist nicht für Data Science geeignet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2080,
+    "text": "Was versteht man unter Big Data im Kontext der Data Science?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Große und komplexe Datensätze, die traditionelle Methoden überfordern.",
+        "erklaerung": "Big Data beschreibt Datensätze, die besondere Technologien und Analysen erfordern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Daten, die ausschließlich in Cloud-Umgebungen gespeichert werden.",
+        "erklaerung": "Big Data ist nicht auf Cloud-Umgebungen beschränkt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Daten, die nur aus strukturierten Tabellen bestehen.",
+        "erklaerung": "Big Data umfasst auch unstrukturierte und semistrukturierte Daten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2080,
+    "text": "Welche Schlüsselkompetenzen sind in Data Science erforderlich?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Statistische Analyse, Programmierung und Domänenwissen.",
+        "erklaerung": "Diese Fähigkeiten sind entscheidend in der Data Science.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Projektmanagement, Hardwaredesign und Marketing.",
+        "erklaerung": "Diese Kompetenzen sind nicht spezifisch für Data Science.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Webdesign, UX-Entwicklung und Netzwerkadministration.",
+        "erklaerung": "Diese Bereiche sind nicht zentral für Data Science.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2080,
+    "text": "Wie wird der Erfolg einer Data-Science-Analyse gemessen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Anhand der Relevanz und Umsetzbarkeit der gewonnenen Erkenntnisse.",
+        "erklaerung": "Erfolgreiche Analysen liefern wertvolle und umsetzbare Ergebnisse.",
+        "isKorrekt": true
+      },
+      {
+        "text": "An der Geschwindigkeit der Datenanalyse.",
+        "erklaerung": "Geschwindigkeit ist nicht das primäre Erfolgskriterium.",
+        "isKorrekt": false
+      },
+      {
+        "text": "An der Anzahl der eingesetzten Tools.",
+        "erklaerung": "Die Anzahl der Tools ist irrelevant für den Erfolg.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

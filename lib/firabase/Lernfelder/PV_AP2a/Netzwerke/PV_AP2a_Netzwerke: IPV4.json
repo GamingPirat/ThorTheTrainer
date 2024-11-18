@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Wie viele Bits hat eine IPv4-Adresse?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "32 Bits",
+        "erklaerung": "Eine IPv4-Adresse besteht aus 32 Bits, die in vier Oktette aufgeteilt sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "64 Bits",
+        "erklaerung": "64 Bits werden nicht für IPv4-Adressen verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "128 Bits",
+        "erklaerung": "128 Bits gehören zum IPv6-Standard.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Wie wird eine IPv4-Adresse üblicherweise dargestellt?",
+    "version": 1,
+    "nummer": 2,
+    "antworten": [
+      {
+        "text": "Als vier Dezimalzahlen, getrennt durch Punkte.",
+        "erklaerung": "Die Dezimalzahlen repräsentieren die vier Oktette.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Als Hexadezimalzahlen, getrennt durch Doppelpunkte.",
+        "erklaerung": "Dies ist die Darstellung von IPv6-Adressen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Als eine binäre Sequenz ohne Trennzeichen.",
+        "erklaerung": "Dies ist unüblich und würde die Lesbarkeit erschweren.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2061,
+    "text": "Welche IP-Adresse gehört zum privaten IPv4-Adressbereich?",
+    "version": 1,
+    "nummer": 3,
+    "antworten": [
+      {
+        "text": "192.168.0.1",
+        "erklaerung": "192.168.0.0/16 ist ein privater Adressbereich.",
+        "isKorrekt": true
+      },
+      {
+        "text": "8.8.8.8",
+        "erklaerung": "Das ist eine öffentliche Adresse, die von Google verwendet wird.",
+        "isKorrekt": false
+      },
+      {
+        "text": "172.32.0.1",
+        "erklaerung": "172.32.0.1 liegt außerhalb des privaten Bereichs (172.16.0.0 - 172.31.255.255).",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Was beschreibt die Subnetzmaske einer IPv4-Adresse?",
+    "version": 1,
+    "nummer": 4,
+    "antworten": [
+      {
+        "text": "Den Netz- und Hostanteil der Adresse.",
+        "erklaerung": "Die Subnetzmaske teilt eine Adresse in Netz- und Hostanteil.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die maximale Datenübertragungsrate im Netzwerk.",
+        "erklaerung": "Die Subnetzmaske beschreibt keine Übertragungsraten.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die physische Topologie eines Netzwerks.",
+        "erklaerung": "Die Subnetzmaske bezieht sich nur auf die logische Adressierung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 4,
+    "inhalt_id": 2061,
+    "text": "Welche Adresse ist eine Broadcast-Adresse in einem IPv4-Netzwerk?",
+    "version": 1,
+    "nummer": 5,
+    "antworten": [
+      {
+        "text": "Die höchste Adresse eines Subnetzes.",
+        "erklaerung": "Die Broadcast-Adresse ist immer die höchste Adresse eines Subnetzes.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die niedrigste Adresse eines Subnetzes.",
+        "erklaerung": "Die niedrigste Adresse ist die Netzwerkadresse.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine zufällig gewählte Adresse im Subnetz.",
+        "erklaerung": "Die Broadcast-Adresse ist nicht zufällig, sondern wird berechnet.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Welche Methode wird bei IPv4 verwendet, um Adressen effizient zu vergeben?",
+    "version": 1,
+    "nummer": 6,
+    "antworten": [
+      {
+        "text": "DHCP (Dynamic Host Configuration Protocol)",
+        "erklaerung": "DHCP automatisiert die Vergabe von IP-Adressen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "NAT (Network Address Translation)",
+        "erklaerung": "NAT übersetzt Adressen, vergibt sie jedoch nicht.",
+        "isKorrekt": false
+      },
+      {
+        "text": "DNS (Domain Name System)",
+        "erklaerung": "DNS ordnet Namen IP-Adressen zu, vergibt sie aber nicht.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2061,
+    "text": "Wie viele eindeutige Adressen können mit IPv4 maximal vergeben werden?",
+    "version": 1,
+    "nummer": 7,
+    "antworten": [
+      {
+        "text": "Etwa 4,3 Milliarden",
+        "erklaerung": "IPv4 ermöglicht 2^32 Adressen, etwa 4,3 Milliarden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Etwa 3,4 Milliarden",
+        "erklaerung": "Dies ist falsch, da IPv4 mehr Adressen zulässt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unendlich viele",
+        "erklaerung": "IPv4 hat eine feste Begrenzung auf 32-Bit-Adressen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Welche Adressklasse umfasst den Bereich 192.0.0.0 bis 223.255.255.255?",
+    "version": 1,
+    "nummer": 8,
+    "antworten": [
+      {
+        "text": "Klasse C",
+        "erklaerung": "Klasse C deckt diesen Bereich ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Klasse B",
+        "erklaerung": "Klasse B umfasst Adressen von 128.0.0.0 bis 191.255.255.255.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Klasse D",
+        "erklaerung": "Klasse D beginnt erst ab 224.0.0.0.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2061,
+    "text": "Welche Adresse wird zur Kommunikation innerhalb eines Geräts verwendet?",
+    "version": 1,
+    "nummer": 9,
+    "antworten": [
+      {
+        "text": "127.0.0.1",
+        "erklaerung": "127.0.0.1 ist die Loopback-Adresse für Tests und interne Kommunikation.",
+        "isKorrekt": true
+      },
+      {
+        "text": "0.0.0.0",
+        "erklaerung": "0.0.0.0 wird für nicht spezifizierte Adressen verwendet.",
+        "isKorrekt": false
+      },
+      {
+        "text": "255.255.255.255",
+        "erklaerung": "255.255.255.255 ist die Broadcast-Adresse.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2061,
+    "text": "Welche Probleme entstehen durch den begrenzten Adressraum von IPv4?",
+    "version": 1,
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "Erschöpfung der Adressen bei wachsendem Internetverkehr.",
+        "erklaerung": "Der begrenzte Adressraum ist ein Hauptgrund für die Einführung von IPv6.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Erhöhte Übertragungsraten.",
+        "erklaerung": "Die Übertragungsrate hängt nicht vom Adressraum ab.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Komplexere Hardwareanforderungen.",
+        "erklaerung": "IPv4 erfordert keine besonders komplexe Hardware.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

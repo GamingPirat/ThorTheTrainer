@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2030,
+    "text": "Was versteht man unter 'Phishing'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Der Versuch, sensible Informationen wie Passwörter durch Täuschung zu erlangen",
+        "erklaerung": "Phishing ist eine Methode, um Nutzer zur Preisgabe sensibler Informationen zu verleiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, bei dem Schadsoftware direkt auf ein System geladen wird",
+        "erklaerung": "Das beschreibt Malware, nicht Phishing.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Angriff, der die Netzwerkverbindung stört",
+        "erklaerung": "Das beschreibt einen DDoS-Angriff, nicht Phishing.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2030,
+    "text": "Was ist der Zweck einer Firewall?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den Datenverkehr zu überwachen und unautorisierte Zugriffe zu blockieren",
+        "erklaerung": "Eine Firewall schützt Netzwerke, indem sie unerwünschten Datenverkehr blockiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Daten auf einem Server zu verschlüsseln",
+        "erklaerung": "Verschlüsselung ist keine Aufgabe einer Firewall.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Internetgeschwindigkeit zu optimieren",
+        "erklaerung": "Firewalls beeinflussen die Sicherheit, nicht die Internetgeschwindigkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2030,
+    "text": "Was versteht man unter 'Malware'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schadsoftware, die entwickelt wurde, um Systeme zu beschädigen oder Daten zu stehlen",
+        "erklaerung": "Malware umfasst alle Arten von Schadsoftware wie Viren, Trojaner und Ransomware.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, der Netzwerke überlastet",
+        "erklaerung": "Das beschreibt einen DDoS-Angriff, nicht Malware.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Software, die zur Datenverschlüsselung verwendet wird",
+        "erklaerung": "Malware ist keine Software für Sicherheitszwecke.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2030,
+    "text": "Was bedeutet 'Zero-Day-Angriff'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Angriff, der eine Sicherheitslücke ausnutzt, bevor ein Patch verfügbar ist",
+        "erklaerung": "Zero-Day-Angriffe nutzen unbekannte Sicherheitslücken aus.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, der keine Auswirkungen auf das System hat",
+        "erklaerung": "Zero-Day-Angriffe sind oft schwerwiegende Angriffe.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Angriff, der auf bereits bekannte Schwachstellen abzielt",
+        "erklaerung": "Zero-Day-Angriffe betreffen Sicherheitslücken, die noch unbekannt sind.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2030,
+    "text": "Was ist ein Botnetz?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Netzwerk aus infizierten Geräten, die von Angreifern ferngesteuert werden",
+        "erklaerung": "Botnetze werden häufig für DDoS-Angriffe oder Spam genutzt.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Sicherheitslösung zum Schutz vor Malware",
+        "erklaerung": "Ein Botnetz ist eine Bedrohung, keine Sicherheitslösung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Netzwerk, das ausschließlich für sichere Verbindungen genutzt wird",
+        "erklaerung": "Botnetze sind unsichere, von Angreifern kontrollierte Netzwerke.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2030,
+    "text": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Virus benötigt eine Wirtsdatei, ein Wurm verbreitet sich selbstständig",
+        "erklaerung": "Das ist der Hauptunterschied zwischen Viren und Würmern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Virus verursacht keinen Schaden, ein Wurm schon",
+        "erklaerung": "Beide können Schäden verursachen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Virus verschlüsselt Daten, ein Wurm nicht",
+        "erklaerung": "Verschlüsselung ist nicht die primäre Funktion eines Virus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2030,
+    "text": "Was versteht man unter 'Social Engineering'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den Versuch, durch Täuschung oder Manipulation an vertrauliche Informationen zu gelangen",
+        "erklaerung": "Social Engineering zielt auf die Schwächen der Nutzer ab.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Entwicklung von Sicherheitssoftware",
+        "erklaerung": "Social Engineering ist eine Angriffsmethode, keine Softwareentwicklung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Überwachen von Netzwerkaktivitäten",
+        "erklaerung": "Social Engineering bezieht sich auf menschliche Interaktion, nicht auf technische Überwachung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2030,
+    "text": "Was bedeutet 'Ransomware'?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Schadsoftware, die Daten verschlüsselt und ein Lösegeld fordert",
+        "erklaerung": "Ransomware blockiert den Zugriff auf Daten und verlangt Geld für die Entschlüsselung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Schadsoftware, die Systeme unbrauchbar macht, ohne Daten zu verschlüsseln",
+        "erklaerung": "Ransomware verschlüsselt Daten, anstatt Systeme nur unbrauchbar zu machen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Software, die Daten anonymisiert",
+        "erklaerung": "Ransomware hat nichts mit Anonymisierung zu tun.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2030,
+    "text": "Was versteht man unter 'Two-Factor Authentication' (2FA)?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Eine Sicherheitsmethode, die zwei unterschiedliche Authentifizierungsfaktoren kombiniert",
+        "erklaerung": "2FA erhöht die Sicherheit durch die Kombination von Wissen, Besitz oder biometrischen Daten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine Methode, bei der zwei Passwörter erforderlich sind",
+        "erklaerung": "2FA verwendet unterschiedliche Faktoren, nicht nur Passwörter.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine Verschlüsselungsmethode für Datenübertragungen",
+        "erklaerung": "2FA ist ein Authentifizierungsverfahren, keine Verschlüsselung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2030,
+    "text": "Was ist eine DDoS-Attacke?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Angriff, der durch massenhafte Anfragen einen Server überlastet",
+        "erklaerung": "DDoS-Angriffe zielen darauf ab, Systeme durch Überlastung lahmzulegen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Angriff, der Daten verschlüsselt und Lösegeld fordert",
+        "erklaerung": "Das beschreibt Ransomware, nicht DDoS.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Angriff, der vertrauliche Informationen durch Täuschung erlangt",
+        "erklaerung": "Das beschreibt Phishing, nicht eine DDoS-Attacke.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2070,
+    "text": "Was ist der erste Schritt bei der Bearbeitung einer Serviceanfrage?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Anfrage erfassen und kategorisieren",
+        "erklaerung": "Die Erfassung und Kategorisierung hilft, die Anfrage strukturiert zu bearbeiten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Anfrage sofort lösen",
+        "erklaerung": "Eine Anfrage sollte zunächst analysiert werden, bevor eine Lösung gesucht wird.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Kunden an einen anderen Ansprechpartner weiterleiten",
+        "erklaerung": "Nur in speziellen Fällen sollte eine Anfrage weitergeleitet werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2070,
+    "text": "Warum ist es wichtig, die Priorität einer Serviceanfrage festzulegen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass dringende Anfragen zuerst bearbeitet werden",
+        "erklaerung": "Die Priorisierung hilft, Ressourcen effizient zu nutzen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Anzahl der offenen Anfragen zu reduzieren",
+        "erklaerung": "Die Anzahl der Anfragen reduziert sich durch Bearbeitung, nicht durch Priorisierung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um dem Kunden die Verantwortung für die Lösung zu übertragen",
+        "erklaerung": "Die Verantwortung liegt bei der bearbeitenden Stelle, nicht beim Kunden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2070,
+    "text": "Welche Methode kann verwendet werden, um die Ursache eines Problems zu identifizieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Fehlerdiagnose-Tools oder Ursachenanalyse-Methoden wie 5-Why",
+        "erklaerung": "Solche Methoden helfen, die Ursache systematisch zu ermitteln.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den Kunden bitten, das Problem selbst zu analysieren",
+        "erklaerung": "Die Analyse sollte vom Support-Team durchgeführt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Nur allgemeine Lösungen vorschlagen",
+        "erklaerung": "Generische Lösungen sind oft nicht effektiv für spezifische Probleme.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2070,
+    "text": "Welche Information sollte in der Dokumentation einer Serviceanfrage enthalten sein?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Das Problem, die durchgeführten Schritte und die Lösung",
+        "erklaerung": "Eine vollständige Dokumentation erleichtert zukünftige Bearbeitungen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Nur die Lösung",
+        "erklaerung": "Die Schritte zur Lösung sind ebenfalls wichtig.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Meinung des Mitarbeiters zur Anfrage",
+        "erklaerung": "Persönliche Meinungen sind nicht relevant für die Dokumentation.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2070,
+    "text": "Warum ist es wichtig, den Kunden über den Fortschritt der Bearbeitung zu informieren?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um Transparenz zu schaffen und das Vertrauen des Kunden zu gewinnen",
+        "erklaerung": "Regelmäßige Updates zeigen dem Kunden, dass an seinem Anliegen gearbeitet wird.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um den Kunden von weiteren Anfragen abzuhalten",
+        "erklaerung": "Kunden sollten ermutigt werden, relevante Anfragen zu stellen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um Zeit für die Bearbeitung zu sparen",
+        "erklaerung": "Updates können Zeit in Anspruch nehmen, sind aber essenziell für die Kundenzufriedenheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2070,
+    "text": "Was sollte bei der Lösung einer Serviceanfrage beachtet werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Lösung sollte nachvollziehbar und nachhaltig sein",
+        "erklaerung": "Nachhaltige Lösungen vermeiden wiederholte Probleme.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Lösung sollte so schnell wie möglich improvisiert werden",
+        "erklaerung": "Eine überhastete Lösung kann zu weiteren Problemen führen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Lösung muss keine Rückmeldung an den Kunden enthalten",
+        "erklaerung": "Der Kunde sollte über die Lösung informiert werden.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2070,
+    "text": "Welche Rolle spielt die Priorisierung in der Bearbeitung von Serviceanfragen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Sie ermöglicht eine effiziente Ressourcennutzung",
+        "erklaerung": "Dringende Anfragen können schneller bearbeitet werden, wenn sie priorisiert sind.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Sie beschleunigt automatisch die Lösung aller Anfragen",
+        "erklaerung": "Priorisierung hilft bei der Organisation, beschleunigt aber nicht automatisch die Bearbeitung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Sie ersetzt die Dokumentation",
+        "erklaerung": "Dokumentation ist weiterhin erforderlich, auch bei priorisierten Anfragen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2070,
+    "text": "Wie kann Feedback nach der Bearbeitung einer Anfrage eingeholt werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch Kundenumfragen oder Bewertungsformulare",
+        "erklaerung": "Feedback-Tools helfen, die Kundenzufriedenheit zu messen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch die Aufforderung, keine weiteren Anfragen zu stellen",
+        "erklaerung": "Feedback sollte proaktiv und höflich eingeholt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch automatische Ablehnung neuer Anfragen",
+        "erklaerung": "Feedback sollte freiwillig und nicht durch Zwang erfolgen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2070,
+    "text": "Welche Vorteile hat eine strukturierte Bearbeitung von Serviceanfragen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Erhöhte Effizienz und Kundenzufriedenheit",
+        "erklaerung": "Strukturierte Prozesse führen zu besseren Ergebnissen und zufriedeneren Kunden.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Kompletter Verzicht auf Dokumentation",
+        "erklaerung": "Dokumentation bleibt ein essenzieller Bestandteil der Bearbeitung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Reduzierte Qualität der Lösungen",
+        "erklaerung": "Strukturierte Bearbeitung soll die Qualität verbessern, nicht mindern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2070,
+    "text": "Wie kann die Bearbeitung von Serviceanfragen optimiert werden?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Durch regelmäßige Schulungen und klar definierte Prozesse",
+        "erklaerung": "Schulungen und Prozesse verbessern die Effizienz und Qualität der Bearbeitung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Durch das Ignorieren von Kundenfeedback",
+        "erklaerung": "Feedback ist essenziell für Verbesserungen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Durch die Einstellung neuer Anfragen",
+        "erklaerung": "Neue Anfragen sollten weiterhin angenommen werden, um Kunden zu unterstützen.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

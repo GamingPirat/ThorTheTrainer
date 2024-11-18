@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2011,
+    "text": "Welche Eigenschaft gehört nicht zu den Hauptmerkmalen der Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Benutzerfreundlichkeit",
+        "erklaerung": "Benutzerfreundlichkeit ist ein zentraler Aspekt der Softwarequalität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Wartbarkeit",
+        "erklaerung": "Wartbarkeit ist ein wichtiger Faktor für Softwarequalität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Möglichst hoher Speicherverbrauch",
+        "erklaerung": "Ein hoher Speicherverbrauch ist kein Merkmal guter Softwarequalität.",
+        "isKorrekt": true
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2011,
+    "text": "Was bedeutet Wartbarkeit im Kontext der Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Möglichkeit, Software einfach an neue Anforderungen anzupassen",
+        "erklaerung": "Wartbarkeit beschreibt die einfache Anpassung und Pflege von Software.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Fähigkeit der Software, in jeder Umgebung gleich zu funktionieren",
+        "erklaerung": "Das beschreibt Portabilität, nicht Wartbarkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Reduzierung der Speicheranforderungen",
+        "erklaerung": "Speichermanagement gehört nicht direkt zur Wartbarkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2011,
+    "text": "Welche der folgenden Eigenschaften trägt am meisten zur Zuverlässigkeit einer Software bei?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Minimierung von Fehlern und Ausfällen",
+        "erklaerung": "Zuverlässigkeit wird durch wenige Fehler und Ausfälle definiert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Eine intuitive Benutzeroberfläche",
+        "erklaerung": "Eine intuitive Oberfläche ist wichtig, hat aber keinen direkten Einfluss auf die Zuverlässigkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Eine kurze Entwicklungszeit",
+        "erklaerung": "Die Entwicklungszeit hat keinen direkten Einfluss auf die Zuverlässigkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2011,
+    "text": "Welche Testmethode wird eingesetzt, um die Sicherheit von Software zu bewerten?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Penetrationstests",
+        "erklaerung": "Penetrationstests prüfen die Sicherheit einer Software.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Unit-Tests",
+        "erklaerung": "Unit-Tests prüfen die Funktionalität von Codeeinheiten, nicht die Sicherheit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Usability-Tests",
+        "erklaerung": "Usability-Tests bewerten die Benutzerfreundlichkeit, nicht die Sicherheit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2011,
+    "text": "Warum ist Performanz ein wichtiges Merkmal von Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil eine gute Performanz die Benutzererfahrung verbessert",
+        "erklaerung": "Performanz sorgt für schnelle und reibungslose Abläufe, was die Benutzerzufriedenheit steigert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil Performanz keine Auswirkung auf die Benutzerfreundlichkeit hat",
+        "erklaerung": "Performanz hat direkte Auswirkungen auf die Benutzerfreundlichkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil Performanz irrelevant ist, solange die Software fehlerfrei ist",
+        "erklaerung": "Performanz ist unabhängig von der Fehlerfreiheit wichtig.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2011,
+    "text": "Welche Aussage beschreibt das Konzept der Portabilität in der Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Fähigkeit einer Software, auf verschiedenen Plattformen lauffähig zu sein",
+        "erklaerung": "Portabilität bezieht sich auf die Plattformunabhängigkeit einer Software.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Fähigkeit einer Software, ohne Benutzereingriffe zu funktionieren",
+        "erklaerung": "Das beschreibt Automatisierung, nicht Portabilität.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Fähigkeit, alle Funktionen mit minimalem Speicherbedarf auszuführen",
+        "erklaerung": "Speicherbedarf gehört nicht direkt zur Portabilität.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2011,
+    "text": "Welche Maßnahmen können die Wartbarkeit einer Software verbessern?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Gut strukturierter und dokumentierter Code",
+        "erklaerung": "Guter Code und Dokumentation erleichtern die Wartung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Minimale Testabdeckung",
+        "erklaerung": "Eine niedrige Testabdeckung erschwert die Wartbarkeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Häufige Änderungen im Softwaredesign",
+        "erklaerung": "Ständige Änderungen reduzieren die Wartbarkeit.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2011,
+    "text": "Was beschreibt Benutzbarkeit (Usability) als Aspekt der Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Wie einfach und intuitiv die Software genutzt werden kann",
+        "erklaerung": "Usability misst, wie benutzerfreundlich eine Software ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Wie viele Benutzer die Software gleichzeitig nutzen können",
+        "erklaerung": "Das betrifft Skalierbarkeit, nicht Usability.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Wie schnell die Software auf Anfragen reagiert",
+        "erklaerung": "Das betrifft Performanz, nicht Usability.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2011,
+    "text": "Warum ist Testabdeckung ein wichtiger Faktor für Softwarequalität?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Weil sie sicherstellt, dass ein Großteil des Codes auf Fehler überprüft wurde",
+        "erklaerung": "Hohe Testabdeckung minimiert das Risiko von Fehlern.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Weil sie die Performanz der Software optimiert",
+        "erklaerung": "Testabdeckung hat keinen direkten Einfluss auf die Performanz.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Weil sie die Benutzerfreundlichkeit erhöht",
+        "erklaerung": "Benutzerfreundlichkeit wird nicht direkt durch Testabdeckung beeinflusst.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2011,
+    "text": "Welche Faktoren beeinflussen die Sicherheit einer Software?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Regelmäßige Updates und Patches",
+        "erklaerung": "Updates und Patches schließen Sicherheitslücken und verbessern die Sicherheit.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Minimale Testabdeckung",
+        "erklaerung": "Eine niedrige Testabdeckung erhöht das Risiko von Sicherheitslücken.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Unstrukturierter Code",
+        "erklaerung": "Unstrukturierter Code erhöht die Wahrscheinlichkeit von Sicherheitslücken.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]

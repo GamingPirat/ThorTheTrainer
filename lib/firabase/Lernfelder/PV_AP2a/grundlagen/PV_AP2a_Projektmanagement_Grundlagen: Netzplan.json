@@ -1,0 +1,242 @@
+[
+  {
+    "punkte": 3,
+    "inhalt_id": 2001,
+    "text": "Was ist das Hauptziel eines Netzplans im Projektmanagement?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die zeitliche Abfolge von Projektaktivitäten darzustellen",
+        "erklaerung": "Ein Netzplan zeigt die Reihenfolge und Abhängigkeiten der Aktivitäten.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Ressourcenverteilung im Projekt zu planen",
+        "erklaerung": "Ressourcenplanung ist nicht der Hauptfokus eines Netzplans.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Projektfortschritt zu überwachen",
+        "erklaerung": "Die Überwachung gehört zur Projektkontrolle, nicht zur Netzplanung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2001,
+    "text": "Welche Methode wird häufig verwendet, um Netzpläne zu erstellen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Critical Path Method (CPM)",
+        "erklaerung": "CPM ist eine häufig genutzte Methode zur Netzplanerstellung.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die SWOT-Analyse",
+        "erklaerung": "SWOT-Analysen dienen der Strategieentwicklung, nicht der Netzplanung.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Das Gantt-Diagramm",
+        "erklaerung": "Ein Gantt-Diagramm ist eine andere Methode zur Darstellung, aber kein Netzplan.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2001,
+    "text": "Was beschreibt der kritische Pfad in einem Netzplan?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die längste Abfolge von Aktivitäten ohne Pufferzeit",
+        "erklaerung": "Der kritische Pfad gibt die längste Kette ohne Puffer an und bestimmt die Projektdauer.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die kürzeste Abfolge von Aktivitäten mit maximalem Puffer",
+        "erklaerung": "Das beschreibt nicht den kritischen Pfad.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Alle Aktivitäten, die keinen direkten Einfluss auf den Projektabschluss haben",
+        "erklaerung": "Der kritische Pfad enthält alle Aktivitäten, die den Abschluss beeinflussen.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2001,
+    "text": "Welche Information wird in einem Netzplan durch Knoten dargestellt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Einzelne Aktivitäten oder Arbeitspakete",
+        "erklaerung": "Knoten repräsentieren Aktivitäten oder Arbeitspakete im Netzplan.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Meilensteine im Projekt",
+        "erklaerung": "Meilensteine werden nicht durch Knoten, sondern durch Symbole dargestellt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Verantwortlichkeiten im Team",
+        "erklaerung": "Knoten beschreiben keine Verantwortlichkeiten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2001,
+    "text": "Was zeigt die Dauer einer Aktivität in einem Netzplan an?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Die Zeit, die zur Durchführung der Aktivität benötigt wird",
+        "erklaerung": "Die Dauer gibt an, wie lange eine Aktivität dauert.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Die Reihenfolge der Aktivitäten",
+        "erklaerung": "Die Reihenfolge wird durch Pfeile oder Abhängigkeiten dargestellt, nicht durch die Dauer.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die Verfügbarkeit der Ressourcen",
+        "erklaerung": "Die Dauer sagt nichts über Ressourcenverfügbarkeit aus.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2001,
+    "text": "Welche Bedeutung hat die früheste Anfangszeit in einem Netzplan?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den frühesten Zeitpunkt, an dem eine Aktivität starten kann",
+        "erklaerung": "Die früheste Anfangszeit definiert, wann eine Aktivität frühestens beginnen kann.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den Zeitpunkt, an dem das Projekt abgeschlossen sein muss",
+        "erklaerung": "Das beschreibt nicht die früheste Anfangszeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Den Puffer zwischen zwei Aktivitäten",
+        "erklaerung": "Pufferzeiten sind separate Werte, keine Anfangszeiten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2001,
+    "text": "Warum ist es wichtig, Abhängigkeiten zwischen Aktivitäten in einem Netzplan darzustellen?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Um sicherzustellen, dass Aktivitäten in der richtigen Reihenfolge durchgeführt werden",
+        "erklaerung": "Abhängigkeiten zeigen, welche Reihenfolge erforderlich ist.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Um die Anzahl der Projektressourcen zu minimieren",
+        "erklaerung": "Abhängigkeiten beziehen sich auf Reihenfolge, nicht auf Ressourcen.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Um die Projektlaufzeit zu verlängern",
+        "erklaerung": "Abhängigkeiten haben das Ziel, Prozesse zu optimieren, nicht zu verlängern.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 2,
+    "inhalt_id": 2001,
+    "text": "Welche Aussage beschreibt den Unterschied zwischen einem Netzplan und einem Gantt-Diagramm?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ein Netzplan zeigt Abhängigkeiten zwischen Aktivitäten, ein Gantt-Diagramm visualisiert Zeitpläne",
+        "erklaerung": "Das ist der grundlegende Unterschied zwischen beiden Werkzeugen.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Netzplan wird für Ressourcenmanagement genutzt, ein Gantt-Diagramm für Kostenkontrolle",
+        "erklaerung": "Beide Werkzeuge haben unterschiedliche Ziele, aber dies ist nicht korrekt.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Netzplan berücksichtigt keine Reihenfolge der Aktivitäten",
+        "erklaerung": "Der Netzplan basiert auf der Reihenfolge der Aktivitäten.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 3,
+    "inhalt_id": 2001,
+    "text": "Welche Aufgabe hat die späteste Endzeit in einem Netzplan?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Den spätesten Zeitpunkt, an dem eine Aktivität enden darf, ohne den Projektzeitplan zu gefährden",
+        "erklaerung": "Die späteste Endzeit legt fest, bis wann eine Aktivität abgeschlossen sein muss.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Den frühesten Zeitpunkt, an dem eine Aktivität beginnen kann",
+        "erklaerung": "Das beschreibt die früheste Anfangszeit, nicht die späteste Endzeit.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Die optimale Ressourcenzuteilung",
+        "erklaerung": "Die späteste Endzeit hat keinen direkten Bezug zur Ressourcenzuteilung.",
+        "isKorrekt": false
+      }
+    ]
+  },
+  {
+    "punkte": 1,
+    "inhalt_id": 2001,
+    "text": "Welches der folgenden Elemente wird in einem Netzplan nicht direkt berücksichtigt?",
+    "version": 1,
+    "nummer": 1,
+    "antworten": [
+      {
+        "text": "Ressourcenbedarf",
+        "erklaerung": "Netzpläne fokussieren sich auf Zeit und Reihenfolge, nicht auf Ressourcenbedarf.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Abhängigkeiten zwischen Aktivitäten",
+        "erklaerung": "Abhängigkeiten sind ein Kernelement des Netzplans.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Dauer der Aktivitäten",
+        "erklaerung": "Die Dauer ist ein wesentliches Element im Netzplan.",
+        "isKorrekt": false
+      }
+    ]
+  }
+]
