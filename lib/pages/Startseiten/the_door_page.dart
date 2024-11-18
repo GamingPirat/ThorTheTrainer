@@ -8,6 +8,7 @@ import 'package:lernplatform/main.dart';
 import 'package:lernplatform/globals/moving_background.dart';
 import 'package:lernplatform/pages/Startseiten/startseite.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class TheDoorPage extends StatefulWidget {
@@ -144,18 +145,29 @@ class _TheDoorPageState extends State<TheDoorPage> {
                       ElevatedButton(
                         onPressed: _isButtonEnabled
                             ? () async {
-                          bool flag = await Session().enter(_controller.text);
-                          if(flag) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => const Startseite()),
-                            );
-                          } else {
-                            setState(() {
-                              _textfield_frame_color = Colors.red;
-                            });
+                          // Überprüfe, ob der Nutzer bereits zugestimmt hat
+                          bool consent = await _hasGivenCookieConsent();
+
+                          // Zeige den Dialog nur, wenn keine Zustimmung vorliegt
+                          if (!consent) {
+                            await _showCookieConsentDialog();
                           }
+
+                          // Wenn der Nutzer zugestimmt hat, weiter zur nächsten Seite
+                          if (await _hasGivenCookieConsent()) {
+                            bool flag = await Session().enter(_controller.text);
+                            if (flag) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const Startseite()),
+                              );
+                            } else {
+                              setState(() {
+                                _textfield_frame_color = Colors.red;
+                              });
+                            }
                           }
+                        }
                             : null,
                         child: const Text('Betreten'),
                       ),
@@ -166,7 +178,7 @@ class _TheDoorPageState extends State<TheDoorPage> {
                           color: Colors.black.withOpacity(0.7), // Hintergrundfarbe mit Transparenz
                           borderRadius: BorderRadius.circular(36), // Abgerundete Ecken
                         ),
-                        child: Column(
+                        child: const Column(
                           children: [
                             Text(
                               "Allgemeine Geschäftsbedingungen:",
@@ -209,6 +221,58 @@ class _TheDoorPageState extends State<TheDoorPage> {
     _controller.dispose();
     super.dispose();
   }
+
+
+  Future<void> _showCookieConsentDialog() async {
+    bool consentGiven = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Cookie-Zustimmung"),
+          content: Text(
+            "Deine Fortschritte auf der Seite werden in deinen Cookies gespeichert.",
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(false); // Ablehnung
+              },
+              child: Text("Ablehnen"),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(true); // Zustimmung
+              },
+              child: Text("Zustimmen"),
+            ),
+          ],
+        );
+      },
+    ) ?? false;
+
+    // Speichere die Zustimmung
+    if (consentGiven) {
+      await _storeCookieConsent(true);
+    }
+  }
+
+  Future<void> _storeCookieConsent(bool consent) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('cookieConsent', consent);
+  }
+
+  Future<bool> _hasGivenCookieConsent() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool('cookieConsent') ?? false;
+  }
+
+  Future<void> _checkCookieConsent() async {
+    bool consentGiven = await _hasGivenCookieConsent();
+    if (!consentGiven) {
+      await _showCookieConsentDialog();
+    }
+  }
+
 }
 
 
