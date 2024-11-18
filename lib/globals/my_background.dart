@@ -113,6 +113,8 @@ class MyCustomPainter extends CustomPainter {
     Colors.brown,
     Colors.grey,
     Colors.blueGrey,
+    Colors.black,
+    Colors.white,
   ];
 
   MyCustomPainter(

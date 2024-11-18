@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/firabase/firebase_options.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
-import 'package:lernplatform/globals/moving_background.dart';
+import 'package:lernplatform/globals/parallax_background.dart';
 import 'package:lernplatform/pages/Startseiten/the_door_page.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';

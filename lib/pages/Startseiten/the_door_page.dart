@@ -5,11 +5,9 @@ import 'package:lernplatform/firabase/firebase_options.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
 import 'package:lernplatform/main.dart';
-import 'package:lernplatform/globals/moving_background.dart';
 import 'package:lernplatform/pages/Startseiten/startseite.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 
 class TheDoorPage extends StatefulWidget {
   const TheDoorPage({super.key});
@@ -36,7 +34,6 @@ class _TheDoorPageState extends State<TheDoorPage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,38 +41,36 @@ class _TheDoorPageState extends State<TheDoorPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-        "Thor The Trainer",
-        style: TextStyle(
-          fontSize: 48, // Große Schrift für mehr Präsenz
-          fontWeight: FontWeight.bold,
-          letterSpacing: 2.0,
-          foreground: Paint()
-            ..shader = LinearGradient(
-              begin: Alignment.topLeft, // Anfang des Farbverlaufs
-              end: Alignment.bottomRight, // Ende des Farbverlaufs
-              colors: <Color>[
-                Colors.purpleAccent,
-                Colors.purpleAccent,
-                Colors.grey[500]!,
-              ],
-            ).createShader(Rect.fromLTWH(0.0, 0.0, 300.0, 50.0)),
-          shadows: [
-            Shadow(
-              offset: Offset(4.0, 4.0), // Versatz des Schattens
-              blurRadius: 6.0, // Weiche Kanten
-              color: Colors.black45, // Dunkler Schatten für Tiefe
-            ),
-            Shadow(
-              offset: Offset(-4.0, -4.0), // Highlight-Effekt in entgegengesetzter Richtung
-              blurRadius: 6.0,
-              color: Colors.blueAccent.withOpacity(0.9), // Leichte Farb-Tiefe
-            ),
-          ],
+          "Thor The Trainer",
+          style: TextStyle(
+            fontSize: 48,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            foreground: Paint()
+              ..shader = LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: <Color>[
+                  Colors.purpleAccent,
+                  Colors.purpleAccent,
+                  Colors.grey[500]!,
+                ],
+              ).createShader(Rect.fromLTWH(0.0, 0.0, 300.0, 50.0)),
+            shadows: [
+              Shadow(
+                offset: Offset(4.0, 4.0),
+                blurRadius: 6.0,
+                color: Colors.black45,
+              ),
+              Shadow(
+                offset: Offset(-4.0, -4.0),
+                blurRadius: 6.0,
+                color: Colors.blueAccent.withOpacity(0.9),
+              ),
+            ],
+          ),
         ),
       ),
-
-
-    ),
       body: SingleChildScrollView(
         child: Row(
           children: [
@@ -87,44 +82,44 @@ class _TheDoorPageState extends State<TheDoorPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // SizedBox(height: 16),
                       const Text(
                         "Erlebe den Alltag eines IT-Mitarbeiters in dem du zum Teil dämliche Fragen deiner Kollegen und Kunden beantwortest.",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
+                        style: TextStyle(fontSize: 20),
                       ),
-                      SizedBox(height: 80,),
+                      SizedBox(height: 80),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.2), // Weißer Hintergrund mit 20% Deckkraft
-                            borderRadius: BorderRadius.circular(8), // Optional: Abgerundete Ecken
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: TextField(
                             controller: _controller,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8), // Abgerundeter Rahmen
-                                borderSide: BorderSide(color: Colors.blue, width: 2), // Rahmenfarbe und Breite
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide:
+                                BorderSide(color: Colors.blue, width: 2),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(8),
-                                borderSide: BorderSide(color: Colors.white, width: 2), // Rahmen bei Fokus
+                                borderSide:
+                                BorderSide(color: Colors.white, width: 2),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(8),
-                                borderSide: BorderSide(color: _textfield_frame_color, width: 1), // Rahmen ohne Fokus
+                                borderSide: BorderSide(
+                                    color: _textfield_frame_color, width: 1),
                               ),
                               labelText: 'Zugangsschlüssel',
-                              labelStyle: TextStyle(color: Colors.white), // Farbe des Labels
+                              labelStyle: TextStyle(color: Colors.white),
                             ),
-                            style: TextStyle(color: Colors.white), // Textfarbe
+                            style: TextStyle(color: Colors.white),
                           ),
-                        )
+                        ),
                       ),
-                      SizedBox(height: 32,),
+                      SizedBox(height: 32),
                       Row(
                         children: [
                           Spacer(),
@@ -141,7 +136,7 @@ class _TheDoorPageState extends State<TheDoorPage> {
                           Spacer(),
                         ],
                       ),
-                      SizedBox(height: 32,),
+                      SizedBox(height: 32),
                       ElevatedButton(
                         onPressed: _isButtonEnabled
                             ? () async {
@@ -155,11 +150,14 @@ class _TheDoorPageState extends State<TheDoorPage> {
 
                           // Wenn der Nutzer zugestimmt hat, weiter zur nächsten Seite
                           if (await _hasGivenCookieConsent()) {
-                            bool flag = await Session().enter(_controller.text);
+                            bool flag = await Session()
+                                .enter(_controller.text);
                             if (flag) {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const Startseite()),
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                    const Startseite()),
                               );
                             } else {
                               setState(() {
@@ -175,8 +173,8 @@ class _TheDoorPageState extends State<TheDoorPage> {
                       Container(
                         padding: EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.7), // Hintergrundfarbe mit Transparenz
-                          borderRadius: BorderRadius.circular(36), // Abgerundete Ecken
+                          color: Colors.black.withOpacity(0.7),
+                          borderRadius: BorderRadius.circular(36),
                         ),
                         child: const Column(
                           children: [
@@ -191,12 +189,14 @@ class _TheDoorPageState extends State<TheDoorPage> {
                               "Diese App befindet sich noch in der Alpha-Testphase. "
                                   "Nur ausgewählte Personen (im Folgenden Alpha-Tester genannt) "
                                   "erhalten einen speziellen Zugangsschlüssel, um die App "
-                                  "testen und durch aktive Beiträge erweitern zu können.\nAlle automatisch generierten Daten der "
+                                  "testen und durch aktive Beiträge erweitern zu können.\n"
+                                  "Alle automatisch generierten Daten der "
                                   "Alpha-Tester (im Folgenden Fortschritt genannt) werden "
                                   "lokal auf dem Endgerät des Alpha-Testers im sogenannten "
                                   "LocalStorage bzw. in den Cookies gespeichert.\n"
                                   "Alpha-Tester können aktiv Feedback geben und dem Entwickler"
-                                  " Content (im weiteren Quizfragen genannt) zur Verfügung stellen.\nMit dem Einreichen von Feedback oder "
+                                  " Content (im weiteren Quizfragen genannt) zur Verfügung stellen.\n"
+                                  "Mit dem Einreichen von Feedback oder "
                                   "Quizfragen erklärt sich der Alpha-Tester einverstanden, dass "
                                   "diese vom Entwickler für kommerzielle Zwecke genutzt werden"
                                   " dürfen, ohne dass daraus Forderungen abgeleitet werden können.",
@@ -209,7 +209,7 @@ class _TheDoorPageState extends State<TheDoorPage> {
                 ),
               ),
             ),
-            Expanded(child: Container(),),
+            Expanded(child: Container()),
           ],
         ),
       ),
@@ -222,10 +222,10 @@ class _TheDoorPageState extends State<TheDoorPage> {
     super.dispose();
   }
 
-
   Future<void> _showCookieConsentDialog() async {
-    bool consentGiven = await showDialog<bool>(
+    bool? consentGiven = await showDialog<bool>(
       context: context,
+      barrierDismissible: false, // Nutzer muss explizit reagieren
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text("Cookie-Zustimmung"),
@@ -248,49 +248,44 @@ class _TheDoorPageState extends State<TheDoorPage> {
           ],
         );
       },
-    ) ?? false;
+    );
 
-    // Speichere die Zustimmung
-    if (consentGiven) {
+    if (consentGiven == true) {
       await _storeCookieConsent(true);
+      print("Cookie-Zustimmung gegeben.");
+    } else {
+      print("Cookie-Zustimmung abgelehnt.");
     }
   }
 
   Future<void> _storeCookieConsent(bool consent) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('cookieConsent', consent);
+    print("Cookie-Zustimmung gespeichert: $consent");
   }
 
   Future<bool> _hasGivenCookieConsent() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getBool('cookieConsent') ?? false;
+    bool? consent = prefs.getBool('cookieConsent');
+    print("Cookie-Zustimmung vorhanden: $consent");
+    return consent ?? false;
   }
-
-  Future<void> _checkCookieConsent() async {
-    bool consentGiven = await _hasGivenCookieConsent();
-    if (!consentGiven) {
-      await _showCookieConsentDialog();
-    }
-  }
-
 }
 
-
-
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  FirebaseFirestore.instance.settings = Settings( // macht alles kostengünstiger
+  FirebaseFirestore.instance.settings = Settings(
     persistenceEnabled: true,
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
   );
   runApp(
-      ChangeNotifierProvider(
-        create: (_) => ThemeNotifier(), // Für das Theme
-        child: MyApp(),
-      )
+    ChangeNotifierProvider(
+      create: (_) => ThemeNotifier(),
+      child: MyApp(),
+    ),
   );
 }
 
@@ -302,16 +297,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: TextTheme(
-          bodyLarge: TextStyle(color: Colors.white), // Große Textkörper
-          bodyMedium: TextStyle(color: Colors.white), // Standard-Textkörper
-          bodySmall: TextStyle(color: Colors.white), // Kleine Texte
-          headlineLarge: TextStyle(color: Colors.white), // Große Titel
-          headlineMedium: TextStyle(color: Colors.white), // Mittlere Titel
-          headlineSmall: TextStyle(color: Colors.white), // Kleine Titel
+          bodyLarge: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.white),
+          bodySmall: TextStyle(color: Colors.white),
+          headlineLarge: TextStyle(color: Colors.white),
+          headlineMedium: TextStyle(color: Colors.white),
+          headlineSmall: TextStyle(color: Colors.white),
         ),
       ),
-
-      // home: ParallaxZoomBackground(image_path: 'assets/phone_like.png', child: TheDoorPage(),),
       home: TheDoorPage(),
     );
   }
