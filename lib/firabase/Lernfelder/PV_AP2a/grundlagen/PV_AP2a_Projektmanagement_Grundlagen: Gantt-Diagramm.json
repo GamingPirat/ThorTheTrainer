@@ -28,7 +28,7 @@
     "inhalt_id": 2002,
     "text": "Welche Information wird durch die Balken eines Gantt-Diagramms dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Die Dauer einer Aktivität innerhalb eines definierten Zeitraums",
@@ -52,7 +52,7 @@
     "inhalt_id": 2002,
     "text": "Welche Achsen werden in einem Gantt-Diagramm verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Vertikale Achse für Aktivitäten, horizontale Achse für Zeit",
@@ -76,7 +76,7 @@
     "inhalt_id": 2002,
     "text": "Welche Aufgabe wird durch Meilensteine in einem Gantt-Diagramm unterstützt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die Definition von wichtigen Projektabschnitten",
@@ -100,7 +100,7 @@
     "inhalt_id": 2002,
     "text": "Welche Vorteile bietet ein Gantt-Diagramm bei der Projektplanung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Es bietet eine klare Übersicht über den Zeitplan und die Abhängigkeiten von Aktivitäten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2002,
     "text": "Wie können Abhängigkeiten zwischen Aktivitäten im Gantt-Diagramm dargestellt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Durch Pfeile, die Aktivitäten miteinander verbinden",
@@ -148,7 +148,7 @@
     "inhalt_id": 2002,
     "text": "Warum ist die regelmäßige Aktualisierung eines Gantt-Diagramms wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Um sicherzustellen, dass der Zeitplan die tatsächlichen Fortschritte widerspiegelt",
@@ -172,7 +172,7 @@
     "inhalt_id": 2002,
     "text": "Welche Art von Projekten profitieren besonders von einem Gantt-Diagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Projekte mit klar definierten Zeitrahmen und Aktivitäten",
@@ -196,7 +196,7 @@
     "inhalt_id": 2002,
     "text": "Welche Einschränkungen hat ein Gantt-Diagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Es kann bei sehr komplexen Projekten unübersichtlich werden",
@@ -220,33 +220,23 @@
     "inhalt_id": 2002,
     "text": "Was unterscheidet ein Gantt-Diagramm von einem Netzplan?",
     "version": 1,
-    "nummer": 1,
-    "antworten": [{
-      "punkte": 1,
-      "inhalt_id": 2002,
-      "text": "Was unterscheidet ein Gantt-Diagramm von einem Netzplan?",
-      "version": 1,
-      "nummer": 1,
-      "antworten": [
-        {
-          "text": "Ein Gantt-Diagramm visualisiert die zeitliche Planung, ein Netzplan zeigt Abhängigkeiten",
-          "erklaerung": "Gantt-Diagramme legen den Fokus auf die zeitliche Darstellung, während Netzpläne die Abhängigkeiten hervorheben.",
-          "isKorrekt": true
-        },
-        {
-          "text": "Ein Gantt-Diagramm wird nur für kleine Projekte genutzt, ein Netzplan nur für große",
-          "erklaerung": "Beide können unabhängig von der Projektgröße eingesetzt werden.",
-          "isKorrekt": false
-        },
-        {
-          "text": "Ein Netzplan berücksichtigt keine Aktivitäten, ein Gantt-Diagramm schon",
-          "erklaerung": "Beide Werkzeuge berücksichtigen Aktivitäten, aber auf unterschiedliche Weise.",
-          "isKorrekt": false
-        }
-      ]
-    }
-
+    "nummer": 10,
+    "antworten": [
+      {
+        "text": "Ein Gantt-Diagramm visualisiert die zeitliche Planung, ein Netzplan zeigt Abhängigkeiten",
+        "erklaerung": "Gantt-Diagramme legen den Fokus auf die zeitliche Darstellung, während Netzpläne die Abhängigkeiten hervorheben.",
+        "isKorrekt": true
+      },
+      {
+        "text": "Ein Gantt-Diagramm wird nur für kleine Projekte genutzt, ein Netzplan nur für große",
+        "erklaerung": "Beide können unabhängig von der Projektgröße eingesetzt werden.",
+        "isKorrekt": false
+      },
+      {
+        "text": "Ein Netzplan berücksichtigt keine Aktivitäten, ein Gantt-Diagramm schon",
+        "erklaerung": "Beide Werkzeuge berücksichtigen Aktivitäten, aber auf unterschiedliche Weise.",
+        "isKorrekt": false
+      }
+    ]
   }
-}
-
-
+]

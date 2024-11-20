@@ -28,7 +28,7 @@
     "inhalt_id": 2064,
     "text": "Welche Arten von Firewalls gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Netzwerkbasierte und hostbasierte Firewalls.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2064,
     "text": "Was ist eine Stateful Firewall?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Eine Firewall, die den Zustand von Netzwerkverbindungen überwacht.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2064,
     "text": "Welche Daten werden von einer Firewall geprüft?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Header-Informationen der Datenpakete.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2064,
     "text": "Was ist ein DMZ (Demilitarized Zone) in Verbindung mit Firewalls?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein isolierter Bereich für öffentlich zugängliche Server.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2064,
     "text": "Welche Technik wird von Firewalls verwendet, um Datenpakete zu blockieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Regelbasierte Filterung.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2064,
     "text": "Welche Firewall-Technologie analysiert den Inhalt von Datenpaketen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Deep Packet Inspection (DPI).",
@@ -172,7 +172,7 @@
     "inhalt_id": 2064,
     "text": "Welche Ports können von einer Firewall blockiert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Beliebige Ports basierend auf den Firewall-Regeln.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2064,
     "text": "Was ist der Unterschied zwischen einer Hardware- und einer Software-Firewall?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Eine Hardware-Firewall ist ein separates Gerät, eine Software-Firewall läuft auf einem Host.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2064,
     "text": "Welche Schwachstellen kann eine Firewall nicht verhindern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Phishing-Angriffe.",

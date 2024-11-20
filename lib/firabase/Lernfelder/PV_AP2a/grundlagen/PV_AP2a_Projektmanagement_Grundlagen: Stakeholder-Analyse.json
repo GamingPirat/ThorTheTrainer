@@ -27,7 +27,7 @@
     "punkte": 2,
     "inhalt_id": 2000,
     "text": "Warum ist es wichtig, Stakeholder frühzeitig in ein Projekt einzubinden?",
-    "version": 1,
+    "version": 2,
     "nummer": 1,
     "antworten": [
       {
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Welche Gruppen zählen typischerweise zu den Stakeholdern eines Projekts?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Projektmitarbeiter, Kunden und Zulieferer",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein wichtiger Schritt bei der Identifikation von Stakeholdern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die Analyse ihrer Erwartungen und Einflussmöglichkeiten",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Warum sollten Stakeholder regelmäßig über den Projektfortschritt informiert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Um ihr Vertrauen zu gewinnen und zu halten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Wie können Stakeholder nach ihrer Relevanz priorisiert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Nach ihrem Einfluss und Interesse am Projekt",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Welche Methode wird häufig genutzt, um Stakeholder zu analysieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Die Stakeholder-Matrix",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Wie sollten Stakeholder mit hohem Einfluss und niedrigem Interesse behandelt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Regelmäßig informiert werden",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein typisches Risiko, wenn Stakeholder nicht angemessen berücksichtigt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Verzögerungen und Widerstand im Projektverlauf",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aussage beschreibt eine proaktive Stakeholder-Kommunikation?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Stakeholder werden regelmäßig und frühzeitig über Projektentwicklungen informiert",

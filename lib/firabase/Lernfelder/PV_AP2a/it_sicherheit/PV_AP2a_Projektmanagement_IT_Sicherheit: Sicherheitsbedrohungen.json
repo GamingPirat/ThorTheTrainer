@@ -28,7 +28,7 @@
     "inhalt_id": 2032,
     "text": "Welche Gefahr geht von 'Phishing' aus?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Die Täuschung von Nutzern, um sensible Informationen wie Passwörter zu stehlen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2032,
     "text": "Was ist der Zweck von Ransomware?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Die Verschlüsselung von Daten, um ein Lösegeld für die Entschlüsselung zu fordern",
@@ -76,7 +76,7 @@
     "inhalt_id": 2032,
     "text": "Was beschreibt ein 'Zero-Day-Angriff'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Einen Angriff, der eine unbekannte Sicherheitslücke ausnutzt",
@@ -100,7 +100,7 @@
     "inhalt_id": 2032,
     "text": "Was ist ein Botnetz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein Netzwerk infizierter Geräte, die von einem Angreifer gesteuert werden",
@@ -124,7 +124,7 @@
     "inhalt_id": 2032,
     "text": "Welche Gefahr geht von Social Engineering aus?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Manipulation von Personen, um vertrauliche Informationen zu erhalten",
@@ -148,7 +148,7 @@
     "inhalt_id": 2032,
     "text": "Welche Bedrohung stellt ein Brute-Force-Angriff dar?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Das systematische Ausprobieren von Passwörtern, um Zugang zu erhalten",
@@ -172,7 +172,7 @@
     "inhalt_id": 2032,
     "text": "Was ist ein Man-in-the-Middle-Angriff?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Ein Angriff, bei dem ein Angreifer Daten zwischen zwei Parteien abfängt und manipuliert",
@@ -196,7 +196,7 @@
     "inhalt_id": 2032,
     "text": "Was versteht man unter Spyware?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Schadsoftware, die Informationen über Benutzer ohne deren Wissen sammelt",
@@ -220,7 +220,7 @@
     "inhalt_id": 2032,
     "text": "Welche Gefahr stellt eine SQL-Injection dar?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ein Angriff, bei dem schädlicher SQL-Code in eine Datenbankanfrage eingeschleust wird",

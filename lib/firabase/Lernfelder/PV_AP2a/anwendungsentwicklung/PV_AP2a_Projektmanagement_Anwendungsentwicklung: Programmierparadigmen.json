@@ -28,7 +28,7 @@
     "inhalt_id": 2052,
     "text": "Welches der folgenden ist ein Beispiel für ein Programmierparadigma?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Objektorientierte Programmierung",
@@ -52,7 +52,7 @@
     "inhalt_id": 2052,
     "text": "Was ist das Hauptmerkmal der funktionalen Programmierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Die Verwendung von unveränderlichen Daten und Funktionen als erste Klasse",
@@ -76,7 +76,7 @@
     "inhalt_id": 2052,
     "text": "Welche Programmiersprachen sind typischerweise objektorientiert?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Java, C++ und Python",
@@ -100,7 +100,7 @@
     "inhalt_id": 2052,
     "text": "Was unterscheidet imperative von deklarativen Programmierparadigmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Im imperativen Paradigma wird beschrieben, wie etwas zu tun ist; im deklarativen, was zu tun ist",
@@ -124,7 +124,7 @@
     "inhalt_id": 2052,
     "text": "Was ist ein Vorteil der objektorientierten Programmierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Fördert Wiederverwendbarkeit durch Vererbung und Modularität",
@@ -148,7 +148,7 @@
     "inhalt_id": 2052,
     "text": "Was ist das Ziel der prozeduralen Programmierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Zerlegung eines Problems in kleinere, überschaubare Prozeduren oder Funktionen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2052,
     "text": "Welche Programmierparadigmen unterstützt Python?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Objektorientierte, prozedurale und funktionale Programmierung",
@@ -196,7 +196,7 @@
     "inhalt_id": 2052,
     "text": "Was ist ein Nachteil der funktionalen Programmierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Kann bei großen Projekten schwerer zu lesen und zu debuggen sein",
@@ -220,7 +220,7 @@
     "inhalt_id": 2052,
     "text": "Was beschreibt das Konzept von Vererbung in der objektorientierten Programmierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Eine Klasse kann Eigenschaften und Methoden einer anderen Klasse übernehmen",

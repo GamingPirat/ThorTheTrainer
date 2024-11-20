@@ -28,7 +28,7 @@
     "inhalt_id": 2000,
     "text": "Welche Darstellung wird typischerweise für einen Projektstrukturplan verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Eine hierarchische Baumstruktur",
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Was ist der Nutzen eines gut erstellten PSP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Er ermöglicht eine klare Zuordnung von Verantwortlichkeiten",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Welche Elemente gehören zu einem typischen Projektstrukturplan?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Teilaufgaben, Arbeitspakete und Meilensteine",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Was sollte ein Arbeitspaket im PSP enthalten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Eine klar definierte Aufgabe mit Verantwortlichkeiten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aussage beschreibt einen typischen Fehler bei der Erstellung eines PSP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Arbeitspakete werden zu groß oder zu allgemein definiert",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Welche Ebene des PSP enthält die ausführbaren Arbeitspakete?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Die unterste Ebene des PSP",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist es wichtig, dass Arbeitspakete im PSP keine Überschneidungen aufweisen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Um Doppelarbeit zu vermeiden",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Welche Vorteile bietet ein PSP bei der Projektplanung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Er erleichtert die Kommunikation und Verantwortlichkeitsverteilung",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Was unterscheidet den PSP von einem Gantt-Diagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Der PSP dient der Strukturierung von Aufgaben, während das Gantt-Diagramm der Zeitplanung dient",

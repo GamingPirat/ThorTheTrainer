@@ -28,7 +28,7 @@
     "inhalt_id": 2059,
     "text": "Welche Symbole werden in Anwendungsfalldiagrammen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Ovale für Anwendungsfälle und Strichmännchen für Akteure",
@@ -52,7 +52,7 @@
     "inhalt_id": 2059,
     "text": "Wofür werden Anwendungsfalldiagramme typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Beschreibung von Anforderungen und Benutzerinteraktionen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2059,
     "text": "Was beschreibt ein Akteur in einem Anwendungsfalldiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Eine Person, ein System oder eine Rolle, die mit dem System interagiert",
@@ -100,7 +100,7 @@
     "inhalt_id": 2059,
     "text": "Welche Beziehungen können zwischen Anwendungsfällen existieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Include, Extend und Generalisierung",
@@ -124,7 +124,7 @@
     "inhalt_id": 2059,
     "text": "Was bedeutet die Beziehung 'Include' in einem Anwendungsfalldiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Ein Anwendungsfall beinhaltet den Ablauf eines anderen Anwendungsfalls",
@@ -148,7 +148,7 @@
     "inhalt_id": 2059,
     "text": "Wie wird die Extend-Beziehung in einem Anwendungsfalldiagramm verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Ein Anwendungsfall erweitert optional den Ablauf eines anderen Anwendungsfalls",
@@ -172,7 +172,7 @@
     "inhalt_id": 2059,
     "text": "Welche Software wird häufig zur Erstellung von Anwendungsfalldiagrammen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
@@ -196,7 +196,7 @@
     "inhalt_id": 2059,
     "text": "Was ist der Unterschied zwischen einem primären und einem sekundären Akteur?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Ein primärer Akteur interagiert direkt mit dem System, ein sekundärer unterstützt den Ablauf",
@@ -220,7 +220,7 @@
     "inhalt_id": 2059,
     "text": "Welche Einschränkungen hat ein Anwendungsfalldiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Es beschreibt keine detaillierte Logik oder Abläufe",

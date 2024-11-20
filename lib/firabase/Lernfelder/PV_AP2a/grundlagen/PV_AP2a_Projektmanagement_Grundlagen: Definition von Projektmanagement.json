@@ -28,7 +28,7 @@
     "inhalt_id": 2000,
     "text": "Welche Elemente gehören zur klassischen Projektmanagement-Trias?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Zeit, Budget, Ressourcen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Was versteht man unter Ressourcenmanagement im Projektmanagement?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Die genaue Planung und Kontrolle des Projektbudgets",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist die Zieldefinition im Projektmanagement wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Um die Kommunikation im Team zu verbessern",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Was bedeutet es, ein Projektziel „spezifisch“ zu formulieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Das Ziel sollte detailliert und klar verständlich sein",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aufgabe hat das Projektmanagement bezüglich des Zeitrahmens?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Projektlaufzeit möglichst kurz zu halten",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein typisches Anzeichen dafür, dass ein Projekt über das Budget hinausläuft?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Ein Teammitglied benötigt mehr Zeit für eine Aufgabe",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist es wichtig, den Projektumfang klar zu definieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Um sicherzustellen, dass die Ressourcen effizient genutzt werden",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Welche Rolle spielt die Kommunikation bei der Definition von Projektzielen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Sie hilft, die Ziele mit allen Beteiligten zu teilen und Missverständnisse zu vermeiden",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Was ist die Hauptaufgabe des Projektmanagers bei der Ressourcenkoordination?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Mehr Ressourcen als benötigt bereitzustellen",

@@ -28,7 +28,7 @@
     "inhalt_id": 2012,
     "text": "Welche der folgenden Testarten gehört nicht zu den klassischen Softwaretests?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Integrationstests",
@@ -52,7 +52,7 @@
     "inhalt_id": 2012,
     "text": "Was wird bei einem Unit-Test überprüft?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Einzelne Code-Einheiten oder Module",
@@ -76,7 +76,7 @@
     "inhalt_id": 2012,
     "text": "Welche Testmethode wird verwendet, um die Performance einer Software zu bewerten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Lasttests",
@@ -100,7 +100,7 @@
     "inhalt_id": 2012,
     "text": "Was ist der Zweck von Regressionstests?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Sicherzustellen, dass Änderungen keine neuen Fehler verursachen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2012,
     "text": "Welche Teststrategie beinhaltet das Testen ohne Vorkenntnisse des Quellcodes?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Black-Box-Testing",
@@ -148,7 +148,7 @@
     "inhalt_id": 2012,
     "text": "Warum sind automatisierte Tests wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Weil sie Tests effizienter und wiederholbar machen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2012,
     "text": "Welche Aussage beschreibt Smoke-Tests korrekt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie prüfen grundlegende Funktionalitäten einer Software",
@@ -196,7 +196,7 @@
     "inhalt_id": 2012,
     "text": "Welche Tests werden häufig vor einem Release durchgeführt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Akzeptanztests",
@@ -220,7 +220,7 @@
     "inhalt_id": 2012,
     "text": "Was ist ein Ziel von End-to-End-Tests?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Die gesamte Benutzerinteraktion vom Anfang bis zum Ende zu überprüfen",

@@ -28,7 +28,7 @@
     "inhalt_id": 2085,
     "text": "Welche Bestandteile hat ein Entscheidungsbaum?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Knoten, Äste und Blätter.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2085,
     "text": "Wofür wird ein Entscheidungsbaum in der Datenanalyse verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Visualisierung von Entscheidungsprozessen und Datenklassifikation.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2085,
     "text": "Wie wird eine Entscheidung in einem Entscheidungsbaum dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Durch einen Knoten mit ausgehenden Ästen.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2085,
     "text": "Welche Vorteile bietet ein Entscheidungsbaum?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Einfache Visualisierung komplexer Entscheidungsprozesse.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2085,
     "text": "Wie werden die Ergebnisse eines Entscheidungsbaums dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Als Blätter am Ende der Äste.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2085,
     "text": "Welche Algorithmen werden zur Erstellung von Entscheidungsbäumen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "CART (Classification and Regression Trees) und ID3.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2085,
     "text": "Welche Nachteile können Entscheidungsbäume haben?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie können anfällig für Überanpassung (Overfitting) sein.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2085,
     "text": "Welche Anwendungsmöglichkeiten haben Entscheidungsbäume?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Datenklassifikation, Entscheidungsfindung und Prognosen.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2085,
     "text": "Warum ist die Wahl der Kriterien für die Knoten eines Entscheidungsbaums wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Die Kriterien beeinflussen die Genauigkeit und Aussagekraft des Baums.",

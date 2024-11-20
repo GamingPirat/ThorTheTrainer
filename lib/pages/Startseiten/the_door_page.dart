@@ -72,149 +72,145 @@ class _TheDoorPageState extends State<TheDoorPage> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Row(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(
-              flex: 2,
-              child: Padding(
-                padding: const EdgeInsets.all(32.0),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Text(
-                        "Erlebe den Alltag eines IT-Mitarbeiters in dem du zum Teil dämliche Fragen deiner Kollegen und Kunden beantwortest.",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(height: 80),
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.2),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: TextField(
-                            controller: _controller,
-                            decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8),
-                                borderSide:
-                                BorderSide(color: Colors.blue, width: 2),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8),
-                                borderSide:
-                                BorderSide(color: Colors.white, width: 2),
-                              ),
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8),
-                                borderSide: BorderSide(
-                                    color: _textfield_frame_color, width: 1),
-                              ),
-                              labelText: 'Zugangsschlüssel',
-                              labelStyle: TextStyle(color: Colors.white),
-                            ),
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 32),
-                      Row(
-                        children: [
-                          Spacer(),
-                          Checkbox(
-                            value: _isChecked,
-                            onChanged: (value) {
-                              setState(() {
-                                _isChecked = value ?? false;
-                                _checkInput();
-                              });
-                            },
-                          ),
-                          Text("AGB gelesen und akzeptieren"),
-                          Spacer(),
-                        ],
-                      ),
-                      SizedBox(height: 32),
-                      ElevatedButton(
-                        onPressed: _isButtonEnabled
-                            ? () async {
-                          // Überprüfe, ob der Nutzer bereits zugestimmt hat
-                          bool consent = await _hasGivenCookieConsent();
-
-                          // Zeige den Dialog nur, wenn keine Zustimmung vorliegt
-                          if (!consent) {
-                            await _showCookieConsentDialog();
-                          }
-
-                          // Wenn der Nutzer zugestimmt hat, weiter zur nächsten Seite
-                          if (await _hasGivenCookieConsent()) {
-                            bool flag = await Session()
-                                .enter(_controller.text);
-                            if (flag) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                    const Startseite()),
-                              );
-                            } else {
-                              setState(() {
-                                _textfield_frame_color = Colors.red;
-                              });
-                            }
-                          }
-                        }
-                            : null,
-                        child: const Text('Betreten'),
-                      ),
-                      SizedBox(height: 64),
-                      Container(
-                        padding: EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.7),
-                          borderRadius: BorderRadius.circular(36),
-                        ),
-                        child: const Column(
-                          children: [
-                            Text(
-                              "Allgemeine Geschäftsbedingungen:",
-                              style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              "Diese App befindet sich noch in der Alpha-Testphase. "
-                                  "Nur ausgewählte Personen (im Folgenden Alpha-Tester genannt) "
-                                  "erhalten einen speziellen Zugangsschlüssel, um die App "
-                                  "testen und durch aktive Beiträge erweitern zu können.\n"
-                                  "Alle automatisch generierten Daten der "
-                                  "Alpha-Tester (im Folgenden Fortschritt genannt) werden "
-                                  "lokal auf dem Endgerät des Alpha-Testers im sogenannten "
-                                  "LocalStorage bzw. in den Cookies gespeichert.\n"
-                                  "Alpha-Tester können aktiv Feedback geben und dem Entwickler"
-                                  " Content (im weiteren Quizfragen genannt) zur Verfügung stellen.\n"
-                                  "Mit dem Einreichen von Feedback oder "
-                                  "Quizfragen erklärt sich der Alpha-Tester einverstanden, dass "
-                                  "diese vom Entwickler für kommerzielle Zwecke genutzt werden"
-                                  " dürfen, ohne dass daraus Forderungen abgeleitet werden können.",
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+            const Text(
+              "Erlebe den Alltag eines IT-Mitarbeiters in dem du zum Teil dämliche Fragen deiner Kollegen und Kunden beantwortest.",
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 80),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: TextField(
+                  controller: _controller,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(color: Colors.blue, width: 2),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(color: Colors.white, width: 2),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(
+                          color: _textfield_frame_color, width: 1),
+                    ),
+                    labelText: 'Zugangsschlüssel',
+                    labelStyle: TextStyle(color: Colors.white),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
-            Expanded(child: Container()),
+            SizedBox(height: 32),
+            Row(
+              children: [
+                Spacer(),
+                Checkbox(
+                  value: _isChecked,
+                  onChanged: (value) {
+                    setState(() {
+                      _isChecked = value ?? false;
+                      _checkInput();
+                    });
+                  },
+                ),
+                Text("AGB gelesen und akzeptieren"),
+                Spacer(),
+              ],
+            ),
+            ElevatedButton(
+              onPressed: _isButtonEnabled
+                  ? () async {
+                bool consent = await _hasGivenCookieConsent();
+                if (!consent) {
+                  await _showCookieConsentDialog();
+                }
+
+                if (await _hasGivenCookieConsent()) {
+                  bool flag = await Session().enter(_controller.text);
+                  if (flag) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Startseite()),
+                    );
+                  } else {
+                    setState(() {
+                      _textfield_frame_color = Colors.red;
+                    });
+                  }
+                }
+              }
+                  : null,
+              child: const Text('Betreten'),
+            ),
+            SizedBox(height: 32),
+
+            // Button zum Löschen der gespeicherten Daten
+            ElevatedButton(
+              onPressed: () async {
+                final prefs = await SharedPreferences.getInstance();
+                await prefs.clear();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text("LocalStorage erfolgreich gelöscht!")),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
+              child: const Text('Alle gespeicherten Daten löschen'),
+            ),
+
+            SizedBox(height: 64),
+            Container(
+              padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.7),
+                borderRadius: BorderRadius.circular(36),
+              ),
+              child: const Column(
+                children: [
+                  Text(
+                    "Allgemeine Geschäftsbedingungen:",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "Diese App befindet sich noch in der Entwicklungsphase. "
+                        "Nur ausgewählte Personen (im Folgenden Alpha-Tester genannt) "
+                        "erhalten einen speziellen Zugangsschlüssel, um die App "
+                        "testen und durch aktive Beiträge erweitern zu können.\n"
+                        "Alle automatisch generierten Daten der "
+                        "Alpha-Tester (im Folgenden Fortschritt genannt) werden "
+                        "lokal auf dem Endgerät des Alpha-Testers im sogenannten "
+                        "LocalStorage bzw. in den Cookies gespeichert.\n"
+                        "Alpha-Tester können aktiv Feedback geben und dem Entwickler"
+                        " Content (im weiteren Quizfragen genannt) zur Verfügung stellen.\n"
+                        "Mit dem Einreichen von Feedback oder "
+                        "Quizfragen erklärt sich der Alpha-Tester einverstanden, dass "
+                        "diese vom Entwickler für kommerzielle Zwecke genutzt werden"
+                        " dürfen, ohne dass daraus Forderungen abgeleitet werden können.",
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
+
 
   @override
   void dispose() {

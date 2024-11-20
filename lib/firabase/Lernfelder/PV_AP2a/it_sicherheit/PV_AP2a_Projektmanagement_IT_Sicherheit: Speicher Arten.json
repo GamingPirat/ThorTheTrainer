@@ -28,7 +28,7 @@
     "inhalt_id": 2045,
     "text": "Welche Speicherart wird für den kurzfristigen Zugriff auf Daten verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "RAM",
@@ -52,7 +52,7 @@
     "inhalt_id": 2045,
     "text": "Was beschreibt den Unterschied zwischen SSD und HDD?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "SSDs verwenden Flash-Speicher, HDDs mechanische Platten",
@@ -76,7 +76,7 @@
     "inhalt_id": 2045,
     "text": "Welche Speicherart wird typischerweise für BIOS verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "ROM",
@@ -100,7 +100,7 @@
     "inhalt_id": 2045,
     "text": "Was ist ein Cache-Speicher?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein schneller Zwischenspeicher für häufig genutzte Daten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2045,
     "text": "Welche Speicherart ist schneller: RAM oder Festplatte?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "RAM",
@@ -148,7 +148,7 @@
     "inhalt_id": 2045,
     "text": "Was ist der Hauptvorteil von SSDs gegenüber HDDs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Höhere Geschwindigkeit und geringere Zugriffszeiten",
@@ -172,7 +172,7 @@
     "inhalt_id": 2045,
     "text": "Welche Speicherart wird für Daten-Backups bevorzugt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Externe Festplatten oder Cloud-Speicher",
@@ -196,7 +196,7 @@
     "inhalt_id": 2045,
     "text": "Was bedeutet 'flüchtiger Speicher'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Speicher, der seine Daten verliert, wenn die Stromversorgung unterbrochen wird",
@@ -220,7 +220,7 @@
     "inhalt_id": 2045,
     "text": "Welche Speichertechnologie wird in USB-Sticks verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Flash-Speicher",

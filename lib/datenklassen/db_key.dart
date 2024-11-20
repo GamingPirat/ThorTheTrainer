@@ -1,3 +1,5 @@
+import 'package:lernplatform/globals/print_colors.dart';
+
 class AlphaKey {
   String key;
   List<String> lernfelder;
@@ -5,12 +7,16 @@ class AlphaKey {
   AlphaKey({required this.key, required this.lernfelder});
 
   factory AlphaKey.fromJson(Map<String, dynamic> json) {
+    print_Cyan("AlphaKey.fromJson: Eingangsdaten: $json");
     List<String> lernfelderList = [];
     if (json['lernfelder'] != null) {
       try {
-        lernfelderList = (json['lernfelder'] as Map<String, dynamic>).keys.toList();
-      } catch (e) {
-        print("Fehler beim Konvertieren von lernfelder (Schlüssel): ${e.toString()}");
+        // Prüfen, ob lernfelder eine Liste ist und konvertieren
+        lernfelderList = List<String>.from(json['lernfelder']);
+        print_Cyan("AlphaKey.fromJson: Verarbeitete lernfelder: $lernfelderList");
+      } catch (e, stackTrace) {
+        print_Cyan("AlphaKey.fromJson: Fehler beim Konvertieren von lernfelder: $e");
+        print_Cyan("AlphaKey.fromJson: StackTrace: $stackTrace");
       }
     }
     return AlphaKey(
@@ -19,10 +25,7 @@ class AlphaKey {
     );
   }
 
-  @override
-  String toString() {
-    return 'AlphaKey{key: $key, lernfelder: $lernfelder}';
-  }
+
 
 
 }

@@ -28,7 +28,7 @@
     "inhalt_id": 2065,
     "text": "Welche Maßnahmen gehören zur Anwendungssicherheit?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Regelmäßige Sicherheitsupdates und Patches.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2065,
     "text": "Was ist eine Schwachstellenanalyse in Bezug auf Anwendungen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Identifikation potenzieller Sicherheitslücken.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2065,
     "text": "Welche Sicherheitsbedrohung wird durch Input Validation verhindert?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "SQL-Injection.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2065,
     "text": "Was ist der Zweck eines Penetrationstests bei der Anwendungssicherheit?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Simulation von Angriffen, um Schwachstellen zu finden.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2065,
     "text": "Was beschreibt das Prinzip des Least Privilege?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Benutzer und Prozesse erhalten nur die minimal notwendigen Rechte.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2065,
     "text": "Welche Rolle spielt die Verschlüsselung bei der Sicherung von Anwendungen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Schutz sensibler Daten während der Übertragung und Speicherung.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2065,
     "text": "Was ist der Zweck eines Web Application Firewalls (WAF)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Schutz vor Angriffen wie Cross-Site Scripting und SQL-Injection.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2065,
     "text": "Wie können sichere Passwörter für Anwendungen gewährleistet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch die Verwendung von starken Passwortrichtlinien.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2065,
     "text": "Welche Funktion hat ein Security-Token in der Anwendungssicherheit?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Authentifizierung und Autorisierung von Benutzern.",

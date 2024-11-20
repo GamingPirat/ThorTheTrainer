@@ -1,50 +1,72 @@
 
 
+import 'package:lernplatform/globals/print_colors.dart';
+
 class LogTeilnehmer {
-  List<LogLernfeld> meineLernfelder;
+  List<LogLernfeld> logLernfelder;
   int sterne;
 
-  LogTeilnehmer({required this.sterne, required this.meineLernfelder});
+  LogTeilnehmer({required this.sterne, required this.logLernfelder});
 
   Map<String, dynamic> toJson() => {
     'sterne': sterne,
-    'meineLernfelder': meineLernfelder.map((lernfeld) => lernfeld.toJson()).toList(),
+    'logLernfelder': logLernfelder.map((lernfeld) => lernfeld.toJson()).toList(),
   };
 
-  factory LogTeilnehmer.fromJson(Map<String, dynamic> json) => LogTeilnehmer(
-    sterne: json['sterne'] ?? 0,
-    meineLernfelder: ((json['meineLernfelder'] as List) ?? [])
-        .map((item) => LogLernfeld.fromJson(item))
-        .toList(),
-  );
+  factory LogTeilnehmer.fromJson(Map<String, dynamic> json) {
+    print_Blue("LogTeilnehmer.fromJson: Eingangsdaten: $json");
+    print_Blue("LogTeilnehmer.fromJson:Typ von meineLernfelder: ${json['meineLernfelder']?.runtimeType}");
+    print_Blue("LogTeilnehmer.fromJson: Inhalt von meineLernfelder: ${json['meineLernfelder']}");
+
+    try {
+      return LogTeilnehmer(
+        sterne: json['sterne'] ?? 0,
+        logLernfelder: ((json['logLernfelder'] as List?) ?? [])
+            .map((item) => LogLernfeld.fromJson(item))
+            .toList(),
+      );
+    } catch (e, stackTrace) {
+      print_Red("LogTeilnehmer.fromJson: Fehler: $e");
+      print_Red("StackTrace: $stackTrace");
+      rethrow;
+    }
+  }
+
 
   @override
   String toString() {
-    final lernfelderString = meineLernfelder.map((lernfeld) => lernfeld.toString()).join("\n");
-    return "${cyan}Teilnehmer{ sterne: $sterne, meineLernfelder:\n$lernfelderString\n ${cyan}}$resetColor";
+    final lernfelderString = logLernfelder.map((lernfeld) => lernfeld.toString()).join("\n");
+    return "${cyan}Teilnehmer{ sterne: $sterne, logLernfelder:\n$lernfelderString\n ${cyan}}$resetColor";
   }
 }
 
 class LogLernfeld {
   int id;
-  List<LogKompetenzbereich> meineThemen;
+  List<LogKompetenzbereich> logKompetenzbereiche;
 
-  LogLernfeld(this.id, this.meineThemen);
+  LogLernfeld(this.id, this.logKompetenzbereiche);
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'kompetenzbereiche': meineThemen.map((kompetenzbereich) => kompetenzbereich.toJson()).toList(),
+    'logKompetenzbereiche': logKompetenzbereiche.map((kompetenzbereich) => kompetenzbereich.toJson()).toList(),
   };
 
-  factory LogLernfeld.fromJson(Map<String, dynamic> json) => LogLernfeld(
-    json['id'],
-    (json['kompetenzbereiche'] as List).map((item) => LogKompetenzbereich.fromJson(item)).toList(),
-  );
+  factory LogLernfeld.fromJson(Map<String, dynamic> json) {
+    print("LogLernfeld.fromJson: Eingangsdaten: $json");
+    print("LogLernfeld.fromJson: Typ von meineThemen: ${json['meineThemen']?.runtimeType}");
+    print("LogLernfeld.fromJson: Inhalt von meineThemen: ${json['meineThemen']}");
+
+    return LogLernfeld(
+      json['id'],
+      (json['logKompetenzbereiche'] as List).map((item) => LogKompetenzbereich.fromJson(item)).toList(),
+    );
+  }
+
 
   @override
   String toString() {
-    final kompetenzbereiche_ = meineThemen.map((thema) => thema.toString()).join("\n");
-    return "${green}  LogLernfeld{ id: $id, kompetenzbereiche:\n$kompetenzbereiche_\n   ${green}}$resetColor";
+    final kompetenzbereiche_ = logKompetenzbereiche.map((thema) => thema.toString()).join("\n");
+    return "${green}  LogLernfeld{ id: $id, logKompetenzbereiche:\n$kompetenzbereiche_\n   ${green}}$resetColor";
   }
 }
 
@@ -62,12 +84,17 @@ class LogKompetenzbereich {
     'logInhalte': logInhalte.map((logInhalt) => logInhalt.toJson()).toList(),
   };
 
-  factory LogKompetenzbereich.fromJson(Map<String, dynamic> json) => LogKompetenzbereich(
-    id: json['id'],
-    logInhalte: (json['logInhalte'] as List)
-        .map((item) => LogInhalt.fromJson(item))
-        .toList(),
-  );
+  factory LogKompetenzbereich.fromJson(Map<String, dynamic> json) {
+    print("LogKompetenzbereich.fromJson: Eingangsdaten: $json");
+    print("Typ von logInhalte: ${json['logInhalte']?.runtimeType}");
+    print("Inhalt von logInhalte: ${json['logInhalte']}");
+
+    return LogKompetenzbereich(
+      id: json['id'],
+      logInhalte: (json['logInhalte'] as List).map((item) => LogInhalt.fromJson(item)).toList(),
+    );
+  }
+
 
   @override
   String toString() {
@@ -93,11 +120,20 @@ class LogInhalt {
     'richtigBeantworteteFragen': richtigBeantworteteFragen,
   };
 
-  factory LogInhalt.fromJson(Map<String, dynamic> json) => LogInhalt(
-    id: json['id'],
-    falschBeantworteteFragen: List<String>.from(json['falschBeantworteteFragen']),
-    richtigBeantworteteFragen: List<String>.from(json['richtigBeantworteteFragen']),
-  );
+  factory LogInhalt.fromJson(Map<String, dynamic> json) {
+    print("LogInhalt.fromJson: Eingangsdaten: $json");
+    print("Typ von falschBeantworteteFragen: ${json['falschBeantworteteFragen']?.runtimeType}");
+    print("Inhalt von falschBeantworteteFragen: ${json['falschBeantworteteFragen']}");
+    print("Typ von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']?.runtimeType}");
+    print("Inhalt von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']}");
+
+    return LogInhalt(
+      id: json['id'],
+      falschBeantworteteFragen: List<String>.from(json['falschBeantworteteFragen'] ?? []),
+      richtigBeantworteteFragen: List<String>.from(json['richtigBeantworteteFragen'] ?? []),
+    );
+  }
+
 
   @override
   String toString() {

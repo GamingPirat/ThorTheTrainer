@@ -28,7 +28,7 @@
     "inhalt_id": 2054,
     "text": "Welche grundlegenden Prinzipien hat die OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Kapselung, Vererbung, Polymorphismus",
@@ -52,7 +52,7 @@
     "inhalt_id": 2054,
     "text": "Was bedeutet Kapselung in der OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Das Verbergen von Implementierungsdetails durch Zugriffsbeschränkungen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2054,
     "text": "Was versteht man unter Vererbung in der OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die Möglichkeit, Eigenschaften und Methoden von einer Basisklasse zu erben",
@@ -100,7 +100,7 @@
     "inhalt_id": 2054,
     "text": "Was beschreibt Polymorphismus in der OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Die Fähigkeit, Methoden in verschiedenen Kontexten unterschiedlich zu implementieren",
@@ -124,7 +124,7 @@
     "inhalt_id": 2054,
     "text": "Was ist ein Vorteil der OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Erhöhte Wartbarkeit durch modularen Code",
@@ -148,7 +148,7 @@
     "inhalt_id": 2054,
     "text": "Was ist ein Interface in der OOP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Eine Sammlung von Methoden ohne Implementierung, die eine Klasse erfüllen muss",
@@ -172,7 +172,7 @@
     "inhalt_id": 2054,
     "text": "Wie wird in OOP die Beziehung 'ist ein' dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Durch Vererbung",
@@ -196,7 +196,7 @@
     "inhalt_id": 2054,
     "text": "Warum sind Konstruktoren in OOP wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Sie initialisieren Objekte, wenn eine Klasse instanziiert wird",
@@ -220,7 +220,7 @@
     "inhalt_id": 2054,
     "text": "Welche Sprache ist besonders für OOP geeignet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Java",

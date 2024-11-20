@@ -28,7 +28,7 @@
     "inhalt_id": 2020,
     "text": "Welche Rolle spielt die Einwilligung im Datenschutz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Sie ist eine rechtliche Grundlage für die Verarbeitung personenbezogener Daten",
@@ -52,7 +52,7 @@
     "inhalt_id": 2020,
     "text": "Was versteht man unter dem Recht auf Vergessenwerden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Das Recht, dass personenbezogene Daten gelöscht werden, wenn sie nicht mehr benötigt werden",
@@ -76,7 +76,7 @@
     "inhalt_id": 2020,
     "text": "Welche Aufgabe hat ein Datenschutzbeauftragter in einem Unternehmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die Überwachung der Einhaltung von Datenschutzrichtlinien",
@@ -100,7 +100,7 @@
     "inhalt_id": 2020,
     "text": "Welche Informationen müssen bei der Erhebung personenbezogener Daten bereitgestellt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Zweck der Verarbeitung und Rechte der Betroffenen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2020,
     "text": "Wann dürfen personenbezogene Daten ohne Einwilligung verarbeitet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Wenn die Verarbeitung zur Erfüllung eines Vertrags erforderlich ist",
@@ -148,7 +148,7 @@
     "inhalt_id": 2020,
     "text": "Welche Art von Daten fällt unter die besonderen Kategorien personenbezogener Daten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Daten zur ethnischen Herkunft oder politischen Meinung",
@@ -172,7 +172,7 @@
     "inhalt_id": 2020,
     "text": "Was ist die Datenschutz-Folgenabschätzung (DSFA)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Eine Analyse zur Bewertung der Risiken einer Datenverarbeitung für Betroffene",
@@ -196,7 +196,7 @@
     "inhalt_id": 2020,
     "text": "Welche Strafe kann bei Verstößen gegen die DSGVO verhängt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Geldbußen von bis zu 20 Millionen Euro oder 4 % des weltweiten Jahresumsatzes",
@@ -220,7 +220,7 @@
     "inhalt_id": 2020,
     "text": "Was versteht man unter Privacy by Design?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Die Integration von Datenschutzmaßnahmen in den Entwicklungsprozess von Anfang an",

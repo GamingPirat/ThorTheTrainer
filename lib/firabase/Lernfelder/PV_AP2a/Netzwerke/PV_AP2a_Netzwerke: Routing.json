@@ -28,7 +28,7 @@
     "inhalt_id": 2063,
     "text": "Welche Information wird in einer Routing-Tabelle gespeichert?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Netzwerkziel, Subnetzmaske und nächster Hop.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2063,
     "text": "Welche Arten von Routing gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Statisches Routing und dynamisches Routing.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2063,
     "text": "Was ist der Unterschied zwischen statischem und dynamischem Routing?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Statisches Routing erfordert manuelle Konfiguration, dynamisches Routing erfolgt automatisch.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2063,
     "text": "Welche Protokolle werden für dynamisches Routing verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "RIP, OSPF und BGP.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2063,
     "text": "Welches Routing-Protokoll basiert auf dem Bellman-Ford-Algorithmus?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "RIP (Routing Information Protocol).",
@@ -148,7 +148,7 @@
     "inhalt_id": 2063,
     "text": "Welche Aufgabe hat ein Router in einem Netzwerk?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Weiterleitung von Datenpaketen zwischen verschiedenen Netzwerken.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2063,
     "text": "Was ist die Funktion von NAT (Network Address Translation) bei Routern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Übersetzung von privaten IP-Adressen in öffentliche IP-Adressen.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2063,
     "text": "Welche Metrik wird bei OSPF zur Bestimmung des besten Pfades verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Kosten (Cost).",
@@ -220,7 +220,7 @@
     "inhalt_id": 2063,
     "text": "Was ist eine Default Route in einer Routing-Tabelle?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ein Standardpfad für Pakete, deren Ziel nicht explizit bekannt ist.",

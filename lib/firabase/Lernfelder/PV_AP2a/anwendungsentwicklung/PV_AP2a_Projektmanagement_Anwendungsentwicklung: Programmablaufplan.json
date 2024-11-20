@@ -28,7 +28,7 @@
     "inhalt_id": 2057,
     "text": "Welches Symbol wird in einem PAP für eine Entscheidung verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Ein Rhombus (Raute)",
@@ -52,7 +52,7 @@
     "inhalt_id": 2057,
     "text": "Wofür wird ein PAP hauptsächlich verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Visualisierung von Abläufen und Prozessen in der Programmierung",
@@ -76,7 +76,7 @@
     "inhalt_id": 2057,
     "text": "Welche Symbole sind typisch für einen PAP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Rechtecke, Rauten und Pfeile",
@@ -100,7 +100,7 @@
     "inhalt_id": 2057,
     "text": "Wie wird ein Start- oder Endpunkt in einem PAP dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Mit einem Oval",
@@ -124,7 +124,7 @@
     "inhalt_id": 2057,
     "text": "Welche Vorteile bietet ein PAP?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Er erleichtert das Verständnis komplexer Abläufe",
@@ -148,7 +148,7 @@
     "inhalt_id": 2057,
     "text": "Was ist der Unterschied zwischen einem PAP und einem Struktogramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Ein PAP ist grafischer, ein Struktogramm ist hierarchischer",
@@ -172,7 +172,7 @@
     "inhalt_id": 2057,
     "text": "Wann wird ein PAP typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "In der Planungsphase eines Programms",
@@ -196,7 +196,7 @@
     "inhalt_id": 2057,
     "text": "Wie wird in einem PAP eine Schleife dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch eine Kombination von Pfeilen und einer Entscheidung",
@@ -220,7 +220,7 @@
     "inhalt_id": 2057,
     "text": "Welche Software kann für die Erstellung eines PAP verwendet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Microsoft Visio, Lucidchart oder Draw.io",

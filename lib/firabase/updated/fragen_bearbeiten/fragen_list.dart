@@ -1,43 +1,65 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:lernplatform/datenklassen/a_db_service_fragen.dart';
+import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/firabase/updated/fragen_bearbeiten/frage_editor.dart';
 
-class FragenList extends StatelessWidget {
+class FragenList extends StatefulWidget {
   final String lernfeldId, kompetenzId, inhaltId;
-  FragenList({required this.lernfeldId, required this.kompetenzId, required this.inhaltId});
 
+  FragenList({
+    required this.lernfeldId,
+    required this.kompetenzId,
+    required this.inhaltId,
+  });
+
+  @override
+  _FragenListState createState() => _FragenListState();
+}
+
+class _FragenListState extends State<FragenList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Fragen für Inhalt $inhaltId")),
-      body: StreamBuilder(
-        stream: FirebaseFirestore.instance
-            .collection('Lernfelder')
-            .doc(lernfeldId)
-            .collection('Kompetenzbereiche')
-            .doc(kompetenzId)
-            .collection('Inhalte')
-            .doc(inhaltId)
-            .collection('Fragen')
-            .snapshots(),
-        builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-          if (!snapshot.hasData) return CircularProgressIndicator();
-          return ListView(
-            children: snapshot.data!.docs.map((frageDoc) {
-              return ExpansionTile(
-                title: Text(frageDoc['text']),
-                children: [
-                  FrageDetailEditor(
-                    frageDoc: frageDoc,
-                    lernfeldId: lernfeldId,
-                    kompetenzId: kompetenzId,
-                    inhaltId: inhaltId,
-                  ),
-                ],
-              );
-            }).toList(),
-          );
-        },
+      appBar: AppBar(
+        title: const Text("Kernfragen"),
+      ),
+      body: Column(
+        children: [
+          Center(
+              child: ElevatedButton(
+                  onPressed: (){},
+                  child: Text("neue Kernfrage")
+              )
+          ),
+          SizedBox(height: 16,),
+          if(true)
+            Text("Hallo"),
+          SizedBox(height: 16,),
+          Expanded(
+            child: FutureBuilder<List<DB_Frage>>(
+              future: FrageDBService().getByInhaltID(int.parse(widget.inhaltId)),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                if (!snapshot.hasData || snapshot.data!.isEmpty) {
+                  return const Center(child: Text("Keine Fragen verfügbar."));
+                }
+
+                final fragen = snapshot.data!;
+
+                return ListView.builder(
+                  itemCount: fragen.length,
+                  itemBuilder: (context, index) {
+                    final frage = fragen[index];
+
+                    return FrageDetailEditor(frage: frage,);
+                  },
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

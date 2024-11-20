@@ -28,7 +28,7 @@
     "inhalt_id": 2033,
     "text": "Welche Kategorie von Schwachstellen betrifft die Benutzerinteraktion?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Menschliche Schwachstellen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2033,
     "text": "Welche Schwachstelle wird durch unzureichende Passwortrichtlinien verursacht?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Eine erhöhte Anfälligkeit für Brute-Force-Angriffe",
@@ -76,7 +76,7 @@
     "inhalt_id": 2033,
     "text": "Was kann eine Schwachstelle in einer Webanwendung verursachen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Unzureichende Eingabevalidierung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2033,
     "text": "Wie können Schwachstellen in Software entdeckt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Durch regelmäßige Sicherheitsüberprüfungen und Penetrationstests",
@@ -124,7 +124,7 @@
     "inhalt_id": 2033,
     "text": "Was versteht man unter einer 'Zero-Day-Schwachstelle'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Eine Schwachstelle, die Angreifer ausnutzen, bevor ein Patch verfügbar ist",
@@ -148,7 +148,7 @@
     "inhalt_id": 2033,
     "text": "Wie kann man Schwachstellen durch menschliche Fehler minimieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Durch regelmäßige Schulungen und Sicherheitsrichtlinien",
@@ -172,7 +172,7 @@
     "inhalt_id": 2033,
     "text": "Welche Schwachstelle kann durch veraltete Software entstehen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Bekannte Sicherheitslücken, die nicht mehr gepatcht wurden",
@@ -196,7 +196,7 @@
     "inhalt_id": 2033,
     "text": "Welche Schwachstellen können durch schlechte Zugangskontrollen entstehen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Unbefugter Zugriff auf vertrauliche Daten",
@@ -220,7 +220,7 @@
     "inhalt_id": 2033,
     "text": "Wie können Schwachstellen in Netzwerken reduziert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Durch die regelmäßige Aktualisierung von Software und Hardware",

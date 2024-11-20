@@ -28,7 +28,7 @@
     "inhalt_id": 2084,
     "text": "Welche Methoden gibt es beim Clustering?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Hierarchisches Clustering und k-Means.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2084,
     "text": "Wofür wird Clustering in der Datenanalyse verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Entdeckung von Mustern und Strukturen in großen Datenmengen.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2084,
     "text": "Was ist der Unterschied zwischen k-Means und hierarchischem Clustering?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "k-Means teilt Daten in eine feste Anzahl von Clustern, hierarchisches Clustering erstellt eine Cluster-Hierarchie.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2084,
     "text": "Welche Metrik wird häufig zur Bestimmung der Clusterzugehörigkeit verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Euklidische Distanz.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2084,
     "text": "Welche Herausforderungen können beim Clustering auftreten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Bestimmung der optimalen Anzahl von Clustern.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2084,
     "text": "Wie wird die Qualität von Clustern bewertet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Durch Metriken wie Silhouettenkoeffizient und Davies-Bouldin-Index.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2084,
     "text": "Welche Softwaretools sind gängig für Clustering?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Python (Scikit-learn), R und MATLAB.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2084,
     "text": "Was ist der Zweck von Clustering in der Kundenanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Segmentierung von Kunden in Gruppen mit ähnlichem Verhalten.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2084,
     "text": "Welche Voraussetzung sollte ein Datensatz für erfolgreiches Clustering erfüllen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Daten sollten vergleichbar und strukturiert sein.",

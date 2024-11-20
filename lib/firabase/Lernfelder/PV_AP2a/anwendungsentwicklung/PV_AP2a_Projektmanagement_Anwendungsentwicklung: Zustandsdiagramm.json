@@ -28,7 +28,7 @@
     "inhalt_id": 20513,
     "text": "Welche Elemente sind typisch für ein Zustandsdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Zustände, Übergänge und Ereignisse",
@@ -52,7 +52,7 @@
     "inhalt_id": 20513,
     "text": "Wofür wird ein Zustandsdiagramm typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Modellierung des Lebenszyklus eines Objekts",
@@ -76,7 +76,7 @@
     "inhalt_id": 20513,
     "text": "Wie wird der Startzustand in einem Zustandsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Durch einen ausgefüllten Kreis",
@@ -100,7 +100,7 @@
     "inhalt_id": 20513,
     "text": "Wie werden Übergänge in einem Zustandsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Durch gerichtete Pfeile zwischen Zuständen",
@@ -124,7 +124,7 @@
     "inhalt_id": 20513,
     "text": "Wie wird der Endzustand in einem Zustandsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Durch einen Kreis mit einem ausgefüllten Punkt in der Mitte",
@@ -148,7 +148,7 @@
     "inhalt_id": 20513,
     "text": "Welche Software wird häufig zur Erstellung von Zustandsdiagrammen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 71,
     "antworten": [
       {
         "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
@@ -172,7 +172,7 @@
     "inhalt_id": 20513,
     "text": "Welche Einschränkungen haben Zustandsdiagramme?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie zeigen keine internen Abläufe oder Datenflüsse",
@@ -196,7 +196,7 @@
     "inhalt_id": 20513,
     "text": "Was ist der Zweck eines Zustandsdiagramms in der Softwareentwicklung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Zur Analyse und Dokumentation von Zustandsänderungen eines Objekts",
@@ -220,7 +220,7 @@
     "inhalt_id": 20513,
     "text": "Wie können parallele Zustände in einem Zustandsdiagramm dargestellt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Durch parallele Regionen innerhalb eines Zustandsdiagramms",

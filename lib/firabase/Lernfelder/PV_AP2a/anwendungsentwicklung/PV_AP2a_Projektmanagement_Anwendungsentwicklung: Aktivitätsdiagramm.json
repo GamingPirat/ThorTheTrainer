@@ -28,7 +28,7 @@
     "inhalt_id": 20511,
     "text": "Welche Symbole sind typisch für ein Aktivitätsdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Aktivitäten (Rechtecke), Entscheidungsknoten (Rauten) und Start-/Endknoten (Ovale)",
@@ -52,7 +52,7 @@
     "inhalt_id": 20511,
     "text": "Wofür wird ein Aktivitätsdiagramm typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Modellierung von Workflows und Geschäftsprozessen",
@@ -76,7 +76,7 @@
     "inhalt_id": 20511,
     "text": "Wie werden parallele Abläufe in einem Aktivitätsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Mit Synchronisationsbalken",
@@ -100,7 +100,7 @@
     "inhalt_id": 20511,
     "text": "Wie wird eine Entscheidung in einem Aktivitätsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Durch eine Raute mit ausgehenden Pfeilen",
@@ -124,7 +124,7 @@
     "inhalt_id": 20511,
     "text": "Welche Beziehung besteht zwischen Aktivitäten in einem Aktivitätsdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Sie sind durch Pfeile verbunden, die die Reihenfolge darstellen",
@@ -148,7 +148,7 @@
     "inhalt_id": 20511,
     "text": "Welche Software wird häufig zur Erstellung von Aktivitätsdiagrammen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Lucidchart, Microsoft Visio oder Enterprise Architect",
@@ -172,7 +172,7 @@
     "inhalt_id": 20511,
     "text": "Wie wird der Startpunkt eines Prozesses in einem Aktivitätsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Durch ein ausgefülltes Oval",
@@ -196,7 +196,7 @@
     "inhalt_id": 20511,
     "text": "Welche Einschränkungen haben Aktivitätsdiagramme?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Sie stellen keine detaillierten technischen Implementierungen dar",
@@ -220,7 +220,7 @@
     "inhalt_id": 20511,
     "text": "Was ist der Zweck von Aktivitätsdiagrammen in der Softwareentwicklung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Zur Analyse und Dokumentation von Prozessen und Abläufen",

@@ -28,7 +28,7 @@
     "inhalt_id": 2081,
     "text": "Welche Typen von Daten werden in der Datenanalyse häufig verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Strukturierte, unstrukturierte und semistrukturierte Daten.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2081,
     "text": "Welche Schritte gehören typischerweise zur Datenanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Datensammlung, Datenbereinigung und Datenvisualisierung.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2081,
     "text": "Welche Werkzeuge werden häufig in der Datenanalyse eingesetzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Excel, Python und Tableau.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2081,
     "text": "Welche Visualisierungsmethoden werden in der Datenanalyse genutzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Balkendiagramme, Liniendiagramme und Streudiagramme.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2081,
     "text": "Welche Rolle spielt die Statistik in der Datenanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Statistik liefert Methoden zur Interpretation und Bewertung von Daten.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2081,
     "text": "Welche Datenbereinigungsschritte sind typisch in der Datenanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Entfernen von Duplikaten und Umgang mit fehlenden Werten.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2081,
     "text": "Welche Probleme können bei der Datenanalyse auftreten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Unvollständige oder inkonsistente Daten.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2081,
     "text": "Was ist der Unterschied zwischen deskriptiver und prädiktiver Datenanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Deskriptive Analysen beschreiben Vergangenes, prädiktive treffen Vorhersagen.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2081,
     "text": "Welche Software wird häufig für Datenanalysen genutzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "R, Python und Power BI.",

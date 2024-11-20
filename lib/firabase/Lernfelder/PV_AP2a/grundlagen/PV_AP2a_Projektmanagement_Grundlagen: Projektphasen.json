@@ -28,7 +28,7 @@
     "inhalt_id": 2000,
     "text": "Welche Phase des Projektmanagements umfasst die Identifikation von Risiken?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Initiierungsphase",
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein typisches Ergebnis der Planungsphase eines Projekts?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Ein detaillierter Projektstrukturplan",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aufgaben stehen in der Durchführungsphase im Vordergrund?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Das Monitoring und die Berichterstattung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Was ist das Hauptziel der Überwachungsphase?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Sicherzustellen, dass das Projekt im Zeit- und Kostenrahmen bleibt",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aufgabe gehört zur Abschlussphase eines Projekts?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Erstellung eines Projektstrukturplans",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Welche Phase umfasst typischerweise die Erstellung eines Zeitplans?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Initiierungsphase",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Welche Dokumentation wird häufig in der Abschlussphase erstellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Projektstrukturplan",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist die Überwachungsphase im Projektmanagement entscheidend?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Um die Kommunikation zwischen Teammitgliedern zu verbessern",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Welche der folgenden Tätigkeiten ist typisch für die Initiierungsphase?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Die Identifikation von Projektzielen",

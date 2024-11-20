@@ -28,7 +28,7 @@
     "inhalt_id": 2050,
     "text": "Welche Art von API wird häufig für Webanwendungen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "REST-API",
@@ -52,7 +52,7 @@
     "inhalt_id": 2050,
     "text": "Was ist ein Vorteil der Verwendung von REST-APIs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Sie sind leichtgewichtig und unterstützen verschiedene Datenformate wie JSON",
@@ -76,7 +76,7 @@
     "inhalt_id": 2050,
     "text": "Was ist eine SOAP-API?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein Protokoll, das XML für den Datenaustausch verwendet",
@@ -100,7 +100,7 @@
     "inhalt_id": 2050,
     "text": "Was bedeutet API-Key-Authentifizierung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Eine Methode, um den Zugriff auf eine API durch einen eindeutigen Schlüssel zu sichern",
@@ -124,7 +124,7 @@
     "inhalt_id": 2050,
     "text": "Welche Datenformate werden typischerweise von APIs unterstützt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "JSON und XML",
@@ -148,7 +148,7 @@
     "inhalt_id": 2050,
     "text": "Was ist eine Middleware-Schnittstelle?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Eine Software, die zwischen Anwendungen und Datenbanken vermittelt",
@@ -172,7 +172,7 @@
     "inhalt_id": 2050,
     "text": "Was bedeutet REST im Kontext von APIs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Representational State Transfer",
@@ -196,7 +196,7 @@
     "inhalt_id": 2050,
     "text": "Warum sind Versionen in APIs wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Um Änderungen in der API zu verwalten, ohne bestehende Anwendungen zu beeinträchtigen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2050,
     "text": "Was ist ein Webhook im Kontext von APIs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ein Mechanismus, der Benachrichtigungen bei bestimmten Ereignissen an eine URL sendet",

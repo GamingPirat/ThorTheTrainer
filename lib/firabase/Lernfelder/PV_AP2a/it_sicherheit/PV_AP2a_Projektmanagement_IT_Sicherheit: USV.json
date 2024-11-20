@@ -28,7 +28,7 @@
     "inhalt_id": 2046,
     "text": "Welche Art von Geräten werden typischerweise an eine USV angeschlossen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Server, Netzwerkspeicher und kritische IT-Infrastruktur",
@@ -52,7 +52,7 @@
     "inhalt_id": 2046,
     "text": "Welche Typen von USV-Systemen gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Offline-, Line-Interactive- und Online-USV",
@@ -76,7 +76,7 @@
     "inhalt_id": 2046,
     "text": "Wie schützt eine Online-USV die angeschlossenen Geräte?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Durch eine kontinuierliche Stromversorgung ohne Umschaltzeit",
@@ -100,7 +100,7 @@
     "inhalt_id": 2046,
     "text": "Was passiert, wenn die Batteriekapazität einer USV erschöpft ist?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Die angeschlossenen Geräte verlieren die Stromversorgung",
@@ -124,7 +124,7 @@
     "inhalt_id": 2046,
     "text": "Welche zusätzlichen Funktionen kann eine moderne USV bieten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Überwachung von Stromqualität und Netzspannung",
@@ -148,7 +148,7 @@
     "inhalt_id": 2046,
     "text": "Wie lange kann eine typische USV Geräte mit Strom versorgen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Je nach Modell und Last wenige Minuten bis mehrere Stunden",
@@ -172,7 +172,7 @@
     "inhalt_id": 2046,
     "text": "Wie oft sollten USV-Batterien gewartet oder ausgetauscht werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Je nach Nutzung alle 3 bis 5 Jahre",
@@ -196,7 +196,7 @@
     "inhalt_id": 2046,
     "text": "Was ist ein Vorteil von Line-Interactive-USVs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Sie können Spannungsschwankungen ohne Umschalten ausgleichen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2046,
     "text": "Warum ist eine USV in Rechenzentren besonders wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Um Datenverluste und Systemausfälle bei Stromausfällen zu vermeiden",

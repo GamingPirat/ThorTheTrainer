@@ -26,7 +26,7 @@ class _SammlungErstellenState extends State<SammlungErstellen> {
       String collectionName = _collectionNameController.text;
 
       // Die JSON-Daten in die angegebene Sammlung einfügen
-      await FirebaseFirestore.instance.collection(collectionName).doc("Lernfeld_6").set(jsonData);
+      await FirebaseFirestore.instance.collection(collectionName).doc("$collectionName").set(jsonData);
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Daten erfolgreich in Sammlung "$collectionName" eingefügt!')),

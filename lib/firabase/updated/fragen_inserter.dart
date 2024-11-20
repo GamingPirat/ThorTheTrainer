@@ -28,6 +28,7 @@ class _FragenInserterState extends State<FragenInserter> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Fragen zur Sammlung $subcollectionName hinzugefügt.')),
       );
+      _jsonController.text = "";
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Ungültiges JSON-Format: $e')),

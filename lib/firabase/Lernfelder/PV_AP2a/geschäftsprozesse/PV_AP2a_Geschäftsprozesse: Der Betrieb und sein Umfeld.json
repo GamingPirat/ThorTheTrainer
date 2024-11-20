@@ -28,7 +28,7 @@
     "inhalt_id": 2072,
     "text": "Welche Rolle spielen Lieferanten im Umfeld eines Betriebs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Lieferanten sichern die Versorgung mit Rohstoffen und Dienstleistungen.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2072,
     "text": "Welche externen Faktoren können den Erfolg eines Betriebs beeinflussen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Kundennachfrage, wirtschaftliche Trends und Wettbewerb",
@@ -76,7 +76,7 @@
     "inhalt_id": 2072,
     "text": "Warum ist es wichtig, die Konkurrenz zu analysieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Um die eigenen Wettbewerbsstrategien zu optimieren",
@@ -100,7 +100,7 @@
     "inhalt_id": 2072,
     "text": "Welche gesetzlichen Rahmenbedingungen beeinflussen das betriebliche Umfeld?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Arbeitsrecht, Steuerrecht und Umweltgesetze",
@@ -124,7 +124,7 @@
     "inhalt_id": 2072,
     "text": "Wie beeinflussen wirtschaftliche Trends das betriebliche Umfeld?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Sie beeinflussen die Nachfrage nach Produkten und Dienstleistungen.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2072,
     "text": "Welche Rolle spielen Kunden im Umfeld eines Betriebs?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Sie sind die Hauptquelle für Einnahmen und bestimmen die Nachfrage.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2072,
     "text": "Warum ist die Einhaltung von Umweltgesetzen für Betriebe wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Um rechtliche Konsequenzen und Imageschäden zu vermeiden.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2072,
     "text": "Wie können Unternehmen ihr Umfeld positiv beeinflussen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch verantwortungsbewusstes Handeln und Kooperation mit Partnern.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2072,
     "text": "Welche Bedeutung hat die regionale Infrastruktur für Betriebe?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Sie beeinflusst die Logistik und Erreichbarkeit des Betriebs.",

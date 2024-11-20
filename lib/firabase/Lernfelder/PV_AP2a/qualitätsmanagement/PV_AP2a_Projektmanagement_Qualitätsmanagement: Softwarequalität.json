@@ -28,7 +28,7 @@
     "inhalt_id": 2011,
     "text": "Was bedeutet Wartbarkeit im Kontext der Softwarequalität?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Die Möglichkeit, Software einfach an neue Anforderungen anzupassen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2011,
     "text": "Welche der folgenden Eigenschaften trägt am meisten zur Zuverlässigkeit einer Software bei?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Minimierung von Fehlern und Ausfällen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2011,
     "text": "Welche Testmethode wird eingesetzt, um die Sicherheit von Software zu bewerten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Penetrationstests",
@@ -100,7 +100,7 @@
     "inhalt_id": 2011,
     "text": "Warum ist Performanz ein wichtiges Merkmal von Softwarequalität?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Weil eine gute Performanz die Benutzererfahrung verbessert",
@@ -124,7 +124,7 @@
     "inhalt_id": 2011,
     "text": "Welche Aussage beschreibt das Konzept der Portabilität in der Softwarequalität?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Fähigkeit einer Software, auf verschiedenen Plattformen lauffähig zu sein",
@@ -148,7 +148,7 @@
     "inhalt_id": 2011,
     "text": "Welche Maßnahmen können die Wartbarkeit einer Software verbessern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Gut strukturierter und dokumentierter Code",
@@ -172,7 +172,7 @@
     "inhalt_id": 2011,
     "text": "Was beschreibt Benutzbarkeit (Usability) als Aspekt der Softwarequalität?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Wie einfach und intuitiv die Software genutzt werden kann",
@@ -196,7 +196,7 @@
     "inhalt_id": 2011,
     "text": "Warum ist Testabdeckung ein wichtiger Faktor für Softwarequalität?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Weil sie sicherstellt, dass ein Großteil des Codes auf Fehler überprüft wurde",
@@ -220,7 +220,7 @@
     "inhalt_id": 2011,
     "text": "Welche Faktoren beeinflussen die Sicherheit einer Software?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Regelmäßige Updates und Patches",

@@ -28,7 +28,7 @@
     "inhalt_id": 2044,
     "text": "Welche Komponenten sind in einem neuronalen Netz enthalten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Eingabeschicht, versteckte Schichten und Ausgabeschicht",
@@ -52,7 +52,7 @@
     "inhalt_id": 2044,
     "text": "Was ist die Aufgabe der Aktivierungsfunktion in einem neuronalen Netz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Sie entscheidet, ob ein Neuron aktiviert wird oder nicht",
@@ -76,7 +76,7 @@
     "inhalt_id": 2044,
     "text": "Welche Art von Problemen können neuronale Netze lösen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Bilderkennung, Sprachverarbeitung und Vorhersagemodelle",
@@ -100,7 +100,7 @@
     "inhalt_id": 2044,
     "text": "Was bedeutet 'Überanpassung' (Overfitting) in neuronalen Netzen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Das Modell passt sich zu stark an die Trainingsdaten an und generalisiert schlecht",
@@ -124,7 +124,7 @@
     "inhalt_id": 2044,
     "text": "Was ist ein 'konvolutionales neuronales Netz' (CNN)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Ein spezieller Typ neuronaler Netze, der für die Verarbeitung von Bildern optimiert ist",
@@ -148,7 +148,7 @@
     "inhalt_id": 2044,
     "text": "Welche Rolle spielen Gewichte in einem neuronalen Netz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Sie bestimmen die Stärke der Verbindung zwischen Neuronen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2044,
     "text": "Was ist ein Vorteil tiefen neuronaler Netze (Deep Learning)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie können komplexe Muster in großen Datenmengen erkennen",
@@ -196,7 +196,7 @@
     "inhalt_id": 2044,
     "text": "Welche Herausforderung besteht bei der Verwendung neuronaler Netze?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Die Notwendigkeit großer Datenmengen und Rechenleistung",
@@ -220,7 +220,7 @@
     "inhalt_id": 2044,
     "text": "Was bedeutet 'Backpropagation' in neuronalen Netzen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ein Algorithmus, der die Gewichte im Netzwerk anpasst, um Fehler zu minimieren",

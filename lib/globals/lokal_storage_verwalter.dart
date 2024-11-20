@@ -9,6 +9,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
   // print_Yellow("ladeOderErzeugeTeilnehmer firestoreLernfelder $firestoreLernfelder");
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
+  print_Yellow("Gespeicherte Daten: ${prefs.getString('ThorTheTrainer')}");
   String storageKey = "ThorTheTrainer";  // Der Key für das LocalStorage
 
   // Lade den Teilnehmer aus dem LocalStorage
@@ -18,12 +19,13 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
   if (gespeicherterTeilnehmer != null) {
     Map<String, dynamic> data = jsonDecode(gespeicherterTeilnehmer);
     LogTeilnehmer returnvalue = LogTeilnehmer.fromJson(data);
+    print("Typ von 'meineLernfelder': ${data['meineLernfelder'].runtimeType}");
 
     // print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer gefunden: $gespeicherterTeilnehmer");
 
     // Abgleich: Fehlende Lernfelder hinzufügen
     for (Lernfeld lernfeld in firestoreLernfelder) {
-      bool lernfeldExists = returnvalue.meineLernfelder.any((logLernfeld) => logLernfeld.id == lernfeld.id);
+      bool lernfeldExists = returnvalue.logLernfelder.any((logLernfeld) => logLernfeld.id == lernfeld.id);
 
       if (!lernfeldExists) {
         LogLernfeld neuesLernfeld = LogLernfeld(
@@ -41,13 +43,14 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
             );
           }).toList(),
         );
-        returnvalue.meineLernfelder.add(neuesLernfeld);
+        returnvalue.logLernfelder.add(neuesLernfeld);
         // print_Yellow("Neues Lernfeld hinzugefügt: ${neuesLernfeld.id}");
       }
     }
 
     // Speichere den aktualisierten Teilnehmer zurück im LocalStorage
     await prefs.setString(storageKey, jsonEncode(returnvalue.toJson()));
+    print_Yellow("LadeOderErzeugeTeilnehmer$returnvalue");
     return returnvalue;
   }
 
@@ -70,7 +73,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
     );
   }).toList();
 
-  LogTeilnehmer neuerTeilnehmer = LogTeilnehmer(sterne: 0, meineLernfelder: logLernfelder);
+  LogTeilnehmer neuerTeilnehmer = LogTeilnehmer(sterne: 0, logLernfelder: logLernfelder);
 
   // Speichere den neuen Teilnehmer im LocalStorage
   await prefs.setString(storageKey, jsonEncode(neuerTeilnehmer.toJson()));
@@ -90,10 +93,10 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   // Erstelle eine JSON-Repräsentation des Teilnehmers
   Map<String, dynamic> teilnehmerData = {
     'sterne': teilnehmer.sterne,
-    'meineLernfelder': teilnehmer.meineLernfelder.map((lernfeld) {
+    'meineLernfelder': teilnehmer.logLernfelder.map((lernfeld) {
       return {
         'id': lernfeld.id,
-        'meineThemen': lernfeld.meineThemen.map((thema) {
+        'meineThemen': lernfeld.logKompetenzbereiche.map((thema) {
           return {
             'id': thema.id,
             'logSubthemen': thema.logInhalte.map((subthema) {
@@ -113,20 +116,23 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   String teilnehmerJson = jsonEncode(teilnehmerData);
   await prefs.setString(teilnehmerKey, teilnehmerJson);
 
-
-  // print_Yellow("speichereTeilnehmer() Teilnehmer gespeichert in Cookies gefunden: \n"
-  //     ""+teilnehmerJson);
-  // print_Green("Teilnehmer gespeichert. LokalStorage sieht jetzt so aus:");
-  // LogTeilnehmer debugghelper = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);
-  // print(debugghelper);
+  // Print den gesamten Inhalt des LocalStorage
+  Map<String, dynamic> allPrefs = prefs.getKeys().fold<Map<String, dynamic>>(
+    {},
+        (map, key) {
+      map[key] = prefs.get(key);
+      return map;
+    },
+  );
+  print(jsonEncode(allPrefs));
 }
 
 
 
 
 Future<void> reseteTeilnehmer() async {
-  for(LogLernfeld lernfeld in Session().user.logTeilnehmer.meineLernfelder)
-    for(LogKompetenzbereich tehma in lernfeld.meineThemen)
+  for(LogLernfeld lernfeld in Session().user.logTeilnehmer.logLernfelder)
+    for(LogKompetenzbereich tehma in lernfeld.logKompetenzbereiche)
       for(LogInhalt subTehma in tehma.logInhalte){
         subTehma.falschBeantworteteFragen = [];
         subTehma.richtigBeantworteteFragen = [];

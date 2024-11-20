@@ -28,7 +28,7 @@
     "inhalt_id": 2001,
     "text": "Welche Methode wird häufig verwendet, um Netzpläne zu erstellen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Die Critical Path Method (CPM)",
@@ -52,7 +52,7 @@
     "inhalt_id": 2001,
     "text": "Was beschreibt der kritische Pfad in einem Netzplan?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Die längste Abfolge von Aktivitäten ohne Pufferzeit",
@@ -76,7 +76,7 @@
     "inhalt_id": 2001,
     "text": "Welche Information wird in einem Netzplan durch Knoten dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Einzelne Aktivitäten oder Arbeitspakete",
@@ -100,7 +100,7 @@
     "inhalt_id": 2001,
     "text": "Was zeigt die Dauer einer Aktivität in einem Netzplan an?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Die Zeit, die zur Durchführung der Aktivität benötigt wird",
@@ -124,7 +124,7 @@
     "inhalt_id": 2001,
     "text": "Welche Bedeutung hat die früheste Anfangszeit in einem Netzplan?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Den frühesten Zeitpunkt, an dem eine Aktivität starten kann",
@@ -148,7 +148,7 @@
     "inhalt_id": 2001,
     "text": "Warum ist es wichtig, Abhängigkeiten zwischen Aktivitäten in einem Netzplan darzustellen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Um sicherzustellen, dass Aktivitäten in der richtigen Reihenfolge durchgeführt werden",
@@ -172,7 +172,7 @@
     "inhalt_id": 2001,
     "text": "Welche Aussage beschreibt den Unterschied zwischen einem Netzplan und einem Gantt-Diagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Ein Netzplan zeigt Abhängigkeiten zwischen Aktivitäten, ein Gantt-Diagramm visualisiert Zeitpläne",
@@ -196,7 +196,7 @@
     "inhalt_id": 2001,
     "text": "Welche Aufgabe hat die späteste Endzeit in einem Netzplan?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Den spätesten Zeitpunkt, an dem eine Aktivität enden darf, ohne den Projektzeitplan zu gefährden",
@@ -220,7 +220,7 @@
     "inhalt_id": 2001,
     "text": "Welches der folgenden Elemente wird in einem Netzplan nicht direkt berücksichtigt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ressourcenbedarf",

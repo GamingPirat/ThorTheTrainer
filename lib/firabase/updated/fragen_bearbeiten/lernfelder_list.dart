@@ -6,97 +6,83 @@ class LernfelderList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Lernfelder")),
-      body: Row(
-        children: [
-          Expanded(
-            child: StreamBuilder(
-              stream: FirebaseFirestore.instance.collection('Lernfelder').snapshots(),
-              builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-                if (!snapshot.hasData) return CircularProgressIndicator();
-                return ListView(
-                  children: snapshot.data!.docs.map((lernfeldDoc) {
-                    return ExpansionTile(
-                      title: Text(lernfeldDoc['name']),
-                      children: [
-                        KompetenzbereicheList(lernfeldId: lernfeldDoc.id),
-                      ],
-                    );
-                  }).toList(),
-                );
-              },
-            ),
-          ),
-        ],
+      appBar: AppBar(title: const Text("Lernfelder")),
+      body: StreamBuilder<QuerySnapshot>(
+        stream: FirebaseFirestore.instance
+            .collection('Lernfelder')
+            .orderBy('name') // Alphabetische Sortierung auf Firestore-Ebene
+            .snapshots(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
+            return const Center(child: Text("Keine Lernfelder verfügbar."));
+          }
+
+          return ListView(
+            children: snapshot.data!.docs.map((lernfeldDoc) {
+              return ExpansionTile(
+                title: Text(lernfeldDoc['name']),
+                children: [
+                  KompetenzbereicheList(lernfeldId: lernfeldDoc.id),
+                ],
+              );
+            }).toList(),
+          );
+        },
       ),
     );
   }
 }
 
-
 class KompetenzbereicheList extends StatelessWidget {
   final String lernfeldId;
-  KompetenzbereicheList({required this.lernfeldId});
+  const KompetenzbereicheList({required this.lernfeldId});
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
+    return StreamBuilder<DocumentSnapshot>(
       stream: FirebaseFirestore.instance
           .collection('Lernfelder')
           .doc(lernfeldId)
-          .collection('Kompetenzbereiche')
           .snapshots(),
-      builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-        if (!snapshot.hasData) return CircularProgressIndicator();
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        if (!snapshot.hasData || !snapshot.data!.exists) {
+          return const Center(child: Text("Keine Kompetenzbereiche verfügbar."));
+        }
+
+        // Sortierung der Kompetenzbereiche lokal
+        var kompetenzbereiche = (snapshot.data!['kompetenzbereiche'] as List<dynamic>);
+        kompetenzbereiche.sort((a, b) => a['name'].compareTo(b['name']));
+
         return Column(
-          children: snapshot.data!.docs.map((kompetenzDoc) {
+          children: kompetenzbereiche.map((kompetenz) {
+            var inhalte = kompetenz['inhalte'] as List<dynamic>;
+            // Sortierung der Inhalte lokal
+            inhalte.sort((a, b) => a['name'].compareTo(b['name']));
+
             return ExpansionTile(
-              title: Text(kompetenzDoc['name']),
-              children: [
-                InhalteList(
-                  lernfeldId: lernfeldId,
-                  kompetenzId: kompetenzDoc.id,
-                ),
-              ],
-            );
-          }).toList(),
-        );
-      },
-    );
-  }
-}
-
-class InhalteList extends StatelessWidget {
-  final String lernfeldId, kompetenzId;
-  InhalteList({required this.lernfeldId, required this.kompetenzId});
-
-  @override
-  Widget build(BuildContext context) {
-    return StreamBuilder(
-      stream: FirebaseFirestore.instance
-          .collection('Lernfelder')
-          .doc(lernfeldId)
-          .collection('Kompetenzbereiche')
-          .doc(kompetenzId)
-          .collection('Inhalte')
-          .snapshots(),
-      builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-        if (!snapshot.hasData) return CircularProgressIndicator();
-        return Column(
-          children: snapshot.data!.docs.map((inhaltDoc) {
-            return ListTile(
-              title: Text(inhaltDoc['name']),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => FragenList(
-                      lernfeldId: lernfeldId,
-                      kompetenzId: kompetenzId,
-                      inhaltId: inhaltDoc.id,
-                    ),
-                  ),
+              title: Text("\t\t\t\t\t${kompetenz['name']}"),
+              children: inhalte.map((inhalt) {
+                return ListTile(
+                  title: Text("\t\t\t\t\t\t\t\t\t\t${inhalt['name']}"),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => FragenList(
+                          lernfeldId: lernfeldId,
+                          kompetenzId: kompetenz['id'].toString(),
+                          inhaltId: inhalt['id'].toString(),
+                        ),
+                      ),
+                    );
+                  },
                 );
-              },
+              }).toList(),
             );
           }).toList(),
         );

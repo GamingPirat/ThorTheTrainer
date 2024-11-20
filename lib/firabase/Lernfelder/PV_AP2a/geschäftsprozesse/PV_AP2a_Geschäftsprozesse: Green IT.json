@@ -28,7 +28,7 @@
     "inhalt_id": 2074,
     "text": "Welche Ziele verfolgt Green IT?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Reduzierung des Energieverbrauchs und der Umweltbelastung durch IT.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2074,
     "text": "Welche Maßnahmen können zur Umsetzung von Green IT beitragen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Einsatz energieeffizienter Hardware und Virtualisierung von Servern.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2074,
     "text": "Warum ist Recycling ein wichtiger Bestandteil von Green IT?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Es reduziert die Umweltbelastung durch Elektroschrott.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2074,
     "text": "Wie kann die Energieeffizienz von Rechenzentren verbessert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Durch den Einsatz moderner Kühltechniken und energiesparender Server.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2074,
     "text": "Welche Rolle spielt Software bei der Green IT?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Effiziente Software reduziert den Energieverbrauch von IT-Systemen.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2074,
     "text": "Welche Vorteile bietet Green IT für Unternehmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Kostenersparnis durch Energieeffizienz und Imageverbesserung.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2074,
     "text": "Was ist der Zweck von Energiemanagementsystemen in der IT?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Überwachung und Optimierung des Energieverbrauchs von IT-Systemen.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2074,
     "text": "Warum sind Schulungen zu Green IT wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Mitarbeiter lernen, wie sie IT nachhaltig einsetzen können.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2074,
     "text": "Wie kann Green IT in Büroumgebungen umgesetzt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Durch die Nutzung von Energiesparmodi und Recycling von Altgeräten.",

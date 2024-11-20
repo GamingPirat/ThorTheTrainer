@@ -28,7 +28,7 @@
     "inhalt_id": 2051,
     "text": "Welche Methode wird häufig verwendet, um den Entwicklungsprozess zu strukturieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Agile Entwicklungsmethoden wie Scrum",
@@ -52,7 +52,7 @@
     "inhalt_id": 2051,
     "text": "Welche Rolle spielt ein Lastenheft in der Planung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Es beschreibt die Anforderungen aus der Sicht des Auftraggebers",
@@ -76,7 +76,7 @@
     "inhalt_id": 2051,
     "text": "Was ist ein Gantt-Diagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein Tool zur Darstellung von Projektzeitplänen",
@@ -100,7 +100,7 @@
     "inhalt_id": 2051,
     "text": "Welche Funktion hat ein Pflichtenheft?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Es beschreibt, wie die Anforderungen technisch umgesetzt werden sollen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2051,
     "text": "Welche Risiken müssen bei der Planung berücksichtigt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Zeitverzug, Budgetüberschreitung und technische Unsicherheiten",
@@ -148,7 +148,7 @@
     "inhalt_id": 2051,
     "text": "Warum ist die Definition von Meilensteinen wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Um Fortschritte im Projekt zu messen und zu kontrollieren",
@@ -172,7 +172,7 @@
     "inhalt_id": 2051,
     "text": "Was ist eine iterative Entwicklungsplanung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Ein Ansatz, bei dem die Software in kleinen, wiederholten Schritten entwickelt wird",
@@ -196,7 +196,7 @@
     "inhalt_id": 2051,
     "text": "Welche Rolle spielt ein Produkt-Backlog in agilen Projekten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Es enthält priorisierte Aufgaben und Anforderungen für das Projekt",
@@ -220,7 +220,7 @@
     "inhalt_id": 2051,
     "text": "Welche Ressourcen müssen bei der Planung berücksichtigt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Personal, Budget und technische Infrastruktur",

@@ -28,7 +28,7 @@
     "inhalt_id": 2030,
     "text": "Was ist der Zweck einer Firewall?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Den Datenverkehr zu überwachen und unautorisierte Zugriffe zu blockieren",
@@ -52,7 +52,7 @@
     "inhalt_id": 2030,
     "text": "Was versteht man unter 'Malware'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Schadsoftware, die entwickelt wurde, um Systeme zu beschädigen oder Daten zu stehlen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2030,
     "text": "Was bedeutet 'Zero-Day-Angriff'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein Angriff, der eine Sicherheitslücke ausnutzt, bevor ein Patch verfügbar ist",
@@ -100,7 +100,7 @@
     "inhalt_id": 2030,
     "text": "Was ist ein Botnetz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein Netzwerk aus infizierten Geräten, die von Angreifern ferngesteuert werden",
@@ -124,7 +124,7 @@
     "inhalt_id": 2030,
     "text": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Ein Virus benötigt eine Wirtsdatei, ein Wurm verbreitet sich selbstständig",
@@ -148,7 +148,7 @@
     "inhalt_id": 2030,
     "text": "Was versteht man unter 'Social Engineering'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Den Versuch, durch Täuschung oder Manipulation an vertrauliche Informationen zu gelangen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2030,
     "text": "Was bedeutet 'Ransomware'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Schadsoftware, die Daten verschlüsselt und ein Lösegeld fordert",
@@ -196,7 +196,7 @@
     "inhalt_id": 2030,
     "text": "Was versteht man unter 'Two-Factor Authentication' (2FA)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Eine Sicherheitsmethode, die zwei unterschiedliche Authentifizierungsfaktoren kombiniert",
@@ -220,7 +220,7 @@
     "inhalt_id": 2030,
     "text": "Was ist eine DDoS-Attacke?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Ein Angriff, der durch massenhafte Anfragen einen Server überlastet",

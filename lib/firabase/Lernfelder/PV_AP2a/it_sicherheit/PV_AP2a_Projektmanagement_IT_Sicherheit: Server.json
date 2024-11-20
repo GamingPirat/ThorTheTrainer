@@ -28,7 +28,7 @@
     "inhalt_id": 2047,
     "text": "Welche Arten von Servern gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Dateiserver, Datenbankserver und Webserver",
@@ -52,7 +52,7 @@
     "inhalt_id": 2047,
     "text": "Welche Hardwarekomponenten sind für einen Server besonders wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Leistungsstarke Prozessoren, viel Arbeitsspeicher und redundante Stromversorgung",
@@ -76,7 +76,7 @@
     "inhalt_id": 2047,
     "text": "Was ist der Unterschied zwischen einem physischen und einem virtuellen Server?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein physischer Server ist eine Hardwareeinheit, ein virtueller Server läuft auf einer virtualisierten Umgebung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2047,
     "text": "Was ist ein 'Blade-Server'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein kompakter Server, der in ein Rack eingeschoben wird",
@@ -124,7 +124,7 @@
     "inhalt_id": 2047,
     "text": "Welche Rolle spielt ein DNS-Server im Netzwerk?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Er übersetzt Domainnamen in IP-Adressen",
@@ -148,7 +148,7 @@
     "inhalt_id": 2047,
     "text": "Was ist ein Vorteil der Virtualisierung von Servern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Effizientere Ressourcennutzung und einfachere Skalierbarkeit",
@@ -172,7 +172,7 @@
     "inhalt_id": 2047,
     "text": "Was versteht man unter einem 'dedizierten Server'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Einen Server, der exklusiv für einen einzelnen Kunden oder eine Anwendung genutzt wird",
@@ -196,7 +196,7 @@
     "inhalt_id": 2047,
     "text": "Welche Funktion hat ein Load Balancer in einem Servernetzwerk?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Verteilung von Netzwerkverkehr auf mehrere Server, um die Last auszugleichen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2047,
     "text": "Warum ist eine redundante Stromversorgung bei Servern wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Um bei einem Ausfall der Hauptstromquelle den Betrieb aufrechtzuerhalten",

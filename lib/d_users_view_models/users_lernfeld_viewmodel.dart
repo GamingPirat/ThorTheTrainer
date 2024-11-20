@@ -19,7 +19,7 @@ class UsersLernfeld extends UsersContentModel {
       : super(id: lernfeld.id, name: lernfeld.name) {
     effect_color = Colors.purpleAccent;
     for (KompetenzBereich thema in lernfeld.kompetenzbereiche) {
-      for (LogKompetenzbereich logThema in logLernfeld.meineThemen) {
+      for (LogKompetenzbereich logThema in logLernfeld.logKompetenzbereiche) {
         if (thema.id == logThema.id) {
           usersThemen.add(
             UsersThema(

@@ -28,7 +28,7 @@
     "inhalt_id": 2070,
     "text": "Warum ist es wichtig, die Priorität einer Serviceanfrage festzulegen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Um sicherzustellen, dass dringende Anfragen zuerst bearbeitet werden",
@@ -52,7 +52,7 @@
     "inhalt_id": 2070,
     "text": "Welche Methode kann verwendet werden, um die Ursache eines Problems zu identifizieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Fehlerdiagnose-Tools oder Ursachenanalyse-Methoden wie 5-Why",
@@ -76,7 +76,7 @@
     "inhalt_id": 2070,
     "text": "Welche Information sollte in der Dokumentation einer Serviceanfrage enthalten sein?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Das Problem, die durchgeführten Schritte und die Lösung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2070,
     "text": "Warum ist es wichtig, den Kunden über den Fortschritt der Bearbeitung zu informieren?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Um Transparenz zu schaffen und das Vertrauen des Kunden zu gewinnen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2070,
     "text": "Was sollte bei der Lösung einer Serviceanfrage beachtet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Lösung sollte nachvollziehbar und nachhaltig sein",
@@ -148,7 +148,7 @@
     "inhalt_id": 2070,
     "text": "Welche Rolle spielt die Priorisierung in der Bearbeitung von Serviceanfragen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Sie ermöglicht eine effiziente Ressourcennutzung",
@@ -172,7 +172,7 @@
     "inhalt_id": 2070,
     "text": "Wie kann Feedback nach der Bearbeitung einer Anfrage eingeholt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Durch Kundenumfragen oder Bewertungsformulare",
@@ -196,7 +196,7 @@
     "inhalt_id": 2070,
     "text": "Welche Vorteile hat eine strukturierte Bearbeitung von Serviceanfragen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Erhöhte Effizienz und Kundenzufriedenheit",
@@ -220,7 +220,7 @@
     "inhalt_id": 2070,
     "text": "Wie kann die Bearbeitung von Serviceanfragen optimiert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Durch regelmäßige Schulungen und klar definierte Prozesse",

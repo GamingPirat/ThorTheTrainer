@@ -1,12 +1,12 @@
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 
 class DB_Frage {
-  final int nummer;
-  final int version;
-  final int inhalt_id;
-  final int punkte;
-  final String text;
-  final List<Antwort> antworten;
+  int nummer;
+  int version;
+  int inhalt_id;
+  int punkte;
+  String text;
+  List<Antwort> antworten;
 
   DB_Frage({
     required this.nummer,

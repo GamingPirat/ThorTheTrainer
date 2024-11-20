@@ -28,7 +28,7 @@
     "inhalt_id": 2056,
     "text": "Was ist der Hauptzweck von SQL?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Abfragen und Verwalten von Daten in relationalen Datenbanken",
@@ -52,7 +52,7 @@
     "inhalt_id": 2056,
     "text": "Welche Arten von SQL-Befehlen gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "DML, DDL, DCL und TCL",
@@ -76,7 +76,7 @@
     "inhalt_id": 2056,
     "text": "Was macht der SQL-Befehl SELECT?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Abfragen von Daten aus einer Datenbank",
@@ -100,7 +100,7 @@
     "inhalt_id": 2056,
     "text": "Was ist ein Primärschlüssel in SQL?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein eindeutiger Identifikator für Datensätze in einer Tabelle",
@@ -124,7 +124,7 @@
     "inhalt_id": 2056,
     "text": "Was ist der Unterschied zwischen INNER JOIN und OUTER JOIN?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "INNER JOIN zeigt nur übereinstimmende Datensätze, OUTER JOIN auch nicht-übereinstimmende",
@@ -148,7 +148,7 @@
     "inhalt_id": 2056,
     "text": "Was ist der Zweck des SQL-Befehls GROUP BY?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Gruppieren von Datensätzen basierend auf gemeinsamen Werten",
@@ -172,7 +172,7 @@
     "inhalt_id": 2056,
     "text": "Was macht der SQL-Befehl CREATE TABLE?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Erstellt eine neue Tabelle in der Datenbank",
@@ -196,7 +196,7 @@
     "inhalt_id": 2056,
     "text": "Welche Funktion hat der SQL-Befehl HAVING?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Filtern von Gruppen nach der Verwendung von GROUP BY",
@@ -220,7 +220,7 @@
     "inhalt_id": 2056,
     "text": "Was ist der Zweck des SQL-Befehls INDEX?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Beschleunigung von Abfragen durch Optimierung der Datenzugriffszeit",

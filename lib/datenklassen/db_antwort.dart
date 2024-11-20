@@ -1,7 +1,7 @@
 class Antwort {
-  final String text;
-  final String erklaerung;
-  final bool isKorrekt;
+  String text;
+  String erklaerung;
+  bool isKorrekt;
 
   Antwort({
     required this.text,

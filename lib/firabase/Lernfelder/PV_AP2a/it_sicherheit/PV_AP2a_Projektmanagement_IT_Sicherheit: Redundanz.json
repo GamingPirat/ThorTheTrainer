@@ -28,7 +28,7 @@
     "inhalt_id": 2043,
     "text": "Welche Art von Redundanz bietet ein RAID-1-System?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Spiegelung von Daten auf zwei oder mehr Festplatten",
@@ -52,7 +52,7 @@
     "inhalt_id": 2043,
     "text": "Wie trägt Redundanz zur Ausfallsicherheit bei?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Durch Bereitstellung von Ersatzkomponenten bei einem Ausfall",
@@ -76,7 +76,7 @@
     "inhalt_id": 2043,
     "text": "Was ist der Unterschied zwischen physischer und logischer Redundanz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Physische Redundanz bezieht sich auf Hardware, logische auf Software oder Prozesse",
@@ -100,7 +100,7 @@
     "inhalt_id": 2043,
     "text": "Welche Nachteile können durch Redundanz entstehen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Erhöhte Kosten für zusätzliche Komponenten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2043,
     "text": "Was versteht man unter georedundanter Speicherung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Daten werden an mehreren geografisch getrennten Standorten gespeichert",
@@ -148,7 +148,7 @@
     "inhalt_id": 2043,
     "text": "Welche Art von Redundanz wird bei Hochverfügbarkeitsclustern genutzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Aktive Redundanz, bei der mehrere Systeme gleichzeitig aktiv sind",
@@ -172,7 +172,7 @@
     "inhalt_id": 2043,
     "text": "Welche Rolle spielt Redundanz in der Netzwerktechnik?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie stellt alternative Verbindungen bereit, falls eine Verbindung ausfällt",
@@ -196,7 +196,7 @@
     "inhalt_id": 2043,
     "text": "Wie kann Redundanz in Cloud-Systemen realisiert werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch die Nutzung mehrerer Server und Standorte",
@@ -220,7 +220,7 @@
     "inhalt_id": 2043,
     "text": "Welche Art von Redundanz kann die Datenintegrität verbessern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Redundante Speicherung mit regelmäßiger Synchronisation",

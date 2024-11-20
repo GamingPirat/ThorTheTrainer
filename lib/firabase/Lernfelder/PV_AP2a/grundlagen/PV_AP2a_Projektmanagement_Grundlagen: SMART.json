@@ -28,7 +28,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist es wichtig, dass SMART-Ziele messbar sind?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Um sicherzustellen, dass das Ziel allgemein verständlich ist",
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Was bedeutet es, dass ein Ziel erreichbar sein muss?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Das Ziel sollte keine Ressourcen erfordern",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Was bedeutet es, dass ein SMART-Ziel relevant sein muss?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Das Ziel sollte für das Projekt oder die Organisation von Bedeutung sein",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Was bedeutet es, dass ein SMART-Ziel zeitgebunden sein muss?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Das Ziel sollte nur kurzfristig erreichbar sein",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Welche Eigenschaft eines SMART-Ziels wird durch eine klare Deadline unterstützt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Messbarkeit",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Was passiert, wenn ein SMART-Ziel nicht messbar ist?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Das Ziel kann nicht überprüft werden",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Warum sollten SMART-Ziele spezifisch formuliert sein?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Um Missverständnisse und Interpretationsspielraum zu vermeiden",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Welches der folgenden Ziele erfüllt das Kriterium der SMART-Zielsetzung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Ich möchte erfolgreich sein",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein Beispiel für ein nicht erreichbares Ziel?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Eine Steigerung der Produktivität um 5 % in einem Jahr",

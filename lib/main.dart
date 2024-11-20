@@ -17,6 +17,11 @@ void main() async{
     persistenceEnabled: true,
     cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED,
   );
+
+  FlutterError.onError = (FlutterErrorDetails details) {
+    print_Red("main: Ungefangener Fehler: ${details.exceptionAsString()}");
+    print_Red("main: StackTrace: ${details.stack}");
+  };
   runApp(
       ChangeNotifierProvider(
         create: (_) => ThemeNotifier(), // Für das Theme

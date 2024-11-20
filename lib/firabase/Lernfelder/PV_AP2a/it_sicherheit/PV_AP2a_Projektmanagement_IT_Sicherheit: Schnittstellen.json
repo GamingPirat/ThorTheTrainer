@@ -28,7 +28,7 @@
     "inhalt_id": 2042,
     "text": "Was ist der Zweck eines SDK (Software Development Kit)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Entwicklern Werkzeuge zur Verfügung zu stellen, um Anwendungen für eine bestimmte Plattform zu erstellen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2042,
     "text": "Welche Kommunikationsprotokolle werden häufig für Schnittstellen genutzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "HTTP, HTTPS und MQTT",
@@ -76,7 +76,7 @@
     "inhalt_id": 2042,
     "text": "Was ist eine Plug-and-Play-Schnittstelle?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Eine Schnittstelle, die Hardware automatisch erkennt und integriert",
@@ -100,7 +100,7 @@
     "inhalt_id": 2042,
     "text": "Welche Art von Schnittstelle ermöglicht die Integration von Cloud-Diensten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "RESTful APIs",
@@ -124,7 +124,7 @@
     "inhalt_id": 2042,
     "text": "Was ist eine Herausforderung bei der Implementierung von Schnittstellen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Sicherstellung der Kompatibilität zwischen verschiedenen Systemen",
@@ -148,7 +148,7 @@
     "inhalt_id": 2042,
     "text": "Was ist der Unterschied zwischen einer API und einer GUI?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "APIs verbinden Anwendungen, GUIs ermöglichen die Interaktion mit Benutzern",
@@ -172,7 +172,7 @@
     "inhalt_id": 2042,
     "text": "Wie verbessert eine Middleware-Schnittstelle die Systemintegration?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Sie verbindet verschiedene Anwendungen und Datenquellen miteinander",
@@ -196,7 +196,7 @@
     "inhalt_id": 2042,
     "text": "Was bedeutet 'Backward Compatibility' bei Schnittstellen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Die Fähigkeit einer neuen Schnittstelle, mit älteren Versionen kompatibel zu sein",
@@ -220,7 +220,7 @@
     "inhalt_id": 2042,
     "text": "Welche Datenformate werden häufig für Schnittstellen genutzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "JSON und XML",

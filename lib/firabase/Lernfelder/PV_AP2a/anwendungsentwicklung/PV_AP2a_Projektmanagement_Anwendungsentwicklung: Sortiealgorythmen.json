@@ -28,7 +28,7 @@
     "inhalt_id": 2053,
     "text": "Welcher Sortieralgorithmus hat eine durchschnittliche Laufzeit von O(n log n)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Quicksort",
@@ -52,7 +52,7 @@
     "inhalt_id": 2053,
     "text": "Was ist ein Nachteil von Bubblesort?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Hohe Zeitkomplexität von O(n²) im Durchschnitt",
@@ -76,7 +76,7 @@
     "inhalt_id": 2053,
     "text": "Was unterscheidet Mergesort von Quicksort?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Mergesort benötigt zusätzlichen Speicherplatz, Quicksort arbeitet in-place",
@@ -100,7 +100,7 @@
     "inhalt_id": 2053,
     "text": "Welcher Sortieralgorithmus ist stabil?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Mergesort",
@@ -124,7 +124,7 @@
     "inhalt_id": 2053,
     "text": "Welche Eigenschaft macht Insertionsort für kleine Datensätze geeignet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Einfache Implementierung und gute Performance für fast sortierte Listen",
@@ -148,7 +148,7 @@
     "inhalt_id": 2053,
     "text": "Wann ist Heapsort nützlich?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Wenn eine konsistente Laufzeit von O(n log n) benötigt wird",
@@ -172,7 +172,7 @@
     "inhalt_id": 2053,
     "text": "Welche Sortieralgorithmen sind Divide-and-Conquer-Algorithmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Mergesort und Quicksort",
@@ -196,7 +196,7 @@
     "inhalt_id": 2053,
     "text": "Welche Eigenschaft unterscheidet Radixsort von vergleichsbasierten Sortieralgorithmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Radixsort sortiert ohne Vergleiche zwischen Elementen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2053,
     "text": "Was ist ein Vorteil von TimSort?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Es kombiniert Mergesort und Insertionsort für optimale Leistung",

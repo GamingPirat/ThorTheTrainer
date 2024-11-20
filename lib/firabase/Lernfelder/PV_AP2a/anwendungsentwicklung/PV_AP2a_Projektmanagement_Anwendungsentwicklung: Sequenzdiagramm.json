@@ -28,7 +28,7 @@
     "inhalt_id": 20510,
     "text": "Welche Elemente sind in einem Sequenzdiagramm typisch?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Objekte, Lebenslinien und Nachrichten",
@@ -52,7 +52,7 @@
     "inhalt_id": 20510,
     "text": "Was beschreibt eine Lebenslinie in einem Sequenzdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Die Existenzdauer eines Objekts während der Interaktion",
@@ -76,7 +76,7 @@
     "inhalt_id": 20510,
     "text": "Wie werden Nachrichten in einem Sequenzdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Durch Pfeile zwischen den Lebenslinien",
@@ -100,7 +100,7 @@
     "inhalt_id": 20510,
     "text": "Welche Arten von Nachrichten gibt es in Sequenzdiagrammen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Synchron, asynchron und Rückgabemeldungen",
@@ -124,7 +124,7 @@
     "inhalt_id": 20510,
     "text": "Was bedeutet eine gestrichelte Linie in einem Sequenzdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Eine Rückgabemeldung",
@@ -148,7 +148,7 @@
     "inhalt_id": 20510,
     "text": "Welche Software wird häufig zur Erstellung von Sequenzdiagrammen verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Lucidchart, PlantUML oder Microsoft Visio",
@@ -172,7 +172,7 @@
     "inhalt_id": 20510,
     "text": "Wie werden alternative Abläufe in Sequenzdiagrammen dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Durch ein Rechteck mit Bedingungsangabe",
@@ -196,7 +196,7 @@
     "inhalt_id": 20510,
     "text": "Was zeigt ein Aktivierungsbalken in einem Sequenzdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Die Zeitspanne, in der ein Objekt aktiv eine Operation ausführt",
@@ -220,7 +220,7 @@
     "inhalt_id": 20510,
     "text": "Welche Einschränkung haben Sequenzdiagramme?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Sie sind nicht geeignet, komplexe Datenflüsse darzustellen",

@@ -28,7 +28,7 @@
     "inhalt_id": 2021,
     "text": "Was bedeutet 'Anonymisierung' im Datenschutz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Das Entfernen von personenbezogenen Merkmalen, sodass keine Identifikation möglich ist",
@@ -52,7 +52,7 @@
     "inhalt_id": 2021,
     "text": "Was ist der Unterschied zwischen 'Anonymisierung' und 'Pseudonymisierung'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Anonymisierte Daten sind nicht auf eine Person zurückführbar, pseudonymisierte Daten schon mit Zusatzinformationen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2021,
     "text": "Was versteht man unter 'Datenverarbeitung' im Sinne des Datenschutzes?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Jeglichen Umgang mit personenbezogenen Daten, einschließlich Erhebung, Speicherung und Löschung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2021,
     "text": "Was bedeutet 'Datenschutz durch Technikgestaltung' (Privacy by Design)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Die Berücksichtigung von Datenschutzmaßnahmen bereits bei der Entwicklung von Technologien",
@@ -124,7 +124,7 @@
     "inhalt_id": 2021,
     "text": "Was versteht man unter einer 'Einwilligung' im Datenschutz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die freiwillige, informierte und eindeutige Zustimmung zur Datenverarbeitung",
@@ -148,7 +148,7 @@
     "inhalt_id": 2021,
     "text": "Welche Daten zählen zu den 'besonderen Kategorien personenbezogener Daten'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Gesundheitsdaten und religiöse Überzeugungen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2021,
     "text": "Was bedeutet der Begriff 'Datensparsamkeit'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Nur so viele Daten wie nötig zu erheben und zu verarbeiten",
@@ -196,7 +196,7 @@
     "inhalt_id": 2021,
     "text": "Was versteht man unter dem Begriff 'Betroffenenrechte' im Datenschutz?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Rechte wie Auskunft, Berichtigung und Löschung, die einer Person zustehen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2021,
     "text": "Was ist die Aufgabe des 'Verarbeitungsverzeichnisses'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Eine Übersicht aller Datenverarbeitungsprozesse eines Unternehmens zu liefern",

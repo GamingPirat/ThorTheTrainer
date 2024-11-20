@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:lernplatform/Baustelle.dart';
+import 'package:lernplatform/pages/Quiz/frage_frame_widget.dart';
 import 'package:lernplatform/pages/Quiz/right_drawer_on_frage.dart';
 import 'package:provider/provider.dart';
 import 'quiz_antworten_widget.dart';

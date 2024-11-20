@@ -28,7 +28,7 @@
     "inhalt_id": 2080,
     "text": "Welche grundlegenden Schritte gehören zum Data-Science-Prozess?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Datenaufbereitung, Modellbildung und Ergebnisinterpretation.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2080,
     "text": "Welche Programmiersprachen werden häufig in Data Science verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Python und R.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2080,
     "text": "Welche Rolle spielt Machine Learning in der Data Science?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Es ermöglicht die Erstellung von Modellen zur Vorhersage und Mustererkennung.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2080,
     "text": "Welche Arten von Datenanalysen werden in Data Science durchgeführt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Deskriptive, diagnostische, prädiktive und präskriptive Analysen.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2080,
     "text": "Welche Datenformate sind typisch für die Arbeit in Data Science?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "CSV, JSON und SQL-Datenbanken.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2080,
     "text": "Welche Tools werden häufig in Data Science eingesetzt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Jupyter, Tableau und TensorFlow.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2080,
     "text": "Was versteht man unter Big Data im Kontext der Data Science?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Große und komplexe Datensätze, die traditionelle Methoden überfordern.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2080,
     "text": "Welche Schlüsselkompetenzen sind in Data Science erforderlich?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Statistische Analyse, Programmierung und Domänenwissen.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2080,
     "text": "Wie wird der Erfolg einer Data-Science-Analyse gemessen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Anhand der Relevanz und Umsetzbarkeit der gewonnenen Erkenntnisse.",

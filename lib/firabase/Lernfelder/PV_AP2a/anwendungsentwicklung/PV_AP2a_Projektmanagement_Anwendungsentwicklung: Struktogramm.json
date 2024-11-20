@@ -28,7 +28,7 @@
     "inhalt_id": 2058,
     "text": "Welches Symbol wird in einem Struktogramm für eine Bedingung verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Ein Trapez mit zwei Ausgängen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2058,
     "text": "Was ist der Hauptzweck eines Struktogramms?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Visualisierung von Programmstrukturen und Logiken",
@@ -76,7 +76,7 @@
     "inhalt_id": 2058,
     "text": "Wie wird eine Schleife in einem Struktogramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Durch ein Rechteck mit einer Rückführung",
@@ -100,7 +100,7 @@
     "inhalt_id": 2058,
     "text": "Was unterscheidet ein Struktogramm von einem Programmablaufplan (PAP)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Ein Struktogramm ist hierarchisch, ein PAP ist sequenziell und grafisch",
@@ -124,7 +124,7 @@
     "inhalt_id": 2058,
     "text": "Wann wird ein Struktogramm typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "In der Planungsphase von Algorithmen",
@@ -148,7 +148,7 @@
     "inhalt_id": 2058,
     "text": "Welche Elemente gehören in ein Struktogramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Anweisungen, Bedingungen und Schleifen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2058,
     "text": "Welche Vorteile bietet ein Struktogramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Es vereinfacht die Planung und Kommunikation von Algorithmen",
@@ -196,7 +196,7 @@
     "inhalt_id": 2058,
     "text": "Wie wird ein Prozessschritt in einem Struktogramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch ein Rechteck",
@@ -220,7 +220,7 @@
     "inhalt_id": 2058,
     "text": "Welche Software kann für die Erstellung von Struktogrammen verwendet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Strukturo, Lucidchart oder Microsoft Visio",

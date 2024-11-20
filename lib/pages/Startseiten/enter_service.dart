@@ -1,24 +1,24 @@
 
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-Future<List<String>> fire_all_lernfelder() async{
-  List<String> return_list = [];
+Future<List<String>> fire_all_lernfelder() async {
+  List<String> returnList = [];
 
   QuerySnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore.instance
       .collection("Alle_Lernfelder")
       .get();
 
   for (var doc in snapshot.docs) {
-    if (doc.data().containsKey("lernfelder") && doc.data()["lernfelder"] is List) {
-      List<dynamic> lernfelder = doc.data()["lernfelder"];
-      return_list.addAll(lernfelder.whereType<String>());
+    if (doc.data().containsKey("doc_ids") && doc.data()["doc_ids"] is List) {
+      List<dynamic> docIds = doc.data()["doc_ids"];
+      returnList.addAll(docIds.whereType<String>());
     }
   }
 
-  return return_list;
+  return returnList;
 }
+
 
 
 

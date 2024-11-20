@@ -28,7 +28,7 @@
     "inhalt_id": 20514,
     "text": "Welche Achsen hat ein Zeitverlaufsdiagramm typischerweise?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Die horizontale Achse zeigt die Zeit, die vertikale Achse den Zustand oder Wert",
@@ -52,7 +52,7 @@
     "inhalt_id": 20514,
     "text": "Wofür werden Zeitverlaufsdiagramme typischerweise verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Zur Analyse von zeitabhängigen Prozessen und Zustandsänderungen",
@@ -76,7 +76,7 @@
     "inhalt_id": 20514,
     "text": "Welche Elemente sind typisch für ein Zeitverlaufsdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Zeitpunkte, Werte und Zustände",
@@ -100,7 +100,7 @@
     "inhalt_id": 20514,
     "text": "Wie wird eine Zustandsänderung in einem Zeitverlaufsdiagramm dargestellt?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Durch eine Änderung des Wertes auf der vertikalen Achse",
@@ -124,7 +124,7 @@
     "inhalt_id": 20514,
     "text": "Welche Software kann für die Erstellung von Zeitverlaufsdiagrammen verwendet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Lucidchart, Microsoft Visio oder Diagram.net",
@@ -148,7 +148,7 @@
     "inhalt_id": 20514,
     "text": "Welche Einschränkungen haben Zeitverlaufsdiagramme?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Sie zeigen keine detaillierten Abläufe oder Wechselwirkungen zwischen Objekten",
@@ -172,7 +172,7 @@
     "inhalt_id": 20514,
     "text": "Wie kann eine kontinuierliche Veränderung in einem Zeitverlaufsdiagramm dargestellt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Durch eine durchgehende Linie",
@@ -196,7 +196,7 @@
     "inhalt_id": 20514,
     "text": "Was ist der Zweck eines Zeitverlaufsdiagramms in der Softwareentwicklung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Zur Analyse von zeitabhängigen Zustandsänderungen oder Werten",
@@ -220,7 +220,7 @@
     "inhalt_id": 20514,
     "text": "Was zeigt die Steigung einer Linie in einem Zeitverlaufsdiagramm?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Die Geschwindigkeit der Zustands- oder Wertänderung",

@@ -34,20 +34,24 @@ class Session {
     if (snapshot.docs.isNotEmpty) {
       // Greife direkt auf das erste Dokument zu
       var doc = snapshot.docs.first;
-      print_Green("Dokument-ID: ${doc.id}, Daten: ${doc.data()}");
+      print_Green("doc.data(): ${doc.data()}, Typ: ${doc.data().runtimeType}");
+
 
       try {
         Map<String, dynamic>? data = doc.data();
+        print_Green("Typ von lernfelder: ${data?['lernfelder'].runtimeType}");
+        print_Green("Inhalt von lernfelder: ${data?['lernfelder']}");
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
           user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));
           return true;
         }
-      } catch (e) {
-        print_Red("Fehler beim Zugriff auf Dokumentdaten: ${e.toString()}");
+      } catch (e, stackTrace) {
+        print_Red("Session.enter: Fehler beim Zugriff auf Dokumentdaten: ${e.toString()}");
+        print_Red("Session.enter: StackTrace: $stackTrace");
       }
     } else {
-      print_Red("Kein Dokument mit dem angegebenen Schlüssel gefunden.");
+      print_Red("Session.enter: Kein Dokument mit dem angegebenen Schlüssel gefunden.");
     }
 
     return false;

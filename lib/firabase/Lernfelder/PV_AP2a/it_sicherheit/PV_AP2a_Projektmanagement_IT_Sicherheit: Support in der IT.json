@@ -28,7 +28,7 @@
     "inhalt_id": 2048,
     "text": "Welche Arten von IT-Support gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "First-Level, Second-Level und Third-Level-Support",
@@ -52,7 +52,7 @@
     "inhalt_id": 2048,
     "text": "Was ist die Aufgabe des First-Level-Supports?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Erste Anlaufstelle für Benutzeranfragen und Lösung einfacher Probleme",
@@ -76,7 +76,7 @@
     "inhalt_id": 2048,
     "text": "Was unterscheidet den Second-Level-Support vom First-Level-Support?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Second-Level-Support bearbeitet komplexere Probleme, die vom First-Level nicht gelöst werden können",
@@ -100,7 +100,7 @@
     "inhalt_id": 2048,
     "text": "Was ist ein Service-Level-Agreement (SLA)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Eine Vereinbarung zwischen Anbieter und Kunde über die Qualität und Verfügbarkeit von Dienstleistungen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2048,
     "text": "Welche Werkzeuge unterstützen den IT-Support bei der Problembehandlung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Ticketing-Systeme, Remote-Desktop-Tools und Wissensdatenbanken",
@@ -148,7 +148,7 @@
     "inhalt_id": 2048,
     "text": "Welche Soft Skills sind für den IT-Support besonders wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Kommunikationsfähigkeit, Geduld und Problemlösungsdenken",
@@ -172,7 +172,7 @@
     "inhalt_id": 2048,
     "text": "Welche Herausforderung besteht häufig im IT-Support?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Kommunikation mit Benutzern, die wenig technisches Wissen haben",
@@ -196,7 +196,7 @@
     "inhalt_id": 2048,
     "text": "Warum ist Dokumentation im IT-Support wichtig?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Um den Verlauf und die Lösung von Problemen nachvollziehbar zu machen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2048,
     "text": "Welche Rolle spielt Feedback im IT-Support?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Es hilft, den Supportprozess zu verbessern und Benutzerzufriedenheit zu erhöhen",

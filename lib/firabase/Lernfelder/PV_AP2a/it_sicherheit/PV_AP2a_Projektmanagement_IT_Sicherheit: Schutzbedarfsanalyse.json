@@ -28,7 +28,7 @@
     "inhalt_id": 2031,
     "text": "Welche Dimensionen werden typischerweise in einer Schutzbedarfsanalyse betrachtet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Vertraulichkeit, Integrität und Verfügbarkeit",
@@ -52,7 +52,7 @@
     "inhalt_id": 2031,
     "text": "Was versteht man unter 'Vertraulichkeit' in der Schutzbedarfsanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Den Schutz vor unbefugtem Zugriff auf Informationen",
@@ -76,7 +76,7 @@
     "inhalt_id": 2031,
     "text": "Was ist ein Beispiel für eine Gefährdung der Verfügbarkeit?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein Stromausfall, der den Zugriff auf IT-Systeme verhindert",
@@ -100,7 +100,7 @@
     "inhalt_id": 2031,
     "text": "Welche Methode wird häufig zur Schutzbedarfsanalyse verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Die Klassifikation von IT-Systemen nach Schutzbedarfskategorien",
@@ -124,7 +124,7 @@
     "inhalt_id": 2031,
     "text": "Was beschreibt die Dimension 'Integrität' in der Schutzbedarfsanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Sicherstellung, dass Daten korrekt und unverändert bleiben",
@@ -148,7 +148,7 @@
     "inhalt_id": 2031,
     "text": "Welche Folgen kann ein unzureichender Schutzbedarf haben?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Verlust sensibler Daten oder Betriebsunterbrechungen",
@@ -172,7 +172,7 @@
     "inhalt_id": 2031,
     "text": "Was ist eine typische Maßnahme nach der Schutzbedarfsanalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Die Implementierung zusätzlicher Sicherheitsmaßnahmen wie Firewalls oder Backups",
@@ -196,7 +196,7 @@
     "inhalt_id": 2031,
     "text": "Was ist der Unterschied zwischen Schutzbedarf und Risiko?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Schutzbedarf beschreibt die erforderlichen Maßnahmen, Risiko beschreibt die Wahrscheinlichkeit und Auswirkungen eines Vorfalls",
@@ -220,7 +220,7 @@
     "inhalt_id": 2031,
     "text": "Wie kann der Schutzbedarf eines IT-Systems ermittelt werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Durch die Analyse der potenziellen Auswirkungen von Sicherheitsverletzungen",

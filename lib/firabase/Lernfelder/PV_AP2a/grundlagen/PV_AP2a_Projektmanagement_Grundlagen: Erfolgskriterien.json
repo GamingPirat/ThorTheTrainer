@@ -28,7 +28,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist die Qualität ein entscheidendes Erfolgskriterium in Projekten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Weil sie die Kundenzufriedenheit und langfristige Nutzung sicherstellt",
@@ -52,7 +52,7 @@
     "inhalt_id": 2000,
     "text": "Welche Faktoren beeinflussen die Zufriedenheit der Stakeholder?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Erfüllung der Projektanforderungen und transparente Kommunikation",
@@ -76,7 +76,7 @@
     "inhalt_id": 2000,
     "text": "Welcher Zusammenhang besteht zwischen Zeit und Projekterfolg?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Ein Projekt gilt als erfolgreich, wenn es innerhalb des geplanten Zeitrahmens abgeschlossen wird",
@@ -100,7 +100,7 @@
     "inhalt_id": 2000,
     "text": "Welche Bedeutung hat die Kundenzufriedenheit als Erfolgskriterium?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Sie zeigt, ob die Anforderungen und Erwartungen des Kunden erfüllt wurden",
@@ -124,7 +124,7 @@
     "inhalt_id": 2000,
     "text": "Welche Aussage beschreibt ein erfolgreiches Projekt am besten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Das Projekt wurde innerhalb des Budgets abgeschlossen, die Qualität war zufriedenstellend und die Stakeholder sind zufrieden",
@@ -148,7 +148,7 @@
     "inhalt_id": 2000,
     "text": "Warum ist es wichtig, Erfolgskriterien vor Projektbeginn festzulegen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Um den Projekterfolg objektiv bewerten zu können",
@@ -172,7 +172,7 @@
     "inhalt_id": 2000,
     "text": "Welche Faktoren können den Projekterfolg negativ beeinflussen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Unklare Anforderungen und unrealistische Zeitpläne",
@@ -196,7 +196,7 @@
     "inhalt_id": 2000,
     "text": "Was ist ein typisches Zeichen für ein erfolgreiches Projektmanagement?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Das Projekt wurde effizient und zur Zufriedenheit aller Beteiligten abgeschlossen",
@@ -220,7 +220,7 @@
     "inhalt_id": 2000,
     "text": "Welche drei Hauptkriterien werden in der Regel verwendet, um den Erfolg eines Projekts zu messen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Zeit, Qualität, Kundenzufriedenheit",

@@ -23,14 +23,14 @@ class QuizFrageController with ChangeNotifier {
     _initializeAntwortenViewModel(frage.antworten, isMultipleChoice);
     antwortenViewModel.shuffle(Random());
     List<String> imagePaths = [
-      "characters/emotionslos.webp",
-      "characters/humorvoll_sarkastisch.webp",
-      "characters/kumpel.webp",
-      "characters/philosoph.webp",
-      "characters/professional.webp",
-      "characters/provokant.webp",
-      "characters/technisch.webp",
-      "characters/vereinfachte_sprache.webp",
+      "assets/characters/emotionslos.webp",
+      "assets/characters/humorvoll_sarkastisch.webp",
+      "assets/characters/kumpel.webp",
+      "assets/characters/philosoph.webp",
+      "assets/characters/professional.webp",
+      "assets/characters/provokant.webp",
+      "assets/characters/technisch.webp",
+      "assets/characters/vereinfachte_sprache.webp",
     ];
     imagePath = imagePaths[Random().nextInt(imagePaths.length)];
   }

@@ -28,7 +28,7 @@
     "inhalt_id": 2010,
     "text": "Welche der folgenden Aussagen beschreibt Qualität im Kontext des Qualitätsmanagements am besten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Qualität bedeutet, die Erwartungen der Kunden zu erfüllen oder zu übertreffen",
@@ -52,7 +52,7 @@
     "inhalt_id": 2010,
     "text": "Welche Aufgaben gehören typischerweise zum Qualitätsmanagement?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Planung, Steuerung und Verbesserung der Qualität",
@@ -76,7 +76,7 @@
     "inhalt_id": 2010,
     "text": "Was beschreibt die Qualitätspolitik eines Unternehmens?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die übergeordneten Ziele und Prinzipien des Unternehmens in Bezug auf Qualität",
@@ -100,7 +100,7 @@
     "inhalt_id": 2010,
     "text": "Welche Rolle spielt die Kundenzufriedenheit im Qualitätsmanagement?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Kundenzufriedenheit ist ein entscheidendes Kriterium zur Bewertung der Qualität",
@@ -124,7 +124,7 @@
     "inhalt_id": 2010,
     "text": "Was ist ein Qualitätsaudit?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Eine systematische Überprüfung von Qualitätsprozessen und -standards",
@@ -148,7 +148,7 @@
     "inhalt_id": 2010,
     "text": "Welche Norm wird häufig als Grundlage für Qualitätsmanagementsysteme verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "ISO 9001",
@@ -172,7 +172,7 @@
     "inhalt_id": 2010,
     "text": "Warum ist die kontinuierliche Verbesserung ein wichtiger Aspekt des Qualitätsmanagements?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Weil sie sicherstellt, dass das Unternehmen wettbewerbsfähig bleibt",
@@ -196,7 +196,7 @@
     "inhalt_id": 2010,
     "text": "Welche Phase des Qualitätsmanagements umfasst die Festlegung von Qualitätsanforderungen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Planungsphase",
@@ -220,7 +220,7 @@
     "inhalt_id": 2010,
     "text": "Welche Rolle spielen Mitarbeiter im Qualitätsmanagement?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Mitarbeiter tragen durch die Einhaltung von Standards zur Qualität bei",

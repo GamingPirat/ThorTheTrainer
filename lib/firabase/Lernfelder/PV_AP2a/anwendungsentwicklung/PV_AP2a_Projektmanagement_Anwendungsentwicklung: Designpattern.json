@@ -28,7 +28,7 @@
     "inhalt_id": 20516,
     "text": "Welche Kategorien von Designpattern gibt es?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Erzeugungsmuster, Strukturmuster, Verhaltensmuster",
@@ -52,7 +52,7 @@
     "inhalt_id": 20516,
     "text": "Welches der folgenden Muster gehört zu den Erzeugungsmustern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Singleton",
@@ -76,7 +76,7 @@
     "inhalt_id": 20516,
     "text": "Was ist der Hauptzweck des Singleton-Musters?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Sicherstellen, dass eine Klasse nur eine Instanz hat",
@@ -100,7 +100,7 @@
     "inhalt_id": 20516,
     "text": "Welches der folgenden Muster gehört zu den Strukturmustern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Adapter",
@@ -124,7 +124,7 @@
     "inhalt_id": 20516,
     "text": "Welches Problem löst das Observer-Muster?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Benachrichtigung mehrerer Objekte über Zustandsänderungen",
@@ -148,7 +148,7 @@
     "inhalt_id": 20516,
     "text": "Was ist der Hauptzweck des Decorator-Musters?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Dynamisches Hinzufügen von Funktionen zu Objekten",
@@ -172,7 +172,7 @@
     "inhalt_id": 20516,
     "text": "Welches der folgenden Muster gehört zu den Verhaltensmustern?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Strategy",
@@ -196,7 +196,7 @@
     "inhalt_id": 20516,
     "text": "Wie kann das Factory Method-Muster beschrieben werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Ein Muster zur Erzeugung von Objekten, bei dem die genaue Klasse zur Laufzeit bestimmt wird",
@@ -220,7 +220,7 @@
     "inhalt_id": 20516,
     "text": "Welche Vorteile bieten Designpattern in der Softwareentwicklung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Wiederverwendbare Lösungen und verbesserte Verständlichkeit",

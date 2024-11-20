@@ -20,7 +20,10 @@ class UserModel with ChangeNotifier {
   List<Lernfeld> firestoreLernfelder = [];
   bool _isLoading = true;
 
-  UserModel({required this.alpha_key}) {_load();}
+  UserModel({required this.alpha_key}) {
+    print("UserModel: AlphaKey empfangen: $alpha_key");
+    _load();
+  }
 
   get isLoading => _isLoading;
   // todo später wenn Teilnehmer nur begrenzte Lernfelder haben muss die firstore Abfrage konkreter werden. Sprich ich muss was mit der Datenbank machen das Teilnehmer.key x nur zugriff auf x hat
@@ -45,14 +48,14 @@ class UserModel with ChangeNotifier {
         // print_Red('UserModel Keine Dokumente in der Sammlung vorhanden');
       }
     } catch (e) {
-      // print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
+      print_Red('UserModel hat Fehler beim Laden der Daten: $e');  // Fehlerbehandlung, falls etwas schiefgeht
     }
 
     // Initialisiere den Teilnehmer basierend auf den geladenen Daten
     logTeilnehmer = await ladeOderErzeugeTeilnehmer(firestoreLernfelder);
 
     // Fülle die lernfelder-Liste mit UsersLernfeld-Instanzen, wenn IDs übereinstimmen
-    for (LogLernfeld logLernfeld in logTeilnehmer.meineLernfelder) {
+    for (LogLernfeld logLernfeld in logTeilnehmer.logLernfelder) {
       for (Lernfeld lernfeld in firestoreLernfelder) {
         if (logLernfeld.id == lernfeld.id) {
           lernfelder.add(UsersLernfeld(

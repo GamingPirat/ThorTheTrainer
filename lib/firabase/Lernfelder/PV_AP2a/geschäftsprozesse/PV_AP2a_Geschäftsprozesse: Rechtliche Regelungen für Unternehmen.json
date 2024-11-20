@@ -28,7 +28,7 @@
     "inhalt_id": 2071,
     "text": "Welche rechtlichen Regelungen betreffen den Arbeitsschutz in Unternehmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Das Arbeitsschutzgesetz (ArbSchG)",
@@ -52,7 +52,7 @@
     "inhalt_id": 2071,
     "text": "Welche Pflicht haben Unternehmen im Rahmen des Umweltrechts?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Sicherstellen, dass die betrieblichen Prozesse die Umwelt möglichst wenig belasten.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2071,
     "text": "Was ist der Zweck des Handelsgesetzbuches (HGB)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 41,
     "antworten": [
       {
         "text": "Es regelt die Rechte und Pflichten von Kaufleuten.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2071,
     "text": "Welche Pflicht haben Unternehmen im Rahmen des Steuerrechts?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Abgabe korrekter und fristgerechter Steuererklärungen",
@@ -124,7 +124,7 @@
     "inhalt_id": 2071,
     "text": "Was regelt das Betriebsverfassungsgesetz (BetrVG)?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Die Mitbestimmungsrechte von Arbeitnehmern und Betriebsräten",
@@ -148,7 +148,7 @@
     "inhalt_id": 2071,
     "text": "Welche Konsequenzen drohen Unternehmen bei Verstößen gegen Arbeitsschutzgesetze?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Bußgelder, Haftung und Betriebsstilllegung",
@@ -172,7 +172,7 @@
     "inhalt_id": 2071,
     "text": "Welche Vorschrift regelt die Buchführungspflicht von Unternehmen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Das Handelsgesetzbuch (HGB)",
@@ -196,7 +196,7 @@
     "inhalt_id": 2071,
     "text": "Welche Strafe droht bei Verstößen gegen die DSGVO?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Hohe Geldstrafen bis zu 20 Millionen Euro oder 4% des Jahresumsatzes",
@@ -220,7 +220,7 @@
     "inhalt_id": 2071,
     "text": "Welche Verantwortung haben Unternehmen im Rahmen der Produkthaftung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Sicherstellen, dass ihre Produkte keine Schäden verursachen",

@@ -28,7 +28,7 @@
     "inhalt_id": 2041,
     "text": "Welche Eigenschaft hat symmetrische Verschlüsselung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Verwendet denselben Schlüssel für Ver- und Entschlüsselung",
@@ -52,7 +52,7 @@
     "inhalt_id": 2041,
     "text": "Welches Beispiel gehört zur asymmetrischen Verschlüsselung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "RSA",
@@ -76,7 +76,7 @@
     "inhalt_id": 2041,
     "text": "Welche Schwäche hat die symmetrische Verschlüsselung im Vergleich zur asymmetrischen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Der Schlüssel muss sicher an den Empfänger übermittelt werden",
@@ -100,7 +100,7 @@
     "inhalt_id": 2041,
     "text": "Welche Aufgabe hat ein Public Key bei der asymmetrischen Verschlüsselung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Verschlüsselung von Nachrichten",
@@ -124,7 +124,7 @@
     "inhalt_id": 2041,
     "text": "Was ist ein Vorteil asymmetrischer Verschlüsselung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Der Schlüssel muss nicht geheim übertragen werden",
@@ -148,7 +148,7 @@
     "inhalt_id": 2041,
     "text": "Was versteht man unter 'Ende-zu-Ende-Verschlüsselung'?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Daten werden während der gesamten Übertragung verschlüsselt und nur vom Empfänger entschlüsselt",
@@ -172,7 +172,7 @@
     "inhalt_id": 2041,
     "text": "Welche Aufgabe hat ein Hashverfahren im Kontext der Verschlüsselung?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Es dient der Integritätsprüfung von Daten",
@@ -196,7 +196,7 @@
     "inhalt_id": 2041,
     "text": "Welches Verschlüsselungsverfahren wird häufig für WLAN-Sicherheit verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "WPA2",
@@ -220,7 +220,7 @@
     "inhalt_id": 2041,
     "text": "Was ist eine Schwäche von Hashverfahren wie MD5?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Kollisionen können auftreten, bei denen zwei unterschiedliche Eingaben denselben Hash erzeugen",

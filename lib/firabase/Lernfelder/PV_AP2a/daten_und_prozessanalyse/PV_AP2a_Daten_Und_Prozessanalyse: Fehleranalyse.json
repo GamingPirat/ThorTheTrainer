@@ -28,7 +28,7 @@
     "inhalt_id": 2083,
     "text": "Welche Schritte gehören typischerweise zur Fehleranalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 2,
     "antworten": [
       {
         "text": "Fehlererkennung, Ursachenanalyse und Lösungserarbeitung.",
@@ -52,7 +52,7 @@
     "inhalt_id": 2083,
     "text": "Welche Techniken werden in der Fehleranalyse verwendet?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 3,
     "antworten": [
       {
         "text": "Ishikawa-Diagramme, 5-Why-Methode und Root Cause Analysis.",
@@ -76,7 +76,7 @@
     "inhalt_id": 2083,
     "text": "Was beschreibt die Root Cause Analysis in der Fehleranalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 4,
     "antworten": [
       {
         "text": "Die Identifikation der zugrunde liegenden Ursache eines Fehlers.",
@@ -100,7 +100,7 @@
     "inhalt_id": 2083,
     "text": "Welche Tools können in der Fehleranalyse verwendet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 5,
     "antworten": [
       {
         "text": "Splunk, Wireshark und JIRA.",
@@ -124,7 +124,7 @@
     "inhalt_id": 2083,
     "text": "Was bedeutet der Begriff 'Incident' in der Fehleranalyse?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 6,
     "antworten": [
       {
         "text": "Ein unvorhergesehenes Ereignis, das den normalen Betrieb stört.",
@@ -148,7 +148,7 @@
     "inhalt_id": 2083,
     "text": "Wie kann die 5-Why-Methode in der Fehleranalyse angewendet werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 7,
     "antworten": [
       {
         "text": "Durch wiederholtes Fragen nach der Ursache eines Problems.",
@@ -172,7 +172,7 @@
     "inhalt_id": 2083,
     "text": "Welche Arten von Fehlern können in der Fehleranalyse untersucht werden?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 8,
     "antworten": [
       {
         "text": "Logische, systematische und zufällige Fehler.",
@@ -196,7 +196,7 @@
     "inhalt_id": 2083,
     "text": "Wie kann eine Ishikawa-Analyse in der Fehleranalyse helfen?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 9,
     "antworten": [
       {
         "text": "Durch Visualisierung der möglichen Ursachen eines Problems.",
@@ -220,7 +220,7 @@
     "inhalt_id": 2083,
     "text": "Welche Herausforderungen können bei der Fehleranalyse auftreten?",
     "version": 1,
-    "nummer": 1,
+    "nummer": 10,
     "antworten": [
       {
         "text": "Unvollständige oder ungenaue Daten.",
