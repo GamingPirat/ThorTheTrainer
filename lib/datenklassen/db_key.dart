@@ -13,10 +13,10 @@ class AlphaKey {
       try {
         // Prüfen, ob lernfelder eine Liste ist und konvertieren
         lernfelderList = List<String>.from(json['lernfelder']);
-        print_Cyan("AlphaKey.fromJson: Verarbeitete lernfelder: $lernfelderList");
+        // print_Cyan("AlphaKey.fromJson: Verarbeitete lernfelder: $lernfelderList");
       } catch (e, stackTrace) {
-        print_Cyan("AlphaKey.fromJson: Fehler beim Konvertieren von lernfelder: $e");
-        print_Cyan("AlphaKey.fromJson: StackTrace: $stackTrace");
+        print_Red("AlphaKey.fromJson: Fehler beim Konvertieren von lernfelder: $e");
+        print_Red("AlphaKey.fromJson: StackTrace: $stackTrace");
       }
     }
     return AlphaKey(

@@ -51,19 +51,12 @@ class KompetenzbereicheList extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: CircularProgressIndicator());
         }
-        if (!snapshot.hasData || !snapshot.data!.exists) {
-          return const Center(child: Text("Keine Kompetenzbereiche verfügbar."));
-        }
-
         // Sortierung der Kompetenzbereiche lokal
         var kompetenzbereiche = (snapshot.data!['kompetenzbereiche'] as List<dynamic>);
-        kompetenzbereiche.sort((a, b) => a['name'].compareTo(b['name']));
 
         return Column(
           children: kompetenzbereiche.map((kompetenz) {
             var inhalte = kompetenz['inhalte'] as List<dynamic>;
-            // Sortierung der Inhalte lokal
-            inhalte.sort((a, b) => a['name'].compareTo(b['name']));
 
             return ExpansionTile(
               title: Text("\t\t\t\t\t${kompetenz['name']}"),
@@ -74,9 +67,7 @@ class KompetenzbereicheList extends StatelessWidget {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (_) => FragenList(
-                          lernfeldId: lernfeldId,
-                          kompetenzId: kompetenz['id'].toString(),
-                          inhaltId: inhalt['id'].toString(),
+                          inhaltId: inhalt['id'],
                         ),
                       ),
                     );

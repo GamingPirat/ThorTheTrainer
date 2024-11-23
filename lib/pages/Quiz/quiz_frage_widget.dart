@@ -33,7 +33,7 @@ class QuizFrageWidget extends StatelessWidget {
                           ),
                         ),
                         QuizAntwortenWidget(viewModels: vm.antwortenViewModel),
-                        Spacer(),
+                        SizedBox(height: 36),
                         Visibility(
                           visible: !vm.locked,
                           child: ElevatedButton(

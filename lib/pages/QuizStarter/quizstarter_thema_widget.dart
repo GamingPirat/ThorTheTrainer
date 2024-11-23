@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
 
 class QuizstarterThemaWidget extends StatelessWidget {
-  UsersThema viewModel;
+  UsersKompetenzbereich viewModel;
   QuizstarterThemaWidget({required this.viewModel, super.key});
 
   @override
@@ -23,9 +23,9 @@ class QuizstarterThemaWidget extends StatelessWidget {
             mainAxisSpacing: 4,      // Abstand zwischen den Reihen
             childAspectRatio: 4,    // Seitenverhältnis der Kinder (Breite zu Höhe)
           ),
-          itemCount: viewModel.meineSubThemen.length,
+          itemCount: viewModel.usersInhalte.length,
           itemBuilder: (context, index) {
-            UsersSubThema subthema = viewModel.meineSubThemen[index];
+            UsersInhalt subthema = viewModel.usersInhalte[index];
             return QuizStarterSelecterWidget(viewModel: subthema);
           },
         ),

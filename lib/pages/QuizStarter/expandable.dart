@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -35,7 +35,7 @@ class _ExpandableWidgetState extends State<ExpandableWidget> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
-                  margin: vm is UsersThema
+                  margin: vm is UsersKompetenzbereich
                       ? EdgeInsets.fromLTRB(80, 0, 80, 0)
                       : EdgeInsets.fromLTRB(0, 0, 0, 0),
                   decoration: BoxDecoration(

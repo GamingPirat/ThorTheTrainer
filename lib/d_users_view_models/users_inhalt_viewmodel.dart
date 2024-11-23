@@ -1,30 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_inhalt.dart';
 import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
 import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 
-class UsersThema extends UsersContentModel {
-  final LogKompetenzbereich logThema;
-  late final List<UsersSubThema> meineSubThemen = [];
+class UsersKompetenzbereich extends UsersContentModel {
+  final LogKompetenzbereich logKompetenzbereich;
+  late final List<UsersInhalt> usersInhalte = [];
   final Function parentCallBack_CheckChilds;
   final Function parentCallBack_updateProgress;
 
-  UsersThema({
-    required this.logThema,
-    required KompetenzBereich thema,
+  UsersKompetenzbereich({
+    required this.logKompetenzbereich,
+    required KompetenzBereich kompetenzbereich,
     required this.parentCallBack_CheckChilds,
     required this.parentCallBack_updateProgress,
-  }) : super(id: thema.id, name: thema.name) {
+  }) : super(id: kompetenzbereich.id, name: kompetenzbereich.name) {
     effect_color = Colors.blueAccent;
-    for (Inhalt subThema in thema.inhalte) {
-      for (LogInhalt logSubThema in logThema.logInhalte) {
+    for (Inhalt subThema in kompetenzbereich.inhalte) {
+      for (LogInhalt logSubThema in logKompetenzbereich.logInhalte) {
         if (subThema.id == logSubThema.id) {
-          meineSubThemen.add(
-            UsersSubThema(
-              logSubThema: logSubThema,
-              subThema: subThema,
+          usersInhalte.add(
+            UsersInhalt(
+              logInhalt: logSubThema,
+              inhalt: subThema,
               parentCallBack_areChildsSelected: () => checkIfAllChildrenAreSelected(),
               parentCallBack_updateProgress: (bool updateParent) => updateProgress(updateParent: updateParent),
             ),
@@ -32,12 +33,13 @@ class UsersThema extends UsersContentModel {
         }
       }
     }
+    print_Yellow("UsersKompetenzbereich created. kompetenzbereich.id = ${kompetenzbereich.id} logKompetenzbereich.id = ${logKompetenzbereich.id}");
   }
 
   @override
   set isSelected(bool value) {
     Protected_isSelected = value;
-    for (var subthema in meineSubThemen) {
+    for (var subthema in usersInhalte) {
       subthema.isSelected = value;  // Setze jeden einzelnen subthema.isSelected
     }
     parentCallBack_CheckChilds();  // Callback zum übergeordneten Lernfeld aufrufen
@@ -47,7 +49,7 @@ class UsersThema extends UsersContentModel {
 
   set parentsSelectStatus(bool value) {
     Protected_isSelected = value;
-    for (UsersSubThema subthema in meineSubThemen) {
+    for (UsersInhalt subthema in usersInhalte) {
       subthema.parentsSelectStatus = isSelected;
     }
     notifyListeners();
@@ -55,7 +57,7 @@ class UsersThema extends UsersContentModel {
 
   void checkIfAllChildrenAreSelected() {
     // Prüft, ob alle Subthemen ausgewählt sind
-    if (meineSubThemen.every((subthema) => subthema.isSelected)) {
+    if (usersInhalte.every((subthema) => subthema.isSelected)) {
       Protected_isSelected = true;
     } else {
       Protected_isSelected = false;
@@ -64,7 +66,7 @@ class UsersThema extends UsersContentModel {
   }
 
   void updateSelectionStatus() {
-    Protected_isSelected = meineSubThemen.every((subthema) => subthema.isSelected);
+    Protected_isSelected = usersInhalte.every((subthema) => subthema.isSelected);
     parentCallBack_CheckChilds(); // ruft Eltern-Callback auf, um den Lernfeld-Status zu prüfen
     notifyListeners();
   }
@@ -74,9 +76,9 @@ class UsersThema extends UsersContentModel {
   @override
   updateProgress({required bool updateParent}) {
     if(updateParent) parentCallBack_updateProgress(updateParent);
-    double max_progress = 100.0 * meineSubThemen.length; // Korrigiert: max_progress entspricht der Anzahl der Subthemen mal 100
+    double max_progress = 100.0 * usersInhalte.length; // Korrigiert: max_progress entspricht der Anzahl der Subthemen mal 100
     double current_progress = 0;
-    for(UsersSubThema u_subThema in meineSubThemen){
+    for(UsersInhalt u_subThema in usersInhalte){
       u_subThema.updateProgress(updateParent: false);
       current_progress += u_subThema.progress;
     }

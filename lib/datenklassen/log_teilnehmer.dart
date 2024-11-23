@@ -14,9 +14,9 @@ class LogTeilnehmer {
   };
 
   factory LogTeilnehmer.fromJson(Map<String, dynamic> json) {
-    print_Blue("LogTeilnehmer.fromJson: Eingangsdaten: $json");
-    print_Blue("LogTeilnehmer.fromJson:Typ von meineLernfelder: ${json['meineLernfelder']?.runtimeType}");
-    print_Blue("LogTeilnehmer.fromJson: Inhalt von meineLernfelder: ${json['meineLernfelder']}");
+    // print_Blue("LogTeilnehmer.fromJson: Eingangsdaten: $json");
+    // print_Blue("LogTeilnehmer.fromJson:Typ von meineLernfelder: ${json['meineLernfelder']?.runtimeType}");
+    // print_Blue("LogTeilnehmer.fromJson: Inhalt von meineLernfelder: ${json['meineLernfelder']}");
 
     try {
       return LogTeilnehmer(
@@ -52,9 +52,9 @@ class LogLernfeld {
   };
 
   factory LogLernfeld.fromJson(Map<String, dynamic> json) {
-    print("LogLernfeld.fromJson: Eingangsdaten: $json");
-    print("LogLernfeld.fromJson: Typ von meineThemen: ${json['meineThemen']?.runtimeType}");
-    print("LogLernfeld.fromJson: Inhalt von meineThemen: ${json['meineThemen']}");
+    // print("LogLernfeld.fromJson: Eingangsdaten: $json");
+    // print("LogLernfeld.fromJson: Typ von meineThemen: ${json['meineThemen']?.runtimeType}");
+    // print("LogLernfeld.fromJson: Inhalt von meineThemen: ${json['meineThemen']}");
 
     return LogLernfeld(
       json['id'],
@@ -85,9 +85,9 @@ class LogKompetenzbereich {
   };
 
   factory LogKompetenzbereich.fromJson(Map<String, dynamic> json) {
-    print("LogKompetenzbereich.fromJson: Eingangsdaten: $json");
-    print("Typ von logInhalte: ${json['logInhalte']?.runtimeType}");
-    print("Inhalt von logInhalte: ${json['logInhalte']}");
+    // print("LogKompetenzbereich.fromJson: Eingangsdaten: $json");
+    // print("Typ von logInhalte: ${json['logInhalte']?.runtimeType}");
+    // print("Inhalt von logInhalte: ${json['logInhalte']}");
 
     return LogKompetenzbereich(
       id: json['id'],
@@ -121,11 +121,11 @@ class LogInhalt {
   };
 
   factory LogInhalt.fromJson(Map<String, dynamic> json) {
-    print("LogInhalt.fromJson: Eingangsdaten: $json");
-    print("Typ von falschBeantworteteFragen: ${json['falschBeantworteteFragen']?.runtimeType}");
-    print("Inhalt von falschBeantworteteFragen: ${json['falschBeantworteteFragen']}");
-    print("Typ von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']?.runtimeType}");
-    print("Inhalt von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']}");
+    // print("LogInhalt.fromJson: Eingangsdaten: $json");
+    // print("Typ von falschBeantworteteFragen: ${json['falschBeantworteteFragen']?.runtimeType}");
+    // print("Inhalt von falschBeantworteteFragen: ${json['falschBeantworteteFragen']}");
+    // print("Typ von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']?.runtimeType}");
+    // print("Inhalt von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']}");
 
     return LogInhalt(
       id: json['id'],

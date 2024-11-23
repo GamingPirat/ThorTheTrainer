@@ -1,11 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:lernplatform/pages/Quiz/quiz_subthema_widget.dart';
+import 'package:lernplatform/pages/Quiz/quiz_inhalt_widget.dart';
 import 'package:lernplatform/pages/Quiz/quizmaster.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
-
 class QuizScreen extends StatefulWidget {
 
   @override
@@ -18,6 +17,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   int _currentIndex = 0;
   int _previousIndex = 0;
   bool _isScrollingDown = true;
+  bool _isAnimating = false;
 
   late AnimationController _controller;
   late Animation<Offset> _oldContainerAnimation;
@@ -35,7 +35,7 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
     // Initialisierung des AnimationControllers
     _controller = AnimationController(vsync: this, duration: Duration(milliseconds: 300));
 
-    // Standard-Initialisierung der Animationen auf null Offset
+    // Standard-Initialisierung der Animationen
     _oldContainerAnimation = Tween<Offset>(begin: Offset.zero, end: Offset.zero).animate(_controller);
     _newContainerAnimation = Tween<Offset>(begin: Offset.zero, end: Offset.zero).animate(_controller);
   }
@@ -43,77 +43,72 @@ class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   // Methode zum Erstellen eines neuen Containers
   Widget _buildContainer(int index) {
     viewModel.nextQuestion();
-    return QuizSubthemaWidget(viewModel: viewModel.aktuelles_subthema);
+    return QuizInhaltWidget(viewModel: viewModel.aktueller_inhalt);
   }
 
   void _onScroll(double dy) {
-    // print_Magenta("QuizScreen scrollen erfasst: Delta = $dy"); // todo print
-
-    if (dy > 0) {
-      // Scroll nach unten (nächster Container)
-      // print_Magenta("QuizScreen Scroll nach unten "
-      //     "_currentIndex == _containers.length "
-      //     "${_currentIndex == _containers.length} "
-      //     "$_currentIndex == ${_containers.length} "
-          // "viewModel.is_locked == ${viewModel.is_locked}"); // todo print
-      if (_currentIndex == _containers.length - 1 && viewModel.is_locked) {
-        setState(() {
-          // print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
-          _containers.add(_buildContainer(_containers.length));
-          _isScrollingDown = true;
-          _previousIndex = _currentIndex;
-          _currentIndex++;
-          _startAnimation();
-        });
-      } else if (_currentIndex < _containers.length - 1) {
-        setState(() {
-          // print_Magenta("QuizScreen Scroll nach unten (nächster Container"); // todo print
-          _isScrollingDown = true;
-          _previousIndex = _currentIndex;
-          _currentIndex++;
-          _startAnimation();
-        });
-      }
-    } else if (dy < 0) {
-      // Scroll nach oben (vorheriger Container)
-      if (_currentIndex > 0) {
-        setState(() {
-          // print_Magenta("QuizScreen Scroll nach oben (vorheriger Container"); // todo print
-          _isScrollingDown = false;
-          _previousIndex = _currentIndex;
-          _currentIndex--;
-          _startAnimation();
-        });
-      }
+    if (_isAnimating) return; // Verhindere mehrfaches Scrollen während einer Animation
+    if (dy > 0 && _currentIndex < _containers.length - 1) {
+      _navigateToNext();
+    } else if (dy < 0 && _currentIndex > 0) {
+      _navigateToPrevious();
+    } else if (dy > 0 && _currentIndex == _containers.length - 1 && viewModel.is_locked) {
+      _addAndNavigateToNext();
     }
   }
 
-  // Animationen für den Wechsel zwischen Containern
+  void _navigateToNext() {
+    setState(() {
+      _isScrollingDown = true;
+      _previousIndex = _currentIndex;
+      _currentIndex++;
+      _startAnimation();
+    });
+  }
+
+  void _navigateToPrevious() {
+    setState(() {
+      _isScrollingDown = false;
+      _previousIndex = _currentIndex;
+      _currentIndex--;
+      _startAnimation();
+    });
+  }
+
+  void _addAndNavigateToNext() {
+    setState(() {
+      _containers.add(_buildContainer(_containers.length));
+      _isScrollingDown = true;
+      _previousIndex = _currentIndex;
+      _currentIndex++;
+      _startAnimation();
+    });
+  }
+
+  // Animation starten
   void _startAnimation() {
+    _isAnimating = true;
+
     _controller.reset();
 
-    // Alte Container-Animation: Scrollt nach oben oder unten raus
     _oldContainerAnimation = Tween<Offset>(
       begin: Offset.zero,
       end: _isScrollingDown ? Offset(0.0, -1.0) : Offset(0.0, 1.0),
     ).animate(_controller);
 
-    // Neue Container-Animation: Scrollt von unten oder oben rein
     _newContainerAnimation = Tween<Offset>(
       begin: _isScrollingDown ? Offset(0.0, 1.0) : Offset(0.0, -1.0),
       end: Offset.zero,
     ).animate(_controller);
 
-    _controller.forward();
+    _controller.forward().whenComplete(() {
+      setState(() => _isAnimating = false); // Animation abgeschlossen
+    });
   }
 
-
   void _onScrollWheel(PointerSignalEvent event) {
-    if (event is PointerScrollEvent) {
-      final dy = event.scrollDelta.dy;
-      if (dy != 0) {
-        _onScroll(dy);
-      }
+    if (event is PointerScrollEvent && !_isAnimating) {
+      _onScroll(event.scrollDelta.dy);
     }
   }
 

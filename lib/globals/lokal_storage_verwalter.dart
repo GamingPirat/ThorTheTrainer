@@ -9,7 +9,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
   // print_Yellow("ladeOderErzeugeTeilnehmer firestoreLernfelder $firestoreLernfelder");
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  print_Yellow("Gespeicherte Daten: ${prefs.getString('ThorTheTrainer')}");
+  // print_Yellow("ladeOderErzeugeTeilnehmer Gespeicherte Daten: ${prefs.getString('ThorTheTrainer')}");
   String storageKey = "ThorTheTrainer";  // Der Key für das LocalStorage
 
   // Lade den Teilnehmer aus dem LocalStorage
@@ -50,7 +50,7 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
 
     // Speichere den aktualisierten Teilnehmer zurück im LocalStorage
     await prefs.setString(storageKey, jsonEncode(returnvalue.toJson()));
-    print_Yellow("LadeOderErzeugeTeilnehmer$returnvalue");
+    // print_Yellow("LadeOderErzeugeTeilnehmer$returnvalue");
     return returnvalue;
   }
 

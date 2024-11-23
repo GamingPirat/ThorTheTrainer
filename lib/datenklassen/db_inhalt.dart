@@ -2,24 +2,26 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:lernplatform/datenklassen/a_db_service_fragen.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
+import 'package:lernplatform/globals/print_colors.dart';
 import 'folder_types.dart';
 
 
 
 class Inhalt extends ContentCarrier {
-  final List<int> tags; // Id's von Themen
-  List<DB_Frage> fragen;
+  final List<int> tags;
+  late List<DB_Frage>? fragen;
 
   Inhalt({
     required int id,
     required String name,
     required this.tags,
-    required this.fragen,
-  }) : super(id: id, name: name){_loadFragen();}
+    this.fragen,
+    // required this.fragen,
+  }) : super(id: id, name: name){}
 
-  void _loadFragen() async{
+  void loadFragen() async{
     fragen = await FrageDBService().getByInhaltID(id);
-    // print_Yellow("SubThema fragen loaded fragen.length = ${fragen.length}"); // todo print
+    print_Yellow("Inhalt fragen loaded fragen.length = ${fragen!.length}"); // todo print
   }
 
   factory Inhalt.fromJson(Map<String, dynamic> json) {
@@ -44,7 +46,7 @@ class Inhalt extends ContentCarrier {
 
   int getTrueLengthOfFragen() {
     int counter = 0;
-    for (DB_Frage frage in fragen) {
+    for (DB_Frage frage in fragen!) {
       if (frage.version == 1) counter++;
     }
     return counter;

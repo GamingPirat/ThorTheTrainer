@@ -49,7 +49,7 @@ class CustomContainerWithImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print_Yellow("CustomContainerWithImage: imagePath = $imagePath");
+    // print_Yellow("CustomContainerWithImage: imagePath = $imagePath");
     return Container(
       // Parent-Container sorgt für Platz für das Bild
       margin: const EdgeInsets.all(40), // Platz für das Bild schaffen

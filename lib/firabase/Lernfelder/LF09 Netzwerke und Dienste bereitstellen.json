@@ -1,0 +1,184 @@
+{
+  "name": "LF 9 Netzwerke und Dienste bereitstellen",
+  "id": 9,
+  "kompetenzbereiche": [
+    {
+      "id": 90,
+      "name": "Netzwerkbereitstellung nach unterschiedlichen Unternehmensanforderungen unterscheiden",
+      "inhalte": [
+        {
+          "id": 900,
+          "name": "Kundenanforderungen formulieren",
+          "tags": [90]
+        },
+        {
+          "id": 901,
+          "name": "Mit DevOps Netzwerkbereitstellung unterstützen",
+          "tags": [90]
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Ist-Analyse durchführen und Lastenhefte erstellen",
+      "inhalte": [
+        {
+          "id": 910,
+          "name": "Kleine Netzwerke für Kleinstunternehmen planen",
+          "tags": [91]
+        },
+        {
+          "id": 911,
+          "name": "Mittlere Netzwerke für KMU und mittelgroße Organisationen planen",
+          "tags": [91]
+        },
+        {
+          "id": 912,
+          "name": "Große Netzwerke für Mittel- und Großunternehmen planen",
+          "tags": [91]
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Technische Anforderungen für das Bereitstellen von Netzwerken berücksichtigen",
+      "inhalte": [
+        {
+          "id": 920,
+          "name": "Internet-Protokolle unterscheiden",
+          "tags": [92]
+        },
+        {
+          "id": 921,
+          "name": "Netzwerkkomponenten unterscheiden",
+          "tags": [92]
+        },
+        {
+          "id": 922,
+          "name": "Server-Software unterscheiden",
+          "tags": [92]
+        },
+        {
+          "id": 923,
+          "name": "Server-Hardware unterscheiden",
+          "tags": [92]
+        },
+        {
+          "id": 924,
+          "name": "Technische Anforderungen der Rechenzentren kennen",
+          "tags": [92]
+        },
+        {
+          "id": 925,
+          "name": "WAN-Infrastrukturen unterscheiden",
+          "tags": [92]
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Wirtschaftliche und sicherheitsrelevante Anforderungen sowie Nachhaltigkeit in Netzwerken berücksichtigen",
+      "inhalte": [
+        {
+          "id": 930,
+          "name": "Wirtschaftliche Anforderungen berücksichtigen",
+          "tags": [93]
+        },
+        {
+          "id": 931,
+          "name": "Sicherheitsrelevante Anforderungen berücksichtigen",
+          "tags": [93]
+        },
+        {
+          "id": 932,
+          "name": "Nachhaltigkeit sicherstellen",
+          "tags": [93]
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Pflichtenhefte nach Unternehmensanforderungen erstellen",
+      "inhalte": [
+        {
+          "id": 940,
+          "name": "Ausschreibungs- und Vergabeplanung",
+          "tags": [94]
+        },
+        {
+          "id": 941,
+          "name": "Funktionale Anforderungen planen",
+          "tags": [94]
+        },
+        {
+          "id": 942,
+          "name": "Nicht funktionale Anforderungen planen",
+          "tags": [94]
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Netzwerke installieren, konfigurieren und bereitstellen",
+      "inhalte": [
+        {
+          "id": 950,
+          "name": "Infrastruktur einrichten",
+          "tags": [95]
+        },
+        {
+          "id": 951,
+          "name": "Netzwerkkomponenten installieren",
+          "tags": [95]
+        },
+        {
+          "id": 952,
+          "name": "Server installieren (klassisch)",
+          "tags": [95]
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Funktionsprüfungen und Messungen durchführen, Dokumentationen erstellen",
+      "inhalte": [
+        {
+          "id": 960,
+          "name": "Prüfung der Infrastruktur",
+          "tags": [96]
+        },
+        {
+          "id": 961,
+          "name": "Prüfung der Netzwerkkomponenten",
+          "tags": [96]
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Vorstellung des Virtualisierungskonzeptes im Leistungsportfolio",
+      "inhalte": [
+        {
+          "id": 970,
+          "name": "Ziele der Informationsveranstaltung vorstellen",
+          "tags": [97]
+        },
+        {
+          "id": 971,
+          "name": "Ein Virtualisierungskonzept erläutern",
+          "tags": [97]
+        },
+        {
+          "id": 972,
+          "name": "Managed Services – Leistungsstufen der Mitwirkung",
+          "tags": [97]
+        },
+        {
+          "id": 973,
+          "name": "Ausblick geben: Marktplätze für Container und virtuelle Anwendungen",
+          "tags": [97]
+        }
+      ]
+    }
+  ]
+}

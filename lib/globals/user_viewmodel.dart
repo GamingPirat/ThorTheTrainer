@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_key.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/globals/lokal_storage_verwalter.dart';
@@ -21,7 +21,7 @@ class UserModel with ChangeNotifier {
   bool _isLoading = true;
 
   UserModel({required this.alpha_key}) {
-    print("UserModel: AlphaKey empfangen: $alpha_key");
+    // print("UserModel: AlphaKey empfangen: $alpha_key");
     _load();
   }
 
@@ -89,11 +89,11 @@ class UserModel with ChangeNotifier {
       if (lernfeld.isSelected) {
         return true;
       }
-      for (UsersThema thema in lernfeld.usersThemen) {
+      for (UsersKompetenzbereich thema in lernfeld.usersKompetenzbereiche) {
         if (thema.isSelected) {
           return true;
         }
-        for (UsersSubThema subthema in thema.meineSubThemen) {
+        for (UsersInhalt subthema in thema.usersInhalte) {
           if (subthema.isSelected) {
             return true;
           }
@@ -107,9 +107,9 @@ class UserModel with ChangeNotifier {
   void _glowUp() async{
     for (UsersLernfeld lernfeld in lernfelder) {
       lernfeld.glowColor = Colors.red;
-      for (UsersThema thema in lernfeld.usersThemen) {
+      for (UsersKompetenzbereich thema in lernfeld.usersKompetenzbereiche) {
         thema.glowColor = Colors.red;
-        for (UsersSubThema subthema in thema.meineSubThemen) {
+        for (UsersInhalt subthema in thema.usersInhalte) {
           subthema.glowColor = Colors.red;
         }
       }
@@ -118,9 +118,9 @@ class UserModel with ChangeNotifier {
     await Future.delayed(Duration(seconds: 1));
     for (UsersLernfeld lernfeld in lernfelder) {
       lernfeld.glowColor = Colors.transparent;
-      for (UsersThema thema in lernfeld.usersThemen) {
+      for (UsersKompetenzbereich thema in lernfeld.usersKompetenzbereiche) {
         thema.glowColor = Colors.transparent;
-        for (UsersSubThema subthema in thema.meineSubThemen) {
+        for (UsersInhalt subthema in thema.usersInhalte) {
           subthema.glowColor = Colors.transparent;
         }
       }

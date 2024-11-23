@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/menu/punkte_widget.dart';
 import 'package:lernplatform/pages/Quiz/quiz_inhalt_controller.dart';
 import 'package:lernplatform/pages/Quiz/speicher_fortschritt_anzeige.dart';
@@ -12,8 +12,8 @@ import 'package:lernplatform/globals/session.dart';
 
 class Quizmaster with ChangeNotifier{
 
-  late List<UsersSubThema> selected_subthemen;
-  late QuizInhaltController aktuelles_subthema;
+  late List<UsersInhalt> selected_subthemen;
+  late QuizInhaltController aktueller_inhalt;
   int runde = 0;
   int _bei_10_wird_gespeichert = 0;
   bool _is_locked = false;
@@ -26,8 +26,8 @@ class Quizmaster with ChangeNotifier{
     // ***************************************************************
     selected_subthemen = [];
     for(UsersLernfeld lernfeld in Session().user.lernfelder)
-      for(UsersThema thema in lernfeld.usersThemen)
-        for(UsersSubThema subthema in thema.meineSubThemen)
+      for(UsersKompetenzbereich thema in lernfeld.usersKompetenzbereiche)
+        for(UsersInhalt subthema in thema.usersInhalte)
           if(subthema.isSelected)
             selected_subthemen.add(subthema);
 
@@ -52,8 +52,8 @@ class Quizmaster with ChangeNotifier{
 
   void nextQuestion(){
     _is_locked = false;
-    aktuelles_subthema = QuizInhaltController(
-      selected_subthema: selected_subthemen[Random().nextInt(selected_subthemen.length)],
+    aktueller_inhalt = QuizInhaltController(
+      selected_inhalt: selected_subthemen[Random().nextInt(selected_subthemen.length)],
       onLockTapped: ()=> onLockTapped(),
       runde: ++runde
     );
@@ -67,20 +67,20 @@ class Quizmaster with ChangeNotifier{
   void onLockTapped(){
     // print_Yellow("Quizmaster.onLockTapped"); // todo print
 
-    if(aktuelles_subthema.random_question.somethingIsSelected) _evaluate();
-    else aktuelles_subthema.random_question.blink();
+    if(aktueller_inhalt.random_question.somethingIsSelected) _evaluate();
+    else aktueller_inhalt.random_question.blink();
 
   }
 
   void _evaluate(){
-    int erreichte_punkte = aktuelles_subthema.random_question.erreichtePunkte_after_LockTapped;
+    int erreichte_punkte = aktueller_inhalt.random_question.erreichtePunkte_after_LockTapped;
     _fortschrittSpeicherAnzeiger.fortschritt = ++_bei_10_wird_gespeichert;
     _erreichtePunkteAnzeiger.punkte += erreichte_punkte;
 
-    if(erreichte_punkte == aktuelles_subthema.random_question.frage.punkte)
-      aktuelles_subthema.selected_subthema.logSubThema.richtigBeantworteteFragen.add(aktuelles_subthema.random_question.frage.id);
+    if(erreichte_punkte == aktueller_inhalt.random_question.frage.punkte)
+      aktueller_inhalt.selected_inhalt.logInhalt.richtigBeantworteteFragen.add(aktueller_inhalt.random_question.frage.id);
     else
-      aktuelles_subthema.selected_subthema.logSubThema.falschBeantworteteFragen.add(aktuelles_subthema.random_question.frage.id);
+      aktueller_inhalt.selected_inhalt.logInhalt.falschBeantworteteFragen.add(aktueller_inhalt.random_question.frage.id);
 
 
     if(_bei_10_wird_gespeichert == 10){
@@ -88,9 +88,9 @@ class Quizmaster with ChangeNotifier{
       _erreichtePunkteAnzeiger.punkte = 0;
       _bei_10_wird_gespeichert = 0;
       Session().user.speichern();
-      aktuelles_subthema.selected_subthema.updateProgress(updateParent: true);
+      aktueller_inhalt.selected_inhalt.updateProgress(updateParent: true);
     } else
-      aktuelles_subthema.selected_subthema.updateProgress(updateParent: false);
+      aktueller_inhalt.selected_inhalt.updateProgress(updateParent: false);
 
     _is_locked = true;
     notifyListeners();

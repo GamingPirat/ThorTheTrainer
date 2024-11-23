@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lernplatform/globals/my_background.dart';
 import 'package:lernplatform/globals/user_viewmodel.dart';
 import 'package:lernplatform/d_users_view_models/users_lernfeld_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_subthema_viewmodel.dart';
-import 'package:lernplatform/d_users_view_models/users_thema_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
+import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/pages/Quiz/Quizscreen.dart';
 import 'package:lernplatform/pages/QuizStarter/expandable.dart';
 import 'package:lernplatform/pages/QuizStarter/quizstarter_selecter_widget.dart';
@@ -64,10 +64,10 @@ class QuizStarter_Screen extends StatelessWidget {
 
                                 return ExpandableWidget(
                                   usersViewModel: lernfeld,
-                                  children: lernfeld.usersThemen.map((UsersThema thema) {
+                                  children: lernfeld.usersKompetenzbereiche.map((UsersKompetenzbereich thema) {
                                     return ExpandableWidget(
                                       usersViewModel: thema,
-                                      children: thema.meineSubThemen.map((UsersSubThema subthema) {
+                                      children: thema.usersInhalte.map((UsersInhalt subthema) {
                                         return QuizStarterSelecterWidget(viewModel: subthema);
                                       }).toList(),
                                     );

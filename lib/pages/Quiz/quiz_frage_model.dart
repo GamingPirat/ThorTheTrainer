@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lernplatform/datenklassen/db_antwort.dart';
 import 'package:lernplatform/datenklassen/db_frage.dart';
-import 'package:lernplatform/globals/print_colors.dart';
 import 'quiz_antwort_model.dart';
 
 class QuizFrageController with ChangeNotifier {
@@ -89,7 +88,6 @@ class QuizFrageController with ChangeNotifier {
     }
     double richtige_antworten_wert = frage.punkte / max_richtige_antworten;
     int erreichte_punkte = (richtige_antworten * richtige_antworten_wert).ceilToDouble().toInt();
-    // print_Magenta("QuizFrageModel erreichtePunkte_after_LockTapped $erreichte_punkte Frage.punkte = ${frage.punkte}"); // todo print
     _locked = true;
     notifyListeners();
     return erreichte_punkte;

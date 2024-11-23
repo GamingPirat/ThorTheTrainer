@@ -4,10 +4,10 @@ import 'package:lernplatform/pages/Quiz/quiz_inhalt_controller.dart';
 import 'package:lernplatform/pages/progress_bar_widget.dart';
 import 'package:provider/provider.dart';
 
-class QuizSubthemaWidget extends StatelessWidget {
+class QuizInhaltWidget extends StatelessWidget {
   QuizInhaltController viewModel;
 
-  QuizSubthemaWidget({required this.viewModel, super.key});
+  QuizInhaltWidget({required this.viewModel, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class QuizSubthemaWidget extends StatelessWidget {
               child: Column(
               children: [
                 Center(
-                  child: ProgressWidget(viewModel: viewModel.selected_subthema)
+                  child: ProgressWidget(viewModel: viewModel.selected_inhalt)
                 ),
                 QuizFrageWidget(viewModel: vm.random_question,),
               ],

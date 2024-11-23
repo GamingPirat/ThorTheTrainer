@@ -4,11 +4,9 @@ import 'package:lernplatform/datenklassen/db_frage.dart';
 import 'package:lernplatform/firabase/updated/fragen_bearbeiten/frage_editor.dart';
 
 class FragenList extends StatefulWidget {
-  final String lernfeldId, kompetenzId, inhaltId;
+  final int inhaltId;
 
   FragenList({
-    required this.lernfeldId,
-    required this.kompetenzId,
     required this.inhaltId,
   });
 
@@ -37,7 +35,7 @@ class _FragenListState extends State<FragenList> {
           SizedBox(height: 16,),
           Expanded(
             child: FutureBuilder<List<DB_Frage>>(
-              future: FrageDBService().getByInhaltID(int.parse(widget.inhaltId)),
+              future: FrageDBService().getByInhaltID(widget.inhaltId),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return const Center(child: CircularProgressIndicator());

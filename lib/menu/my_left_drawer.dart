@@ -85,7 +85,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                         expandedStates[lernfeld.id] = expanded;
                       });
                     },
-                    children: lernfeld.usersThemen.map((thema) {
+                    children: lernfeld.usersKompetenzbereiche.map((thema) {
                       bool isThemaExpanded = expandedStates[thema.id] ?? false;
 
                       return ExpansionTile(
@@ -101,7 +101,7 @@ class _MyLeftDrawerState extends State<MyLeftDrawer> {
                             expandedStates[thema.id] = expanded;
                           });
                         },
-                        children: thema.meineSubThemen.map((subThema) {
+                        children: thema.usersInhalte.map((subThema) {
                           return InkWell(
                             onTap: () {
                               showDialog(

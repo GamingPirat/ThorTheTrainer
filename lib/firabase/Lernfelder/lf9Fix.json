@@ -1,0 +1,550 @@
+[
+  {
+    "nummer": 1,
+    "version": 1,
+    "inhalt_id": "NETSEC-APT-01",
+    "text": "Welche Schwachstellen können durch APT-Angriffe ausgenutzt werden?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Schwachstellen in der Software und unsichere Passwörter",
+        "richtig": true
+      },
+      {
+        "text": "Nur fehlende Antivirensoftware",
+        "richtig": false
+      },
+      {
+        "text": "Hardware-Defekte",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 2,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-01",
+    "text": "Welche Grundwerte der Informationssicherheit schützt eine Firewall primär?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Verfügbarkeit, Vertraulichkeit, Integrität",
+        "richtig": true
+      },
+      {
+        "text": "Effizienz und Benutzerfreundlichkeit",
+        "richtig": false
+      },
+      {
+        "text": "Nur Vertraulichkeit",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 3,
+    "version": 1,
+    "inhalt_id": "NETSEC-PLAN-01",
+    "text": "Was empfiehlt das BSI als ersten Schritt bei der Planung eines sicheren Netzwerks?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Erstellung einer Sicherheitsleitlinie",
+        "richtig": true
+      },
+      {
+        "text": "Installation von Antivirensoftware",
+        "richtig": false
+      },
+      {
+        "text": "Einsatz von Cloud-Diensten",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 4,
+    "version": 1,
+    "inhalt_id": "NETSEC-ANGRIFF-01",
+    "text": "Wie verbreiten sich Schadprogramme bei APT-Angriffen?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Über E-Mails mit schädlichen Links oder Anhängen",
+        "richtig": true
+      },
+      {
+        "text": "Nur durch direkte Downloads von Webseiten",
+        "richtig": false
+      },
+      {
+        "text": "Über beschädigte Hardware",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 5,
+    "version": 1,
+    "inhalt_id": "NETSEC-BEDROHUNG-01",
+    "text": "Welche Bedrohung wird durch 'Denial of Service'-Angriffe (DoS) verursacht?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Verhinderung des Zugriffs auf Dienste durch Überlastung",
+        "richtig": true
+      },
+      {
+        "text": "Diebstahl von personenbezogenen Daten",
+        "richtig": false
+      },
+      {
+        "text": "Manipulation von Informationen in Datenbanken",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 6,
+    "version": 1,
+    "inhalt_id": "NETARCH-BSI-01",
+    "text": "Welche Kategorie von Anforderungen empfiehlt das BSI für eine grundlegende Erstabsicherung?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Basisanforderungen",
+        "richtig": true
+      },
+      {
+        "text": "Standardanforderungen",
+        "richtig": false
+      },
+      {
+        "text": "Erhöhte Schutzanforderungen",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 7,
+    "version": 1,
+    "inhalt_id": "NETARCH-BSI-02",
+    "text": "Welche Maßnahme gehört laut § 64 BDSG zu den technisch-organisatorischen Maßnahmen (TOM)?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Zugriffskontrolle",
+        "richtig": true
+      },
+      {
+        "text": "Marketingstrategie",
+        "richtig": false
+      },
+      {
+        "text": "Kundensupport",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 8,
+    "version": 1,
+    "inhalt_id": "NETARCH-BSI-03",
+    "text": "Was wird bei der Planung einer sicheren Netzarchitektur laut BSI als erstes empfohlen?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Erstellung einer Sicherheitsleitlinie",
+        "richtig": true
+      },
+      {
+        "text": "Installation von Firewalls",
+        "richtig": false
+      },
+      {
+        "text": "Auswahl eines Netzwerkanbieters",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 9,
+    "version": 1,
+    "inhalt_id": "NETARCH-BSI-04",
+    "text": "Welche Netzwerksicherheitszonen empfiehlt das BSI, um Angriffe zu erschweren?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "DMZ und Perimeterschutz",
+        "richtig": true
+      },
+      {
+        "text": "Intranet ohne Zugangsbeschränkung",
+        "richtig": false
+      },
+      {
+        "text": "VLAN mit uneingeschränktem Zugriff",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 10,
+    "version": 1,
+    "inhalt_id": "NETARCH-BSI-05",
+    "text": "Welche Funktion übernimmt eine Next-Generation-Firewall zusätzlich zu klassischen Firewalls?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Funktionen bis in die OSI-Schicht 7",
+        "richtig": true
+      },
+      {
+        "text": "Nur Paketfilterung auf OSI-Schicht 3",
+        "richtig": false
+      },
+      {
+        "text": "Ausschließlich Verschlüsselung von Daten",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 11,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-01",
+    "text": "Was versteht das BSI unter einer P-A-P-Struktur?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Paketfilter, Application Layer Gateway und Paketfilter",
+        "richtig": true
+      },
+      {
+        "text": "Proxy, Antivirus und Perimeter-Firewall",
+        "richtig": false
+      },
+      {
+        "text": "Perimeter-Firewall, Application Gateway und Router",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 12,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-02",
+    "text": "Welche Funktion übernimmt ein Reverse-Proxy in der Netzwerksicherheit?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Verteilung eingehender Anfragen und Verwaltung von Zertifikaten",
+        "richtig": true
+      },
+      {
+        "text": "Ausschließlich Paketfilterung",
+        "richtig": false
+      },
+      {
+        "text": "Entschlüsselung interner Datenverkehrs",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 13,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-03",
+    "text": "Was ist eine Demilitarisierte Zone (DMZ) im Kontext der Netzwerksicherheit?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Ein separates Netzsegment für öffentlich zugängliche Dienste",
+        "richtig": true
+      },
+      {
+        "text": "Ein Teil des internen Netzwerks mit zusätzlichem Schutz",
+        "richtig": false
+      },
+      {
+        "text": "Ein virtuelles LAN mit eingeschränktem Zugang",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 14,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-04",
+    "text": "Welche Sicherheitsmaßnahme reduziert laut BSI die Angriffsfläche zwischen Firewall-Stufen?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Proxy-basiertes Application Layer Gateway",
+        "richtig": true
+      },
+      {
+        "text": "Direkte Verbindung der Netzsegmente",
+        "richtig": false
+      },
+      {
+        "text": "Nur eine Perimeter-Firewall",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 15,
+    "version": 1,
+    "inhalt_id": "NETSEC-BSI-05",
+    "text": "Warum empfiehlt das BSI die physische Trennung von VLANs an einem Switch?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Um die Überbrückung von Netzsegmenten zu verhindern",
+        "richtig": true
+      },
+      {
+        "text": "Um den Datenverkehr zwischen VLANs zu beschleunigen",
+        "richtig": false
+      },
+      {
+        "text": "Um die Administration der VLANs zu erleichtern",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 16,
+    "version": 1,
+    "inhalt_id": "FIREWALL-01",
+    "text": "Welche Aufgabe erfüllt eine Next-Generation Firewall (NGFW) zusätzlich zu klassischen Firewall-Funktionen?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Deep Packet Inspection und TLS-/SSL-Überprüfung",
+        "richtig": true
+      },
+      {
+        "text": "Ausschließlich Port- und Protokollinspektion",
+        "richtig": false
+      },
+      {
+        "text": "Nur das Blockieren bekannter Malware",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 17,
+    "version": 1,
+    "inhalt_id": "FIREWALL-02",
+    "text": "Welche Firewall-Art arbeitet auf der OSI-Schicht 3 und 4 und filtert IP-Adressen und Ports?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Paketfilter",
+        "richtig": true
+      },
+      {
+        "text": "Proxy-Firewall",
+        "richtig": false
+      },
+      {
+        "text": "Content-Filter",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 18,
+    "version": 1,
+    "inhalt_id": "FIREWALL-03",
+    "text": "Warum empfiehlt das BSI zwei Firewalls von verschiedenen Anbietern für die Einrichtung einer DMZ?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Um die Wahrscheinlichkeit gleicher Sicherheitslücken zu verringern",
+        "richtig": true
+      },
+      {
+        "text": "Um Kosten zu senken",
+        "richtig": false
+      },
+      {
+        "text": "Um die Verwaltung der Firewall-Regeln zu vereinfachen",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 19,
+    "version": 1,
+    "inhalt_id": "FIREWALL-04",
+    "text": "Welche Firewall-Funktion blockiert E-Mail-Angriffe wie Phishing und Ransomware?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "E-Mail-Security-Gateway",
+        "richtig": true
+      },
+      {
+        "text": "Content-Filter",
+        "richtig": false
+      },
+      {
+        "text": "Paketfilter",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 20,
+    "version": 1,
+    "inhalt_id": "FIREWALL-05",
+    "text": "Was ist eine typische Funktion eines Intrusion Prevention Systems (IPS)?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Angriffe erkennen und blockieren",
+        "richtig": true
+      },
+      {
+        "text": "Nur Angriffe protokollieren",
+        "richtig": false
+      },
+      {
+        "text": "Nutzdaten aus Verbindungen analysieren",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 21,
+    "version": 1,
+    "inhalt_id": "SDN-01",
+    "text": "Welche Funktion übernimmt die Control Plane im Software-Defined Networking (SDN)?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Zentrale Steuerung und Verwaltung des Netzwerks",
+        "richtig": true
+      },
+      {
+        "text": "Weiterleitung von Datenpaketen zwischen Netzwerkkomponenten",
+        "richtig": false
+      },
+      {
+        "text": "Speicherung von Sicherheitsrichtlinien auf Endgeräten",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 22,
+    "version": 1,
+    "inhalt_id": "ZERO-TRUST-01",
+    "text": "Was ist ein zentraler Grundsatz des Zero-Trust-Sicherheitsprinzips?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Kein Vertrauen in Nutzer oder Geräte ohne vorherige Verifizierung",
+        "richtig": true
+      },
+      {
+        "text": "Automatischer Zugriff auf interne Ressourcen für bekannte Geräte",
+        "richtig": false
+      },
+      {
+        "text": "Zugriffskontrolle nur auf Basis von IP-Adressen",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 23,
+    "version": 1,
+    "inhalt_id": "SASE-01",
+    "text": "Welche Hauptaufgabe erfüllt das Secure Access Service Edge (SASE) Modell?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Kombination von Netzwerk- und Sicherheitsdiensten als Cloud-Service",
+        "richtig": true
+      },
+      {
+        "text": "Physische Trennung von Netzwerksegmenten durch VLANs",
+        "richtig": false
+      },
+      {
+        "text": "Automatische Erkennung und Reparatur von Hardwarefehlern",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 24,
+    "version": 1,
+    "inhalt_id": "SIEM-01",
+    "text": "Was ist die Hauptfunktion eines SIEM-Systems (Security Information and Event Management)?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Analyse von Log-Daten und Erkennung von Sicherheitsbedrohungen",
+        "richtig": true
+      },
+      {
+        "text": "Automatisches Patch-Management von Servern",
+        "richtig": false
+      },
+      {
+        "text": "Bereitstellung von Netzwerkzugriffen für mobile Geräte",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 25,
+    "version": 1,
+    "inhalt_id": "SDN-02",
+    "text": "Was ist eine zentrale Eigenschaft eines Software-Defined Networkings (SDN)?",
+    "punkte": 2,
+    "antworten": [
+      {
+        "text": "Trennung von Hardware und Software zur zentralen Verwaltung",
+        "richtig": true
+      },
+      {
+        "text": "Dezentrale Verwaltung von Netzwerkkonfigurationen",
+        "richtig": false
+      },
+      {
+        "text": "Speicherung von Managementdaten ausschließlich auf der Hardware",
+        "richtig": false
+      }
+    ]
+  },
+  {
+    "nummer": 26,
+    "version": 1,
+    "inhalt_id": "SECURITY-01",
+    "text": "Welches Ziel verfolgt die Mikrosegmentierung in SDN-Netzwerken?",
+    "punkte": 3,
+    "antworten": [
+      {
+        "text": "Erhöhung der Sicherheit durch lokale Zugriffsregeln an der Edge",
+        "richtig": true
+      },
+      {
+        "text": "Zentrale Verwaltung aller Sicherheitsrichtlinien",
+        "richtig": false
+      },
+      {
+        "text": "Automatische Patch-Updates auf allen Netzwerkgeräten",
+        "richtig": false
+      }
+    ]
+  }
+]
+
+
