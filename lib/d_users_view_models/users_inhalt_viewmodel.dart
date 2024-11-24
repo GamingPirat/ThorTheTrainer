@@ -3,7 +3,7 @@ import 'package:lernplatform/d_users_view_models/abstract_users_content_viewmode
 import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_inhalt.dart';
 import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/d_users_view_models/log_teilnehmer.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 
 class UsersKompetenzbereich extends UsersContentModel {
@@ -33,7 +33,6 @@ class UsersKompetenzbereich extends UsersContentModel {
         }
       }
     }
-    print_Yellow("UsersKompetenzbereich created. kompetenzbereich.id = ${kompetenzbereich.id} logKompetenzbereich.id = ${logKompetenzbereich.id}");
   }
 
   @override

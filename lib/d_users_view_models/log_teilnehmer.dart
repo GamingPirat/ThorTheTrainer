@@ -98,8 +98,8 @@ class LogKompetenzbereich {
 
 class LogInhalt {
   int id;
-  List<String> falschBeantworteteFragen;
-  List<String> richtigBeantworteteFragen;
+  Set<String> falschBeantworteteFragen;
+  Set<String> richtigBeantworteteFragen;
 
   LogInhalt({
     required this.id,
@@ -109,8 +109,8 @@ class LogInhalt {
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'falschBeantworteteFragen': falschBeantworteteFragen,
-    'richtigBeantworteteFragen': richtigBeantworteteFragen,
+    'falschBeantworteteFragen': falschBeantworteteFragen.toList(),
+    'richtigBeantworteteFragen': richtigBeantworteteFragen.toList(),
   };
 
   factory LogInhalt.fromJson(Map<String, dynamic> json) {
@@ -120,12 +120,12 @@ class LogInhalt {
       id: json['id'] ?? 0,
       falschBeantworteteFragen: (json['falschBeantworteteFragen'] as List<dynamic>?)
           ?.map((e) => e.toString())
-          .toList() ??
-          [],
+          .toSet() ?? // List in Set umwandeln
+          {},
       richtigBeantworteteFragen: (json['richtigBeantworteteFragen'] as List<dynamic>?)
           ?.map((e) => e.toString())
-          .toList() ??
-          [],
+          .toSet() ?? // List in Set umwandeln
+          {},
     );
   }
 
@@ -134,6 +134,7 @@ class LogInhalt {
     return "${magenta}      LogInhalt{ id: $id, falschBeantworteteFragen: ${falschBeantworteteFragen.length}, richtigBeantworteteFragen: ${richtigBeantworteteFragen.length} ${magenta}}$resetColor";
   }
 }
+
 
 // ANSI Escape Codes für Farben
 const String resetColor = "\x1B[0m";

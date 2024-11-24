@@ -16,7 +16,7 @@ class Session {
   late Widget pageHeader = Text("Wiederholung ist die Mutter des Lernens");
   late UserModel user;
   late final Function changeTemeMode;
-  final PunkteAnzeige _sterneAnzeige = PunkteAnzeige(punkte: 0); // todo punkte sollten im User sein
+  late final PunkteAnzeige _sterneAnzeige;
   final Widget background = MyBackGround();
   final bool IS_IN_DEBUG_MODE = true;
 
@@ -39,7 +39,10 @@ class Session {
         Map<String, dynamic>? data = doc.data();
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
-          user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));
+          user = await UserModel.getInstance(AlphaKey.fromJson(Map<String, dynamic>.from(data))); // AlphaKey übergeben
+
+          // _sterneAnzeige = PunkteAnzeige(punkte: user.logTeilnehmer.sterne); // todo punkte sollten im User sein
+          _sterneAnzeige = PunkteAnzeige(punkte: user.logTeilnehmer.sterne); // todo punkte sollten im User sein
           return true;
         }
       } catch (e, stackTrace) {

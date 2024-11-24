@@ -88,10 +88,7 @@ class Quizmaster with ChangeNotifier{
       _erreichtePunkteAnzeiger.punkte = 0;
       _bei_10_wird_gespeichert = 0;
       Session().user.speichern();
-      aktueller_inhalt.selected_inhalt.updateProgress(updateParent: true);
-    } else
-      aktueller_inhalt.selected_inhalt.updateProgress(updateParent: false);
-
+    }
     _is_locked = true;
     notifyListeners();
     // print_Yellow("Quizmaster _evaluated"); // todo print

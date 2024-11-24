@@ -4,7 +4,7 @@ import 'package:lernplatform/d_users_view_models/users_kompetenzbereich_viewmode
 import 'package:lernplatform/d_users_view_models/users_inhalt_viewmodel.dart';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/datenklassen/db_kompetenzbereich.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/d_users_view_models/log_teilnehmer.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 
 class UsersLernfeld extends UsersContentModel {
@@ -32,7 +32,6 @@ class UsersLernfeld extends UsersContentModel {
         }
       }
     }
-    print_Yellow("UsersLernfeld created. lernfeld.id = ${lernfeld.id} loglernfeld.id = ${logLernfeld.id}");
   }
 
   @override

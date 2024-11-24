@@ -8,7 +8,7 @@ import 'package:lernplatform/datenklassen/db_lernfeld.dart';
 import 'package:lernplatform/globals/lokal_storage_verwalter.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/pages/Startseiten/enter_service.dart';
-import '../datenklassen/log_teilnehmer.dart';
+import '../d_users_view_models/log_teilnehmer.dart';
 
 
 
@@ -20,9 +20,15 @@ class UserModel with ChangeNotifier {
   List<Lernfeld> firestoreLernfelder = [];
   bool _isLoading = true;
 
-  UserModel({required this.alpha_key}) {
-    // print("UserModel: AlphaKey empfangen: $alpha_key");
-    _load();
+  static UserModel? _instance;
+  UserModel._internal({required this.alpha_key});
+
+  static Future<UserModel> getInstance(AlphaKey alphaKey) async {
+    if (_instance == null) {
+      _instance = UserModel._internal(alpha_key: alphaKey);
+      await _instance!._load(); // Asynchrone Initialisierung
+    }
+    return _instance!;
   }
 
   get isLoading => _isLoading;
@@ -58,14 +64,17 @@ class UserModel with ChangeNotifier {
     for (LogLernfeld logLernfeld in logTeilnehmer.logLernfelder) {
       for (Lernfeld lernfeld in firestoreLernfelder) {
         if (logLernfeld.id == lernfeld.id) {
-          lernfelder.add(UsersLernfeld(
+          UsersLernfeld usersLernfeld = UsersLernfeld(
             logLernfeld: logLernfeld,
             lernfeld: lernfeld,
-          ));
+          );
+          lernfelder.add(usersLernfeld);
+          usersLernfeld.updateProgress(updateParent: false);
           // print_Cyan("UserModel _load() Geladenes Lernfeld: ${lernfeld.name}, Kompetenzbereiche: ${lernfeld.kompetenzbereiche.length}");
         }
       }
     }
+
 
 
 
@@ -76,6 +85,8 @@ class UserModel with ChangeNotifier {
 
 
   void speichern(){
+    for(UsersLernfeld lernfeld in lernfelder)
+      lernfeld.updateProgress(updateParent: false);
     speichereTeilnehmer(logTeilnehmer);
   }
 

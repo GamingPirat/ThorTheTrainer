@@ -16,7 +16,7 @@ class _ProgressWidgetState extends State<ProgressWidget> {
     return ChangeNotifierProvider.value(
       value: widget.viewModel,
       child: Consumer<UsersContentModel>(builder: (context, vm, child) {
-        final progress = (vm.progress ?? 0).clamp(0, 100) / 100; // Sicherheit
+        // final progress = (vm.progress ?? 0).clamp(0, 100) / 100; // Sicherheit
         return Container(
           padding: EdgeInsets.all(10),
           child: Column(
@@ -43,7 +43,7 @@ class _ProgressWidgetState extends State<ProgressWidget> {
                   ),
                   // Fortschrittsbalken (Grün)
                   FractionallySizedBox(
-                    widthFactor: progress,
+                    widthFactor: (vm.progress ?? 0).clamp(0, 100) / 100,
                     child: Container(
                       height: 20,
                       decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class _ProgressWidgetState extends State<ProgressWidget> {
                   // Fortschrittsanzeige (Text)
                   Center(
                     child: Text(
-                      "${(progress * 100).toStringAsFixed(1)}%",
+                      "${((vm.progress ?? 0).clamp(0, 100) / 100 * 100).toStringAsFixed(1)}%",
                       style: TextStyle(
                           color: Theme.of(context).brightness == Brightness.dark
                               ? Colors.white

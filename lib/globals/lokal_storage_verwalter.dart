@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:lernplatform/datenklassen/db_lernfeld.dart';
-import 'package:lernplatform/datenklassen/log_teilnehmer.dart';
+import 'package:lernplatform/d_users_view_models/log_teilnehmer.dart';
 import 'package:lernplatform/globals/print_colors.dart';
 import 'package:lernplatform/globals/session.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -36,8 +36,8 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
               logInhalte: thema.inhalte.map((subthema) {
                 return LogInhalt(
                   id: subthema.id,
-                  falschBeantworteteFragen: [],
-                  richtigBeantworteteFragen: [],
+                  falschBeantworteteFragen: Set<String>(),
+                  richtigBeantworteteFragen: Set<String>(),
                 );
               }).toList(),
             );
@@ -65,8 +65,8 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
           logInhalte: thema.inhalte.map((subthema) {
             return LogInhalt(
               id: subthema.id,
-              falschBeantworteteFragen: [],
-              richtigBeantworteteFragen: [],
+              falschBeantworteteFragen: Set<String>(),
+              richtigBeantworteteFragen: Set<String>(),
             );
           }).toList(),
         );
@@ -139,8 +139,8 @@ Future<void> reseteTeilnehmer() async {
   for(LogLernfeld lernfeld in Session().user.logTeilnehmer.logLernfelder)
     for(LogKompetenzbereich tehma in lernfeld.logKompetenzbereiche)
       for(LogInhalt subTehma in tehma.logInhalte){
-        subTehma.falschBeantworteteFragen = [];
-        subTehma.richtigBeantworteteFragen = [];
+        subTehma.falschBeantworteteFragen = Set<String>();
+        subTehma.richtigBeantworteteFragen = Set<String>();
       }
 
   await speichereTeilnehmer(Session().user.logTeilnehmer);

@@ -63,7 +63,7 @@ class QuizInhaltController with ChangeNotifier{
   }
 
   QuizFrageController get _falschbeantwortete_frage_in_neuer_version{
-    List<String> falsch_beantwortete_fragen_shuffled = selected_inhalt.logInhalt.falschBeantworteteFragen;
+    List<String> falsch_beantwortete_fragen_shuffled = selected_inhalt.logInhalt.falschBeantworteteFragen.toList();
     falsch_beantwortete_fragen_shuffled.shuffle();
 
     // *********************************************************************************
@@ -85,7 +85,7 @@ class QuizInhaltController with ChangeNotifier{
 
 
   QuizFrageController get _random_falschbeantwortete_frage {
-    List<String> falsch_beantwortete_fragen = selected_inhalt.logInhalt.falschBeantworteteFragen;
+    List<String> falsch_beantwortete_fragen = selected_inhalt.logInhalt.falschBeantworteteFragen.toList();
     falsch_beantwortete_fragen.shuffle();
 
     List<DB_Frage> matching_fragen = _ungesehene_fragen.where((frage) =>
