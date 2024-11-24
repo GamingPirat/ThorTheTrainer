@@ -1,5 +1,3 @@
-
-
 import 'package:lernplatform/globals/print_colors.dart';
 
 class LogTeilnehmer {
@@ -10,19 +8,17 @@ class LogTeilnehmer {
 
   Map<String, dynamic> toJson() => {
     'sterne': sterne,
-    'logLernfelder': logLernfelder.map((lernfeld) => lernfeld.toJson()).toList(),
+    'meineLernfelder': logLernfelder.map((lernfeld) => lernfeld.toJson()).toList(),
   };
 
   factory LogTeilnehmer.fromJson(Map<String, dynamic> json) {
-    // print_Blue("LogTeilnehmer.fromJson: Eingangsdaten: $json");
-    // print_Blue("LogTeilnehmer.fromJson:Typ von meineLernfelder: ${json['meineLernfelder']?.runtimeType}");
-    // print_Blue("LogTeilnehmer.fromJson: Inhalt von meineLernfelder: ${json['meineLernfelder']}");
+    print_Blue("LogTeilnehmer.fromJson: Eingangsdaten: $json");
 
     try {
       return LogTeilnehmer(
         sterne: json['sterne'] ?? 0,
-        logLernfelder: ((json['logLernfelder'] as List?) ?? [])
-            .map((item) => LogLernfeld.fromJson(item))
+        logLernfelder: (json['meineLernfelder'] as List<dynamic>? ?? [])
+            .map((lernfeldJson) => LogLernfeld.fromJson(lernfeldJson))
             .toList(),
       );
     } catch (e, stackTrace) {
@@ -31,7 +27,6 @@ class LogTeilnehmer {
       rethrow;
     }
   }
-
 
   @override
   String toString() {
@@ -48,20 +43,19 @@ class LogLernfeld {
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'logKompetenzbereiche': logKompetenzbereiche.map((kompetenzbereich) => kompetenzbereich.toJson()).toList(),
+    'meineThemen': logKompetenzbereiche.map((kompetenzbereich) => kompetenzbereich.toJson()).toList(),
   };
 
   factory LogLernfeld.fromJson(Map<String, dynamic> json) {
-    // print("LogLernfeld.fromJson: Eingangsdaten: $json");
-    // print("LogLernfeld.fromJson: Typ von meineThemen: ${json['meineThemen']?.runtimeType}");
-    // print("LogLernfeld.fromJson: Inhalt von meineThemen: ${json['meineThemen']}");
+    print_Blue("LogLernfeld.fromJson: Eingangsdaten: $json");
 
     return LogLernfeld(
-      json['id'],
-      (json['logKompetenzbereiche'] as List).map((item) => LogKompetenzbereich.fromJson(item)).toList(),
+      json['id'] ?? 0,
+      (json['meineThemen'] as List<dynamic>? ?? [])
+          .map((kompetenzbereichJson) => LogKompetenzbereich.fromJson(kompetenzbereichJson))
+          .toList(),
     );
   }
-
 
   @override
   String toString() {
@@ -81,20 +75,19 @@ class LogKompetenzbereich {
 
   Map<String, dynamic> toJson() => {
     'id': id,
-    'logInhalte': logInhalte.map((logInhalt) => logInhalt.toJson()).toList(),
+    'logSubthemen': logInhalte.map((logInhalt) => logInhalt.toJson()).toList(),
   };
 
   factory LogKompetenzbereich.fromJson(Map<String, dynamic> json) {
-    // print("LogKompetenzbereich.fromJson: Eingangsdaten: $json");
-    // print("Typ von logInhalte: ${json['logInhalte']?.runtimeType}");
-    // print("Inhalt von logInhalte: ${json['logInhalte']}");
+    print_Blue("LogKompetenzbereich.fromJson: Eingangsdaten: $json");
 
     return LogKompetenzbereich(
-      id: json['id'],
-      logInhalte: (json['logInhalte'] as List).map((item) => LogInhalt.fromJson(item)).toList(),
+      id: json['id'] ?? 0,
+      logInhalte: (json['logSubthemen'] as List<dynamic>? ?? [])
+          .map((inhaltJson) => LogInhalt.fromJson(inhaltJson))
+          .toList(),
     );
   }
-
 
   @override
   String toString() {
@@ -121,26 +114,26 @@ class LogInhalt {
   };
 
   factory LogInhalt.fromJson(Map<String, dynamic> json) {
-    // print("LogInhalt.fromJson: Eingangsdaten: $json");
-    // print("Typ von falschBeantworteteFragen: ${json['falschBeantworteteFragen']?.runtimeType}");
-    // print("Inhalt von falschBeantworteteFragen: ${json['falschBeantworteteFragen']}");
-    // print("Typ von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']?.runtimeType}");
-    // print("Inhalt von richtigBeantworteteFragen: ${json['richtigBeantworteteFragen']}");
+    print_Yellow("LogInhalt.fromJson hat folgende Daten erhalten: $json");
 
     return LogInhalt(
-      id: json['id'],
-      falschBeantworteteFragen: List<String>.from(json['falschBeantworteteFragen'] ?? []),
-      richtigBeantworteteFragen: List<String>.from(json['richtigBeantworteteFragen'] ?? []),
+      id: json['id'] ?? 0,
+      falschBeantworteteFragen: (json['falschBeantworteteFragen'] as List<dynamic>?)
+          ?.map((e) => e.toString())
+          .toList() ??
+          [],
+      richtigBeantworteteFragen: (json['richtigBeantworteteFragen'] as List<dynamic>?)
+          ?.map((e) => e.toString())
+          .toList() ??
+          [],
     );
   }
-
 
   @override
   String toString() {
     return "${magenta}      LogInhalt{ id: $id, falschBeantworteteFragen: ${falschBeantworteteFragen.length}, richtigBeantworteteFragen: ${richtigBeantworteteFragen.length} ${magenta}}$resetColor";
   }
 }
-
 
 // ANSI Escape Codes für Farben
 const String resetColor = "\x1B[0m";

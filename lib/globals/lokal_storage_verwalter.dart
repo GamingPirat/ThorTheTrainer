@@ -50,7 +50,8 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
 
     // Speichere den aktualisierten Teilnehmer zurück im LocalStorage
     await prefs.setString(storageKey, jsonEncode(returnvalue.toJson()));
-    // print_Yellow("LadeOderErzeugeTeilnehmer$returnvalue");
+    print_Yellow("LadeOderErzeugeTeilnehmer vorhandener Teilnehmer");
+    print_Yellow("$returnvalue");
     return returnvalue;
   }
 
@@ -77,7 +78,8 @@ Future<LogTeilnehmer> ladeOderErzeugeTeilnehmer(List<Lernfeld> firestoreLernfeld
 
   // Speichere den neuen Teilnehmer im LocalStorage
   await prefs.setString(storageKey, jsonEncode(neuerTeilnehmer.toJson()));
-  // print_Yellow("ladeOderErzeugeTeilnehmer() Teilnehmer Erstellt: $neuerTeilnehmer");
+  print_Yellow("LadeOderErzeugeTeilnehmer neuer Teilnehmer erstellt");
+  print_Yellow("$neuerTeilnehmer");
 
   return neuerTeilnehmer;
 }
@@ -96,14 +98,14 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
     'meineLernfelder': teilnehmer.logLernfelder.map((lernfeld) {
       return {
         'id': lernfeld.id,
-        'meineThemen': lernfeld.logKompetenzbereiche.map((thema) {
+        'meineThemen': lernfeld.logKompetenzbereiche.map((kompetenzbereich) {
           return {
-            'id': thema.id,
-            'logSubthemen': thema.logInhalte.map((subthema) {
+            'id': kompetenzbereich.id,
+            'logSubthemen': kompetenzbereich.logInhalte.map((inhalt) {
               return {
-                'id': subthema.id,
-                'falschBeantworteteFragen': subthema.falschBeantworteteFragen,
-                'richtigBeantworteteFragen': subthema.richtigBeantworteteFragen,
+                'id': inhalt.id,
+                'richtigBeantworteteFragen': inhalt.richtigBeantworteteFragen,
+                'falschBeantworteteFragen': inhalt.falschBeantworteteFragen,
               };
             }).toList(),
           };
@@ -117,6 +119,7 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
   await prefs.setString(teilnehmerKey, teilnehmerJson);
 
   // Print den gesamten Inhalt des LocalStorage
+  print_Magenta("aktueller Lokalstorage:");
   Map<String, dynamic> allPrefs = prefs.getKeys().fold<Map<String, dynamic>>(
     {},
         (map, key) {
@@ -124,7 +127,9 @@ Future<void> speichereTeilnehmer(LogTeilnehmer teilnehmer) async {
       return map;
     },
   );
-  print(jsonEncode(allPrefs));
+  print_Magenta(jsonEncode(allPrefs));
+
+  ladeOderErzeugeTeilnehmer(Session().user.firestoreLernfelder);
 }
 
 

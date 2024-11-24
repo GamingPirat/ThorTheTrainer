@@ -34,13 +34,9 @@ class Session {
     if (snapshot.docs.isNotEmpty) {
       // Greife direkt auf das erste Dokument zu
       var doc = snapshot.docs.first;
-      print_Green("doc.data(): ${doc.data()}, Typ: ${doc.data().runtimeType}");
-
 
       try {
         Map<String, dynamic>? data = doc.data();
-        print_Green("Typ von lernfelder: ${data?['lernfelder'].runtimeType}");
-        print_Green("Inhalt von lernfelder: ${data?['lernfelder']}");
 
         if (data != null && data.containsKey("key") && data["key"] == key) {
           user = UserModel(alpha_key: AlphaKey.fromJson(Map<String, dynamic>.from(data)));

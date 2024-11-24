@@ -7,7 +7,6 @@ class AlphaKey {
   AlphaKey({required this.key, required this.lernfelder});
 
   factory AlphaKey.fromJson(Map<String, dynamic> json) {
-    print_Cyan("AlphaKey.fromJson: Eingangsdaten: $json");
     List<String> lernfelderList = [];
     if (json['lernfelder'] != null) {
       try {
